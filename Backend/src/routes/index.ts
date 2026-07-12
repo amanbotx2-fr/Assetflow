@@ -10,6 +10,7 @@ import { maintenanceRoutes } from "./maintenanceRoutes.js";
 import { notificationRoutes } from "./notificationRoutes.js";
 import { organizationRoutes } from "./organizationRoutes.js";
 import { reportRoutes } from "./reportRoutes.js";
+import { settingsRoutes } from "./settingsRoutes.js";
 import { transferRoutes } from "./transferRoutes.js";
 
 export const apiRoutes = Router();
@@ -29,3 +30,4 @@ apiRoutes.use("/audit-logs", auditLogRoutes);
 apiRoutes.use("/reports", reportRoutes);
 apiRoutes.use("/notifications", notificationRoutes);
 apiRoutes.use("/organization", organizationRoutes);
+apiRoutes.use("/settings", settingsRoutes);

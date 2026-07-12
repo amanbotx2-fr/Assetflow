@@ -424,7 +424,7 @@
       },
       "idleAssets": [
         {
-          "id": "34152d6d-62bb-43bf-9b0c-cc238d9ff912",
+          "id": "5ef7737a-64bf-408a-87dd-9e561686676c",
           "assetCode": "LAP-002",
           "serialNumber": "SN-LAP-002",
           "name": "MacBook Air M3",
@@ -435,17 +435,17 @@
           "purchaseValue": null,
           "warrantyExpiry": null,
           "isBookable": false,
-          "categoryId": "ebb6782c-200b-47e1-814f-cdb3bbffb8c3",
-          "departmentId": "7bc9aac2-7a82-4608-bf74-04070419fe4e",
-          "createdAt": "2026-07-12T07:36:33.837Z",
-          "updatedAt": "2026-07-12T07:36:33.837Z",
+          "categoryId": "15dc0030-5daa-4487-a1ee-1e5562b3a913",
+          "departmentId": "e53b9027-1778-4fb0-89f8-a02d5b8ba8e6",
+          "createdAt": "2026-07-12T07:51:02.242Z",
+          "updatedAt": "2026-07-12T07:51:02.242Z",
           "category": {
-            "id": "ebb6782c-200b-47e1-814f-cdb3bbffb8c3",
+            "id": "15dc0030-5daa-4487-a1ee-1e5562b3a913",
             "name": "Laptop",
             "code": "LAP"
           },
           "department": {
-            "id": "7bc9aac2-7a82-4608-bf74-04070419fe4e",
+            "id": "e53b9027-1778-4fb0-89f8-a02d5b8ba8e6",
             "name": "Information Technology",
             "code": "IT",
             "status": "ACTIVE"
@@ -468,7 +468,7 @@
           }
         },
         {
-          "id": "3103e4dd-03af-49b3-bc43-fe4fa262e949",
+          "id": "35713584-e8d2-45ee-b398-b0725b497f0a",
           "assetCode": "VEH-001",
           "serialNumber": "SN-VEH-001",
           "name": "Office Shuttle",
@@ -479,17 +479,17 @@
           "purchaseValue": null,
           "warrantyExpiry": null,
           "isBookable": true,
-          "categoryId": "06daaf7f-2e7d-49fa-9d7f-ced2cdb03081",
-          "departmentId": "bde64540-a02b-4c7e-8cdb-d0cf228951b0",
-          "createdAt": "2026-07-12T07:36:33.838Z",
-          "updatedAt": "2026-07-12T07:36:33.838Z",
+          "categoryId": "5d307f8b-e65b-4523-884e-5b628053d0d8",
+          "departmentId": "7ce0f221-097e-45b2-98fc-5617fcd72030",
+          "createdAt": "2026-07-12T07:51:02.243Z",
+          "updatedAt": "2026-07-12T07:51:02.243Z",
           "category": {
-            "id": "06daaf7f-2e7d-49fa-9d7f-ced2cdb03081",
+            "id": "5d307f8b-e65b-4523-884e-5b628053d0d8",
             "name": "Vehicle",
             "code": "VEH"
           },
           "department": {
-            "id": "bde64540-a02b-4c7e-8cdb-d0cf228951b0",
+            "id": "7ce0f221-097e-45b2-98fc-5617fcd72030",
             "name": "Operations",
             "code": "OPS",
             "status": "ACTIVE"
@@ -512,7 +512,7 @@
           }
         },
         {
-          "id": "b0509c19-9cc2-4d2c-930d-f1f793bf34fd",
+          "id": "b2547b49-b098-45b6-8def-a2da048c3544",
           "assetCode": "FUR-001",
           "serialNumber": "SN-FUR-001",
           "name": "Ergonomic Chair",
@@ -523,17 +523,17 @@
           "purchaseValue": null,
           "warrantyExpiry": null,
           "isBookable": false,
-          "categoryId": "30043e42-0f08-421e-a5e9-3a5498754a4f",
-          "departmentId": "bde64540-a02b-4c7e-8cdb-d0cf228951b0",
-          "createdAt": "2026-07-12T07:36:33.838Z",
-          "updatedAt": "2026-07-12T07:36:33.838Z",
+          "categoryId": "bbbb24e5-16fe-4e1a-88ee-f305aa470f06",
+          "departmentId": "7ce0f221-097e-45b2-98fc-5617fcd72030",
+          "createdAt": "2026-07-12T07:51:02.244Z",
+          "updatedAt": "2026-07-12T07:51:02.244Z",
           "category": {
-            "id": "30043e42-0f08-421e-a5e9-3a5498754a4f",
+            "id": "bbbb24e5-16fe-4e1a-88ee-f305aa470f06",
             "name": "Furniture",
             "code": "FUR"
           },
           "department": {
-            "id": "bde64540-a02b-4c7e-8cdb-d0cf228951b0",
+            "id": "7ce0f221-097e-45b2-98fc-5617fcd72030",
             "name": "Operations",
             "code": "OPS",
             "status": "ACTIVE"
@@ -558,7 +558,7 @@
       ],
       "frequentlyUsedAssets": [
         {
-          "id": "3103e4dd-03af-49b3-bc43-fe4fa262e949",
+          "id": "35713584-e8d2-45ee-b398-b0725b497f0a",
           "assetCode": "VEH-001",
           "serialNumber": "SN-VEH-001",
           "name": "Office Shuttle",
@@ -569,17 +569,17 @@
           "purchaseValue": null,
           "warrantyExpiry": null,
           "isBookable": true,
-          "categoryId": "06daaf7f-2e7d-49fa-9d7f-ced2cdb03081",
-          "departmentId": "bde64540-a02b-4c7e-8cdb-d0cf228951b0",
-          "createdAt": "2026-07-12T07:36:33.838Z",
-          "updatedAt": "2026-07-12T07:36:33.838Z",
+          "categoryId": "5d307f8b-e65b-4523-884e-5b628053d0d8",
+          "departmentId": "7ce0f221-097e-45b2-98fc-5617fcd72030",
+          "createdAt": "2026-07-12T07:51:02.243Z",
+          "updatedAt": "2026-07-12T07:51:02.243Z",
           "category": {
-            "id": "06daaf7f-2e7d-49fa-9d7f-ced2cdb03081",
+            "id": "5d307f8b-e65b-4523-884e-5b628053d0d8",
             "name": "Vehicle",
             "code": "VEH"
           },
           "department": {
-            "id": "bde64540-a02b-4c7e-8cdb-d0cf228951b0",
+            "id": "7ce0f221-097e-45b2-98fc-5617fcd72030",
             "name": "Operations",
             "code": "OPS",
             "status": "ACTIVE"
@@ -600,7 +600,7 @@
           }
         },
         {
-          "id": "75c7d83c-8565-4632-b54c-28125c95be09",
+          "id": "97b23182-1068-4b59-b823-d3c34134318b",
           "assetCode": "PROJ-001",
           "serialNumber": "SN-PROJ-001",
           "name": "Epson Conference Projector",
@@ -611,17 +611,17 @@
           "purchaseValue": null,
           "warrantyExpiry": null,
           "isBookable": true,
-          "categoryId": "2cde471e-ced8-4ec0-884f-ab1208309c05",
-          "departmentId": "bde64540-a02b-4c7e-8cdb-d0cf228951b0",
-          "createdAt": "2026-07-12T07:36:33.837Z",
-          "updatedAt": "2026-07-12T07:36:33.837Z",
+          "categoryId": "518cff01-9429-4af1-8b1b-d2e81bc5bce7",
+          "departmentId": "7ce0f221-097e-45b2-98fc-5617fcd72030",
+          "createdAt": "2026-07-12T07:51:02.243Z",
+          "updatedAt": "2026-07-12T07:51:02.243Z",
           "category": {
-            "id": "2cde471e-ced8-4ec0-884f-ab1208309c05",
+            "id": "518cff01-9429-4af1-8b1b-d2e81bc5bce7",
             "name": "Projector",
             "code": "PROJ"
           },
           "department": {
-            "id": "bde64540-a02b-4c7e-8cdb-d0cf228951b0",
+            "id": "7ce0f221-097e-45b2-98fc-5617fcd72030",
             "name": "Operations",
             "code": "OPS",
             "status": "ACTIVE"
@@ -642,7 +642,7 @@
           }
         },
         {
-          "id": "e2f5507f-56df-4a9f-92b0-8ce1dd4cf861",
+          "id": "cc40d166-b62b-425d-b35c-978ef57dee36",
           "assetCode": "LAP-001",
           "serialNumber": "SN-LAP-001",
           "name": "Dell Latitude 5440",
@@ -653,43 +653,43 @@
           "purchaseValue": "95000",
           "warrantyExpiry": null,
           "isBookable": false,
-          "categoryId": "ebb6782c-200b-47e1-814f-cdb3bbffb8c3",
-          "departmentId": "7bc9aac2-7a82-4608-bf74-04070419fe4e",
-          "createdAt": "2026-07-12T07:36:33.836Z",
-          "updatedAt": "2026-07-12T07:36:33.836Z",
+          "categoryId": "15dc0030-5daa-4487-a1ee-1e5562b3a913",
+          "departmentId": "e53b9027-1778-4fb0-89f8-a02d5b8ba8e6",
+          "createdAt": "2026-07-12T07:51:02.241Z",
+          "updatedAt": "2026-07-12T07:51:02.241Z",
           "category": {
-            "id": "ebb6782c-200b-47e1-814f-cdb3bbffb8c3",
+            "id": "15dc0030-5daa-4487-a1ee-1e5562b3a913",
             "name": "Laptop",
             "code": "LAP"
           },
           "department": {
-            "id": "7bc9aac2-7a82-4608-bf74-04070419fe4e",
+            "id": "e53b9027-1778-4fb0-89f8-a02d5b8ba8e6",
             "name": "Information Technology",
             "code": "IT",
             "status": "ACTIVE"
           },
           "allocations": [
             {
-              "id": "ec014cfa-ade1-4923-b6be-075696b584b3",
-              "assetId": "e2f5507f-56df-4a9f-92b0-8ce1dd4cf861",
-              "userId": "44aeea02-baba-4915-8a21-303b37508485",
+              "id": "df1e17b9-bd40-4fdd-9746-62c59a9e213a",
+              "assetId": "cc40d166-b62b-425d-b35c-978ef57dee36",
+              "userId": "87c7582a-504b-4694-ba34-29b9613770c1",
               "departmentId": null,
-              "assignedById": "d3a4d3f9-c3ca-4adc-8b4b-d2415e733dbd",
+              "assignedById": "f3ebbf21-4a70-4605-8a49-b9ee995ae161",
               "sourceTransferId": null,
               "status": "ACTIVE",
-              "assignedAt": "2026-07-12T07:36:33.838Z",
+              "assignedAt": "2026-07-12T07:51:02.244Z",
               "returnedAt": null,
               "returnCondition": null,
               "returnReason": null,
               "notes": "Seed allocation for demo.",
-              "createdAt": "2026-07-12T07:36:33.838Z",
-              "updatedAt": "2026-07-12T07:36:33.838Z",
+              "createdAt": "2026-07-12T07:51:02.244Z",
+              "updatedAt": "2026-07-12T07:51:02.244Z",
               "user": {
-                "id": "44aeea02-baba-4915-8a21-303b37508485",
+                "id": "87c7582a-504b-4694-ba34-29b9613770c1",
                 "name": "Employee User",
                 "email": "employee@assetflow.local",
                 "role": "EMPLOYEE",
-                "departmentId": "7bc9aac2-7a82-4608-bf74-04070419fe4e"
+                "departmentId": "e53b9027-1778-4fb0-89f8-a02d5b8ba8e6"
               },
               "department": null
             }
@@ -701,26 +701,26 @@
           },
           "assetTag": "LAP-001",
           "currentAllocation": {
-            "id": "ec014cfa-ade1-4923-b6be-075696b584b3",
-            "assetId": "e2f5507f-56df-4a9f-92b0-8ce1dd4cf861",
-            "userId": "44aeea02-baba-4915-8a21-303b37508485",
+            "id": "df1e17b9-bd40-4fdd-9746-62c59a9e213a",
+            "assetId": "cc40d166-b62b-425d-b35c-978ef57dee36",
+            "userId": "87c7582a-504b-4694-ba34-29b9613770c1",
             "departmentId": null,
-            "assignedById": "d3a4d3f9-c3ca-4adc-8b4b-d2415e733dbd",
+            "assignedById": "f3ebbf21-4a70-4605-8a49-b9ee995ae161",
             "sourceTransferId": null,
             "status": "ACTIVE",
-            "assignedAt": "2026-07-12T07:36:33.838Z",
+            "assignedAt": "2026-07-12T07:51:02.244Z",
             "returnedAt": null,
             "returnCondition": null,
             "returnReason": null,
             "notes": "Seed allocation for demo.",
-            "createdAt": "2026-07-12T07:36:33.838Z",
-            "updatedAt": "2026-07-12T07:36:33.838Z",
+            "createdAt": "2026-07-12T07:51:02.244Z",
+            "updatedAt": "2026-07-12T07:51:02.244Z",
             "user": {
-              "id": "44aeea02-baba-4915-8a21-303b37508485",
+              "id": "87c7582a-504b-4694-ba34-29b9613770c1",
               "name": "Employee User",
               "email": "employee@assetflow.local",
               "role": "EMPLOYEE",
-              "departmentId": "7bc9aac2-7a82-4608-bf74-04070419fe4e"
+              "departmentId": "e53b9027-1778-4fb0-89f8-a02d5b8ba8e6"
             },
             "department": null
           },
@@ -732,49 +732,7 @@
           }
         },
         {
-          "id": "34152d6d-62bb-43bf-9b0c-cc238d9ff912",
-          "assetCode": "LAP-002",
-          "serialNumber": "SN-LAP-002",
-          "name": "MacBook Air M3",
-          "status": "AVAILABLE",
-          "condition": "NEW",
-          "location": "IT Store",
-          "purchaseDate": null,
-          "purchaseValue": null,
-          "warrantyExpiry": null,
-          "isBookable": false,
-          "categoryId": "ebb6782c-200b-47e1-814f-cdb3bbffb8c3",
-          "departmentId": "7bc9aac2-7a82-4608-bf74-04070419fe4e",
-          "createdAt": "2026-07-12T07:36:33.837Z",
-          "updatedAt": "2026-07-12T07:36:33.837Z",
-          "category": {
-            "id": "ebb6782c-200b-47e1-814f-cdb3bbffb8c3",
-            "name": "Laptop",
-            "code": "LAP"
-          },
-          "department": {
-            "id": "7bc9aac2-7a82-4608-bf74-04070419fe4e",
-            "name": "Information Technology",
-            "code": "IT",
-            "status": "ACTIVE"
-          },
-          "allocations": [],
-          "_count": {
-            "allocations": 0,
-            "bookings": 0,
-            "maintenanceTickets": 0
-          },
-          "assetTag": "LAP-002",
-          "currentAllocation": null,
-          "usage": {
-            "allocationCount": 0,
-            "bookingCount": 0,
-            "maintenanceCount": 0,
-            "totalUsage": 0
-          }
-        },
-        {
-          "id": "6dc5682e-1125-4494-ba9b-1afcc5a4ffe5",
+          "id": "2cdff9c5-7d84-48fe-9f3e-6bc0547de520",
           "assetCode": "MON-001",
           "serialNumber": "SN-MON-001",
           "name": "Dell 27 Inch Monitor",
@@ -785,17 +743,17 @@
           "purchaseValue": null,
           "warrantyExpiry": null,
           "isBookable": false,
-          "categoryId": "3f9651fc-a2d7-48de-8cf3-78d3c24232bd",
-          "departmentId": "fb263355-709e-4c81-9714-a114f95bf3ce",
-          "createdAt": "2026-07-12T07:36:33.838Z",
-          "updatedAt": "2026-07-12T07:36:33.838Z",
+          "categoryId": "4335e900-8bb8-42c4-a7fa-9c097f61e04e",
+          "departmentId": "d895b0b8-a93b-448a-a608-60010811a58a",
+          "createdAt": "2026-07-12T07:51:02.243Z",
+          "updatedAt": "2026-07-12T07:51:02.243Z",
           "category": {
-            "id": "3f9651fc-a2d7-48de-8cf3-78d3c24232bd",
+            "id": "4335e900-8bb8-42c4-a7fa-9c097f61e04e",
             "name": "Monitor",
             "code": "MON"
           },
           "department": {
-            "id": "fb263355-709e-4c81-9714-a114f95bf3ce",
+            "id": "d895b0b8-a93b-448a-a608-60010811a58a",
             "name": "Finance",
             "code": "FIN",
             "status": "ACTIVE"
@@ -814,12 +772,54 @@
             "maintenanceCount": 1,
             "totalUsage": 0
           }
+        },
+        {
+          "id": "5ef7737a-64bf-408a-87dd-9e561686676c",
+          "assetCode": "LAP-002",
+          "serialNumber": "SN-LAP-002",
+          "name": "MacBook Air M3",
+          "status": "AVAILABLE",
+          "condition": "NEW",
+          "location": "IT Store",
+          "purchaseDate": null,
+          "purchaseValue": null,
+          "warrantyExpiry": null,
+          "isBookable": false,
+          "categoryId": "15dc0030-5daa-4487-a1ee-1e5562b3a913",
+          "departmentId": "e53b9027-1778-4fb0-89f8-a02d5b8ba8e6",
+          "createdAt": "2026-07-12T07:51:02.242Z",
+          "updatedAt": "2026-07-12T07:51:02.242Z",
+          "category": {
+            "id": "15dc0030-5daa-4487-a1ee-1e5562b3a913",
+            "name": "Laptop",
+            "code": "LAP"
+          },
+          "department": {
+            "id": "e53b9027-1778-4fb0-89f8-a02d5b8ba8e6",
+            "name": "Information Technology",
+            "code": "IT",
+            "status": "ACTIVE"
+          },
+          "allocations": [],
+          "_count": {
+            "allocations": 0,
+            "bookings": 0,
+            "maintenanceTickets": 0
+          },
+          "assetTag": "LAP-002",
+          "currentAllocation": null,
+          "usage": {
+            "allocationCount": 0,
+            "bookingCount": 0,
+            "maintenanceCount": 0,
+            "totalUsage": 0
+          }
         }
       ],
       "upcomingMaintenance": [],
       "nearRetirement": [
         {
-          "id": "6dc5682e-1125-4494-ba9b-1afcc5a4ffe5",
+          "id": "2cdff9c5-7d84-48fe-9f3e-6bc0547de520",
           "assetCode": "MON-001",
           "serialNumber": "SN-MON-001",
           "name": "Dell 27 Inch Monitor",
@@ -830,17 +830,17 @@
           "purchaseValue": null,
           "warrantyExpiry": null,
           "isBookable": false,
-          "categoryId": "3f9651fc-a2d7-48de-8cf3-78d3c24232bd",
-          "departmentId": "fb263355-709e-4c81-9714-a114f95bf3ce",
-          "createdAt": "2026-07-12T07:36:33.838Z",
-          "updatedAt": "2026-07-12T07:36:33.838Z",
+          "categoryId": "4335e900-8bb8-42c4-a7fa-9c097f61e04e",
+          "departmentId": "d895b0b8-a93b-448a-a608-60010811a58a",
+          "createdAt": "2026-07-12T07:51:02.243Z",
+          "updatedAt": "2026-07-12T07:51:02.243Z",
           "category": {
-            "id": "3f9651fc-a2d7-48de-8cf3-78d3c24232bd",
+            "id": "4335e900-8bb8-42c4-a7fa-9c097f61e04e",
             "name": "Monitor",
             "code": "MON"
           },
           "department": {
-            "id": "fb263355-709e-4c81-9714-a114f95bf3ce",
+            "id": "d895b0b8-a93b-448a-a608-60010811a58a",
             "name": "Finance",
             "code": "FIN",
             "status": "ACTIVE"
@@ -867,38 +867,7 @@
     "data": {
       "items": [
         {
-          "id": "3103e4dd-03af-49b3-bc43-fe4fa262e949",
-          "assetCode": "VEH-001",
-          "serialNumber": "SN-VEH-001",
-          "name": "Office Shuttle",
-          "status": "AVAILABLE",
-          "condition": "GOOD",
-          "location": "Parking Bay 4",
-          "purchaseDate": null,
-          "purchaseValue": null,
-          "warrantyExpiry": null,
-          "isBookable": true,
-          "categoryId": "06daaf7f-2e7d-49fa-9d7f-ced2cdb03081",
-          "departmentId": "bde64540-a02b-4c7e-8cdb-d0cf228951b0",
-          "createdAt": "2026-07-12T07:36:33.838Z",
-          "updatedAt": "2026-07-12T07:36:33.838Z",
-          "category": {
-            "id": "06daaf7f-2e7d-49fa-9d7f-ced2cdb03081",
-            "name": "Vehicle",
-            "code": "VEH"
-          },
-          "department": {
-            "id": "bde64540-a02b-4c7e-8cdb-d0cf228951b0",
-            "name": "Operations",
-            "code": "OPS",
-            "status": "ACTIVE"
-          },
-          "allocations": [],
-          "assetTag": "VEH-001",
-          "currentAllocation": null
-        },
-        {
-          "id": "b0509c19-9cc2-4d2c-930d-f1f793bf34fd",
+          "id": "b2547b49-b098-45b6-8def-a2da048c3544",
           "assetCode": "FUR-001",
           "serialNumber": "SN-FUR-001",
           "name": "Ergonomic Chair",
@@ -909,17 +878,17 @@
           "purchaseValue": null,
           "warrantyExpiry": null,
           "isBookable": false,
-          "categoryId": "30043e42-0f08-421e-a5e9-3a5498754a4f",
-          "departmentId": "bde64540-a02b-4c7e-8cdb-d0cf228951b0",
-          "createdAt": "2026-07-12T07:36:33.838Z",
-          "updatedAt": "2026-07-12T07:36:33.838Z",
+          "categoryId": "bbbb24e5-16fe-4e1a-88ee-f305aa470f06",
+          "departmentId": "7ce0f221-097e-45b2-98fc-5617fcd72030",
+          "createdAt": "2026-07-12T07:51:02.244Z",
+          "updatedAt": "2026-07-12T07:51:02.244Z",
           "category": {
-            "id": "30043e42-0f08-421e-a5e9-3a5498754a4f",
+            "id": "bbbb24e5-16fe-4e1a-88ee-f305aa470f06",
             "name": "Furniture",
             "code": "FUR"
           },
           "department": {
-            "id": "bde64540-a02b-4c7e-8cdb-d0cf228951b0",
+            "id": "7ce0f221-097e-45b2-98fc-5617fcd72030",
             "name": "Operations",
             "code": "OPS",
             "status": "ACTIVE"
@@ -929,38 +898,7 @@
           "currentAllocation": null
         },
         {
-          "id": "34152d6d-62bb-43bf-9b0c-cc238d9ff912",
-          "assetCode": "LAP-002",
-          "serialNumber": "SN-LAP-002",
-          "name": "MacBook Air M3",
-          "status": "AVAILABLE",
-          "condition": "NEW",
-          "location": "IT Store",
-          "purchaseDate": null,
-          "purchaseValue": null,
-          "warrantyExpiry": null,
-          "isBookable": false,
-          "categoryId": "ebb6782c-200b-47e1-814f-cdb3bbffb8c3",
-          "departmentId": "7bc9aac2-7a82-4608-bf74-04070419fe4e",
-          "createdAt": "2026-07-12T07:36:33.837Z",
-          "updatedAt": "2026-07-12T07:36:33.837Z",
-          "category": {
-            "id": "ebb6782c-200b-47e1-814f-cdb3bbffb8c3",
-            "name": "Laptop",
-            "code": "LAP"
-          },
-          "department": {
-            "id": "7bc9aac2-7a82-4608-bf74-04070419fe4e",
-            "name": "Information Technology",
-            "code": "IT",
-            "status": "ACTIVE"
-          },
-          "allocations": [],
-          "assetTag": "LAP-002",
-          "currentAllocation": null
-        },
-        {
-          "id": "75c7d83c-8565-4632-b54c-28125c95be09",
+          "id": "97b23182-1068-4b59-b823-d3c34134318b",
           "assetCode": "PROJ-001",
           "serialNumber": "SN-PROJ-001",
           "name": "Epson Conference Projector",
@@ -971,23 +909,85 @@
           "purchaseValue": null,
           "warrantyExpiry": null,
           "isBookable": true,
-          "categoryId": "2cde471e-ced8-4ec0-884f-ab1208309c05",
-          "departmentId": "bde64540-a02b-4c7e-8cdb-d0cf228951b0",
-          "createdAt": "2026-07-12T07:36:33.837Z",
-          "updatedAt": "2026-07-12T07:36:33.837Z",
+          "categoryId": "518cff01-9429-4af1-8b1b-d2e81bc5bce7",
+          "departmentId": "7ce0f221-097e-45b2-98fc-5617fcd72030",
+          "createdAt": "2026-07-12T07:51:02.243Z",
+          "updatedAt": "2026-07-12T07:51:02.243Z",
           "category": {
-            "id": "2cde471e-ced8-4ec0-884f-ab1208309c05",
+            "id": "518cff01-9429-4af1-8b1b-d2e81bc5bce7",
             "name": "Projector",
             "code": "PROJ"
           },
           "department": {
-            "id": "bde64540-a02b-4c7e-8cdb-d0cf228951b0",
+            "id": "7ce0f221-097e-45b2-98fc-5617fcd72030",
             "name": "Operations",
             "code": "OPS",
             "status": "ACTIVE"
           },
           "allocations": [],
           "assetTag": "PROJ-001",
+          "currentAllocation": null
+        },
+        {
+          "id": "35713584-e8d2-45ee-b398-b0725b497f0a",
+          "assetCode": "VEH-001",
+          "serialNumber": "SN-VEH-001",
+          "name": "Office Shuttle",
+          "status": "AVAILABLE",
+          "condition": "GOOD",
+          "location": "Parking Bay 4",
+          "purchaseDate": null,
+          "purchaseValue": null,
+          "warrantyExpiry": null,
+          "isBookable": true,
+          "categoryId": "5d307f8b-e65b-4523-884e-5b628053d0d8",
+          "departmentId": "7ce0f221-097e-45b2-98fc-5617fcd72030",
+          "createdAt": "2026-07-12T07:51:02.243Z",
+          "updatedAt": "2026-07-12T07:51:02.243Z",
+          "category": {
+            "id": "5d307f8b-e65b-4523-884e-5b628053d0d8",
+            "name": "Vehicle",
+            "code": "VEH"
+          },
+          "department": {
+            "id": "7ce0f221-097e-45b2-98fc-5617fcd72030",
+            "name": "Operations",
+            "code": "OPS",
+            "status": "ACTIVE"
+          },
+          "allocations": [],
+          "assetTag": "VEH-001",
+          "currentAllocation": null
+        },
+        {
+          "id": "5ef7737a-64bf-408a-87dd-9e561686676c",
+          "assetCode": "LAP-002",
+          "serialNumber": "SN-LAP-002",
+          "name": "MacBook Air M3",
+          "status": "AVAILABLE",
+          "condition": "NEW",
+          "location": "IT Store",
+          "purchaseDate": null,
+          "purchaseValue": null,
+          "warrantyExpiry": null,
+          "isBookable": false,
+          "categoryId": "15dc0030-5daa-4487-a1ee-1e5562b3a913",
+          "departmentId": "e53b9027-1778-4fb0-89f8-a02d5b8ba8e6",
+          "createdAt": "2026-07-12T07:51:02.242Z",
+          "updatedAt": "2026-07-12T07:51:02.242Z",
+          "category": {
+            "id": "15dc0030-5daa-4487-a1ee-1e5562b3a913",
+            "name": "Laptop",
+            "code": "LAP"
+          },
+          "department": {
+            "id": "e53b9027-1778-4fb0-89f8-a02d5b8ba8e6",
+            "name": "Information Technology",
+            "code": "IT",
+            "status": "ACTIVE"
+          },
+          "allocations": [],
+          "assetTag": "LAP-002",
           "currentAllocation": null
         }
       ],
@@ -1066,10 +1066,10 @@
         },
         "category": {
           "labels": [
-            "Laptop",
-            "Vehicle",
+            "Furniture",
             "Projector",
-            "Furniture"
+            "Laptop",
+            "Vehicle"
           ],
           "datasets": [
             {
@@ -1086,10 +1086,10 @@
             "assets": 4
           },
           "percentages": {
-            "Laptop": 25,
-            "Vehicle": 25,
+            "Furniture": 25,
             "Projector": 25,
-            "Furniture": 25
+            "Laptop": 25,
+            "Vehicle": 25
           }
         }
       }
@@ -1109,13 +1109,13 @@
           "_count": {
             "assetId": 1
           },
-          "assetId": "3103e4dd-03af-49b3-bc43-fe4fa262e949"
+          "assetId": "35713584-e8d2-45ee-b398-b0725b497f0a"
         },
         {
           "_count": {
             "assetId": 1
           },
-          "assetId": "75c7d83c-8565-4632-b54c-28125c95be09"
+          "assetId": "97b23182-1068-4b59-b823-d3c34134318b"
         }
       ],
       "peakHours": [
@@ -1267,7 +1267,7 @@
           "_count": {
             "assetId": 1
           },
-          "assetId": "6dc5682e-1125-4494-ba9b-1afcc5a4ffe5"
+          "assetId": "2cdff9c5-7d84-48fe-9f3e-6bc0547de520"
         }
       ],
       "maintenanceCost": {
@@ -1277,18 +1277,18 @@
       "assetDowntimeHours": 0,
       "mostRepairedAssets": [
         {
-          "assetId": "6dc5682e-1125-4494-ba9b-1afcc5a4ffe5",
+          "assetId": "2cdff9c5-7d84-48fe-9f3e-6bc0547de520",
           "asset": {
-            "id": "6dc5682e-1125-4494-ba9b-1afcc5a4ffe5",
+            "id": "2cdff9c5-7d84-48fe-9f3e-6bc0547de520",
             "assetCode": "MON-001",
             "serialNumber": "SN-MON-001",
             "name": "Dell 27 Inch Monitor",
             "status": "MAINTENANCE",
             "condition": "FAIR",
-            "departmentId": "fb263355-709e-4c81-9714-a114f95bf3ce",
+            "departmentId": "d895b0b8-a93b-448a-a608-60010811a58a",
             "location": "Finance Bay",
             "department": {
-              "id": "fb263355-709e-4c81-9714-a114f95bf3ce",
+              "id": "d895b0b8-a93b-448a-a608-60010811a58a",
               "name": "Finance",
               "code": "FIN",
               "status": "ACTIVE"
@@ -1701,7 +1701,7 @@
       "departmentUtilization": [
         {
           "department": {
-            "id": "7bc9aac2-7a82-4608-bf74-04070419fe4e",
+            "id": "e53b9027-1778-4fb0-89f8-a02d5b8ba8e6",
             "name": "Information Technology",
             "code": "IT",
             "status": "ACTIVE"
@@ -1757,7 +1757,7 @@
     "data": {
       "items": [
         {
-          "id": "34152d6d-62bb-43bf-9b0c-cc238d9ff912",
+          "id": "5ef7737a-64bf-408a-87dd-9e561686676c",
           "assetCode": "LAP-002",
           "serialNumber": "SN-LAP-002",
           "name": "MacBook Air M3",
@@ -1768,17 +1768,17 @@
           "purchaseValue": null,
           "warrantyExpiry": null,
           "isBookable": false,
-          "categoryId": "ebb6782c-200b-47e1-814f-cdb3bbffb8c3",
-          "departmentId": "7bc9aac2-7a82-4608-bf74-04070419fe4e",
-          "createdAt": "2026-07-12T07:36:33.837Z",
-          "updatedAt": "2026-07-12T07:36:33.837Z",
+          "categoryId": "15dc0030-5daa-4487-a1ee-1e5562b3a913",
+          "departmentId": "e53b9027-1778-4fb0-89f8-a02d5b8ba8e6",
+          "createdAt": "2026-07-12T07:51:02.242Z",
+          "updatedAt": "2026-07-12T07:51:02.242Z",
           "category": {
-            "id": "ebb6782c-200b-47e1-814f-cdb3bbffb8c3",
+            "id": "15dc0030-5daa-4487-a1ee-1e5562b3a913",
             "name": "Laptop",
             "code": "LAP"
           },
           "department": {
-            "id": "7bc9aac2-7a82-4608-bf74-04070419fe4e",
+            "id": "e53b9027-1778-4fb0-89f8-a02d5b8ba8e6",
             "name": "Information Technology",
             "code": "IT",
             "status": "ACTIVE"
@@ -1801,7 +1801,7 @@
           }
         },
         {
-          "id": "3103e4dd-03af-49b3-bc43-fe4fa262e949",
+          "id": "35713584-e8d2-45ee-b398-b0725b497f0a",
           "assetCode": "VEH-001",
           "serialNumber": "SN-VEH-001",
           "name": "Office Shuttle",
@@ -1812,17 +1812,17 @@
           "purchaseValue": null,
           "warrantyExpiry": null,
           "isBookable": true,
-          "categoryId": "06daaf7f-2e7d-49fa-9d7f-ced2cdb03081",
-          "departmentId": "bde64540-a02b-4c7e-8cdb-d0cf228951b0",
-          "createdAt": "2026-07-12T07:36:33.838Z",
-          "updatedAt": "2026-07-12T07:36:33.838Z",
+          "categoryId": "5d307f8b-e65b-4523-884e-5b628053d0d8",
+          "departmentId": "7ce0f221-097e-45b2-98fc-5617fcd72030",
+          "createdAt": "2026-07-12T07:51:02.243Z",
+          "updatedAt": "2026-07-12T07:51:02.243Z",
           "category": {
-            "id": "06daaf7f-2e7d-49fa-9d7f-ced2cdb03081",
+            "id": "5d307f8b-e65b-4523-884e-5b628053d0d8",
             "name": "Vehicle",
             "code": "VEH"
           },
           "department": {
-            "id": "bde64540-a02b-4c7e-8cdb-d0cf228951b0",
+            "id": "7ce0f221-097e-45b2-98fc-5617fcd72030",
             "name": "Operations",
             "code": "OPS",
             "status": "ACTIVE"
@@ -1845,7 +1845,7 @@
           }
         },
         {
-          "id": "b0509c19-9cc2-4d2c-930d-f1f793bf34fd",
+          "id": "b2547b49-b098-45b6-8def-a2da048c3544",
           "assetCode": "FUR-001",
           "serialNumber": "SN-FUR-001",
           "name": "Ergonomic Chair",
@@ -1856,17 +1856,17 @@
           "purchaseValue": null,
           "warrantyExpiry": null,
           "isBookable": false,
-          "categoryId": "30043e42-0f08-421e-a5e9-3a5498754a4f",
-          "departmentId": "bde64540-a02b-4c7e-8cdb-d0cf228951b0",
-          "createdAt": "2026-07-12T07:36:33.838Z",
-          "updatedAt": "2026-07-12T07:36:33.838Z",
+          "categoryId": "bbbb24e5-16fe-4e1a-88ee-f305aa470f06",
+          "departmentId": "7ce0f221-097e-45b2-98fc-5617fcd72030",
+          "createdAt": "2026-07-12T07:51:02.244Z",
+          "updatedAt": "2026-07-12T07:51:02.244Z",
           "category": {
-            "id": "30043e42-0f08-421e-a5e9-3a5498754a4f",
+            "id": "bbbb24e5-16fe-4e1a-88ee-f305aa470f06",
             "name": "Furniture",
             "code": "FUR"
           },
           "department": {
-            "id": "bde64540-a02b-4c7e-8cdb-d0cf228951b0",
+            "id": "7ce0f221-097e-45b2-98fc-5617fcd72030",
             "name": "Operations",
             "code": "OPS",
             "status": "ACTIVE"
@@ -1904,7 +1904,7 @@
     "data": {
       "items": [
         {
-          "id": "3103e4dd-03af-49b3-bc43-fe4fa262e949",
+          "id": "35713584-e8d2-45ee-b398-b0725b497f0a",
           "assetCode": "VEH-001",
           "serialNumber": "SN-VEH-001",
           "name": "Office Shuttle",
@@ -1915,17 +1915,17 @@
           "purchaseValue": null,
           "warrantyExpiry": null,
           "isBookable": true,
-          "categoryId": "06daaf7f-2e7d-49fa-9d7f-ced2cdb03081",
-          "departmentId": "bde64540-a02b-4c7e-8cdb-d0cf228951b0",
-          "createdAt": "2026-07-12T07:36:33.838Z",
-          "updatedAt": "2026-07-12T07:36:33.838Z",
+          "categoryId": "5d307f8b-e65b-4523-884e-5b628053d0d8",
+          "departmentId": "7ce0f221-097e-45b2-98fc-5617fcd72030",
+          "createdAt": "2026-07-12T07:51:02.243Z",
+          "updatedAt": "2026-07-12T07:51:02.243Z",
           "category": {
-            "id": "06daaf7f-2e7d-49fa-9d7f-ced2cdb03081",
+            "id": "5d307f8b-e65b-4523-884e-5b628053d0d8",
             "name": "Vehicle",
             "code": "VEH"
           },
           "department": {
-            "id": "bde64540-a02b-4c7e-8cdb-d0cf228951b0",
+            "id": "7ce0f221-097e-45b2-98fc-5617fcd72030",
             "name": "Operations",
             "code": "OPS",
             "status": "ACTIVE"
@@ -1946,7 +1946,7 @@
           }
         },
         {
-          "id": "75c7d83c-8565-4632-b54c-28125c95be09",
+          "id": "97b23182-1068-4b59-b823-d3c34134318b",
           "assetCode": "PROJ-001",
           "serialNumber": "SN-PROJ-001",
           "name": "Epson Conference Projector",
@@ -1957,17 +1957,17 @@
           "purchaseValue": null,
           "warrantyExpiry": null,
           "isBookable": true,
-          "categoryId": "2cde471e-ced8-4ec0-884f-ab1208309c05",
-          "departmentId": "bde64540-a02b-4c7e-8cdb-d0cf228951b0",
-          "createdAt": "2026-07-12T07:36:33.837Z",
-          "updatedAt": "2026-07-12T07:36:33.837Z",
+          "categoryId": "518cff01-9429-4af1-8b1b-d2e81bc5bce7",
+          "departmentId": "7ce0f221-097e-45b2-98fc-5617fcd72030",
+          "createdAt": "2026-07-12T07:51:02.243Z",
+          "updatedAt": "2026-07-12T07:51:02.243Z",
           "category": {
-            "id": "2cde471e-ced8-4ec0-884f-ab1208309c05",
+            "id": "518cff01-9429-4af1-8b1b-d2e81bc5bce7",
             "name": "Projector",
             "code": "PROJ"
           },
           "department": {
-            "id": "bde64540-a02b-4c7e-8cdb-d0cf228951b0",
+            "id": "7ce0f221-097e-45b2-98fc-5617fcd72030",
             "name": "Operations",
             "code": "OPS",
             "status": "ACTIVE"
@@ -1988,7 +1988,7 @@
           }
         },
         {
-          "id": "e2f5507f-56df-4a9f-92b0-8ce1dd4cf861",
+          "id": "cc40d166-b62b-425d-b35c-978ef57dee36",
           "assetCode": "LAP-001",
           "serialNumber": "SN-LAP-001",
           "name": "Dell Latitude 5440",
@@ -1999,43 +1999,43 @@
           "purchaseValue": "95000",
           "warrantyExpiry": null,
           "isBookable": false,
-          "categoryId": "ebb6782c-200b-47e1-814f-cdb3bbffb8c3",
-          "departmentId": "7bc9aac2-7a82-4608-bf74-04070419fe4e",
-          "createdAt": "2026-07-12T07:36:33.836Z",
-          "updatedAt": "2026-07-12T07:36:33.836Z",
+          "categoryId": "15dc0030-5daa-4487-a1ee-1e5562b3a913",
+          "departmentId": "e53b9027-1778-4fb0-89f8-a02d5b8ba8e6",
+          "createdAt": "2026-07-12T07:51:02.241Z",
+          "updatedAt": "2026-07-12T07:51:02.241Z",
           "category": {
-            "id": "ebb6782c-200b-47e1-814f-cdb3bbffb8c3",
+            "id": "15dc0030-5daa-4487-a1ee-1e5562b3a913",
             "name": "Laptop",
             "code": "LAP"
           },
           "department": {
-            "id": "7bc9aac2-7a82-4608-bf74-04070419fe4e",
+            "id": "e53b9027-1778-4fb0-89f8-a02d5b8ba8e6",
             "name": "Information Technology",
             "code": "IT",
             "status": "ACTIVE"
           },
           "allocations": [
             {
-              "id": "ec014cfa-ade1-4923-b6be-075696b584b3",
-              "assetId": "e2f5507f-56df-4a9f-92b0-8ce1dd4cf861",
-              "userId": "44aeea02-baba-4915-8a21-303b37508485",
+              "id": "df1e17b9-bd40-4fdd-9746-62c59a9e213a",
+              "assetId": "cc40d166-b62b-425d-b35c-978ef57dee36",
+              "userId": "87c7582a-504b-4694-ba34-29b9613770c1",
               "departmentId": null,
-              "assignedById": "d3a4d3f9-c3ca-4adc-8b4b-d2415e733dbd",
+              "assignedById": "f3ebbf21-4a70-4605-8a49-b9ee995ae161",
               "sourceTransferId": null,
               "status": "ACTIVE",
-              "assignedAt": "2026-07-12T07:36:33.838Z",
+              "assignedAt": "2026-07-12T07:51:02.244Z",
               "returnedAt": null,
               "returnCondition": null,
               "returnReason": null,
               "notes": "Seed allocation for demo.",
-              "createdAt": "2026-07-12T07:36:33.838Z",
-              "updatedAt": "2026-07-12T07:36:33.838Z",
+              "createdAt": "2026-07-12T07:51:02.244Z",
+              "updatedAt": "2026-07-12T07:51:02.244Z",
               "user": {
-                "id": "44aeea02-baba-4915-8a21-303b37508485",
+                "id": "87c7582a-504b-4694-ba34-29b9613770c1",
                 "name": "Employee User",
                 "email": "employee@assetflow.local",
                 "role": "EMPLOYEE",
-                "departmentId": "7bc9aac2-7a82-4608-bf74-04070419fe4e"
+                "departmentId": "e53b9027-1778-4fb0-89f8-a02d5b8ba8e6"
               },
               "department": null
             }
@@ -2047,26 +2047,26 @@
           },
           "assetTag": "LAP-001",
           "currentAllocation": {
-            "id": "ec014cfa-ade1-4923-b6be-075696b584b3",
-            "assetId": "e2f5507f-56df-4a9f-92b0-8ce1dd4cf861",
-            "userId": "44aeea02-baba-4915-8a21-303b37508485",
+            "id": "df1e17b9-bd40-4fdd-9746-62c59a9e213a",
+            "assetId": "cc40d166-b62b-425d-b35c-978ef57dee36",
+            "userId": "87c7582a-504b-4694-ba34-29b9613770c1",
             "departmentId": null,
-            "assignedById": "d3a4d3f9-c3ca-4adc-8b4b-d2415e733dbd",
+            "assignedById": "f3ebbf21-4a70-4605-8a49-b9ee995ae161",
             "sourceTransferId": null,
             "status": "ACTIVE",
-            "assignedAt": "2026-07-12T07:36:33.838Z",
+            "assignedAt": "2026-07-12T07:51:02.244Z",
             "returnedAt": null,
             "returnCondition": null,
             "returnReason": null,
             "notes": "Seed allocation for demo.",
-            "createdAt": "2026-07-12T07:36:33.838Z",
-            "updatedAt": "2026-07-12T07:36:33.838Z",
+            "createdAt": "2026-07-12T07:51:02.244Z",
+            "updatedAt": "2026-07-12T07:51:02.244Z",
             "user": {
-              "id": "44aeea02-baba-4915-8a21-303b37508485",
+              "id": "87c7582a-504b-4694-ba34-29b9613770c1",
               "name": "Employee User",
               "email": "employee@assetflow.local",
               "role": "EMPLOYEE",
-              "departmentId": "7bc9aac2-7a82-4608-bf74-04070419fe4e"
+              "departmentId": "e53b9027-1778-4fb0-89f8-a02d5b8ba8e6"
             },
             "department": null
           },
@@ -2078,49 +2078,7 @@
           }
         },
         {
-          "id": "34152d6d-62bb-43bf-9b0c-cc238d9ff912",
-          "assetCode": "LAP-002",
-          "serialNumber": "SN-LAP-002",
-          "name": "MacBook Air M3",
-          "status": "AVAILABLE",
-          "condition": "NEW",
-          "location": "IT Store",
-          "purchaseDate": null,
-          "purchaseValue": null,
-          "warrantyExpiry": null,
-          "isBookable": false,
-          "categoryId": "ebb6782c-200b-47e1-814f-cdb3bbffb8c3",
-          "departmentId": "7bc9aac2-7a82-4608-bf74-04070419fe4e",
-          "createdAt": "2026-07-12T07:36:33.837Z",
-          "updatedAt": "2026-07-12T07:36:33.837Z",
-          "category": {
-            "id": "ebb6782c-200b-47e1-814f-cdb3bbffb8c3",
-            "name": "Laptop",
-            "code": "LAP"
-          },
-          "department": {
-            "id": "7bc9aac2-7a82-4608-bf74-04070419fe4e",
-            "name": "Information Technology",
-            "code": "IT",
-            "status": "ACTIVE"
-          },
-          "allocations": [],
-          "_count": {
-            "allocations": 0,
-            "bookings": 0,
-            "maintenanceTickets": 0
-          },
-          "assetTag": "LAP-002",
-          "currentAllocation": null,
-          "usage": {
-            "allocationCount": 0,
-            "bookingCount": 0,
-            "maintenanceCount": 0,
-            "totalUsage": 0
-          }
-        },
-        {
-          "id": "6dc5682e-1125-4494-ba9b-1afcc5a4ffe5",
+          "id": "2cdff9c5-7d84-48fe-9f3e-6bc0547de520",
           "assetCode": "MON-001",
           "serialNumber": "SN-MON-001",
           "name": "Dell 27 Inch Monitor",
@@ -2131,17 +2089,17 @@
           "purchaseValue": null,
           "warrantyExpiry": null,
           "isBookable": false,
-          "categoryId": "3f9651fc-a2d7-48de-8cf3-78d3c24232bd",
-          "departmentId": "fb263355-709e-4c81-9714-a114f95bf3ce",
-          "createdAt": "2026-07-12T07:36:33.838Z",
-          "updatedAt": "2026-07-12T07:36:33.838Z",
+          "categoryId": "4335e900-8bb8-42c4-a7fa-9c097f61e04e",
+          "departmentId": "d895b0b8-a93b-448a-a608-60010811a58a",
+          "createdAt": "2026-07-12T07:51:02.243Z",
+          "updatedAt": "2026-07-12T07:51:02.243Z",
           "category": {
-            "id": "3f9651fc-a2d7-48de-8cf3-78d3c24232bd",
+            "id": "4335e900-8bb8-42c4-a7fa-9c097f61e04e",
             "name": "Monitor",
             "code": "MON"
           },
           "department": {
-            "id": "fb263355-709e-4c81-9714-a114f95bf3ce",
+            "id": "d895b0b8-a93b-448a-a608-60010811a58a",
             "name": "Finance",
             "code": "FIN",
             "status": "ACTIVE"
@@ -2160,6 +2118,48 @@
             "maintenanceCount": 1,
             "totalUsage": 0
           }
+        },
+        {
+          "id": "5ef7737a-64bf-408a-87dd-9e561686676c",
+          "assetCode": "LAP-002",
+          "serialNumber": "SN-LAP-002",
+          "name": "MacBook Air M3",
+          "status": "AVAILABLE",
+          "condition": "NEW",
+          "location": "IT Store",
+          "purchaseDate": null,
+          "purchaseValue": null,
+          "warrantyExpiry": null,
+          "isBookable": false,
+          "categoryId": "15dc0030-5daa-4487-a1ee-1e5562b3a913",
+          "departmentId": "e53b9027-1778-4fb0-89f8-a02d5b8ba8e6",
+          "createdAt": "2026-07-12T07:51:02.242Z",
+          "updatedAt": "2026-07-12T07:51:02.242Z",
+          "category": {
+            "id": "15dc0030-5daa-4487-a1ee-1e5562b3a913",
+            "name": "Laptop",
+            "code": "LAP"
+          },
+          "department": {
+            "id": "e53b9027-1778-4fb0-89f8-a02d5b8ba8e6",
+            "name": "Information Technology",
+            "code": "IT",
+            "status": "ACTIVE"
+          },
+          "allocations": [],
+          "_count": {
+            "allocations": 0,
+            "bookings": 0,
+            "maintenanceTickets": 0
+          },
+          "assetTag": "LAP-002",
+          "currentAllocation": null,
+          "usage": {
+            "allocationCount": 0,
+            "bookingCount": 0,
+            "maintenanceCount": 0,
+            "totalUsage": 0
+          }
         }
       ],
       "page": 1,
@@ -2172,8 +2172,8 @@
             "Office Shuttle",
             "Epson Conference Projector",
             "Dell Latitude 5440",
-            "MacBook Air M3",
-            "Dell 27 Inch Monitor"
+            "Dell 27 Inch Monitor",
+            "MacBook Air M3"
           ],
           "datasets": [
             {
@@ -2200,7 +2200,7 @@
     "data": {
       "items": [
         {
-          "id": "6dc5682e-1125-4494-ba9b-1afcc5a4ffe5",
+          "id": "2cdff9c5-7d84-48fe-9f3e-6bc0547de520",
           "assetCode": "MON-001",
           "serialNumber": "SN-MON-001",
           "name": "Dell 27 Inch Monitor",
@@ -2211,17 +2211,17 @@
           "purchaseValue": null,
           "warrantyExpiry": null,
           "isBookable": false,
-          "categoryId": "3f9651fc-a2d7-48de-8cf3-78d3c24232bd",
-          "departmentId": "fb263355-709e-4c81-9714-a114f95bf3ce",
-          "createdAt": "2026-07-12T07:36:33.838Z",
-          "updatedAt": "2026-07-12T07:36:33.838Z",
+          "categoryId": "4335e900-8bb8-42c4-a7fa-9c097f61e04e",
+          "departmentId": "d895b0b8-a93b-448a-a608-60010811a58a",
+          "createdAt": "2026-07-12T07:51:02.243Z",
+          "updatedAt": "2026-07-12T07:51:02.243Z",
           "category": {
-            "id": "3f9651fc-a2d7-48de-8cf3-78d3c24232bd",
+            "id": "4335e900-8bb8-42c4-a7fa-9c097f61e04e",
             "name": "Monitor",
             "code": "MON"
           },
           "department": {
-            "id": "fb263355-709e-4c81-9714-a114f95bf3ce",
+            "id": "d895b0b8-a93b-448a-a608-60010811a58a",
             "name": "Finance",
             "code": "FIN",
             "status": "ACTIVE"
@@ -2688,7 +2688,7 @@
       },
       "idleAssets": [
         {
-          "id": "3103e4dd-03af-49b3-bc43-fe4fa262e949",
+          "id": "35713584-e8d2-45ee-b398-b0725b497f0a",
           "assetCode": "VEH-001",
           "serialNumber": "SN-VEH-001",
           "name": "Office Shuttle",
@@ -2699,17 +2699,17 @@
           "purchaseValue": null,
           "warrantyExpiry": null,
           "isBookable": true,
-          "categoryId": "06daaf7f-2e7d-49fa-9d7f-ced2cdb03081",
-          "departmentId": "bde64540-a02b-4c7e-8cdb-d0cf228951b0",
-          "createdAt": "2026-07-12T07:36:33.838Z",
-          "updatedAt": "2026-07-12T07:36:33.838Z",
+          "categoryId": "5d307f8b-e65b-4523-884e-5b628053d0d8",
+          "departmentId": "7ce0f221-097e-45b2-98fc-5617fcd72030",
+          "createdAt": "2026-07-12T07:51:02.243Z",
+          "updatedAt": "2026-07-12T07:51:02.243Z",
           "category": {
-            "id": "06daaf7f-2e7d-49fa-9d7f-ced2cdb03081",
+            "id": "5d307f8b-e65b-4523-884e-5b628053d0d8",
             "name": "Vehicle",
             "code": "VEH"
           },
           "department": {
-            "id": "bde64540-a02b-4c7e-8cdb-d0cf228951b0",
+            "id": "7ce0f221-097e-45b2-98fc-5617fcd72030",
             "name": "Operations",
             "code": "OPS",
             "status": "ACTIVE"
@@ -2734,7 +2734,7 @@
       ],
       "frequentlyUsedAssets": [
         {
-          "id": "3103e4dd-03af-49b3-bc43-fe4fa262e949",
+          "id": "35713584-e8d2-45ee-b398-b0725b497f0a",
           "assetCode": "VEH-001",
           "serialNumber": "SN-VEH-001",
           "name": "Office Shuttle",
@@ -2745,17 +2745,17 @@
           "purchaseValue": null,
           "warrantyExpiry": null,
           "isBookable": true,
-          "categoryId": "06daaf7f-2e7d-49fa-9d7f-ced2cdb03081",
-          "departmentId": "bde64540-a02b-4c7e-8cdb-d0cf228951b0",
-          "createdAt": "2026-07-12T07:36:33.838Z",
-          "updatedAt": "2026-07-12T07:36:33.838Z",
+          "categoryId": "5d307f8b-e65b-4523-884e-5b628053d0d8",
+          "departmentId": "7ce0f221-097e-45b2-98fc-5617fcd72030",
+          "createdAt": "2026-07-12T07:51:02.243Z",
+          "updatedAt": "2026-07-12T07:51:02.243Z",
           "category": {
-            "id": "06daaf7f-2e7d-49fa-9d7f-ced2cdb03081",
+            "id": "5d307f8b-e65b-4523-884e-5b628053d0d8",
             "name": "Vehicle",
             "code": "VEH"
           },
           "department": {
-            "id": "bde64540-a02b-4c7e-8cdb-d0cf228951b0",
+            "id": "7ce0f221-097e-45b2-98fc-5617fcd72030",
             "name": "Operations",
             "code": "OPS",
             "status": "ACTIVE"
@@ -2776,7 +2776,7 @@
           }
         },
         {
-          "id": "75c7d83c-8565-4632-b54c-28125c95be09",
+          "id": "97b23182-1068-4b59-b823-d3c34134318b",
           "assetCode": "PROJ-001",
           "serialNumber": "SN-PROJ-001",
           "name": "Epson Conference Projector",
@@ -2787,17 +2787,17 @@
           "purchaseValue": null,
           "warrantyExpiry": null,
           "isBookable": true,
-          "categoryId": "2cde471e-ced8-4ec0-884f-ab1208309c05",
-          "departmentId": "bde64540-a02b-4c7e-8cdb-d0cf228951b0",
-          "createdAt": "2026-07-12T07:36:33.837Z",
-          "updatedAt": "2026-07-12T07:36:33.837Z",
+          "categoryId": "518cff01-9429-4af1-8b1b-d2e81bc5bce7",
+          "departmentId": "7ce0f221-097e-45b2-98fc-5617fcd72030",
+          "createdAt": "2026-07-12T07:51:02.243Z",
+          "updatedAt": "2026-07-12T07:51:02.243Z",
           "category": {
-            "id": "2cde471e-ced8-4ec0-884f-ab1208309c05",
+            "id": "518cff01-9429-4af1-8b1b-d2e81bc5bce7",
             "name": "Projector",
             "code": "PROJ"
           },
           "department": {
-            "id": "bde64540-a02b-4c7e-8cdb-d0cf228951b0",
+            "id": "7ce0f221-097e-45b2-98fc-5617fcd72030",
             "name": "Operations",
             "code": "OPS",
             "status": "ACTIVE"
@@ -2818,7 +2818,7 @@
           }
         },
         {
-          "id": "e2f5507f-56df-4a9f-92b0-8ce1dd4cf861",
+          "id": "cc40d166-b62b-425d-b35c-978ef57dee36",
           "assetCode": "LAP-001",
           "serialNumber": "SN-LAP-001",
           "name": "Dell Latitude 5440",
@@ -2829,43 +2829,43 @@
           "purchaseValue": "95000",
           "warrantyExpiry": null,
           "isBookable": false,
-          "categoryId": "ebb6782c-200b-47e1-814f-cdb3bbffb8c3",
-          "departmentId": "7bc9aac2-7a82-4608-bf74-04070419fe4e",
-          "createdAt": "2026-07-12T07:36:33.836Z",
-          "updatedAt": "2026-07-12T07:36:33.836Z",
+          "categoryId": "15dc0030-5daa-4487-a1ee-1e5562b3a913",
+          "departmentId": "e53b9027-1778-4fb0-89f8-a02d5b8ba8e6",
+          "createdAt": "2026-07-12T07:51:02.241Z",
+          "updatedAt": "2026-07-12T07:51:02.241Z",
           "category": {
-            "id": "ebb6782c-200b-47e1-814f-cdb3bbffb8c3",
+            "id": "15dc0030-5daa-4487-a1ee-1e5562b3a913",
             "name": "Laptop",
             "code": "LAP"
           },
           "department": {
-            "id": "7bc9aac2-7a82-4608-bf74-04070419fe4e",
+            "id": "e53b9027-1778-4fb0-89f8-a02d5b8ba8e6",
             "name": "Information Technology",
             "code": "IT",
             "status": "ACTIVE"
           },
           "allocations": [
             {
-              "id": "ec014cfa-ade1-4923-b6be-075696b584b3",
-              "assetId": "e2f5507f-56df-4a9f-92b0-8ce1dd4cf861",
-              "userId": "44aeea02-baba-4915-8a21-303b37508485",
+              "id": "df1e17b9-bd40-4fdd-9746-62c59a9e213a",
+              "assetId": "cc40d166-b62b-425d-b35c-978ef57dee36",
+              "userId": "87c7582a-504b-4694-ba34-29b9613770c1",
               "departmentId": null,
-              "assignedById": "d3a4d3f9-c3ca-4adc-8b4b-d2415e733dbd",
+              "assignedById": "f3ebbf21-4a70-4605-8a49-b9ee995ae161",
               "sourceTransferId": null,
               "status": "ACTIVE",
-              "assignedAt": "2026-07-12T07:36:33.838Z",
+              "assignedAt": "2026-07-12T07:51:02.244Z",
               "returnedAt": null,
               "returnCondition": null,
               "returnReason": null,
               "notes": "Seed allocation for demo.",
-              "createdAt": "2026-07-12T07:36:33.838Z",
-              "updatedAt": "2026-07-12T07:36:33.838Z",
+              "createdAt": "2026-07-12T07:51:02.244Z",
+              "updatedAt": "2026-07-12T07:51:02.244Z",
               "user": {
-                "id": "44aeea02-baba-4915-8a21-303b37508485",
+                "id": "87c7582a-504b-4694-ba34-29b9613770c1",
                 "name": "Employee User",
                 "email": "employee@assetflow.local",
                 "role": "EMPLOYEE",
-                "departmentId": "7bc9aac2-7a82-4608-bf74-04070419fe4e"
+                "departmentId": "e53b9027-1778-4fb0-89f8-a02d5b8ba8e6"
               },
               "department": null
             }
@@ -2877,26 +2877,26 @@
           },
           "assetTag": "LAP-001",
           "currentAllocation": {
-            "id": "ec014cfa-ade1-4923-b6be-075696b584b3",
-            "assetId": "e2f5507f-56df-4a9f-92b0-8ce1dd4cf861",
-            "userId": "44aeea02-baba-4915-8a21-303b37508485",
+            "id": "df1e17b9-bd40-4fdd-9746-62c59a9e213a",
+            "assetId": "cc40d166-b62b-425d-b35c-978ef57dee36",
+            "userId": "87c7582a-504b-4694-ba34-29b9613770c1",
             "departmentId": null,
-            "assignedById": "d3a4d3f9-c3ca-4adc-8b4b-d2415e733dbd",
+            "assignedById": "f3ebbf21-4a70-4605-8a49-b9ee995ae161",
             "sourceTransferId": null,
             "status": "ACTIVE",
-            "assignedAt": "2026-07-12T07:36:33.838Z",
+            "assignedAt": "2026-07-12T07:51:02.244Z",
             "returnedAt": null,
             "returnCondition": null,
             "returnReason": null,
             "notes": "Seed allocation for demo.",
-            "createdAt": "2026-07-12T07:36:33.838Z",
-            "updatedAt": "2026-07-12T07:36:33.838Z",
+            "createdAt": "2026-07-12T07:51:02.244Z",
+            "updatedAt": "2026-07-12T07:51:02.244Z",
             "user": {
-              "id": "44aeea02-baba-4915-8a21-303b37508485",
+              "id": "87c7582a-504b-4694-ba34-29b9613770c1",
               "name": "Employee User",
               "email": "employee@assetflow.local",
               "role": "EMPLOYEE",
-              "departmentId": "7bc9aac2-7a82-4608-bf74-04070419fe4e"
+              "departmentId": "e53b9027-1778-4fb0-89f8-a02d5b8ba8e6"
             },
             "department": null
           },
@@ -2908,7 +2908,7 @@
           }
         },
         {
-          "id": "6dc5682e-1125-4494-ba9b-1afcc5a4ffe5",
+          "id": "2cdff9c5-7d84-48fe-9f3e-6bc0547de520",
           "assetCode": "MON-001",
           "serialNumber": "SN-MON-001",
           "name": "Dell 27 Inch Monitor",
@@ -2919,17 +2919,17 @@
           "purchaseValue": null,
           "warrantyExpiry": null,
           "isBookable": false,
-          "categoryId": "3f9651fc-a2d7-48de-8cf3-78d3c24232bd",
-          "departmentId": "fb263355-709e-4c81-9714-a114f95bf3ce",
-          "createdAt": "2026-07-12T07:36:33.838Z",
-          "updatedAt": "2026-07-12T07:36:33.838Z",
+          "categoryId": "4335e900-8bb8-42c4-a7fa-9c097f61e04e",
+          "departmentId": "d895b0b8-a93b-448a-a608-60010811a58a",
+          "createdAt": "2026-07-12T07:51:02.243Z",
+          "updatedAt": "2026-07-12T07:51:02.243Z",
           "category": {
-            "id": "3f9651fc-a2d7-48de-8cf3-78d3c24232bd",
+            "id": "4335e900-8bb8-42c4-a7fa-9c097f61e04e",
             "name": "Monitor",
             "code": "MON"
           },
           "department": {
-            "id": "fb263355-709e-4c81-9714-a114f95bf3ce",
+            "id": "d895b0b8-a93b-448a-a608-60010811a58a",
             "name": "Finance",
             "code": "FIN",
             "status": "ACTIVE"
@@ -2953,7 +2953,7 @@
       "upcomingMaintenance": [],
       "nearRetirement": [
         {
-          "id": "6dc5682e-1125-4494-ba9b-1afcc5a4ffe5",
+          "id": "2cdff9c5-7d84-48fe-9f3e-6bc0547de520",
           "assetCode": "MON-001",
           "serialNumber": "SN-MON-001",
           "name": "Dell 27 Inch Monitor",
@@ -2964,17 +2964,17 @@
           "purchaseValue": null,
           "warrantyExpiry": null,
           "isBookable": false,
-          "categoryId": "3f9651fc-a2d7-48de-8cf3-78d3c24232bd",
-          "departmentId": "fb263355-709e-4c81-9714-a114f95bf3ce",
-          "createdAt": "2026-07-12T07:36:33.838Z",
-          "updatedAt": "2026-07-12T07:36:33.838Z",
+          "categoryId": "4335e900-8bb8-42c4-a7fa-9c097f61e04e",
+          "departmentId": "d895b0b8-a93b-448a-a608-60010811a58a",
+          "createdAt": "2026-07-12T07:51:02.243Z",
+          "updatedAt": "2026-07-12T07:51:02.243Z",
           "category": {
-            "id": "3f9651fc-a2d7-48de-8cf3-78d3c24232bd",
+            "id": "4335e900-8bb8-42c4-a7fa-9c097f61e04e",
             "name": "Monitor",
             "code": "MON"
           },
           "department": {
-            "id": "fb263355-709e-4c81-9714-a114f95bf3ce",
+            "id": "d895b0b8-a93b-448a-a608-60010811a58a",
             "name": "Finance",
             "code": "FIN",
             "status": "ACTIVE"
@@ -3006,69 +3006,7 @@
       "data": {
         "items": [
           {
-            "id": "3103e4dd-03af-49b3-bc43-fe4fa262e949",
-            "assetCode": "VEH-001",
-            "serialNumber": "SN-VEH-001",
-            "name": "Office Shuttle",
-            "status": "AVAILABLE",
-            "condition": "GOOD",
-            "location": "Parking Bay 4",
-            "purchaseDate": null,
-            "purchaseValue": null,
-            "warrantyExpiry": null,
-            "isBookable": true,
-            "categoryId": "06daaf7f-2e7d-49fa-9d7f-ced2cdb03081",
-            "departmentId": "bde64540-a02b-4c7e-8cdb-d0cf228951b0",
-            "createdAt": "2026-07-12T07:36:33.838Z",
-            "updatedAt": "2026-07-12T07:36:33.838Z",
-            "category": {
-              "id": "06daaf7f-2e7d-49fa-9d7f-ced2cdb03081",
-              "name": "Vehicle",
-              "code": "VEH"
-            },
-            "department": {
-              "id": "bde64540-a02b-4c7e-8cdb-d0cf228951b0",
-              "name": "Operations",
-              "code": "OPS",
-              "status": "ACTIVE"
-            },
-            "allocations": [],
-            "assetTag": "VEH-001",
-            "currentAllocation": null
-          },
-          {
-            "id": "6dc5682e-1125-4494-ba9b-1afcc5a4ffe5",
-            "assetCode": "MON-001",
-            "serialNumber": "SN-MON-001",
-            "name": "Dell 27 Inch Monitor",
-            "status": "MAINTENANCE",
-            "condition": "FAIR",
-            "location": "Finance Bay",
-            "purchaseDate": null,
-            "purchaseValue": null,
-            "warrantyExpiry": null,
-            "isBookable": false,
-            "categoryId": "3f9651fc-a2d7-48de-8cf3-78d3c24232bd",
-            "departmentId": "fb263355-709e-4c81-9714-a114f95bf3ce",
-            "createdAt": "2026-07-12T07:36:33.838Z",
-            "updatedAt": "2026-07-12T07:36:33.838Z",
-            "category": {
-              "id": "3f9651fc-a2d7-48de-8cf3-78d3c24232bd",
-              "name": "Monitor",
-              "code": "MON"
-            },
-            "department": {
-              "id": "fb263355-709e-4c81-9714-a114f95bf3ce",
-              "name": "Finance",
-              "code": "FIN",
-              "status": "ACTIVE"
-            },
-            "allocations": [],
-            "assetTag": "MON-001",
-            "currentAllocation": null
-          },
-          {
-            "id": "b0509c19-9cc2-4d2c-930d-f1f793bf34fd",
+            "id": "b2547b49-b098-45b6-8def-a2da048c3544",
             "assetCode": "FUR-001",
             "serialNumber": "SN-FUR-001",
             "name": "Ergonomic Chair",
@@ -3079,17 +3017,17 @@
             "purchaseValue": null,
             "warrantyExpiry": null,
             "isBookable": false,
-            "categoryId": "30043e42-0f08-421e-a5e9-3a5498754a4f",
-            "departmentId": "bde64540-a02b-4c7e-8cdb-d0cf228951b0",
-            "createdAt": "2026-07-12T07:36:33.838Z",
-            "updatedAt": "2026-07-12T07:36:33.838Z",
+            "categoryId": "bbbb24e5-16fe-4e1a-88ee-f305aa470f06",
+            "departmentId": "7ce0f221-097e-45b2-98fc-5617fcd72030",
+            "createdAt": "2026-07-12T07:51:02.244Z",
+            "updatedAt": "2026-07-12T07:51:02.244Z",
             "category": {
-              "id": "30043e42-0f08-421e-a5e9-3a5498754a4f",
+              "id": "bbbb24e5-16fe-4e1a-88ee-f305aa470f06",
               "name": "Furniture",
               "code": "FUR"
             },
             "department": {
-              "id": "bde64540-a02b-4c7e-8cdb-d0cf228951b0",
+              "id": "7ce0f221-097e-45b2-98fc-5617fcd72030",
               "name": "Operations",
               "code": "OPS",
               "status": "ACTIVE"
@@ -3099,38 +3037,7 @@
             "currentAllocation": null
           },
           {
-            "id": "34152d6d-62bb-43bf-9b0c-cc238d9ff912",
-            "assetCode": "LAP-002",
-            "serialNumber": "SN-LAP-002",
-            "name": "MacBook Air M3",
-            "status": "AVAILABLE",
-            "condition": "NEW",
-            "location": "IT Store",
-            "purchaseDate": null,
-            "purchaseValue": null,
-            "warrantyExpiry": null,
-            "isBookable": false,
-            "categoryId": "ebb6782c-200b-47e1-814f-cdb3bbffb8c3",
-            "departmentId": "7bc9aac2-7a82-4608-bf74-04070419fe4e",
-            "createdAt": "2026-07-12T07:36:33.837Z",
-            "updatedAt": "2026-07-12T07:36:33.837Z",
-            "category": {
-              "id": "ebb6782c-200b-47e1-814f-cdb3bbffb8c3",
-              "name": "Laptop",
-              "code": "LAP"
-            },
-            "department": {
-              "id": "7bc9aac2-7a82-4608-bf74-04070419fe4e",
-              "name": "Information Technology",
-              "code": "IT",
-              "status": "ACTIVE"
-            },
-            "allocations": [],
-            "assetTag": "LAP-002",
-            "currentAllocation": null
-          },
-          {
-            "id": "75c7d83c-8565-4632-b54c-28125c95be09",
+            "id": "97b23182-1068-4b59-b823-d3c34134318b",
             "assetCode": "PROJ-001",
             "serialNumber": "SN-PROJ-001",
             "name": "Epson Conference Projector",
@@ -3141,17 +3048,17 @@
             "purchaseValue": null,
             "warrantyExpiry": null,
             "isBookable": true,
-            "categoryId": "2cde471e-ced8-4ec0-884f-ab1208309c05",
-            "departmentId": "bde64540-a02b-4c7e-8cdb-d0cf228951b0",
-            "createdAt": "2026-07-12T07:36:33.837Z",
-            "updatedAt": "2026-07-12T07:36:33.837Z",
+            "categoryId": "518cff01-9429-4af1-8b1b-d2e81bc5bce7",
+            "departmentId": "7ce0f221-097e-45b2-98fc-5617fcd72030",
+            "createdAt": "2026-07-12T07:51:02.243Z",
+            "updatedAt": "2026-07-12T07:51:02.243Z",
             "category": {
-              "id": "2cde471e-ced8-4ec0-884f-ab1208309c05",
+              "id": "518cff01-9429-4af1-8b1b-d2e81bc5bce7",
               "name": "Projector",
               "code": "PROJ"
             },
             "department": {
-              "id": "bde64540-a02b-4c7e-8cdb-d0cf228951b0",
+              "id": "7ce0f221-097e-45b2-98fc-5617fcd72030",
               "name": "Operations",
               "code": "OPS",
               "status": "ACTIVE"
@@ -3161,7 +3068,100 @@
             "currentAllocation": null
           },
           {
-            "id": "e2f5507f-56df-4a9f-92b0-8ce1dd4cf861",
+            "id": "35713584-e8d2-45ee-b398-b0725b497f0a",
+            "assetCode": "VEH-001",
+            "serialNumber": "SN-VEH-001",
+            "name": "Office Shuttle",
+            "status": "AVAILABLE",
+            "condition": "GOOD",
+            "location": "Parking Bay 4",
+            "purchaseDate": null,
+            "purchaseValue": null,
+            "warrantyExpiry": null,
+            "isBookable": true,
+            "categoryId": "5d307f8b-e65b-4523-884e-5b628053d0d8",
+            "departmentId": "7ce0f221-097e-45b2-98fc-5617fcd72030",
+            "createdAt": "2026-07-12T07:51:02.243Z",
+            "updatedAt": "2026-07-12T07:51:02.243Z",
+            "category": {
+              "id": "5d307f8b-e65b-4523-884e-5b628053d0d8",
+              "name": "Vehicle",
+              "code": "VEH"
+            },
+            "department": {
+              "id": "7ce0f221-097e-45b2-98fc-5617fcd72030",
+              "name": "Operations",
+              "code": "OPS",
+              "status": "ACTIVE"
+            },
+            "allocations": [],
+            "assetTag": "VEH-001",
+            "currentAllocation": null
+          },
+          {
+            "id": "2cdff9c5-7d84-48fe-9f3e-6bc0547de520",
+            "assetCode": "MON-001",
+            "serialNumber": "SN-MON-001",
+            "name": "Dell 27 Inch Monitor",
+            "status": "MAINTENANCE",
+            "condition": "FAIR",
+            "location": "Finance Bay",
+            "purchaseDate": null,
+            "purchaseValue": null,
+            "warrantyExpiry": null,
+            "isBookable": false,
+            "categoryId": "4335e900-8bb8-42c4-a7fa-9c097f61e04e",
+            "departmentId": "d895b0b8-a93b-448a-a608-60010811a58a",
+            "createdAt": "2026-07-12T07:51:02.243Z",
+            "updatedAt": "2026-07-12T07:51:02.243Z",
+            "category": {
+              "id": "4335e900-8bb8-42c4-a7fa-9c097f61e04e",
+              "name": "Monitor",
+              "code": "MON"
+            },
+            "department": {
+              "id": "d895b0b8-a93b-448a-a608-60010811a58a",
+              "name": "Finance",
+              "code": "FIN",
+              "status": "ACTIVE"
+            },
+            "allocations": [],
+            "assetTag": "MON-001",
+            "currentAllocation": null
+          },
+          {
+            "id": "5ef7737a-64bf-408a-87dd-9e561686676c",
+            "assetCode": "LAP-002",
+            "serialNumber": "SN-LAP-002",
+            "name": "MacBook Air M3",
+            "status": "AVAILABLE",
+            "condition": "NEW",
+            "location": "IT Store",
+            "purchaseDate": null,
+            "purchaseValue": null,
+            "warrantyExpiry": null,
+            "isBookable": false,
+            "categoryId": "15dc0030-5daa-4487-a1ee-1e5562b3a913",
+            "departmentId": "e53b9027-1778-4fb0-89f8-a02d5b8ba8e6",
+            "createdAt": "2026-07-12T07:51:02.242Z",
+            "updatedAt": "2026-07-12T07:51:02.242Z",
+            "category": {
+              "id": "15dc0030-5daa-4487-a1ee-1e5562b3a913",
+              "name": "Laptop",
+              "code": "LAP"
+            },
+            "department": {
+              "id": "e53b9027-1778-4fb0-89f8-a02d5b8ba8e6",
+              "name": "Information Technology",
+              "code": "IT",
+              "status": "ACTIVE"
+            },
+            "allocations": [],
+            "assetTag": "LAP-002",
+            "currentAllocation": null
+          },
+          {
+            "id": "cc40d166-b62b-425d-b35c-978ef57dee36",
             "assetCode": "LAP-001",
             "serialNumber": "SN-LAP-001",
             "name": "Dell Latitude 5440",
@@ -3172,69 +3172,69 @@
             "purchaseValue": "95000",
             "warrantyExpiry": null,
             "isBookable": false,
-            "categoryId": "ebb6782c-200b-47e1-814f-cdb3bbffb8c3",
-            "departmentId": "7bc9aac2-7a82-4608-bf74-04070419fe4e",
-            "createdAt": "2026-07-12T07:36:33.836Z",
-            "updatedAt": "2026-07-12T07:36:33.836Z",
+            "categoryId": "15dc0030-5daa-4487-a1ee-1e5562b3a913",
+            "departmentId": "e53b9027-1778-4fb0-89f8-a02d5b8ba8e6",
+            "createdAt": "2026-07-12T07:51:02.241Z",
+            "updatedAt": "2026-07-12T07:51:02.241Z",
             "category": {
-              "id": "ebb6782c-200b-47e1-814f-cdb3bbffb8c3",
+              "id": "15dc0030-5daa-4487-a1ee-1e5562b3a913",
               "name": "Laptop",
               "code": "LAP"
             },
             "department": {
-              "id": "7bc9aac2-7a82-4608-bf74-04070419fe4e",
+              "id": "e53b9027-1778-4fb0-89f8-a02d5b8ba8e6",
               "name": "Information Technology",
               "code": "IT",
               "status": "ACTIVE"
             },
             "allocations": [
               {
-                "id": "ec014cfa-ade1-4923-b6be-075696b584b3",
-                "assetId": "e2f5507f-56df-4a9f-92b0-8ce1dd4cf861",
-                "userId": "44aeea02-baba-4915-8a21-303b37508485",
+                "id": "df1e17b9-bd40-4fdd-9746-62c59a9e213a",
+                "assetId": "cc40d166-b62b-425d-b35c-978ef57dee36",
+                "userId": "87c7582a-504b-4694-ba34-29b9613770c1",
                 "departmentId": null,
-                "assignedById": "d3a4d3f9-c3ca-4adc-8b4b-d2415e733dbd",
+                "assignedById": "f3ebbf21-4a70-4605-8a49-b9ee995ae161",
                 "sourceTransferId": null,
                 "status": "ACTIVE",
-                "assignedAt": "2026-07-12T07:36:33.838Z",
+                "assignedAt": "2026-07-12T07:51:02.244Z",
                 "returnedAt": null,
                 "returnCondition": null,
                 "returnReason": null,
                 "notes": "Seed allocation for demo.",
-                "createdAt": "2026-07-12T07:36:33.838Z",
-                "updatedAt": "2026-07-12T07:36:33.838Z",
+                "createdAt": "2026-07-12T07:51:02.244Z",
+                "updatedAt": "2026-07-12T07:51:02.244Z",
                 "user": {
-                  "id": "44aeea02-baba-4915-8a21-303b37508485",
+                  "id": "87c7582a-504b-4694-ba34-29b9613770c1",
                   "name": "Employee User",
                   "email": "employee@assetflow.local",
                   "role": "EMPLOYEE",
-                  "departmentId": "7bc9aac2-7a82-4608-bf74-04070419fe4e"
+                  "departmentId": "e53b9027-1778-4fb0-89f8-a02d5b8ba8e6"
                 },
                 "department": null
               }
             ],
             "assetTag": "LAP-001",
             "currentAllocation": {
-              "id": "ec014cfa-ade1-4923-b6be-075696b584b3",
-              "assetId": "e2f5507f-56df-4a9f-92b0-8ce1dd4cf861",
-              "userId": "44aeea02-baba-4915-8a21-303b37508485",
+              "id": "df1e17b9-bd40-4fdd-9746-62c59a9e213a",
+              "assetId": "cc40d166-b62b-425d-b35c-978ef57dee36",
+              "userId": "87c7582a-504b-4694-ba34-29b9613770c1",
               "departmentId": null,
-              "assignedById": "d3a4d3f9-c3ca-4adc-8b4b-d2415e733dbd",
+              "assignedById": "f3ebbf21-4a70-4605-8a49-b9ee995ae161",
               "sourceTransferId": null,
               "status": "ACTIVE",
-              "assignedAt": "2026-07-12T07:36:33.838Z",
+              "assignedAt": "2026-07-12T07:51:02.244Z",
               "returnedAt": null,
               "returnCondition": null,
               "returnReason": null,
               "notes": "Seed allocation for demo.",
-              "createdAt": "2026-07-12T07:36:33.838Z",
-              "updatedAt": "2026-07-12T07:36:33.838Z",
+              "createdAt": "2026-07-12T07:51:02.244Z",
+              "updatedAt": "2026-07-12T07:51:02.244Z",
               "user": {
-                "id": "44aeea02-baba-4915-8a21-303b37508485",
+                "id": "87c7582a-504b-4694-ba34-29b9613770c1",
                 "name": "Employee User",
                 "email": "employee@assetflow.local",
                 "role": "EMPLOYEE",
-                "departmentId": "7bc9aac2-7a82-4608-bf74-04070419fe4e"
+                "departmentId": "e53b9027-1778-4fb0-89f8-a02d5b8ba8e6"
               },
               "department": null
             }
@@ -3315,20 +3315,20 @@
           },
           "category": {
             "labels": [
-              "Laptop",
-              "Vehicle",
-              "Projector",
+              "Monitor",
               "Furniture",
-              "Monitor"
+              "Projector",
+              "Laptop",
+              "Vehicle"
             ],
             "datasets": [
               {
                 "label": "assets",
                 "data": [
+                  1,
+                  1,
+                  1,
                   2,
-                  1,
-                  1,
-                  1,
                   1
                 ]
               }
@@ -3337,11 +3337,11 @@
               "assets": 6
             },
             "percentages": {
-              "Laptop": 33.33,
-              "Vehicle": 16.67,
-              "Projector": 16.67,
+              "Monitor": 16.67,
               "Furniture": 16.67,
-              "Monitor": 16.67
+              "Projector": 16.67,
+              "Laptop": 33.33,
+              "Vehicle": 16.67
             }
           }
         }

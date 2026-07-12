@@ -80,4 +80,22 @@ export type DashboardOverviewResponse = {
     recent: unknown[];
     criticalAlerts: unknown[];
   };
+  settings: {
+    company: {
+      companyName: unknown;
+      logoUrl: unknown;
+      timezone: unknown;
+      currency: unknown;
+      language: unknown;
+    };
+    profile: {
+      displayName: string | null;
+      effectiveDisplayName: string;
+      avatarUrl: string | null;
+      theme: string;
+      timezone: string;
+      language: string;
+      notificationPreferences: unknown;
+    };
+  };
 };

@@ -4,338 +4,338 @@
     "data": {
       "items": [
         {
-          "id": "e38ef37e-55c7-4bef-9dbb-d933839d76d3",
-          "userId": "ccba76b1-4e4a-48d3-bcdd-133b839502ea",
+          "id": "496535a8-1a3f-4cc4-a0cf-167f28d7066f",
+          "userId": "964f7752-e5bf-44a1-a110-1ccbc65b508b",
           "type": "MAINTENANCE_RESOLVED",
           "category": "MAINTENANCE",
           "priority": "MEDIUM",
           "title": "Maintenance resolved",
-          "message": "Maintenance for Notification QA Asset 1783841802663-MNT was resolved.",
+          "message": "Maintenance for Notification QA Asset 1783842677478-MNT was resolved.",
           "isRead": false,
           "readAt": null,
           "relatedEntityType": "MaintenanceTicket",
-          "relatedEntityId": "5d148c50-9c46-4e05-bc24-747e6288c6fe",
-          "createdAt": "2026-07-12T07:36:42.752Z",
-          "updatedAt": "2026-07-12T07:36:42.752Z",
+          "relatedEntityId": "9d3d44ef-ceec-4db1-8c9d-ac545f9ba62d",
+          "createdAt": "2026-07-12T07:51:17.569Z",
+          "updatedAt": "2026-07-12T07:51:17.569Z",
           "user": {
-            "id": "ccba76b1-4e4a-48d3-bcdd-133b839502ea",
+            "id": "964f7752-e5bf-44a1-a110-1ccbc65b508b",
             "name": "Employee User",
             "email": "employee@assetflow.local",
             "role": "EMPLOYEE",
-            "departmentId": "c1d96709-b438-46c3-a59f-31f3024b3ecf"
+            "departmentId": "ac93d425-d882-4380-b544-caa6fd7c44f6"
           },
           "status": "unread",
           "recipient": {
-            "id": "ccba76b1-4e4a-48d3-bcdd-133b839502ea",
+            "id": "964f7752-e5bf-44a1-a110-1ccbc65b508b",
             "name": "Employee User",
             "email": "employee@assetflow.local",
             "role": "EMPLOYEE",
-            "departmentId": "c1d96709-b438-46c3-a59f-31f3024b3ecf"
+            "departmentId": "ac93d425-d882-4380-b544-caa6fd7c44f6"
           }
         },
         {
-          "id": "b430a833-0239-4d57-b4b3-06a4fd3edbcf",
-          "userId": "ccba76b1-4e4a-48d3-bcdd-133b839502ea",
+          "id": "13cff9e2-1915-4cf2-80f5-3398347e2c49",
+          "userId": "964f7752-e5bf-44a1-a110-1ccbc65b508b",
           "type": "MAINTENANCE_STARTED",
           "category": "MAINTENANCE",
           "priority": "MEDIUM",
           "title": "Maintenance started",
-          "message": "Maintenance for Notification QA Asset 1783841802663-MNT has started.",
+          "message": "Maintenance for Notification QA Asset 1783842677478-MNT has started.",
           "isRead": false,
           "readAt": null,
           "relatedEntityType": "MaintenanceTicket",
-          "relatedEntityId": "5d148c50-9c46-4e05-bc24-747e6288c6fe",
-          "createdAt": "2026-07-12T07:36:42.748Z",
-          "updatedAt": "2026-07-12T07:36:42.748Z",
+          "relatedEntityId": "9d3d44ef-ceec-4db1-8c9d-ac545f9ba62d",
+          "createdAt": "2026-07-12T07:51:17.564Z",
+          "updatedAt": "2026-07-12T07:51:17.564Z",
           "user": {
-            "id": "ccba76b1-4e4a-48d3-bcdd-133b839502ea",
+            "id": "964f7752-e5bf-44a1-a110-1ccbc65b508b",
             "name": "Employee User",
             "email": "employee@assetflow.local",
             "role": "EMPLOYEE",
-            "departmentId": "c1d96709-b438-46c3-a59f-31f3024b3ecf"
+            "departmentId": "ac93d425-d882-4380-b544-caa6fd7c44f6"
           },
           "status": "unread",
           "recipient": {
-            "id": "ccba76b1-4e4a-48d3-bcdd-133b839502ea",
+            "id": "964f7752-e5bf-44a1-a110-1ccbc65b508b",
             "name": "Employee User",
             "email": "employee@assetflow.local",
             "role": "EMPLOYEE",
-            "departmentId": "c1d96709-b438-46c3-a59f-31f3024b3ecf"
+            "departmentId": "ac93d425-d882-4380-b544-caa6fd7c44f6"
           }
         },
         {
-          "id": "4e2293d7-322f-4652-a016-ae9702e1b0d8",
-          "userId": "ccba76b1-4e4a-48d3-bcdd-133b839502ea",
+          "id": "fedb14be-2ce9-4748-a4b6-803458c5a37f",
+          "userId": "964f7752-e5bf-44a1-a110-1ccbc65b508b",
           "type": "MAINTENANCE_ASSIGNED",
           "category": "MAINTENANCE",
           "priority": "MEDIUM",
           "title": "Maintenance assigned",
-          "message": "Maintenance for Notification QA Asset 1783841802663-MNT was assigned.",
+          "message": "Maintenance for Notification QA Asset 1783842677478-MNT was assigned.",
           "isRead": false,
           "readAt": null,
           "relatedEntityType": "MaintenanceTicket",
-          "relatedEntityId": "5d148c50-9c46-4e05-bc24-747e6288c6fe",
-          "createdAt": "2026-07-12T07:36:42.744Z",
-          "updatedAt": "2026-07-12T07:36:42.744Z",
+          "relatedEntityId": "9d3d44ef-ceec-4db1-8c9d-ac545f9ba62d",
+          "createdAt": "2026-07-12T07:51:17.560Z",
+          "updatedAt": "2026-07-12T07:51:17.560Z",
           "user": {
-            "id": "ccba76b1-4e4a-48d3-bcdd-133b839502ea",
+            "id": "964f7752-e5bf-44a1-a110-1ccbc65b508b",
             "name": "Employee User",
             "email": "employee@assetflow.local",
             "role": "EMPLOYEE",
-            "departmentId": "c1d96709-b438-46c3-a59f-31f3024b3ecf"
+            "departmentId": "ac93d425-d882-4380-b544-caa6fd7c44f6"
           },
           "status": "unread",
           "recipient": {
-            "id": "ccba76b1-4e4a-48d3-bcdd-133b839502ea",
+            "id": "964f7752-e5bf-44a1-a110-1ccbc65b508b",
             "name": "Employee User",
             "email": "employee@assetflow.local",
             "role": "EMPLOYEE",
-            "departmentId": "c1d96709-b438-46c3-a59f-31f3024b3ecf"
+            "departmentId": "ac93d425-d882-4380-b544-caa6fd7c44f6"
           }
         },
         {
-          "id": "7d196d22-9f7c-420d-a6c0-b5525e92369b",
-          "userId": "ccba76b1-4e4a-48d3-bcdd-133b839502ea",
+          "id": "cd2101e2-a066-4797-83d0-62e780c03954",
+          "userId": "964f7752-e5bf-44a1-a110-1ccbc65b508b",
           "type": "MAINTENANCE_APPROVED",
           "category": "MAINTENANCE",
           "priority": "MEDIUM",
           "title": "Maintenance approved",
-          "message": "Maintenance ticket for Notification QA Asset 1783841802663-MNT was approved.",
+          "message": "Maintenance ticket for Notification QA Asset 1783842677478-MNT was approved.",
           "isRead": false,
           "readAt": null,
           "relatedEntityType": "MaintenanceTicket",
-          "relatedEntityId": "5d148c50-9c46-4e05-bc24-747e6288c6fe",
-          "createdAt": "2026-07-12T07:36:42.739Z",
-          "updatedAt": "2026-07-12T07:36:42.739Z",
+          "relatedEntityId": "9d3d44ef-ceec-4db1-8c9d-ac545f9ba62d",
+          "createdAt": "2026-07-12T07:51:17.555Z",
+          "updatedAt": "2026-07-12T07:51:17.555Z",
           "user": {
-            "id": "ccba76b1-4e4a-48d3-bcdd-133b839502ea",
+            "id": "964f7752-e5bf-44a1-a110-1ccbc65b508b",
             "name": "Employee User",
             "email": "employee@assetflow.local",
             "role": "EMPLOYEE",
-            "departmentId": "c1d96709-b438-46c3-a59f-31f3024b3ecf"
+            "departmentId": "ac93d425-d882-4380-b544-caa6fd7c44f6"
           },
           "status": "unread",
           "recipient": {
-            "id": "ccba76b1-4e4a-48d3-bcdd-133b839502ea",
+            "id": "964f7752-e5bf-44a1-a110-1ccbc65b508b",
             "name": "Employee User",
             "email": "employee@assetflow.local",
             "role": "EMPLOYEE",
-            "departmentId": "c1d96709-b438-46c3-a59f-31f3024b3ecf"
+            "departmentId": "ac93d425-d882-4380-b544-caa6fd7c44f6"
           }
         },
         {
-          "id": "d0552db0-ded1-44a7-a48e-3a765df70cad",
-          "userId": "ccba76b1-4e4a-48d3-bcdd-133b839502ea",
+          "id": "70ed0d2f-4dbe-420d-983d-622f37f79343",
+          "userId": "964f7752-e5bf-44a1-a110-1ccbc65b508b",
           "type": "MAINTENANCE_CREATED",
           "category": "MAINTENANCE",
           "priority": "INFO",
           "title": "Maintenance ticket created",
-          "message": "Maintenance ticket for Notification QA Asset 1783841802663-MNT was created.",
+          "message": "Maintenance ticket for Notification QA Asset 1783842677478-MNT was created.",
           "isRead": false,
           "readAt": null,
           "relatedEntityType": "MaintenanceTicket",
-          "relatedEntityId": "5d148c50-9c46-4e05-bc24-747e6288c6fe",
-          "createdAt": "2026-07-12T07:36:42.734Z",
-          "updatedAt": "2026-07-12T07:36:42.734Z",
+          "relatedEntityId": "9d3d44ef-ceec-4db1-8c9d-ac545f9ba62d",
+          "createdAt": "2026-07-12T07:51:17.550Z",
+          "updatedAt": "2026-07-12T07:51:17.550Z",
           "user": {
-            "id": "ccba76b1-4e4a-48d3-bcdd-133b839502ea",
+            "id": "964f7752-e5bf-44a1-a110-1ccbc65b508b",
             "name": "Employee User",
             "email": "employee@assetflow.local",
             "role": "EMPLOYEE",
-            "departmentId": "c1d96709-b438-46c3-a59f-31f3024b3ecf"
+            "departmentId": "ac93d425-d882-4380-b544-caa6fd7c44f6"
           },
           "status": "unread",
           "recipient": {
-            "id": "ccba76b1-4e4a-48d3-bcdd-133b839502ea",
+            "id": "964f7752-e5bf-44a1-a110-1ccbc65b508b",
             "name": "Employee User",
             "email": "employee@assetflow.local",
             "role": "EMPLOYEE",
-            "departmentId": "c1d96709-b438-46c3-a59f-31f3024b3ecf"
+            "departmentId": "ac93d425-d882-4380-b544-caa6fd7c44f6"
           }
         },
         {
-          "id": "91145f1d-c073-4383-a75c-f5434ad5c0a9",
-          "userId": "ccba76b1-4e4a-48d3-bcdd-133b839502ea",
+          "id": "2accbf59-9062-498f-8aa3-f295c300a749",
+          "userId": "964f7752-e5bf-44a1-a110-1ccbc65b508b",
           "type": "BOOKING_APPROVED",
           "category": "BOOKING",
           "priority": "MEDIUM",
           "title": "Booking approved",
-          "message": "Booking for Notification QA Asset 1783841802663-BOOK was approved.",
+          "message": "Booking for Notification QA Asset 1783842677478-BOOK was approved.",
           "isRead": false,
           "readAt": null,
           "relatedEntityType": "Booking",
-          "relatedEntityId": "c2b3aea7-845e-4a58-9dbe-6534a2a73496",
-          "createdAt": "2026-07-12T07:36:42.723Z",
-          "updatedAt": "2026-07-12T07:36:42.723Z",
+          "relatedEntityId": "46530c76-b8a4-4711-b72a-658070d2a852",
+          "createdAt": "2026-07-12T07:51:17.540Z",
+          "updatedAt": "2026-07-12T07:51:17.540Z",
           "user": {
-            "id": "ccba76b1-4e4a-48d3-bcdd-133b839502ea",
+            "id": "964f7752-e5bf-44a1-a110-1ccbc65b508b",
             "name": "Employee User",
             "email": "employee@assetflow.local",
             "role": "EMPLOYEE",
-            "departmentId": "c1d96709-b438-46c3-a59f-31f3024b3ecf"
+            "departmentId": "ac93d425-d882-4380-b544-caa6fd7c44f6"
           },
           "status": "unread",
           "recipient": {
-            "id": "ccba76b1-4e4a-48d3-bcdd-133b839502ea",
+            "id": "964f7752-e5bf-44a1-a110-1ccbc65b508b",
             "name": "Employee User",
             "email": "employee@assetflow.local",
             "role": "EMPLOYEE",
-            "departmentId": "c1d96709-b438-46c3-a59f-31f3024b3ecf"
+            "departmentId": "ac93d425-d882-4380-b544-caa6fd7c44f6"
           }
         },
         {
-          "id": "e0e5dc75-24bb-47b8-b668-aad323575256",
-          "userId": "ccba76b1-4e4a-48d3-bcdd-133b839502ea",
+          "id": "69dc396e-758e-4a15-8826-8152747a154f",
+          "userId": "964f7752-e5bf-44a1-a110-1ccbc65b508b",
           "type": "BOOKING_CREATED",
           "category": "BOOKING",
           "priority": "INFO",
           "title": "Booking requested",
-          "message": "Booking request for Notification QA Asset 1783841802663-BOOK was created.",
+          "message": "Booking request for Notification QA Asset 1783842677478-BOOK was created.",
           "isRead": false,
           "readAt": null,
           "relatedEntityType": "Booking",
-          "relatedEntityId": "c2b3aea7-845e-4a58-9dbe-6534a2a73496",
-          "createdAt": "2026-07-12T07:36:42.718Z",
-          "updatedAt": "2026-07-12T07:36:42.718Z",
+          "relatedEntityId": "46530c76-b8a4-4711-b72a-658070d2a852",
+          "createdAt": "2026-07-12T07:51:17.534Z",
+          "updatedAt": "2026-07-12T07:51:17.534Z",
           "user": {
-            "id": "ccba76b1-4e4a-48d3-bcdd-133b839502ea",
+            "id": "964f7752-e5bf-44a1-a110-1ccbc65b508b",
             "name": "Employee User",
             "email": "employee@assetflow.local",
             "role": "EMPLOYEE",
-            "departmentId": "c1d96709-b438-46c3-a59f-31f3024b3ecf"
+            "departmentId": "ac93d425-d882-4380-b544-caa6fd7c44f6"
           },
           "status": "unread",
           "recipient": {
-            "id": "ccba76b1-4e4a-48d3-bcdd-133b839502ea",
+            "id": "964f7752-e5bf-44a1-a110-1ccbc65b508b",
             "name": "Employee User",
             "email": "employee@assetflow.local",
             "role": "EMPLOYEE",
-            "departmentId": "c1d96709-b438-46c3-a59f-31f3024b3ecf"
+            "departmentId": "ac93d425-d882-4380-b544-caa6fd7c44f6"
           }
         },
         {
-          "id": "1d322dcb-abc6-47ac-9df2-47a279b49f11",
-          "userId": "ccba76b1-4e4a-48d3-bcdd-133b839502ea",
+          "id": "972d015d-cc1e-4cf3-99bc-be1e214401cd",
+          "userId": "964f7752-e5bf-44a1-a110-1ccbc65b508b",
           "type": "TRANSFER_APPROVED",
           "category": "TRANSFER",
           "priority": "MEDIUM",
           "title": "Transfer approved",
-          "message": "Transfer request for Notification QA Asset 1783841802663-XFER was approved.",
+          "message": "Transfer request for Notification QA Asset 1783842677478-XFER was approved.",
           "isRead": false,
           "readAt": null,
           "relatedEntityType": "Transfer",
-          "relatedEntityId": "637e1ba8-19af-4e4b-ba20-fc500e5482a5",
-          "createdAt": "2026-07-12T07:36:42.706Z",
-          "updatedAt": "2026-07-12T07:36:42.706Z",
+          "relatedEntityId": "00ad1c99-99c6-4f3c-b105-6dd1c027f2a5",
+          "createdAt": "2026-07-12T07:51:17.523Z",
+          "updatedAt": "2026-07-12T07:51:17.523Z",
           "user": {
-            "id": "ccba76b1-4e4a-48d3-bcdd-133b839502ea",
+            "id": "964f7752-e5bf-44a1-a110-1ccbc65b508b",
             "name": "Employee User",
             "email": "employee@assetflow.local",
             "role": "EMPLOYEE",
-            "departmentId": "c1d96709-b438-46c3-a59f-31f3024b3ecf"
+            "departmentId": "ac93d425-d882-4380-b544-caa6fd7c44f6"
           },
           "status": "unread",
           "recipient": {
-            "id": "ccba76b1-4e4a-48d3-bcdd-133b839502ea",
+            "id": "964f7752-e5bf-44a1-a110-1ccbc65b508b",
             "name": "Employee User",
             "email": "employee@assetflow.local",
             "role": "EMPLOYEE",
-            "departmentId": "c1d96709-b438-46c3-a59f-31f3024b3ecf"
+            "departmentId": "ac93d425-d882-4380-b544-caa6fd7c44f6"
           }
         },
         {
-          "id": "e4b50698-54d3-409a-868c-06cb25ab90cc",
-          "userId": "ccba76b1-4e4a-48d3-bcdd-133b839502ea",
+          "id": "432467c8-4923-44ff-a3e3-1bcc71ba8d3c",
+          "userId": "964f7752-e5bf-44a1-a110-1ccbc65b508b",
           "type": "TRANSFER_REQUESTED",
           "category": "TRANSFER",
           "priority": "INFO",
           "title": "Transfer requested",
-          "message": "Transfer request for Notification QA Asset 1783841802663-XFER was created.",
+          "message": "Transfer request for Notification QA Asset 1783842677478-XFER was created.",
           "isRead": false,
           "readAt": null,
           "relatedEntityType": "Transfer",
-          "relatedEntityId": "637e1ba8-19af-4e4b-ba20-fc500e5482a5",
-          "createdAt": "2026-07-12T07:36:42.698Z",
-          "updatedAt": "2026-07-12T07:36:42.698Z",
+          "relatedEntityId": "00ad1c99-99c6-4f3c-b105-6dd1c027f2a5",
+          "createdAt": "2026-07-12T07:51:17.516Z",
+          "updatedAt": "2026-07-12T07:51:17.516Z",
           "user": {
-            "id": "ccba76b1-4e4a-48d3-bcdd-133b839502ea",
+            "id": "964f7752-e5bf-44a1-a110-1ccbc65b508b",
             "name": "Employee User",
             "email": "employee@assetflow.local",
             "role": "EMPLOYEE",
-            "departmentId": "c1d96709-b438-46c3-a59f-31f3024b3ecf"
+            "departmentId": "ac93d425-d882-4380-b544-caa6fd7c44f6"
           },
           "status": "unread",
           "recipient": {
-            "id": "ccba76b1-4e4a-48d3-bcdd-133b839502ea",
+            "id": "964f7752-e5bf-44a1-a110-1ccbc65b508b",
             "name": "Employee User",
             "email": "employee@assetflow.local",
             "role": "EMPLOYEE",
-            "departmentId": "c1d96709-b438-46c3-a59f-31f3024b3ecf"
+            "departmentId": "ac93d425-d882-4380-b544-caa6fd7c44f6"
           }
         },
         {
-          "id": "53e78875-ba52-474a-8807-abbe698e02d0",
-          "userId": "ccba76b1-4e4a-48d3-bcdd-133b839502ea",
+          "id": "5eabb988-d2f5-470a-82c1-9e28f12c49b3",
+          "userId": "964f7752-e5bf-44a1-a110-1ccbc65b508b",
           "type": "ASSET_ALLOCATED",
           "category": "ALLOCATION",
           "priority": "MEDIUM",
           "title": "Asset allocated",
-          "message": "Notification QA Asset 1783841802663-XFER has been allocated to you.",
+          "message": "Notification QA Asset 1783842677478-XFER has been allocated to you.",
           "isRead": false,
           "readAt": null,
           "relatedEntityType": "Allocation",
-          "relatedEntityId": "e6c3f764-c908-433e-8599-c22c0b20c166",
-          "createdAt": "2026-07-12T07:36:42.693Z",
-          "updatedAt": "2026-07-12T07:36:42.693Z",
+          "relatedEntityId": "0614e81d-cc5b-46b7-b8e9-f0dfbe8f3698",
+          "createdAt": "2026-07-12T07:51:17.509Z",
+          "updatedAt": "2026-07-12T07:51:17.509Z",
           "user": {
-            "id": "ccba76b1-4e4a-48d3-bcdd-133b839502ea",
+            "id": "964f7752-e5bf-44a1-a110-1ccbc65b508b",
             "name": "Employee User",
             "email": "employee@assetflow.local",
             "role": "EMPLOYEE",
-            "departmentId": "c1d96709-b438-46c3-a59f-31f3024b3ecf"
+            "departmentId": "ac93d425-d882-4380-b544-caa6fd7c44f6"
           },
           "status": "unread",
           "recipient": {
-            "id": "ccba76b1-4e4a-48d3-bcdd-133b839502ea",
+            "id": "964f7752-e5bf-44a1-a110-1ccbc65b508b",
             "name": "Employee User",
             "email": "employee@assetflow.local",
             "role": "EMPLOYEE",
-            "departmentId": "c1d96709-b438-46c3-a59f-31f3024b3ecf"
+            "departmentId": "ac93d425-d882-4380-b544-caa6fd7c44f6"
           }
         },
         {
-          "id": "0839fa0c-41db-49ae-a48a-af074d60b66e",
-          "userId": "ccba76b1-4e4a-48d3-bcdd-133b839502ea",
+          "id": "41c0e87e-4eac-4899-8f54-e4a0561c707e",
+          "userId": "964f7752-e5bf-44a1-a110-1ccbc65b508b",
           "type": "ASSET_ALLOCATED",
           "category": "ALLOCATION",
           "priority": "MEDIUM",
           "title": "Asset allocated",
-          "message": "Notification QA Asset 1783841802663-ALLOC has been allocated to you.",
+          "message": "Notification QA Asset 1783842677478-ALLOC has been allocated to you.",
           "isRead": false,
           "readAt": null,
           "relatedEntityType": "Allocation",
-          "relatedEntityId": "0ab818aa-37ce-4eba-8f5c-b20da6a24b05",
-          "createdAt": "2026-07-12T07:36:42.676Z",
-          "updatedAt": "2026-07-12T07:36:42.676Z",
+          "relatedEntityId": "952ac3d6-1ad6-4c19-8468-a0744f96b139",
+          "createdAt": "2026-07-12T07:51:17.493Z",
+          "updatedAt": "2026-07-12T07:51:17.493Z",
           "user": {
-            "id": "ccba76b1-4e4a-48d3-bcdd-133b839502ea",
+            "id": "964f7752-e5bf-44a1-a110-1ccbc65b508b",
             "name": "Employee User",
             "email": "employee@assetflow.local",
             "role": "EMPLOYEE",
-            "departmentId": "c1d96709-b438-46c3-a59f-31f3024b3ecf"
+            "departmentId": "ac93d425-d882-4380-b544-caa6fd7c44f6"
           },
           "status": "unread",
           "recipient": {
-            "id": "ccba76b1-4e4a-48d3-bcdd-133b839502ea",
+            "id": "964f7752-e5bf-44a1-a110-1ccbc65b508b",
             "name": "Employee User",
             "email": "employee@assetflow.local",
             "role": "EMPLOYEE",
-            "departmentId": "c1d96709-b438-46c3-a59f-31f3024b3ecf"
+            "departmentId": "ac93d425-d882-4380-b544-caa6fd7c44f6"
           }
         },
         {
-          "id": "5a280b94-3947-4aff-a6ae-fc1cd3d17ec8",
-          "userId": "ccba76b1-4e4a-48d3-bcdd-133b839502ea",
+          "id": "840b6a81-3659-4064-9618-32e4a90ebea6",
+          "userId": "964f7752-e5bf-44a1-a110-1ccbc65b508b",
           "type": "ASSET_ALLOCATED",
           "category": "ALLOCATION",
           "priority": "MEDIUM",
@@ -344,23 +344,23 @@
           "isRead": false,
           "readAt": null,
           "relatedEntityType": "Allocation",
-          "relatedEntityId": "080b260a-ccd5-4ff9-a964-2bdf3a1e864e",
-          "createdAt": "2026-07-12T07:36:42.436Z",
-          "updatedAt": "2026-07-12T07:36:42.436Z",
+          "relatedEntityId": "a999f8bb-50d7-4806-a51c-87fc05ac5b55",
+          "createdAt": "2026-07-12T07:51:17.254Z",
+          "updatedAt": "2026-07-12T07:51:17.254Z",
           "user": {
-            "id": "ccba76b1-4e4a-48d3-bcdd-133b839502ea",
+            "id": "964f7752-e5bf-44a1-a110-1ccbc65b508b",
             "name": "Employee User",
             "email": "employee@assetflow.local",
             "role": "EMPLOYEE",
-            "departmentId": "c1d96709-b438-46c3-a59f-31f3024b3ecf"
+            "departmentId": "ac93d425-d882-4380-b544-caa6fd7c44f6"
           },
           "status": "unread",
           "recipient": {
-            "id": "ccba76b1-4e4a-48d3-bcdd-133b839502ea",
+            "id": "964f7752-e5bf-44a1-a110-1ccbc65b508b",
             "name": "Employee User",
             "email": "employee@assetflow.local",
             "role": "EMPLOYEE",
-            "departmentId": "c1d96709-b438-46c3-a59f-31f3024b3ecf"
+            "departmentId": "ac93d425-d882-4380-b544-caa6fd7c44f6"
           }
         }
       ],
@@ -377,68 +377,68 @@
     "data": {
       "items": [
         {
-          "id": "53e78875-ba52-474a-8807-abbe698e02d0",
-          "userId": "ccba76b1-4e4a-48d3-bcdd-133b839502ea",
+          "id": "5eabb988-d2f5-470a-82c1-9e28f12c49b3",
+          "userId": "964f7752-e5bf-44a1-a110-1ccbc65b508b",
           "type": "ASSET_ALLOCATED",
           "category": "ALLOCATION",
           "priority": "MEDIUM",
           "title": "Asset allocated",
-          "message": "Notification QA Asset 1783841802663-XFER has been allocated to you.",
+          "message": "Notification QA Asset 1783842677478-XFER has been allocated to you.",
           "isRead": false,
           "readAt": null,
           "relatedEntityType": "Allocation",
-          "relatedEntityId": "e6c3f764-c908-433e-8599-c22c0b20c166",
-          "createdAt": "2026-07-12T07:36:42.693Z",
-          "updatedAt": "2026-07-12T07:36:42.693Z",
+          "relatedEntityId": "0614e81d-cc5b-46b7-b8e9-f0dfbe8f3698",
+          "createdAt": "2026-07-12T07:51:17.509Z",
+          "updatedAt": "2026-07-12T07:51:17.509Z",
           "user": {
-            "id": "ccba76b1-4e4a-48d3-bcdd-133b839502ea",
+            "id": "964f7752-e5bf-44a1-a110-1ccbc65b508b",
             "name": "Employee User",
             "email": "employee@assetflow.local",
             "role": "EMPLOYEE",
-            "departmentId": "c1d96709-b438-46c3-a59f-31f3024b3ecf"
+            "departmentId": "ac93d425-d882-4380-b544-caa6fd7c44f6"
           },
           "status": "unread",
           "recipient": {
-            "id": "ccba76b1-4e4a-48d3-bcdd-133b839502ea",
+            "id": "964f7752-e5bf-44a1-a110-1ccbc65b508b",
             "name": "Employee User",
             "email": "employee@assetflow.local",
             "role": "EMPLOYEE",
-            "departmentId": "c1d96709-b438-46c3-a59f-31f3024b3ecf"
+            "departmentId": "ac93d425-d882-4380-b544-caa6fd7c44f6"
           }
         },
         {
-          "id": "0839fa0c-41db-49ae-a48a-af074d60b66e",
-          "userId": "ccba76b1-4e4a-48d3-bcdd-133b839502ea",
+          "id": "41c0e87e-4eac-4899-8f54-e4a0561c707e",
+          "userId": "964f7752-e5bf-44a1-a110-1ccbc65b508b",
           "type": "ASSET_ALLOCATED",
           "category": "ALLOCATION",
           "priority": "MEDIUM",
           "title": "Asset allocated",
-          "message": "Notification QA Asset 1783841802663-ALLOC has been allocated to you.",
+          "message": "Notification QA Asset 1783842677478-ALLOC has been allocated to you.",
           "isRead": false,
           "readAt": null,
           "relatedEntityType": "Allocation",
-          "relatedEntityId": "0ab818aa-37ce-4eba-8f5c-b20da6a24b05",
-          "createdAt": "2026-07-12T07:36:42.676Z",
-          "updatedAt": "2026-07-12T07:36:42.676Z",
+          "relatedEntityId": "952ac3d6-1ad6-4c19-8468-a0744f96b139",
+          "createdAt": "2026-07-12T07:51:17.493Z",
+          "updatedAt": "2026-07-12T07:51:17.493Z",
           "user": {
-            "id": "ccba76b1-4e4a-48d3-bcdd-133b839502ea",
+            "id": "964f7752-e5bf-44a1-a110-1ccbc65b508b",
             "name": "Employee User",
             "email": "employee@assetflow.local",
             "role": "EMPLOYEE",
-            "departmentId": "c1d96709-b438-46c3-a59f-31f3024b3ecf"
+            "departmentId": "ac93d425-d882-4380-b544-caa6fd7c44f6"
           },
           "status": "unread",
           "recipient": {
-            "id": "ccba76b1-4e4a-48d3-bcdd-133b839502ea",
+            "id": "964f7752-e5bf-44a1-a110-1ccbc65b508b",
             "name": "Employee User",
             "email": "employee@assetflow.local",
             "role": "EMPLOYEE",
-            "departmentId": "c1d96709-b438-46c3-a59f-31f3024b3ecf"
+            "departmentId": "ac93d425-d882-4380-b544-caa6fd7c44f6"
           }
         },
         {
-          "id": "5a280b94-3947-4aff-a6ae-fc1cd3d17ec8",
-          "userId": "ccba76b1-4e4a-48d3-bcdd-133b839502ea",
+          "id": "840b6a81-3659-4064-9618-32e4a90ebea6",
+          "userId": "964f7752-e5bf-44a1-a110-1ccbc65b508b",
           "type": "ASSET_ALLOCATED",
           "category": "ALLOCATION",
           "priority": "MEDIUM",
@@ -447,23 +447,23 @@
           "isRead": false,
           "readAt": null,
           "relatedEntityType": "Allocation",
-          "relatedEntityId": "080b260a-ccd5-4ff9-a964-2bdf3a1e864e",
-          "createdAt": "2026-07-12T07:36:42.436Z",
-          "updatedAt": "2026-07-12T07:36:42.436Z",
+          "relatedEntityId": "a999f8bb-50d7-4806-a51c-87fc05ac5b55",
+          "createdAt": "2026-07-12T07:51:17.254Z",
+          "updatedAt": "2026-07-12T07:51:17.254Z",
           "user": {
-            "id": "ccba76b1-4e4a-48d3-bcdd-133b839502ea",
+            "id": "964f7752-e5bf-44a1-a110-1ccbc65b508b",
             "name": "Employee User",
             "email": "employee@assetflow.local",
             "role": "EMPLOYEE",
-            "departmentId": "c1d96709-b438-46c3-a59f-31f3024b3ecf"
+            "departmentId": "ac93d425-d882-4380-b544-caa6fd7c44f6"
           },
           "status": "unread",
           "recipient": {
-            "id": "ccba76b1-4e4a-48d3-bcdd-133b839502ea",
+            "id": "964f7752-e5bf-44a1-a110-1ccbc65b508b",
             "name": "Employee User",
             "email": "employee@assetflow.local",
             "role": "EMPLOYEE",
-            "departmentId": "c1d96709-b438-46c3-a59f-31f3024b3ecf"
+            "departmentId": "ac93d425-d882-4380-b544-caa6fd7c44f6"
           }
         }
       ],
@@ -480,248 +480,248 @@
     "data": {
       "items": [
         {
-          "id": "e38ef37e-55c7-4bef-9dbb-d933839d76d3",
-          "userId": "ccba76b1-4e4a-48d3-bcdd-133b839502ea",
+          "id": "496535a8-1a3f-4cc4-a0cf-167f28d7066f",
+          "userId": "964f7752-e5bf-44a1-a110-1ccbc65b508b",
           "type": "MAINTENANCE_RESOLVED",
           "category": "MAINTENANCE",
           "priority": "MEDIUM",
           "title": "Maintenance resolved",
-          "message": "Maintenance for Notification QA Asset 1783841802663-MNT was resolved.",
+          "message": "Maintenance for Notification QA Asset 1783842677478-MNT was resolved.",
           "isRead": false,
           "readAt": null,
           "relatedEntityType": "MaintenanceTicket",
-          "relatedEntityId": "5d148c50-9c46-4e05-bc24-747e6288c6fe",
-          "createdAt": "2026-07-12T07:36:42.752Z",
-          "updatedAt": "2026-07-12T07:36:42.752Z",
+          "relatedEntityId": "9d3d44ef-ceec-4db1-8c9d-ac545f9ba62d",
+          "createdAt": "2026-07-12T07:51:17.569Z",
+          "updatedAt": "2026-07-12T07:51:17.569Z",
           "user": {
-            "id": "ccba76b1-4e4a-48d3-bcdd-133b839502ea",
+            "id": "964f7752-e5bf-44a1-a110-1ccbc65b508b",
             "name": "Employee User",
             "email": "employee@assetflow.local",
             "role": "EMPLOYEE",
-            "departmentId": "c1d96709-b438-46c3-a59f-31f3024b3ecf"
+            "departmentId": "ac93d425-d882-4380-b544-caa6fd7c44f6"
           },
           "status": "unread",
           "recipient": {
-            "id": "ccba76b1-4e4a-48d3-bcdd-133b839502ea",
+            "id": "964f7752-e5bf-44a1-a110-1ccbc65b508b",
             "name": "Employee User",
             "email": "employee@assetflow.local",
             "role": "EMPLOYEE",
-            "departmentId": "c1d96709-b438-46c3-a59f-31f3024b3ecf"
+            "departmentId": "ac93d425-d882-4380-b544-caa6fd7c44f6"
           }
         },
         {
-          "id": "b430a833-0239-4d57-b4b3-06a4fd3edbcf",
-          "userId": "ccba76b1-4e4a-48d3-bcdd-133b839502ea",
+          "id": "13cff9e2-1915-4cf2-80f5-3398347e2c49",
+          "userId": "964f7752-e5bf-44a1-a110-1ccbc65b508b",
           "type": "MAINTENANCE_STARTED",
           "category": "MAINTENANCE",
           "priority": "MEDIUM",
           "title": "Maintenance started",
-          "message": "Maintenance for Notification QA Asset 1783841802663-MNT has started.",
+          "message": "Maintenance for Notification QA Asset 1783842677478-MNT has started.",
           "isRead": false,
           "readAt": null,
           "relatedEntityType": "MaintenanceTicket",
-          "relatedEntityId": "5d148c50-9c46-4e05-bc24-747e6288c6fe",
-          "createdAt": "2026-07-12T07:36:42.748Z",
-          "updatedAt": "2026-07-12T07:36:42.748Z",
+          "relatedEntityId": "9d3d44ef-ceec-4db1-8c9d-ac545f9ba62d",
+          "createdAt": "2026-07-12T07:51:17.564Z",
+          "updatedAt": "2026-07-12T07:51:17.564Z",
           "user": {
-            "id": "ccba76b1-4e4a-48d3-bcdd-133b839502ea",
+            "id": "964f7752-e5bf-44a1-a110-1ccbc65b508b",
             "name": "Employee User",
             "email": "employee@assetflow.local",
             "role": "EMPLOYEE",
-            "departmentId": "c1d96709-b438-46c3-a59f-31f3024b3ecf"
+            "departmentId": "ac93d425-d882-4380-b544-caa6fd7c44f6"
           },
           "status": "unread",
           "recipient": {
-            "id": "ccba76b1-4e4a-48d3-bcdd-133b839502ea",
+            "id": "964f7752-e5bf-44a1-a110-1ccbc65b508b",
             "name": "Employee User",
             "email": "employee@assetflow.local",
             "role": "EMPLOYEE",
-            "departmentId": "c1d96709-b438-46c3-a59f-31f3024b3ecf"
+            "departmentId": "ac93d425-d882-4380-b544-caa6fd7c44f6"
           }
         },
         {
-          "id": "4e2293d7-322f-4652-a016-ae9702e1b0d8",
-          "userId": "ccba76b1-4e4a-48d3-bcdd-133b839502ea",
+          "id": "fedb14be-2ce9-4748-a4b6-803458c5a37f",
+          "userId": "964f7752-e5bf-44a1-a110-1ccbc65b508b",
           "type": "MAINTENANCE_ASSIGNED",
           "category": "MAINTENANCE",
           "priority": "MEDIUM",
           "title": "Maintenance assigned",
-          "message": "Maintenance for Notification QA Asset 1783841802663-MNT was assigned.",
+          "message": "Maintenance for Notification QA Asset 1783842677478-MNT was assigned.",
           "isRead": false,
           "readAt": null,
           "relatedEntityType": "MaintenanceTicket",
-          "relatedEntityId": "5d148c50-9c46-4e05-bc24-747e6288c6fe",
-          "createdAt": "2026-07-12T07:36:42.744Z",
-          "updatedAt": "2026-07-12T07:36:42.744Z",
+          "relatedEntityId": "9d3d44ef-ceec-4db1-8c9d-ac545f9ba62d",
+          "createdAt": "2026-07-12T07:51:17.560Z",
+          "updatedAt": "2026-07-12T07:51:17.560Z",
           "user": {
-            "id": "ccba76b1-4e4a-48d3-bcdd-133b839502ea",
+            "id": "964f7752-e5bf-44a1-a110-1ccbc65b508b",
             "name": "Employee User",
             "email": "employee@assetflow.local",
             "role": "EMPLOYEE",
-            "departmentId": "c1d96709-b438-46c3-a59f-31f3024b3ecf"
+            "departmentId": "ac93d425-d882-4380-b544-caa6fd7c44f6"
           },
           "status": "unread",
           "recipient": {
-            "id": "ccba76b1-4e4a-48d3-bcdd-133b839502ea",
+            "id": "964f7752-e5bf-44a1-a110-1ccbc65b508b",
             "name": "Employee User",
             "email": "employee@assetflow.local",
             "role": "EMPLOYEE",
-            "departmentId": "c1d96709-b438-46c3-a59f-31f3024b3ecf"
+            "departmentId": "ac93d425-d882-4380-b544-caa6fd7c44f6"
           }
         },
         {
-          "id": "7d196d22-9f7c-420d-a6c0-b5525e92369b",
-          "userId": "ccba76b1-4e4a-48d3-bcdd-133b839502ea",
+          "id": "cd2101e2-a066-4797-83d0-62e780c03954",
+          "userId": "964f7752-e5bf-44a1-a110-1ccbc65b508b",
           "type": "MAINTENANCE_APPROVED",
           "category": "MAINTENANCE",
           "priority": "MEDIUM",
           "title": "Maintenance approved",
-          "message": "Maintenance ticket for Notification QA Asset 1783841802663-MNT was approved.",
+          "message": "Maintenance ticket for Notification QA Asset 1783842677478-MNT was approved.",
           "isRead": false,
           "readAt": null,
           "relatedEntityType": "MaintenanceTicket",
-          "relatedEntityId": "5d148c50-9c46-4e05-bc24-747e6288c6fe",
-          "createdAt": "2026-07-12T07:36:42.739Z",
-          "updatedAt": "2026-07-12T07:36:42.739Z",
+          "relatedEntityId": "9d3d44ef-ceec-4db1-8c9d-ac545f9ba62d",
+          "createdAt": "2026-07-12T07:51:17.555Z",
+          "updatedAt": "2026-07-12T07:51:17.555Z",
           "user": {
-            "id": "ccba76b1-4e4a-48d3-bcdd-133b839502ea",
+            "id": "964f7752-e5bf-44a1-a110-1ccbc65b508b",
             "name": "Employee User",
             "email": "employee@assetflow.local",
             "role": "EMPLOYEE",
-            "departmentId": "c1d96709-b438-46c3-a59f-31f3024b3ecf"
+            "departmentId": "ac93d425-d882-4380-b544-caa6fd7c44f6"
           },
           "status": "unread",
           "recipient": {
-            "id": "ccba76b1-4e4a-48d3-bcdd-133b839502ea",
+            "id": "964f7752-e5bf-44a1-a110-1ccbc65b508b",
             "name": "Employee User",
             "email": "employee@assetflow.local",
             "role": "EMPLOYEE",
-            "departmentId": "c1d96709-b438-46c3-a59f-31f3024b3ecf"
+            "departmentId": "ac93d425-d882-4380-b544-caa6fd7c44f6"
           }
         },
         {
-          "id": "91145f1d-c073-4383-a75c-f5434ad5c0a9",
-          "userId": "ccba76b1-4e4a-48d3-bcdd-133b839502ea",
+          "id": "2accbf59-9062-498f-8aa3-f295c300a749",
+          "userId": "964f7752-e5bf-44a1-a110-1ccbc65b508b",
           "type": "BOOKING_APPROVED",
           "category": "BOOKING",
           "priority": "MEDIUM",
           "title": "Booking approved",
-          "message": "Booking for Notification QA Asset 1783841802663-BOOK was approved.",
+          "message": "Booking for Notification QA Asset 1783842677478-BOOK was approved.",
           "isRead": false,
           "readAt": null,
           "relatedEntityType": "Booking",
-          "relatedEntityId": "c2b3aea7-845e-4a58-9dbe-6534a2a73496",
-          "createdAt": "2026-07-12T07:36:42.723Z",
-          "updatedAt": "2026-07-12T07:36:42.723Z",
+          "relatedEntityId": "46530c76-b8a4-4711-b72a-658070d2a852",
+          "createdAt": "2026-07-12T07:51:17.540Z",
+          "updatedAt": "2026-07-12T07:51:17.540Z",
           "user": {
-            "id": "ccba76b1-4e4a-48d3-bcdd-133b839502ea",
+            "id": "964f7752-e5bf-44a1-a110-1ccbc65b508b",
             "name": "Employee User",
             "email": "employee@assetflow.local",
             "role": "EMPLOYEE",
-            "departmentId": "c1d96709-b438-46c3-a59f-31f3024b3ecf"
+            "departmentId": "ac93d425-d882-4380-b544-caa6fd7c44f6"
           },
           "status": "unread",
           "recipient": {
-            "id": "ccba76b1-4e4a-48d3-bcdd-133b839502ea",
+            "id": "964f7752-e5bf-44a1-a110-1ccbc65b508b",
             "name": "Employee User",
             "email": "employee@assetflow.local",
             "role": "EMPLOYEE",
-            "departmentId": "c1d96709-b438-46c3-a59f-31f3024b3ecf"
+            "departmentId": "ac93d425-d882-4380-b544-caa6fd7c44f6"
           }
         },
         {
-          "id": "1d322dcb-abc6-47ac-9df2-47a279b49f11",
-          "userId": "ccba76b1-4e4a-48d3-bcdd-133b839502ea",
+          "id": "972d015d-cc1e-4cf3-99bc-be1e214401cd",
+          "userId": "964f7752-e5bf-44a1-a110-1ccbc65b508b",
           "type": "TRANSFER_APPROVED",
           "category": "TRANSFER",
           "priority": "MEDIUM",
           "title": "Transfer approved",
-          "message": "Transfer request for Notification QA Asset 1783841802663-XFER was approved.",
+          "message": "Transfer request for Notification QA Asset 1783842677478-XFER was approved.",
           "isRead": false,
           "readAt": null,
           "relatedEntityType": "Transfer",
-          "relatedEntityId": "637e1ba8-19af-4e4b-ba20-fc500e5482a5",
-          "createdAt": "2026-07-12T07:36:42.706Z",
-          "updatedAt": "2026-07-12T07:36:42.706Z",
+          "relatedEntityId": "00ad1c99-99c6-4f3c-b105-6dd1c027f2a5",
+          "createdAt": "2026-07-12T07:51:17.523Z",
+          "updatedAt": "2026-07-12T07:51:17.523Z",
           "user": {
-            "id": "ccba76b1-4e4a-48d3-bcdd-133b839502ea",
+            "id": "964f7752-e5bf-44a1-a110-1ccbc65b508b",
             "name": "Employee User",
             "email": "employee@assetflow.local",
             "role": "EMPLOYEE",
-            "departmentId": "c1d96709-b438-46c3-a59f-31f3024b3ecf"
+            "departmentId": "ac93d425-d882-4380-b544-caa6fd7c44f6"
           },
           "status": "unread",
           "recipient": {
-            "id": "ccba76b1-4e4a-48d3-bcdd-133b839502ea",
+            "id": "964f7752-e5bf-44a1-a110-1ccbc65b508b",
             "name": "Employee User",
             "email": "employee@assetflow.local",
             "role": "EMPLOYEE",
-            "departmentId": "c1d96709-b438-46c3-a59f-31f3024b3ecf"
+            "departmentId": "ac93d425-d882-4380-b544-caa6fd7c44f6"
           }
         },
         {
-          "id": "53e78875-ba52-474a-8807-abbe698e02d0",
-          "userId": "ccba76b1-4e4a-48d3-bcdd-133b839502ea",
+          "id": "5eabb988-d2f5-470a-82c1-9e28f12c49b3",
+          "userId": "964f7752-e5bf-44a1-a110-1ccbc65b508b",
           "type": "ASSET_ALLOCATED",
           "category": "ALLOCATION",
           "priority": "MEDIUM",
           "title": "Asset allocated",
-          "message": "Notification QA Asset 1783841802663-XFER has been allocated to you.",
+          "message": "Notification QA Asset 1783842677478-XFER has been allocated to you.",
           "isRead": false,
           "readAt": null,
           "relatedEntityType": "Allocation",
-          "relatedEntityId": "e6c3f764-c908-433e-8599-c22c0b20c166",
-          "createdAt": "2026-07-12T07:36:42.693Z",
-          "updatedAt": "2026-07-12T07:36:42.693Z",
+          "relatedEntityId": "0614e81d-cc5b-46b7-b8e9-f0dfbe8f3698",
+          "createdAt": "2026-07-12T07:51:17.509Z",
+          "updatedAt": "2026-07-12T07:51:17.509Z",
           "user": {
-            "id": "ccba76b1-4e4a-48d3-bcdd-133b839502ea",
+            "id": "964f7752-e5bf-44a1-a110-1ccbc65b508b",
             "name": "Employee User",
             "email": "employee@assetflow.local",
             "role": "EMPLOYEE",
-            "departmentId": "c1d96709-b438-46c3-a59f-31f3024b3ecf"
+            "departmentId": "ac93d425-d882-4380-b544-caa6fd7c44f6"
           },
           "status": "unread",
           "recipient": {
-            "id": "ccba76b1-4e4a-48d3-bcdd-133b839502ea",
+            "id": "964f7752-e5bf-44a1-a110-1ccbc65b508b",
             "name": "Employee User",
             "email": "employee@assetflow.local",
             "role": "EMPLOYEE",
-            "departmentId": "c1d96709-b438-46c3-a59f-31f3024b3ecf"
+            "departmentId": "ac93d425-d882-4380-b544-caa6fd7c44f6"
           }
         },
         {
-          "id": "0839fa0c-41db-49ae-a48a-af074d60b66e",
-          "userId": "ccba76b1-4e4a-48d3-bcdd-133b839502ea",
+          "id": "41c0e87e-4eac-4899-8f54-e4a0561c707e",
+          "userId": "964f7752-e5bf-44a1-a110-1ccbc65b508b",
           "type": "ASSET_ALLOCATED",
           "category": "ALLOCATION",
           "priority": "MEDIUM",
           "title": "Asset allocated",
-          "message": "Notification QA Asset 1783841802663-ALLOC has been allocated to you.",
+          "message": "Notification QA Asset 1783842677478-ALLOC has been allocated to you.",
           "isRead": false,
           "readAt": null,
           "relatedEntityType": "Allocation",
-          "relatedEntityId": "0ab818aa-37ce-4eba-8f5c-b20da6a24b05",
-          "createdAt": "2026-07-12T07:36:42.676Z",
-          "updatedAt": "2026-07-12T07:36:42.676Z",
+          "relatedEntityId": "952ac3d6-1ad6-4c19-8468-a0744f96b139",
+          "createdAt": "2026-07-12T07:51:17.493Z",
+          "updatedAt": "2026-07-12T07:51:17.493Z",
           "user": {
-            "id": "ccba76b1-4e4a-48d3-bcdd-133b839502ea",
+            "id": "964f7752-e5bf-44a1-a110-1ccbc65b508b",
             "name": "Employee User",
             "email": "employee@assetflow.local",
             "role": "EMPLOYEE",
-            "departmentId": "c1d96709-b438-46c3-a59f-31f3024b3ecf"
+            "departmentId": "ac93d425-d882-4380-b544-caa6fd7c44f6"
           },
           "status": "unread",
           "recipient": {
-            "id": "ccba76b1-4e4a-48d3-bcdd-133b839502ea",
+            "id": "964f7752-e5bf-44a1-a110-1ccbc65b508b",
             "name": "Employee User",
             "email": "employee@assetflow.local",
             "role": "EMPLOYEE",
-            "departmentId": "c1d96709-b438-46c3-a59f-31f3024b3ecf"
+            "departmentId": "ac93d425-d882-4380-b544-caa6fd7c44f6"
           }
         },
         {
-          "id": "5a280b94-3947-4aff-a6ae-fc1cd3d17ec8",
-          "userId": "ccba76b1-4e4a-48d3-bcdd-133b839502ea",
+          "id": "840b6a81-3659-4064-9618-32e4a90ebea6",
+          "userId": "964f7752-e5bf-44a1-a110-1ccbc65b508b",
           "type": "ASSET_ALLOCATED",
           "category": "ALLOCATION",
           "priority": "MEDIUM",
@@ -730,23 +730,23 @@
           "isRead": false,
           "readAt": null,
           "relatedEntityType": "Allocation",
-          "relatedEntityId": "080b260a-ccd5-4ff9-a964-2bdf3a1e864e",
-          "createdAt": "2026-07-12T07:36:42.436Z",
-          "updatedAt": "2026-07-12T07:36:42.436Z",
+          "relatedEntityId": "a999f8bb-50d7-4806-a51c-87fc05ac5b55",
+          "createdAt": "2026-07-12T07:51:17.254Z",
+          "updatedAt": "2026-07-12T07:51:17.254Z",
           "user": {
-            "id": "ccba76b1-4e4a-48d3-bcdd-133b839502ea",
+            "id": "964f7752-e5bf-44a1-a110-1ccbc65b508b",
             "name": "Employee User",
             "email": "employee@assetflow.local",
             "role": "EMPLOYEE",
-            "departmentId": "c1d96709-b438-46c3-a59f-31f3024b3ecf"
+            "departmentId": "ac93d425-d882-4380-b544-caa6fd7c44f6"
           },
           "status": "unread",
           "recipient": {
-            "id": "ccba76b1-4e4a-48d3-bcdd-133b839502ea",
+            "id": "964f7752-e5bf-44a1-a110-1ccbc65b508b",
             "name": "Employee User",
             "email": "employee@assetflow.local",
             "role": "EMPLOYEE",
-            "departmentId": "c1d96709-b438-46c3-a59f-31f3024b3ecf"
+            "departmentId": "ac93d425-d882-4380-b544-caa6fd7c44f6"
           }
         }
       ],
@@ -763,63 +763,63 @@
     "data": {
       "items": [
         {
-          "id": "91145f1d-c073-4383-a75c-f5434ad5c0a9",
-          "userId": "ccba76b1-4e4a-48d3-bcdd-133b839502ea",
+          "id": "2accbf59-9062-498f-8aa3-f295c300a749",
+          "userId": "964f7752-e5bf-44a1-a110-1ccbc65b508b",
           "type": "BOOKING_APPROVED",
           "category": "BOOKING",
           "priority": "MEDIUM",
           "title": "Booking approved",
-          "message": "Booking for Notification QA Asset 1783841802663-BOOK was approved.",
+          "message": "Booking for Notification QA Asset 1783842677478-BOOK was approved.",
           "isRead": false,
           "readAt": null,
           "relatedEntityType": "Booking",
-          "relatedEntityId": "c2b3aea7-845e-4a58-9dbe-6534a2a73496",
-          "createdAt": "2026-07-12T07:36:42.723Z",
-          "updatedAt": "2026-07-12T07:36:42.723Z",
+          "relatedEntityId": "46530c76-b8a4-4711-b72a-658070d2a852",
+          "createdAt": "2026-07-12T07:51:17.540Z",
+          "updatedAt": "2026-07-12T07:51:17.540Z",
           "user": {
-            "id": "ccba76b1-4e4a-48d3-bcdd-133b839502ea",
+            "id": "964f7752-e5bf-44a1-a110-1ccbc65b508b",
             "name": "Employee User",
             "email": "employee@assetflow.local",
             "role": "EMPLOYEE",
-            "departmentId": "c1d96709-b438-46c3-a59f-31f3024b3ecf"
+            "departmentId": "ac93d425-d882-4380-b544-caa6fd7c44f6"
           },
           "status": "unread",
           "recipient": {
-            "id": "ccba76b1-4e4a-48d3-bcdd-133b839502ea",
+            "id": "964f7752-e5bf-44a1-a110-1ccbc65b508b",
             "name": "Employee User",
             "email": "employee@assetflow.local",
             "role": "EMPLOYEE",
-            "departmentId": "c1d96709-b438-46c3-a59f-31f3024b3ecf"
+            "departmentId": "ac93d425-d882-4380-b544-caa6fd7c44f6"
           }
         },
         {
-          "id": "e0e5dc75-24bb-47b8-b668-aad323575256",
-          "userId": "ccba76b1-4e4a-48d3-bcdd-133b839502ea",
+          "id": "69dc396e-758e-4a15-8826-8152747a154f",
+          "userId": "964f7752-e5bf-44a1-a110-1ccbc65b508b",
           "type": "BOOKING_CREATED",
           "category": "BOOKING",
           "priority": "INFO",
           "title": "Booking requested",
-          "message": "Booking request for Notification QA Asset 1783841802663-BOOK was created.",
+          "message": "Booking request for Notification QA Asset 1783842677478-BOOK was created.",
           "isRead": false,
           "readAt": null,
           "relatedEntityType": "Booking",
-          "relatedEntityId": "c2b3aea7-845e-4a58-9dbe-6534a2a73496",
-          "createdAt": "2026-07-12T07:36:42.718Z",
-          "updatedAt": "2026-07-12T07:36:42.718Z",
+          "relatedEntityId": "46530c76-b8a4-4711-b72a-658070d2a852",
+          "createdAt": "2026-07-12T07:51:17.534Z",
+          "updatedAt": "2026-07-12T07:51:17.534Z",
           "user": {
-            "id": "ccba76b1-4e4a-48d3-bcdd-133b839502ea",
+            "id": "964f7752-e5bf-44a1-a110-1ccbc65b508b",
             "name": "Employee User",
             "email": "employee@assetflow.local",
             "role": "EMPLOYEE",
-            "departmentId": "c1d96709-b438-46c3-a59f-31f3024b3ecf"
+            "departmentId": "ac93d425-d882-4380-b544-caa6fd7c44f6"
           },
           "status": "unread",
           "recipient": {
-            "id": "ccba76b1-4e4a-48d3-bcdd-133b839502ea",
+            "id": "964f7752-e5bf-44a1-a110-1ccbc65b508b",
             "name": "Employee User",
             "email": "employee@assetflow.local",
             "role": "EMPLOYEE",
-            "departmentId": "c1d96709-b438-46c3-a59f-31f3024b3ecf"
+            "departmentId": "ac93d425-d882-4380-b544-caa6fd7c44f6"
           }
         }
       ],
@@ -836,338 +836,338 @@
     "data": {
       "items": [
         {
-          "id": "e38ef37e-55c7-4bef-9dbb-d933839d76d3",
-          "userId": "ccba76b1-4e4a-48d3-bcdd-133b839502ea",
+          "id": "496535a8-1a3f-4cc4-a0cf-167f28d7066f",
+          "userId": "964f7752-e5bf-44a1-a110-1ccbc65b508b",
           "type": "MAINTENANCE_RESOLVED",
           "category": "MAINTENANCE",
           "priority": "MEDIUM",
           "title": "Maintenance resolved",
-          "message": "Maintenance for Notification QA Asset 1783841802663-MNT was resolved.",
+          "message": "Maintenance for Notification QA Asset 1783842677478-MNT was resolved.",
           "isRead": false,
           "readAt": null,
           "relatedEntityType": "MaintenanceTicket",
-          "relatedEntityId": "5d148c50-9c46-4e05-bc24-747e6288c6fe",
-          "createdAt": "2026-07-12T07:36:42.752Z",
-          "updatedAt": "2026-07-12T07:36:42.752Z",
+          "relatedEntityId": "9d3d44ef-ceec-4db1-8c9d-ac545f9ba62d",
+          "createdAt": "2026-07-12T07:51:17.569Z",
+          "updatedAt": "2026-07-12T07:51:17.569Z",
           "user": {
-            "id": "ccba76b1-4e4a-48d3-bcdd-133b839502ea",
+            "id": "964f7752-e5bf-44a1-a110-1ccbc65b508b",
             "name": "Employee User",
             "email": "employee@assetflow.local",
             "role": "EMPLOYEE",
-            "departmentId": "c1d96709-b438-46c3-a59f-31f3024b3ecf"
+            "departmentId": "ac93d425-d882-4380-b544-caa6fd7c44f6"
           },
           "status": "unread",
           "recipient": {
-            "id": "ccba76b1-4e4a-48d3-bcdd-133b839502ea",
+            "id": "964f7752-e5bf-44a1-a110-1ccbc65b508b",
             "name": "Employee User",
             "email": "employee@assetflow.local",
             "role": "EMPLOYEE",
-            "departmentId": "c1d96709-b438-46c3-a59f-31f3024b3ecf"
+            "departmentId": "ac93d425-d882-4380-b544-caa6fd7c44f6"
           }
         },
         {
-          "id": "b430a833-0239-4d57-b4b3-06a4fd3edbcf",
-          "userId": "ccba76b1-4e4a-48d3-bcdd-133b839502ea",
+          "id": "13cff9e2-1915-4cf2-80f5-3398347e2c49",
+          "userId": "964f7752-e5bf-44a1-a110-1ccbc65b508b",
           "type": "MAINTENANCE_STARTED",
           "category": "MAINTENANCE",
           "priority": "MEDIUM",
           "title": "Maintenance started",
-          "message": "Maintenance for Notification QA Asset 1783841802663-MNT has started.",
+          "message": "Maintenance for Notification QA Asset 1783842677478-MNT has started.",
           "isRead": false,
           "readAt": null,
           "relatedEntityType": "MaintenanceTicket",
-          "relatedEntityId": "5d148c50-9c46-4e05-bc24-747e6288c6fe",
-          "createdAt": "2026-07-12T07:36:42.748Z",
-          "updatedAt": "2026-07-12T07:36:42.748Z",
+          "relatedEntityId": "9d3d44ef-ceec-4db1-8c9d-ac545f9ba62d",
+          "createdAt": "2026-07-12T07:51:17.564Z",
+          "updatedAt": "2026-07-12T07:51:17.564Z",
           "user": {
-            "id": "ccba76b1-4e4a-48d3-bcdd-133b839502ea",
+            "id": "964f7752-e5bf-44a1-a110-1ccbc65b508b",
             "name": "Employee User",
             "email": "employee@assetflow.local",
             "role": "EMPLOYEE",
-            "departmentId": "c1d96709-b438-46c3-a59f-31f3024b3ecf"
+            "departmentId": "ac93d425-d882-4380-b544-caa6fd7c44f6"
           },
           "status": "unread",
           "recipient": {
-            "id": "ccba76b1-4e4a-48d3-bcdd-133b839502ea",
+            "id": "964f7752-e5bf-44a1-a110-1ccbc65b508b",
             "name": "Employee User",
             "email": "employee@assetflow.local",
             "role": "EMPLOYEE",
-            "departmentId": "c1d96709-b438-46c3-a59f-31f3024b3ecf"
+            "departmentId": "ac93d425-d882-4380-b544-caa6fd7c44f6"
           }
         },
         {
-          "id": "4e2293d7-322f-4652-a016-ae9702e1b0d8",
-          "userId": "ccba76b1-4e4a-48d3-bcdd-133b839502ea",
+          "id": "fedb14be-2ce9-4748-a4b6-803458c5a37f",
+          "userId": "964f7752-e5bf-44a1-a110-1ccbc65b508b",
           "type": "MAINTENANCE_ASSIGNED",
           "category": "MAINTENANCE",
           "priority": "MEDIUM",
           "title": "Maintenance assigned",
-          "message": "Maintenance for Notification QA Asset 1783841802663-MNT was assigned.",
+          "message": "Maintenance for Notification QA Asset 1783842677478-MNT was assigned.",
           "isRead": false,
           "readAt": null,
           "relatedEntityType": "MaintenanceTicket",
-          "relatedEntityId": "5d148c50-9c46-4e05-bc24-747e6288c6fe",
-          "createdAt": "2026-07-12T07:36:42.744Z",
-          "updatedAt": "2026-07-12T07:36:42.744Z",
+          "relatedEntityId": "9d3d44ef-ceec-4db1-8c9d-ac545f9ba62d",
+          "createdAt": "2026-07-12T07:51:17.560Z",
+          "updatedAt": "2026-07-12T07:51:17.560Z",
           "user": {
-            "id": "ccba76b1-4e4a-48d3-bcdd-133b839502ea",
+            "id": "964f7752-e5bf-44a1-a110-1ccbc65b508b",
             "name": "Employee User",
             "email": "employee@assetflow.local",
             "role": "EMPLOYEE",
-            "departmentId": "c1d96709-b438-46c3-a59f-31f3024b3ecf"
+            "departmentId": "ac93d425-d882-4380-b544-caa6fd7c44f6"
           },
           "status": "unread",
           "recipient": {
-            "id": "ccba76b1-4e4a-48d3-bcdd-133b839502ea",
+            "id": "964f7752-e5bf-44a1-a110-1ccbc65b508b",
             "name": "Employee User",
             "email": "employee@assetflow.local",
             "role": "EMPLOYEE",
-            "departmentId": "c1d96709-b438-46c3-a59f-31f3024b3ecf"
+            "departmentId": "ac93d425-d882-4380-b544-caa6fd7c44f6"
           }
         },
         {
-          "id": "7d196d22-9f7c-420d-a6c0-b5525e92369b",
-          "userId": "ccba76b1-4e4a-48d3-bcdd-133b839502ea",
+          "id": "cd2101e2-a066-4797-83d0-62e780c03954",
+          "userId": "964f7752-e5bf-44a1-a110-1ccbc65b508b",
           "type": "MAINTENANCE_APPROVED",
           "category": "MAINTENANCE",
           "priority": "MEDIUM",
           "title": "Maintenance approved",
-          "message": "Maintenance ticket for Notification QA Asset 1783841802663-MNT was approved.",
+          "message": "Maintenance ticket for Notification QA Asset 1783842677478-MNT was approved.",
           "isRead": false,
           "readAt": null,
           "relatedEntityType": "MaintenanceTicket",
-          "relatedEntityId": "5d148c50-9c46-4e05-bc24-747e6288c6fe",
-          "createdAt": "2026-07-12T07:36:42.739Z",
-          "updatedAt": "2026-07-12T07:36:42.739Z",
+          "relatedEntityId": "9d3d44ef-ceec-4db1-8c9d-ac545f9ba62d",
+          "createdAt": "2026-07-12T07:51:17.555Z",
+          "updatedAt": "2026-07-12T07:51:17.555Z",
           "user": {
-            "id": "ccba76b1-4e4a-48d3-bcdd-133b839502ea",
+            "id": "964f7752-e5bf-44a1-a110-1ccbc65b508b",
             "name": "Employee User",
             "email": "employee@assetflow.local",
             "role": "EMPLOYEE",
-            "departmentId": "c1d96709-b438-46c3-a59f-31f3024b3ecf"
+            "departmentId": "ac93d425-d882-4380-b544-caa6fd7c44f6"
           },
           "status": "unread",
           "recipient": {
-            "id": "ccba76b1-4e4a-48d3-bcdd-133b839502ea",
+            "id": "964f7752-e5bf-44a1-a110-1ccbc65b508b",
             "name": "Employee User",
             "email": "employee@assetflow.local",
             "role": "EMPLOYEE",
-            "departmentId": "c1d96709-b438-46c3-a59f-31f3024b3ecf"
+            "departmentId": "ac93d425-d882-4380-b544-caa6fd7c44f6"
           }
         },
         {
-          "id": "d0552db0-ded1-44a7-a48e-3a765df70cad",
-          "userId": "ccba76b1-4e4a-48d3-bcdd-133b839502ea",
+          "id": "70ed0d2f-4dbe-420d-983d-622f37f79343",
+          "userId": "964f7752-e5bf-44a1-a110-1ccbc65b508b",
           "type": "MAINTENANCE_CREATED",
           "category": "MAINTENANCE",
           "priority": "INFO",
           "title": "Maintenance ticket created",
-          "message": "Maintenance ticket for Notification QA Asset 1783841802663-MNT was created.",
+          "message": "Maintenance ticket for Notification QA Asset 1783842677478-MNT was created.",
           "isRead": false,
           "readAt": null,
           "relatedEntityType": "MaintenanceTicket",
-          "relatedEntityId": "5d148c50-9c46-4e05-bc24-747e6288c6fe",
-          "createdAt": "2026-07-12T07:36:42.734Z",
-          "updatedAt": "2026-07-12T07:36:42.734Z",
+          "relatedEntityId": "9d3d44ef-ceec-4db1-8c9d-ac545f9ba62d",
+          "createdAt": "2026-07-12T07:51:17.550Z",
+          "updatedAt": "2026-07-12T07:51:17.550Z",
           "user": {
-            "id": "ccba76b1-4e4a-48d3-bcdd-133b839502ea",
+            "id": "964f7752-e5bf-44a1-a110-1ccbc65b508b",
             "name": "Employee User",
             "email": "employee@assetflow.local",
             "role": "EMPLOYEE",
-            "departmentId": "c1d96709-b438-46c3-a59f-31f3024b3ecf"
+            "departmentId": "ac93d425-d882-4380-b544-caa6fd7c44f6"
           },
           "status": "unread",
           "recipient": {
-            "id": "ccba76b1-4e4a-48d3-bcdd-133b839502ea",
+            "id": "964f7752-e5bf-44a1-a110-1ccbc65b508b",
             "name": "Employee User",
             "email": "employee@assetflow.local",
             "role": "EMPLOYEE",
-            "departmentId": "c1d96709-b438-46c3-a59f-31f3024b3ecf"
+            "departmentId": "ac93d425-d882-4380-b544-caa6fd7c44f6"
           }
         },
         {
-          "id": "91145f1d-c073-4383-a75c-f5434ad5c0a9",
-          "userId": "ccba76b1-4e4a-48d3-bcdd-133b839502ea",
+          "id": "2accbf59-9062-498f-8aa3-f295c300a749",
+          "userId": "964f7752-e5bf-44a1-a110-1ccbc65b508b",
           "type": "BOOKING_APPROVED",
           "category": "BOOKING",
           "priority": "MEDIUM",
           "title": "Booking approved",
-          "message": "Booking for Notification QA Asset 1783841802663-BOOK was approved.",
+          "message": "Booking for Notification QA Asset 1783842677478-BOOK was approved.",
           "isRead": false,
           "readAt": null,
           "relatedEntityType": "Booking",
-          "relatedEntityId": "c2b3aea7-845e-4a58-9dbe-6534a2a73496",
-          "createdAt": "2026-07-12T07:36:42.723Z",
-          "updatedAt": "2026-07-12T07:36:42.723Z",
+          "relatedEntityId": "46530c76-b8a4-4711-b72a-658070d2a852",
+          "createdAt": "2026-07-12T07:51:17.540Z",
+          "updatedAt": "2026-07-12T07:51:17.540Z",
           "user": {
-            "id": "ccba76b1-4e4a-48d3-bcdd-133b839502ea",
+            "id": "964f7752-e5bf-44a1-a110-1ccbc65b508b",
             "name": "Employee User",
             "email": "employee@assetflow.local",
             "role": "EMPLOYEE",
-            "departmentId": "c1d96709-b438-46c3-a59f-31f3024b3ecf"
+            "departmentId": "ac93d425-d882-4380-b544-caa6fd7c44f6"
           },
           "status": "unread",
           "recipient": {
-            "id": "ccba76b1-4e4a-48d3-bcdd-133b839502ea",
+            "id": "964f7752-e5bf-44a1-a110-1ccbc65b508b",
             "name": "Employee User",
             "email": "employee@assetflow.local",
             "role": "EMPLOYEE",
-            "departmentId": "c1d96709-b438-46c3-a59f-31f3024b3ecf"
+            "departmentId": "ac93d425-d882-4380-b544-caa6fd7c44f6"
           }
         },
         {
-          "id": "e0e5dc75-24bb-47b8-b668-aad323575256",
-          "userId": "ccba76b1-4e4a-48d3-bcdd-133b839502ea",
+          "id": "69dc396e-758e-4a15-8826-8152747a154f",
+          "userId": "964f7752-e5bf-44a1-a110-1ccbc65b508b",
           "type": "BOOKING_CREATED",
           "category": "BOOKING",
           "priority": "INFO",
           "title": "Booking requested",
-          "message": "Booking request for Notification QA Asset 1783841802663-BOOK was created.",
+          "message": "Booking request for Notification QA Asset 1783842677478-BOOK was created.",
           "isRead": false,
           "readAt": null,
           "relatedEntityType": "Booking",
-          "relatedEntityId": "c2b3aea7-845e-4a58-9dbe-6534a2a73496",
-          "createdAt": "2026-07-12T07:36:42.718Z",
-          "updatedAt": "2026-07-12T07:36:42.718Z",
+          "relatedEntityId": "46530c76-b8a4-4711-b72a-658070d2a852",
+          "createdAt": "2026-07-12T07:51:17.534Z",
+          "updatedAt": "2026-07-12T07:51:17.534Z",
           "user": {
-            "id": "ccba76b1-4e4a-48d3-bcdd-133b839502ea",
+            "id": "964f7752-e5bf-44a1-a110-1ccbc65b508b",
             "name": "Employee User",
             "email": "employee@assetflow.local",
             "role": "EMPLOYEE",
-            "departmentId": "c1d96709-b438-46c3-a59f-31f3024b3ecf"
+            "departmentId": "ac93d425-d882-4380-b544-caa6fd7c44f6"
           },
           "status": "unread",
           "recipient": {
-            "id": "ccba76b1-4e4a-48d3-bcdd-133b839502ea",
+            "id": "964f7752-e5bf-44a1-a110-1ccbc65b508b",
             "name": "Employee User",
             "email": "employee@assetflow.local",
             "role": "EMPLOYEE",
-            "departmentId": "c1d96709-b438-46c3-a59f-31f3024b3ecf"
+            "departmentId": "ac93d425-d882-4380-b544-caa6fd7c44f6"
           }
         },
         {
-          "id": "1d322dcb-abc6-47ac-9df2-47a279b49f11",
-          "userId": "ccba76b1-4e4a-48d3-bcdd-133b839502ea",
+          "id": "972d015d-cc1e-4cf3-99bc-be1e214401cd",
+          "userId": "964f7752-e5bf-44a1-a110-1ccbc65b508b",
           "type": "TRANSFER_APPROVED",
           "category": "TRANSFER",
           "priority": "MEDIUM",
           "title": "Transfer approved",
-          "message": "Transfer request for Notification QA Asset 1783841802663-XFER was approved.",
+          "message": "Transfer request for Notification QA Asset 1783842677478-XFER was approved.",
           "isRead": false,
           "readAt": null,
           "relatedEntityType": "Transfer",
-          "relatedEntityId": "637e1ba8-19af-4e4b-ba20-fc500e5482a5",
-          "createdAt": "2026-07-12T07:36:42.706Z",
-          "updatedAt": "2026-07-12T07:36:42.706Z",
+          "relatedEntityId": "00ad1c99-99c6-4f3c-b105-6dd1c027f2a5",
+          "createdAt": "2026-07-12T07:51:17.523Z",
+          "updatedAt": "2026-07-12T07:51:17.523Z",
           "user": {
-            "id": "ccba76b1-4e4a-48d3-bcdd-133b839502ea",
+            "id": "964f7752-e5bf-44a1-a110-1ccbc65b508b",
             "name": "Employee User",
             "email": "employee@assetflow.local",
             "role": "EMPLOYEE",
-            "departmentId": "c1d96709-b438-46c3-a59f-31f3024b3ecf"
+            "departmentId": "ac93d425-d882-4380-b544-caa6fd7c44f6"
           },
           "status": "unread",
           "recipient": {
-            "id": "ccba76b1-4e4a-48d3-bcdd-133b839502ea",
+            "id": "964f7752-e5bf-44a1-a110-1ccbc65b508b",
             "name": "Employee User",
             "email": "employee@assetflow.local",
             "role": "EMPLOYEE",
-            "departmentId": "c1d96709-b438-46c3-a59f-31f3024b3ecf"
+            "departmentId": "ac93d425-d882-4380-b544-caa6fd7c44f6"
           }
         },
         {
-          "id": "e4b50698-54d3-409a-868c-06cb25ab90cc",
-          "userId": "ccba76b1-4e4a-48d3-bcdd-133b839502ea",
+          "id": "432467c8-4923-44ff-a3e3-1bcc71ba8d3c",
+          "userId": "964f7752-e5bf-44a1-a110-1ccbc65b508b",
           "type": "TRANSFER_REQUESTED",
           "category": "TRANSFER",
           "priority": "INFO",
           "title": "Transfer requested",
-          "message": "Transfer request for Notification QA Asset 1783841802663-XFER was created.",
+          "message": "Transfer request for Notification QA Asset 1783842677478-XFER was created.",
           "isRead": false,
           "readAt": null,
           "relatedEntityType": "Transfer",
-          "relatedEntityId": "637e1ba8-19af-4e4b-ba20-fc500e5482a5",
-          "createdAt": "2026-07-12T07:36:42.698Z",
-          "updatedAt": "2026-07-12T07:36:42.698Z",
+          "relatedEntityId": "00ad1c99-99c6-4f3c-b105-6dd1c027f2a5",
+          "createdAt": "2026-07-12T07:51:17.516Z",
+          "updatedAt": "2026-07-12T07:51:17.516Z",
           "user": {
-            "id": "ccba76b1-4e4a-48d3-bcdd-133b839502ea",
+            "id": "964f7752-e5bf-44a1-a110-1ccbc65b508b",
             "name": "Employee User",
             "email": "employee@assetflow.local",
             "role": "EMPLOYEE",
-            "departmentId": "c1d96709-b438-46c3-a59f-31f3024b3ecf"
+            "departmentId": "ac93d425-d882-4380-b544-caa6fd7c44f6"
           },
           "status": "unread",
           "recipient": {
-            "id": "ccba76b1-4e4a-48d3-bcdd-133b839502ea",
+            "id": "964f7752-e5bf-44a1-a110-1ccbc65b508b",
             "name": "Employee User",
             "email": "employee@assetflow.local",
             "role": "EMPLOYEE",
-            "departmentId": "c1d96709-b438-46c3-a59f-31f3024b3ecf"
+            "departmentId": "ac93d425-d882-4380-b544-caa6fd7c44f6"
           }
         },
         {
-          "id": "53e78875-ba52-474a-8807-abbe698e02d0",
-          "userId": "ccba76b1-4e4a-48d3-bcdd-133b839502ea",
+          "id": "5eabb988-d2f5-470a-82c1-9e28f12c49b3",
+          "userId": "964f7752-e5bf-44a1-a110-1ccbc65b508b",
           "type": "ASSET_ALLOCATED",
           "category": "ALLOCATION",
           "priority": "MEDIUM",
           "title": "Asset allocated",
-          "message": "Notification QA Asset 1783841802663-XFER has been allocated to you.",
+          "message": "Notification QA Asset 1783842677478-XFER has been allocated to you.",
           "isRead": false,
           "readAt": null,
           "relatedEntityType": "Allocation",
-          "relatedEntityId": "e6c3f764-c908-433e-8599-c22c0b20c166",
-          "createdAt": "2026-07-12T07:36:42.693Z",
-          "updatedAt": "2026-07-12T07:36:42.693Z",
+          "relatedEntityId": "0614e81d-cc5b-46b7-b8e9-f0dfbe8f3698",
+          "createdAt": "2026-07-12T07:51:17.509Z",
+          "updatedAt": "2026-07-12T07:51:17.509Z",
           "user": {
-            "id": "ccba76b1-4e4a-48d3-bcdd-133b839502ea",
+            "id": "964f7752-e5bf-44a1-a110-1ccbc65b508b",
             "name": "Employee User",
             "email": "employee@assetflow.local",
             "role": "EMPLOYEE",
-            "departmentId": "c1d96709-b438-46c3-a59f-31f3024b3ecf"
+            "departmentId": "ac93d425-d882-4380-b544-caa6fd7c44f6"
           },
           "status": "unread",
           "recipient": {
-            "id": "ccba76b1-4e4a-48d3-bcdd-133b839502ea",
+            "id": "964f7752-e5bf-44a1-a110-1ccbc65b508b",
             "name": "Employee User",
             "email": "employee@assetflow.local",
             "role": "EMPLOYEE",
-            "departmentId": "c1d96709-b438-46c3-a59f-31f3024b3ecf"
+            "departmentId": "ac93d425-d882-4380-b544-caa6fd7c44f6"
           }
         },
         {
-          "id": "0839fa0c-41db-49ae-a48a-af074d60b66e",
-          "userId": "ccba76b1-4e4a-48d3-bcdd-133b839502ea",
+          "id": "41c0e87e-4eac-4899-8f54-e4a0561c707e",
+          "userId": "964f7752-e5bf-44a1-a110-1ccbc65b508b",
           "type": "ASSET_ALLOCATED",
           "category": "ALLOCATION",
           "priority": "MEDIUM",
           "title": "Asset allocated",
-          "message": "Notification QA Asset 1783841802663-ALLOC has been allocated to you.",
+          "message": "Notification QA Asset 1783842677478-ALLOC has been allocated to you.",
           "isRead": false,
           "readAt": null,
           "relatedEntityType": "Allocation",
-          "relatedEntityId": "0ab818aa-37ce-4eba-8f5c-b20da6a24b05",
-          "createdAt": "2026-07-12T07:36:42.676Z",
-          "updatedAt": "2026-07-12T07:36:42.676Z",
+          "relatedEntityId": "952ac3d6-1ad6-4c19-8468-a0744f96b139",
+          "createdAt": "2026-07-12T07:51:17.493Z",
+          "updatedAt": "2026-07-12T07:51:17.493Z",
           "user": {
-            "id": "ccba76b1-4e4a-48d3-bcdd-133b839502ea",
+            "id": "964f7752-e5bf-44a1-a110-1ccbc65b508b",
             "name": "Employee User",
             "email": "employee@assetflow.local",
             "role": "EMPLOYEE",
-            "departmentId": "c1d96709-b438-46c3-a59f-31f3024b3ecf"
+            "departmentId": "ac93d425-d882-4380-b544-caa6fd7c44f6"
           },
           "status": "unread",
           "recipient": {
-            "id": "ccba76b1-4e4a-48d3-bcdd-133b839502ea",
+            "id": "964f7752-e5bf-44a1-a110-1ccbc65b508b",
             "name": "Employee User",
             "email": "employee@assetflow.local",
             "role": "EMPLOYEE",
-            "departmentId": "c1d96709-b438-46c3-a59f-31f3024b3ecf"
+            "departmentId": "ac93d425-d882-4380-b544-caa6fd7c44f6"
           }
         },
         {
-          "id": "5a280b94-3947-4aff-a6ae-fc1cd3d17ec8",
-          "userId": "ccba76b1-4e4a-48d3-bcdd-133b839502ea",
+          "id": "840b6a81-3659-4064-9618-32e4a90ebea6",
+          "userId": "964f7752-e5bf-44a1-a110-1ccbc65b508b",
           "type": "ASSET_ALLOCATED",
           "category": "ALLOCATION",
           "priority": "MEDIUM",
@@ -1176,23 +1176,23 @@
           "isRead": false,
           "readAt": null,
           "relatedEntityType": "Allocation",
-          "relatedEntityId": "080b260a-ccd5-4ff9-a964-2bdf3a1e864e",
-          "createdAt": "2026-07-12T07:36:42.436Z",
-          "updatedAt": "2026-07-12T07:36:42.436Z",
+          "relatedEntityId": "a999f8bb-50d7-4806-a51c-87fc05ac5b55",
+          "createdAt": "2026-07-12T07:51:17.254Z",
+          "updatedAt": "2026-07-12T07:51:17.254Z",
           "user": {
-            "id": "ccba76b1-4e4a-48d3-bcdd-133b839502ea",
+            "id": "964f7752-e5bf-44a1-a110-1ccbc65b508b",
             "name": "Employee User",
             "email": "employee@assetflow.local",
             "role": "EMPLOYEE",
-            "departmentId": "c1d96709-b438-46c3-a59f-31f3024b3ecf"
+            "departmentId": "ac93d425-d882-4380-b544-caa6fd7c44f6"
           },
           "status": "unread",
           "recipient": {
-            "id": "ccba76b1-4e4a-48d3-bcdd-133b839502ea",
+            "id": "964f7752-e5bf-44a1-a110-1ccbc65b508b",
             "name": "Employee User",
             "email": "employee@assetflow.local",
             "role": "EMPLOYEE",
-            "departmentId": "c1d96709-b438-46c3-a59f-31f3024b3ecf"
+            "departmentId": "ac93d425-d882-4380-b544-caa6fd7c44f6"
           }
         }
       ],
@@ -1209,33 +1209,33 @@
     "data": {
       "items": [
         {
-          "id": "e38ef37e-55c7-4bef-9dbb-d933839d76d3",
-          "userId": "ccba76b1-4e4a-48d3-bcdd-133b839502ea",
+          "id": "496535a8-1a3f-4cc4-a0cf-167f28d7066f",
+          "userId": "964f7752-e5bf-44a1-a110-1ccbc65b508b",
           "type": "MAINTENANCE_RESOLVED",
           "category": "MAINTENANCE",
           "priority": "MEDIUM",
           "title": "Maintenance resolved",
-          "message": "Maintenance for Notification QA Asset 1783841802663-MNT was resolved.",
+          "message": "Maintenance for Notification QA Asset 1783842677478-MNT was resolved.",
           "isRead": false,
           "readAt": null,
           "relatedEntityType": "MaintenanceTicket",
-          "relatedEntityId": "5d148c50-9c46-4e05-bc24-747e6288c6fe",
-          "createdAt": "2026-07-12T07:36:42.752Z",
-          "updatedAt": "2026-07-12T07:36:42.752Z",
+          "relatedEntityId": "9d3d44ef-ceec-4db1-8c9d-ac545f9ba62d",
+          "createdAt": "2026-07-12T07:51:17.569Z",
+          "updatedAt": "2026-07-12T07:51:17.569Z",
           "user": {
-            "id": "ccba76b1-4e4a-48d3-bcdd-133b839502ea",
+            "id": "964f7752-e5bf-44a1-a110-1ccbc65b508b",
             "name": "Employee User",
             "email": "employee@assetflow.local",
             "role": "EMPLOYEE",
-            "departmentId": "c1d96709-b438-46c3-a59f-31f3024b3ecf"
+            "departmentId": "ac93d425-d882-4380-b544-caa6fd7c44f6"
           },
           "status": "unread",
           "recipient": {
-            "id": "ccba76b1-4e4a-48d3-bcdd-133b839502ea",
+            "id": "964f7752-e5bf-44a1-a110-1ccbc65b508b",
             "name": "Employee User",
             "email": "employee@assetflow.local",
             "role": "EMPLOYEE",
-            "departmentId": "c1d96709-b438-46c3-a59f-31f3024b3ecf"
+            "departmentId": "ac93d425-d882-4380-b544-caa6fd7c44f6"
           }
         }
       ],
@@ -1250,33 +1250,33 @@
   "detail": {
     "success": true,
     "data": {
-      "id": "e38ef37e-55c7-4bef-9dbb-d933839d76d3",
-      "userId": "ccba76b1-4e4a-48d3-bcdd-133b839502ea",
+      "id": "496535a8-1a3f-4cc4-a0cf-167f28d7066f",
+      "userId": "964f7752-e5bf-44a1-a110-1ccbc65b508b",
       "type": "MAINTENANCE_RESOLVED",
       "category": "MAINTENANCE",
       "priority": "MEDIUM",
       "title": "Maintenance resolved",
-      "message": "Maintenance for Notification QA Asset 1783841802663-MNT was resolved.",
+      "message": "Maintenance for Notification QA Asset 1783842677478-MNT was resolved.",
       "isRead": false,
       "readAt": null,
       "relatedEntityType": "MaintenanceTicket",
-      "relatedEntityId": "5d148c50-9c46-4e05-bc24-747e6288c6fe",
-      "createdAt": "2026-07-12T07:36:42.752Z",
-      "updatedAt": "2026-07-12T07:36:42.752Z",
+      "relatedEntityId": "9d3d44ef-ceec-4db1-8c9d-ac545f9ba62d",
+      "createdAt": "2026-07-12T07:51:17.569Z",
+      "updatedAt": "2026-07-12T07:51:17.569Z",
       "user": {
-        "id": "ccba76b1-4e4a-48d3-bcdd-133b839502ea",
+        "id": "964f7752-e5bf-44a1-a110-1ccbc65b508b",
         "name": "Employee User",
         "email": "employee@assetflow.local",
         "role": "EMPLOYEE",
-        "departmentId": "c1d96709-b438-46c3-a59f-31f3024b3ecf"
+        "departmentId": "ac93d425-d882-4380-b544-caa6fd7c44f6"
       },
       "status": "unread",
       "recipient": {
-        "id": "ccba76b1-4e4a-48d3-bcdd-133b839502ea",
+        "id": "964f7752-e5bf-44a1-a110-1ccbc65b508b",
         "name": "Employee User",
         "email": "employee@assetflow.local",
         "role": "EMPLOYEE",
-        "departmentId": "c1d96709-b438-46c3-a59f-31f3024b3ecf"
+        "departmentId": "ac93d425-d882-4380-b544-caa6fd7c44f6"
       }
     },
     "message": "Operation completed successfully."
@@ -1286,93 +1286,93 @@
     "data": {
       "items": [
         {
-          "id": "3e57b6e3-4582-4166-8ef4-abb378347c91",
-          "userId": "f7f58451-2d67-481e-908b-db7cff719290",
+          "id": "adfc7d83-d0c8-4b1a-a22d-a610153d6a9b",
+          "userId": "bb47ab05-cc31-4219-916f-a3e850028d94",
           "type": "MAINTENANCE_APPROVAL_REQUIRED",
           "category": "APPROVAL",
           "priority": "HIGH",
           "title": "Maintenance approval needed",
-          "message": "Employee User reported maintenance for Notification QA Asset 1783841802663-MNT.",
+          "message": "Employee User reported maintenance for Notification QA Asset 1783842677478-MNT.",
           "isRead": false,
           "readAt": null,
           "relatedEntityType": "MaintenanceTicket",
-          "relatedEntityId": "5d148c50-9c46-4e05-bc24-747e6288c6fe",
-          "createdAt": "2026-07-12T07:36:42.734Z",
-          "updatedAt": "2026-07-12T07:36:42.734Z",
+          "relatedEntityId": "9d3d44ef-ceec-4db1-8c9d-ac545f9ba62d",
+          "createdAt": "2026-07-12T07:51:17.551Z",
+          "updatedAt": "2026-07-12T07:51:17.551Z",
           "user": {
-            "id": "f7f58451-2d67-481e-908b-db7cff719290",
+            "id": "bb47ab05-cc31-4219-916f-a3e850028d94",
             "name": "IT Manager",
             "email": "manager@assetflow.local",
             "role": "MANAGER",
-            "departmentId": "c1d96709-b438-46c3-a59f-31f3024b3ecf"
+            "departmentId": "ac93d425-d882-4380-b544-caa6fd7c44f6"
           },
           "status": "unread",
           "recipient": {
-            "id": "f7f58451-2d67-481e-908b-db7cff719290",
+            "id": "bb47ab05-cc31-4219-916f-a3e850028d94",
             "name": "IT Manager",
             "email": "manager@assetflow.local",
             "role": "MANAGER",
-            "departmentId": "c1d96709-b438-46c3-a59f-31f3024b3ecf"
+            "departmentId": "ac93d425-d882-4380-b544-caa6fd7c44f6"
           }
         },
         {
-          "id": "65098cae-def7-4252-b020-37604b71d9cf",
-          "userId": "f7f58451-2d67-481e-908b-db7cff719290",
+          "id": "4bd20f18-0ef5-42c0-84c9-f390d846775f",
+          "userId": "bb47ab05-cc31-4219-916f-a3e850028d94",
           "type": "BOOKING_APPROVAL_REQUIRED",
           "category": "APPROVAL",
           "priority": "HIGH",
           "title": "Booking approval needed",
-          "message": "Employee User requested Notification QA Asset 1783841802663-BOOK.",
+          "message": "Employee User requested Notification QA Asset 1783842677478-BOOK.",
           "isRead": false,
           "readAt": null,
           "relatedEntityType": "Booking",
-          "relatedEntityId": "c2b3aea7-845e-4a58-9dbe-6534a2a73496",
-          "createdAt": "2026-07-12T07:36:42.718Z",
-          "updatedAt": "2026-07-12T07:36:42.718Z",
+          "relatedEntityId": "46530c76-b8a4-4711-b72a-658070d2a852",
+          "createdAt": "2026-07-12T07:51:17.535Z",
+          "updatedAt": "2026-07-12T07:51:17.535Z",
           "user": {
-            "id": "f7f58451-2d67-481e-908b-db7cff719290",
+            "id": "bb47ab05-cc31-4219-916f-a3e850028d94",
             "name": "IT Manager",
             "email": "manager@assetflow.local",
             "role": "MANAGER",
-            "departmentId": "c1d96709-b438-46c3-a59f-31f3024b3ecf"
+            "departmentId": "ac93d425-d882-4380-b544-caa6fd7c44f6"
           },
           "status": "unread",
           "recipient": {
-            "id": "f7f58451-2d67-481e-908b-db7cff719290",
+            "id": "bb47ab05-cc31-4219-916f-a3e850028d94",
             "name": "IT Manager",
             "email": "manager@assetflow.local",
             "role": "MANAGER",
-            "departmentId": "c1d96709-b438-46c3-a59f-31f3024b3ecf"
+            "departmentId": "ac93d425-d882-4380-b544-caa6fd7c44f6"
           }
         },
         {
-          "id": "3b1a65dc-ce77-4f9f-b902-be9fa88da039",
-          "userId": "f7f58451-2d67-481e-908b-db7cff719290",
+          "id": "2233a84a-0026-4cef-a1c1-41922e2a5fac",
+          "userId": "bb47ab05-cc31-4219-916f-a3e850028d94",
           "type": "TRANSFER_APPROVAL_REQUIRED",
           "category": "APPROVAL",
           "priority": "HIGH",
           "title": "Transfer approval needed",
-          "message": "Employee User requested transfer for Notification QA Asset 1783841802663-XFER.",
+          "message": "Employee User requested transfer for Notification QA Asset 1783842677478-XFER.",
           "isRead": false,
           "readAt": null,
           "relatedEntityType": "Transfer",
-          "relatedEntityId": "637e1ba8-19af-4e4b-ba20-fc500e5482a5",
-          "createdAt": "2026-07-12T07:36:42.699Z",
-          "updatedAt": "2026-07-12T07:36:42.699Z",
+          "relatedEntityId": "00ad1c99-99c6-4f3c-b105-6dd1c027f2a5",
+          "createdAt": "2026-07-12T07:51:17.516Z",
+          "updatedAt": "2026-07-12T07:51:17.516Z",
           "user": {
-            "id": "f7f58451-2d67-481e-908b-db7cff719290",
+            "id": "bb47ab05-cc31-4219-916f-a3e850028d94",
             "name": "IT Manager",
             "email": "manager@assetflow.local",
             "role": "MANAGER",
-            "departmentId": "c1d96709-b438-46c3-a59f-31f3024b3ecf"
+            "departmentId": "ac93d425-d882-4380-b544-caa6fd7c44f6"
           },
           "status": "unread",
           "recipient": {
-            "id": "f7f58451-2d67-481e-908b-db7cff719290",
+            "id": "bb47ab05-cc31-4219-916f-a3e850028d94",
             "name": "IT Manager",
             "email": "manager@assetflow.local",
             "role": "MANAGER",
-            "departmentId": "c1d96709-b438-46c3-a59f-31f3024b3ecf"
+            "departmentId": "ac93d425-d882-4380-b544-caa6fd7c44f6"
           }
         }
       ],
@@ -1389,68 +1389,68 @@
     "data": {
       "items": [
         {
-          "id": "d4ad9549-add5-47f0-ae17-e2c748f24dbe",
-          "userId": "97e69066-fd68-40fc-97ff-cd0a26ab105a",
+          "id": "af29e860-8f0a-49d4-b5fe-749fc3fd3ad9",
+          "userId": "d5c990a4-bf18-459b-ab58-f936453ec33a",
           "type": "ASSET_RETIRED",
           "category": "ASSET",
           "priority": "INFO",
           "title": "Asset retired",
-          "message": "Notification QA Asset 1783841802663-RETIRE was retired.",
+          "message": "Notification QA Asset 1783842677478-RETIRE was retired.",
           "isRead": false,
           "readAt": null,
           "relatedEntityType": "Asset",
-          "relatedEntityId": "83012d79-532f-4ceb-acbe-2bd35581419a",
-          "createdAt": "2026-07-12T07:36:42.790Z",
-          "updatedAt": "2026-07-12T07:36:42.790Z",
+          "relatedEntityId": "b2fb4591-42b7-4065-81db-42babc274788",
+          "createdAt": "2026-07-12T07:51:17.607Z",
+          "updatedAt": "2026-07-12T07:51:17.607Z",
           "user": {
-            "id": "97e69066-fd68-40fc-97ff-cd0a26ab105a",
+            "id": "d5c990a4-bf18-459b-ab58-f936453ec33a",
             "name": "Admin User",
             "email": "admin@assetflow.local",
             "role": "ADMIN",
-            "departmentId": "c1d96709-b438-46c3-a59f-31f3024b3ecf"
+            "departmentId": "ac93d425-d882-4380-b544-caa6fd7c44f6"
           },
           "status": "unread",
           "recipient": {
-            "id": "97e69066-fd68-40fc-97ff-cd0a26ab105a",
+            "id": "d5c990a4-bf18-459b-ab58-f936453ec33a",
             "name": "Admin User",
             "email": "admin@assetflow.local",
             "role": "ADMIN",
-            "departmentId": "c1d96709-b438-46c3-a59f-31f3024b3ecf"
+            "departmentId": "ac93d425-d882-4380-b544-caa6fd7c44f6"
           }
         },
         {
-          "id": "c633f3a1-0627-4853-81bc-a9641c86e757",
-          "userId": "97e69066-fd68-40fc-97ff-cd0a26ab105a",
+          "id": "42078f13-409f-4cef-8a6a-12b68e09b82f",
+          "userId": "d5c990a4-bf18-459b-ab58-f936453ec33a",
           "type": "ASSET_CREATED",
           "category": "ASSET",
           "priority": "INFO",
           "title": "Asset created",
-          "message": "Notification QA Asset 1783841802663-RETIRE was registered.",
+          "message": "Notification QA Asset 1783842677478-RETIRE was registered.",
           "isRead": false,
           "readAt": null,
           "relatedEntityType": "Asset",
-          "relatedEntityId": "83012d79-532f-4ceb-acbe-2bd35581419a",
-          "createdAt": "2026-07-12T07:36:42.785Z",
-          "updatedAt": "2026-07-12T07:36:42.785Z",
+          "relatedEntityId": "b2fb4591-42b7-4065-81db-42babc274788",
+          "createdAt": "2026-07-12T07:51:17.603Z",
+          "updatedAt": "2026-07-12T07:51:17.603Z",
           "user": {
-            "id": "97e69066-fd68-40fc-97ff-cd0a26ab105a",
+            "id": "d5c990a4-bf18-459b-ab58-f936453ec33a",
             "name": "Admin User",
             "email": "admin@assetflow.local",
             "role": "ADMIN",
-            "departmentId": "c1d96709-b438-46c3-a59f-31f3024b3ecf"
+            "departmentId": "ac93d425-d882-4380-b544-caa6fd7c44f6"
           },
           "status": "unread",
           "recipient": {
-            "id": "97e69066-fd68-40fc-97ff-cd0a26ab105a",
+            "id": "d5c990a4-bf18-459b-ab58-f936453ec33a",
             "name": "Admin User",
             "email": "admin@assetflow.local",
             "role": "ADMIN",
-            "departmentId": "c1d96709-b438-46c3-a59f-31f3024b3ecf"
+            "departmentId": "ac93d425-d882-4380-b544-caa6fd7c44f6"
           }
         },
         {
-          "id": "02d89058-1e17-4d1c-aa1c-1ccb9266eb20",
-          "userId": "59589780-68c6-4f97-84b1-773778de59e7",
+          "id": "83617cfc-b9b4-4b6e-b5eb-44d7f8464907",
+          "userId": "e0874140-120a-4895-a85f-6799a2ace18b",
           "type": "AUDIT_COMPLETED",
           "category": "AUDIT",
           "priority": "INFO",
@@ -1459,28 +1459,28 @@
           "isRead": false,
           "readAt": null,
           "relatedEntityType": "Audit",
-          "relatedEntityId": "95b6ddb2-fa6f-42b8-a3e5-e668c8145e44",
-          "createdAt": "2026-07-12T07:36:42.780Z",
-          "updatedAt": "2026-07-12T07:36:42.780Z",
+          "relatedEntityId": "a1ffa8c8-d9c0-4224-b0d8-840ad604a5cd",
+          "createdAt": "2026-07-12T07:51:17.599Z",
+          "updatedAt": "2026-07-12T07:51:17.599Z",
           "user": {
-            "id": "59589780-68c6-4f97-84b1-773778de59e7",
+            "id": "e0874140-120a-4895-a85f-6799a2ace18b",
             "name": "Audit User",
             "email": "auditor@assetflow.local",
             "role": "AUDITOR",
-            "departmentId": "a7ce02f1-2e25-4650-ad2b-dab11dfeb82f"
+            "departmentId": "61b36392-553a-4ef4-9ab9-3e918abab9cb"
           },
           "status": "unread",
           "recipient": {
-            "id": "59589780-68c6-4f97-84b1-773778de59e7",
+            "id": "e0874140-120a-4895-a85f-6799a2ace18b",
             "name": "Audit User",
             "email": "auditor@assetflow.local",
             "role": "AUDITOR",
-            "departmentId": "a7ce02f1-2e25-4650-ad2b-dab11dfeb82f"
+            "departmentId": "61b36392-553a-4ef4-9ab9-3e918abab9cb"
           }
         },
         {
-          "id": "c7d4346a-01ec-4b6e-bc61-6dc33788707c",
-          "userId": "f7f58451-2d67-481e-908b-db7cff719290",
+          "id": "986410fc-b195-4e2e-bbd4-589694a309bb",
+          "userId": "bb47ab05-cc31-4219-916f-a3e850028d94",
           "type": "AUDIT_COMPLETED",
           "category": "AUDIT",
           "priority": "INFO",
@@ -1489,28 +1489,28 @@
           "isRead": false,
           "readAt": null,
           "relatedEntityType": "Audit",
-          "relatedEntityId": "95b6ddb2-fa6f-42b8-a3e5-e668c8145e44",
-          "createdAt": "2026-07-12T07:36:42.780Z",
-          "updatedAt": "2026-07-12T07:36:42.780Z",
+          "relatedEntityId": "a1ffa8c8-d9c0-4224-b0d8-840ad604a5cd",
+          "createdAt": "2026-07-12T07:51:17.599Z",
+          "updatedAt": "2026-07-12T07:51:17.599Z",
           "user": {
-            "id": "f7f58451-2d67-481e-908b-db7cff719290",
+            "id": "bb47ab05-cc31-4219-916f-a3e850028d94",
             "name": "IT Manager",
             "email": "manager@assetflow.local",
             "role": "MANAGER",
-            "departmentId": "c1d96709-b438-46c3-a59f-31f3024b3ecf"
+            "departmentId": "ac93d425-d882-4380-b544-caa6fd7c44f6"
           },
           "status": "unread",
           "recipient": {
-            "id": "f7f58451-2d67-481e-908b-db7cff719290",
+            "id": "bb47ab05-cc31-4219-916f-a3e850028d94",
             "name": "IT Manager",
             "email": "manager@assetflow.local",
             "role": "MANAGER",
-            "departmentId": "c1d96709-b438-46c3-a59f-31f3024b3ecf"
+            "departmentId": "ac93d425-d882-4380-b544-caa6fd7c44f6"
           }
         },
         {
-          "id": "a201971e-2234-4379-a692-2176b466eaff",
-          "userId": "59589780-68c6-4f97-84b1-773778de59e7",
+          "id": "7df5bcc8-dc32-4b83-b264-c0ca73ffe059",
+          "userId": "e0874140-120a-4895-a85f-6799a2ace18b",
           "type": "AUDIT_STARTED",
           "category": "AUDIT",
           "priority": "MEDIUM",
@@ -1519,23 +1519,23 @@
           "isRead": false,
           "readAt": null,
           "relatedEntityType": "Audit",
-          "relatedEntityId": "95b6ddb2-fa6f-42b8-a3e5-e668c8145e44",
-          "createdAt": "2026-07-12T07:36:42.769Z",
-          "updatedAt": "2026-07-12T07:36:42.769Z",
+          "relatedEntityId": "a1ffa8c8-d9c0-4224-b0d8-840ad604a5cd",
+          "createdAt": "2026-07-12T07:51:17.587Z",
+          "updatedAt": "2026-07-12T07:51:17.587Z",
           "user": {
-            "id": "59589780-68c6-4f97-84b1-773778de59e7",
+            "id": "e0874140-120a-4895-a85f-6799a2ace18b",
             "name": "Audit User",
             "email": "auditor@assetflow.local",
             "role": "AUDITOR",
-            "departmentId": "a7ce02f1-2e25-4650-ad2b-dab11dfeb82f"
+            "departmentId": "61b36392-553a-4ef4-9ab9-3e918abab9cb"
           },
           "status": "unread",
           "recipient": {
-            "id": "59589780-68c6-4f97-84b1-773778de59e7",
+            "id": "e0874140-120a-4895-a85f-6799a2ace18b",
             "name": "Audit User",
             "email": "auditor@assetflow.local",
             "role": "AUDITOR",
-            "departmentId": "a7ce02f1-2e25-4650-ad2b-dab11dfeb82f"
+            "departmentId": "61b36392-553a-4ef4-9ab9-3e918abab9cb"
           }
         }
       ],
@@ -1552,213 +1552,213 @@
     "data": {
       "items": [
         {
-          "id": "d4ad9549-add5-47f0-ae17-e2c748f24dbe",
-          "userId": "97e69066-fd68-40fc-97ff-cd0a26ab105a",
+          "id": "af29e860-8f0a-49d4-b5fe-749fc3fd3ad9",
+          "userId": "d5c990a4-bf18-459b-ab58-f936453ec33a",
           "type": "ASSET_RETIRED",
           "category": "ASSET",
           "priority": "INFO",
           "title": "Asset retired",
-          "message": "Notification QA Asset 1783841802663-RETIRE was retired.",
+          "message": "Notification QA Asset 1783842677478-RETIRE was retired.",
           "isRead": false,
           "readAt": null,
           "relatedEntityType": "Asset",
-          "relatedEntityId": "83012d79-532f-4ceb-acbe-2bd35581419a",
-          "createdAt": "2026-07-12T07:36:42.790Z",
-          "updatedAt": "2026-07-12T07:36:42.790Z",
+          "relatedEntityId": "b2fb4591-42b7-4065-81db-42babc274788",
+          "createdAt": "2026-07-12T07:51:17.607Z",
+          "updatedAt": "2026-07-12T07:51:17.607Z",
           "user": {
-            "id": "97e69066-fd68-40fc-97ff-cd0a26ab105a",
+            "id": "d5c990a4-bf18-459b-ab58-f936453ec33a",
             "name": "Admin User",
             "email": "admin@assetflow.local",
             "role": "ADMIN",
-            "departmentId": "c1d96709-b438-46c3-a59f-31f3024b3ecf"
+            "departmentId": "ac93d425-d882-4380-b544-caa6fd7c44f6"
           },
           "status": "unread",
           "recipient": {
-            "id": "97e69066-fd68-40fc-97ff-cd0a26ab105a",
+            "id": "d5c990a4-bf18-459b-ab58-f936453ec33a",
             "name": "Admin User",
             "email": "admin@assetflow.local",
             "role": "ADMIN",
-            "departmentId": "c1d96709-b438-46c3-a59f-31f3024b3ecf"
+            "departmentId": "ac93d425-d882-4380-b544-caa6fd7c44f6"
           }
         },
         {
-          "id": "c633f3a1-0627-4853-81bc-a9641c86e757",
-          "userId": "97e69066-fd68-40fc-97ff-cd0a26ab105a",
+          "id": "42078f13-409f-4cef-8a6a-12b68e09b82f",
+          "userId": "d5c990a4-bf18-459b-ab58-f936453ec33a",
           "type": "ASSET_CREATED",
           "category": "ASSET",
           "priority": "INFO",
           "title": "Asset created",
-          "message": "Notification QA Asset 1783841802663-RETIRE was registered.",
+          "message": "Notification QA Asset 1783842677478-RETIRE was registered.",
           "isRead": false,
           "readAt": null,
           "relatedEntityType": "Asset",
-          "relatedEntityId": "83012d79-532f-4ceb-acbe-2bd35581419a",
-          "createdAt": "2026-07-12T07:36:42.785Z",
-          "updatedAt": "2026-07-12T07:36:42.785Z",
+          "relatedEntityId": "b2fb4591-42b7-4065-81db-42babc274788",
+          "createdAt": "2026-07-12T07:51:17.603Z",
+          "updatedAt": "2026-07-12T07:51:17.603Z",
           "user": {
-            "id": "97e69066-fd68-40fc-97ff-cd0a26ab105a",
+            "id": "d5c990a4-bf18-459b-ab58-f936453ec33a",
             "name": "Admin User",
             "email": "admin@assetflow.local",
             "role": "ADMIN",
-            "departmentId": "c1d96709-b438-46c3-a59f-31f3024b3ecf"
+            "departmentId": "ac93d425-d882-4380-b544-caa6fd7c44f6"
           },
           "status": "unread",
           "recipient": {
-            "id": "97e69066-fd68-40fc-97ff-cd0a26ab105a",
+            "id": "d5c990a4-bf18-459b-ab58-f936453ec33a",
             "name": "Admin User",
             "email": "admin@assetflow.local",
             "role": "ADMIN",
-            "departmentId": "c1d96709-b438-46c3-a59f-31f3024b3ecf"
+            "departmentId": "ac93d425-d882-4380-b544-caa6fd7c44f6"
           }
         },
         {
-          "id": "c5f5848f-892b-4dac-a421-ac27635bd5b2",
-          "userId": "97e69066-fd68-40fc-97ff-cd0a26ab105a",
+          "id": "ce301185-d131-416a-8031-a864f4a68e8d",
+          "userId": "d5c990a4-bf18-459b-ab58-f936453ec33a",
           "type": "ASSET_CREATED",
           "category": "ASSET",
           "priority": "INFO",
           "title": "Asset created",
-          "message": "Notification QA Asset 1783841802663-AUDIT was registered.",
+          "message": "Notification QA Asset 1783842677478-AUDIT was registered.",
           "isRead": false,
           "readAt": null,
           "relatedEntityType": "Asset",
-          "relatedEntityId": "097aea67-dbba-46f6-814b-3bc1cd16318d",
-          "createdAt": "2026-07-12T07:36:42.757Z",
-          "updatedAt": "2026-07-12T07:36:42.757Z",
+          "relatedEntityId": "6e4c6cb0-6167-49bf-8e27-b4ea077f4833",
+          "createdAt": "2026-07-12T07:51:17.573Z",
+          "updatedAt": "2026-07-12T07:51:17.573Z",
           "user": {
-            "id": "97e69066-fd68-40fc-97ff-cd0a26ab105a",
+            "id": "d5c990a4-bf18-459b-ab58-f936453ec33a",
             "name": "Admin User",
             "email": "admin@assetflow.local",
             "role": "ADMIN",
-            "departmentId": "c1d96709-b438-46c3-a59f-31f3024b3ecf"
+            "departmentId": "ac93d425-d882-4380-b544-caa6fd7c44f6"
           },
           "status": "unread",
           "recipient": {
-            "id": "97e69066-fd68-40fc-97ff-cd0a26ab105a",
+            "id": "d5c990a4-bf18-459b-ab58-f936453ec33a",
             "name": "Admin User",
             "email": "admin@assetflow.local",
             "role": "ADMIN",
-            "departmentId": "c1d96709-b438-46c3-a59f-31f3024b3ecf"
+            "departmentId": "ac93d425-d882-4380-b544-caa6fd7c44f6"
           }
         },
         {
-          "id": "4c187563-19ab-48fb-ac97-741945d60478",
-          "userId": "97e69066-fd68-40fc-97ff-cd0a26ab105a",
+          "id": "78eab2a6-3963-4bf4-b705-012b051ed711",
+          "userId": "d5c990a4-bf18-459b-ab58-f936453ec33a",
           "type": "ASSET_CREATED",
           "category": "ASSET",
           "priority": "INFO",
           "title": "Asset created",
-          "message": "Notification QA Asset 1783841802663-MNT was registered.",
+          "message": "Notification QA Asset 1783842677478-MNT was registered.",
           "isRead": false,
           "readAt": null,
           "relatedEntityType": "Asset",
-          "relatedEntityId": "1d514b9d-0def-45c0-8f0b-f3db1f473f58",
-          "createdAt": "2026-07-12T07:36:42.728Z",
-          "updatedAt": "2026-07-12T07:36:42.728Z",
+          "relatedEntityId": "8c692973-e8e4-431c-b01a-1eef5989dabc",
+          "createdAt": "2026-07-12T07:51:17.545Z",
+          "updatedAt": "2026-07-12T07:51:17.545Z",
           "user": {
-            "id": "97e69066-fd68-40fc-97ff-cd0a26ab105a",
+            "id": "d5c990a4-bf18-459b-ab58-f936453ec33a",
             "name": "Admin User",
             "email": "admin@assetflow.local",
             "role": "ADMIN",
-            "departmentId": "c1d96709-b438-46c3-a59f-31f3024b3ecf"
+            "departmentId": "ac93d425-d882-4380-b544-caa6fd7c44f6"
           },
           "status": "unread",
           "recipient": {
-            "id": "97e69066-fd68-40fc-97ff-cd0a26ab105a",
+            "id": "d5c990a4-bf18-459b-ab58-f936453ec33a",
             "name": "Admin User",
             "email": "admin@assetflow.local",
             "role": "ADMIN",
-            "departmentId": "c1d96709-b438-46c3-a59f-31f3024b3ecf"
+            "departmentId": "ac93d425-d882-4380-b544-caa6fd7c44f6"
           }
         },
         {
-          "id": "43deb483-2273-4330-a1f0-e80ad6cb932f",
-          "userId": "97e69066-fd68-40fc-97ff-cd0a26ab105a",
+          "id": "f25c4f35-e9e4-4ce5-b6b2-cee8ac994287",
+          "userId": "d5c990a4-bf18-459b-ab58-f936453ec33a",
           "type": "ASSET_CREATED",
           "category": "ASSET",
           "priority": "INFO",
           "title": "Asset created",
-          "message": "Notification QA Asset 1783841802663-BOOK was registered.",
+          "message": "Notification QA Asset 1783842677478-BOOK was registered.",
           "isRead": false,
           "readAt": null,
           "relatedEntityType": "Asset",
-          "relatedEntityId": "a89b14ab-8971-4ab1-abf6-868fcc67ab25",
-          "createdAt": "2026-07-12T07:36:42.713Z",
-          "updatedAt": "2026-07-12T07:36:42.713Z",
+          "relatedEntityId": "6a414898-0b47-4afa-a209-be3f6078f6ee",
+          "createdAt": "2026-07-12T07:51:17.529Z",
+          "updatedAt": "2026-07-12T07:51:17.529Z",
           "user": {
-            "id": "97e69066-fd68-40fc-97ff-cd0a26ab105a",
+            "id": "d5c990a4-bf18-459b-ab58-f936453ec33a",
             "name": "Admin User",
             "email": "admin@assetflow.local",
             "role": "ADMIN",
-            "departmentId": "c1d96709-b438-46c3-a59f-31f3024b3ecf"
+            "departmentId": "ac93d425-d882-4380-b544-caa6fd7c44f6"
           },
           "status": "unread",
           "recipient": {
-            "id": "97e69066-fd68-40fc-97ff-cd0a26ab105a",
+            "id": "d5c990a4-bf18-459b-ab58-f936453ec33a",
             "name": "Admin User",
             "email": "admin@assetflow.local",
             "role": "ADMIN",
-            "departmentId": "c1d96709-b438-46c3-a59f-31f3024b3ecf"
+            "departmentId": "ac93d425-d882-4380-b544-caa6fd7c44f6"
           }
         },
         {
-          "id": "7839a19a-8707-4db4-abef-7031a95cccd2",
-          "userId": "97e69066-fd68-40fc-97ff-cd0a26ab105a",
+          "id": "4cdcc164-2f4c-4710-ad51-a242c7c1e88c",
+          "userId": "d5c990a4-bf18-459b-ab58-f936453ec33a",
           "type": "ASSET_CREATED",
           "category": "ASSET",
           "priority": "INFO",
           "title": "Asset created",
-          "message": "Notification QA Asset 1783841802663-XFER was registered.",
+          "message": "Notification QA Asset 1783842677478-XFER was registered.",
           "isRead": false,
           "readAt": null,
           "relatedEntityType": "Asset",
-          "relatedEntityId": "01ee8ad2-2467-479f-ab2d-1e4665ed85f5",
-          "createdAt": "2026-07-12T07:36:42.688Z",
-          "updatedAt": "2026-07-12T07:36:42.688Z",
+          "relatedEntityId": "7afcaa5e-5da8-4c5e-9b3c-d38e235b5bb3",
+          "createdAt": "2026-07-12T07:51:17.504Z",
+          "updatedAt": "2026-07-12T07:51:17.504Z",
           "user": {
-            "id": "97e69066-fd68-40fc-97ff-cd0a26ab105a",
+            "id": "d5c990a4-bf18-459b-ab58-f936453ec33a",
             "name": "Admin User",
             "email": "admin@assetflow.local",
             "role": "ADMIN",
-            "departmentId": "c1d96709-b438-46c3-a59f-31f3024b3ecf"
+            "departmentId": "ac93d425-d882-4380-b544-caa6fd7c44f6"
           },
           "status": "unread",
           "recipient": {
-            "id": "97e69066-fd68-40fc-97ff-cd0a26ab105a",
+            "id": "d5c990a4-bf18-459b-ab58-f936453ec33a",
             "name": "Admin User",
             "email": "admin@assetflow.local",
             "role": "ADMIN",
-            "departmentId": "c1d96709-b438-46c3-a59f-31f3024b3ecf"
+            "departmentId": "ac93d425-d882-4380-b544-caa6fd7c44f6"
           }
         },
         {
-          "id": "e55894d3-1db9-425b-b025-509ce2375a72",
-          "userId": "97e69066-fd68-40fc-97ff-cd0a26ab105a",
+          "id": "df879a18-9546-49fb-8617-e9f0432e69fa",
+          "userId": "d5c990a4-bf18-459b-ab58-f936453ec33a",
           "type": "ASSET_CREATED",
           "category": "ASSET",
           "priority": "INFO",
           "title": "Asset created",
-          "message": "Notification QA Asset 1783841802663-ALLOC was registered.",
+          "message": "Notification QA Asset 1783842677478-ALLOC was registered.",
           "isRead": false,
           "readAt": null,
           "relatedEntityType": "Asset",
-          "relatedEntityId": "7b228126-f53c-4c8a-aff0-3d44a47da612",
-          "createdAt": "2026-07-12T07:36:42.669Z",
-          "updatedAt": "2026-07-12T07:36:42.669Z",
+          "relatedEntityId": "838fbe3e-9d08-476d-ade6-eb799e7ddfe7",
+          "createdAt": "2026-07-12T07:51:17.486Z",
+          "updatedAt": "2026-07-12T07:51:17.486Z",
           "user": {
-            "id": "97e69066-fd68-40fc-97ff-cd0a26ab105a",
+            "id": "d5c990a4-bf18-459b-ab58-f936453ec33a",
             "name": "Admin User",
             "email": "admin@assetflow.local",
             "role": "ADMIN",
-            "departmentId": "c1d96709-b438-46c3-a59f-31f3024b3ecf"
+            "departmentId": "ac93d425-d882-4380-b544-caa6fd7c44f6"
           },
           "status": "unread",
           "recipient": {
-            "id": "97e69066-fd68-40fc-97ff-cd0a26ab105a",
+            "id": "d5c990a4-bf18-459b-ab58-f936453ec33a",
             "name": "Admin User",
             "email": "admin@assetflow.local",
             "role": "ADMIN",
-            "departmentId": "c1d96709-b438-46c3-a59f-31f3024b3ecf"
+            "departmentId": "ac93d425-d882-4380-b544-caa6fd7c44f6"
           }
         }
       ],
@@ -1781,33 +1781,33 @@
   "markedRead": {
     "success": true,
     "data": {
-      "id": "e38ef37e-55c7-4bef-9dbb-d933839d76d3",
-      "userId": "ccba76b1-4e4a-48d3-bcdd-133b839502ea",
+      "id": "496535a8-1a3f-4cc4-a0cf-167f28d7066f",
+      "userId": "964f7752-e5bf-44a1-a110-1ccbc65b508b",
       "type": "MAINTENANCE_RESOLVED",
       "category": "MAINTENANCE",
       "priority": "MEDIUM",
       "title": "Maintenance resolved",
-      "message": "Maintenance for Notification QA Asset 1783841802663-MNT was resolved.",
+      "message": "Maintenance for Notification QA Asset 1783842677478-MNT was resolved.",
       "isRead": true,
-      "readAt": "2026-07-12T07:36:42.824Z",
+      "readAt": "2026-07-12T07:51:17.641Z",
       "relatedEntityType": "MaintenanceTicket",
-      "relatedEntityId": "5d148c50-9c46-4e05-bc24-747e6288c6fe",
-      "createdAt": "2026-07-12T07:36:42.752Z",
-      "updatedAt": "2026-07-12T07:36:42.825Z",
+      "relatedEntityId": "9d3d44ef-ceec-4db1-8c9d-ac545f9ba62d",
+      "createdAt": "2026-07-12T07:51:17.569Z",
+      "updatedAt": "2026-07-12T07:51:17.642Z",
       "user": {
-        "id": "ccba76b1-4e4a-48d3-bcdd-133b839502ea",
+        "id": "964f7752-e5bf-44a1-a110-1ccbc65b508b",
         "name": "Employee User",
         "email": "employee@assetflow.local",
         "role": "EMPLOYEE",
-        "departmentId": "c1d96709-b438-46c3-a59f-31f3024b3ecf"
+        "departmentId": "ac93d425-d882-4380-b544-caa6fd7c44f6"
       },
       "status": "read",
       "recipient": {
-        "id": "ccba76b1-4e4a-48d3-bcdd-133b839502ea",
+        "id": "964f7752-e5bf-44a1-a110-1ccbc65b508b",
         "name": "Employee User",
         "email": "employee@assetflow.local",
         "role": "EMPLOYEE",
-        "departmentId": "c1d96709-b438-46c3-a59f-31f3024b3ecf"
+        "departmentId": "ac93d425-d882-4380-b544-caa6fd7c44f6"
       }
     },
     "message": "Operation completed successfully."
@@ -1817,33 +1817,33 @@
     "data": {
       "items": [
         {
-          "id": "e38ef37e-55c7-4bef-9dbb-d933839d76d3",
-          "userId": "ccba76b1-4e4a-48d3-bcdd-133b839502ea",
+          "id": "496535a8-1a3f-4cc4-a0cf-167f28d7066f",
+          "userId": "964f7752-e5bf-44a1-a110-1ccbc65b508b",
           "type": "MAINTENANCE_RESOLVED",
           "category": "MAINTENANCE",
           "priority": "MEDIUM",
           "title": "Maintenance resolved",
-          "message": "Maintenance for Notification QA Asset 1783841802663-MNT was resolved.",
+          "message": "Maintenance for Notification QA Asset 1783842677478-MNT was resolved.",
           "isRead": true,
-          "readAt": "2026-07-12T07:36:42.824Z",
+          "readAt": "2026-07-12T07:51:17.641Z",
           "relatedEntityType": "MaintenanceTicket",
-          "relatedEntityId": "5d148c50-9c46-4e05-bc24-747e6288c6fe",
-          "createdAt": "2026-07-12T07:36:42.752Z",
-          "updatedAt": "2026-07-12T07:36:42.825Z",
+          "relatedEntityId": "9d3d44ef-ceec-4db1-8c9d-ac545f9ba62d",
+          "createdAt": "2026-07-12T07:51:17.569Z",
+          "updatedAt": "2026-07-12T07:51:17.642Z",
           "user": {
-            "id": "ccba76b1-4e4a-48d3-bcdd-133b839502ea",
+            "id": "964f7752-e5bf-44a1-a110-1ccbc65b508b",
             "name": "Employee User",
             "email": "employee@assetflow.local",
             "role": "EMPLOYEE",
-            "departmentId": "c1d96709-b438-46c3-a59f-31f3024b3ecf"
+            "departmentId": "ac93d425-d882-4380-b544-caa6fd7c44f6"
           },
           "status": "read",
           "recipient": {
-            "id": "ccba76b1-4e4a-48d3-bcdd-133b839502ea",
+            "id": "964f7752-e5bf-44a1-a110-1ccbc65b508b",
             "name": "Employee User",
             "email": "employee@assetflow.local",
             "role": "EMPLOYEE",
-            "departmentId": "c1d96709-b438-46c3-a59f-31f3024b3ecf"
+            "departmentId": "ac93d425-d882-4380-b544-caa6fd7c44f6"
           }
         }
       ],
@@ -1873,33 +1873,33 @@
   "deleted": {
     "success": true,
     "data": {
-      "id": "e38ef37e-55c7-4bef-9dbb-d933839d76d3",
-      "userId": "ccba76b1-4e4a-48d3-bcdd-133b839502ea",
+      "id": "496535a8-1a3f-4cc4-a0cf-167f28d7066f",
+      "userId": "964f7752-e5bf-44a1-a110-1ccbc65b508b",
       "type": "MAINTENANCE_RESOLVED",
       "category": "MAINTENANCE",
       "priority": "MEDIUM",
       "title": "Maintenance resolved",
-      "message": "Maintenance for Notification QA Asset 1783841802663-MNT was resolved.",
+      "message": "Maintenance for Notification QA Asset 1783842677478-MNT was resolved.",
       "isRead": true,
-      "readAt": "2026-07-12T07:36:42.824Z",
+      "readAt": "2026-07-12T07:51:17.641Z",
       "relatedEntityType": "MaintenanceTicket",
-      "relatedEntityId": "5d148c50-9c46-4e05-bc24-747e6288c6fe",
-      "createdAt": "2026-07-12T07:36:42.752Z",
-      "updatedAt": "2026-07-12T07:36:42.825Z",
+      "relatedEntityId": "9d3d44ef-ceec-4db1-8c9d-ac545f9ba62d",
+      "createdAt": "2026-07-12T07:51:17.569Z",
+      "updatedAt": "2026-07-12T07:51:17.642Z",
       "user": {
-        "id": "ccba76b1-4e4a-48d3-bcdd-133b839502ea",
+        "id": "964f7752-e5bf-44a1-a110-1ccbc65b508b",
         "name": "Employee User",
         "email": "employee@assetflow.local",
         "role": "EMPLOYEE",
-        "departmentId": "c1d96709-b438-46c3-a59f-31f3024b3ecf"
+        "departmentId": "ac93d425-d882-4380-b544-caa6fd7c44f6"
       },
       "status": "read",
       "recipient": {
-        "id": "ccba76b1-4e4a-48d3-bcdd-133b839502ea",
+        "id": "964f7752-e5bf-44a1-a110-1ccbc65b508b",
         "name": "Employee User",
         "email": "employee@assetflow.local",
         "role": "EMPLOYEE",
-        "departmentId": "c1d96709-b438-46c3-a59f-31f3024b3ecf"
+        "departmentId": "ac93d425-d882-4380-b544-caa6fd7c44f6"
       }
     },
     "message": "Operation completed successfully."
@@ -1982,181 +1982,181 @@
       ],
       "recentActivity": [
         {
-          "id": "maintenance:5d148c50-9c46-4e05-bc24-747e6288c6fe",
+          "id": "maintenance:9d3d44ef-ceec-4db1-8c9d-ac545f9ba62d",
           "type": "MAINTENANCE",
           "title": "Maintenance reported",
-          "description": "Employee User reported Notification QA issue for Notification QA Asset 1783841802663-MNT.",
+          "description": "Employee User reported Notification QA issue for Notification QA Asset 1783842677478-MNT.",
           "status": "RESOLVED",
-          "timestamp": "2026-07-12T07:36:42.732Z",
+          "timestamp": "2026-07-12T07:51:17.548Z",
           "asset": {
-            "id": "1d514b9d-0def-45c0-8f0b-f3db1f473f58",
-            "assetCode": "NTF-1783841802663-MNT",
-            "name": "Notification QA Asset 1783841802663-MNT"
+            "id": "8c692973-e8e4-431c-b01a-1eef5989dabc",
+            "assetCode": "NTF-1783842677478-MNT",
+            "name": "Notification QA Asset 1783842677478-MNT"
           },
           "actor": {
-            "id": "ccba76b1-4e4a-48d3-bcdd-133b839502ea",
+            "id": "964f7752-e5bf-44a1-a110-1ccbc65b508b",
             "name": "Employee User",
             "email": "employee@assetflow.local"
           }
         },
         {
-          "id": "booking:c2b3aea7-845e-4a58-9dbe-6534a2a73496",
+          "id": "booking:46530c76-b8a4-4711-b72a-658070d2a852",
           "type": "BOOKING",
           "title": "Booking requested",
-          "description": "Employee User requested Notification QA Asset 1783841802663-BOOK.",
+          "description": "Employee User requested Notification QA Asset 1783842677478-BOOK.",
           "status": "APPROVED",
-          "timestamp": "2026-07-12T07:36:42.716Z",
+          "timestamp": "2026-07-12T07:51:17.533Z",
           "asset": {
-            "id": "a89b14ab-8971-4ab1-abf6-868fcc67ab25",
-            "assetCode": "NTF-1783841802663-BOOK",
-            "name": "Notification QA Asset 1783841802663-BOOK"
+            "id": "6a414898-0b47-4afa-a209-be3f6078f6ee",
+            "assetCode": "NTF-1783842677478-BOOK",
+            "name": "Notification QA Asset 1783842677478-BOOK"
           },
           "actor": {
-            "id": "ccba76b1-4e4a-48d3-bcdd-133b839502ea",
+            "id": "964f7752-e5bf-44a1-a110-1ccbc65b508b",
             "name": "Employee User",
             "email": "employee@assetflow.local"
           }
         },
         {
-          "id": "transfer:637e1ba8-19af-4e4b-ba20-fc500e5482a5",
+          "id": "transfer:00ad1c99-99c6-4f3c-b105-6dd1c027f2a5",
           "type": "TRANSFER",
           "title": "Transfer requested",
-          "description": "Employee User requested transfer for Notification QA Asset 1783841802663-XFER.",
+          "description": "Employee User requested transfer for Notification QA Asset 1783842677478-XFER.",
           "status": "APPROVED",
-          "timestamp": "2026-07-12T07:36:42.696Z",
+          "timestamp": "2026-07-12T07:51:17.513Z",
           "asset": {
-            "id": "01ee8ad2-2467-479f-ab2d-1e4665ed85f5",
-            "assetCode": "NTF-1783841802663-XFER",
-            "name": "Notification QA Asset 1783841802663-XFER"
+            "id": "7afcaa5e-5da8-4c5e-9b3c-d38e235b5bb3",
+            "assetCode": "NTF-1783842677478-XFER",
+            "name": "Notification QA Asset 1783842677478-XFER"
           },
           "actor": {
-            "id": "ccba76b1-4e4a-48d3-bcdd-133b839502ea",
+            "id": "964f7752-e5bf-44a1-a110-1ccbc65b508b",
             "name": "Employee User",
             "email": "employee@assetflow.local"
           }
         },
         {
-          "id": "allocation:e6c3f764-c908-433e-8599-c22c0b20c166",
+          "id": "allocation:0614e81d-cc5b-46b7-b8e9-f0dfbe8f3698",
           "type": "ALLOCATION",
           "title": "Asset allocated",
-          "description": "Notification QA Asset 1783841802663-XFER allocated to Employee User.",
+          "description": "Notification QA Asset 1783842677478-XFER allocated to Employee User.",
           "status": "TRANSFERRED",
-          "timestamp": "2026-07-12T07:36:42.691Z",
+          "timestamp": "2026-07-12T07:51:17.507Z",
           "asset": {
-            "id": "01ee8ad2-2467-479f-ab2d-1e4665ed85f5",
-            "assetCode": "NTF-1783841802663-XFER",
-            "name": "Notification QA Asset 1783841802663-XFER"
+            "id": "7afcaa5e-5da8-4c5e-9b3c-d38e235b5bb3",
+            "assetCode": "NTF-1783842677478-XFER",
+            "name": "Notification QA Asset 1783842677478-XFER"
           },
           "actor": {
-            "id": "97e69066-fd68-40fc-97ff-cd0a26ab105a",
+            "id": "d5c990a4-bf18-459b-ab58-f936453ec33a",
             "name": "Admin User",
             "email": "admin@assetflow.local"
           }
         },
         {
-          "id": "allocation:0ab818aa-37ce-4eba-8f5c-b20da6a24b05",
+          "id": "allocation:952ac3d6-1ad6-4c19-8468-a0744f96b139",
           "type": "ALLOCATION",
           "title": "Asset allocated",
-          "description": "Notification QA Asset 1783841802663-ALLOC allocated to Employee User.",
+          "description": "Notification QA Asset 1783842677478-ALLOC allocated to Employee User.",
           "status": "RETURNED",
-          "timestamp": "2026-07-12T07:36:42.673Z",
+          "timestamp": "2026-07-12T07:51:17.490Z",
           "asset": {
-            "id": "7b228126-f53c-4c8a-aff0-3d44a47da612",
-            "assetCode": "NTF-1783841802663-ALLOC",
-            "name": "Notification QA Asset 1783841802663-ALLOC"
+            "id": "838fbe3e-9d08-476d-ade6-eb799e7ddfe7",
+            "assetCode": "NTF-1783842677478-ALLOC",
+            "name": "Notification QA Asset 1783842677478-ALLOC"
           },
           "actor": {
-            "id": "97e69066-fd68-40fc-97ff-cd0a26ab105a",
+            "id": "d5c990a4-bf18-459b-ab58-f936453ec33a",
             "name": "Admin User",
             "email": "admin@assetflow.local"
           }
         },
         {
-          "id": "maintenance:0745d4fe-0875-4ea5-956d-5624b8cab553",
-          "type": "MAINTENANCE",
-          "title": "Maintenance reported",
-          "description": "Employee User reported Display flickering for Dell 27 Inch Monitor.",
-          "status": "IN_PROGRESS",
-          "timestamp": "2026-07-12T07:36:42.435Z",
-          "asset": {
-            "id": "e54a6325-59ac-4873-9914-aaacf57040cc",
-            "assetCode": "MON-001",
-            "name": "Dell 27 Inch Monitor"
-          },
-          "actor": {
-            "id": "ccba76b1-4e4a-48d3-bcdd-133b839502ea",
-            "name": "Employee User",
-            "email": "employee@assetflow.local"
-          }
-        },
-        {
-          "id": "booking:3cbb6bca-94dd-4345-b0dc-017e5c161093",
-          "type": "BOOKING",
-          "title": "Booking requested",
-          "description": "Employee User requested Epson Conference Projector.",
-          "status": "APPROVED",
-          "timestamp": "2026-07-12T07:36:42.434Z",
-          "asset": {
-            "id": "cc390352-2d5c-4594-9622-fd63c4ebec85",
-            "assetCode": "PROJ-001",
-            "name": "Epson Conference Projector"
-          },
-          "actor": {
-            "id": "ccba76b1-4e4a-48d3-bcdd-133b839502ea",
-            "name": "Employee User",
-            "email": "employee@assetflow.local"
-          }
-        },
-        {
-          "id": "booking:797e5f57-2f20-435e-9e75-1ae1fceaac06",
+          "id": "booking:f4de8ac2-1cdb-44d3-8ed0-fc01eb908b09",
           "type": "BOOKING",
           "title": "Booking requested",
           "description": "Employee User requested Office Shuttle.",
           "status": "REQUESTED",
-          "timestamp": "2026-07-12T07:36:42.434Z",
+          "timestamp": "2026-07-12T07:51:17.253Z",
           "asset": {
-            "id": "cfd16c85-a009-4211-911c-c44145c7ef56",
+            "id": "57a0a7ba-5580-4157-82b9-98afe51e4671",
             "assetCode": "VEH-001",
             "name": "Office Shuttle"
           },
           "actor": {
-            "id": "ccba76b1-4e4a-48d3-bcdd-133b839502ea",
+            "id": "964f7752-e5bf-44a1-a110-1ccbc65b508b",
             "name": "Employee User",
             "email": "employee@assetflow.local"
           }
         },
         {
-          "id": "transfer:69cd590a-6716-4abb-9fe3-5bda243fe2aa",
+          "id": "maintenance:2d917f04-3edf-480c-8821-c79636601a4b",
+          "type": "MAINTENANCE",
+          "title": "Maintenance reported",
+          "description": "Employee User reported Display flickering for Dell 27 Inch Monitor.",
+          "status": "IN_PROGRESS",
+          "timestamp": "2026-07-12T07:51:17.253Z",
+          "asset": {
+            "id": "28190689-b4ca-4f37-9190-f6d8df7de7c6",
+            "assetCode": "MON-001",
+            "name": "Dell 27 Inch Monitor"
+          },
+          "actor": {
+            "id": "964f7752-e5bf-44a1-a110-1ccbc65b508b",
+            "name": "Employee User",
+            "email": "employee@assetflow.local"
+          }
+        },
+        {
+          "id": "transfer:c72c0ef2-dd6a-4d67-86a6-0010a3c8fb51",
           "type": "TRANSFER",
           "title": "Transfer requested",
           "description": "Employee User requested transfer for Dell Latitude 5440.",
           "status": "PENDING",
-          "timestamp": "2026-07-12T07:36:42.433Z",
+          "timestamp": "2026-07-12T07:51:17.252Z",
           "asset": {
-            "id": "4dce6c90-6f85-4133-b5d4-4036fe4ca18e",
+            "id": "bf1c1c27-9f5a-411c-bb33-2dae79c70101",
             "assetCode": "LAP-001",
             "name": "Dell Latitude 5440"
           },
           "actor": {
-            "id": "ccba76b1-4e4a-48d3-bcdd-133b839502ea",
+            "id": "964f7752-e5bf-44a1-a110-1ccbc65b508b",
             "name": "Employee User",
             "email": "employee@assetflow.local"
           }
         },
         {
-          "id": "allocation:080b260a-ccd5-4ff9-a964-2bdf3a1e864e",
+          "id": "booking:a6832535-ca7d-4348-92f7-40f148036ae8",
+          "type": "BOOKING",
+          "title": "Booking requested",
+          "description": "Employee User requested Epson Conference Projector.",
+          "status": "APPROVED",
+          "timestamp": "2026-07-12T07:51:17.252Z",
+          "asset": {
+            "id": "e3dd200a-8725-48ba-a956-0ca857d50244",
+            "assetCode": "PROJ-001",
+            "name": "Epson Conference Projector"
+          },
+          "actor": {
+            "id": "964f7752-e5bf-44a1-a110-1ccbc65b508b",
+            "name": "Employee User",
+            "email": "employee@assetflow.local"
+          }
+        },
+        {
+          "id": "allocation:a999f8bb-50d7-4806-a51c-87fc05ac5b55",
           "type": "ALLOCATION",
           "title": "Asset allocated",
           "description": "Dell Latitude 5440 allocated to Employee User.",
           "status": "ACTIVE",
-          "timestamp": "2026-07-12T07:36:42.432Z",
+          "timestamp": "2026-07-12T07:51:17.251Z",
           "asset": {
-            "id": "4dce6c90-6f85-4133-b5d4-4036fe4ca18e",
+            "id": "bf1c1c27-9f5a-411c-bb33-2dae79c70101",
             "assetCode": "LAP-001",
             "name": "Dell Latitude 5440"
           },
           "actor": {
-            "id": "f7f58451-2d67-481e-908b-db7cff719290",
+            "id": "bb47ab05-cc31-4219-916f-a3e850028d94",
             "name": "IT Manager",
             "email": "manager@assetflow.local"
           }
@@ -2164,181 +2164,181 @@
       ],
       "latestActivity": [
         {
-          "id": "maintenance:5d148c50-9c46-4e05-bc24-747e6288c6fe",
+          "id": "maintenance:9d3d44ef-ceec-4db1-8c9d-ac545f9ba62d",
           "type": "MAINTENANCE",
           "title": "Maintenance reported",
-          "description": "Employee User reported Notification QA issue for Notification QA Asset 1783841802663-MNT.",
+          "description": "Employee User reported Notification QA issue for Notification QA Asset 1783842677478-MNT.",
           "status": "RESOLVED",
-          "timestamp": "2026-07-12T07:36:42.732Z",
+          "timestamp": "2026-07-12T07:51:17.548Z",
           "asset": {
-            "id": "1d514b9d-0def-45c0-8f0b-f3db1f473f58",
-            "assetCode": "NTF-1783841802663-MNT",
-            "name": "Notification QA Asset 1783841802663-MNT"
+            "id": "8c692973-e8e4-431c-b01a-1eef5989dabc",
+            "assetCode": "NTF-1783842677478-MNT",
+            "name": "Notification QA Asset 1783842677478-MNT"
           },
           "actor": {
-            "id": "ccba76b1-4e4a-48d3-bcdd-133b839502ea",
+            "id": "964f7752-e5bf-44a1-a110-1ccbc65b508b",
             "name": "Employee User",
             "email": "employee@assetflow.local"
           }
         },
         {
-          "id": "booking:c2b3aea7-845e-4a58-9dbe-6534a2a73496",
+          "id": "booking:46530c76-b8a4-4711-b72a-658070d2a852",
           "type": "BOOKING",
           "title": "Booking requested",
-          "description": "Employee User requested Notification QA Asset 1783841802663-BOOK.",
+          "description": "Employee User requested Notification QA Asset 1783842677478-BOOK.",
           "status": "APPROVED",
-          "timestamp": "2026-07-12T07:36:42.716Z",
+          "timestamp": "2026-07-12T07:51:17.533Z",
           "asset": {
-            "id": "a89b14ab-8971-4ab1-abf6-868fcc67ab25",
-            "assetCode": "NTF-1783841802663-BOOK",
-            "name": "Notification QA Asset 1783841802663-BOOK"
+            "id": "6a414898-0b47-4afa-a209-be3f6078f6ee",
+            "assetCode": "NTF-1783842677478-BOOK",
+            "name": "Notification QA Asset 1783842677478-BOOK"
           },
           "actor": {
-            "id": "ccba76b1-4e4a-48d3-bcdd-133b839502ea",
+            "id": "964f7752-e5bf-44a1-a110-1ccbc65b508b",
             "name": "Employee User",
             "email": "employee@assetflow.local"
           }
         },
         {
-          "id": "transfer:637e1ba8-19af-4e4b-ba20-fc500e5482a5",
+          "id": "transfer:00ad1c99-99c6-4f3c-b105-6dd1c027f2a5",
           "type": "TRANSFER",
           "title": "Transfer requested",
-          "description": "Employee User requested transfer for Notification QA Asset 1783841802663-XFER.",
+          "description": "Employee User requested transfer for Notification QA Asset 1783842677478-XFER.",
           "status": "APPROVED",
-          "timestamp": "2026-07-12T07:36:42.696Z",
+          "timestamp": "2026-07-12T07:51:17.513Z",
           "asset": {
-            "id": "01ee8ad2-2467-479f-ab2d-1e4665ed85f5",
-            "assetCode": "NTF-1783841802663-XFER",
-            "name": "Notification QA Asset 1783841802663-XFER"
+            "id": "7afcaa5e-5da8-4c5e-9b3c-d38e235b5bb3",
+            "assetCode": "NTF-1783842677478-XFER",
+            "name": "Notification QA Asset 1783842677478-XFER"
           },
           "actor": {
-            "id": "ccba76b1-4e4a-48d3-bcdd-133b839502ea",
+            "id": "964f7752-e5bf-44a1-a110-1ccbc65b508b",
             "name": "Employee User",
             "email": "employee@assetflow.local"
           }
         },
         {
-          "id": "allocation:e6c3f764-c908-433e-8599-c22c0b20c166",
+          "id": "allocation:0614e81d-cc5b-46b7-b8e9-f0dfbe8f3698",
           "type": "ALLOCATION",
           "title": "Asset allocated",
-          "description": "Notification QA Asset 1783841802663-XFER allocated to Employee User.",
+          "description": "Notification QA Asset 1783842677478-XFER allocated to Employee User.",
           "status": "TRANSFERRED",
-          "timestamp": "2026-07-12T07:36:42.691Z",
+          "timestamp": "2026-07-12T07:51:17.507Z",
           "asset": {
-            "id": "01ee8ad2-2467-479f-ab2d-1e4665ed85f5",
-            "assetCode": "NTF-1783841802663-XFER",
-            "name": "Notification QA Asset 1783841802663-XFER"
+            "id": "7afcaa5e-5da8-4c5e-9b3c-d38e235b5bb3",
+            "assetCode": "NTF-1783842677478-XFER",
+            "name": "Notification QA Asset 1783842677478-XFER"
           },
           "actor": {
-            "id": "97e69066-fd68-40fc-97ff-cd0a26ab105a",
+            "id": "d5c990a4-bf18-459b-ab58-f936453ec33a",
             "name": "Admin User",
             "email": "admin@assetflow.local"
           }
         },
         {
-          "id": "allocation:0ab818aa-37ce-4eba-8f5c-b20da6a24b05",
+          "id": "allocation:952ac3d6-1ad6-4c19-8468-a0744f96b139",
           "type": "ALLOCATION",
           "title": "Asset allocated",
-          "description": "Notification QA Asset 1783841802663-ALLOC allocated to Employee User.",
+          "description": "Notification QA Asset 1783842677478-ALLOC allocated to Employee User.",
           "status": "RETURNED",
-          "timestamp": "2026-07-12T07:36:42.673Z",
+          "timestamp": "2026-07-12T07:51:17.490Z",
           "asset": {
-            "id": "7b228126-f53c-4c8a-aff0-3d44a47da612",
-            "assetCode": "NTF-1783841802663-ALLOC",
-            "name": "Notification QA Asset 1783841802663-ALLOC"
+            "id": "838fbe3e-9d08-476d-ade6-eb799e7ddfe7",
+            "assetCode": "NTF-1783842677478-ALLOC",
+            "name": "Notification QA Asset 1783842677478-ALLOC"
           },
           "actor": {
-            "id": "97e69066-fd68-40fc-97ff-cd0a26ab105a",
+            "id": "d5c990a4-bf18-459b-ab58-f936453ec33a",
             "name": "Admin User",
             "email": "admin@assetflow.local"
           }
         },
         {
-          "id": "maintenance:0745d4fe-0875-4ea5-956d-5624b8cab553",
-          "type": "MAINTENANCE",
-          "title": "Maintenance reported",
-          "description": "Employee User reported Display flickering for Dell 27 Inch Monitor.",
-          "status": "IN_PROGRESS",
-          "timestamp": "2026-07-12T07:36:42.435Z",
-          "asset": {
-            "id": "e54a6325-59ac-4873-9914-aaacf57040cc",
-            "assetCode": "MON-001",
-            "name": "Dell 27 Inch Monitor"
-          },
-          "actor": {
-            "id": "ccba76b1-4e4a-48d3-bcdd-133b839502ea",
-            "name": "Employee User",
-            "email": "employee@assetflow.local"
-          }
-        },
-        {
-          "id": "booking:3cbb6bca-94dd-4345-b0dc-017e5c161093",
-          "type": "BOOKING",
-          "title": "Booking requested",
-          "description": "Employee User requested Epson Conference Projector.",
-          "status": "APPROVED",
-          "timestamp": "2026-07-12T07:36:42.434Z",
-          "asset": {
-            "id": "cc390352-2d5c-4594-9622-fd63c4ebec85",
-            "assetCode": "PROJ-001",
-            "name": "Epson Conference Projector"
-          },
-          "actor": {
-            "id": "ccba76b1-4e4a-48d3-bcdd-133b839502ea",
-            "name": "Employee User",
-            "email": "employee@assetflow.local"
-          }
-        },
-        {
-          "id": "booking:797e5f57-2f20-435e-9e75-1ae1fceaac06",
+          "id": "booking:f4de8ac2-1cdb-44d3-8ed0-fc01eb908b09",
           "type": "BOOKING",
           "title": "Booking requested",
           "description": "Employee User requested Office Shuttle.",
           "status": "REQUESTED",
-          "timestamp": "2026-07-12T07:36:42.434Z",
+          "timestamp": "2026-07-12T07:51:17.253Z",
           "asset": {
-            "id": "cfd16c85-a009-4211-911c-c44145c7ef56",
+            "id": "57a0a7ba-5580-4157-82b9-98afe51e4671",
             "assetCode": "VEH-001",
             "name": "Office Shuttle"
           },
           "actor": {
-            "id": "ccba76b1-4e4a-48d3-bcdd-133b839502ea",
+            "id": "964f7752-e5bf-44a1-a110-1ccbc65b508b",
             "name": "Employee User",
             "email": "employee@assetflow.local"
           }
         },
         {
-          "id": "transfer:69cd590a-6716-4abb-9fe3-5bda243fe2aa",
+          "id": "maintenance:2d917f04-3edf-480c-8821-c79636601a4b",
+          "type": "MAINTENANCE",
+          "title": "Maintenance reported",
+          "description": "Employee User reported Display flickering for Dell 27 Inch Monitor.",
+          "status": "IN_PROGRESS",
+          "timestamp": "2026-07-12T07:51:17.253Z",
+          "asset": {
+            "id": "28190689-b4ca-4f37-9190-f6d8df7de7c6",
+            "assetCode": "MON-001",
+            "name": "Dell 27 Inch Monitor"
+          },
+          "actor": {
+            "id": "964f7752-e5bf-44a1-a110-1ccbc65b508b",
+            "name": "Employee User",
+            "email": "employee@assetflow.local"
+          }
+        },
+        {
+          "id": "transfer:c72c0ef2-dd6a-4d67-86a6-0010a3c8fb51",
           "type": "TRANSFER",
           "title": "Transfer requested",
           "description": "Employee User requested transfer for Dell Latitude 5440.",
           "status": "PENDING",
-          "timestamp": "2026-07-12T07:36:42.433Z",
+          "timestamp": "2026-07-12T07:51:17.252Z",
           "asset": {
-            "id": "4dce6c90-6f85-4133-b5d4-4036fe4ca18e",
+            "id": "bf1c1c27-9f5a-411c-bb33-2dae79c70101",
             "assetCode": "LAP-001",
             "name": "Dell Latitude 5440"
           },
           "actor": {
-            "id": "ccba76b1-4e4a-48d3-bcdd-133b839502ea",
+            "id": "964f7752-e5bf-44a1-a110-1ccbc65b508b",
             "name": "Employee User",
             "email": "employee@assetflow.local"
           }
         },
         {
-          "id": "allocation:080b260a-ccd5-4ff9-a964-2bdf3a1e864e",
+          "id": "booking:a6832535-ca7d-4348-92f7-40f148036ae8",
+          "type": "BOOKING",
+          "title": "Booking requested",
+          "description": "Employee User requested Epson Conference Projector.",
+          "status": "APPROVED",
+          "timestamp": "2026-07-12T07:51:17.252Z",
+          "asset": {
+            "id": "e3dd200a-8725-48ba-a956-0ca857d50244",
+            "assetCode": "PROJ-001",
+            "name": "Epson Conference Projector"
+          },
+          "actor": {
+            "id": "964f7752-e5bf-44a1-a110-1ccbc65b508b",
+            "name": "Employee User",
+            "email": "employee@assetflow.local"
+          }
+        },
+        {
+          "id": "allocation:a999f8bb-50d7-4806-a51c-87fc05ac5b55",
           "type": "ALLOCATION",
           "title": "Asset allocated",
           "description": "Dell Latitude 5440 allocated to Employee User.",
           "status": "ACTIVE",
-          "timestamp": "2026-07-12T07:36:42.432Z",
+          "timestamp": "2026-07-12T07:51:17.251Z",
           "asset": {
-            "id": "4dce6c90-6f85-4133-b5d4-4036fe4ca18e",
+            "id": "bf1c1c27-9f5a-411c-bb33-2dae79c70101",
             "assetCode": "LAP-001",
             "name": "Dell Latitude 5440"
           },
           "actor": {
-            "id": "f7f58451-2d67-481e-908b-db7cff719290",
+            "id": "bb47ab05-cc31-4219-916f-a3e850028d94",
             "name": "IT Manager",
             "email": "manager@assetflow.local"
           }
@@ -2349,157 +2349,180 @@
         "notificationBadgeCount": 0,
         "recent": [
           {
-            "id": "b430a833-0239-4d57-b4b3-06a4fd3edbcf",
-            "userId": "ccba76b1-4e4a-48d3-bcdd-133b839502ea",
+            "id": "13cff9e2-1915-4cf2-80f5-3398347e2c49",
+            "userId": "964f7752-e5bf-44a1-a110-1ccbc65b508b",
             "type": "MAINTENANCE_STARTED",
             "category": "MAINTENANCE",
             "priority": "MEDIUM",
             "title": "Maintenance started",
-            "message": "Maintenance for Notification QA Asset 1783841802663-MNT has started.",
+            "message": "Maintenance for Notification QA Asset 1783842677478-MNT has started.",
             "isRead": true,
-            "readAt": "2026-07-12T07:36:42.828Z",
+            "readAt": "2026-07-12T07:51:17.647Z",
             "relatedEntityType": "MaintenanceTicket",
-            "relatedEntityId": "5d148c50-9c46-4e05-bc24-747e6288c6fe",
-            "createdAt": "2026-07-12T07:36:42.748Z",
-            "updatedAt": "2026-07-12T07:36:42.828Z",
+            "relatedEntityId": "9d3d44ef-ceec-4db1-8c9d-ac545f9ba62d",
+            "createdAt": "2026-07-12T07:51:17.564Z",
+            "updatedAt": "2026-07-12T07:51:17.647Z",
             "user": {
-              "id": "ccba76b1-4e4a-48d3-bcdd-133b839502ea",
+              "id": "964f7752-e5bf-44a1-a110-1ccbc65b508b",
               "name": "Employee User",
               "email": "employee@assetflow.local",
               "role": "EMPLOYEE",
-              "departmentId": "c1d96709-b438-46c3-a59f-31f3024b3ecf"
+              "departmentId": "ac93d425-d882-4380-b544-caa6fd7c44f6"
             },
             "status": "read",
             "recipient": {
-              "id": "ccba76b1-4e4a-48d3-bcdd-133b839502ea",
+              "id": "964f7752-e5bf-44a1-a110-1ccbc65b508b",
               "name": "Employee User",
               "email": "employee@assetflow.local",
               "role": "EMPLOYEE",
-              "departmentId": "c1d96709-b438-46c3-a59f-31f3024b3ecf"
+              "departmentId": "ac93d425-d882-4380-b544-caa6fd7c44f6"
             }
           },
           {
-            "id": "4e2293d7-322f-4652-a016-ae9702e1b0d8",
-            "userId": "ccba76b1-4e4a-48d3-bcdd-133b839502ea",
+            "id": "fedb14be-2ce9-4748-a4b6-803458c5a37f",
+            "userId": "964f7752-e5bf-44a1-a110-1ccbc65b508b",
             "type": "MAINTENANCE_ASSIGNED",
             "category": "MAINTENANCE",
             "priority": "MEDIUM",
             "title": "Maintenance assigned",
-            "message": "Maintenance for Notification QA Asset 1783841802663-MNT was assigned.",
+            "message": "Maintenance for Notification QA Asset 1783842677478-MNT was assigned.",
             "isRead": true,
-            "readAt": "2026-07-12T07:36:42.828Z",
+            "readAt": "2026-07-12T07:51:17.647Z",
             "relatedEntityType": "MaintenanceTicket",
-            "relatedEntityId": "5d148c50-9c46-4e05-bc24-747e6288c6fe",
-            "createdAt": "2026-07-12T07:36:42.744Z",
-            "updatedAt": "2026-07-12T07:36:42.828Z",
+            "relatedEntityId": "9d3d44ef-ceec-4db1-8c9d-ac545f9ba62d",
+            "createdAt": "2026-07-12T07:51:17.560Z",
+            "updatedAt": "2026-07-12T07:51:17.647Z",
             "user": {
-              "id": "ccba76b1-4e4a-48d3-bcdd-133b839502ea",
+              "id": "964f7752-e5bf-44a1-a110-1ccbc65b508b",
               "name": "Employee User",
               "email": "employee@assetflow.local",
               "role": "EMPLOYEE",
-              "departmentId": "c1d96709-b438-46c3-a59f-31f3024b3ecf"
+              "departmentId": "ac93d425-d882-4380-b544-caa6fd7c44f6"
             },
             "status": "read",
             "recipient": {
-              "id": "ccba76b1-4e4a-48d3-bcdd-133b839502ea",
+              "id": "964f7752-e5bf-44a1-a110-1ccbc65b508b",
               "name": "Employee User",
               "email": "employee@assetflow.local",
               "role": "EMPLOYEE",
-              "departmentId": "c1d96709-b438-46c3-a59f-31f3024b3ecf"
+              "departmentId": "ac93d425-d882-4380-b544-caa6fd7c44f6"
             }
           },
           {
-            "id": "7d196d22-9f7c-420d-a6c0-b5525e92369b",
-            "userId": "ccba76b1-4e4a-48d3-bcdd-133b839502ea",
+            "id": "cd2101e2-a066-4797-83d0-62e780c03954",
+            "userId": "964f7752-e5bf-44a1-a110-1ccbc65b508b",
             "type": "MAINTENANCE_APPROVED",
             "category": "MAINTENANCE",
             "priority": "MEDIUM",
             "title": "Maintenance approved",
-            "message": "Maintenance ticket for Notification QA Asset 1783841802663-MNT was approved.",
+            "message": "Maintenance ticket for Notification QA Asset 1783842677478-MNT was approved.",
             "isRead": true,
-            "readAt": "2026-07-12T07:36:42.828Z",
+            "readAt": "2026-07-12T07:51:17.647Z",
             "relatedEntityType": "MaintenanceTicket",
-            "relatedEntityId": "5d148c50-9c46-4e05-bc24-747e6288c6fe",
-            "createdAt": "2026-07-12T07:36:42.739Z",
-            "updatedAt": "2026-07-12T07:36:42.828Z",
+            "relatedEntityId": "9d3d44ef-ceec-4db1-8c9d-ac545f9ba62d",
+            "createdAt": "2026-07-12T07:51:17.555Z",
+            "updatedAt": "2026-07-12T07:51:17.647Z",
             "user": {
-              "id": "ccba76b1-4e4a-48d3-bcdd-133b839502ea",
+              "id": "964f7752-e5bf-44a1-a110-1ccbc65b508b",
               "name": "Employee User",
               "email": "employee@assetflow.local",
               "role": "EMPLOYEE",
-              "departmentId": "c1d96709-b438-46c3-a59f-31f3024b3ecf"
+              "departmentId": "ac93d425-d882-4380-b544-caa6fd7c44f6"
             },
             "status": "read",
             "recipient": {
-              "id": "ccba76b1-4e4a-48d3-bcdd-133b839502ea",
+              "id": "964f7752-e5bf-44a1-a110-1ccbc65b508b",
               "name": "Employee User",
               "email": "employee@assetflow.local",
               "role": "EMPLOYEE",
-              "departmentId": "c1d96709-b438-46c3-a59f-31f3024b3ecf"
+              "departmentId": "ac93d425-d882-4380-b544-caa6fd7c44f6"
             }
           },
           {
-            "id": "d0552db0-ded1-44a7-a48e-3a765df70cad",
-            "userId": "ccba76b1-4e4a-48d3-bcdd-133b839502ea",
+            "id": "70ed0d2f-4dbe-420d-983d-622f37f79343",
+            "userId": "964f7752-e5bf-44a1-a110-1ccbc65b508b",
             "type": "MAINTENANCE_CREATED",
             "category": "MAINTENANCE",
             "priority": "INFO",
             "title": "Maintenance ticket created",
-            "message": "Maintenance ticket for Notification QA Asset 1783841802663-MNT was created.",
+            "message": "Maintenance ticket for Notification QA Asset 1783842677478-MNT was created.",
             "isRead": true,
-            "readAt": "2026-07-12T07:36:42.828Z",
+            "readAt": "2026-07-12T07:51:17.647Z",
             "relatedEntityType": "MaintenanceTicket",
-            "relatedEntityId": "5d148c50-9c46-4e05-bc24-747e6288c6fe",
-            "createdAt": "2026-07-12T07:36:42.734Z",
-            "updatedAt": "2026-07-12T07:36:42.828Z",
+            "relatedEntityId": "9d3d44ef-ceec-4db1-8c9d-ac545f9ba62d",
+            "createdAt": "2026-07-12T07:51:17.550Z",
+            "updatedAt": "2026-07-12T07:51:17.647Z",
             "user": {
-              "id": "ccba76b1-4e4a-48d3-bcdd-133b839502ea",
+              "id": "964f7752-e5bf-44a1-a110-1ccbc65b508b",
               "name": "Employee User",
               "email": "employee@assetflow.local",
               "role": "EMPLOYEE",
-              "departmentId": "c1d96709-b438-46c3-a59f-31f3024b3ecf"
+              "departmentId": "ac93d425-d882-4380-b544-caa6fd7c44f6"
             },
             "status": "read",
             "recipient": {
-              "id": "ccba76b1-4e4a-48d3-bcdd-133b839502ea",
+              "id": "964f7752-e5bf-44a1-a110-1ccbc65b508b",
               "name": "Employee User",
               "email": "employee@assetflow.local",
               "role": "EMPLOYEE",
-              "departmentId": "c1d96709-b438-46c3-a59f-31f3024b3ecf"
+              "departmentId": "ac93d425-d882-4380-b544-caa6fd7c44f6"
             }
           },
           {
-            "id": "91145f1d-c073-4383-a75c-f5434ad5c0a9",
-            "userId": "ccba76b1-4e4a-48d3-bcdd-133b839502ea",
+            "id": "2accbf59-9062-498f-8aa3-f295c300a749",
+            "userId": "964f7752-e5bf-44a1-a110-1ccbc65b508b",
             "type": "BOOKING_APPROVED",
             "category": "BOOKING",
             "priority": "MEDIUM",
             "title": "Booking approved",
-            "message": "Booking for Notification QA Asset 1783841802663-BOOK was approved.",
+            "message": "Booking for Notification QA Asset 1783842677478-BOOK was approved.",
             "isRead": true,
-            "readAt": "2026-07-12T07:36:42.828Z",
+            "readAt": "2026-07-12T07:51:17.647Z",
             "relatedEntityType": "Booking",
-            "relatedEntityId": "c2b3aea7-845e-4a58-9dbe-6534a2a73496",
-            "createdAt": "2026-07-12T07:36:42.723Z",
-            "updatedAt": "2026-07-12T07:36:42.828Z",
+            "relatedEntityId": "46530c76-b8a4-4711-b72a-658070d2a852",
+            "createdAt": "2026-07-12T07:51:17.540Z",
+            "updatedAt": "2026-07-12T07:51:17.647Z",
             "user": {
-              "id": "ccba76b1-4e4a-48d3-bcdd-133b839502ea",
+              "id": "964f7752-e5bf-44a1-a110-1ccbc65b508b",
               "name": "Employee User",
               "email": "employee@assetflow.local",
               "role": "EMPLOYEE",
-              "departmentId": "c1d96709-b438-46c3-a59f-31f3024b3ecf"
+              "departmentId": "ac93d425-d882-4380-b544-caa6fd7c44f6"
             },
             "status": "read",
             "recipient": {
-              "id": "ccba76b1-4e4a-48d3-bcdd-133b839502ea",
+              "id": "964f7752-e5bf-44a1-a110-1ccbc65b508b",
               "name": "Employee User",
               "email": "employee@assetflow.local",
               "role": "EMPLOYEE",
-              "departmentId": "c1d96709-b438-46c3-a59f-31f3024b3ecf"
+              "departmentId": "ac93d425-d882-4380-b544-caa6fd7c44f6"
             }
           }
         ],
         "criticalAlerts": []
+      },
+      "settings": {
+        "company": {
+          "companyName": "AssetFlow Demo Organization",
+          "logoUrl": null,
+          "timezone": "Asia/Kolkata",
+          "currency": "INR",
+          "language": "en"
+        },
+        "profile": {
+          "displayName": "Employee User",
+          "effectiveDisplayName": "Employee User",
+          "avatarUrl": null,
+          "theme": "SYSTEM",
+          "timezone": "Asia/Kolkata",
+          "language": "en",
+          "notificationPreferences": {
+            "email": true,
+            "inApp": true,
+            "criticalOnly": false,
+            "muteCategories": []
+          }
+        }
       }
     },
     "message": "Operation completed successfully."
@@ -2509,68 +2532,68 @@
     "data": {
       "items": [
         {
-          "id": "d4ad9549-add5-47f0-ae17-e2c748f24dbe",
-          "userId": "97e69066-fd68-40fc-97ff-cd0a26ab105a",
+          "id": "af29e860-8f0a-49d4-b5fe-749fc3fd3ad9",
+          "userId": "d5c990a4-bf18-459b-ab58-f936453ec33a",
           "type": "ASSET_RETIRED",
           "category": "ASSET",
           "priority": "INFO",
           "title": "Asset retired",
-          "message": "Notification QA Asset 1783841802663-RETIRE was retired.",
+          "message": "Notification QA Asset 1783842677478-RETIRE was retired.",
           "isRead": false,
           "readAt": null,
           "relatedEntityType": "Asset",
-          "relatedEntityId": "83012d79-532f-4ceb-acbe-2bd35581419a",
-          "createdAt": "2026-07-12T07:36:42.790Z",
-          "updatedAt": "2026-07-12T07:36:42.790Z",
+          "relatedEntityId": "b2fb4591-42b7-4065-81db-42babc274788",
+          "createdAt": "2026-07-12T07:51:17.607Z",
+          "updatedAt": "2026-07-12T07:51:17.607Z",
           "user": {
-            "id": "97e69066-fd68-40fc-97ff-cd0a26ab105a",
+            "id": "d5c990a4-bf18-459b-ab58-f936453ec33a",
             "name": "Admin User",
             "email": "admin@assetflow.local",
             "role": "ADMIN",
-            "departmentId": "c1d96709-b438-46c3-a59f-31f3024b3ecf"
+            "departmentId": "ac93d425-d882-4380-b544-caa6fd7c44f6"
           },
           "status": "unread",
           "recipient": {
-            "id": "97e69066-fd68-40fc-97ff-cd0a26ab105a",
+            "id": "d5c990a4-bf18-459b-ab58-f936453ec33a",
             "name": "Admin User",
             "email": "admin@assetflow.local",
             "role": "ADMIN",
-            "departmentId": "c1d96709-b438-46c3-a59f-31f3024b3ecf"
+            "departmentId": "ac93d425-d882-4380-b544-caa6fd7c44f6"
           }
         },
         {
-          "id": "c633f3a1-0627-4853-81bc-a9641c86e757",
-          "userId": "97e69066-fd68-40fc-97ff-cd0a26ab105a",
+          "id": "42078f13-409f-4cef-8a6a-12b68e09b82f",
+          "userId": "d5c990a4-bf18-459b-ab58-f936453ec33a",
           "type": "ASSET_CREATED",
           "category": "ASSET",
           "priority": "INFO",
           "title": "Asset created",
-          "message": "Notification QA Asset 1783841802663-RETIRE was registered.",
+          "message": "Notification QA Asset 1783842677478-RETIRE was registered.",
           "isRead": false,
           "readAt": null,
           "relatedEntityType": "Asset",
-          "relatedEntityId": "83012d79-532f-4ceb-acbe-2bd35581419a",
-          "createdAt": "2026-07-12T07:36:42.785Z",
-          "updatedAt": "2026-07-12T07:36:42.785Z",
+          "relatedEntityId": "b2fb4591-42b7-4065-81db-42babc274788",
+          "createdAt": "2026-07-12T07:51:17.603Z",
+          "updatedAt": "2026-07-12T07:51:17.603Z",
           "user": {
-            "id": "97e69066-fd68-40fc-97ff-cd0a26ab105a",
+            "id": "d5c990a4-bf18-459b-ab58-f936453ec33a",
             "name": "Admin User",
             "email": "admin@assetflow.local",
             "role": "ADMIN",
-            "departmentId": "c1d96709-b438-46c3-a59f-31f3024b3ecf"
+            "departmentId": "ac93d425-d882-4380-b544-caa6fd7c44f6"
           },
           "status": "unread",
           "recipient": {
-            "id": "97e69066-fd68-40fc-97ff-cd0a26ab105a",
+            "id": "d5c990a4-bf18-459b-ab58-f936453ec33a",
             "name": "Admin User",
             "email": "admin@assetflow.local",
             "role": "ADMIN",
-            "departmentId": "c1d96709-b438-46c3-a59f-31f3024b3ecf"
+            "departmentId": "ac93d425-d882-4380-b544-caa6fd7c44f6"
           }
         },
         {
-          "id": "02d89058-1e17-4d1c-aa1c-1ccb9266eb20",
-          "userId": "59589780-68c6-4f97-84b1-773778de59e7",
+          "id": "83617cfc-b9b4-4b6e-b5eb-44d7f8464907",
+          "userId": "e0874140-120a-4895-a85f-6799a2ace18b",
           "type": "AUDIT_COMPLETED",
           "category": "AUDIT",
           "priority": "INFO",
@@ -2579,28 +2602,28 @@
           "isRead": false,
           "readAt": null,
           "relatedEntityType": "Audit",
-          "relatedEntityId": "95b6ddb2-fa6f-42b8-a3e5-e668c8145e44",
-          "createdAt": "2026-07-12T07:36:42.780Z",
-          "updatedAt": "2026-07-12T07:36:42.780Z",
+          "relatedEntityId": "a1ffa8c8-d9c0-4224-b0d8-840ad604a5cd",
+          "createdAt": "2026-07-12T07:51:17.599Z",
+          "updatedAt": "2026-07-12T07:51:17.599Z",
           "user": {
-            "id": "59589780-68c6-4f97-84b1-773778de59e7",
+            "id": "e0874140-120a-4895-a85f-6799a2ace18b",
             "name": "Audit User",
             "email": "auditor@assetflow.local",
             "role": "AUDITOR",
-            "departmentId": "a7ce02f1-2e25-4650-ad2b-dab11dfeb82f"
+            "departmentId": "61b36392-553a-4ef4-9ab9-3e918abab9cb"
           },
           "status": "unread",
           "recipient": {
-            "id": "59589780-68c6-4f97-84b1-773778de59e7",
+            "id": "e0874140-120a-4895-a85f-6799a2ace18b",
             "name": "Audit User",
             "email": "auditor@assetflow.local",
             "role": "AUDITOR",
-            "departmentId": "a7ce02f1-2e25-4650-ad2b-dab11dfeb82f"
+            "departmentId": "61b36392-553a-4ef4-9ab9-3e918abab9cb"
           }
         },
         {
-          "id": "c7d4346a-01ec-4b6e-bc61-6dc33788707c",
-          "userId": "f7f58451-2d67-481e-908b-db7cff719290",
+          "id": "986410fc-b195-4e2e-bbd4-589694a309bb",
+          "userId": "bb47ab05-cc31-4219-916f-a3e850028d94",
           "type": "AUDIT_COMPLETED",
           "category": "AUDIT",
           "priority": "INFO",
@@ -2609,28 +2632,28 @@
           "isRead": false,
           "readAt": null,
           "relatedEntityType": "Audit",
-          "relatedEntityId": "95b6ddb2-fa6f-42b8-a3e5-e668c8145e44",
-          "createdAt": "2026-07-12T07:36:42.780Z",
-          "updatedAt": "2026-07-12T07:36:42.780Z",
+          "relatedEntityId": "a1ffa8c8-d9c0-4224-b0d8-840ad604a5cd",
+          "createdAt": "2026-07-12T07:51:17.599Z",
+          "updatedAt": "2026-07-12T07:51:17.599Z",
           "user": {
-            "id": "f7f58451-2d67-481e-908b-db7cff719290",
+            "id": "bb47ab05-cc31-4219-916f-a3e850028d94",
             "name": "IT Manager",
             "email": "manager@assetflow.local",
             "role": "MANAGER",
-            "departmentId": "c1d96709-b438-46c3-a59f-31f3024b3ecf"
+            "departmentId": "ac93d425-d882-4380-b544-caa6fd7c44f6"
           },
           "status": "unread",
           "recipient": {
-            "id": "f7f58451-2d67-481e-908b-db7cff719290",
+            "id": "bb47ab05-cc31-4219-916f-a3e850028d94",
             "name": "IT Manager",
             "email": "manager@assetflow.local",
             "role": "MANAGER",
-            "departmentId": "c1d96709-b438-46c3-a59f-31f3024b3ecf"
+            "departmentId": "ac93d425-d882-4380-b544-caa6fd7c44f6"
           }
         },
         {
-          "id": "e585486a-5e68-4254-a116-0a680035d56e",
-          "userId": "f7f58451-2d67-481e-908b-db7cff719290",
+          "id": "d6c6aa57-2a3e-4a12-9c15-ad75922e760e",
+          "userId": "bb47ab05-cc31-4219-916f-a3e850028d94",
           "type": "AUDIT_STARTED",
           "category": "AUDIT",
           "priority": "MEDIUM",
@@ -2639,28 +2662,28 @@
           "isRead": false,
           "readAt": null,
           "relatedEntityType": "Audit",
-          "relatedEntityId": "95b6ddb2-fa6f-42b8-a3e5-e668c8145e44",
-          "createdAt": "2026-07-12T07:36:42.769Z",
-          "updatedAt": "2026-07-12T07:36:42.769Z",
+          "relatedEntityId": "a1ffa8c8-d9c0-4224-b0d8-840ad604a5cd",
+          "createdAt": "2026-07-12T07:51:17.587Z",
+          "updatedAt": "2026-07-12T07:51:17.587Z",
           "user": {
-            "id": "f7f58451-2d67-481e-908b-db7cff719290",
+            "id": "bb47ab05-cc31-4219-916f-a3e850028d94",
             "name": "IT Manager",
             "email": "manager@assetflow.local",
             "role": "MANAGER",
-            "departmentId": "c1d96709-b438-46c3-a59f-31f3024b3ecf"
+            "departmentId": "ac93d425-d882-4380-b544-caa6fd7c44f6"
           },
           "status": "unread",
           "recipient": {
-            "id": "f7f58451-2d67-481e-908b-db7cff719290",
+            "id": "bb47ab05-cc31-4219-916f-a3e850028d94",
             "name": "IT Manager",
             "email": "manager@assetflow.local",
             "role": "MANAGER",
-            "departmentId": "c1d96709-b438-46c3-a59f-31f3024b3ecf"
+            "departmentId": "ac93d425-d882-4380-b544-caa6fd7c44f6"
           }
         },
         {
-          "id": "a201971e-2234-4379-a692-2176b466eaff",
-          "userId": "59589780-68c6-4f97-84b1-773778de59e7",
+          "id": "7df5bcc8-dc32-4b83-b264-c0ca73ffe059",
+          "userId": "e0874140-120a-4895-a85f-6799a2ace18b",
           "type": "AUDIT_STARTED",
           "category": "AUDIT",
           "priority": "MEDIUM",
@@ -2669,28 +2692,28 @@
           "isRead": false,
           "readAt": null,
           "relatedEntityType": "Audit",
-          "relatedEntityId": "95b6ddb2-fa6f-42b8-a3e5-e668c8145e44",
-          "createdAt": "2026-07-12T07:36:42.769Z",
-          "updatedAt": "2026-07-12T07:36:42.769Z",
+          "relatedEntityId": "a1ffa8c8-d9c0-4224-b0d8-840ad604a5cd",
+          "createdAt": "2026-07-12T07:51:17.587Z",
+          "updatedAt": "2026-07-12T07:51:17.587Z",
           "user": {
-            "id": "59589780-68c6-4f97-84b1-773778de59e7",
+            "id": "e0874140-120a-4895-a85f-6799a2ace18b",
             "name": "Audit User",
             "email": "auditor@assetflow.local",
             "role": "AUDITOR",
-            "departmentId": "a7ce02f1-2e25-4650-ad2b-dab11dfeb82f"
+            "departmentId": "61b36392-553a-4ef4-9ab9-3e918abab9cb"
           },
           "status": "unread",
           "recipient": {
-            "id": "59589780-68c6-4f97-84b1-773778de59e7",
+            "id": "e0874140-120a-4895-a85f-6799a2ace18b",
             "name": "Audit User",
             "email": "auditor@assetflow.local",
             "role": "AUDITOR",
-            "departmentId": "a7ce02f1-2e25-4650-ad2b-dab11dfeb82f"
+            "departmentId": "61b36392-553a-4ef4-9ab9-3e918abab9cb"
           }
         },
         {
-          "id": "f2e98e7d-190b-4513-91ff-e18a7c80529a",
-          "userId": "f7f58451-2d67-481e-908b-db7cff719290",
+          "id": "64ac1a24-ad07-42eb-9ab6-f3139a88d561",
+          "userId": "bb47ab05-cc31-4219-916f-a3e850028d94",
           "type": "AUDIT_CREATED",
           "category": "AUDIT",
           "priority": "INFO",
@@ -2699,28 +2722,28 @@
           "isRead": false,
           "readAt": null,
           "relatedEntityType": "Audit",
-          "relatedEntityId": "95b6ddb2-fa6f-42b8-a3e5-e668c8145e44",
-          "createdAt": "2026-07-12T07:36:42.762Z",
-          "updatedAt": "2026-07-12T07:36:42.762Z",
+          "relatedEntityId": "a1ffa8c8-d9c0-4224-b0d8-840ad604a5cd",
+          "createdAt": "2026-07-12T07:51:17.580Z",
+          "updatedAt": "2026-07-12T07:51:17.580Z",
           "user": {
-            "id": "f7f58451-2d67-481e-908b-db7cff719290",
+            "id": "bb47ab05-cc31-4219-916f-a3e850028d94",
             "name": "IT Manager",
             "email": "manager@assetflow.local",
             "role": "MANAGER",
-            "departmentId": "c1d96709-b438-46c3-a59f-31f3024b3ecf"
+            "departmentId": "ac93d425-d882-4380-b544-caa6fd7c44f6"
           },
           "status": "unread",
           "recipient": {
-            "id": "f7f58451-2d67-481e-908b-db7cff719290",
+            "id": "bb47ab05-cc31-4219-916f-a3e850028d94",
             "name": "IT Manager",
             "email": "manager@assetflow.local",
             "role": "MANAGER",
-            "departmentId": "c1d96709-b438-46c3-a59f-31f3024b3ecf"
+            "departmentId": "ac93d425-d882-4380-b544-caa6fd7c44f6"
           }
         },
         {
-          "id": "8317b79c-c5eb-4a9f-aec7-5b07559222c6",
-          "userId": "59589780-68c6-4f97-84b1-773778de59e7",
+          "id": "d961fcbb-e8af-4e43-a371-f9499b8966c8",
+          "userId": "e0874140-120a-4895-a85f-6799a2ace18b",
           "type": "AUDIT_CREATED",
           "category": "AUDIT",
           "priority": "INFO",
@@ -2729,118 +2752,118 @@
           "isRead": false,
           "readAt": null,
           "relatedEntityType": "Audit",
-          "relatedEntityId": "95b6ddb2-fa6f-42b8-a3e5-e668c8145e44",
-          "createdAt": "2026-07-12T07:36:42.762Z",
-          "updatedAt": "2026-07-12T07:36:42.762Z",
+          "relatedEntityId": "a1ffa8c8-d9c0-4224-b0d8-840ad604a5cd",
+          "createdAt": "2026-07-12T07:51:17.580Z",
+          "updatedAt": "2026-07-12T07:51:17.580Z",
           "user": {
-            "id": "59589780-68c6-4f97-84b1-773778de59e7",
+            "id": "e0874140-120a-4895-a85f-6799a2ace18b",
             "name": "Audit User",
             "email": "auditor@assetflow.local",
             "role": "AUDITOR",
-            "departmentId": "a7ce02f1-2e25-4650-ad2b-dab11dfeb82f"
+            "departmentId": "61b36392-553a-4ef4-9ab9-3e918abab9cb"
           },
           "status": "unread",
           "recipient": {
-            "id": "59589780-68c6-4f97-84b1-773778de59e7",
+            "id": "e0874140-120a-4895-a85f-6799a2ace18b",
             "name": "Audit User",
             "email": "auditor@assetflow.local",
             "role": "AUDITOR",
-            "departmentId": "a7ce02f1-2e25-4650-ad2b-dab11dfeb82f"
+            "departmentId": "61b36392-553a-4ef4-9ab9-3e918abab9cb"
           }
         },
         {
-          "id": "c5f5848f-892b-4dac-a421-ac27635bd5b2",
-          "userId": "97e69066-fd68-40fc-97ff-cd0a26ab105a",
+          "id": "ce301185-d131-416a-8031-a864f4a68e8d",
+          "userId": "d5c990a4-bf18-459b-ab58-f936453ec33a",
           "type": "ASSET_CREATED",
           "category": "ASSET",
           "priority": "INFO",
           "title": "Asset created",
-          "message": "Notification QA Asset 1783841802663-AUDIT was registered.",
+          "message": "Notification QA Asset 1783842677478-AUDIT was registered.",
           "isRead": false,
           "readAt": null,
           "relatedEntityType": "Asset",
-          "relatedEntityId": "097aea67-dbba-46f6-814b-3bc1cd16318d",
-          "createdAt": "2026-07-12T07:36:42.757Z",
-          "updatedAt": "2026-07-12T07:36:42.757Z",
+          "relatedEntityId": "6e4c6cb0-6167-49bf-8e27-b4ea077f4833",
+          "createdAt": "2026-07-12T07:51:17.573Z",
+          "updatedAt": "2026-07-12T07:51:17.573Z",
           "user": {
-            "id": "97e69066-fd68-40fc-97ff-cd0a26ab105a",
+            "id": "d5c990a4-bf18-459b-ab58-f936453ec33a",
             "name": "Admin User",
             "email": "admin@assetflow.local",
             "role": "ADMIN",
-            "departmentId": "c1d96709-b438-46c3-a59f-31f3024b3ecf"
+            "departmentId": "ac93d425-d882-4380-b544-caa6fd7c44f6"
           },
           "status": "unread",
           "recipient": {
-            "id": "97e69066-fd68-40fc-97ff-cd0a26ab105a",
+            "id": "d5c990a4-bf18-459b-ab58-f936453ec33a",
             "name": "Admin User",
             "email": "admin@assetflow.local",
             "role": "ADMIN",
-            "departmentId": "c1d96709-b438-46c3-a59f-31f3024b3ecf"
+            "departmentId": "ac93d425-d882-4380-b544-caa6fd7c44f6"
           }
         },
         {
-          "id": "b430a833-0239-4d57-b4b3-06a4fd3edbcf",
-          "userId": "ccba76b1-4e4a-48d3-bcdd-133b839502ea",
+          "id": "13cff9e2-1915-4cf2-80f5-3398347e2c49",
+          "userId": "964f7752-e5bf-44a1-a110-1ccbc65b508b",
           "type": "MAINTENANCE_STARTED",
           "category": "MAINTENANCE",
           "priority": "MEDIUM",
           "title": "Maintenance started",
-          "message": "Maintenance for Notification QA Asset 1783841802663-MNT has started.",
+          "message": "Maintenance for Notification QA Asset 1783842677478-MNT has started.",
           "isRead": true,
-          "readAt": "2026-07-12T07:36:42.828Z",
+          "readAt": "2026-07-12T07:51:17.647Z",
           "relatedEntityType": "MaintenanceTicket",
-          "relatedEntityId": "5d148c50-9c46-4e05-bc24-747e6288c6fe",
-          "createdAt": "2026-07-12T07:36:42.748Z",
-          "updatedAt": "2026-07-12T07:36:42.828Z",
+          "relatedEntityId": "9d3d44ef-ceec-4db1-8c9d-ac545f9ba62d",
+          "createdAt": "2026-07-12T07:51:17.564Z",
+          "updatedAt": "2026-07-12T07:51:17.647Z",
           "user": {
-            "id": "ccba76b1-4e4a-48d3-bcdd-133b839502ea",
+            "id": "964f7752-e5bf-44a1-a110-1ccbc65b508b",
             "name": "Employee User",
             "email": "employee@assetflow.local",
             "role": "EMPLOYEE",
-            "departmentId": "c1d96709-b438-46c3-a59f-31f3024b3ecf"
+            "departmentId": "ac93d425-d882-4380-b544-caa6fd7c44f6"
           },
           "status": "read",
           "recipient": {
-            "id": "ccba76b1-4e4a-48d3-bcdd-133b839502ea",
+            "id": "964f7752-e5bf-44a1-a110-1ccbc65b508b",
             "name": "Employee User",
             "email": "employee@assetflow.local",
             "role": "EMPLOYEE",
-            "departmentId": "c1d96709-b438-46c3-a59f-31f3024b3ecf"
+            "departmentId": "ac93d425-d882-4380-b544-caa6fd7c44f6"
           }
         },
         {
-          "id": "4e2293d7-322f-4652-a016-ae9702e1b0d8",
-          "userId": "ccba76b1-4e4a-48d3-bcdd-133b839502ea",
+          "id": "fedb14be-2ce9-4748-a4b6-803458c5a37f",
+          "userId": "964f7752-e5bf-44a1-a110-1ccbc65b508b",
           "type": "MAINTENANCE_ASSIGNED",
           "category": "MAINTENANCE",
           "priority": "MEDIUM",
           "title": "Maintenance assigned",
-          "message": "Maintenance for Notification QA Asset 1783841802663-MNT was assigned.",
+          "message": "Maintenance for Notification QA Asset 1783842677478-MNT was assigned.",
           "isRead": true,
-          "readAt": "2026-07-12T07:36:42.828Z",
+          "readAt": "2026-07-12T07:51:17.647Z",
           "relatedEntityType": "MaintenanceTicket",
-          "relatedEntityId": "5d148c50-9c46-4e05-bc24-747e6288c6fe",
-          "createdAt": "2026-07-12T07:36:42.744Z",
-          "updatedAt": "2026-07-12T07:36:42.828Z",
+          "relatedEntityId": "9d3d44ef-ceec-4db1-8c9d-ac545f9ba62d",
+          "createdAt": "2026-07-12T07:51:17.560Z",
+          "updatedAt": "2026-07-12T07:51:17.647Z",
           "user": {
-            "id": "ccba76b1-4e4a-48d3-bcdd-133b839502ea",
+            "id": "964f7752-e5bf-44a1-a110-1ccbc65b508b",
             "name": "Employee User",
             "email": "employee@assetflow.local",
             "role": "EMPLOYEE",
-            "departmentId": "c1d96709-b438-46c3-a59f-31f3024b3ecf"
+            "departmentId": "ac93d425-d882-4380-b544-caa6fd7c44f6"
           },
           "status": "read",
           "recipient": {
-            "id": "ccba76b1-4e4a-48d3-bcdd-133b839502ea",
+            "id": "964f7752-e5bf-44a1-a110-1ccbc65b508b",
             "name": "Employee User",
             "email": "employee@assetflow.local",
             "role": "EMPLOYEE",
-            "departmentId": "c1d96709-b438-46c3-a59f-31f3024b3ecf"
+            "departmentId": "ac93d425-d882-4380-b544-caa6fd7c44f6"
           }
         },
         {
-          "id": "ddb78e2d-267f-4c68-882f-59cb39123eea",
-          "userId": "f7f58451-2d67-481e-908b-db7cff719290",
+          "id": "6e361381-50bb-4c92-a1d9-eedd33b955b0",
+          "userId": "bb47ab05-cc31-4219-916f-a3e850028d94",
           "type": "MAINTENANCE_ASSIGNED",
           "category": "MAINTENANCE",
           "priority": "MEDIUM",
@@ -2849,263 +2872,263 @@
           "isRead": false,
           "readAt": null,
           "relatedEntityType": "MaintenanceTicket",
-          "relatedEntityId": "5d148c50-9c46-4e05-bc24-747e6288c6fe",
-          "createdAt": "2026-07-12T07:36:42.743Z",
-          "updatedAt": "2026-07-12T07:36:42.743Z",
+          "relatedEntityId": "9d3d44ef-ceec-4db1-8c9d-ac545f9ba62d",
+          "createdAt": "2026-07-12T07:51:17.560Z",
+          "updatedAt": "2026-07-12T07:51:17.560Z",
           "user": {
-            "id": "f7f58451-2d67-481e-908b-db7cff719290",
+            "id": "bb47ab05-cc31-4219-916f-a3e850028d94",
             "name": "IT Manager",
             "email": "manager@assetflow.local",
             "role": "MANAGER",
-            "departmentId": "c1d96709-b438-46c3-a59f-31f3024b3ecf"
+            "departmentId": "ac93d425-d882-4380-b544-caa6fd7c44f6"
           },
           "status": "unread",
           "recipient": {
-            "id": "f7f58451-2d67-481e-908b-db7cff719290",
+            "id": "bb47ab05-cc31-4219-916f-a3e850028d94",
             "name": "IT Manager",
             "email": "manager@assetflow.local",
             "role": "MANAGER",
-            "departmentId": "c1d96709-b438-46c3-a59f-31f3024b3ecf"
+            "departmentId": "ac93d425-d882-4380-b544-caa6fd7c44f6"
           }
         },
         {
-          "id": "7d196d22-9f7c-420d-a6c0-b5525e92369b",
-          "userId": "ccba76b1-4e4a-48d3-bcdd-133b839502ea",
+          "id": "cd2101e2-a066-4797-83d0-62e780c03954",
+          "userId": "964f7752-e5bf-44a1-a110-1ccbc65b508b",
           "type": "MAINTENANCE_APPROVED",
           "category": "MAINTENANCE",
           "priority": "MEDIUM",
           "title": "Maintenance approved",
-          "message": "Maintenance ticket for Notification QA Asset 1783841802663-MNT was approved.",
+          "message": "Maintenance ticket for Notification QA Asset 1783842677478-MNT was approved.",
           "isRead": true,
-          "readAt": "2026-07-12T07:36:42.828Z",
+          "readAt": "2026-07-12T07:51:17.647Z",
           "relatedEntityType": "MaintenanceTicket",
-          "relatedEntityId": "5d148c50-9c46-4e05-bc24-747e6288c6fe",
-          "createdAt": "2026-07-12T07:36:42.739Z",
-          "updatedAt": "2026-07-12T07:36:42.828Z",
+          "relatedEntityId": "9d3d44ef-ceec-4db1-8c9d-ac545f9ba62d",
+          "createdAt": "2026-07-12T07:51:17.555Z",
+          "updatedAt": "2026-07-12T07:51:17.647Z",
           "user": {
-            "id": "ccba76b1-4e4a-48d3-bcdd-133b839502ea",
+            "id": "964f7752-e5bf-44a1-a110-1ccbc65b508b",
             "name": "Employee User",
             "email": "employee@assetflow.local",
             "role": "EMPLOYEE",
-            "departmentId": "c1d96709-b438-46c3-a59f-31f3024b3ecf"
+            "departmentId": "ac93d425-d882-4380-b544-caa6fd7c44f6"
           },
           "status": "read",
           "recipient": {
-            "id": "ccba76b1-4e4a-48d3-bcdd-133b839502ea",
+            "id": "964f7752-e5bf-44a1-a110-1ccbc65b508b",
             "name": "Employee User",
             "email": "employee@assetflow.local",
             "role": "EMPLOYEE",
-            "departmentId": "c1d96709-b438-46c3-a59f-31f3024b3ecf"
+            "departmentId": "ac93d425-d882-4380-b544-caa6fd7c44f6"
           }
         },
         {
-          "id": "3e57b6e3-4582-4166-8ef4-abb378347c91",
-          "userId": "f7f58451-2d67-481e-908b-db7cff719290",
+          "id": "adfc7d83-d0c8-4b1a-a22d-a610153d6a9b",
+          "userId": "bb47ab05-cc31-4219-916f-a3e850028d94",
           "type": "MAINTENANCE_APPROVAL_REQUIRED",
           "category": "APPROVAL",
           "priority": "HIGH",
           "title": "Maintenance approval needed",
-          "message": "Employee User reported maintenance for Notification QA Asset 1783841802663-MNT.",
+          "message": "Employee User reported maintenance for Notification QA Asset 1783842677478-MNT.",
           "isRead": false,
           "readAt": null,
           "relatedEntityType": "MaintenanceTicket",
-          "relatedEntityId": "5d148c50-9c46-4e05-bc24-747e6288c6fe",
-          "createdAt": "2026-07-12T07:36:42.734Z",
-          "updatedAt": "2026-07-12T07:36:42.734Z",
+          "relatedEntityId": "9d3d44ef-ceec-4db1-8c9d-ac545f9ba62d",
+          "createdAt": "2026-07-12T07:51:17.551Z",
+          "updatedAt": "2026-07-12T07:51:17.551Z",
           "user": {
-            "id": "f7f58451-2d67-481e-908b-db7cff719290",
+            "id": "bb47ab05-cc31-4219-916f-a3e850028d94",
             "name": "IT Manager",
             "email": "manager@assetflow.local",
             "role": "MANAGER",
-            "departmentId": "c1d96709-b438-46c3-a59f-31f3024b3ecf"
+            "departmentId": "ac93d425-d882-4380-b544-caa6fd7c44f6"
           },
           "status": "unread",
           "recipient": {
-            "id": "f7f58451-2d67-481e-908b-db7cff719290",
+            "id": "bb47ab05-cc31-4219-916f-a3e850028d94",
             "name": "IT Manager",
             "email": "manager@assetflow.local",
             "role": "MANAGER",
-            "departmentId": "c1d96709-b438-46c3-a59f-31f3024b3ecf"
+            "departmentId": "ac93d425-d882-4380-b544-caa6fd7c44f6"
           }
         },
         {
-          "id": "d0552db0-ded1-44a7-a48e-3a765df70cad",
-          "userId": "ccba76b1-4e4a-48d3-bcdd-133b839502ea",
+          "id": "70ed0d2f-4dbe-420d-983d-622f37f79343",
+          "userId": "964f7752-e5bf-44a1-a110-1ccbc65b508b",
           "type": "MAINTENANCE_CREATED",
           "category": "MAINTENANCE",
           "priority": "INFO",
           "title": "Maintenance ticket created",
-          "message": "Maintenance ticket for Notification QA Asset 1783841802663-MNT was created.",
+          "message": "Maintenance ticket for Notification QA Asset 1783842677478-MNT was created.",
           "isRead": true,
-          "readAt": "2026-07-12T07:36:42.828Z",
+          "readAt": "2026-07-12T07:51:17.647Z",
           "relatedEntityType": "MaintenanceTicket",
-          "relatedEntityId": "5d148c50-9c46-4e05-bc24-747e6288c6fe",
-          "createdAt": "2026-07-12T07:36:42.734Z",
-          "updatedAt": "2026-07-12T07:36:42.828Z",
+          "relatedEntityId": "9d3d44ef-ceec-4db1-8c9d-ac545f9ba62d",
+          "createdAt": "2026-07-12T07:51:17.550Z",
+          "updatedAt": "2026-07-12T07:51:17.647Z",
           "user": {
-            "id": "ccba76b1-4e4a-48d3-bcdd-133b839502ea",
+            "id": "964f7752-e5bf-44a1-a110-1ccbc65b508b",
             "name": "Employee User",
             "email": "employee@assetflow.local",
             "role": "EMPLOYEE",
-            "departmentId": "c1d96709-b438-46c3-a59f-31f3024b3ecf"
+            "departmentId": "ac93d425-d882-4380-b544-caa6fd7c44f6"
           },
           "status": "read",
           "recipient": {
-            "id": "ccba76b1-4e4a-48d3-bcdd-133b839502ea",
+            "id": "964f7752-e5bf-44a1-a110-1ccbc65b508b",
             "name": "Employee User",
             "email": "employee@assetflow.local",
             "role": "EMPLOYEE",
-            "departmentId": "c1d96709-b438-46c3-a59f-31f3024b3ecf"
+            "departmentId": "ac93d425-d882-4380-b544-caa6fd7c44f6"
           }
         },
         {
-          "id": "4c187563-19ab-48fb-ac97-741945d60478",
-          "userId": "97e69066-fd68-40fc-97ff-cd0a26ab105a",
+          "id": "78eab2a6-3963-4bf4-b705-012b051ed711",
+          "userId": "d5c990a4-bf18-459b-ab58-f936453ec33a",
           "type": "ASSET_CREATED",
           "category": "ASSET",
           "priority": "INFO",
           "title": "Asset created",
-          "message": "Notification QA Asset 1783841802663-MNT was registered.",
+          "message": "Notification QA Asset 1783842677478-MNT was registered.",
           "isRead": false,
           "readAt": null,
           "relatedEntityType": "Asset",
-          "relatedEntityId": "1d514b9d-0def-45c0-8f0b-f3db1f473f58",
-          "createdAt": "2026-07-12T07:36:42.728Z",
-          "updatedAt": "2026-07-12T07:36:42.728Z",
+          "relatedEntityId": "8c692973-e8e4-431c-b01a-1eef5989dabc",
+          "createdAt": "2026-07-12T07:51:17.545Z",
+          "updatedAt": "2026-07-12T07:51:17.545Z",
           "user": {
-            "id": "97e69066-fd68-40fc-97ff-cd0a26ab105a",
+            "id": "d5c990a4-bf18-459b-ab58-f936453ec33a",
             "name": "Admin User",
             "email": "admin@assetflow.local",
             "role": "ADMIN",
-            "departmentId": "c1d96709-b438-46c3-a59f-31f3024b3ecf"
+            "departmentId": "ac93d425-d882-4380-b544-caa6fd7c44f6"
           },
           "status": "unread",
           "recipient": {
-            "id": "97e69066-fd68-40fc-97ff-cd0a26ab105a",
+            "id": "d5c990a4-bf18-459b-ab58-f936453ec33a",
             "name": "Admin User",
             "email": "admin@assetflow.local",
             "role": "ADMIN",
-            "departmentId": "c1d96709-b438-46c3-a59f-31f3024b3ecf"
+            "departmentId": "ac93d425-d882-4380-b544-caa6fd7c44f6"
           }
         },
         {
-          "id": "91145f1d-c073-4383-a75c-f5434ad5c0a9",
-          "userId": "ccba76b1-4e4a-48d3-bcdd-133b839502ea",
+          "id": "2accbf59-9062-498f-8aa3-f295c300a749",
+          "userId": "964f7752-e5bf-44a1-a110-1ccbc65b508b",
           "type": "BOOKING_APPROVED",
           "category": "BOOKING",
           "priority": "MEDIUM",
           "title": "Booking approved",
-          "message": "Booking for Notification QA Asset 1783841802663-BOOK was approved.",
+          "message": "Booking for Notification QA Asset 1783842677478-BOOK was approved.",
           "isRead": true,
-          "readAt": "2026-07-12T07:36:42.828Z",
+          "readAt": "2026-07-12T07:51:17.647Z",
           "relatedEntityType": "Booking",
-          "relatedEntityId": "c2b3aea7-845e-4a58-9dbe-6534a2a73496",
-          "createdAt": "2026-07-12T07:36:42.723Z",
-          "updatedAt": "2026-07-12T07:36:42.828Z",
+          "relatedEntityId": "46530c76-b8a4-4711-b72a-658070d2a852",
+          "createdAt": "2026-07-12T07:51:17.540Z",
+          "updatedAt": "2026-07-12T07:51:17.647Z",
           "user": {
-            "id": "ccba76b1-4e4a-48d3-bcdd-133b839502ea",
+            "id": "964f7752-e5bf-44a1-a110-1ccbc65b508b",
             "name": "Employee User",
             "email": "employee@assetflow.local",
             "role": "EMPLOYEE",
-            "departmentId": "c1d96709-b438-46c3-a59f-31f3024b3ecf"
+            "departmentId": "ac93d425-d882-4380-b544-caa6fd7c44f6"
           },
           "status": "read",
           "recipient": {
-            "id": "ccba76b1-4e4a-48d3-bcdd-133b839502ea",
+            "id": "964f7752-e5bf-44a1-a110-1ccbc65b508b",
             "name": "Employee User",
             "email": "employee@assetflow.local",
             "role": "EMPLOYEE",
-            "departmentId": "c1d96709-b438-46c3-a59f-31f3024b3ecf"
+            "departmentId": "ac93d425-d882-4380-b544-caa6fd7c44f6"
           }
         },
         {
-          "id": "e0e5dc75-24bb-47b8-b668-aad323575256",
-          "userId": "ccba76b1-4e4a-48d3-bcdd-133b839502ea",
-          "type": "BOOKING_CREATED",
-          "category": "BOOKING",
-          "priority": "INFO",
-          "title": "Booking requested",
-          "message": "Booking request for Notification QA Asset 1783841802663-BOOK was created.",
-          "isRead": true,
-          "readAt": "2026-07-12T07:36:42.828Z",
-          "relatedEntityType": "Booking",
-          "relatedEntityId": "c2b3aea7-845e-4a58-9dbe-6534a2a73496",
-          "createdAt": "2026-07-12T07:36:42.718Z",
-          "updatedAt": "2026-07-12T07:36:42.828Z",
-          "user": {
-            "id": "ccba76b1-4e4a-48d3-bcdd-133b839502ea",
-            "name": "Employee User",
-            "email": "employee@assetflow.local",
-            "role": "EMPLOYEE",
-            "departmentId": "c1d96709-b438-46c3-a59f-31f3024b3ecf"
-          },
-          "status": "read",
-          "recipient": {
-            "id": "ccba76b1-4e4a-48d3-bcdd-133b839502ea",
-            "name": "Employee User",
-            "email": "employee@assetflow.local",
-            "role": "EMPLOYEE",
-            "departmentId": "c1d96709-b438-46c3-a59f-31f3024b3ecf"
-          }
-        },
-        {
-          "id": "65098cae-def7-4252-b020-37604b71d9cf",
-          "userId": "f7f58451-2d67-481e-908b-db7cff719290",
+          "id": "4bd20f18-0ef5-42c0-84c9-f390d846775f",
+          "userId": "bb47ab05-cc31-4219-916f-a3e850028d94",
           "type": "BOOKING_APPROVAL_REQUIRED",
           "category": "APPROVAL",
           "priority": "HIGH",
           "title": "Booking approval needed",
-          "message": "Employee User requested Notification QA Asset 1783841802663-BOOK.",
+          "message": "Employee User requested Notification QA Asset 1783842677478-BOOK.",
           "isRead": false,
           "readAt": null,
           "relatedEntityType": "Booking",
-          "relatedEntityId": "c2b3aea7-845e-4a58-9dbe-6534a2a73496",
-          "createdAt": "2026-07-12T07:36:42.718Z",
-          "updatedAt": "2026-07-12T07:36:42.718Z",
+          "relatedEntityId": "46530c76-b8a4-4711-b72a-658070d2a852",
+          "createdAt": "2026-07-12T07:51:17.535Z",
+          "updatedAt": "2026-07-12T07:51:17.535Z",
           "user": {
-            "id": "f7f58451-2d67-481e-908b-db7cff719290",
+            "id": "bb47ab05-cc31-4219-916f-a3e850028d94",
             "name": "IT Manager",
             "email": "manager@assetflow.local",
             "role": "MANAGER",
-            "departmentId": "c1d96709-b438-46c3-a59f-31f3024b3ecf"
+            "departmentId": "ac93d425-d882-4380-b544-caa6fd7c44f6"
           },
           "status": "unread",
           "recipient": {
-            "id": "f7f58451-2d67-481e-908b-db7cff719290",
+            "id": "bb47ab05-cc31-4219-916f-a3e850028d94",
             "name": "IT Manager",
             "email": "manager@assetflow.local",
             "role": "MANAGER",
-            "departmentId": "c1d96709-b438-46c3-a59f-31f3024b3ecf"
+            "departmentId": "ac93d425-d882-4380-b544-caa6fd7c44f6"
           }
         },
         {
-          "id": "43deb483-2273-4330-a1f0-e80ad6cb932f",
-          "userId": "97e69066-fd68-40fc-97ff-cd0a26ab105a",
+          "id": "69dc396e-758e-4a15-8826-8152747a154f",
+          "userId": "964f7752-e5bf-44a1-a110-1ccbc65b508b",
+          "type": "BOOKING_CREATED",
+          "category": "BOOKING",
+          "priority": "INFO",
+          "title": "Booking requested",
+          "message": "Booking request for Notification QA Asset 1783842677478-BOOK was created.",
+          "isRead": true,
+          "readAt": "2026-07-12T07:51:17.647Z",
+          "relatedEntityType": "Booking",
+          "relatedEntityId": "46530c76-b8a4-4711-b72a-658070d2a852",
+          "createdAt": "2026-07-12T07:51:17.534Z",
+          "updatedAt": "2026-07-12T07:51:17.647Z",
+          "user": {
+            "id": "964f7752-e5bf-44a1-a110-1ccbc65b508b",
+            "name": "Employee User",
+            "email": "employee@assetflow.local",
+            "role": "EMPLOYEE",
+            "departmentId": "ac93d425-d882-4380-b544-caa6fd7c44f6"
+          },
+          "status": "read",
+          "recipient": {
+            "id": "964f7752-e5bf-44a1-a110-1ccbc65b508b",
+            "name": "Employee User",
+            "email": "employee@assetflow.local",
+            "role": "EMPLOYEE",
+            "departmentId": "ac93d425-d882-4380-b544-caa6fd7c44f6"
+          }
+        },
+        {
+          "id": "f25c4f35-e9e4-4ce5-b6b2-cee8ac994287",
+          "userId": "d5c990a4-bf18-459b-ab58-f936453ec33a",
           "type": "ASSET_CREATED",
           "category": "ASSET",
           "priority": "INFO",
           "title": "Asset created",
-          "message": "Notification QA Asset 1783841802663-BOOK was registered.",
+          "message": "Notification QA Asset 1783842677478-BOOK was registered.",
           "isRead": false,
           "readAt": null,
           "relatedEntityType": "Asset",
-          "relatedEntityId": "a89b14ab-8971-4ab1-abf6-868fcc67ab25",
-          "createdAt": "2026-07-12T07:36:42.713Z",
-          "updatedAt": "2026-07-12T07:36:42.713Z",
+          "relatedEntityId": "6a414898-0b47-4afa-a209-be3f6078f6ee",
+          "createdAt": "2026-07-12T07:51:17.529Z",
+          "updatedAt": "2026-07-12T07:51:17.529Z",
           "user": {
-            "id": "97e69066-fd68-40fc-97ff-cd0a26ab105a",
+            "id": "d5c990a4-bf18-459b-ab58-f936453ec33a",
             "name": "Admin User",
             "email": "admin@assetflow.local",
             "role": "ADMIN",
-            "departmentId": "c1d96709-b438-46c3-a59f-31f3024b3ecf"
+            "departmentId": "ac93d425-d882-4380-b544-caa6fd7c44f6"
           },
           "status": "unread",
           "recipient": {
-            "id": "97e69066-fd68-40fc-97ff-cd0a26ab105a",
+            "id": "d5c990a4-bf18-459b-ab58-f936453ec33a",
             "name": "Admin User",
             "email": "admin@assetflow.local",
             "role": "ADMIN",
-            "departmentId": "c1d96709-b438-46c3-a59f-31f3024b3ecf"
+            "departmentId": "ac93d425-d882-4380-b544-caa6fd7c44f6"
           }
         }
       ],

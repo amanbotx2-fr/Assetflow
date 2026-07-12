@@ -4,53 +4,53 @@
     "data": {
       "items": [
         {
-          "id": "6addb4b9-06b9-4c86-9c15-ca6b1cc31ca8",
-          "assetId": "ece753d3-3cb7-4c3f-9144-9c9305ca52ad",
-          "requestedById": "09ad9c6a-f46c-45b2-a1d8-335cdd91257c",
+          "id": "67a2875f-2d8a-4e49-be1e-cab6bc3daf3d",
+          "assetId": "253bfe92-e92f-4178-97b4-23bb9993deb7",
+          "requestedById": "104310c7-3081-4393-a9a0-a315588ec5e0",
           "approvedById": null,
           "startTime": "2026-07-12T12:00:00.000Z",
           "endTime": "2026-07-12T13:00:00.000Z",
           "status": "REQUESTED",
           "purpose": "Client visit",
           "decisionNotes": null,
-          "createdAt": "2026-07-12T07:36:05.585Z",
-          "updatedAt": "2026-07-12T07:36:05.585Z",
+          "createdAt": "2026-07-12T07:50:33.868Z",
+          "updatedAt": "2026-07-12T07:50:33.868Z",
           "asset": {
-            "id": "ece753d3-3cb7-4c3f-9144-9c9305ca52ad",
+            "id": "253bfe92-e92f-4178-97b4-23bb9993deb7",
             "assetCode": "VEH-001",
             "serialNumber": "SN-VEH-001",
             "name": "Office Shuttle",
             "status": "AVAILABLE",
-            "departmentId": "230f4143-42aa-444e-a6a7-de22295198f8",
+            "departmentId": "ecb9243f-8990-4c80-aa22-5c2ffa59368a",
             "location": "Parking Bay 4",
             "isBookable": true,
             "department": {
-              "id": "230f4143-42aa-444e-a6a7-de22295198f8",
+              "id": "ecb9243f-8990-4c80-aa22-5c2ffa59368a",
               "name": "Operations",
               "code": "OPS",
               "status": "ACTIVE"
             }
           },
           "requestedBy": {
-            "id": "09ad9c6a-f46c-45b2-a1d8-335cdd91257c",
+            "id": "104310c7-3081-4393-a9a0-a315588ec5e0",
             "name": "Employee User",
             "email": "employee@assetflow.local",
             "role": "EMPLOYEE",
-            "departmentId": "047d4271-4ee3-43a1-b6ed-1334e48b36c5"
+            "departmentId": "21a55ae9-d236-4423-83f3-aa5602507d76"
           },
           "approvedBy": null,
-          "resourceId": "ece753d3-3cb7-4c3f-9144-9c9305ca52ad",
+          "resourceId": "253bfe92-e92f-4178-97b4-23bb9993deb7",
           "resource": {
-            "id": "ece753d3-3cb7-4c3f-9144-9c9305ca52ad",
+            "id": "253bfe92-e92f-4178-97b4-23bb9993deb7",
             "assetCode": "VEH-001",
             "serialNumber": "SN-VEH-001",
             "name": "Office Shuttle",
             "status": "AVAILABLE",
-            "departmentId": "230f4143-42aa-444e-a6a7-de22295198f8",
+            "departmentId": "ecb9243f-8990-4c80-aa22-5c2ffa59368a",
             "location": "Parking Bay 4",
             "isBookable": true,
             "department": {
-              "id": "230f4143-42aa-444e-a6a7-de22295198f8",
+              "id": "ecb9243f-8990-4c80-aa22-5c2ffa59368a",
               "name": "Operations",
               "code": "OPS",
               "status": "ACTIVE"
@@ -58,14 +58,14 @@
             "assetTag": "VEH-001"
           },
           "bookedBy": {
-            "id": "09ad9c6a-f46c-45b2-a1d8-335cdd91257c",
+            "id": "104310c7-3081-4393-a9a0-a315588ec5e0",
             "name": "Employee User",
             "email": "employee@assetflow.local",
             "role": "EMPLOYEE",
-            "departmentId": "047d4271-4ee3-43a1-b6ed-1334e48b36c5"
+            "departmentId": "21a55ae9-d236-4423-83f3-aa5602507d76"
           },
           "department": {
-            "id": "230f4143-42aa-444e-a6a7-de22295198f8",
+            "id": "ecb9243f-8990-4c80-aa22-5c2ffa59368a",
             "name": "Operations",
             "code": "OPS",
             "status": "ACTIVE"
@@ -73,59 +73,59 @@
           "lifecycleStatus": "REQUESTED"
         },
         {
-          "id": "afe25060-a0b9-42fe-a781-7c9bfceee9ce",
-          "assetId": "3a9927de-b5f3-4758-9cfa-c48f16d9b9e9",
-          "requestedById": "09ad9c6a-f46c-45b2-a1d8-335cdd91257c",
-          "approvedById": "eeb4e344-4b05-45cc-bab9-28b3ccdfe519",
+          "id": "251f4e1d-811f-4190-9dbf-dd94798bfb8d",
+          "assetId": "cd344e20-0064-497d-9ca5-d2858e20ff1f",
+          "requestedById": "104310c7-3081-4393-a9a0-a315588ec5e0",
+          "approvedById": "f09e79fc-f97d-4ec4-86e6-7376912766a7",
           "startTime": "2026-07-12T10:00:00.000Z",
           "endTime": "2026-07-12T11:00:00.000Z",
           "status": "APPROVED",
           "purpose": "Hackathon demo presentation",
           "decisionNotes": null,
-          "createdAt": "2026-07-12T07:36:05.585Z",
-          "updatedAt": "2026-07-12T07:36:05.585Z",
+          "createdAt": "2026-07-12T07:50:33.867Z",
+          "updatedAt": "2026-07-12T07:50:33.867Z",
           "asset": {
-            "id": "3a9927de-b5f3-4758-9cfa-c48f16d9b9e9",
+            "id": "cd344e20-0064-497d-9ca5-d2858e20ff1f",
             "assetCode": "PROJ-001",
             "serialNumber": "SN-PROJ-001",
             "name": "Epson Conference Projector",
             "status": "AVAILABLE",
-            "departmentId": "230f4143-42aa-444e-a6a7-de22295198f8",
+            "departmentId": "ecb9243f-8990-4c80-aa22-5c2ffa59368a",
             "location": "Conference Room A",
             "isBookable": true,
             "department": {
-              "id": "230f4143-42aa-444e-a6a7-de22295198f8",
+              "id": "ecb9243f-8990-4c80-aa22-5c2ffa59368a",
               "name": "Operations",
               "code": "OPS",
               "status": "ACTIVE"
             }
           },
           "requestedBy": {
-            "id": "09ad9c6a-f46c-45b2-a1d8-335cdd91257c",
+            "id": "104310c7-3081-4393-a9a0-a315588ec5e0",
             "name": "Employee User",
             "email": "employee@assetflow.local",
             "role": "EMPLOYEE",
-            "departmentId": "047d4271-4ee3-43a1-b6ed-1334e48b36c5"
+            "departmentId": "21a55ae9-d236-4423-83f3-aa5602507d76"
           },
           "approvedBy": {
-            "id": "eeb4e344-4b05-45cc-bab9-28b3ccdfe519",
+            "id": "f09e79fc-f97d-4ec4-86e6-7376912766a7",
             "name": "IT Manager",
             "email": "manager@assetflow.local",
             "role": "MANAGER",
-            "departmentId": "047d4271-4ee3-43a1-b6ed-1334e48b36c5"
+            "departmentId": "21a55ae9-d236-4423-83f3-aa5602507d76"
           },
-          "resourceId": "3a9927de-b5f3-4758-9cfa-c48f16d9b9e9",
+          "resourceId": "cd344e20-0064-497d-9ca5-d2858e20ff1f",
           "resource": {
-            "id": "3a9927de-b5f3-4758-9cfa-c48f16d9b9e9",
+            "id": "cd344e20-0064-497d-9ca5-d2858e20ff1f",
             "assetCode": "PROJ-001",
             "serialNumber": "SN-PROJ-001",
             "name": "Epson Conference Projector",
             "status": "AVAILABLE",
-            "departmentId": "230f4143-42aa-444e-a6a7-de22295198f8",
+            "departmentId": "ecb9243f-8990-4c80-aa22-5c2ffa59368a",
             "location": "Conference Room A",
             "isBookable": true,
             "department": {
-              "id": "230f4143-42aa-444e-a6a7-de22295198f8",
+              "id": "ecb9243f-8990-4c80-aa22-5c2ffa59368a",
               "name": "Operations",
               "code": "OPS",
               "status": "ACTIVE"
@@ -133,14 +133,14 @@
             "assetTag": "PROJ-001"
           },
           "bookedBy": {
-            "id": "09ad9c6a-f46c-45b2-a1d8-335cdd91257c",
+            "id": "104310c7-3081-4393-a9a0-a315588ec5e0",
             "name": "Employee User",
             "email": "employee@assetflow.local",
             "role": "EMPLOYEE",
-            "departmentId": "047d4271-4ee3-43a1-b6ed-1334e48b36c5"
+            "departmentId": "21a55ae9-d236-4423-83f3-aa5602507d76"
           },
           "department": {
-            "id": "230f4143-42aa-444e-a6a7-de22295198f8",
+            "id": "ecb9243f-8990-4c80-aa22-5c2ffa59368a",
             "name": "Operations",
             "code": "OPS",
             "status": "ACTIVE"
@@ -158,53 +158,53 @@
   "bookingDetail": {
     "success": true,
     "data": {
-      "id": "6addb4b9-06b9-4c86-9c15-ca6b1cc31ca8",
-      "assetId": "ece753d3-3cb7-4c3f-9144-9c9305ca52ad",
-      "requestedById": "09ad9c6a-f46c-45b2-a1d8-335cdd91257c",
+      "id": "67a2875f-2d8a-4e49-be1e-cab6bc3daf3d",
+      "assetId": "253bfe92-e92f-4178-97b4-23bb9993deb7",
+      "requestedById": "104310c7-3081-4393-a9a0-a315588ec5e0",
       "approvedById": null,
       "startTime": "2026-07-12T12:00:00.000Z",
       "endTime": "2026-07-12T13:00:00.000Z",
       "status": "REQUESTED",
       "purpose": "Client visit",
       "decisionNotes": null,
-      "createdAt": "2026-07-12T07:36:05.585Z",
-      "updatedAt": "2026-07-12T07:36:05.585Z",
+      "createdAt": "2026-07-12T07:50:33.868Z",
+      "updatedAt": "2026-07-12T07:50:33.868Z",
       "asset": {
-        "id": "ece753d3-3cb7-4c3f-9144-9c9305ca52ad",
+        "id": "253bfe92-e92f-4178-97b4-23bb9993deb7",
         "assetCode": "VEH-001",
         "serialNumber": "SN-VEH-001",
         "name": "Office Shuttle",
         "status": "AVAILABLE",
-        "departmentId": "230f4143-42aa-444e-a6a7-de22295198f8",
+        "departmentId": "ecb9243f-8990-4c80-aa22-5c2ffa59368a",
         "location": "Parking Bay 4",
         "isBookable": true,
         "department": {
-          "id": "230f4143-42aa-444e-a6a7-de22295198f8",
+          "id": "ecb9243f-8990-4c80-aa22-5c2ffa59368a",
           "name": "Operations",
           "code": "OPS",
           "status": "ACTIVE"
         }
       },
       "requestedBy": {
-        "id": "09ad9c6a-f46c-45b2-a1d8-335cdd91257c",
+        "id": "104310c7-3081-4393-a9a0-a315588ec5e0",
         "name": "Employee User",
         "email": "employee@assetflow.local",
         "role": "EMPLOYEE",
-        "departmentId": "047d4271-4ee3-43a1-b6ed-1334e48b36c5"
+        "departmentId": "21a55ae9-d236-4423-83f3-aa5602507d76"
       },
       "approvedBy": null,
-      "resourceId": "ece753d3-3cb7-4c3f-9144-9c9305ca52ad",
+      "resourceId": "253bfe92-e92f-4178-97b4-23bb9993deb7",
       "resource": {
-        "id": "ece753d3-3cb7-4c3f-9144-9c9305ca52ad",
+        "id": "253bfe92-e92f-4178-97b4-23bb9993deb7",
         "assetCode": "VEH-001",
         "serialNumber": "SN-VEH-001",
         "name": "Office Shuttle",
         "status": "AVAILABLE",
-        "departmentId": "230f4143-42aa-444e-a6a7-de22295198f8",
+        "departmentId": "ecb9243f-8990-4c80-aa22-5c2ffa59368a",
         "location": "Parking Bay 4",
         "isBookable": true,
         "department": {
-          "id": "230f4143-42aa-444e-a6a7-de22295198f8",
+          "id": "ecb9243f-8990-4c80-aa22-5c2ffa59368a",
           "name": "Operations",
           "code": "OPS",
           "status": "ACTIVE"
@@ -212,14 +212,14 @@
         "assetTag": "VEH-001"
       },
       "bookedBy": {
-        "id": "09ad9c6a-f46c-45b2-a1d8-335cdd91257c",
+        "id": "104310c7-3081-4393-a9a0-a315588ec5e0",
         "name": "Employee User",
         "email": "employee@assetflow.local",
         "role": "EMPLOYEE",
-        "departmentId": "047d4271-4ee3-43a1-b6ed-1334e48b36c5"
+        "departmentId": "21a55ae9-d236-4423-83f3-aa5602507d76"
       },
       "department": {
-        "id": "230f4143-42aa-444e-a6a7-de22295198f8",
+        "id": "ecb9243f-8990-4c80-aa22-5c2ffa59368a",
         "name": "Operations",
         "code": "OPS",
         "status": "ACTIVE"
@@ -232,22 +232,22 @@
     "success": true,
     "data": [
       {
-        "id": "6addb4b9-06b9-4c86-9c15-ca6b1cc31ca8",
-        "resourceId": "ece753d3-3cb7-4c3f-9144-9c9305ca52ad",
+        "id": "67a2875f-2d8a-4e49-be1e-cab6bc3daf3d",
+        "resourceId": "253bfe92-e92f-4178-97b4-23bb9993deb7",
         "title": "Client visit",
         "start": "2026-07-12T12:00:00.000Z",
         "end": "2026-07-12T13:00:00.000Z",
         "status": "REQUESTED",
         "bookingStatus": "REQUESTED",
         "bookedBy": {
-          "id": "09ad9c6a-f46c-45b2-a1d8-335cdd91257c",
+          "id": "104310c7-3081-4393-a9a0-a315588ec5e0",
           "name": "Employee User",
           "email": "employee@assetflow.local",
           "role": "EMPLOYEE",
-          "departmentId": "047d4271-4ee3-43a1-b6ed-1334e48b36c5"
+          "departmentId": "21a55ae9-d236-4423-83f3-aa5602507d76"
         },
         "department": {
-          "id": "230f4143-42aa-444e-a6a7-de22295198f8",
+          "id": "ecb9243f-8990-4c80-aa22-5c2ffa59368a",
           "name": "Operations",
           "code": "OPS",
           "status": "ACTIVE"
@@ -259,7 +259,7 @@
   "availability": {
     "success": true,
     "data": {
-      "resourceId": "ece753d3-3cb7-4c3f-9144-9c9305ca52ad",
+      "resourceId": "253bfe92-e92f-4178-97b4-23bb9993deb7",
       "date": "2026-07-12",
       "availableSlots": [
         {
@@ -273,31 +273,31 @@
       ],
       "occupiedSlots": [
         {
-          "id": "6addb4b9-06b9-4c86-9c15-ca6b1cc31ca8",
+          "id": "67a2875f-2d8a-4e49-be1e-cab6bc3daf3d",
           "start": "2026-07-12T12:00:00.000Z",
           "end": "2026-07-12T13:00:00.000Z",
           "status": "REQUESTED",
           "bookedBy": {
-            "id": "09ad9c6a-f46c-45b2-a1d8-335cdd91257c",
+            "id": "104310c7-3081-4393-a9a0-a315588ec5e0",
             "name": "Employee User",
             "email": "employee@assetflow.local",
             "role": "EMPLOYEE",
-            "departmentId": "047d4271-4ee3-43a1-b6ed-1334e48b36c5"
+            "departmentId": "21a55ae9-d236-4423-83f3-aa5602507d76"
           }
         }
       ],
       "conflicts": [
         {
-          "id": "6addb4b9-06b9-4c86-9c15-ca6b1cc31ca8",
+          "id": "67a2875f-2d8a-4e49-be1e-cab6bc3daf3d",
           "start": "2026-07-12T12:00:00.000Z",
           "end": "2026-07-12T13:00:00.000Z",
           "status": "REQUESTED",
           "bookedBy": {
-            "id": "09ad9c6a-f46c-45b2-a1d8-335cdd91257c",
+            "id": "104310c7-3081-4393-a9a0-a315588ec5e0",
             "name": "Employee User",
             "email": "employee@assetflow.local",
             "role": "EMPLOYEE",
-            "departmentId": "047d4271-4ee3-43a1-b6ed-1334e48b36c5"
+            "departmentId": "21a55ae9-d236-4423-83f3-aa5602507d76"
           }
         }
       ],
@@ -321,13 +321,13 @@
           "_count": {
             "assetId": 1
           },
-          "assetId": "ece753d3-3cb7-4c3f-9144-9c9305ca52ad"
+          "assetId": "253bfe92-e92f-4178-97b4-23bb9993deb7"
         },
         {
           "_count": {
             "assetId": 1
           },
-          "assetId": "3a9927de-b5f3-4758-9cfa-c48f16d9b9e9"
+          "assetId": "cd344e20-0064-497d-9ca5-d2858e20ff1f"
         }
       ],
       "peakHours": [
@@ -545,185 +545,185 @@
       ],
       "recentActivity": [
         {
-          "id": "maintenance:bd2a2eb2-4d2d-4815-aed7-9753889103dc",
-          "type": "MAINTENANCE",
-          "title": "Maintenance reported",
-          "description": "Employee User reported Display flickering for Dell 27 Inch Monitor.",
-          "status": "IN_PROGRESS",
-          "timestamp": "2026-07-12T07:36:05.586Z",
-          "asset": {
-            "id": "5b1c63a4-c8e5-4117-a92d-6a0ab38a9577",
-            "assetCode": "MON-001",
-            "name": "Dell 27 Inch Monitor"
-          },
-          "actor": {
-            "id": "09ad9c6a-f46c-45b2-a1d8-335cdd91257c",
-            "name": "Employee User",
-            "email": "employee@assetflow.local"
-          }
-        },
-        {
-          "id": "booking:afe25060-a0b9-42fe-a781-7c9bfceee9ce",
-          "type": "BOOKING",
-          "title": "Booking requested",
-          "description": "Employee User requested Epson Conference Projector.",
-          "status": "APPROVED",
-          "timestamp": "2026-07-12T07:36:05.585Z",
-          "asset": {
-            "id": "3a9927de-b5f3-4758-9cfa-c48f16d9b9e9",
-            "assetCode": "PROJ-001",
-            "name": "Epson Conference Projector"
-          },
-          "actor": {
-            "id": "09ad9c6a-f46c-45b2-a1d8-335cdd91257c",
-            "name": "Employee User",
-            "email": "employee@assetflow.local"
-          }
-        },
-        {
-          "id": "booking:6addb4b9-06b9-4c86-9c15-ca6b1cc31ca8",
+          "id": "booking:67a2875f-2d8a-4e49-be1e-cab6bc3daf3d",
           "type": "BOOKING",
           "title": "Booking requested",
           "description": "Employee User requested Office Shuttle.",
           "status": "REQUESTED",
-          "timestamp": "2026-07-12T07:36:05.585Z",
+          "timestamp": "2026-07-12T07:50:33.868Z",
           "asset": {
-            "id": "ece753d3-3cb7-4c3f-9144-9c9305ca52ad",
+            "id": "253bfe92-e92f-4178-97b4-23bb9993deb7",
             "assetCode": "VEH-001",
             "name": "Office Shuttle"
           },
           "actor": {
-            "id": "09ad9c6a-f46c-45b2-a1d8-335cdd91257c",
+            "id": "104310c7-3081-4393-a9a0-a315588ec5e0",
             "name": "Employee User",
             "email": "employee@assetflow.local"
           }
         },
         {
-          "id": "allocation:14414c0d-b1fa-4ce2-81e7-3189b5880d65",
-          "type": "ALLOCATION",
-          "title": "Asset allocated",
-          "description": "Dell Latitude 5440 allocated to Employee User.",
-          "status": "ACTIVE",
-          "timestamp": "2026-07-12T07:36:05.584Z",
+          "id": "maintenance:9158fc87-a25a-421d-8cda-d055e7f6345e",
+          "type": "MAINTENANCE",
+          "title": "Maintenance reported",
+          "description": "Employee User reported Display flickering for Dell 27 Inch Monitor.",
+          "status": "IN_PROGRESS",
+          "timestamp": "2026-07-12T07:50:33.868Z",
           "asset": {
-            "id": "10192ac3-4c01-4fa6-97ce-76ae45752322",
-            "assetCode": "LAP-001",
-            "name": "Dell Latitude 5440"
+            "id": "158ed38e-63f5-43ee-9782-86f0fa0b2e4d",
+            "assetCode": "MON-001",
+            "name": "Dell 27 Inch Monitor"
           },
           "actor": {
-            "id": "eeb4e344-4b05-45cc-bab9-28b3ccdfe519",
-            "name": "IT Manager",
-            "email": "manager@assetflow.local"
+            "id": "104310c7-3081-4393-a9a0-a315588ec5e0",
+            "name": "Employee User",
+            "email": "employee@assetflow.local"
           }
         },
         {
-          "id": "transfer:208d91b3-6c80-43f4-a0c4-d64eb9425cac",
+          "id": "transfer:fa651378-ef89-4d3e-b8b6-4dbb90da558e",
           "type": "TRANSFER",
           "title": "Transfer requested",
           "description": "Employee User requested transfer for Dell Latitude 5440.",
           "status": "PENDING",
-          "timestamp": "2026-07-12T07:36:05.584Z",
+          "timestamp": "2026-07-12T07:50:33.867Z",
           "asset": {
-            "id": "10192ac3-4c01-4fa6-97ce-76ae45752322",
+            "id": "7d335c32-3d2b-4f2c-99de-accb7505a259",
             "assetCode": "LAP-001",
             "name": "Dell Latitude 5440"
           },
           "actor": {
-            "id": "09ad9c6a-f46c-45b2-a1d8-335cdd91257c",
+            "id": "104310c7-3081-4393-a9a0-a315588ec5e0",
             "name": "Employee User",
             "email": "employee@assetflow.local"
+          }
+        },
+        {
+          "id": "booking:251f4e1d-811f-4190-9dbf-dd94798bfb8d",
+          "type": "BOOKING",
+          "title": "Booking requested",
+          "description": "Employee User requested Epson Conference Projector.",
+          "status": "APPROVED",
+          "timestamp": "2026-07-12T07:50:33.867Z",
+          "asset": {
+            "id": "cd344e20-0064-497d-9ca5-d2858e20ff1f",
+            "assetCode": "PROJ-001",
+            "name": "Epson Conference Projector"
+          },
+          "actor": {
+            "id": "104310c7-3081-4393-a9a0-a315588ec5e0",
+            "name": "Employee User",
+            "email": "employee@assetflow.local"
+          }
+        },
+        {
+          "id": "allocation:30b062d6-e855-4af6-8f78-13ab4f798667",
+          "type": "ALLOCATION",
+          "title": "Asset allocated",
+          "description": "Dell Latitude 5440 allocated to Employee User.",
+          "status": "ACTIVE",
+          "timestamp": "2026-07-12T07:50:33.866Z",
+          "asset": {
+            "id": "7d335c32-3d2b-4f2c-99de-accb7505a259",
+            "assetCode": "LAP-001",
+            "name": "Dell Latitude 5440"
+          },
+          "actor": {
+            "id": "f09e79fc-f97d-4ec4-86e6-7376912766a7",
+            "name": "IT Manager",
+            "email": "manager@assetflow.local"
           }
         }
       ],
       "latestActivity": [
         {
-          "id": "maintenance:bd2a2eb2-4d2d-4815-aed7-9753889103dc",
-          "type": "MAINTENANCE",
-          "title": "Maintenance reported",
-          "description": "Employee User reported Display flickering for Dell 27 Inch Monitor.",
-          "status": "IN_PROGRESS",
-          "timestamp": "2026-07-12T07:36:05.586Z",
-          "asset": {
-            "id": "5b1c63a4-c8e5-4117-a92d-6a0ab38a9577",
-            "assetCode": "MON-001",
-            "name": "Dell 27 Inch Monitor"
-          },
-          "actor": {
-            "id": "09ad9c6a-f46c-45b2-a1d8-335cdd91257c",
-            "name": "Employee User",
-            "email": "employee@assetflow.local"
-          }
-        },
-        {
-          "id": "booking:afe25060-a0b9-42fe-a781-7c9bfceee9ce",
-          "type": "BOOKING",
-          "title": "Booking requested",
-          "description": "Employee User requested Epson Conference Projector.",
-          "status": "APPROVED",
-          "timestamp": "2026-07-12T07:36:05.585Z",
-          "asset": {
-            "id": "3a9927de-b5f3-4758-9cfa-c48f16d9b9e9",
-            "assetCode": "PROJ-001",
-            "name": "Epson Conference Projector"
-          },
-          "actor": {
-            "id": "09ad9c6a-f46c-45b2-a1d8-335cdd91257c",
-            "name": "Employee User",
-            "email": "employee@assetflow.local"
-          }
-        },
-        {
-          "id": "booking:6addb4b9-06b9-4c86-9c15-ca6b1cc31ca8",
+          "id": "booking:67a2875f-2d8a-4e49-be1e-cab6bc3daf3d",
           "type": "BOOKING",
           "title": "Booking requested",
           "description": "Employee User requested Office Shuttle.",
           "status": "REQUESTED",
-          "timestamp": "2026-07-12T07:36:05.585Z",
+          "timestamp": "2026-07-12T07:50:33.868Z",
           "asset": {
-            "id": "ece753d3-3cb7-4c3f-9144-9c9305ca52ad",
+            "id": "253bfe92-e92f-4178-97b4-23bb9993deb7",
             "assetCode": "VEH-001",
             "name": "Office Shuttle"
           },
           "actor": {
-            "id": "09ad9c6a-f46c-45b2-a1d8-335cdd91257c",
+            "id": "104310c7-3081-4393-a9a0-a315588ec5e0",
             "name": "Employee User",
             "email": "employee@assetflow.local"
           }
         },
         {
-          "id": "allocation:14414c0d-b1fa-4ce2-81e7-3189b5880d65",
-          "type": "ALLOCATION",
-          "title": "Asset allocated",
-          "description": "Dell Latitude 5440 allocated to Employee User.",
-          "status": "ACTIVE",
-          "timestamp": "2026-07-12T07:36:05.584Z",
+          "id": "maintenance:9158fc87-a25a-421d-8cda-d055e7f6345e",
+          "type": "MAINTENANCE",
+          "title": "Maintenance reported",
+          "description": "Employee User reported Display flickering for Dell 27 Inch Monitor.",
+          "status": "IN_PROGRESS",
+          "timestamp": "2026-07-12T07:50:33.868Z",
           "asset": {
-            "id": "10192ac3-4c01-4fa6-97ce-76ae45752322",
-            "assetCode": "LAP-001",
-            "name": "Dell Latitude 5440"
+            "id": "158ed38e-63f5-43ee-9782-86f0fa0b2e4d",
+            "assetCode": "MON-001",
+            "name": "Dell 27 Inch Monitor"
           },
           "actor": {
-            "id": "eeb4e344-4b05-45cc-bab9-28b3ccdfe519",
-            "name": "IT Manager",
-            "email": "manager@assetflow.local"
+            "id": "104310c7-3081-4393-a9a0-a315588ec5e0",
+            "name": "Employee User",
+            "email": "employee@assetflow.local"
           }
         },
         {
-          "id": "transfer:208d91b3-6c80-43f4-a0c4-d64eb9425cac",
+          "id": "transfer:fa651378-ef89-4d3e-b8b6-4dbb90da558e",
           "type": "TRANSFER",
           "title": "Transfer requested",
           "description": "Employee User requested transfer for Dell Latitude 5440.",
           "status": "PENDING",
-          "timestamp": "2026-07-12T07:36:05.584Z",
+          "timestamp": "2026-07-12T07:50:33.867Z",
           "asset": {
-            "id": "10192ac3-4c01-4fa6-97ce-76ae45752322",
+            "id": "7d335c32-3d2b-4f2c-99de-accb7505a259",
             "assetCode": "LAP-001",
             "name": "Dell Latitude 5440"
           },
           "actor": {
-            "id": "09ad9c6a-f46c-45b2-a1d8-335cdd91257c",
+            "id": "104310c7-3081-4393-a9a0-a315588ec5e0",
             "name": "Employee User",
             "email": "employee@assetflow.local"
+          }
+        },
+        {
+          "id": "booking:251f4e1d-811f-4190-9dbf-dd94798bfb8d",
+          "type": "BOOKING",
+          "title": "Booking requested",
+          "description": "Employee User requested Epson Conference Projector.",
+          "status": "APPROVED",
+          "timestamp": "2026-07-12T07:50:33.867Z",
+          "asset": {
+            "id": "cd344e20-0064-497d-9ca5-d2858e20ff1f",
+            "assetCode": "PROJ-001",
+            "name": "Epson Conference Projector"
+          },
+          "actor": {
+            "id": "104310c7-3081-4393-a9a0-a315588ec5e0",
+            "name": "Employee User",
+            "email": "employee@assetflow.local"
+          }
+        },
+        {
+          "id": "allocation:30b062d6-e855-4af6-8f78-13ab4f798667",
+          "type": "ALLOCATION",
+          "title": "Asset allocated",
+          "description": "Dell Latitude 5440 allocated to Employee User.",
+          "status": "ACTIVE",
+          "timestamp": "2026-07-12T07:50:33.866Z",
+          "asset": {
+            "id": "7d335c32-3d2b-4f2c-99de-accb7505a259",
+            "assetCode": "LAP-001",
+            "name": "Dell Latitude 5440"
+          },
+          "actor": {
+            "id": "f09e79fc-f97d-4ec4-86e6-7376912766a7",
+            "name": "IT Manager",
+            "email": "manager@assetflow.local"
           }
         }
       ],
@@ -732,8 +732,8 @@
         "notificationBadgeCount": 2,
         "recent": [
           {
-            "id": "08b3d6e6-9200-413b-bd6d-aca595168cdd",
-            "userId": "09ad9c6a-f46c-45b2-a1d8-335cdd91257c",
+            "id": "6b19d43a-ba92-493b-aa02-1bb71b1aac55",
+            "userId": "104310c7-3081-4393-a9a0-a315588ec5e0",
             "type": "ASSET_ALLOCATED",
             "category": "ALLOCATION",
             "priority": "MEDIUM",
@@ -742,28 +742,28 @@
             "isRead": false,
             "readAt": null,
             "relatedEntityType": "Allocation",
-            "relatedEntityId": "14414c0d-b1fa-4ce2-81e7-3189b5880d65",
-            "createdAt": "2026-07-12T07:36:05.587Z",
-            "updatedAt": "2026-07-12T07:36:05.587Z",
+            "relatedEntityId": "30b062d6-e855-4af6-8f78-13ab4f798667",
+            "createdAt": "2026-07-12T07:50:33.869Z",
+            "updatedAt": "2026-07-12T07:50:33.869Z",
             "user": {
-              "id": "09ad9c6a-f46c-45b2-a1d8-335cdd91257c",
+              "id": "104310c7-3081-4393-a9a0-a315588ec5e0",
               "name": "Employee User",
               "email": "employee@assetflow.local",
               "role": "EMPLOYEE",
-              "departmentId": "047d4271-4ee3-43a1-b6ed-1334e48b36c5"
+              "departmentId": "21a55ae9-d236-4423-83f3-aa5602507d76"
             },
             "status": "unread",
             "recipient": {
-              "id": "09ad9c6a-f46c-45b2-a1d8-335cdd91257c",
+              "id": "104310c7-3081-4393-a9a0-a315588ec5e0",
               "name": "Employee User",
               "email": "employee@assetflow.local",
               "role": "EMPLOYEE",
-              "departmentId": "047d4271-4ee3-43a1-b6ed-1334e48b36c5"
+              "departmentId": "21a55ae9-d236-4423-83f3-aa5602507d76"
             }
           },
           {
-            "id": "230c1bbd-fac4-4d0d-b905-15fcdcfb0f83",
-            "userId": "eeb4e344-4b05-45cc-bab9-28b3ccdfe519",
+            "id": "60e5d9e1-22b1-45c9-be82-68d314ec3660",
+            "userId": "f09e79fc-f97d-4ec4-86e6-7376912766a7",
             "type": "MAINTENANCE_ASSIGNED",
             "category": "MAINTENANCE",
             "priority": "MEDIUM",
@@ -772,27 +772,50 @@
             "isRead": false,
             "readAt": null,
             "relatedEntityType": "MaintenanceTicket",
-            "relatedEntityId": "bd2a2eb2-4d2d-4815-aed7-9753889103dc",
-            "createdAt": "2026-07-12T07:36:05.587Z",
-            "updatedAt": "2026-07-12T07:36:05.587Z",
+            "relatedEntityId": "9158fc87-a25a-421d-8cda-d055e7f6345e",
+            "createdAt": "2026-07-12T07:50:33.869Z",
+            "updatedAt": "2026-07-12T07:50:33.869Z",
             "user": {
-              "id": "eeb4e344-4b05-45cc-bab9-28b3ccdfe519",
+              "id": "f09e79fc-f97d-4ec4-86e6-7376912766a7",
               "name": "IT Manager",
               "email": "manager@assetflow.local",
               "role": "MANAGER",
-              "departmentId": "047d4271-4ee3-43a1-b6ed-1334e48b36c5"
+              "departmentId": "21a55ae9-d236-4423-83f3-aa5602507d76"
             },
             "status": "unread",
             "recipient": {
-              "id": "eeb4e344-4b05-45cc-bab9-28b3ccdfe519",
+              "id": "f09e79fc-f97d-4ec4-86e6-7376912766a7",
               "name": "IT Manager",
               "email": "manager@assetflow.local",
               "role": "MANAGER",
-              "departmentId": "047d4271-4ee3-43a1-b6ed-1334e48b36c5"
+              "departmentId": "21a55ae9-d236-4423-83f3-aa5602507d76"
             }
           }
         ],
         "criticalAlerts": []
+      },
+      "settings": {
+        "company": {
+          "companyName": "AssetFlow Demo Organization",
+          "logoUrl": null,
+          "timezone": "Asia/Kolkata",
+          "currency": "INR",
+          "language": "en"
+        },
+        "profile": {
+          "displayName": "AssetFlow Admin",
+          "effectiveDisplayName": "AssetFlow Admin",
+          "avatarUrl": null,
+          "theme": "SYSTEM",
+          "timezone": "Asia/Kolkata",
+          "language": "en",
+          "notificationPreferences": {
+            "email": true,
+            "inApp": true,
+            "criticalOnly": false,
+            "muteCategories": []
+          }
+        }
       }
     },
     "message": "Operation completed successfully."

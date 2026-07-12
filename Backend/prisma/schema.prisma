@@ -134,6 +134,7 @@ model User {
   auditRecords        AuditRecord[]       @relation("AuditRecordAuditor")
   auditLogs           AuditLog[]          @relation("AuditLogActor")
   notifications       Notification[]
+  preference          UserPreference?
 
   @@index([role])
   @@index([departmentId])
@@ -460,4 +461,34 @@ model Notification {
   @@index([category, createdAt])
   @@index([priority, createdAt])
   @@map("notifications")
+}
+
+model SystemSetting {
+  key         String   @id
+  category    String
+  value       Json
+  updatedById String?  @map("updated_by_id") @db.Uuid
+  createdAt   DateTime @default(now()) @map("created_at")
+  updatedAt   DateTime @updatedAt @map("updated_at")
+
+  @@index([category])
+  @@map("system_settings")
+}
+
+model UserPreference {
+  id                      String   @id @default(uuid()) @db.Uuid
+  userId                  String   @unique @map("user_id") @db.Uuid
+  avatarUrl               String?  @map("avatar_url")
+  displayName             String?  @map("display_name")
+  theme                   String   @default("SYSTEM")
+  timezone                String   @default("Asia/Kolkata")
+  language                String   @default("en")
+  notificationPreferences Json     @default("{}") @map("notification_preferences")
+  createdAt               DateTime @default(now()) @map("created_at")
+  updatedAt               DateTime @updatedAt @map("updated_at")
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([theme])
+  @@map("user_preferences")
 }

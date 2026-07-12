@@ -17,6 +17,7 @@ import type {
   DashboardRecentActivity
 } from "../types/dashboard.js";
 import { getNotificationDashboardSummary } from "./notificationService.js";
+import { getDashboardSettingsSummary } from "./settingsService.js";
 import { forbidden } from "../utils/httpError.js";
 
 const userSelect = { id: true, name: true, email: true };
@@ -365,7 +366,8 @@ export const getDashboardOverview = async (
     bookings,
     maintenanceTickets,
     audits,
-    notificationSummary
+    notificationSummary,
+    settingsSummary
   ] = await Promise.all([
     prisma.asset.count({ where: assetWhere }),
     prisma.asset.count({ where: { ...assetWhere, status: AssetStatus.AVAILABLE } }),
@@ -445,7 +447,8 @@ export const getDashboardOverview = async (
       orderBy: { createdAt: "desc" },
       take: 5
     }),
-    getNotificationDashboardSummary(actor)
+    getNotificationDashboardSummary(actor),
+    getDashboardSettingsSummary(actor)
   ]);
 
   const recentActivity: DashboardRecentActivity[] = [
@@ -543,6 +546,7 @@ export const getDashboardOverview = async (
     quickActions: quickActionsByRole(actor.role),
     recentActivity,
     latestActivity: recentActivity,
-    notifications: notificationSummary
+    notifications: notificationSummary,
+    settings: settingsSummary
   };
 };

@@ -19,6 +19,8 @@ const password = "password123";
 async function resetDatabase() {
   await prisma.department.updateMany({ data: { managerId: null, parentDepartmentId: null } });
   await prisma.user.updateMany({ data: { departmentId: null } });
+  await prisma.userPreference.deleteMany();
+  await prisma.systemSetting.deleteMany();
   await prisma.notification.deleteMany();
   await prisma.auditLog.deleteMany();
   await prisma.auditDiscrepancy.deleteMany();
@@ -86,6 +88,115 @@ async function main() {
   });
 
   await prisma.department.update({ where: { id: it.id }, data: { managerId: manager.id } });
+
+  await prisma.systemSetting.createMany({
+    data: [
+      {
+        key: "company",
+        category: "ORGANIZATION",
+        updatedById: admin.id,
+        value: {
+          companyName: "AssetFlow Demo Organization",
+          logoUrl: null,
+          address: "Odoo Hackathon Demo Office",
+          timezone: "Asia/Kolkata",
+          currency: "INR",
+          language: "en",
+          workingHours: {
+            start: "09:00",
+            end: "18:00",
+            days: ["MON", "TUE", "WED", "THU", "FRI"]
+          },
+          contactDetails: {
+            email: "admin@assetflow.local",
+            phone: "+91-0000000000",
+            website: "https://assetflow.local"
+          }
+        }
+      },
+      {
+        key: "asset_configuration",
+        category: "ASSET",
+        updatedById: admin.id,
+        value: {
+          assetTagPrefix: "AST",
+          autoNumbering: true,
+          qrDefaults: {
+            enabled: true,
+            includeAssetTag: true,
+            includeSerialNumber: true,
+            includeCompanyName: false
+          },
+          defaultDepreciationYears: 5,
+          retirementThresholdPercent: 80
+        }
+      },
+      {
+        key: "booking_policies",
+        category: "BOOKING",
+        updatedById: admin.id,
+        value: {
+          maxBookingDurationHours: 8,
+          requireApproval: true,
+          advanceBookingLimitDays: 30,
+          businessHours: {
+            start: "09:00",
+            end: "18:00",
+            days: ["MON", "TUE", "WED", "THU", "FRI"]
+          },
+          allowWeekendBookings: false
+        }
+      },
+      {
+        key: "maintenance_policies",
+        category: "MAINTENANCE",
+        updatedById: admin.id,
+        value: {
+          defaultTechnicianId: manager.id,
+          autoAssignmentEnabled: false,
+          allowedPriorities: ["LOW", "MEDIUM", "HIGH", "CRITICAL"],
+          escalationDays: 3
+        }
+      }
+    ]
+  });
+
+  await prisma.userPreference.createMany({
+    data: [
+      {
+        userId: admin.id,
+        displayName: "AssetFlow Admin",
+        theme: "SYSTEM",
+        timezone: "Asia/Kolkata",
+        language: "en",
+        notificationPreferences: { email: true, inApp: true, criticalOnly: false, muteCategories: [] }
+      },
+      {
+        userId: manager.id,
+        displayName: "IT Manager",
+        theme: "SYSTEM",
+        timezone: "Asia/Kolkata",
+        language: "en",
+        notificationPreferences: { email: true, inApp: true, criticalOnly: false, muteCategories: [] }
+      },
+      {
+        userId: employee.id,
+        displayName: "Employee User",
+        theme: "SYSTEM",
+        timezone: "Asia/Kolkata",
+        language: "en",
+        notificationPreferences: { email: true, inApp: true, criticalOnly: false, muteCategories: [] }
+      },
+      {
+        userId: auditor.id,
+        displayName: "Audit User",
+        theme: "SYSTEM",
+        timezone: "Asia/Kolkata",
+        language: "en",
+        notificationPreferences: { email: true, inApp: true, criticalOnly: false, muteCategories: [] }
+      }
+    ]
+  });
 
   const [laptop, monitor, projector, vehicle, furniture] = await Promise.all([
     prisma.category.create({ data: { name: "Laptop", code: "LAP", description: "Portable computers" } }),
