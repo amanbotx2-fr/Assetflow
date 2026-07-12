@@ -79,3 +79,19 @@
 .shadow-sm { box-shadow: var(--shadow-sm); }
 .shadow-md { box-shadow: var(--shadow-md); }
 .shadow-floating { box-shadow: var(--shadow-floating); }
+
+/* Responsive Display Utilities */
+@media (min-width: 768px) {
+  .d-md-none { display: none !important; }
+  .d-md-flex { display: flex !important; }
+  .d-md-block { display: block !important; }
+}
+@media (max-width: 767px) {
+  .d-none-mobile { display: none !important; }
+}
+
+/* Positioning & Interaction */
+.position-relative { position: relative; }
+.position-absolute { position: absolute; }
+.hover-bg-light:hover { background-color: var(--color-hover-overlay); }
+.hover-text-primary:hover { color: var(--color-primary); }
