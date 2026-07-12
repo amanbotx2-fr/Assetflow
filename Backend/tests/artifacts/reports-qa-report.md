@@ -1,6 +1,6 @@
 # Reports QA Report
 
-Generated: 2026-07-12T07:36:34.166Z
+Generated: 2026-07-12T07:51:02.532Z
 
 ## Summary
 
@@ -52,21 +52,21 @@ Generated: 2026-07-12T07:36:34.166Z
 | Request | Status | Duration |
 | --- | ---: | ---: |
 | GET /api/reports/dashboard | 401 | 2 ms |
-| GET /api/reports/dashboard | 200 | 8 ms |
+| GET /api/reports/dashboard | 200 | 10 ms |
 | GET /api/reports/assets?status=AVAILABLE&page=1&limit=5 | 200 | 4 ms |
 | GET /api/reports/bookings?from=2026-07-01T00:00:00.000Z&to=2026-07-31T23:59:59.000Z | 200 | 4 ms |
 | GET /api/reports/maintenance?priority=HIGH | 200 | 3 ms |
 | GET /api/reports/audits | 200 | 3 ms |
 | GET /api/reports/utilization | 200 | 3 ms |
-| GET /api/reports/department-utilization?departmentId=7bc9aac2-7a82-4608-bf74-04070419fe4e | 200 | 3 ms |
-| GET /api/reports/idle-assets?limit=5 | 200 | 5 ms |
+| GET /api/reports/department-utilization?departmentId=e53b9027-1778-4fb0-89f8-a02d5b8ba8e6 | 200 | 3 ms |
+| GET /api/reports/idle-assets?limit=5 | 200 | 4 ms |
 | GET /api/reports/most-used-assets?limit=5 | 200 | 3 ms |
-| GET /api/reports/near-retirement?limit=5 | 200 | 4 ms |
+| GET /api/reports/near-retirement?limit=5 | 200 | 3 ms |
 | GET /api/reports/dashboard | 200 | 10 ms |
-| GET /api/reports/assets?departmentId=fb263355-709e-4c81-9714-a114f95bf3ce | 403 | 2 ms |
-| GET /api/reports/assets?departmentId=7bc9aac2-7a82-4608-bf74-04070419fe4e | 403 | 2 ms |
+| GET /api/reports/assets?departmentId=d895b0b8-a93b-448a-a608-60010811a58a | 403 | 2 ms |
+| GET /api/reports/assets?departmentId=e53b9027-1778-4fb0-89f8-a02d5b8ba8e6 | 403 | 2 ms |
 | GET /api/reports/export?type=assets&format=json | 200 | 3 ms |
-| GET /api/reports/export?type=assets&format=csv | 200 | 2 ms |
+| GET /api/reports/export?type=assets&format=csv | 200 | 3 ms |
 | GET /api/reports/export?type=dashboard&format=pdf | 200 | 2 ms |
 | GET /api/reports/export?format=xlsx | 400 | 2 ms |
 
