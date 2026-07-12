@@ -11,8 +11,7 @@ Static multi-page Vite frontend for AssetFlow.
 - Page renderers live in `js/pages.js`.
 - Authentication and registration logic lives in `js/auth.js`.
 - Shared styles live in `styles/`.
-
-The legacy React implementation has been removed from the active source. Do not add new React routes for the current static architecture.
+- New pages should follow the existing static HTML + `js/pages.js` pattern and be added to `vite.config.ts` when they need a build entry.
 
 ## Environment
 

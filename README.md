@@ -1,202 +1,196 @@
-# AssetFlow
+# AssetFlow ERP
 
-AssetFlow is a unified Enterprise Asset Lifecycle Management platform that enables organizations to track, allocate, book, maintain, audit, and monitor assets through a centralized system with real-time operational visibility and complete lifecycle traceability.
+Enterprise Asset Management System built for modern organizations.
 
-This repository is currently organized as a backend-first project. The Backend Team owns architecture, database design, API contracts, authentication, authorization, business logic, Prisma, PostgreSQL, deployment, and project documentation.
+![License](https://img.shields.io/badge/license-TBD-lightgrey)
+![Node](https://img.shields.io/badge/node-20%2B-5FA04E)
+![Vite](https://img.shields.io/badge/frontend-Vite-646CFF)
+![Express](https://img.shields.io/badge/backend-Express-111827)
+![Prisma](https://img.shields.io/badge/orm-Prisma-2D3748)
+![PostgreSQL](https://img.shields.io/badge/database-PostgreSQL-4169E1)
+![JWT](https://img.shields.io/badge/auth-JWT-0F172A)
 
-The system is designed with scalability, security, and maintainability in mind, enabling seamless integration with future frontend applications and external services.
+AssetFlow ERP is a full-stack asset lifecycle platform for registering, allocating, booking, maintaining, auditing, and reporting on organizational assets. It is designed as a practical ERP-style system with role-based access, a PostgreSQL-backed REST API, and a responsive static Vite frontend.
 
-## Project Overview
+## Overview
 
-AssetFlow replaces disconnected asset tracking processes with a structured backend platform built around:
+Organizations often track assets through spreadsheets, email approvals, disconnected booking processes, and manual audits. AssetFlow centralizes those workflows into a single application so teams can answer operational questions quickly:
 
-- Secure user authentication.
-- Role-based authorization.
-- Normalized PostgreSQL data.
-- REST API contracts.
-- Asset lifecycle workflows.
-- Audit-ready historical records.
-- Backend reporting data.
-- Maintainable contribution and database workflows.
+- Which assets are available, allocated, booked, under maintenance, or retired?
+- Who owns or uses a given asset right now?
+- Which transfers, bookings, maintenance tickets, and audits need action?
+- What is the current utilization and lifecycle health of the asset base?
 
-## Repository Structure
+The project is built for hackathon-speed delivery while still keeping clean backend boundaries, real authentication, seed data, and a usable frontend.
+
+## Features
+
+| Area | What is included |
+| --- | --- |
+| Authentication | JWT login, employee self-registration, current-user session endpoint, logout flow |
+| Role-Based Access | Admin, Manager, Employee, and Auditor authorization paths |
+| Dashboard | Operational summary, alerts, recent activity, notifications, lifecycle metrics |
+| Organization Management | Departments, categories, users, employee directory, overview stats |
+| Asset Tracking | Asset list, registration, filters, lookup, status badges, QR-ready asset identifiers |
+| Allocation & Transfer | Active allocation tracking, returns, transfer requests, approvals, rejections |
+| Resource Booking | Bookable assets, booking workflow, approvals, calendar and availability APIs |
+| Maintenance | Ticket lifecycle, assignment, progress, resolution, cost and status tracking |
+| Audits | Audit cycles, asset verification, discrepancy tracking, audit logs |
+| Reports & Analytics | Dashboard analytics, utilization, idle assets, near-retirement assets, exports |
+| Notifications | Notification center, unread count, read/delete flows |
+| Responsive UI | Static Vite multi-page frontend with shared layout, sidebar, navbar, and page shells |
+| REST API | Express routes with validation, pagination, filtering, and consistent JSON responses |
+| Database | PostgreSQL with Prisma migrations, UUID primary keys, relations, and seed data |
+
+## Tech Stack
+
+| Layer | Technology |
+| --- | --- |
+| Frontend | Vite, TypeScript checks, static HTML, modular JavaScript, shared CSS design system |
+| Backend | Node.js, Express.js, TypeScript |
+| Database | PostgreSQL |
+| ORM | Prisma ORM |
+| Authentication | JWT, bcrypt |
+| Validation | Zod |
+| Files & QR | Multer, qrcode |
+| Tooling | npm, Prisma Studio, Postman-compatible REST APIs |
+
+## Project Structure
 
 ```text
 AssetFlow/
-|-- Backend/
-|-- Frontend/
-|-- Docs/
-|-- Database/
-`-- README.md
+├── Backend/
+│   ├── prisma/              # Prisma schema, migrations, seed script
+│   ├── src/
+│   │   ├── config/          # Environment and Prisma client setup
+│   │   ├── controllers/     # Thin Express controllers
+│   │   ├── middleware/      # Auth, RBAC, validation, error handling
+│   │   ├── repositories/    # Shared persistence helpers
+│   │   ├── routes/          # REST route registration
+│   │   ├── services/        # Business logic and workflow rules
+│   │   ├── types/           # TypeScript declarations
+│   │   ├── utils/           # Response, JWT, password, pagination helpers
+│   │   └── validators/      # Zod schemas
+│   ├── tests/               # QA scripts and artifacts
+│   └── uploads/             # Local upload placeholder
+├── Frontend/
+│   ├── js/                  # API, auth, layout, page rendering logic
+│   ├── styles/              # Design tokens, layout, components, utilities
+│   ├── *.html               # Static multi-page Vite entrypoints
+│   └── vite.config.ts       # Multi-page Vite build inputs
+├── Database/                # PostgreSQL and Prisma operating guides
+├── Docs/                    # Architecture, API, roadmap, testing, screenshots
+└── README.md
 ```
 
-| Path | Owner | Purpose |
+## Screenshots
+
+Screenshots below were captured from the local application with seeded data at `1440x1000`.
+
+### Login
+
+![Login](Docs/screenshots/login.png)
+
+### Dashboard
+
+![Dashboard](Docs/screenshots/dashboard.png)
+
+### Organization
+
+![Organization](Docs/screenshots/organization.png)
+
+### Assets
+
+![Assets](Docs/screenshots/assets.png)
+
+### Allocation & Transfer
+
+![Allocation & Transfer](Docs/screenshots/allocation.png)
+
+### Resource Booking
+
+![Resource Booking](Docs/screenshots/booking.png)
+
+### Maintenance
+
+![Maintenance](Docs/screenshots/maintenance.png)
+
+### Audit
+
+![Audit](Docs/screenshots/audit.png)
+
+### Reports
+
+![Reports](Docs/screenshots/reports.png)
+
+### Notifications
+
+![Notifications](Docs/screenshots/notifications.png)
+
+## Local Setup
+
+### Prerequisites
+
+| Tool | Version used for verification | Notes |
 | --- | --- | --- |
-| `Backend/` | Backend Team | API service architecture, source folders, tests, configuration, Prisma workspace, and uploads. |
-| `Frontend/` | Frontend Team | Maintained separately by the Frontend Team. |
-| `Docs/` | Backend Team | Backend architecture, API, database, testing, deployment, and contribution documentation. |
-| `Database/` | Backend Team | PostgreSQL and Prisma operating guides. |
-| `README.md` | Backend Team | Repository onboarding guide. |
+| Node.js | `v26.3.1` | Node 20+ is recommended. |
+| npm | `11.16.0` | Installed with Node. |
+| PostgreSQL | Local PostgreSQL on `localhost:5432` | Required for Prisma and backend APIs. |
 
-## Team Responsibilities
-
-### Backend Team
-
-Responsible for:
-
-- Backend architecture.
-- Database design.
-- API development.
-- Authentication.
-- Authorization.
-- Business logic.
-- Prisma.
-- PostgreSQL.
-- Deployment.
-- Documentation.
-
-### Frontend Team
-
-Responsible for the `Frontend/` directory and its own implementation documentation.
-
-## Prerequisites
-
-Install these tools before contributing:
-
-| Tool | Required | Purpose |
-| --- | --- | --- |
-| Git | Yes | Version control. |
-| Node.js | Yes | Backend runtime and package tooling. |
-| PostgreSQL | Yes | Local database. |
-| VS Code | Recommended | Editor and project navigation. |
-| Docker | Optional | Local PostgreSQL container or deployment support. |
-| Prisma | Project dependency | ORM, migrations, generated client, database inspection. |
-| Postman | Recommended | API testing. |
-
-## Installing Software
-
-### Git
-
-Verify installation:
-
-```bash
-git --version
-```
-
-### Node.js
-
-Use an active LTS version when possible.
-
-```bash
-node --version
-npm --version
-```
-
-### PostgreSQL
-
-Verify the PostgreSQL command line tools:
-
-```bash
-psql --version
-```
-
-Local database setup is documented in [Database/postgres-setup.md](Database/postgres-setup.md).
-
-### VS Code
-
-Recommended extensions:
-
-- Prisma.
-- ESLint.
-- Prettier.
-- GitLens.
-
-### Docker Optional
-
-Verify Docker:
-
-```bash
-docker --version
-```
-
-Docker can be used to run PostgreSQL locally if a native PostgreSQL install is not preferred.
-
-### Prisma
-
-Prisma is installed as a backend project dependency. Common commands are run through `npx`:
-
-```bash
-npx prisma --version
-```
-
-## Repository Setup
-
-### Clone
+### 1. Clone
 
 ```bash
 git clone <repository-url>
 cd AssetFlow
 ```
 
-### Install
+If your local folder name differs, run the remaining commands from the repository root that contains `Backend/` and `Frontend/`.
+
+### 2. Prepare PostgreSQL
+
+The backend example environment uses a local database named `assetflow` and a local user named `assetflow`.
+
+```bash
+psql postgres -c "CREATE USER assetflow WITH PASSWORD 'assetflow_password';"
+psql postgres -c "CREATE DATABASE assetflow OWNER assetflow;"
+```
+
+If you already have a preferred local PostgreSQL user, create only the database and update `Backend/.env` accordingly.
+
+### 3. Install and Run Backend
 
 ```bash
 cd Backend
 npm install
-```
-
-### Setup Database
-
-Create a PostgreSQL database named `assetflow` or choose a name that matches your `.env` connection string.
-
-```bash
-createdb assetflow
-```
-
-Create backend environment file:
-
-```bash
 cp .env.example .env
-```
-
-Update `DATABASE_URL` inside `Backend/.env`.
-
-### Run Migrations
-
-```bash
-cd Backend
-npx prisma migrate dev
-npx prisma generate
-```
-
-### Seed Database
-
-When a seed script is available:
-
-```bash
+npm run prisma:generate
+npm run prisma:deploy
 npm run seed
-```
-
-See [Database/seed.md](Database/seed.md) for seed standards.
-
-### Run Backend
-
-When the backend server entry point is available:
-
-```bash
-cd Backend
 npm run dev
 ```
 
-Expected local API base:
+Backend URL:
+
+```text
+http://localhost:5000
+```
+
+API base URL:
 
 ```text
 http://localhost:5000/api
 ```
 
-### Run Frontend
+Health checks:
 
-In a second terminal:
+```text
+http://localhost:5000/health
+http://localhost:5000/health/db
+```
+
+### 4. Install and Run Frontend
+
+Open a second terminal:
 
 ```bash
 cd Frontend
@@ -205,249 +199,198 @@ cp .env.example .env
 npm run dev
 ```
 
-The frontend defaults to:
+Frontend URL:
 
 ```text
 http://localhost:3000
 ```
 
-If port `3000` is busy, Vite will choose the next open port. Update backend `CORS_ORIGIN` if you use a different frontend port.
+If Vite starts on another port because `3000` is busy, update `Backend/.env`:
+
+```env
+CORS_ORIGIN="http://localhost:<vite-port>"
+```
+
+Then restart the backend.
+
+## Demo Credentials
+
+The seed script creates these accounts:
+
+| Role | Email | Password |
+| --- | --- | --- |
+| Admin | `admin@assetflow.local` | `password123` |
+| Manager | `manager@assetflow.local` | `password123` |
+| Employee | `employee@assetflow.local` | `password123` |
+| Auditor | `auditor@assetflow.local` | `password123` |
+
+Employee self-registration is also available from the login page.
 
 ## Environment Variables
 
-Backend environment variables:
+### Backend
 
-| Variable | Example | Purpose |
-| --- | --- | --- |
-| `PORT` | `5000` | Backend server port. |
-| `NODE_ENV` | `development` | Runtime environment. |
-| `DATABASE_URL` | `postgresql://assetflow:password@localhost:5432/assetflow` | PostgreSQL connection string. |
-| `JWT_SECRET` | `replace-with-secure-secret` | JWT signing secret. |
-| `JWT_EXPIRES_IN` | `7d` | JWT lifetime. |
-| `CORS_ORIGIN` | `http://localhost:3000` | Allowed consumer origin. |
-| `UPLOAD_DIR` | `uploads` | Local upload directory. |
-| `MAX_FILE_SIZE_MB` | `5` | Upload size limit. |
+`Backend/.env.example`
+
+```env
+PORT=5000
+NODE_ENV=development
+DATABASE_URL="postgresql://assetflow:assetflow_password@localhost:5432/assetflow"
+JWT_SECRET="replace-with-a-secure-local-secret"
+JWT_EXPIRES_IN="7d"
+CORS_ORIGIN="http://localhost:3000"
+UPLOAD_DIR="uploads"
+MAX_FILE_SIZE_MB=5
+```
+
+| Variable | Purpose |
+| --- | --- |
+| `PORT` | Express server port. |
+| `NODE_ENV` | Runtime mode: `development`, `test`, or `production`. |
+| `DATABASE_URL` | PostgreSQL connection string consumed by Prisma. |
+| `JWT_SECRET` | Secret used to sign and verify JWTs. Use a strong private value outside demos. |
+| `JWT_EXPIRES_IN` | Token lifetime passed to `jsonwebtoken`. |
+| `CORS_ORIGIN` | Allowed frontend origin for browser requests. |
+| `UPLOAD_DIR` | Local directory for upload handling. |
+| `MAX_FILE_SIZE_MB` | Upload size limit. |
+
+### Frontend
+
+`Frontend/.env.example`
+
+```env
+VITE_API_BASE_URL=http://localhost:5000/api
+```
+
+| Variable | Purpose |
+| --- | --- |
+| `VITE_API_BASE_URL` | Backend API base URL used by frontend API helpers. |
 
 Never commit real `.env` files.
 
-Frontend environment variables:
+## API Overview
 
-| Variable | Example | Purpose |
-| --- | --- | --- |
-| `VITE_API_BASE_URL` | `http://localhost:5000/api` | Backend API base URL consumed by the static Vite frontend. |
+All application APIs are mounted under `/api`.
 
-## Project Structure
+| Module | Representative Endpoints |
+| --- | --- |
+| Authentication | `POST /api/auth/login`, `POST /api/auth/register`, `GET /api/auth/me`, `POST /api/auth/logout` |
+| Dashboard | `GET /api/dashboard/overview` |
+| Organization | `GET /api/organization/overview`, `GET /api/departments`, `GET /api/categories`, `GET /api/users` |
+| Assets | `GET /api/assets`, `POST /api/assets`, `GET /api/assets/lookup`, `GET /api/assets/:id`, `PATCH /api/assets/:id`, `DELETE /api/assets/:id` |
+| Allocation | `GET /api/allocations`, `POST /api/allocations`, `POST /api/allocations/:id/return` |
+| Transfers | `GET /api/transfers`, `POST /api/transfers`, `PATCH /api/transfers/:id/approve`, `PATCH /api/transfers/:id/reject` |
+| Bookings | `GET /api/bookings`, `POST /api/bookings`, `GET /api/bookings/calendar`, `GET /api/bookings/availability` |
+| Maintenance | `GET /api/maintenance`, `POST /api/maintenance`, workflow actions such as approve, assign, start, resolve, close |
+| Audits | `GET /api/audits`, `POST /api/audits`, `POST /api/audits/:id/verify`, `GET /api/audits/:id/discrepancies` |
+| Reports | `GET /api/reports/dashboard`, `GET /api/reports/assets`, `GET /api/reports/utilization`, `GET /api/reports/export` |
+| Notifications | `GET /api/notifications`, `GET /api/notifications/unread-count`, `PATCH /api/notifications/read-all` |
+| Settings | `GET /api/settings/company`, `GET /api/settings/profile`, `GET /api/settings/roles`, `GET /api/settings/permissions` |
 
-```text
-Backend/
-|-- src/
-|   |-- config/
-|   |-- controllers/
-|   |-- middleware/
-|   |-- models/
-|   |-- routes/
-|   |-- services/
-|   |-- repositories/
-|   |-- validators/
-|   |-- utils/
-|   `-- types/
-|-- prisma/
-|-- scripts/
-|-- tests/
-|-- uploads/
-|-- package.json
-|-- tsconfig.json
-|-- .env.example
-|-- .gitignore
-`-- README.md
+For detailed request and response contracts, see [Docs/09-api-design.md](Docs/09-api-design.md).
+
+## Database
+
+AssetFlow uses PostgreSQL with Prisma ORM.
+
+Common commands:
+
+```bash
+cd Backend
+npm run prisma:generate   # Generate Prisma Client
+npm run prisma:deploy     # Apply committed migrations
+npm run prisma:migrate    # Create/apply a local development migration
+npm run seed              # Reset and seed demo data
+npm run prisma:studio     # Open Prisma Studio
 ```
 
-```text
-Database/
-|-- README.md
-|-- schema.md
-|-- seed.md
-|-- migration-guide.md
-|-- naming-conventions.md
-|-- backup-guide.md
-`-- postgres-setup.md
+Important database references:
+
+- [Database/schema.md](Database/schema.md)
+- [Database/migration-guide.md](Database/migration-guide.md)
+- [Database/seed.md](Database/seed.md)
+- [Database/postgres-setup.md](Database/postgres-setup.md)
+
+## Development Workflow
+
+1. Create a branch from the latest working branch.
+2. Keep backend business logic in services and database access in Prisma-backed modules.
+3. Keep frontend page behavior in `Frontend/js/` and shared styling in `Frontend/styles/`.
+4. Validate changes before opening a pull request:
+
+```bash
+cd Backend
+npm run build
+npx prisma validate
+
+cd ../Frontend
+npm run build
+npm run lint
 ```
 
-## Contribution Guide
+5. Include screenshots when frontend UI changes.
+6. Update [Docs/09-api-design.md](Docs/09-api-design.md) when API contracts change.
 
-Full guide: [Docs/11-contribution-guide.md](Docs/11-contribution-guide.md).
+## Verified Commands
 
-### Branch Naming
+These commands were run successfully while preparing this README:
 
-Use short, descriptive branch names:
-
-| Type | Example |
-| --- | --- |
-| Feature | `feature/auth` |
-| Feature | `feature/assets` |
-| Feature | `feature/database` |
-| Feature | `feature/notifications` |
-| Bug fix | `bugfix/login` |
-| Hotfix | `hotfix/api` |
-| Documentation | `docs/api-design` |
-
-### Commit Naming
-
-Use conventional commits:
-
-```text
-feat(auth): implement JWT login
-fix(asset): resolve allocation bug
-docs(api): update transfer endpoints
-refactor(database): simplify repository queries
-test(auth): add invalid token coverage
+```bash
+cd Backend
+npm install
+npm run prisma:generate
+npm run prisma:deploy
+npm run seed
+npm run build
+npx prisma validate
+npm run dev
 ```
 
-Allowed prefixes:
+```bash
+cd Frontend
+npm install
+npm run build
+npm run lint
+npm run dev
+```
 
-- `feat:`
-- `fix:`
-- `docs:`
-- `refactor:`
-- `style:`
-- `test:`
-- `build:`
-- `ci:`
+Runtime checks verified:
 
-### Pull Requests
+- Login with seeded admin credentials.
+- `GET /api/auth/me` with JWT.
+- Dashboard overview API.
+- Protected route returns `401` without a token.
+- Employee registration from the UI.
+- Login with the newly registered employee.
+- Dashboard loads after registration/login.
+- Navigation pages render with a valid admin session.
 
-Every pull request should include:
+## Future Roadmap
 
-- Summary of changes.
-- Linked issue or task.
-- API contract updates when endpoints change.
-- Database documentation updates when schema changes.
-- Test notes.
-- Migration notes when applicable.
+- [ ] Add a formal `LICENSE` file.
+- [ ] Add CI checks for backend build, Prisma validation, and frontend build.
+- [ ] Add OpenAPI documentation or an exported Postman collection.
+- [ ] Add automated browser smoke tests for the static frontend.
+- [ ] Add production deployment documentation.
+- [ ] Add richer chart visualizations for reports.
+- [ ] Add email delivery for notification workflows.
+- [ ] Add mobile-first refinements for dense data tables.
 
-### Code Review
+## Documentation
 
-Reviewers should verify:
-
-- Authorization is enforced server-side.
-- Controllers stay thin.
-- Services own business workflows.
-- Database changes use migrations.
-- Multi-table lifecycle changes use transactions.
-- Errors follow the standard response shape.
-- Documentation matches behavior.
-
-### Issue Workflow
-
-Recommended states:
-
-| State | Meaning |
-| --- | --- |
-| Backlog | Accepted but not scheduled. |
-| Ready | Clear enough to start. |
-| In Progress | Actively being worked on. |
-| In Review | Pull request is open. |
-| Done | Merged and verified. |
-| Blocked | Waiting on a dependency or decision. |
-
-## Database Workflow
-
-1. Discuss schema changes before implementation.
-2. Update `Backend/prisma/schema.prisma`.
-3. Run `npx prisma format`.
-4. Create migration with `npx prisma migrate dev --name <change-name>`.
-5. Run `npx prisma generate`.
-6. Update seed data if needed.
-7. Update `Database/schema.md` and `Docs/08-database-design.md`.
-8. Test affected APIs and database constraints.
-
-## API Workflow
-
-1. Document endpoint contract in `Docs/09-api-design.md`.
-2. Define authorization and related tables.
-3. Add validation.
-4. Implement controller, service, and repository behavior.
-5. Add tests for success, validation failure, forbidden access, and missing records.
-6. Update Postman collection if maintained.
-
-## Coding Standards
-
-- Use TypeScript for backend source.
-- Keep controllers focused on HTTP concerns.
-- Keep business rules in services.
-- Keep database queries organized through repositories where practical.
-- Validate request data before service execution.
-- Use transactions for multi-table lifecycle operations.
-- Never return password hashes.
-- Never commit secrets.
-- Keep documentation updated with behavior changes.
-
-## Useful Commands
-
-| Command | Purpose |
-| --- | --- |
-| `npm install` | Install backend dependencies. |
-| `npm run dev` | Start backend development server when entry point exists. |
-| `npm run build` | Compile backend TypeScript when source exists. |
-| `npm test` | Run backend tests when test setup exists. |
-| `npx prisma format` | Format Prisma schema. |
-| `npx prisma migrate dev` | Create/apply local migration. |
-| `npx prisma migrate deploy` | Apply migrations in deployment. |
-| `npx prisma generate` | Generate Prisma client. |
-| `npx prisma studio` | Open database inspector. |
-
-## Troubleshooting
-
-| Problem | Likely Cause | Fix |
-| --- | --- | --- |
-| `DATABASE_URL` error | Missing or invalid environment variable. | Check `Backend/.env`. |
-| PostgreSQL connection refused | Database service is not running. | Start PostgreSQL or Docker container. |
-| Prisma client missing | Client not generated. | Run `npx prisma generate`. |
-| Migration failure | Schema conflict or invalid database state. | Review migration output and database guide. |
-| JWT errors | Missing or inconsistent `JWT_SECRET`. | Check environment variables and log in again. |
-| Port already in use | Another process is using backend port. | Change `PORT` or stop the conflicting process. |
-
-## Resources
-
-- [Node.js Documentation](https://nodejs.org/docs)
-- [Express Documentation](https://expressjs.com)
-- [TypeScript Documentation](https://www.typescriptlang.org/docs)
-- [PostgreSQL Documentation](https://www.postgresql.org/docs)
-- [Prisma Documentation](https://www.prisma.io/docs)
-- [Postman Documentation](https://learning.postman.com/docs)
-
-## Documentation Links
-
-| Document | Purpose |
-| --- | --- |
-| [Project Overview](Docs/00-project-overview.md) | Backend-centered project overview. |
-| [Problem Statement](Docs/01-problem-statement.md) | Asset management problem context. |
-| [MVP Requirements](Docs/02-mvp-requirements.md) | Backend MVP requirements. |
-| [Feature List](Docs/03-feature-list.md) | Backend feature inventory. |
-| [User Roles](Docs/04-user-roles.md) | Role permissions and authorization. |
-| [Workflow Diagrams](Docs/05-user-flow.md) | Backend workflow diagrams. |
-| [System Architecture](Docs/06-system-architecture.md) | Backend architecture. |
-| [Tech Stack](Docs/07-tech-stack.md) | Backend technology choices. |
-| [Database Design](Docs/08-database-design.md) | Database design and Prisma workflow. |
-| [API Design](Docs/09-api-design.md) | REST API contracts. |
-| [Folder Structure](Docs/10-folder-structure.md) | Repository folder responsibilities. |
-| [Contribution Guide](Docs/11-contribution-guide.md) | Git and review workflow. |
-| [Roadmap](Docs/12-development-roadmap.md) | Backend roadmap. |
-| [Testing Plan](Docs/13-testing-plan.md) | Backend testing strategy. |
-| [Deployment Guide](Docs/14-deployment-guide.md) | Backend deployment. |
-| [Future Scope](Docs/15-future-scope.md) | Backend growth opportunities. |
-| [MVP Checklist](Docs/16-mvp-checklist.md) | Backend MVP tracking. |
-| [Database README](Database/README.md) | Database workflow overview. |
+- [Project Overview](Docs/00-project-overview.md)
+- [Feature List](Docs/03-feature-list.md)
+- [User Roles](Docs/04-user-roles.md)
+- [System Architecture](Docs/06-system-architecture.md)
+- [Database Design](Docs/08-database-design.md)
+- [API Design](Docs/09-api-design.md)
+- [Testing Plan](Docs/13-testing-plan.md)
+- [Deployment Guide](Docs/14-deployment-guide.md)
 
 ## License
 
-License to be finalized by the project team.
+No license file is currently present in this repository. Add a `LICENSE` file before publishing AssetFlow as a public open-source project.
 
-## Contributors
+## Author
 
-| Name | Responsibility |
-| --- | --- |
-| TBD | Backend architecture |
-| TBD | Database design |
-| TBD | API development |
-| TBD | Testing and deployment |
+AssetFlow Hackathon Team.

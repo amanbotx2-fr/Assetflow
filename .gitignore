@@ -3,17 +3,25 @@
 
 # Logs
 logs
+logs/
 *.log
 npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
 
 # Dependencies
 node_modules
+node_modules/
 
 # Build
 dist
+dist/
 build
+build/
 .next
 out
+out/
 
 # Environment
 .env
@@ -22,11 +30,24 @@ out
 !.env.example
 !**/.env.example
 
-# VS Code
+# Editors
 .vscode/*
 !.vscode/extensions.json
 !.vscode/settings.json
+.idea/
 
 # Misc
 coverage
+coverage/
 localREPORT.md
+*.tmp
+.tmp/
+tmp/
+cache/
+.cache/
+.vite/
+vite-cache/
+uploads/
+Backend/uploads/*
+!Backend/uploads/README.md
+*.tsbuildinfo
