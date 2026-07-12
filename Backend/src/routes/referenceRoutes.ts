@@ -24,11 +24,13 @@ userRoutes.post("/", requireRoles(Role.ADMIN), validate({ body: createUserSchema
 userRoutes.patch("/:id", requireRoles(Role.ADMIN), validate({ params: idParams, body: updateUserSchema }), referenceController.updateUser);
 
 departmentRoutes.use(authenticate);
-departmentRoutes.get("/", validate({ query: paginationQuery }), referenceController.listDepartments);
+departmentRoutes.get("/", requireRoles(Role.ADMIN, Role.MANAGER, Role.AUDITOR), validate({ query: paginationQuery }), referenceController.listDepartments);
 departmentRoutes.post("/", requireRoles(Role.ADMIN), validate({ body: createDepartmentSchema }), referenceController.createDepartment);
 departmentRoutes.patch("/:id", requireRoles(Role.ADMIN), validate({ params: idParams, body: updateDepartmentSchema }), referenceController.updateDepartment);
+departmentRoutes.delete("/:id", requireRoles(Role.ADMIN), validate({ params: idParams }), referenceController.deleteDepartment);
 
 categoryRoutes.use(authenticate);
-categoryRoutes.get("/", validate({ query: paginationQuery }), referenceController.listCategories);
+categoryRoutes.get("/", requireRoles(Role.ADMIN, Role.MANAGER, Role.AUDITOR), validate({ query: paginationQuery }), referenceController.listCategories);
 categoryRoutes.post("/", requireRoles(Role.ADMIN), validate({ body: createCategorySchema }), referenceController.createCategory);
 categoryRoutes.patch("/:id", requireRoles(Role.ADMIN), validate({ params: idParams, body: updateCategorySchema }), referenceController.updateCategory);
+categoryRoutes.delete("/:id", requireRoles(Role.ADMIN), validate({ params: idParams }), referenceController.deleteCategory);

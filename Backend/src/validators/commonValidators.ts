@@ -14,6 +14,7 @@ export const paginationQuery = z.object({
   result: z.nativeEnum(AuditResult).optional(),
   priority: z.nativeEnum(MaintenancePriority).optional(),
   departmentId: z.string().uuid().optional(),
+  parentDepartmentId: z.string().uuid().optional(),
   categoryId: z.string().uuid().optional(),
   assetId: z.string().uuid().optional(),
   entityId: z.string().uuid().optional(),

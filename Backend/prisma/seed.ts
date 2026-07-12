@@ -17,7 +17,7 @@ const prisma = new PrismaClient();
 const password = "password123";
 
 async function resetDatabase() {
-  await prisma.department.updateMany({ data: { managerId: null } });
+  await prisma.department.updateMany({ data: { managerId: null, parentDepartmentId: null } });
   await prisma.user.updateMany({ data: { departmentId: null } });
   await prisma.notification.deleteMany();
   await prisma.auditLog.deleteMany();
@@ -96,9 +96,12 @@ async function main() {
   const dellLaptop = await prisma.asset.create({
     data: {
       assetCode: "LAP-001",
+      serialNumber: "SN-LAP-001",
       name: "Dell Latitude 5440",
       categoryId: laptop.id,
       departmentId: it.id,
+      createdById: admin.id,
+      updatedById: admin.id,
       status: AssetStatus.ALLOCATED,
       condition: AssetCondition.GOOD,
       location: "IT Floor - Desk 12",
@@ -110,9 +113,12 @@ async function main() {
   const macbook = await prisma.asset.create({
     data: {
       assetCode: "LAP-002",
+      serialNumber: "SN-LAP-002",
       name: "MacBook Air M3",
       categoryId: laptop.id,
       departmentId: it.id,
+      createdById: admin.id,
+      updatedById: admin.id,
       status: AssetStatus.AVAILABLE,
       condition: AssetCondition.NEW,
       location: "IT Store"
@@ -122,9 +128,12 @@ async function main() {
   const projectorAsset = await prisma.asset.create({
     data: {
       assetCode: "PROJ-001",
+      serialNumber: "SN-PROJ-001",
       name: "Epson Conference Projector",
       categoryId: projector.id,
       departmentId: operations.id,
+      createdById: admin.id,
+      updatedById: admin.id,
       status: AssetStatus.AVAILABLE,
       condition: AssetCondition.GOOD,
       location: "Conference Room A",
@@ -135,9 +144,12 @@ async function main() {
   const vehicleAsset = await prisma.asset.create({
     data: {
       assetCode: "VEH-001",
+      serialNumber: "SN-VEH-001",
       name: "Office Shuttle",
       categoryId: vehicle.id,
       departmentId: operations.id,
+      createdById: admin.id,
+      updatedById: admin.id,
       status: AssetStatus.AVAILABLE,
       condition: AssetCondition.GOOD,
       location: "Parking Bay 4",
@@ -148,9 +160,12 @@ async function main() {
   const monitorAsset = await prisma.asset.create({
     data: {
       assetCode: "MON-001",
+      serialNumber: "SN-MON-001",
       name: "Dell 27 Inch Monitor",
       categoryId: monitor.id,
       departmentId: finance.id,
+      createdById: admin.id,
+      updatedById: admin.id,
       status: AssetStatus.MAINTENANCE,
       condition: AssetCondition.FAIR,
       location: "Finance Bay"
@@ -160,9 +175,12 @@ async function main() {
   await prisma.asset.create({
     data: {
       assetCode: "FUR-001",
+      serialNumber: "SN-FUR-001",
       name: "Ergonomic Chair",
       categoryId: furniture.id,
       departmentId: operations.id,
+      createdById: admin.id,
+      updatedById: admin.id,
       status: AssetStatus.AVAILABLE,
       condition: AssetCondition.GOOD,
       location: "Storage Room"

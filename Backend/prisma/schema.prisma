@@ -103,6 +103,8 @@ model User {
   approvedBookings    Booking[]           @relation("BookingApprovedBy")
   reportedMaintenance MaintenanceTicket[] @relation("MaintenanceReportedBy")
   assignedMaintenance MaintenanceTicket[] @relation("MaintenanceAssignedTo")
+  createdAssets       Asset[]             @relation("AssetCreatedBy")
+  updatedAssets       Asset[]             @relation("AssetUpdatedBy")
   auditRecords        AuditRecord[]       @relation("AuditRecordAuditor")
   auditLogs           AuditLog[]          @relation("AuditLogActor")
   notifications       Notification[]
@@ -114,22 +116,26 @@ model User {
 }
 
 model Department {
-  id        String       @id @default(uuid()) @db.Uuid
-  name      String       @unique
-  code      String       @unique
-  managerId String?      @map("manager_id") @db.Uuid
-  status    RecordStatus @default(ACTIVE)
-  createdAt DateTime     @default(now()) @map("created_at")
-  updatedAt DateTime     @updatedAt @map("updated_at")
+  id                 String       @id @default(uuid()) @db.Uuid
+  name               String       @unique
+  code               String       @unique
+  managerId          String?      @map("manager_id") @db.Uuid
+  parentDepartmentId String?      @map("parent_department_id") @db.Uuid
+  status             RecordStatus @default(ACTIVE)
+  createdAt          DateTime     @default(now()) @map("created_at")
+  updatedAt          DateTime     @updatedAt @map("updated_at")
 
-  manager       User?        @relation("DepartmentManager", fields: [managerId], references: [id], onDelete: SetNull)
-  users         User[]       @relation("DepartmentUsers")
-  assets        Asset[]
-  allocations   Allocation[]
-  fromTransfers Transfer[]   @relation("TransferFromDepartment")
-  toTransfers   Transfer[]   @relation("TransferToDepartment")
+  manager          User?        @relation("DepartmentManager", fields: [managerId], references: [id], onDelete: SetNull)
+  parentDepartment Department?  @relation("DepartmentHierarchy", fields: [parentDepartmentId], references: [id], onDelete: SetNull)
+  childDepartments Department[] @relation("DepartmentHierarchy")
+  users            User[]       @relation("DepartmentUsers")
+  assets           Asset[]
+  allocations      Allocation[]
+  fromTransfers    Transfer[]   @relation("TransferFromDepartment")
+  toTransfers      Transfer[]   @relation("TransferToDepartment")
 
   @@index([status])
+  @@index([parentDepartmentId])
   @@map("departments")
 }
 
@@ -151,10 +157,13 @@ model Category {
 model Asset {
   id             String         @id @default(uuid()) @db.Uuid
   assetCode      String         @unique @map("asset_code")
+  serialNumber   String?        @unique @map("serial_number")
   name           String
   description    String?
   categoryId     String         @map("category_id") @db.Uuid
   departmentId   String?        @map("department_id") @db.Uuid
+  createdById    String?        @map("created_by_id") @db.Uuid
+  updatedById    String?        @map("updated_by_id") @db.Uuid
   status         AssetStatus    @default(AVAILABLE)
   condition      AssetCondition @default(GOOD)
   location       String?
@@ -167,6 +176,8 @@ model Asset {
 
   category           Category            @relation(fields: [categoryId], references: [id])
   department         Department?         @relation(fields: [departmentId], references: [id], onDelete: SetNull)
+  createdBy          User?               @relation("AssetCreatedBy", fields: [createdById], references: [id], onDelete: SetNull)
+  updatedBy          User?               @relation("AssetUpdatedBy", fields: [updatedById], references: [id], onDelete: SetNull)
   allocations        Allocation[]
   transfers          Transfer[]
   bookings           Booking[]
@@ -176,6 +187,9 @@ model Asset {
   @@index([status])
   @@index([categoryId])
   @@index([departmentId])
+  @@index([serialNumber])
+  @@index([createdById])
+  @@index([updatedById])
   @@index([isBookable])
   @@map("assets")
 }

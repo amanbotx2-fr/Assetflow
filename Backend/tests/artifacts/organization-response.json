@@ -1,0 +1,230 @@
+{
+  "overview": {
+    "success": true,
+    "data": {
+      "departments": {
+        "total": 3,
+        "active": 3,
+        "inactive": 0,
+        "withParent": 0,
+        "withoutHead": 2
+      },
+      "categories": {
+        "total": 5,
+        "active": 5,
+        "inactive": 0,
+        "withDescription": 5
+      },
+      "employees": {
+        "total": 4,
+        "active": 4,
+        "inactive": 0,
+        "byRole": {
+          "admin": 1,
+          "manager": 1,
+          "employee": 1,
+          "auditor": 1
+        }
+      }
+    },
+    "message": "Operation completed successfully."
+  },
+  "departments": {
+    "success": true,
+    "data": {
+      "items": [
+        {
+          "id": "d0167f5b-70eb-42c6-94f8-fd8bda22a2d5",
+          "name": "Finance",
+          "code": "FIN",
+          "managerId": null,
+          "parentDepartmentId": null,
+          "status": "ACTIVE",
+          "createdAt": "2026-07-12T06:01:54.005Z",
+          "updatedAt": "2026-07-12T06:01:54.005Z",
+          "manager": null,
+          "parentDepartment": null,
+          "_count": {
+            "users": 1,
+            "assets": 1,
+            "childDepartments": 0
+          },
+          "departmentHead": null,
+          "employeeCount": 1,
+          "assetCount": 1,
+          "childDepartmentCount": 0
+        },
+        {
+          "id": "68ed7136-28e2-4eaf-9fa1-4e8e2e2323af",
+          "name": "Information Technology",
+          "code": "IT",
+          "managerId": "e8eeb682-ef79-44f3-8992-550eaec1381a",
+          "parentDepartmentId": null,
+          "status": "ACTIVE",
+          "createdAt": "2026-07-12T06:01:54.005Z",
+          "updatedAt": "2026-07-12T06:01:54.009Z",
+          "manager": {
+            "id": "e8eeb682-ef79-44f3-8992-550eaec1381a",
+            "name": "IT Manager",
+            "email": "manager@assetflow.local",
+            "role": "MANAGER",
+            "status": "ACTIVE"
+          },
+          "parentDepartment": null,
+          "_count": {
+            "users": 3,
+            "assets": 2,
+            "childDepartments": 0
+          },
+          "departmentHead": {
+            "id": "e8eeb682-ef79-44f3-8992-550eaec1381a",
+            "name": "IT Manager",
+            "email": "manager@assetflow.local",
+            "role": "MANAGER",
+            "status": "ACTIVE"
+          },
+          "employeeCount": 3,
+          "assetCount": 2,
+          "childDepartmentCount": 0
+        },
+        {
+          "id": "2118f758-9691-4a87-96c6-76789e76724b",
+          "name": "Operations",
+          "code": "OPS",
+          "managerId": null,
+          "parentDepartmentId": null,
+          "status": "ACTIVE",
+          "createdAt": "2026-07-12T06:01:54.005Z",
+          "updatedAt": "2026-07-12T06:01:54.005Z",
+          "manager": null,
+          "parentDepartment": null,
+          "_count": {
+            "users": 0,
+            "assets": 3,
+            "childDepartments": 0
+          },
+          "departmentHead": null,
+          "employeeCount": 0,
+          "assetCount": 3,
+          "childDepartmentCount": 0
+        }
+      ],
+      "page": 1,
+      "limit": 5,
+      "total": 3,
+      "totalPages": 1
+    },
+    "message": "Operation completed successfully."
+  },
+  "categories": {
+    "success": true,
+    "data": {
+      "items": [
+        {
+          "id": "19014bb0-9638-40ff-9a85-81928ce42f20",
+          "name": "Furniture",
+          "code": "FUR",
+          "description": "Office furniture",
+          "status": "ACTIVE",
+          "createdAt": "2026-07-12T06:01:54.010Z",
+          "updatedAt": "2026-07-12T06:01:54.010Z",
+          "_count": {
+            "assets": 1
+          },
+          "assetCount": 1
+        },
+        {
+          "id": "f81607ff-84c8-4076-a3f6-656aecc5ae29",
+          "name": "Laptop",
+          "code": "LAP",
+          "description": "Portable computers",
+          "status": "ACTIVE",
+          "createdAt": "2026-07-12T06:01:54.010Z",
+          "updatedAt": "2026-07-12T06:01:54.010Z",
+          "_count": {
+            "assets": 2
+          },
+          "assetCount": 2
+        },
+        {
+          "id": "4f8d65e1-4986-4862-8c1a-19cb6eab6948",
+          "name": "Monitor",
+          "code": "MON",
+          "description": "Displays and screens",
+          "status": "ACTIVE",
+          "createdAt": "2026-07-12T06:01:54.010Z",
+          "updatedAt": "2026-07-12T06:01:54.010Z",
+          "_count": {
+            "assets": 1
+          },
+          "assetCount": 1
+        },
+        {
+          "id": "42a0ff21-753d-4d4b-911c-bef49997d2d6",
+          "name": "Projector",
+          "code": "PROJ",
+          "description": "Bookable presentation devices",
+          "status": "ACTIVE",
+          "createdAt": "2026-07-12T06:01:54.010Z",
+          "updatedAt": "2026-07-12T06:01:54.010Z",
+          "_count": {
+            "assets": 1
+          },
+          "assetCount": 1
+        },
+        {
+          "id": "c14da485-513c-4765-b2d8-a2a766682445",
+          "name": "Vehicle",
+          "code": "VEH",
+          "description": "Shared organization vehicles",
+          "status": "ACTIVE",
+          "createdAt": "2026-07-12T06:01:54.010Z",
+          "updatedAt": "2026-07-12T06:01:54.010Z",
+          "_count": {
+            "assets": 1
+          },
+          "assetCount": 1
+        }
+      ],
+      "page": 1,
+      "limit": 5,
+      "total": 5,
+      "totalPages": 1
+    },
+    "message": "Operation completed successfully."
+  },
+  "employees": {
+    "success": true,
+    "data": {
+      "items": [
+        {
+          "id": "34279a6e-4016-4301-90b0-b70bfa24036d",
+          "name": "Employee User",
+          "email": "employee@assetflow.local",
+          "role": "EMPLOYEE",
+          "departmentId": "68ed7136-28e2-4eaf-9fa1-4e8e2e2323af",
+          "status": "ACTIVE",
+          "createdAt": "2026-07-12T06:01:54.009Z",
+          "updatedAt": "2026-07-12T06:01:54.009Z",
+          "department": {
+            "id": "68ed7136-28e2-4eaf-9fa1-4e8e2e2323af",
+            "name": "Information Technology",
+            "code": "IT",
+            "manager": {
+              "id": "e8eeb682-ef79-44f3-8992-550eaec1381a",
+              "name": "IT Manager",
+              "email": "manager@assetflow.local",
+              "role": "MANAGER",
+              "status": "ACTIVE"
+            }
+          }
+        }
+      ],
+      "page": 1,
+      "limit": 5,
+      "total": 1,
+      "totalPages": 1
+    },
+    "message": "Operation completed successfully."
+  }
+}

@@ -1,0 +1,714 @@
+{
+  "list": {
+    "success": true,
+    "data": {
+      "items": [
+        {
+          "id": "4fcf1820-8f4b-49bf-b386-107c36271dd3",
+          "assetCode": "MON-001",
+          "serialNumber": "SN-MON-001",
+          "name": "Dell 27 Inch Monitor",
+          "description": null,
+          "categoryId": "20716a66-5102-4aba-bd17-7dc00b9948da",
+          "departmentId": "7788de92-c8fe-47f1-8fe0-605826970a7e",
+          "createdById": "fb5bf205-c152-4243-9597-3ff09fb316f6",
+          "updatedById": "fb5bf205-c152-4243-9597-3ff09fb316f6",
+          "status": "MAINTENANCE",
+          "condition": "FAIR",
+          "location": "Finance Bay",
+          "purchaseValue": null,
+          "purchaseDate": null,
+          "warrantyExpiry": null,
+          "isBookable": false,
+          "createdAt": "2026-07-12T06:01:33.797Z",
+          "updatedAt": "2026-07-12T06:01:33.797Z",
+          "category": {
+            "id": "20716a66-5102-4aba-bd17-7dc00b9948da",
+            "name": "Monitor",
+            "code": "MON",
+            "description": "Displays and screens",
+            "status": "ACTIVE"
+          },
+          "department": {
+            "id": "7788de92-c8fe-47f1-8fe0-605826970a7e",
+            "name": "Finance",
+            "code": "FIN",
+            "status": "ACTIVE"
+          },
+          "createdBy": {
+            "id": "fb5bf205-c152-4243-9597-3ff09fb316f6",
+            "name": "Admin User",
+            "email": "admin@assetflow.local",
+            "role": "ADMIN"
+          },
+          "updatedBy": {
+            "id": "fb5bf205-c152-4243-9597-3ff09fb316f6",
+            "name": "Admin User",
+            "email": "admin@assetflow.local",
+            "role": "ADMIN"
+          },
+          "allocations": [],
+          "maintenanceTickets": [
+            {
+              "id": "97e0db81-8daf-443f-8d57-01a43e4fce39",
+              "assetId": "4fcf1820-8f4b-49bf-b386-107c36271dd3",
+              "reportedById": "d726a6c4-d992-4315-be24-7513fe185874",
+              "assignedToId": "fbc11cd2-851a-4306-a23a-b57ed367b0ba",
+              "priority": "HIGH",
+              "status": "IN_PROGRESS",
+              "issueSummary": "Display flickering",
+              "issueDescription": "Monitor flickers every few minutes.",
+              "resolutionNotes": null,
+              "reportedAt": "2026-07-12T06:01:33.799Z",
+              "resolvedAt": null,
+              "createdAt": "2026-07-12T06:01:33.799Z",
+              "updatedAt": "2026-07-12T06:01:33.799Z",
+              "reportedBy": {
+                "id": "d726a6c4-d992-4315-be24-7513fe185874",
+                "name": "Employee User",
+                "email": "employee@assetflow.local",
+                "role": "EMPLOYEE"
+              },
+              "assignedTo": {
+                "id": "fbc11cd2-851a-4306-a23a-b57ed367b0ba",
+                "name": "IT Manager",
+                "email": "manager@assetflow.local",
+                "role": "MANAGER"
+              }
+            }
+          ],
+          "_count": {
+            "allocations": 0,
+            "transfers": 0,
+            "bookings": 0,
+            "maintenanceTickets": 1,
+            "auditRecords": 0
+          },
+          "assetTag": "MON-001",
+          "qrCode": "assetflow:asset:4fcf1820-8f4b-49bf-b386-107c36271dd3:MON-001",
+          "currentAllocation": null,
+          "maintenanceStatus": "IN_PROGRESS",
+          "currentMaintenance": {
+            "id": "97e0db81-8daf-443f-8d57-01a43e4fce39",
+            "assetId": "4fcf1820-8f4b-49bf-b386-107c36271dd3",
+            "reportedById": "d726a6c4-d992-4315-be24-7513fe185874",
+            "assignedToId": "fbc11cd2-851a-4306-a23a-b57ed367b0ba",
+            "priority": "HIGH",
+            "status": "IN_PROGRESS",
+            "issueSummary": "Display flickering",
+            "issueDescription": "Monitor flickers every few minutes.",
+            "resolutionNotes": null,
+            "reportedAt": "2026-07-12T06:01:33.799Z",
+            "resolvedAt": null,
+            "createdAt": "2026-07-12T06:01:33.799Z",
+            "updatedAt": "2026-07-12T06:01:33.799Z",
+            "reportedBy": {
+              "id": "d726a6c4-d992-4315-be24-7513fe185874",
+              "name": "Employee User",
+              "email": "employee@assetflow.local",
+              "role": "EMPLOYEE"
+            },
+            "assignedTo": {
+              "id": "fbc11cd2-851a-4306-a23a-b57ed367b0ba",
+              "name": "IT Manager",
+              "email": "manager@assetflow.local",
+              "role": "MANAGER"
+            }
+          },
+          "lifecycleCounts": {
+            "allocations": 0,
+            "transfers": 0,
+            "bookings": 0,
+            "maintenanceTickets": 1,
+            "auditRecords": 0
+          }
+        },
+        {
+          "id": "e07de6db-6c60-4c0e-b4eb-1e925c644a09",
+          "assetCode": "LAP-001",
+          "serialNumber": "SN-LAP-001",
+          "name": "Dell Latitude 5440",
+          "description": null,
+          "categoryId": "217ed03d-d77d-4f62-9b80-4260b06f0305",
+          "departmentId": "58a96a9f-f228-442e-9b18-d6d634f7715a",
+          "createdById": "fb5bf205-c152-4243-9597-3ff09fb316f6",
+          "updatedById": "fb5bf205-c152-4243-9597-3ff09fb316f6",
+          "status": "ALLOCATED",
+          "condition": "GOOD",
+          "location": "IT Floor - Desk 12",
+          "purchaseValue": "95000",
+          "purchaseDate": "2025-04-10T00:00:00.000Z",
+          "warrantyExpiry": null,
+          "isBookable": false,
+          "createdAt": "2026-07-12T06:01:33.795Z",
+          "updatedAt": "2026-07-12T06:01:33.795Z",
+          "category": {
+            "id": "217ed03d-d77d-4f62-9b80-4260b06f0305",
+            "name": "Laptop",
+            "code": "LAP",
+            "description": "Portable computers",
+            "status": "ACTIVE"
+          },
+          "department": {
+            "id": "58a96a9f-f228-442e-9b18-d6d634f7715a",
+            "name": "Information Technology",
+            "code": "IT",
+            "status": "ACTIVE"
+          },
+          "createdBy": {
+            "id": "fb5bf205-c152-4243-9597-3ff09fb316f6",
+            "name": "Admin User",
+            "email": "admin@assetflow.local",
+            "role": "ADMIN"
+          },
+          "updatedBy": {
+            "id": "fb5bf205-c152-4243-9597-3ff09fb316f6",
+            "name": "Admin User",
+            "email": "admin@assetflow.local",
+            "role": "ADMIN"
+          },
+          "allocations": [
+            {
+              "id": "bb54b1ea-b8f7-4709-8538-178142e7c8a1",
+              "assetId": "e07de6db-6c60-4c0e-b4eb-1e925c644a09",
+              "userId": "d726a6c4-d992-4315-be24-7513fe185874",
+              "departmentId": null,
+              "assignedById": "fbc11cd2-851a-4306-a23a-b57ed367b0ba",
+              "status": "ACTIVE",
+              "assignedAt": "2026-07-12T06:01:33.797Z",
+              "returnedAt": null,
+              "notes": "Seed allocation for demo.",
+              "createdAt": "2026-07-12T06:01:33.797Z",
+              "updatedAt": "2026-07-12T06:01:33.797Z",
+              "user": {
+                "id": "d726a6c4-d992-4315-be24-7513fe185874",
+                "name": "Employee User",
+                "email": "employee@assetflow.local",
+                "role": "EMPLOYEE"
+              },
+              "department": null,
+              "assignedBy": {
+                "id": "fbc11cd2-851a-4306-a23a-b57ed367b0ba",
+                "name": "IT Manager",
+                "email": "manager@assetflow.local",
+                "role": "MANAGER"
+              }
+            }
+          ],
+          "maintenanceTickets": [],
+          "_count": {
+            "allocations": 1,
+            "transfers": 1,
+            "bookings": 0,
+            "maintenanceTickets": 0,
+            "auditRecords": 1
+          },
+          "assetTag": "LAP-001",
+          "qrCode": "assetflow:asset:e07de6db-6c60-4c0e-b4eb-1e925c644a09:LAP-001",
+          "currentAllocation": {
+            "id": "bb54b1ea-b8f7-4709-8538-178142e7c8a1",
+            "assetId": "e07de6db-6c60-4c0e-b4eb-1e925c644a09",
+            "userId": "d726a6c4-d992-4315-be24-7513fe185874",
+            "departmentId": null,
+            "assignedById": "fbc11cd2-851a-4306-a23a-b57ed367b0ba",
+            "status": "ACTIVE",
+            "assignedAt": "2026-07-12T06:01:33.797Z",
+            "returnedAt": null,
+            "notes": "Seed allocation for demo.",
+            "createdAt": "2026-07-12T06:01:33.797Z",
+            "updatedAt": "2026-07-12T06:01:33.797Z",
+            "user": {
+              "id": "d726a6c4-d992-4315-be24-7513fe185874",
+              "name": "Employee User",
+              "email": "employee@assetflow.local",
+              "role": "EMPLOYEE"
+            },
+            "department": null,
+            "assignedBy": {
+              "id": "fbc11cd2-851a-4306-a23a-b57ed367b0ba",
+              "name": "IT Manager",
+              "email": "manager@assetflow.local",
+              "role": "MANAGER"
+            }
+          },
+          "maintenanceStatus": null,
+          "currentMaintenance": null,
+          "lifecycleCounts": {
+            "allocations": 1,
+            "transfers": 1,
+            "bookings": 0,
+            "maintenanceTickets": 0,
+            "auditRecords": 1
+          }
+        },
+        {
+          "id": "8288eccb-364a-475d-9f27-1cd00144dd98",
+          "assetCode": "PROJ-001",
+          "serialNumber": "SN-PROJ-001",
+          "name": "Epson Conference Projector",
+          "description": null,
+          "categoryId": "a20c17ab-68cf-4e4b-9e57-88fdcf8184fb",
+          "departmentId": "b0df7467-098c-4601-a40d-d25d6a1943ed",
+          "createdById": "fb5bf205-c152-4243-9597-3ff09fb316f6",
+          "updatedById": "fb5bf205-c152-4243-9597-3ff09fb316f6",
+          "status": "AVAILABLE",
+          "condition": "GOOD",
+          "location": "Conference Room A",
+          "purchaseValue": null,
+          "purchaseDate": null,
+          "warrantyExpiry": null,
+          "isBookable": true,
+          "createdAt": "2026-07-12T06:01:33.796Z",
+          "updatedAt": "2026-07-12T06:01:33.796Z",
+          "category": {
+            "id": "a20c17ab-68cf-4e4b-9e57-88fdcf8184fb",
+            "name": "Projector",
+            "code": "PROJ",
+            "description": "Bookable presentation devices",
+            "status": "ACTIVE"
+          },
+          "department": {
+            "id": "b0df7467-098c-4601-a40d-d25d6a1943ed",
+            "name": "Operations",
+            "code": "OPS",
+            "status": "ACTIVE"
+          },
+          "createdBy": {
+            "id": "fb5bf205-c152-4243-9597-3ff09fb316f6",
+            "name": "Admin User",
+            "email": "admin@assetflow.local",
+            "role": "ADMIN"
+          },
+          "updatedBy": {
+            "id": "fb5bf205-c152-4243-9597-3ff09fb316f6",
+            "name": "Admin User",
+            "email": "admin@assetflow.local",
+            "role": "ADMIN"
+          },
+          "allocations": [],
+          "maintenanceTickets": [],
+          "_count": {
+            "allocations": 0,
+            "transfers": 0,
+            "bookings": 1,
+            "maintenanceTickets": 0,
+            "auditRecords": 0
+          },
+          "assetTag": "PROJ-001",
+          "qrCode": "assetflow:asset:8288eccb-364a-475d-9f27-1cd00144dd98:PROJ-001",
+          "currentAllocation": null,
+          "maintenanceStatus": null,
+          "currentMaintenance": null,
+          "lifecycleCounts": {
+            "allocations": 0,
+            "transfers": 0,
+            "bookings": 1,
+            "maintenanceTickets": 0,
+            "auditRecords": 0
+          }
+        },
+        {
+          "id": "7ecbf1ff-33e0-4fbd-81bf-8227a14ce866",
+          "assetCode": "FUR-001",
+          "serialNumber": "SN-FUR-001",
+          "name": "Ergonomic Chair",
+          "description": null,
+          "categoryId": "011fd346-3a48-47de-9221-658ed2b8df3b",
+          "departmentId": "b0df7467-098c-4601-a40d-d25d6a1943ed",
+          "createdById": "fb5bf205-c152-4243-9597-3ff09fb316f6",
+          "updatedById": "fb5bf205-c152-4243-9597-3ff09fb316f6",
+          "status": "AVAILABLE",
+          "condition": "GOOD",
+          "location": "Storage Room",
+          "purchaseValue": null,
+          "purchaseDate": null,
+          "warrantyExpiry": null,
+          "isBookable": false,
+          "createdAt": "2026-07-12T06:01:33.797Z",
+          "updatedAt": "2026-07-12T06:01:33.797Z",
+          "category": {
+            "id": "011fd346-3a48-47de-9221-658ed2b8df3b",
+            "name": "Furniture",
+            "code": "FUR",
+            "description": "Office furniture",
+            "status": "ACTIVE"
+          },
+          "department": {
+            "id": "b0df7467-098c-4601-a40d-d25d6a1943ed",
+            "name": "Operations",
+            "code": "OPS",
+            "status": "ACTIVE"
+          },
+          "createdBy": {
+            "id": "fb5bf205-c152-4243-9597-3ff09fb316f6",
+            "name": "Admin User",
+            "email": "admin@assetflow.local",
+            "role": "ADMIN"
+          },
+          "updatedBy": {
+            "id": "fb5bf205-c152-4243-9597-3ff09fb316f6",
+            "name": "Admin User",
+            "email": "admin@assetflow.local",
+            "role": "ADMIN"
+          },
+          "allocations": [],
+          "maintenanceTickets": [],
+          "_count": {
+            "allocations": 0,
+            "transfers": 0,
+            "bookings": 0,
+            "maintenanceTickets": 0,
+            "auditRecords": 0
+          },
+          "assetTag": "FUR-001",
+          "qrCode": "assetflow:asset:7ecbf1ff-33e0-4fbd-81bf-8227a14ce866:FUR-001",
+          "currentAllocation": null,
+          "maintenanceStatus": null,
+          "currentMaintenance": null,
+          "lifecycleCounts": {
+            "allocations": 0,
+            "transfers": 0,
+            "bookings": 0,
+            "maintenanceTickets": 0,
+            "auditRecords": 0
+          }
+        },
+        {
+          "id": "6d13bbcd-90a5-48fc-a5f1-f669dd6e9949",
+          "assetCode": "LAP-002",
+          "serialNumber": "SN-LAP-002",
+          "name": "MacBook Air M3",
+          "description": null,
+          "categoryId": "217ed03d-d77d-4f62-9b80-4260b06f0305",
+          "departmentId": "58a96a9f-f228-442e-9b18-d6d634f7715a",
+          "createdById": "fb5bf205-c152-4243-9597-3ff09fb316f6",
+          "updatedById": "fb5bf205-c152-4243-9597-3ff09fb316f6",
+          "status": "AVAILABLE",
+          "condition": "NEW",
+          "location": "IT Store",
+          "purchaseValue": null,
+          "purchaseDate": null,
+          "warrantyExpiry": null,
+          "isBookable": false,
+          "createdAt": "2026-07-12T06:01:33.796Z",
+          "updatedAt": "2026-07-12T06:01:33.796Z",
+          "category": {
+            "id": "217ed03d-d77d-4f62-9b80-4260b06f0305",
+            "name": "Laptop",
+            "code": "LAP",
+            "description": "Portable computers",
+            "status": "ACTIVE"
+          },
+          "department": {
+            "id": "58a96a9f-f228-442e-9b18-d6d634f7715a",
+            "name": "Information Technology",
+            "code": "IT",
+            "status": "ACTIVE"
+          },
+          "createdBy": {
+            "id": "fb5bf205-c152-4243-9597-3ff09fb316f6",
+            "name": "Admin User",
+            "email": "admin@assetflow.local",
+            "role": "ADMIN"
+          },
+          "updatedBy": {
+            "id": "fb5bf205-c152-4243-9597-3ff09fb316f6",
+            "name": "Admin User",
+            "email": "admin@assetflow.local",
+            "role": "ADMIN"
+          },
+          "allocations": [],
+          "maintenanceTickets": [],
+          "_count": {
+            "allocations": 0,
+            "transfers": 0,
+            "bookings": 0,
+            "maintenanceTickets": 0,
+            "auditRecords": 0
+          },
+          "assetTag": "LAP-002",
+          "qrCode": "assetflow:asset:6d13bbcd-90a5-48fc-a5f1-f669dd6e9949:LAP-002",
+          "currentAllocation": null,
+          "maintenanceStatus": null,
+          "currentMaintenance": null,
+          "lifecycleCounts": {
+            "allocations": 0,
+            "transfers": 0,
+            "bookings": 0,
+            "maintenanceTickets": 0,
+            "auditRecords": 0
+          }
+        }
+      ],
+      "page": 1,
+      "limit": 5,
+      "total": 6,
+      "totalPages": 2
+    },
+    "message": "Operation completed successfully."
+  },
+  "detail": {
+    "success": true,
+    "data": {
+      "id": "4fcf1820-8f4b-49bf-b386-107c36271dd3",
+      "assetCode": "MON-001",
+      "serialNumber": "SN-MON-001",
+      "name": "Dell 27 Inch Monitor",
+      "description": null,
+      "categoryId": "20716a66-5102-4aba-bd17-7dc00b9948da",
+      "departmentId": "7788de92-c8fe-47f1-8fe0-605826970a7e",
+      "createdById": "fb5bf205-c152-4243-9597-3ff09fb316f6",
+      "updatedById": "fb5bf205-c152-4243-9597-3ff09fb316f6",
+      "status": "MAINTENANCE",
+      "condition": "FAIR",
+      "location": "Finance Bay",
+      "purchaseValue": null,
+      "purchaseDate": null,
+      "warrantyExpiry": null,
+      "isBookable": false,
+      "createdAt": "2026-07-12T06:01:33.797Z",
+      "updatedAt": "2026-07-12T06:01:33.797Z",
+      "category": {
+        "id": "20716a66-5102-4aba-bd17-7dc00b9948da",
+        "name": "Monitor",
+        "code": "MON",
+        "description": "Displays and screens",
+        "status": "ACTIVE"
+      },
+      "department": {
+        "id": "7788de92-c8fe-47f1-8fe0-605826970a7e",
+        "name": "Finance",
+        "code": "FIN",
+        "status": "ACTIVE"
+      },
+      "createdBy": {
+        "id": "fb5bf205-c152-4243-9597-3ff09fb316f6",
+        "name": "Admin User",
+        "email": "admin@assetflow.local",
+        "role": "ADMIN"
+      },
+      "updatedBy": {
+        "id": "fb5bf205-c152-4243-9597-3ff09fb316f6",
+        "name": "Admin User",
+        "email": "admin@assetflow.local",
+        "role": "ADMIN"
+      },
+      "allocations": [],
+      "maintenanceTickets": [
+        {
+          "id": "97e0db81-8daf-443f-8d57-01a43e4fce39",
+          "assetId": "4fcf1820-8f4b-49bf-b386-107c36271dd3",
+          "reportedById": "d726a6c4-d992-4315-be24-7513fe185874",
+          "assignedToId": "fbc11cd2-851a-4306-a23a-b57ed367b0ba",
+          "priority": "HIGH",
+          "status": "IN_PROGRESS",
+          "issueSummary": "Display flickering",
+          "issueDescription": "Monitor flickers every few minutes.",
+          "resolutionNotes": null,
+          "reportedAt": "2026-07-12T06:01:33.799Z",
+          "resolvedAt": null,
+          "createdAt": "2026-07-12T06:01:33.799Z",
+          "updatedAt": "2026-07-12T06:01:33.799Z",
+          "reportedBy": {
+            "id": "d726a6c4-d992-4315-be24-7513fe185874",
+            "name": "Employee User",
+            "email": "employee@assetflow.local",
+            "role": "EMPLOYEE"
+          },
+          "assignedTo": {
+            "id": "fbc11cd2-851a-4306-a23a-b57ed367b0ba",
+            "name": "IT Manager",
+            "email": "manager@assetflow.local",
+            "role": "MANAGER"
+          }
+        }
+      ],
+      "_count": {
+        "allocations": 0,
+        "transfers": 0,
+        "bookings": 0,
+        "maintenanceTickets": 1,
+        "auditRecords": 0
+      },
+      "transfers": [],
+      "bookings": [],
+      "auditRecords": [],
+      "assetTag": "MON-001",
+      "qrCode": "assetflow:asset:4fcf1820-8f4b-49bf-b386-107c36271dd3:MON-001",
+      "currentAllocation": null,
+      "maintenanceStatus": "IN_PROGRESS",
+      "currentMaintenance": {
+        "id": "97e0db81-8daf-443f-8d57-01a43e4fce39",
+        "assetId": "4fcf1820-8f4b-49bf-b386-107c36271dd3",
+        "reportedById": "d726a6c4-d992-4315-be24-7513fe185874",
+        "assignedToId": "fbc11cd2-851a-4306-a23a-b57ed367b0ba",
+        "priority": "HIGH",
+        "status": "IN_PROGRESS",
+        "issueSummary": "Display flickering",
+        "issueDescription": "Monitor flickers every few minutes.",
+        "resolutionNotes": null,
+        "reportedAt": "2026-07-12T06:01:33.799Z",
+        "resolvedAt": null,
+        "createdAt": "2026-07-12T06:01:33.799Z",
+        "updatedAt": "2026-07-12T06:01:33.799Z",
+        "reportedBy": {
+          "id": "d726a6c4-d992-4315-be24-7513fe185874",
+          "name": "Employee User",
+          "email": "employee@assetflow.local",
+          "role": "EMPLOYEE"
+        },
+        "assignedTo": {
+          "id": "fbc11cd2-851a-4306-a23a-b57ed367b0ba",
+          "name": "IT Manager",
+          "email": "manager@assetflow.local",
+          "role": "MANAGER"
+        }
+      },
+      "lifecycleCounts": {
+        "allocations": 0,
+        "transfers": 0,
+        "bookings": 0,
+        "maintenanceTickets": 1,
+        "auditRecords": 0
+      }
+    },
+    "message": "Operation completed successfully."
+  },
+  "lookup": {
+    "success": true,
+    "data": {
+      "id": "4fcf1820-8f4b-49bf-b386-107c36271dd3",
+      "assetCode": "MON-001",
+      "serialNumber": "SN-MON-001",
+      "name": "Dell 27 Inch Monitor",
+      "description": null,
+      "categoryId": "20716a66-5102-4aba-bd17-7dc00b9948da",
+      "departmentId": "7788de92-c8fe-47f1-8fe0-605826970a7e",
+      "createdById": "fb5bf205-c152-4243-9597-3ff09fb316f6",
+      "updatedById": "fb5bf205-c152-4243-9597-3ff09fb316f6",
+      "status": "MAINTENANCE",
+      "condition": "FAIR",
+      "location": "Finance Bay",
+      "purchaseValue": null,
+      "purchaseDate": null,
+      "warrantyExpiry": null,
+      "isBookable": false,
+      "createdAt": "2026-07-12T06:01:33.797Z",
+      "updatedAt": "2026-07-12T06:01:33.797Z",
+      "category": {
+        "id": "20716a66-5102-4aba-bd17-7dc00b9948da",
+        "name": "Monitor",
+        "code": "MON",
+        "description": "Displays and screens",
+        "status": "ACTIVE"
+      },
+      "department": {
+        "id": "7788de92-c8fe-47f1-8fe0-605826970a7e",
+        "name": "Finance",
+        "code": "FIN",
+        "status": "ACTIVE"
+      },
+      "createdBy": {
+        "id": "fb5bf205-c152-4243-9597-3ff09fb316f6",
+        "name": "Admin User",
+        "email": "admin@assetflow.local",
+        "role": "ADMIN"
+      },
+      "updatedBy": {
+        "id": "fb5bf205-c152-4243-9597-3ff09fb316f6",
+        "name": "Admin User",
+        "email": "admin@assetflow.local",
+        "role": "ADMIN"
+      },
+      "allocations": [],
+      "maintenanceTickets": [
+        {
+          "id": "97e0db81-8daf-443f-8d57-01a43e4fce39",
+          "assetId": "4fcf1820-8f4b-49bf-b386-107c36271dd3",
+          "reportedById": "d726a6c4-d992-4315-be24-7513fe185874",
+          "assignedToId": "fbc11cd2-851a-4306-a23a-b57ed367b0ba",
+          "priority": "HIGH",
+          "status": "IN_PROGRESS",
+          "issueSummary": "Display flickering",
+          "issueDescription": "Monitor flickers every few minutes.",
+          "resolutionNotes": null,
+          "reportedAt": "2026-07-12T06:01:33.799Z",
+          "resolvedAt": null,
+          "createdAt": "2026-07-12T06:01:33.799Z",
+          "updatedAt": "2026-07-12T06:01:33.799Z",
+          "reportedBy": {
+            "id": "d726a6c4-d992-4315-be24-7513fe185874",
+            "name": "Employee User",
+            "email": "employee@assetflow.local",
+            "role": "EMPLOYEE"
+          },
+          "assignedTo": {
+            "id": "fbc11cd2-851a-4306-a23a-b57ed367b0ba",
+            "name": "IT Manager",
+            "email": "manager@assetflow.local",
+            "role": "MANAGER"
+          }
+        }
+      ],
+      "_count": {
+        "allocations": 0,
+        "transfers": 0,
+        "bookings": 0,
+        "maintenanceTickets": 1,
+        "auditRecords": 0
+      },
+      "assetTag": "MON-001",
+      "qrCode": "assetflow:asset:4fcf1820-8f4b-49bf-b386-107c36271dd3:MON-001",
+      "currentAllocation": null,
+      "maintenanceStatus": "IN_PROGRESS",
+      "currentMaintenance": {
+        "id": "97e0db81-8daf-443f-8d57-01a43e4fce39",
+        "assetId": "4fcf1820-8f4b-49bf-b386-107c36271dd3",
+        "reportedById": "d726a6c4-d992-4315-be24-7513fe185874",
+        "assignedToId": "fbc11cd2-851a-4306-a23a-b57ed367b0ba",
+        "priority": "HIGH",
+        "status": "IN_PROGRESS",
+        "issueSummary": "Display flickering",
+        "issueDescription": "Monitor flickers every few minutes.",
+        "resolutionNotes": null,
+        "reportedAt": "2026-07-12T06:01:33.799Z",
+        "resolvedAt": null,
+        "createdAt": "2026-07-12T06:01:33.799Z",
+        "updatedAt": "2026-07-12T06:01:33.799Z",
+        "reportedBy": {
+          "id": "d726a6c4-d992-4315-be24-7513fe185874",
+          "name": "Employee User",
+          "email": "employee@assetflow.local",
+          "role": "EMPLOYEE"
+        },
+        "assignedTo": {
+          "id": "fbc11cd2-851a-4306-a23a-b57ed367b0ba",
+          "name": "IT Manager",
+          "email": "manager@assetflow.local",
+          "role": "MANAGER"
+        }
+      },
+      "lifecycleCounts": {
+        "allocations": 0,
+        "transfers": 0,
+        "bookings": 0,
+        "maintenanceTickets": 1,
+        "auditRecords": 0
+      }
+    },
+    "message": "Operation completed successfully."
+  },
+  "qr": {
+    "success": true,
+    "data": {
+      "qrValue": "assetflow:asset:4fcf1820-8f4b-49bf-b386-107c36271dd3:MON-001",
+      "qrCode": "assetflow:asset:4fcf1820-8f4b-49bf-b386-107c36271dd3:MON-001",
+      "imageDataUrl": "data:image/png;base64,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",
+      "assetId": "4fcf1820-8f4b-49bf-b386-107c36271dd3",
+      "assetCode": "MON-001",
+      "assetTag": "MON-001",
+      "serialNumber": "SN-MON-001"
+    },
+    "message": "Operation completed successfully."
+  }
+}

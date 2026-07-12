@@ -26,6 +26,10 @@ export const updateDepartment = asyncHandler(async (req, res) => {
   sendSuccess(res, await referenceService.updateDepartment(String(req.params.id), req.body, req.user!.id));
 });
 
+export const deleteDepartment = asyncHandler(async (req, res) => {
+  sendSuccess(res, await referenceService.deleteDepartment(String(req.params.id), req.user!.id));
+});
+
 export const listCategories = asyncHandler(async (req, res) => {
   sendSuccess(res, await referenceService.listCategories(req.query));
 });
@@ -36,4 +40,8 @@ export const createCategory = asyncHandler(async (req, res) => {
 
 export const updateCategory = asyncHandler(async (req, res) => {
   sendSuccess(res, await referenceService.updateCategory(String(req.params.id), req.body, req.user!.id));
+});
+
+export const deleteCategory = asyncHandler(async (req, res) => {
+  sendSuccess(res, await referenceService.deleteCategory(String(req.params.id), req.user!.id));
 });
