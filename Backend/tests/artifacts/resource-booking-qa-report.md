@@ -1,6 +1,6 @@
 # Resource Booking QA Report
 
-Generated: 2026-07-12T07:21:11.641Z
+Generated: 2026-07-12T07:36:05.835Z
 
 ## Summary
 
@@ -76,49 +76,49 @@ Generated: 2026-07-12T07:21:11.641Z
 | GET /api/bookings | 401 | 2 ms |
 | GET /api/bookings | 200 | 4 ms |
 | GET /api/bookings | 200 | 4 ms |
-| POST /api/bookings | 403 | 3 ms |
-| POST /api/bookings | 201 | 6 ms |
-| POST /api/bookings | 409 | 3 ms |
+| POST /api/bookings | 403 | 2 ms |
+| POST /api/bookings | 201 | 5 ms |
 | POST /api/bookings | 409 | 2 ms |
+| POST /api/bookings | 409 | 3 ms |
 | POST /api/bookings | 400 | 2 ms |
 | POST /api/bookings | 400 | 2 ms |
 | POST /api/bookings | 404 | 2 ms |
 | POST /api/bookings | 409 | 2 ms |
-| GET /api/bookings/dc833d8c-6fbe-4459-b9ff-9e74c34c1f61 | 200 | 3 ms |
+| GET /api/bookings/bfa4f2f8-899f-4683-9d71-4b9524054130 | 200 | 3 ms |
 | GET /api/bookings/00000000-0000-0000-0000-000000000000 | 404 | 3 ms |
 | GET /api/bookings/not-a-uuid | 400 | 2 ms |
-| PATCH /api/bookings/dc833d8c-6fbe-4459-b9ff-9e74c34c1f61 | 200 | 4 ms |
-| PATCH /api/bookings/dc833d8c-6fbe-4459-b9ff-9e74c34c1f61/approve | 200 | 5 ms |
-| PATCH /api/bookings/dc833d8c-6fbe-4459-b9ff-9e74c34c1f61/reject | 409 | 3 ms |
-| PATCH /api/bookings/dc833d8c-6fbe-4459-b9ff-9e74c34c1f61/approve | 409 | 3 ms |
-| POST /api/bookings | 409 | 2 ms |
-| GET /api/bookings/calendar?resourceId=6b467d77-54fe-45ed-90a1-e4e6d0d2d510&date=2026-07-13 | 200 | 4 ms |
-| GET /api/bookings/calendar?resourceId=6b467d77-54fe-45ed-90a1-e4e6d0d2d510 | 400 | 2 ms |
-| GET /api/bookings/availability?resourceId=6b467d77-54fe-45ed-90a1-e4e6d0d2d510&date=2026-07-13 | 200 | 4 ms |
+| PATCH /api/bookings/bfa4f2f8-899f-4683-9d71-4b9524054130 | 200 | 4 ms |
+| PATCH /api/bookings/bfa4f2f8-899f-4683-9d71-4b9524054130/approve | 200 | 5 ms |
+| PATCH /api/bookings/bfa4f2f8-899f-4683-9d71-4b9524054130/reject | 409 | 2 ms |
+| PATCH /api/bookings/bfa4f2f8-899f-4683-9d71-4b9524054130/approve | 409 | 3 ms |
+| POST /api/bookings | 409 | 3 ms |
+| GET /api/bookings/calendar?resourceId=c89d1380-e091-4cd1-9040-a2121df25703&date=2026-07-13 | 200 | 4 ms |
+| GET /api/bookings/calendar?resourceId=c89d1380-e091-4cd1-9040-a2121df25703 | 400 | 2 ms |
+| GET /api/bookings/availability?resourceId=c89d1380-e091-4cd1-9040-a2121df25703&date=2026-07-13 | 200 | 4 ms |
 | GET /api/bookings/availability | 400 | 2 ms |
-| POST /api/bookings | 201 | 4 ms |
-| PATCH /api/bookings/32b94fa1-fc3b-48c1-9bab-ab994400e9b8/reject | 200 | 4 ms |
 | POST /api/bookings | 201 | 5 ms |
-| POST /api/bookings | 201 | 4 ms |
-| PATCH /api/bookings/600bb75d-d888-4488-9b16-16abfa7b28d1/cancel | 200 | 4 ms |
+| PATCH /api/bookings/1dd41a62-0ed4-4934-a627-b7a9d9aba4fa/reject | 200 | 4 ms |
+| POST /api/bookings | 201 | 3 ms |
+| POST /api/bookings | 201 | 3 ms |
+| PATCH /api/bookings/d986b304-20d6-4f89-a7ea-3ba795bd2d96/cancel | 200 | 4 ms |
 | POST /api/bookings | 201 | 4 ms |
 | POST /api/bookings | 201 | 5 ms |
-| DELETE /api/bookings/ed34524b-c210-4dcd-b8fb-023526759ee6 | 200 | 4 ms |
+| DELETE /api/bookings/6c03c5d1-e7be-475e-b8f8-40f09d7df486 | 200 | 4 ms |
 | POST /api/bookings | 201 | 5 ms |
-| GET /api/bookings/3a1875da-9b33-4aa5-b920-506fbd59e282 | 403 | 3 ms |
-| PATCH /api/bookings/3a1875da-9b33-4aa5-b920-506fbd59e282/approve | 403 | 3 ms |
-| PATCH /api/bookings/3a1875da-9b33-4aa5-b920-506fbd59e282/approve | 403 | 2 ms |
-| PATCH /api/bookings/9b1891ff-90c5-413e-a5ff-47afef9bcb1f | 409 | 3 ms |
-| PATCH /api/bookings/9b1891ff-90c5-413e-a5ff-47afef9bcb1f/cancel | 409 | 3 ms |
-| GET /api/bookings?assetId=6b467d77-54fe-45ed-90a1-e4e6d0d2d510 | 200 | 12 ms |
-| GET /api/reports/bookings | 200 | 4 ms |
-| GET /api/dashboard/overview | 200 | 7 ms |
-| GET /api/bookings?page=1&limit=5 | 200 | 4 ms |
-| GET /api/bookings/97c8763b-9be5-4fa0-8ff6-ac5f5c670fbb | 200 | 3 ms |
-| GET /api/reports/bookings | 200 | 5 ms |
+| GET /api/bookings/989ab01d-c58d-4633-ab41-ba0c0db7387a | 403 | 3 ms |
+| PATCH /api/bookings/989ab01d-c58d-4633-ab41-ba0c0db7387a/approve | 403 | 2 ms |
+| PATCH /api/bookings/989ab01d-c58d-4633-ab41-ba0c0db7387a/approve | 403 | 2 ms |
+| PATCH /api/bookings/b9031e98-7753-4b47-9954-405c03429955 | 409 | 3 ms |
+| PATCH /api/bookings/b9031e98-7753-4b47-9954-405c03429955/cancel | 409 | 3 ms |
+| GET /api/bookings?assetId=c89d1380-e091-4cd1-9040-a2121df25703 | 200 | 4 ms |
+| GET /api/reports/bookings | 200 | 3 ms |
 | GET /api/dashboard/overview | 200 | 5 ms |
-| GET /api/bookings/calendar?resourceId=3e3dcd4e-b29e-4d41-b696-597ba9bb6a52&date=2026-07-12 | 200 | 6 ms |
-| GET /api/bookings/availability?resourceId=3e3dcd4e-b29e-4d41-b696-597ba9bb6a52&date=2026-07-12 | 200 | 6 ms |
+| GET /api/bookings?page=1&limit=5 | 200 | 4 ms |
+| GET /api/bookings/6addb4b9-06b9-4c86-9c15-ca6b1cc31ca8 | 200 | 3 ms |
+| GET /api/reports/bookings | 200 | 4 ms |
+| GET /api/dashboard/overview | 200 | 5 ms |
+| GET /api/bookings/calendar?resourceId=ece753d3-3cb7-4c3f-9144-9c9305ca52ad&date=2026-07-12 | 200 | 6 ms |
+| GET /api/bookings/availability?resourceId=ece753d3-3cb7-4c3f-9144-9c9305ca52ad&date=2026-07-12 | 200 | 6 ms |
 
 ## Business Rules Verified
 

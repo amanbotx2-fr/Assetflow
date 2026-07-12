@@ -34,14 +34,14 @@
     "data": {
       "items": [
         {
-          "id": "ca7dd95b-9a51-4397-aaf3-b4138d948367",
+          "id": "7f17a177-f4c8-405b-a1ee-a5ca6ed5d5eb",
           "name": "Finance",
           "code": "FIN",
           "managerId": null,
           "parentDepartmentId": null,
           "status": "ACTIVE",
-          "createdAt": "2026-07-12T07:20:46.285Z",
-          "updatedAt": "2026-07-12T07:20:46.285Z",
+          "createdAt": "2026-07-12T07:35:36.369Z",
+          "updatedAt": "2026-07-12T07:35:36.369Z",
           "manager": null,
           "parentDepartment": null,
           "_count": {
@@ -55,16 +55,16 @@
           "childDepartmentCount": 0
         },
         {
-          "id": "3e07cfd3-8784-4fee-9b40-bd443bfe39ed",
+          "id": "e268cb4e-16da-46c8-bf57-a084b439069b",
           "name": "Information Technology",
           "code": "IT",
-          "managerId": "2d6ee9c8-4fb4-4a9d-b3e3-9897a2819efa",
+          "managerId": "5923eb7a-5cbd-4b33-8d2e-f08fe917ca33",
           "parentDepartmentId": null,
           "status": "ACTIVE",
-          "createdAt": "2026-07-12T07:20:46.285Z",
-          "updatedAt": "2026-07-12T07:20:46.290Z",
+          "createdAt": "2026-07-12T07:35:36.369Z",
+          "updatedAt": "2026-07-12T07:35:36.374Z",
           "manager": {
-            "id": "2d6ee9c8-4fb4-4a9d-b3e3-9897a2819efa",
+            "id": "5923eb7a-5cbd-4b33-8d2e-f08fe917ca33",
             "name": "IT Manager",
             "email": "manager@assetflow.local",
             "role": "MANAGER",
@@ -77,7 +77,7 @@
             "childDepartments": 0
           },
           "departmentHead": {
-            "id": "2d6ee9c8-4fb4-4a9d-b3e3-9897a2819efa",
+            "id": "5923eb7a-5cbd-4b33-8d2e-f08fe917ca33",
             "name": "IT Manager",
             "email": "manager@assetflow.local",
             "role": "MANAGER",
@@ -88,14 +88,14 @@
           "childDepartmentCount": 0
         },
         {
-          "id": "b9ec6d6f-9369-4af3-93e5-382d815a7280",
+          "id": "5aad9551-fadc-4d2d-9857-a6450641528a",
           "name": "Operations",
           "code": "OPS",
           "managerId": null,
           "parentDepartmentId": null,
           "status": "ACTIVE",
-          "createdAt": "2026-07-12T07:20:46.285Z",
-          "updatedAt": "2026-07-12T07:20:46.285Z",
+          "createdAt": "2026-07-12T07:35:36.369Z",
+          "updatedAt": "2026-07-12T07:35:36.369Z",
           "manager": null,
           "parentDepartment": null,
           "_count": {
@@ -121,65 +121,65 @@
     "data": {
       "items": [
         {
-          "id": "58a71ef3-d51a-498d-8f70-588ba5fc2067",
+          "id": "0937e22b-8f41-459e-9beb-0bac73ff9433",
           "name": "Furniture",
           "code": "FUR",
           "description": "Office furniture",
           "status": "ACTIVE",
-          "createdAt": "2026-07-12T07:20:46.290Z",
-          "updatedAt": "2026-07-12T07:20:46.290Z",
+          "createdAt": "2026-07-12T07:35:36.374Z",
+          "updatedAt": "2026-07-12T07:35:36.374Z",
           "_count": {
             "assets": 1
           },
           "assetCount": 1
         },
         {
-          "id": "4b7ff8cd-1a1b-44c9-b739-b9e964a497a0",
+          "id": "189cf0ac-d321-44e3-a302-08074a85f17e",
           "name": "Laptop",
           "code": "LAP",
           "description": "Portable computers",
           "status": "ACTIVE",
-          "createdAt": "2026-07-12T07:20:46.290Z",
-          "updatedAt": "2026-07-12T07:20:46.290Z",
+          "createdAt": "2026-07-12T07:35:36.374Z",
+          "updatedAt": "2026-07-12T07:35:36.374Z",
           "_count": {
             "assets": 2
           },
           "assetCount": 2
         },
         {
-          "id": "c906c2a0-1470-4e33-90d4-3c43100a4c53",
+          "id": "bab88778-6481-47fe-b89c-cbed16849127",
           "name": "Monitor",
           "code": "MON",
           "description": "Displays and screens",
           "status": "ACTIVE",
-          "createdAt": "2026-07-12T07:20:46.290Z",
-          "updatedAt": "2026-07-12T07:20:46.290Z",
+          "createdAt": "2026-07-12T07:35:36.374Z",
+          "updatedAt": "2026-07-12T07:35:36.374Z",
           "_count": {
             "assets": 1
           },
           "assetCount": 1
         },
         {
-          "id": "66cf4f55-51a6-4736-899a-eced75580c8c",
+          "id": "5ad9d543-826f-4718-b3ce-592b2d463b28",
           "name": "Projector",
           "code": "PROJ",
           "description": "Bookable presentation devices",
           "status": "ACTIVE",
-          "createdAt": "2026-07-12T07:20:46.290Z",
-          "updatedAt": "2026-07-12T07:20:46.290Z",
+          "createdAt": "2026-07-12T07:35:36.374Z",
+          "updatedAt": "2026-07-12T07:35:36.374Z",
           "_count": {
             "assets": 1
           },
           "assetCount": 1
         },
         {
-          "id": "84062f9d-37c6-4f86-895e-a499252fb832",
+          "id": "6d99ef68-5c94-4da6-9864-1a5a4deac2a3",
           "name": "Vehicle",
           "code": "VEH",
           "description": "Shared organization vehicles",
           "status": "ACTIVE",
-          "createdAt": "2026-07-12T07:20:46.290Z",
-          "updatedAt": "2026-07-12T07:20:46.290Z",
+          "createdAt": "2026-07-12T07:35:36.374Z",
+          "updatedAt": "2026-07-12T07:35:36.374Z",
           "_count": {
             "assets": 1
           },
@@ -198,20 +198,20 @@
     "data": {
       "items": [
         {
-          "id": "b1b4b41a-5475-4dd9-8ff1-364114c388da",
+          "id": "a7f7760a-c009-4fe2-8aa2-7d5a00244c2b",
           "name": "Employee User",
           "email": "employee@assetflow.local",
           "role": "EMPLOYEE",
-          "departmentId": "3e07cfd3-8784-4fee-9b40-bd443bfe39ed",
+          "departmentId": "e268cb4e-16da-46c8-bf57-a084b439069b",
           "status": "ACTIVE",
-          "createdAt": "2026-07-12T07:20:46.289Z",
-          "updatedAt": "2026-07-12T07:20:46.289Z",
+          "createdAt": "2026-07-12T07:35:36.373Z",
+          "updatedAt": "2026-07-12T07:35:36.373Z",
           "department": {
-            "id": "3e07cfd3-8784-4fee-9b40-bd443bfe39ed",
+            "id": "e268cb4e-16da-46c8-bf57-a084b439069b",
             "name": "Information Technology",
             "code": "IT",
             "manager": {
-              "id": "2d6ee9c8-4fb4-4a9d-b3e3-9897a2819efa",
+              "id": "5923eb7a-5cbd-4b33-8d2e-f08fe917ca33",
               "name": "IT Manager",
               "email": "manager@assetflow.local",
               "role": "MANAGER",

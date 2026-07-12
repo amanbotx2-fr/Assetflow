@@ -74,7 +74,7 @@ Health routes are intentionally public and are not mounted under `/api`.
 
 | Endpoint | Purpose | Headers | Authorization | Example Request | Example Response | Validation | Possible Errors | HTTP Codes | Related Tables |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| `GET /dashboard/overview` | Return a single optimized dashboard payload with overview counts, alerts, quick actions, and recent lifecycle activity. | `Authorization` | Any authenticated user, scoped by role. | `?departmentId=dept_1` | `{"overview":{"availableAssets":3,"allocatedAssets":1,"maintenanceAssets":1,"activeBookings":0,"pendingTransfers":1,"upcomingReturns":1,"pendingMaintenance":1,"inProgressMaintenance":1},"alerts":[],"quickActions":[],"recentActivity":[]}` | Optional `departmentId` must be a UUID. Managers can only request their own department; employees cannot use department filtering. | Missing token, invalid department scope. | `200`, `400`, `401`, `403` | `assets`, `allocations`, `transfers`, `bookings`, `maintenance_tickets`, `audit_records` |
+| `GET /dashboard/overview` | Return a single optimized dashboard payload with overview counts, alerts, quick actions, recent lifecycle activity, and notification badge data. | `Authorization` | Any authenticated user, scoped by role. | `?departmentId=dept_1` | `{"overview":{"availableAssets":3,"allocatedAssets":1,"unreadNotifications":4,"notificationBadgeCount":4},"alerts":[],"quickActions":[],"recentActivity":[],"latestActivity":[],"notifications":{"recent":[],"criticalAlerts":[]}}` | Optional `departmentId` must be a UUID. Managers can only request their own department; employees cannot use department filtering. | Missing token, invalid department scope. | `200`, `400`, `401`, `403` | `assets`, `allocations`, `transfers`, `bookings`, `maintenance_tickets`, `audit_records`, `notifications` |
 
 Dashboard response fields:
 
@@ -229,9 +229,12 @@ Maintenance lifecycle uses `REQUESTED -> APPROVED -> ASSIGNED -> IN_PROGRESS -> 
 | `GET /reports/most-used-assets` | Return ranked assets by allocation and booking usage. | `Authorization` | Admin global; Manager department scoped; Employee own data; Auditor read-only. | `?limit=5` | `{"items":[{"assetCode":"LAP-001","usage":{"totalUsage":4}}],"charts":{"mostUsedAssets":{"labels":[],"datasets":[]}}}` | Valid pagination and scope. | Forbidden scope. | `200`, `400`, `401`, `403` | `assets`, `allocations`, `bookings`, `maintenance_tickets` |
 | `GET /reports/near-retirement` | Return assets with retirement risk derived from condition, warranty expiry, and age. | `Authorization` | Admin global; Manager department scoped; Employee own data; Auditor read-only. | `?limit=5` | `{"items":[{"assetCode":"MON-001","riskScore":55,"reasons":["Condition is fair."]}],"charts":{"retirementRisk":{}}}` | Valid pagination and scope. | Forbidden scope. | `200`, `400`, `401`, `403` | `assets`, `categories`, `departments` |
 | `GET /reports/export` | Export any report as JSON or CSV; return a future-ready PDF interface response. | `Authorization` | Admin global; Manager department scoped; Employee own data; Auditor read-only. | `?type=assets&format=csv` | CSV response for `format=csv`; JSON wrapper for `format=json`; `{"format":"pdf","data":{"status":"PDF_INTERFACE_READY"}}` for PDF. | `type` must be a supported report type; `format` must be `json`, `csv`, or `pdf`. | Forbidden scope, invalid type/format. | `200`, `400`, `401`, `403` | Varies by selected report |
-| `GET /notifications` | List current user's notifications. | `Authorization` | Any authenticated user. | `?isRead=false` | `{"items":[{"id":"ntf_1","title":"Transfer approved"}]}` | Valid read filter. | Missing token. | `200`, `400`, `401` | `notifications` |
-| `PATCH /notifications/:id/read` | Mark notification as read. | `Authorization` | Notification owner. | None | `{"id":"ntf_1","isRead":true}` | Notification must belong to current user. | Not found, forbidden. | `200`, `401`, `403`, `404` | `notifications` |
-| `PATCH /notifications/read-all` | Mark all current-user notifications as read. | `Authorization` | Any authenticated user. | None | `{"updated":3}` | Valid JWT required. | Missing token. | `200`, `401` | `notifications` |
+| `GET /notifications` | List notification-center items with filters, pagination, sorting, unread count, and role scope. | `Authorization` | Admin global; Manager department notifications; Employee own notifications; Auditor read-only global. | `?status=unread&type=BOOKING&priority=HIGH&page=1&limit=20&sortBy=createdAt&sortOrder=desc` | `{"items":[{"id":"ntf_1","category":"BOOKING","priority":"HIGH","status":"unread","recipient":{}}],"unreadCount":4}` | Valid status, type/category, priority, search, date range, pagination, and sorting. | Missing token, invalid query. | `200`, `400`, `401` | `notifications`, `users` |
+| `GET /notifications/unread-count` | Return unread count and badge count for the current role scope. | `Authorization` | Admin global; Manager department notifications; Employee own notifications; Auditor read-only global. | None | `{"unreadCount":4,"notificationBadgeCount":4}` | Valid JWT required. | Missing token. | `200`, `401` | `notifications` |
+| `GET /notifications/:id` | Fetch one notification detail if visible to the current role. | `Authorization` | Same read scope as notification list. | None | `{"id":"ntf_1","title":"Transfer approved","status":"unread","recipient":{}}` | Valid notification UUID. | Not found or outside scope. | `200`, `400`, `401`, `404` | `notifications`, `users` |
+| `PATCH /notifications/:id/read` | Mark one visible notification as read without changing any business workflow state. | `Authorization` | Admin global; Manager department notifications; Employee own notifications. Auditor read-only. | None | `{"id":"ntf_1","isRead":true,"readAt":"..."}` | Notification must be visible to actor. | Not found, read-only auditor. | `200`, `400`, `401`, `403`, `404` | `notifications` |
+| `PATCH /notifications/read-all` | Atomically mark all unread notifications in the actor's scope as read. | `Authorization` | Admin global; Manager department notifications; Employee own notifications. Auditor read-only. | None | `{"updated":3}` | Valid JWT required. | Missing token, read-only auditor. | `200`, `401`, `403` | `notifications` |
+| `DELETE /notifications/:id` | Delete the selected notification row from the visible notification center. Since notifications are per-recipient rows, this removes only that user's copy. | `Authorization` | Admin global; Manager department notifications; Employee own notifications. Auditor read-only. | None | `{"id":"ntf_1","title":"Transfer approved"}` | Notification must be visible to actor. | Not found, read-only auditor. | `200`, `400`, `401`, `403`, `404` | `notifications` |
 
 ## Pagination
 
@@ -242,16 +245,17 @@ List endpoints should support:
 | `page` | Page number starting at `1`. |
 | `limit` | Page size. |
 | `search` | Text search where supported. |
-| `status` | Status filter. |
+| `status` | Status filter. On notifications this supports `read`, `unread`, and `all`. |
 | `role` | User role filter on `GET /users`. |
 | `departmentId` | Department filter on users, assets, and reports. |
 | `parentDepartmentId` | Parent department filter on `GET /departments`. |
 | `result` | Audit result filter on `GET /audits`. |
-| `priority` | Maintenance priority filter on `GET /maintenance`. |
+| `priority` | Maintenance priority filter on `GET /maintenance`; notification priority filter on `GET /notifications` using `INFO`, `LOW`, `MEDIUM`, `HIGH`, or `CRITICAL`. |
 | `entityType` and `entityId` | Audit-log entity filters. |
 | `from` and `to` | Date range filter. |
-| `type` | Report type selector on `GET /reports/export`. Supported values include `dashboard`, `assets`, `bookings`, `maintenance`, `audits`, `utilization`, `department-utilization`, `idle-assets`, `most-used-assets`, and `near-retirement`. |
+| `type` | Report type selector on `GET /reports/export`, or notification category/detail type on `GET /notifications`. Notification categories include `BOOKING`, `ALLOCATION`, `TRANSFER`, `MAINTENANCE`, `AUDIT`, `SYSTEM`, `APPROVAL`, and `ASSET`. |
 | `format` | Export format on `GET /reports/export`. Supported values are `json`, `csv`, and `pdf`. |
+| `sortBy` and `sortOrder` | Sorting controls where supported. Notifications support `createdAt`, `updatedAt`, `title`, `type`, and `priority`. |
 
 ## Error Codes
 

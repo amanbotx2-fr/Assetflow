@@ -2,6 +2,7 @@ import { AllocationStatus, AssetStatus, MaintenanceStatus, Prisma, RecordStatus,
 import QRCode from "qrcode";
 import { prisma } from "../config/prisma.js";
 import { createAuditLog } from "../repositories/auditLogRepository.js";
+import { createNotification } from "../repositories/notificationRepository.js";
 import { createAllocation } from "./allocationService.js";
 import { badRequest, conflict, forbidden, notFound } from "../utils/httpError.js";
 import { getPagination, paginated } from "../utils/pagination.js";
@@ -462,6 +463,15 @@ export const createAsset = async (data: Record<string, unknown>, actor: Express.
     metadata: { assetCode: created.assetCode, serialNumber: created.serialNumber }
   });
 
+  await createNotification({
+    userId: actor.id,
+    type: "ASSET_CREATED",
+    title: "Asset created",
+    message: `${created.name} was registered.`,
+    relatedEntityType: "Asset",
+    relatedEntityId: created.id
+  });
+
   return formatAsset(created);
 };
 
@@ -567,6 +577,18 @@ export const deleteAsset = async (id: string, actor: Express.User) => {
       tx
     );
 
+    await createNotification(
+      {
+        userId: actor.id,
+        type: "ASSET_RETIRED",
+        title: "Asset retired",
+        message: `${updated.name} was retired.`,
+        relatedEntityType: "Asset",
+        relatedEntityId: id
+      },
+      tx
+    );
+
     return formatAsset(updated);
   });
 };
@@ -602,6 +624,18 @@ export const retireAsset = async (id: string, reason: string, actor: Express.Use
         entityId: id,
         action: "retired",
         metadata: { reason }
+      },
+      tx
+    );
+
+    await createNotification(
+      {
+        userId: actor.id,
+        type: "ASSET_RETIRED",
+        title: "Asset retired",
+        message: `${asset.name} was retired.`,
+        relatedEntityType: "Asset",
+        relatedEntityId: id
       },
       tx
     );
