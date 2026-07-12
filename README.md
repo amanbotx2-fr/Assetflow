@@ -4,6 +4,8 @@ AssetFlow is a unified Enterprise Asset Lifecycle Management platform that enabl
 
 This repository is currently organized as a backend-first project. The Backend Team owns architecture, database design, API contracts, authentication, authorization, business logic, Prisma, PostgreSQL, deployment, and project documentation.
 
+The system is designed with scalability, security, and maintainability in mind, enabling seamless integration with future frontend applications and external services.
+
 ## Project Overview
 
 AssetFlow replaces disconnected asset tracking processes with a structured backend platform built around:
