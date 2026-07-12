@@ -226,7 +226,7 @@ async function main() {
       requestedById: employee.id,
       startTime: new Date("2026-07-12T12:00:00.000Z"),
       endTime: new Date("2026-07-12T13:00:00.000Z"),
-      status: BookingStatus.PENDING,
+      status: BookingStatus.REQUESTED,
       purpose: "Client visit"
     }
   });

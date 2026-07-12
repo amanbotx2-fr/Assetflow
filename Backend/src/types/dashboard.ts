@@ -7,6 +7,7 @@ export type DashboardOverview = {
   maintenanceAssets: number;
   activeBookings: number;
   pendingBookings: number;
+  upcomingBookings: number;
   pendingTransfers: number;
   upcomingReturns: number;
 };

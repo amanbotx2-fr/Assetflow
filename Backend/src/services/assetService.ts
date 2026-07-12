@@ -2,15 +2,9 @@ import { AllocationStatus, AssetStatus, MaintenanceStatus, Prisma, RecordStatus,
 import QRCode from "qrcode";
 import { prisma } from "../config/prisma.js";
 import { createAuditLog } from "../repositories/auditLogRepository.js";
-import { createNotification } from "../repositories/notificationRepository.js";
+import { createAllocation } from "./allocationService.js";
 import { badRequest, conflict, forbidden, notFound } from "../utils/httpError.js";
 import { getPagination, paginated } from "../utils/pagination.js";
-
-const blockedAllocationStatuses: AssetStatus[] = [
-  AssetStatus.RETIRED,
-  AssetStatus.LOST,
-  AssetStatus.MAINTENANCE
-];
 
 const uuidPattern = /^[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i;
 
@@ -39,7 +33,8 @@ const categorySelect = {
 const currentAllocationInclude = {
   user: { select: userSummarySelect },
   department: { select: referenceSelect },
-  assignedBy: { select: userSummarySelect }
+  assignedBy: { select: userSummarySelect },
+  sourceTransfer: true
 } satisfies Prisma.AllocationInclude;
 
 const maintenanceInclude = {
@@ -77,6 +72,10 @@ const assetInclude = {
 
 const assetDetailInclude = {
   ...assetInclude,
+  allocations: {
+    include: currentAllocationInclude,
+    orderBy: { assignedAt: "desc" }
+  },
   transfers: {
     orderBy: { createdAt: "desc" },
     take: 10,
@@ -127,7 +126,15 @@ const buildAssetQrValue = (asset: { id: string; assetCode: string }) =>
   `assetflow:asset:${asset.id}:${asset.assetCode}`;
 
 const formatAsset = (asset: AssetSummaryPayload | AssetDetailPayload) => {
-  const currentAllocation = asset.allocations[0] ?? null;
+  const allocationHistory = asset.allocations.map((allocation) => ({
+    ...allocation,
+    allocatedBy: allocation.assignedBy,
+    allocatedTo: allocation.user,
+    startDate: allocation.assignedAt,
+    returnDate: allocation.returnedAt,
+    transferSource: allocation.sourceTransfer
+  }));
+  const currentAllocation = allocationHistory.find((allocation) => allocation.status === AllocationStatus.ACTIVE) ?? null;
   const currentMaintenance = asset.maintenanceTickets[0] ?? null;
 
   return {
@@ -135,6 +142,7 @@ const formatAsset = (asset: AssetSummaryPayload | AssetDetailPayload) => {
     assetTag: asset.assetCode,
     qrCode: buildAssetQrValue(asset),
     currentAllocation,
+    allocationHistory,
     maintenanceStatus: currentMaintenance?.status ?? null,
     currentMaintenance,
     lifecycleCounts: asset._count
@@ -237,7 +245,7 @@ const assertAssetReadable = (asset: AssetSummaryPayload | AssetDetailPayload, ac
   if (
     actor.role === Role.EMPLOYEE &&
     !asset.isBookable &&
-    !asset.allocations.some((allocation) => allocation.userId === actor.id)
+    !asset.allocations.some((allocation) => allocation.userId === actor.id && allocation.status === AllocationStatus.ACTIVE)
   ) {
     throw forbidden("Employees can only access assigned or bookable assets.");
   }
@@ -568,73 +576,7 @@ export const allocateAsset = async (
   data: { userId?: string; departmentId?: string; notes?: string },
   actor: Express.User
 ) => {
-  if (!data.userId && !data.departmentId) {
-    throw badRequest("Either userId or departmentId is required.");
-  }
-
-  return prisma.$transaction(async (tx) => {
-    const asset = await tx.asset.findUnique({ where: { id } });
-    if (!asset) throw notFound("Asset not found.");
-
-    if (blockedAllocationStatuses.includes(asset.status)) {
-      throw conflict(`Asset cannot be allocated while status is ${asset.status}.`);
-    }
-
-    if (actor.role === Role.MANAGER && asset.departmentId !== actor.departmentId) {
-      throw forbidden("Managers can only allocate assets in their assigned department.");
-    }
-
-    const activeAllocation = await tx.allocation.findFirst({
-      where: { assetId: id, status: AllocationStatus.ACTIVE }
-    });
-
-    if (activeAllocation) {
-      throw conflict("Asset already has an active allocation.");
-    }
-
-    const allocation = await tx.allocation.create({
-      data: {
-        assetId: id,
-        userId: data.userId,
-        departmentId: data.departmentId,
-        assignedById: actor.id,
-        notes: data.notes
-      }
-    });
-
-    const updatedAsset = await tx.asset.update({
-      where: { id },
-      data: { status: AssetStatus.ALLOCATED, updatedById: actor.id },
-      include: assetInclude
-    });
-
-    await createAuditLog(
-      {
-        actorId: actor.id,
-        entityType: "Asset",
-        entityId: id,
-        action: "allocated",
-        metadata: { allocationId: allocation.id, userId: data.userId, departmentId: data.departmentId }
-      },
-      tx
-    );
-
-    if (data.userId) {
-      await createNotification(
-        {
-          userId: data.userId,
-          type: "ASSET_ALLOCATED",
-          title: "Asset allocated",
-          message: `${updatedAsset.name} has been allocated to you.`,
-          relatedEntityType: "Asset",
-          relatedEntityId: id
-        },
-        tx
-      );
-    }
-
-    return { allocation, asset: formatAsset(updatedAsset) };
-  });
+  return createAllocation({ assetId: id, ...data }, actor);
 };
 
 export const retireAsset = async (id: string, reason: string, actor: Express.User) => {

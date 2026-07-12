@@ -50,8 +50,10 @@ enum TransferStatus {
 }
 
 enum BookingStatus {
+  REQUESTED
   PENDING
   APPROVED
+  ACTIVE
   REJECTED
   CANCELLED
   COMPLETED
@@ -195,26 +197,32 @@ model Asset {
 }
 
 model Allocation {
-  id           String           @id @default(uuid()) @db.Uuid
-  assetId      String           @map("asset_id") @db.Uuid
-  userId       String?          @map("user_id") @db.Uuid
-  departmentId String?          @map("department_id") @db.Uuid
-  assignedById String           @map("assigned_by_id") @db.Uuid
-  status       AllocationStatus @default(ACTIVE)
-  assignedAt   DateTime         @default(now()) @map("assigned_at")
-  returnedAt   DateTime?        @map("returned_at")
-  notes        String?
-  createdAt    DateTime         @default(now()) @map("created_at")
-  updatedAt    DateTime         @updatedAt @map("updated_at")
+  id              String           @id @default(uuid()) @db.Uuid
+  assetId         String           @map("asset_id") @db.Uuid
+  userId          String?          @map("user_id") @db.Uuid
+  departmentId    String?          @map("department_id") @db.Uuid
+  assignedById    String           @map("assigned_by_id") @db.Uuid
+  sourceTransferId String?         @unique @map("source_transfer_id") @db.Uuid
+  status          AllocationStatus @default(ACTIVE)
+  assignedAt      DateTime         @default(now()) @map("assigned_at")
+  returnedAt      DateTime?        @map("returned_at")
+  returnCondition AssetCondition?  @map("return_condition")
+  returnReason    String?          @map("return_reason")
+  notes           String?
+  createdAt       DateTime         @default(now()) @map("created_at")
+  updatedAt       DateTime         @updatedAt @map("updated_at")
 
-  asset      Asset       @relation(fields: [assetId], references: [id])
-  user       User?       @relation("AllocationUser", fields: [userId], references: [id], onDelete: SetNull)
-  department Department? @relation(fields: [departmentId], references: [id], onDelete: SetNull)
-  assignedBy User        @relation("AllocationAssignedBy", fields: [assignedById], references: [id])
+  asset          Asset     @relation(fields: [assetId], references: [id])
+  user           User?     @relation("AllocationUser", fields: [userId], references: [id], onDelete: SetNull)
+  department     Department? @relation(fields: [departmentId], references: [id], onDelete: SetNull)
+  assignedBy     User      @relation("AllocationAssignedBy", fields: [assignedById], references: [id])
+  sourceTransfer Transfer? @relation("TransferSourceAllocation", fields: [sourceTransferId], references: [id], onDelete: SetNull)
 
   @@index([assetId, status])
   @@index([userId, status])
   @@index([departmentId, status])
+  @@index([assignedAt])
+  @@index([returnedAt])
   @@map("allocations")
 }
 
@@ -242,6 +250,7 @@ model Transfer {
   toUser         User?       @relation("TransferToUser", fields: [toUserId], references: [id], onDelete: SetNull)
   fromDepartment Department? @relation("TransferFromDepartment", fields: [fromDepartmentId], references: [id], onDelete: SetNull)
   toDepartment   Department? @relation("TransferToDepartment", fields: [toDepartmentId], references: [id], onDelete: SetNull)
+  createdAllocation Allocation? @relation("TransferSourceAllocation")
 
   @@index([assetId, status])
   @@index([requestedById, status])

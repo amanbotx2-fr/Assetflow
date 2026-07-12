@@ -11,3 +11,4 @@ export const reportRoutes = Router();
 reportRoutes.use(authenticate);
 reportRoutes.get("/summary", requireRoles(Role.ADMIN, Role.MANAGER), validate({ query: paginationQuery }), reportController.summary);
 reportRoutes.get("/assets", requireRoles(Role.ADMIN, Role.MANAGER, Role.AUDITOR), validate({ query: paginationQuery }), reportController.assets);
+reportRoutes.get("/bookings", requireRoles(Role.ADMIN, Role.MANAGER, Role.AUDITOR), validate({ query: paginationQuery }), reportController.bookings);

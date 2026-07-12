@@ -1,10 +1,68 @@
 import {
+  AllocationStatus,
+  AssetCondition,
   AuditResult,
   BookingStatus,
   MaintenancePriority,
-  MaintenanceStatus
+  MaintenanceStatus,
+  TransferStatus
 } from "@prisma/client";
 import { z } from "zod";
+
+const workflowSortOrderSchema = z.enum(["asc", "desc"]).optional();
+
+export const allocationListQuerySchema = z.object({
+  page: z.coerce.number().int().positive().optional(),
+  limit: z.coerce.number().int().positive().max(100).optional(),
+  search: z.string().trim().optional(),
+  userId: z.string().uuid().optional(),
+  employeeId: z.string().uuid().optional(),
+  departmentId: z.string().uuid().optional(),
+  status: z.nativeEnum(AllocationStatus).optional(),
+  assetId: z.string().uuid().optional(),
+  from: z.string().datetime().optional(),
+  to: z.string().datetime().optional(),
+  sortBy: z.enum(["assignedAt", "returnedAt", "createdAt", "updatedAt", "status"]).optional(),
+  sortOrder: workflowSortOrderSchema
+});
+
+export const createAllocationSchema = z
+  .object({
+    assetId: z.string().uuid(),
+    userId: z.string().uuid().optional(),
+    departmentId: z.string().uuid().optional(),
+    notes: z.string().optional()
+  })
+  .refine((data) => Boolean(data.userId || data.departmentId), {
+    message: "Either userId or departmentId is required."
+  });
+
+export const updateAllocationSchema = z.object({
+  userId: z.string().uuid().nullable().optional(),
+  departmentId: z.string().uuid().nullable().optional(),
+  notes: z.string().nullable().optional()
+});
+
+export const returnAllocationSchema = z.object({
+  returnCondition: z.nativeEnum(AssetCondition).default(AssetCondition.GOOD),
+  reason: z.string().min(1),
+  notes: z.string().optional()
+});
+
+export const transferListQuerySchema = z.object({
+  page: z.coerce.number().int().positive().optional(),
+  limit: z.coerce.number().int().positive().max(100).optional(),
+  search: z.string().trim().optional(),
+  userId: z.string().uuid().optional(),
+  employeeId: z.string().uuid().optional(),
+  departmentId: z.string().uuid().optional(),
+  status: z.nativeEnum(TransferStatus).optional(),
+  assetId: z.string().uuid().optional(),
+  from: z.string().datetime().optional(),
+  to: z.string().datetime().optional(),
+  sortBy: z.enum(["requestedAt", "decidedAt", "createdAt", "updatedAt", "status"]).optional(),
+  sortOrder: workflowSortOrderSchema
+});
 
 export const createTransferSchema = z
   .object({
@@ -23,18 +81,63 @@ export const cancelSchema = z.object({
 
 export const createBookingSchema = z
   .object({
-    assetId: z.string().uuid(),
+    assetId: z.string().uuid().optional(),
+    resourceId: z.string().uuid().optional(),
     startTime: z.string().datetime(),
     endTime: z.string().datetime(),
     purpose: z.string().min(1)
   })
   .refine((data) => new Date(data.endTime) > new Date(data.startTime), {
     message: "endTime must be after startTime."
+  })
+  .refine((data) => Boolean(data.assetId || data.resourceId), {
+    message: "resourceId or assetId is required."
   });
 
-export const updateBookingStatusSchema = z.object({
-  status: z.nativeEnum(BookingStatus),
-  decisionNotes: z.string().optional()
+export const bookingListQuerySchema = z.object({
+  page: z.coerce.number().int().positive().optional(),
+  limit: z.coerce.number().int().positive().max(100).optional(),
+  search: z.string().trim().optional(),
+  resourceId: z.string().uuid().optional(),
+  assetId: z.string().uuid().optional(),
+  requestedById: z.string().uuid().optional(),
+  departmentId: z.string().uuid().optional(),
+  status: z.nativeEnum(BookingStatus).optional(),
+  from: z.string().datetime().optional(),
+  to: z.string().datetime().optional(),
+  sortBy: z.enum(["startTime", "endTime", "createdAt", "updatedAt", "status"]).optional(),
+  sortOrder: workflowSortOrderSchema
+});
+
+export const updateBookingSchema = z
+  .object({
+    assetId: z.string().uuid().optional(),
+    resourceId: z.string().uuid().optional(),
+    startTime: z.string().datetime().optional(),
+    endTime: z.string().datetime().optional(),
+    purpose: z.string().min(1).optional(),
+    status: z.nativeEnum(BookingStatus).optional(),
+    decisionNotes: z.string().nullable().optional()
+  })
+  .refine((data) => !(data.startTime && data.endTime) || new Date(data.endTime) > new Date(data.startTime), {
+    message: "endTime must be after startTime."
+  });
+
+export const bookingCalendarQuerySchema = z
+  .object({
+    resourceId: z.string().uuid().optional(),
+    assetId: z.string().uuid().optional(),
+    date: z.string().date().optional(),
+    week: z.string().regex(/^\d{4}-W\d{2}$/).optional(),
+    month: z.string().regex(/^\d{4}-\d{2}$/).optional()
+  })
+  .refine((data) => Boolean(data.date || data.week || data.month), {
+    message: "date, week, or month is required."
+  });
+
+export const bookingAvailabilityQuerySchema = z.object({
+  resourceId: z.string().uuid(),
+  date: z.string().date()
 });
 
 export const createMaintenanceSchema = z.object({

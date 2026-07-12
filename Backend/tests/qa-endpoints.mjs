@@ -244,7 +244,7 @@ const run = async () => {
     token: state.adminToken,
     expected: [201],
     name: "Admin can request transfer",
-    body: { assetId: state.assetId, toDepartmentId: state.departmentId, reason: "QA transfer" }
+    body: { assetId: state.assetId, toUserId: state.managerId, reason: "QA transfer" }
   });
   state.transferId = transfer.json?.data?.id;
 
@@ -256,8 +256,8 @@ const run = async () => {
 
   await request("GET", "/api/transfers", {
     token: state.auditorToken,
-    expected: [403],
-    name: "Auditor cannot list transfers"
+    expected: [200],
+    name: "Auditor can list transfers read-only"
   });
 
   await request("GET", `/api/transfers/${state.transferId}`, {
@@ -290,7 +290,7 @@ const run = async () => {
     token: state.adminToken,
     expected: [201],
     name: "Admin can create cancellable transfer",
-    body: { assetId: state.assetId, toUserId: state.employeeId, reason: "QA cancellation path" }
+    body: { assetId: state.assetId, toDepartmentId: state.departmentId, reason: "QA cancellation path" }
   });
   state.pendingTransferId = pendingTransfer.json?.data?.id;
 

@@ -1,0 +1,553 @@
+{
+  "allocations": {
+    "success": true,
+    "data": {
+      "items": [
+        {
+          "id": "2627f0cc-e8c3-4727-9e64-29273303d379",
+          "assetId": "d159601c-481d-4389-a194-3981a5bc55b3",
+          "userId": "b0cc5ce7-bc5a-48dd-912d-add20d392965",
+          "departmentId": null,
+          "assignedById": "caedb14d-b6d1-4f1d-9318-1335439e0532",
+          "sourceTransferId": null,
+          "status": "ACTIVE",
+          "assignedAt": "2026-07-12T06:28:51.450Z",
+          "returnedAt": null,
+          "returnCondition": null,
+          "returnReason": null,
+          "notes": "Seed allocation for demo.",
+          "createdAt": "2026-07-12T06:28:51.450Z",
+          "updatedAt": "2026-07-12T06:28:51.450Z",
+          "asset": {
+            "id": "d159601c-481d-4389-a194-3981a5bc55b3",
+            "assetCode": "LAP-001",
+            "serialNumber": "SN-LAP-001",
+            "name": "Dell Latitude 5440",
+            "status": "ALLOCATED",
+            "condition": "GOOD",
+            "departmentId": "40d095f8-fd68-4bb9-8722-c8bd033b2033",
+            "location": "IT Floor - Desk 12",
+            "category": {
+              "id": "9a075fe5-310e-4197-9777-f92e27b79c19",
+              "name": "Laptop",
+              "code": "LAP",
+              "status": "ACTIVE"
+            },
+            "department": {
+              "id": "40d095f8-fd68-4bb9-8722-c8bd033b2033",
+              "name": "Information Technology",
+              "code": "IT",
+              "status": "ACTIVE"
+            },
+            "assetTag": "LAP-001"
+          },
+          "user": {
+            "id": "b0cc5ce7-bc5a-48dd-912d-add20d392965",
+            "name": "Employee User",
+            "email": "employee@assetflow.local",
+            "role": "EMPLOYEE",
+            "departmentId": "40d095f8-fd68-4bb9-8722-c8bd033b2033",
+            "status": "ACTIVE"
+          },
+          "department": null,
+          "assignedBy": {
+            "id": "caedb14d-b6d1-4f1d-9318-1335439e0532",
+            "name": "IT Manager",
+            "email": "manager@assetflow.local",
+            "role": "MANAGER",
+            "departmentId": "40d095f8-fd68-4bb9-8722-c8bd033b2033",
+            "status": "ACTIVE"
+          },
+          "sourceTransfer": null,
+          "allocatedBy": {
+            "id": "caedb14d-b6d1-4f1d-9318-1335439e0532",
+            "name": "IT Manager",
+            "email": "manager@assetflow.local",
+            "role": "MANAGER",
+            "departmentId": "40d095f8-fd68-4bb9-8722-c8bd033b2033",
+            "status": "ACTIVE"
+          },
+          "allocatedTo": {
+            "id": "b0cc5ce7-bc5a-48dd-912d-add20d392965",
+            "name": "Employee User",
+            "email": "employee@assetflow.local",
+            "role": "EMPLOYEE",
+            "departmentId": "40d095f8-fd68-4bb9-8722-c8bd033b2033",
+            "status": "ACTIVE"
+          },
+          "startDate": "2026-07-12T06:28:51.450Z",
+          "returnDate": null,
+          "transferSource": null
+        }
+      ],
+      "page": 1,
+      "limit": 5,
+      "total": 1,
+      "totalPages": 1
+    },
+    "message": "Operation completed successfully."
+  },
+  "allocationDetail": {
+    "success": true,
+    "data": {
+      "id": "2627f0cc-e8c3-4727-9e64-29273303d379",
+      "assetId": "d159601c-481d-4389-a194-3981a5bc55b3",
+      "userId": "b0cc5ce7-bc5a-48dd-912d-add20d392965",
+      "departmentId": null,
+      "assignedById": "caedb14d-b6d1-4f1d-9318-1335439e0532",
+      "sourceTransferId": null,
+      "status": "ACTIVE",
+      "assignedAt": "2026-07-12T06:28:51.450Z",
+      "returnedAt": null,
+      "returnCondition": null,
+      "returnReason": null,
+      "notes": "Seed allocation for demo.",
+      "createdAt": "2026-07-12T06:28:51.450Z",
+      "updatedAt": "2026-07-12T06:28:51.450Z",
+      "asset": {
+        "id": "d159601c-481d-4389-a194-3981a5bc55b3",
+        "assetCode": "LAP-001",
+        "serialNumber": "SN-LAP-001",
+        "name": "Dell Latitude 5440",
+        "status": "ALLOCATED",
+        "condition": "GOOD",
+        "departmentId": "40d095f8-fd68-4bb9-8722-c8bd033b2033",
+        "location": "IT Floor - Desk 12",
+        "category": {
+          "id": "9a075fe5-310e-4197-9777-f92e27b79c19",
+          "name": "Laptop",
+          "code": "LAP",
+          "status": "ACTIVE"
+        },
+        "department": {
+          "id": "40d095f8-fd68-4bb9-8722-c8bd033b2033",
+          "name": "Information Technology",
+          "code": "IT",
+          "status": "ACTIVE"
+        },
+        "assetTag": "LAP-001"
+      },
+      "user": {
+        "id": "b0cc5ce7-bc5a-48dd-912d-add20d392965",
+        "name": "Employee User",
+        "email": "employee@assetflow.local",
+        "role": "EMPLOYEE",
+        "departmentId": "40d095f8-fd68-4bb9-8722-c8bd033b2033",
+        "status": "ACTIVE"
+      },
+      "department": null,
+      "assignedBy": {
+        "id": "caedb14d-b6d1-4f1d-9318-1335439e0532",
+        "name": "IT Manager",
+        "email": "manager@assetflow.local",
+        "role": "MANAGER",
+        "departmentId": "40d095f8-fd68-4bb9-8722-c8bd033b2033",
+        "status": "ACTIVE"
+      },
+      "sourceTransfer": null,
+      "allocatedBy": {
+        "id": "caedb14d-b6d1-4f1d-9318-1335439e0532",
+        "name": "IT Manager",
+        "email": "manager@assetflow.local",
+        "role": "MANAGER",
+        "departmentId": "40d095f8-fd68-4bb9-8722-c8bd033b2033",
+        "status": "ACTIVE"
+      },
+      "allocatedTo": {
+        "id": "b0cc5ce7-bc5a-48dd-912d-add20d392965",
+        "name": "Employee User",
+        "email": "employee@assetflow.local",
+        "role": "EMPLOYEE",
+        "departmentId": "40d095f8-fd68-4bb9-8722-c8bd033b2033",
+        "status": "ACTIVE"
+      },
+      "startDate": "2026-07-12T06:28:51.450Z",
+      "returnDate": null,
+      "transferSource": null
+    },
+    "message": "Operation completed successfully."
+  },
+  "transfers": {
+    "success": true,
+    "data": {
+      "items": [
+        {
+          "id": "d1e3f1c2-b5bd-4b20-8a2f-1cf63343e350",
+          "assetId": "d159601c-481d-4389-a194-3981a5bc55b3",
+          "requestedById": "b0cc5ce7-bc5a-48dd-912d-add20d392965",
+          "approvedById": null,
+          "fromUserId": "b0cc5ce7-bc5a-48dd-912d-add20d392965",
+          "toUserId": null,
+          "fromDepartmentId": null,
+          "toDepartmentId": "0af62a12-32fb-47f3-83bf-9cd366573ef7",
+          "status": "PENDING",
+          "reason": "Finance team needs this laptop for month-end work.",
+          "decisionNotes": null,
+          "requestedAt": "2026-07-12T06:28:51.451Z",
+          "decidedAt": null,
+          "createdAt": "2026-07-12T06:28:51.451Z",
+          "updatedAt": "2026-07-12T06:28:51.451Z",
+          "asset": {
+            "id": "d159601c-481d-4389-a194-3981a5bc55b3",
+            "assetCode": "LAP-001",
+            "serialNumber": "SN-LAP-001",
+            "name": "Dell Latitude 5440",
+            "status": "ALLOCATED",
+            "departmentId": "40d095f8-fd68-4bb9-8722-c8bd033b2033",
+            "department": {
+              "id": "40d095f8-fd68-4bb9-8722-c8bd033b2033",
+              "name": "Information Technology",
+              "code": "IT",
+              "status": "ACTIVE"
+            },
+            "assetTag": "LAP-001"
+          },
+          "requestedBy": {
+            "id": "b0cc5ce7-bc5a-48dd-912d-add20d392965",
+            "name": "Employee User",
+            "email": "employee@assetflow.local",
+            "role": "EMPLOYEE",
+            "departmentId": "40d095f8-fd68-4bb9-8722-c8bd033b2033",
+            "status": "ACTIVE"
+          },
+          "approvedBy": null,
+          "fromUser": {
+            "id": "b0cc5ce7-bc5a-48dd-912d-add20d392965",
+            "name": "Employee User",
+            "email": "employee@assetflow.local",
+            "role": "EMPLOYEE",
+            "departmentId": "40d095f8-fd68-4bb9-8722-c8bd033b2033",
+            "status": "ACTIVE"
+          },
+          "toUser": null,
+          "fromDepartment": null,
+          "toDepartment": {
+            "id": "0af62a12-32fb-47f3-83bf-9cd366573ef7",
+            "name": "Finance",
+            "code": "FIN",
+            "status": "ACTIVE"
+          },
+          "createdAllocation": null
+        }
+      ],
+      "page": 1,
+      "limit": 5,
+      "total": 1,
+      "totalPages": 1
+    },
+    "message": "Operation completed successfully."
+  },
+  "transferDetail": {
+    "success": true,
+    "data": {
+      "id": "d1e3f1c2-b5bd-4b20-8a2f-1cf63343e350",
+      "assetId": "d159601c-481d-4389-a194-3981a5bc55b3",
+      "requestedById": "b0cc5ce7-bc5a-48dd-912d-add20d392965",
+      "approvedById": null,
+      "fromUserId": "b0cc5ce7-bc5a-48dd-912d-add20d392965",
+      "toUserId": null,
+      "fromDepartmentId": null,
+      "toDepartmentId": "0af62a12-32fb-47f3-83bf-9cd366573ef7",
+      "status": "PENDING",
+      "reason": "Finance team needs this laptop for month-end work.",
+      "decisionNotes": null,
+      "requestedAt": "2026-07-12T06:28:51.451Z",
+      "decidedAt": null,
+      "createdAt": "2026-07-12T06:28:51.451Z",
+      "updatedAt": "2026-07-12T06:28:51.451Z",
+      "asset": {
+        "id": "d159601c-481d-4389-a194-3981a5bc55b3",
+        "assetCode": "LAP-001",
+        "serialNumber": "SN-LAP-001",
+        "name": "Dell Latitude 5440",
+        "status": "ALLOCATED",
+        "departmentId": "40d095f8-fd68-4bb9-8722-c8bd033b2033",
+        "department": {
+          "id": "40d095f8-fd68-4bb9-8722-c8bd033b2033",
+          "name": "Information Technology",
+          "code": "IT",
+          "status": "ACTIVE"
+        },
+        "assetTag": "LAP-001"
+      },
+      "requestedBy": {
+        "id": "b0cc5ce7-bc5a-48dd-912d-add20d392965",
+        "name": "Employee User",
+        "email": "employee@assetflow.local",
+        "role": "EMPLOYEE",
+        "departmentId": "40d095f8-fd68-4bb9-8722-c8bd033b2033",
+        "status": "ACTIVE"
+      },
+      "approvedBy": null,
+      "fromUser": {
+        "id": "b0cc5ce7-bc5a-48dd-912d-add20d392965",
+        "name": "Employee User",
+        "email": "employee@assetflow.local",
+        "role": "EMPLOYEE",
+        "departmentId": "40d095f8-fd68-4bb9-8722-c8bd033b2033",
+        "status": "ACTIVE"
+      },
+      "toUser": null,
+      "fromDepartment": null,
+      "toDepartment": {
+        "id": "0af62a12-32fb-47f3-83bf-9cd366573ef7",
+        "name": "Finance",
+        "code": "FIN",
+        "status": "ACTIVE"
+      },
+      "createdAllocation": null
+    },
+    "message": "Operation completed successfully."
+  },
+  "assetAllocationHistory": {
+    "success": true,
+    "data": {
+      "id": "d159601c-481d-4389-a194-3981a5bc55b3",
+      "assetCode": "LAP-001",
+      "serialNumber": "SN-LAP-001",
+      "name": "Dell Latitude 5440",
+      "description": null,
+      "categoryId": "9a075fe5-310e-4197-9777-f92e27b79c19",
+      "departmentId": "40d095f8-fd68-4bb9-8722-c8bd033b2033",
+      "createdById": "6e4095e9-32ed-4faf-a95f-d6c02810ba55",
+      "updatedById": "6e4095e9-32ed-4faf-a95f-d6c02810ba55",
+      "status": "ALLOCATED",
+      "condition": "GOOD",
+      "location": "IT Floor - Desk 12",
+      "purchaseValue": "95000",
+      "purchaseDate": "2025-04-10T00:00:00.000Z",
+      "warrantyExpiry": null,
+      "isBookable": false,
+      "createdAt": "2026-07-12T06:28:51.448Z",
+      "updatedAt": "2026-07-12T06:28:51.448Z",
+      "category": {
+        "id": "9a075fe5-310e-4197-9777-f92e27b79c19",
+        "name": "Laptop",
+        "code": "LAP",
+        "description": "Portable computers",
+        "status": "ACTIVE"
+      },
+      "department": {
+        "id": "40d095f8-fd68-4bb9-8722-c8bd033b2033",
+        "name": "Information Technology",
+        "code": "IT",
+        "status": "ACTIVE"
+      },
+      "createdBy": {
+        "id": "6e4095e9-32ed-4faf-a95f-d6c02810ba55",
+        "name": "Admin User",
+        "email": "admin@assetflow.local",
+        "role": "ADMIN"
+      },
+      "updatedBy": {
+        "id": "6e4095e9-32ed-4faf-a95f-d6c02810ba55",
+        "name": "Admin User",
+        "email": "admin@assetflow.local",
+        "role": "ADMIN"
+      },
+      "allocations": [
+        {
+          "id": "2627f0cc-e8c3-4727-9e64-29273303d379",
+          "assetId": "d159601c-481d-4389-a194-3981a5bc55b3",
+          "userId": "b0cc5ce7-bc5a-48dd-912d-add20d392965",
+          "departmentId": null,
+          "assignedById": "caedb14d-b6d1-4f1d-9318-1335439e0532",
+          "sourceTransferId": null,
+          "status": "ACTIVE",
+          "assignedAt": "2026-07-12T06:28:51.450Z",
+          "returnedAt": null,
+          "returnCondition": null,
+          "returnReason": null,
+          "notes": "Seed allocation for demo.",
+          "createdAt": "2026-07-12T06:28:51.450Z",
+          "updatedAt": "2026-07-12T06:28:51.450Z",
+          "user": {
+            "id": "b0cc5ce7-bc5a-48dd-912d-add20d392965",
+            "name": "Employee User",
+            "email": "employee@assetflow.local",
+            "role": "EMPLOYEE"
+          },
+          "department": null,
+          "assignedBy": {
+            "id": "caedb14d-b6d1-4f1d-9318-1335439e0532",
+            "name": "IT Manager",
+            "email": "manager@assetflow.local",
+            "role": "MANAGER"
+          },
+          "sourceTransfer": null
+        }
+      ],
+      "maintenanceTickets": [],
+      "_count": {
+        "allocations": 1,
+        "transfers": 1,
+        "bookings": 0,
+        "maintenanceTickets": 0,
+        "auditRecords": 1
+      },
+      "transfers": [
+        {
+          "id": "d1e3f1c2-b5bd-4b20-8a2f-1cf63343e350",
+          "assetId": "d159601c-481d-4389-a194-3981a5bc55b3",
+          "requestedById": "b0cc5ce7-bc5a-48dd-912d-add20d392965",
+          "approvedById": null,
+          "fromUserId": "b0cc5ce7-bc5a-48dd-912d-add20d392965",
+          "toUserId": null,
+          "fromDepartmentId": null,
+          "toDepartmentId": "0af62a12-32fb-47f3-83bf-9cd366573ef7",
+          "status": "PENDING",
+          "reason": "Finance team needs this laptop for month-end work.",
+          "decisionNotes": null,
+          "requestedAt": "2026-07-12T06:28:51.451Z",
+          "decidedAt": null,
+          "createdAt": "2026-07-12T06:28:51.451Z",
+          "updatedAt": "2026-07-12T06:28:51.451Z",
+          "requestedBy": {
+            "id": "b0cc5ce7-bc5a-48dd-912d-add20d392965",
+            "name": "Employee User",
+            "email": "employee@assetflow.local",
+            "role": "EMPLOYEE"
+          },
+          "approvedBy": null,
+          "fromUser": {
+            "id": "b0cc5ce7-bc5a-48dd-912d-add20d392965",
+            "name": "Employee User",
+            "email": "employee@assetflow.local",
+            "role": "EMPLOYEE"
+          },
+          "toUser": null,
+          "fromDepartment": null,
+          "toDepartment": {
+            "id": "0af62a12-32fb-47f3-83bf-9cd366573ef7",
+            "name": "Finance",
+            "code": "FIN",
+            "status": "ACTIVE"
+          }
+        }
+      ],
+      "bookings": [],
+      "auditRecords": [
+        {
+          "id": "c4643340-6316-4f6b-b8eb-ce3d61d76199",
+          "assetId": "d159601c-481d-4389-a194-3981a5bc55b3",
+          "auditorId": "ed98c9ca-8992-45e1-ae67-cb59f6fa42fb",
+          "result": "VERIFIED",
+          "remarks": "Asset found with assigned employee.",
+          "auditedAt": "2026-07-12T06:28:51.453Z",
+          "createdAt": "2026-07-12T06:28:51.453Z",
+          "updatedAt": "2026-07-12T06:28:51.453Z",
+          "auditor": {
+            "id": "ed98c9ca-8992-45e1-ae67-cb59f6fa42fb",
+            "name": "Audit User",
+            "email": "auditor@assetflow.local",
+            "role": "AUDITOR"
+          }
+        }
+      ],
+      "assetTag": "LAP-001",
+      "qrCode": "assetflow:asset:d159601c-481d-4389-a194-3981a5bc55b3:LAP-001",
+      "currentAllocation": {
+        "id": "2627f0cc-e8c3-4727-9e64-29273303d379",
+        "assetId": "d159601c-481d-4389-a194-3981a5bc55b3",
+        "userId": "b0cc5ce7-bc5a-48dd-912d-add20d392965",
+        "departmentId": null,
+        "assignedById": "caedb14d-b6d1-4f1d-9318-1335439e0532",
+        "sourceTransferId": null,
+        "status": "ACTIVE",
+        "assignedAt": "2026-07-12T06:28:51.450Z",
+        "returnedAt": null,
+        "returnCondition": null,
+        "returnReason": null,
+        "notes": "Seed allocation for demo.",
+        "createdAt": "2026-07-12T06:28:51.450Z",
+        "updatedAt": "2026-07-12T06:28:51.450Z",
+        "user": {
+          "id": "b0cc5ce7-bc5a-48dd-912d-add20d392965",
+          "name": "Employee User",
+          "email": "employee@assetflow.local",
+          "role": "EMPLOYEE"
+        },
+        "department": null,
+        "assignedBy": {
+          "id": "caedb14d-b6d1-4f1d-9318-1335439e0532",
+          "name": "IT Manager",
+          "email": "manager@assetflow.local",
+          "role": "MANAGER"
+        },
+        "sourceTransfer": null,
+        "allocatedBy": {
+          "id": "caedb14d-b6d1-4f1d-9318-1335439e0532",
+          "name": "IT Manager",
+          "email": "manager@assetflow.local",
+          "role": "MANAGER"
+        },
+        "allocatedTo": {
+          "id": "b0cc5ce7-bc5a-48dd-912d-add20d392965",
+          "name": "Employee User",
+          "email": "employee@assetflow.local",
+          "role": "EMPLOYEE"
+        },
+        "startDate": "2026-07-12T06:28:51.450Z",
+        "returnDate": null,
+        "transferSource": null
+      },
+      "allocationHistory": [
+        {
+          "id": "2627f0cc-e8c3-4727-9e64-29273303d379",
+          "assetId": "d159601c-481d-4389-a194-3981a5bc55b3",
+          "userId": "b0cc5ce7-bc5a-48dd-912d-add20d392965",
+          "departmentId": null,
+          "assignedById": "caedb14d-b6d1-4f1d-9318-1335439e0532",
+          "sourceTransferId": null,
+          "status": "ACTIVE",
+          "assignedAt": "2026-07-12T06:28:51.450Z",
+          "returnedAt": null,
+          "returnCondition": null,
+          "returnReason": null,
+          "notes": "Seed allocation for demo.",
+          "createdAt": "2026-07-12T06:28:51.450Z",
+          "updatedAt": "2026-07-12T06:28:51.450Z",
+          "user": {
+            "id": "b0cc5ce7-bc5a-48dd-912d-add20d392965",
+            "name": "Employee User",
+            "email": "employee@assetflow.local",
+            "role": "EMPLOYEE"
+          },
+          "department": null,
+          "assignedBy": {
+            "id": "caedb14d-b6d1-4f1d-9318-1335439e0532",
+            "name": "IT Manager",
+            "email": "manager@assetflow.local",
+            "role": "MANAGER"
+          },
+          "sourceTransfer": null,
+          "allocatedBy": {
+            "id": "caedb14d-b6d1-4f1d-9318-1335439e0532",
+            "name": "IT Manager",
+            "email": "manager@assetflow.local",
+            "role": "MANAGER"
+          },
+          "allocatedTo": {
+            "id": "b0cc5ce7-bc5a-48dd-912d-add20d392965",
+            "name": "Employee User",
+            "email": "employee@assetflow.local",
+            "role": "EMPLOYEE"
+          },
+          "startDate": "2026-07-12T06:28:51.450Z",
+          "returnDate": null,
+          "transferSource": null
+        }
+      ],
+      "maintenanceStatus": null,
+      "currentMaintenance": null,
+      "lifecycleCounts": {
+        "allocations": 1,
+        "transfers": 1,
+        "bookings": 0,
+        "maintenanceTickets": 0,
+        "auditRecords": 1
+      }
+    },
+    "message": "Operation completed successfully."
+  }
+}

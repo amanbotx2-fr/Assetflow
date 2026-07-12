@@ -35,6 +35,9 @@ const auditWarningResults = [
   AuditResult.NEEDS_REVIEW
 ];
 
+const requestedBookingStatuses = [BookingStatus.REQUESTED, BookingStatus.PENDING];
+const activeBookingStatuses = [BookingStatus.APPROVED, BookingStatus.ACTIVE];
+
 const getScopedDepartmentId = (actor: Express.User, requestedDepartmentId?: string) => {
   if (actor.role === Role.MANAGER) {
     if (requestedDepartmentId && requestedDepartmentId !== actor.departmentId) {
@@ -316,6 +319,7 @@ export const getDashboardOverview = async (
     maintenanceAssets,
     activeBookings,
     pendingBookings,
+    upcomingBookings,
     pendingTransfers,
     upcomingReturns,
     overdueReturns,
@@ -332,12 +336,13 @@ export const getDashboardOverview = async (
     prisma.asset.count({ where: { ...assetWhere, status: AssetStatus.ALLOCATED } }),
     prisma.asset.count({ where: { ...assetWhere, status: AssetStatus.MAINTENANCE } }),
     prisma.booking.count({
-      where: { ...bookingWhere, status: BookingStatus.APPROVED, startTime: { lte: now }, endTime: { gte: now } }
+      where: { ...bookingWhere, status: { in: activeBookingStatuses }, startTime: { lte: now }, endTime: { gte: now } }
     }),
-    prisma.booking.count({ where: { ...bookingWhere, status: BookingStatus.PENDING } }),
+    prisma.booking.count({ where: { ...bookingWhere, status: { in: requestedBookingStatuses } } }),
+    prisma.booking.count({ where: { ...bookingWhere, status: { in: activeBookingStatuses }, startTime: { gt: now } } }),
     prisma.transfer.count({ where: { ...transferWhere, status: TransferStatus.PENDING } }),
-    prisma.booking.count({ where: { ...bookingWhere, status: BookingStatus.APPROVED, endTime: { gte: now } } }),
-    prisma.booking.count({ where: { ...bookingWhere, status: BookingStatus.APPROVED, endTime: { lt: now } } }),
+    prisma.booking.count({ where: { ...bookingWhere, status: { in: activeBookingStatuses }, endTime: { gte: now } } }),
+    prisma.booking.count({ where: { ...bookingWhere, status: { in: activeBookingStatuses }, endTime: { lt: now } } }),
     prisma.maintenanceTicket.count({
       where: { ...maintenanceWhere, status: { in: waitingMaintenanceStatuses } }
     }),
@@ -428,6 +433,7 @@ export const getDashboardOverview = async (
       maintenanceAssets,
       activeBookings,
       pendingBookings,
+      upcomingBookings,
       pendingTransfers,
       upcomingReturns
     },
