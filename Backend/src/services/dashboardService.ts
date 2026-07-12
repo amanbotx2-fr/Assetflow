@@ -2,6 +2,7 @@ import {
   AllocationStatus,
   AssetStatus,
   AuditResult,
+  AuditStatus,
   BookingStatus,
   MaintenancePriority,
   MaintenanceStatus,
@@ -112,13 +113,22 @@ const buildMaintenanceWhere = (actor: Express.User, departmentId?: string) => {
   return { asset: { departmentId } };
 };
 
-const buildAuditWhere = (actor: Express.User, departmentId?: string) => {
+const buildAuditRecordWhere = (actor: Express.User, departmentId?: string) => {
   if (actor.role === Role.EMPLOYEE) {
     return { asset: { allocations: { some: { userId: actor.id, status: AllocationStatus.ACTIVE } } } };
   }
 
   if (!departmentId) return {};
   return { asset: { departmentId } };
+};
+
+const buildAuditWhere = (actor: Express.User, departmentId?: string) => {
+  if (actor.role === Role.EMPLOYEE) {
+    return { records: { some: { asset: { allocations: { some: { userId: actor.id, status: AllocationStatus.ACTIVE } } } } } };
+  }
+
+  if (!departmentId) return {};
+  return { OR: [{ departmentId }, { records: { some: { asset: { departmentId } } } }] };
 };
 
 const alert = (
@@ -322,6 +332,7 @@ export const getDashboardOverview = async (
   const transferWhere = buildTransferWhere(actor, departmentId);
   const bookingWhere = buildBookingWhere(actor, departmentId);
   const maintenanceWhere = buildMaintenanceWhere(actor, departmentId);
+  const auditRecordWhere = buildAuditRecordWhere(actor, departmentId);
   const auditWhere = buildAuditWhere(actor, departmentId);
 
   const [
@@ -343,10 +354,16 @@ export const getDashboardOverview = async (
     resolvedTodayMaintenance,
     criticalMaintenance,
     auditWarnings,
+    activeAudits,
+    auditsCompleted,
+    assetsVerified,
+    pendingVerification,
+    discrepanciesFound,
     allocations,
     transfers,
     bookings,
-    maintenanceTickets
+    maintenanceTickets,
+    audits
   ] = await Promise.all([
     prisma.asset.count({ where: assetWhere }),
     prisma.asset.count({ where: { ...assetWhere, status: AssetStatus.AVAILABLE } }),
@@ -383,7 +400,19 @@ export const getDashboardOverview = async (
         status: { in: openMaintenanceStatuses }
       }
     }),
-    prisma.auditRecord.count({ where: { ...auditWhere, result: { in: auditWarningResults } } }),
+    prisma.auditRecord.count({ where: { ...auditRecordWhere, result: { in: auditWarningResults } } }),
+    prisma.audit.count({ where: { ...auditWhere, status: { in: [AuditStatus.ACTIVE, AuditStatus.IN_PROGRESS] } } }),
+    prisma.audit.count({ where: { ...auditWhere, status: { in: [AuditStatus.COMPLETED, AuditStatus.CLOSED] } } }),
+    prisma.auditRecord.count({ where: { ...auditRecordWhere, result: { not: null } } }),
+    prisma.auditRecord.count({
+      where: {
+        AND: [
+          auditRecordWhere,
+          { result: null, audit: { status: { in: [AuditStatus.ACTIVE, AuditStatus.IN_PROGRESS] } } }
+        ]
+      }
+    }),
+    prisma.auditDiscrepancy.count({ where: { audit: auditWhere } }),
     prisma.allocation.findMany({
       where: allocationWhere,
       include: { asset: { select: assetSelect }, user: { select: userSelect }, department: true, assignedBy: { select: userSelect } },
@@ -405,6 +434,12 @@ export const getDashboardOverview = async (
     prisma.maintenanceTicket.findMany({
       where: maintenanceWhere,
       include: { asset: { select: assetSelect }, reportedBy: { select: userSelect } },
+      orderBy: { createdAt: "desc" },
+      take: 5
+    }),
+    prisma.audit.findMany({
+      where: auditWhere,
+      include: { createdBy: { select: userSelect } },
       orderBy: { createdAt: "desc" },
       take: 5
     })
@@ -450,6 +485,20 @@ export const getDashboardOverview = async (
       timestamp: ticket.createdAt,
       asset: ticket.asset,
       actor: ticket.reportedBy
+    })),
+    ...audits.map((audit) => ({
+      id: `audit:${audit.id}`,
+      type: "AUDIT" as const,
+      title: "Audit created",
+      description: `${audit.createdBy.name} created ${audit.title}.`,
+      status: audit.status,
+      timestamp: audit.createdAt,
+      asset: {
+        id: audit.id,
+        assetCode: "AUDIT",
+        name: audit.title
+      },
+      actor: audit.createdBy
     }))
   ]
     .sort((first, second) => second.timestamp.getTime() - first.timestamp.getTime())
@@ -471,7 +520,12 @@ export const getDashboardOverview = async (
       assignedMaintenance,
       inProgressMaintenance,
       resolvedTodayMaintenance,
-      upcomingMaintenance: approvedMaintenance + assignedMaintenance
+      upcomingMaintenance: approvedMaintenance + assignedMaintenance,
+      activeAudits,
+      auditsCompleted,
+      assetsVerified,
+      pendingVerification,
+      discrepanciesFound
     },
     alerts: buildAlerts({
       overdueReturns,
@@ -479,7 +533,7 @@ export const getDashboardOverview = async (
       pendingBookings,
       maintenanceWaiting,
       criticalMaintenance,
-      auditWarnings
+      auditWarnings: auditWarnings + discrepanciesFound
     }),
     quickActions: quickActionsByRole(actor.role),
     recentActivity

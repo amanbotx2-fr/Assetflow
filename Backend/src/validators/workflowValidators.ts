@@ -2,6 +2,7 @@ import {
   AllocationStatus,
   AssetCondition,
   AuditResult,
+  AuditStatus,
   BookingStatus,
   MaintenancePriority,
   MaintenanceStatus,
@@ -200,8 +201,56 @@ export const closeMaintenanceSchema = z.object({
   resolutionCost: z.coerce.number().nonnegative().optional()
 });
 
-export const createAuditSchema = z.object({
+export const auditListQuerySchema = z.object({
+  page: z.coerce.number().int().positive().optional(),
+  limit: z.coerce.number().int().positive().max(100).optional(),
+  search: z.string().trim().optional(),
+  status: z.nativeEnum(AuditStatus).optional(),
+  result: z.nativeEnum(AuditResult).optional(),
+  assetId: z.string().uuid().optional(),
+  departmentId: z.string().uuid().optional(),
+  assignedAuditorId: z.string().uuid().optional(),
+  from: z.string().datetime().optional(),
+  to: z.string().datetime().optional(),
+  sortBy: z.enum(["plannedStart", "plannedEnd", "startedAt", "completedAt", "closedAt", "createdAt", "updatedAt", "status", "title"]).optional(),
+  sortOrder: workflowSortOrderSchema
+});
+
+export const createAuditSchema = z
+  .object({
+    assetId: z.string().uuid().optional(),
+    result: z.nativeEnum(AuditResult).optional(),
+    remarks: z.string().optional(),
+    title: z.string().min(2).optional(),
+    name: z.string().min(2).optional(),
+    description: z.string().optional(),
+    departmentId: z.string().uuid().optional(),
+    assignedAuditorId: z.string().uuid().optional(),
+    assetIds: z.array(z.string().uuid()).min(1).optional(),
+    plannedStart: z.string().datetime().optional(),
+    plannedEnd: z.string().datetime().optional()
+  })
+  .refine((data) => Boolean((data.assetId && data.result) || data.title || data.name), {
+    message: "Provide either legacy assetId/result or audit title."
+  });
+
+export const updateAuditSchema = z.object({
+  title: z.string().min(2).optional(),
+  name: z.string().min(2).optional(),
+  description: z.string().nullable().optional(),
+  departmentId: z.string().uuid().nullable().optional(),
+  assignedAuditorId: z.string().uuid().nullable().optional(),
+  assetIds: z.array(z.string().uuid()).min(1).optional(),
+  plannedStart: z.string().datetime().nullable().optional(),
+  plannedEnd: z.string().datetime().nullable().optional()
+});
+
+export const verifyAuditSchema = z.object({
   assetId: z.string().uuid(),
   result: z.nativeEnum(AuditResult),
-  remarks: z.string().optional()
+  remarks: z.string().optional(),
+  locationVerified: z.string().optional(),
+  conditionVerified: z.nativeEnum(AssetCondition).optional(),
+  departmentVerifiedId: z.string().uuid().optional(),
+  allocationUserVerifiedId: z.string().uuid().nullable().optional()
 });

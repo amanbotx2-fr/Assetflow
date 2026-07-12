@@ -13,3 +13,4 @@ reportRoutes.get("/summary", requireRoles(Role.ADMIN, Role.MANAGER), validate({ 
 reportRoutes.get("/assets", requireRoles(Role.ADMIN, Role.MANAGER, Role.AUDITOR), validate({ query: paginationQuery }), reportController.assets);
 reportRoutes.get("/bookings", requireRoles(Role.ADMIN, Role.MANAGER, Role.AUDITOR), validate({ query: paginationQuery }), reportController.bookings);
 reportRoutes.get("/maintenance", requireRoles(Role.ADMIN, Role.MANAGER, Role.AUDITOR), validate({ query: paginationQuery }), reportController.maintenance);
+reportRoutes.get("/audits", requireRoles(Role.ADMIN, Role.MANAGER, Role.AUDITOR), validate({ query: paginationQuery }), reportController.audits);

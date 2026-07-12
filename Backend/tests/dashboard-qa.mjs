@@ -66,7 +66,9 @@ const resetDatabase = async () => {
   await prisma.user.updateMany({ data: { departmentId: null } });
   await prisma.notification.deleteMany();
   await prisma.auditLog.deleteMany();
+  await prisma.auditDiscrepancy.deleteMany();
   await prisma.auditRecord.deleteMany();
+  await prisma.audit.deleteMany();
   await prisma.maintenanceTicket.deleteMany();
   await prisma.booking.deleteMany();
   await prisma.transfer.deleteMany();

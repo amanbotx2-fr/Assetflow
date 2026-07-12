@@ -1,6 +1,6 @@
 # Organization QA Report
 
-Generated: 2026-07-12T06:44:25.846Z
+Generated: 2026-07-12T07:03:38.075Z
 
 ## Summary
 
@@ -77,31 +77,31 @@ Generated: 2026-07-12T06:44:25.846Z
 
 | Request | Status | Duration |
 | --- | ---: | ---: |
-| PATCH /api/departments/00000000-0000-0000-0000-000000000000 | 404 | 3 ms |
+| PATCH /api/departments/00000000-0000-0000-0000-000000000000 | 404 | 2 ms |
 | PATCH /api/departments/not-a-uuid | 400 | 2 ms |
-| DELETE /api/departments/ac35764e-eca1-45b2-814f-763c9caefb8d | 200 | 3 ms |
-| GET /api/categories | 401 | 1 ms |
+| DELETE /api/departments/d334fa06-fb25-4b7a-99b7-988d8a8ab3b8 | 200 | 3 ms |
+| GET /api/categories | 401 | 2 ms |
 | GET /api/categories | 403 | 2 ms |
 | GET /api/categories?page=1&limit=2&search=lap&status=ACTIVE | 200 | 2 ms |
 | GET /api/categories | 200 | 2 ms |
 | POST /api/categories | 201 | 3 ms |
 | POST /api/categories | 409 | 2 ms |
 | POST /api/categories | 400 | 2 ms |
-| PATCH /api/categories/c826e57d-3fed-41e9-ba95-329910ffdbeb | 200 | 3 ms |
-| PATCH /api/categories/00000000-0000-0000-0000-000000000000 | 404 | 2 ms |
+| PATCH /api/categories/e7702d65-042e-4f21-93c8-1eb97c50be96 | 200 | 3 ms |
+| PATCH /api/categories/00000000-0000-0000-0000-000000000000 | 404 | 1 ms |
 | PATCH /api/categories/not-a-uuid | 400 | 2 ms |
-| DELETE /api/categories/c826e57d-3fed-41e9-ba95-329910ffdbeb | 200 | 2 ms |
+| DELETE /api/categories/e7702d65-042e-4f21-93c8-1eb97c50be96 | 200 | 3 ms |
 | POST /api/categories | 403 | 2 ms |
 | GET /api/users | 401 | 1 ms |
 | GET /api/users | 403 | 2 ms |
-| GET /api/users?role=EMPLOYEE&departmentId=0d9df613-51b3-4e34-b07b-e7695296df38 | 200 | 2 ms |
-| GET /api/users | 200 | 2 ms |
+| GET /api/users?role=EMPLOYEE&departmentId=efe324dc-a145-439f-8fb8-f75111968151 | 200 | 2 ms |
+| GET /api/users | 200 | 3 ms |
 | POST /api/users | 201 | 45 ms |
 | POST /api/users | 409 | 43 ms |
 | POST /api/users | 400 | 2 ms |
 | POST /api/users | 403 | 2 ms |
-| PATCH /api/users/f1958345-d069-4458-96b9-fc12e6acb34d | 200 | 3 ms |
-| PATCH /api/users/f1958345-d069-4458-96b9-fc12e6acb34d | 404 | 2 ms |
+| PATCH /api/users/b348d748-b209-4e62-808a-8e3edfccfb57 | 200 | 3 ms |
+| PATCH /api/users/b348d748-b209-4e62-808a-8e3edfccfb57 | 404 | 2 ms |
 | PATCH /api/users/00000000-0000-0000-0000-000000000000 | 404 | 2 ms |
 | GET /api/organization/overview | 200 | 3 ms |
 | GET /api/departments?page=1&limit=5 | 200 | 3 ms |
