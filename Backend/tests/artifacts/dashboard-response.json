@@ -8,8 +8,15 @@
       "maintenanceAssets": 1,
       "activeBookings": 0,
       "pendingBookings": 1,
+      "upcomingBookings": 1,
       "pendingTransfers": 1,
-      "upcomingReturns": 1
+      "upcomingReturns": 1,
+      "pendingMaintenance": 0,
+      "approvedMaintenance": 0,
+      "assignedMaintenance": 0,
+      "inProgressMaintenance": 1,
+      "resolvedTodayMaintenance": 0,
+      "upcomingMaintenance": 0
     },
     "alerts": [
       {
@@ -65,93 +72,93 @@
     ],
     "recentActivity": [
       {
-        "id": "booking:91a5187a-6c49-4813-993a-cc11951a6301",
-        "type": "BOOKING",
-        "title": "Booking requested",
-        "description": "Employee User requested Office Shuttle.",
-        "status": "PENDING",
-        "timestamp": "2026-07-12T06:01:50.478Z",
-        "asset": {
-          "id": "fc893f59-50c9-4a83-8b31-48677eba920f",
-          "assetCode": "VEH-001",
-          "name": "Office Shuttle"
-        },
-        "actor": {
-          "id": "864bc04a-2e35-4ac7-8f5f-fcde7765dd29",
-          "name": "Employee User",
-          "email": "employee@assetflow.local"
-        }
-      },
-      {
-        "id": "maintenance:93bd022f-0dcb-4439-8579-124aa5dcaebf",
-        "type": "MAINTENANCE",
-        "title": "Maintenance reported",
-        "description": "Employee User reported Display flickering for Dell 27 Inch Monitor.",
-        "status": "IN_PROGRESS",
-        "timestamp": "2026-07-12T06:01:50.478Z",
-        "asset": {
-          "id": "233b7a4e-ea24-4cb8-a69d-c641a2ef3076",
-          "assetCode": "MON-001",
-          "name": "Dell 27 Inch Monitor"
-        },
-        "actor": {
-          "id": "864bc04a-2e35-4ac7-8f5f-fcde7765dd29",
-          "name": "Employee User",
-          "email": "employee@assetflow.local"
-        }
-      },
-      {
-        "id": "transfer:f4d68255-1903-4151-8c88-cf49949effbf",
-        "type": "TRANSFER",
-        "title": "Transfer requested",
-        "description": "Employee User requested transfer for Dell Latitude 5440.",
-        "status": "PENDING",
-        "timestamp": "2026-07-12T06:01:50.477Z",
-        "asset": {
-          "id": "2c5b4143-09ca-47c8-9feb-5d83384d0dfb",
-          "assetCode": "LAP-001",
-          "name": "Dell Latitude 5440"
-        },
-        "actor": {
-          "id": "864bc04a-2e35-4ac7-8f5f-fcde7765dd29",
-          "name": "Employee User",
-          "email": "employee@assetflow.local"
-        }
-      },
-      {
-        "id": "booking:3c9f428d-1d8f-4ddd-af1f-fccda659a816",
+        "id": "booking:4a5c34c9-f1bd-4bfe-9930-e24b8847b3be",
         "type": "BOOKING",
         "title": "Booking requested",
         "description": "Employee User requested Epson Conference Projector.",
         "status": "APPROVED",
-        "timestamp": "2026-07-12T06:01:50.477Z",
+        "timestamp": "2026-07-12T06:44:16.224Z",
         "asset": {
-          "id": "6dd07b42-88bf-419c-ab7f-02f454bd0090",
+          "id": "fe104ac1-ba0d-4d9e-b0d8-52215752068e",
           "assetCode": "PROJ-001",
           "name": "Epson Conference Projector"
         },
         "actor": {
-          "id": "864bc04a-2e35-4ac7-8f5f-fcde7765dd29",
+          "id": "dfe2f42a-5571-4266-b06b-eebf63d429d4",
           "name": "Employee User",
           "email": "employee@assetflow.local"
         }
       },
       {
-        "id": "allocation:6226a746-6648-4c1c-997b-7dc8cfe0676b",
+        "id": "booking:8830b372-3061-41e0-bb95-c7177d67254d",
+        "type": "BOOKING",
+        "title": "Booking requested",
+        "description": "Employee User requested Office Shuttle.",
+        "status": "REQUESTED",
+        "timestamp": "2026-07-12T06:44:16.224Z",
+        "asset": {
+          "id": "61a3078f-e5d1-4a9c-81cf-750b67e89e2e",
+          "assetCode": "VEH-001",
+          "name": "Office Shuttle"
+        },
+        "actor": {
+          "id": "dfe2f42a-5571-4266-b06b-eebf63d429d4",
+          "name": "Employee User",
+          "email": "employee@assetflow.local"
+        }
+      },
+      {
+        "id": "maintenance:0c4fc950-85ed-417e-8ef2-5bf1e03b02fa",
+        "type": "MAINTENANCE",
+        "title": "Maintenance reported",
+        "description": "Employee User reported Display flickering for Dell 27 Inch Monitor.",
+        "status": "IN_PROGRESS",
+        "timestamp": "2026-07-12T06:44:16.224Z",
+        "asset": {
+          "id": "c528cc48-37ab-4cd8-8959-6e1217b70695",
+          "assetCode": "MON-001",
+          "name": "Dell 27 Inch Monitor"
+        },
+        "actor": {
+          "id": "dfe2f42a-5571-4266-b06b-eebf63d429d4",
+          "name": "Employee User",
+          "email": "employee@assetflow.local"
+        }
+      },
+      {
+        "id": "allocation:1d60828f-92ce-410b-be22-0e1e1ea6f072",
         "type": "ALLOCATION",
         "title": "Asset allocated",
         "description": "Dell Latitude 5440 allocated to Employee User.",
         "status": "ACTIVE",
-        "timestamp": "2026-07-12T06:01:50.476Z",
+        "timestamp": "2026-07-12T06:44:16.223Z",
         "asset": {
-          "id": "2c5b4143-09ca-47c8-9feb-5d83384d0dfb",
+          "id": "f863738d-a17a-4be5-854b-d52cfd5aeecb",
           "assetCode": "LAP-001",
           "name": "Dell Latitude 5440"
         },
         "actor": {
-          "id": "87d5261a-0972-4d91-905c-d40572eb74ea",
+          "id": "1e240bdf-ca2f-4a3b-b956-e58d5bba5c09",
           "name": "IT Manager",
           "email": "manager@assetflow.local"
+        }
+      },
+      {
+        "id": "transfer:ec8a03d5-736a-4826-aa7a-e6877d8859ce",
+        "type": "TRANSFER",
+        "title": "Transfer requested",
+        "description": "Employee User requested transfer for Dell Latitude 5440.",
+        "status": "PENDING",
+        "timestamp": "2026-07-12T06:44:16.223Z",
+        "asset": {
+          "id": "f863738d-a17a-4be5-854b-d52cfd5aeecb",
+          "assetCode": "LAP-001",
+          "name": "Dell Latitude 5440"
+        },
+        "actor": {
+          "id": "dfe2f42a-5571-4266-b06b-eebf63d429d4",
+          "name": "Employee User",
+          "email": "employee@assetflow.local"
         }
       }
     ]

@@ -226,7 +226,7 @@ async function main() {
       requestedById: employee.id,
       startTime: new Date("2026-07-12T12:00:00.000Z"),
       endTime: new Date("2026-07-12T13:00:00.000Z"),
-      status: BookingStatus.PENDING,
+      status: BookingStatus.REQUESTED,
       purpose: "Client visit"
     }
   });
@@ -239,7 +239,9 @@ async function main() {
       priority: MaintenancePriority.HIGH,
       status: MaintenanceStatus.IN_PROGRESS,
       issueSummary: "Display flickering",
-      issueDescription: "Monitor flickers every few minutes."
+      issueDescription: "Monitor flickers every few minutes.",
+      assignedAt: new Date("2026-07-12T08:00:00.000Z"),
+      startedAt: new Date("2026-07-12T08:30:00.000Z")
     }
   });
 

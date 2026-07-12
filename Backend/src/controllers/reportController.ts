@@ -9,3 +9,11 @@ export const summary = asyncHandler(async (req, res) => {
 export const assets = asyncHandler(async (req, res) => {
   sendSuccess(res, await reportService.getAssetReport(req.query, req.user!));
 });
+
+export const bookings = asyncHandler(async (req, res) => {
+  sendSuccess(res, await reportService.getBookingReport(req.query, req.user!));
+});
+
+export const maintenance = asyncHandler(async (req, res) => {
+  sendSuccess(res, await reportService.getMaintenanceReport(req.query, req.user!));
+});

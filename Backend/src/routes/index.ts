@@ -1,4 +1,5 @@
 import { Router } from "express";
+import { allocationRoutes } from "./allocationRoutes.js";
 import { assetRoutes } from "./assetRoutes.js";
 import { auditLogRoutes, auditRoutes } from "./auditRoutes.js";
 import { authRoutes } from "./authRoutes.js";
@@ -18,6 +19,7 @@ apiRoutes.use("/users", userRoutes);
 apiRoutes.use("/departments", departmentRoutes);
 apiRoutes.use("/categories", categoryRoutes);
 apiRoutes.use("/assets", assetRoutes);
+apiRoutes.use("/allocations", allocationRoutes);
 apiRoutes.use("/transfers", transferRoutes);
 apiRoutes.use("/bookings", bookingRoutes);
 apiRoutes.use("/dashboard", dashboardRoutes);

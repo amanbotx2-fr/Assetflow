@@ -1,0 +1,6 @@
+ALTER TABLE "maintenance_tickets"
+  ALTER COLUMN "status" SET DEFAULT 'REQUESTED',
+  ADD COLUMN IF NOT EXISTS "assigned_at" TIMESTAMP(3),
+  ADD COLUMN IF NOT EXISTS "started_at" TIMESTAMP(3),
+  ADD COLUMN IF NOT EXISTS "closed_at" TIMESTAMP(3),
+  ADD COLUMN IF NOT EXISTS "resolution_cost" DECIMAL(12, 2);

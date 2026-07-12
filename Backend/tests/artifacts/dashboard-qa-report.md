@@ -1,6 +1,6 @@
 # Dashboard QA Report
 
-Generated: 2026-07-12T06:01:50.540Z
+Generated: 2026-07-12T06:44:16.283Z
 
 ## Summary
 
@@ -28,11 +28,11 @@ Generated: 2026-07-12T06:01:50.540Z
 
 | Request | Status | Duration |
 | --- | ---: | ---: |
-| GET /api/dashboard/overview | 200 | 10 ms |
+| GET /api/dashboard/overview | 200 | 6 ms |
 | GET /api/dashboard/overview | 401 | 2 ms |
-| GET /api/dashboard/overview?departmentId=7788de92-c8fe-47f1-8fe0-605826970a7e | 403 | 3 ms |
+| GET /api/dashboard/overview?departmentId=66cbe275-956c-4d5c-90cf-0cef3a3b4859 | 403 | 2 ms |
 | GET /api/dashboard/overview | 200 | 4 ms |
-| GET /api/dashboard/overview | 200 | 4 ms |
+| GET /api/dashboard/overview | 200 | 5 ms |
 
 The endpoint performs bounded recent-activity reads and aggregate counts in parallel. Local QA responses were comfortably within hackathon-demo expectations.
 
