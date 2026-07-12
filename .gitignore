@@ -1,0 +1,29 @@
+# macOS
+.DS_Store
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Dependencies
+node_modules
+
+# Build
+dist
+build
+.next
+out
+
+# Environment
+.env
+.env.local
+.env.*
+
+# VS Code
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+
+# Misc
+coverage
