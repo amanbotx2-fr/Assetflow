@@ -1,74 +1,111 @@
 # Frontend Implementation Roadmap
 
-This document serves as the complete implementation roadmap for the frontend of the project. The frontend strictly consumes existing backend APIs and assumes the backend is fully managed by another developer.
+This document serves as the complete, single source of truth for frontend development. The frontend strictly consumes existing backend APIs and assumes the backend is fully managed by another developer. The roadmap is structured to maximize parallel work, avoid merge conflicts, and enforce dependency-aware phases.
 
-## Overall Project Structure
-- [ ] Initialize frontend workspace
-- [ ] Configure scalable folder organization (e.g., `components/`, `pages/`, `assets/`, `styles/`, `services/`, `utils/`)
-- [ ] Set up API service layer for structured backend communication
-- [ ] Configure routing and navigation system
-- [ ] Implement global state management (if required)
+## Status Legend
+- ✅ Completed
+- 🔄 In Progress
+- ⏳ Pending
+- 🚧 Blocked (Waiting on Dependency)
+
+## Owners
+- 👨‍💻 Developer A (Frontend Lead)
+- 👨‍💻 Developer B (Feature Development)
+- 🤝 Both Developers
 
 ## Milestones
-- [ ] **Milestone 1:** Global Styling, Design Tokens, and Base Layout
-- [ ] **Milestone 2:** Shared Component Library Development
-- [ ] **Milestone 3:** Core Pages Implementation (Login, Dashboard)
-- [ ] **Milestone 4:** Feature Modules Development (Organization, Assets, Allocation, Booking)
-- [ ] **Milestone 5:** Operations, Logging, and Notification Pages
-- [ ] **Milestone 6:** Code Quality Audit, Testing, and Final Polish
+- ✅ **Global Design System (Completed)**
+- ⏳ **Phase 1:** Shared Foundation
+- ⏳ **Phase 2:** Core Feature Development
+- ⏳ **Phase 3:** Remaining Pages
+- ⏳ **Phase 4:** Final Integration & QA
 
-## Task Checklist
-- [ ] Establish initial project structure
-- [ ] Translate UI designs into global CSS variables/design tokens
-- [ ] Build isolated shared components
-- [ ] Develop main application layout wrapper (Sidebar + Top Navbar)
-- [ ] Assemble pages using shared components
-- [ ] Connect components to respective backend APIs
-- [ ] Implement global loading, error, and empty states
-- [ ] Perform responsive and cross-browser testing
+---
 
-## Component Checklist
+## ✅ Global Design System (Completed)
+**Owner:** 👨‍💻 Developer A
+
+### Overall Project Structure
+- [x] Initialize frontend workspace
+- [x] Configure scalable folder organization (e.g., `components/`, `pages/`, `assets/`, `styles/`, `services/`, `utils/`)
+- [x] Set up API service layer for structured backend communication
+- [x] Implement global state management (if required)
+
+### Styling Checklist
+- [x] Translate UI designs into global CSS variables/design tokens
+- [x] Define color variables
+- [x] Set up typography
+- [x] Configure spacing system
+- [x] Define shadows
+- [x] Configure border radius
+- [x] Create reusable utility classes
+- [x] Ensure animation consistency
+- [x] Implement interactive hover states
+- [x] Add smooth transitions
+- [x] Set up standard icon system
+
+---
+
+## ⏳ Phase 1: Shared Foundation
+
+### Application Structure
+**Owner:** 👨‍💻 Developer B
+- [ ] Build Page shells
+- [ ] Configure Routing and Navigation
+- [ ] Create Responsive page layouts
+- [ ] Build Content containers
+- [ ] Implement Grid layouts
+- [ ] Implement Section layouts
+*(For all pages without implementing business logic)*
+
+### Shared Layout
+**Owner:** 👨‍💻 Developer A
+- [ ] Develop main application layout wrapper
 - [ ] Sidebar
 - [ ] Top Navbar
-- [ ] Search Bar
+- [ ] Responsive Sidebar
+- [ ] Navigation
+- [ ] Breadcrumb
+- [ ] Profile Menu
+- [ ] Notification Icon
+
+### Shared Components
+**Owner:** 👨‍💻 Developer A
 - [ ] Buttons
 - [ ] Cards
+- [ ] Inputs
+- [ ] Dropdowns
+- [ ] Search Bar
 - [ ] Tables
 - [ ] Status Badges
 - [ ] Alerts
+- [ ] Pagination
 - [ ] Empty States
+- [ ] Loading Skeleton
+- [ ] Toast Notifications
 - [ ] Modal Components
 - [ ] Form Components
-- [ ] Input Fields
-- [ ] Dropdowns
 - [ ] Date Picker
-- [ ] Pagination
-- [ ] Loading States
-- [ ] Toast Notifications
 
-## Page Checklist
+---
 
-### 1. Login
-- [ ] Implement layout
-- [ ] Implement reusable components
-- [ ] Ensure responsiveness
-- [ ] Implement interactions and transitions
-- [ ] Add form validations
-- [ ] Connect API placeholders
-- [ ] Implement loading states
-- [ ] Implement empty/error states
+## ⏳ Phase 2: Core Feature Development
 
-### 2. Dashboard
-- [ ] Implement layout & Responsive Grid
+### Dashboard
+**Owner:** 👨‍💻 Developer A
+**Dependency:** 🚧 Blocked (Waiting on Shared Components)
+- [ ] Implement layout & Responsive Layout
 - [ ] Build Overview Cards
 - [ ] Implement Quick Actions
 - [ ] Add Alert Banner
 - [ ] Display Recent Activity
-- [ ] Ensure responsiveness
+- [ ] Display Statistics
 - [ ] Connect API placeholders
 - [ ] Implement loading and error states
 
-### 3. Organization Setup
+### Organization Setup
+**Owner:** 👨‍💻 Developer A
+**Dependency:** 🚧 Blocked (Waiting on Shared Components)
 - [ ] Implement layout
 - [ ] Department Management UI
 - [ ] Employee Management UI
@@ -79,20 +116,21 @@ This document serves as the complete implementation roadmap for the frontend of 
 - [ ] Add Table component
 - [ ] Implement validations
 - [ ] Connect API placeholders
-- [ ] Implement loading and empty states
 
-### 4. Assets
+### Feature Pages: Assets
+**Owner:** 👨‍💻 Developer B
+**Dependency:** 🚧 Blocked (Waiting on Shared Components)
 - [ ] Implement layout
 - [ ] Add Search and Filters
 - [ ] Build Asset Table
 - [ ] Display Status Badges
 - [ ] Create Register Asset Modal
 - [ ] Implement Pagination
-- [ ] Ensure responsiveness
 - [ ] Connect API placeholders
-- [ ] Implement loading, empty, and error states
 
-### 5. Allocation & Transfer
+### Feature Pages: Allocation & Transfer
+**Owner:** 👨‍💻 Developer B
+**Dependency:** 🚧 Blocked (Waiting on Shared Components)
 - [ ] Implement layout
 - [ ] Build Asset Selector
 - [ ] Build Employee Selector
@@ -101,9 +139,10 @@ This document serves as the complete implementation roadmap for the frontend of 
 - [ ] Display Allocation History
 - [ ] Implement validations
 - [ ] Connect API placeholders
-- [ ] Ensure responsiveness
 
-### 6. Resource Booking
+### Feature Pages: Resource Booking
+**Owner:** 👨‍💻 Developer B
+**Dependency:** 🚧 Blocked (Waiting on Shared Components)
 - [ ] Implement layout
 - [ ] Build Booking Timeline
 - [ ] Integrate Calendar
@@ -111,86 +150,85 @@ This document serves as the complete implementation roadmap for the frontend of 
 - [ ] Build Conflict Detection UI
 - [ ] Implement Smart Suggestions
 - [ ] Connect API placeholders
-- [ ] Implement loading states
-- [ ] Ensure responsiveness
 
-### 7. Maintenance
+---
+
+## ⏳ Phase 3: Remaining Pages
+
+### Login
+**Owner:** 👨‍💻 Developer A
+- [ ] Implement Authentication UI
+- [ ] Add form validations
+- [ ] Ensure responsive design
+- [ ] Ensure accessibility
+- [ ] Implement loading states
+- [ ] Connect API placeholders
+
+### Code Cleanup & Polish
+**Owner:** 👨‍💻 Developer A
+- [ ] Ensure accessibility (ARIA, semantic markup, keyboard nav)
+- [ ] Code Cleanup (Remove duplicate code, regular folder cleanup, extrapolate reusable JS/CSS)
+- [ ] Establish dark/light ready architecture
+- [ ] Responsive Polish (Ensure fluid grid, check touch targets)
+- [ ] Cross-browser Testing
+
+### Feature Pages: Maintenance
+**Owner:** 👨‍💻 Developer B
+**Dependency:** 🚧 Blocked (Waiting on Shared Components)
 - [ ] Implement layout
 - [ ] Build Ticket List
 - [ ] Display Status and Priority indicators
 - [ ] Build Assign Engineer UI
 - [ ] Display History Timeline
 - [ ] Connect API placeholders
-- [ ] Implement empty and error states
 
-### 8. Audit
+### Feature Pages: Audit
+**Owner:** 👨‍💻 Developer B
+**Dependency:** 🚧 Blocked (Waiting on Shared Components)
 - [ ] Implement layout
 - [ ] Display Audit Logs
 - [ ] Build Filters
 - [ ] Display Timeline
 - [ ] Implement Export functionality
-- [ ] Ensure responsiveness
 - [ ] Connect API placeholders
 
-### 9. Reports
+### Feature Pages: Reports
+**Owner:** 👨‍💻 Developer B
+**Dependency:** 🚧 Blocked (Waiting on Shared Components)
 - [ ] Implement layout
 - [ ] Integrate Charts
 - [ ] Display Statistics
 - [ ] Build Filters
 - [ ] Implement Export functionality
 - [ ] Implement Print functionality
-- [ ] Ensure responsiveness
 - [ ] Connect API placeholders
 
-### 10. Notifications
+### Feature Pages: Notifications
+**Owner:** 👨‍💻 Developer B
+**Dependency:** 🚧 Blocked (Waiting on Shared Components)
 - [ ] Implement layout
 - [ ] Build Notification List
 - [ ] Add Read/Unread toggles
 - [ ] Filter by Categories
 - [ ] Implement Empty State
-- [ ] Ensure responsiveness
 - [ ] Connect API placeholders
 
-## Styling Checklist
-- [ ] Define color variables
-- [ ] Set up typography
-- [ ] Configure spacing system
-- [ ] Define shadows
-- [ ] Configure border radius
-- [ ] Create reusable utility classes
-- [ ] Ensure animation consistency
-- [ ] Implement interactive hover states
-- [ ] Add smooth transitions
-- [ ] Set up standard icon system
+---
 
-## Responsive Checklist
-- [ ] Ensure fluid responsive grid system
-- [ ] Test layout across desktop, tablet, and mobile breakpoints
-- [ ] Adapt complex components (tables, calendars) for small screens
-- [ ] Verify readable typography on all devices
-- [ ] Check touch targets for mobile usability
+## ⏳ Phase 4: Final Integration & QA
+**Owner:** 🤝 Both Developers
+**Dependency:** 🚧 Blocked (Waiting on Phases 1-3)
 
-## Code Quality Tasks
-- [ ] Extrapolate styles into reusable CSS
-- [ ] Abstract logic into reusable JS
-- [ ] Ensure accessibility (ARIA, semantic markup, keyboard nav)
-- [ ] Validate semantic HTML usage
-- [ ] Implement fully responsive layouts
-- [ ] Establish dark/light ready architecture
-- [ ] Perform regular folder cleanup
-- [ ] Remove duplicate code snippets
-- [ ] Maximize component reuse across pages
-
-## Testing Checklist
-- [ ] Form validation testing
-- [ ] API integration and error handling validation
-- [ ] Cross-browser compatibility check
-- [ ] Responsive design behavior review
-- [ ] Accessibility standard audit
-
-## Final Polishing Checklist
-- [ ] Verify UI against initial design specs
+### Final Integration Checklist
+- [ ] API Integration (frontend only)
+- [ ] Implement Global Loading States
+- [ ] Implement Global Error States
+- [ ] Implement Global Empty States
+- [ ] Animation Polish (verify micro-interactions)
+- [ ] Accessibility Review (standard audit)
+- [ ] Responsive Testing (across desktop, tablet, and mobile)
+- [ ] Cross-browser Testing
 - [ ] Optimize load performance (e.g., code splitting, image optimization)
-- [ ] Verify and polish animations and micro-interactions
+- [ ] Final QA & User Acceptance Testing (UAT) walkthrough
+- [ ] Verify UI against initial design specs
 - [ ] Remove unused variables and console logs
-- [ ] Final user acceptance testing (UAT) walkthrough
