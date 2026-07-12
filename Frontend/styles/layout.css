@@ -1,0 +1,111 @@
+/* ==========================================================================
+   LAYOUT SYSTEM
+   ========================================================================== */
+
+/* Main App Container */
+.app-container {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--color-bg-app);
+  overflow: hidden;
+}
+
+/* Sidebar Layout */
+.sidebar-layout {
+  width: 250px;
+  flex-shrink: 0;
+  background-color: var(--color-secondary);
+  color: #fff;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  z-index: var(--z-sidebar);
+  transition: var(--transition-sidebar);
+}
+
+/* Main Content Area Layout */
+.content-layout {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden; /* Let inner containers scroll */
+}
+
+/* Page Container (where router outlet usually goes) */
+.page-container {
+  flex-grow: 1;
+  overflow-y: auto;
+  padding: var(--space-6);
+  background-color: var(--color-bg-app);
+}
+
+/* Section Container */
+.section-container {
+  margin-bottom: var(--space-8);
+}
+
+/* Card Grid for dashboard metrics */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: var(--space-4);
+}
+
+/* Generic Responsive Grid */
+.responsive-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-6);
+}
+
+/* Action Bar (Top header within a page) */
+.action-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--space-6);
+}
+
+/* Toolbar (e.g. for filters above a table) */
+.toolbar {
+  display: flex;
+  gap: var(--space-3);
+  align-items: center;
+  padding: var(--space-4) 0;
+}
+
+/* Content Wrapper for center-aligned limited width pages */
+.content-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* --------------------------------------------------------------------------
+   Responsive Breakpoints Overrides
+   -------------------------------------------------------------------------- */
+@media (min-width: 768px) { /* Tablet */
+  .responsive-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) { /* Laptop */
+  .responsive-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 767px) { /* Mobile */
+  .sidebar-layout {
+    position: fixed;
+    transform: translateX(-100%);
+  }
+  .sidebar-layout.open {
+    transform: translateX(0);
+  }
+  .page-container {
+    padding: var(--space-4);
+  }
+}
