@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AssetFlow - Dashboard</title>
+    <!-- Global Design System -->
+    <link rel="stylesheet" href="./styles/index.css">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <div class="app-container">
+        <!-- Overlay for mobile sidebar -->
+        <div class="modal-overlay d-md-none d-none" id="sidebarOverlay"></div>
+
+        <!-- 1. Shared Sidebar Component -->
+        <aside class="sidebar-layout" id="sidebar">
+            <div class="p-4 d-flex align-items-center justify-content-between">
+                <!-- Project Logo -->
+                <a href="dashboard.html" class="d-flex align-items-center gap-2" style="text-decora
+                tion: none; outline: none;" aria-label="AssetFlow Home">
+                    <i data-lucide="boxes" class="text-primary"></i>
+                    <span class="text-h3 font-bold text-white">AssetFlow</span>
+                </a>
+                <!-- Mobile Close Btn -->
+                <button class="btn-base d-md-none focus-ring" id="closeSidebarBtn" aria-label="Close menu" style="padding: var(--space-2); background: transparent; color: var(--color-text-muted); border: none;">
+                    <i data-lucide="x"></i>
+                </button>
+            </div>
+
+            <!-- Navigation System -->
+            <nav class="mt-4 flex-column overflow-y-auto h-100" aria-label="Main Navigation">
+                <a href="dashboard.html" class="sidebar-nav-item active focus-ring" aria-current="page">
+                    <i data-lucide="layout-dashboard"></i>
+                    <span class="text-button">Dashboard</span>
+                </a>
+                <a href="organization_setup.html" class="sidebar-nav-item focus-ring">
+                    <i data-lucide="building-2"></i>
+                    <span class="text-button">Organization</span>
+                </a>
+                <a href="#" class="sidebar-nav-item focus-ring">
+                    <i data-lucide="monitor-smartphone"></i>
+                    <span class="text-button">Assets</span>
+                </a>
+                <a href="#" class="sidebar-nav-item focus-ring">
+                    <i data-lucide="arrow-left-right"></i>
+                    <span class="text-button">Allocation</span>
+                </a>
+                <a href="#" class="sidebar-nav-item focus-ring">
+                    <i data-lucide="calendar-clock"></i>
+                    <span class="text-button">Resource Booking</span>
+                </a>
+                <a href="#" class="sidebar-nav-item focus-ring">
+                    <i data-lucide="wrench"></i>
+                    <span class="text-button">Maintenance</span>
+                </a>
+                <a href="#" class="sidebar-nav-item focus-ring">
+                    <i data-lucide="shield-check"></i>
+                    <span class="text-button">Audit</span>
+                </a>
+                <a href="#" class="sidebar-nav-item focus-ring">
+                    <i data-lucide="file-text"></i>
+                    <span class="text-button">Reports</span>
+                </a>
+            </nav>
+        </aside>
+
+        <!-- Main Content Area Wrapper -->
+        <main class="content-layout">
+            
+            <!-- 2. Shared Top Navbar Component -->
+            <header class="navbar-base">
+                <div class="d-flex align-items-center gap-4">
+                    <!-- Mobile Hamburger -->
+                    <button class="btn-base d-md-none focus-ring" id="openSidebarBtn" aria-label="Open sidebar" aria-expanded="false" style="padding: var(--space-2); background: transparent; color: var(--color-text-body); border: none;">
+                        <i data-lucide="menu"></i>
+                    </button>
+                    
+                    <!-- Breadcrumb Component -->
+                    <nav class="d-none d-md-flex align-items-center gap-2" aria-label="Breadcrumb">
+                        <a href="dashboard.html" class="text-muted text-small font-medium hover-text-primary focus-ring rounded-sm p-1" style="text-decoration: none;">Dashboard</a>
+                        <i data-lucide="chevron-right" class="text-muted" style="width: 16px; height: 16px;"></i>
+                        <span class="text-heading text-small font-semibold" aria-current="page">Overview</span>
+                    </nav>
+                </div>
+
+                <!-- Right Nav Actions -->
+                <div class="d-flex align-items-center gap-4">
+                    <!-- Search Field Placeholder -->
+                    <div class="search-bar-base d-none d-md-flex">
+                        <i data-lucide="search" class="text-muted" style="position: absolute; left: var(--space-3); width: 16px; pointer-events: none;"></i>
+                        <input type="text" class="input-base" placeholder="Search resources..." aria-label="Global search" style="width: 240px; border-radius: var(--radius-pill);">
+                    </div>
+
+                    <!-- Notification Button Placeholder -->
+                    <div class="position-relative">
+                        <button class="btn-base focus-ring" id="notificationBtn" aria-label="Notifications" aria-haspopup="true" aria-expanded="false" style="padding: var(--space-2); background: transparent; color: var(--color-text-muted); border: none;">
+                            <i data-lucide="bell"></i>
+                            <span class="badge-danger position-absolute" style="top: 4px; right: 4px; width: 8px; height: 8px; border-radius: 50%; padding: 0;"></span>
+                        </button>
+                        <!-- Dropdown Menu Placeholder -->
+                        <div class="dropdown-base animate-dropdown d-none" id="notificationDropdown" style="right: 0; top: 100%; margin-top: var(--space-2); min-width: 280px; z-index: var(--z-dropdown);">
+                            <div class="p-3 border-bottom">
+                                <h4 class="text-label m-0">Notifications</h4>
+                            </div>
+                            <div class="p-4 text-center text-muted text-small">
+                                No new notifications
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- User Profile Menu Placeholder -->
+                    <div class="position-relative">
+                        <button class="btn-base d-flex align-items-center gap-2 focus-ring" id="profileBtn" aria-label="User menu" aria-haspopup="true" aria-expanded="false" style="padding: var(--space-1) var(--space-2); background: transparent; border: none;">
+                            <div style="width: 32px; height: 32px; border-radius: 50%; background-color: var(--color-primary-light); display: flex; align-items: center; justify-content: center; color: var(--color-primary); font-weight: bold; font-size: var(--text-small);">
+                                JD
+                            </div>
+                            <div class="d-none d-md-flex flex-column text-left">
+                                <span class="text-label" style="line-height: 1.2;">John Doe</span>
+                                <span class="text-caption text-muted">Administrator</span>
+                            </div>
+                            <i data-lucide="chevron-down" class="text-muted d-none d-md-block" style="width: 16px;"></i>
+                        </button>
+                        <!-- Profile Dropdown Menu Placeholder -->
+                        <div class="dropdown-base animate-dropdown d-none" id="profileDropdown" style="right: 0; top: 100%; margin-top: var(--space-2); min-width: 160px; z-index: var(--z-dropdown);">
+                            <a href="#" class="d-flex align-items-center gap-2 p-2 hover-bg-light text-body text-small mx-1 rounded-sm focus-ring" style="text-decoration: none;">
+                                <i data-lucide="user" style="width: 16px;"></i> Profile
+                            </a>
+                            <a href="#" class="d-flex align-items-center gap-2 p-2 hover-bg-light text-body text-small mx-1 rounded-sm focus-ring" style="text-decoration: none;">
+                                <i data-lucide="settings" style="width: 16px;"></i> Settings
+                            </a>
+                            <div style="border-top: 1px solid var(--color-border-light); margin: var(--space-1) 0;"></div>
+                            <a href="login.html" class="d-flex align-items-center gap-2 p-2 hover-bg-light text-danger text-small mx-1 rounded-sm focus-ring" style="text-decoration: none;">
+                                <i data-lucide="log-out" style="width: 16px;"></i> Logout
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- 3. Layout Wrapper (Main Entry for Page Components) -->
+            <div class="page-container">
+                <div class="content-wrapper">
+                    <!-- Empty state placeholder since we are not building dashboard content yet -->
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        lucide.createIcons();
+    </script>
+    <script src="./js/layout.js"></script>
+</body>
+</html>
