@@ -67,6 +67,9 @@ enum MaintenancePriority {
 }
 
 enum MaintenanceStatus {
+  REQUESTED
+  APPROVED
+  REJECTED
   OPEN
   ASSIGNED
   IN_PROGRESS
@@ -287,12 +290,16 @@ model MaintenanceTicket {
   reportedById     String              @map("reported_by_id") @db.Uuid
   assignedToId     String?             @map("assigned_to_id") @db.Uuid
   priority         MaintenancePriority @default(MEDIUM)
-  status           MaintenanceStatus   @default(OPEN)
+  status           MaintenanceStatus   @default(REQUESTED)
   issueSummary     String              @map("issue_summary")
   issueDescription String?             @map("issue_description")
   resolutionNotes  String?             @map("resolution_notes")
+  resolutionCost   Decimal?            @map("resolution_cost") @db.Decimal(12, 2)
   reportedAt       DateTime            @default(now()) @map("reported_at")
+  assignedAt       DateTime?           @map("assigned_at")
+  startedAt        DateTime?           @map("started_at")
   resolvedAt       DateTime?           @map("resolved_at")
+  closedAt         DateTime?           @map("closed_at")
   createdAt        DateTime            @default(now()) @map("created_at")
   updatedAt        DateTime            @updatedAt @map("updated_at")
 

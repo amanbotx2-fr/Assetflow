@@ -21,12 +21,20 @@ const userSelect = { id: true, name: true, email: true };
 const assetSelect = { id: true, assetCode: true, name: true };
 
 const openMaintenanceStatuses = [
+  MaintenanceStatus.REQUESTED,
   MaintenanceStatus.OPEN,
+  MaintenanceStatus.APPROVED,
   MaintenanceStatus.ASSIGNED,
-  MaintenanceStatus.IN_PROGRESS
+  MaintenanceStatus.IN_PROGRESS,
+  MaintenanceStatus.RESOLVED
 ];
 
-const waitingMaintenanceStatuses = [MaintenanceStatus.OPEN, MaintenanceStatus.ASSIGNED];
+const waitingMaintenanceStatuses = [
+  MaintenanceStatus.REQUESTED,
+  MaintenanceStatus.OPEN,
+  MaintenanceStatus.APPROVED,
+  MaintenanceStatus.ASSIGNED
+];
 
 const auditWarningResults = [
   AuditResult.MISSING,
@@ -305,6 +313,10 @@ export const getDashboardOverview = async (
 ): Promise<DashboardOverviewResponse> => {
   const departmentId = getScopedDepartmentId(actor, query.departmentId);
   const now = new Date();
+  const todayStart = new Date(now);
+  todayStart.setUTCHours(0, 0, 0, 0);
+  const todayEnd = new Date(todayStart);
+  todayEnd.setUTCDate(todayEnd.getUTCDate() + 1);
   const assetWhere = buildAssetWhere(actor, departmentId);
   const allocationWhere = buildAllocationWhere(actor, departmentId);
   const transferWhere = buildTransferWhere(actor, departmentId);
@@ -324,6 +336,11 @@ export const getDashboardOverview = async (
     upcomingReturns,
     overdueReturns,
     maintenanceWaiting,
+    pendingMaintenance,
+    approvedMaintenance,
+    assignedMaintenance,
+    inProgressMaintenance,
+    resolvedTodayMaintenance,
     criticalMaintenance,
     auditWarnings,
     allocations,
@@ -345,6 +362,19 @@ export const getDashboardOverview = async (
     prisma.booking.count({ where: { ...bookingWhere, status: { in: activeBookingStatuses }, endTime: { lt: now } } }),
     prisma.maintenanceTicket.count({
       where: { ...maintenanceWhere, status: { in: waitingMaintenanceStatuses } }
+    }),
+    prisma.maintenanceTicket.count({
+      where: { ...maintenanceWhere, status: { in: [MaintenanceStatus.REQUESTED, MaintenanceStatus.OPEN] } }
+    }),
+    prisma.maintenanceTicket.count({ where: { ...maintenanceWhere, status: MaintenanceStatus.APPROVED } }),
+    prisma.maintenanceTicket.count({ where: { ...maintenanceWhere, status: MaintenanceStatus.ASSIGNED } }),
+    prisma.maintenanceTicket.count({ where: { ...maintenanceWhere, status: MaintenanceStatus.IN_PROGRESS } }),
+    prisma.maintenanceTicket.count({
+      where: {
+        ...maintenanceWhere,
+        status: MaintenanceStatus.RESOLVED,
+        resolvedAt: { gte: todayStart, lt: todayEnd }
+      }
     }),
     prisma.maintenanceTicket.count({
       where: {
@@ -435,7 +465,13 @@ export const getDashboardOverview = async (
       pendingBookings,
       upcomingBookings,
       pendingTransfers,
-      upcomingReturns
+      upcomingReturns,
+      pendingMaintenance,
+      approvedMaintenance,
+      assignedMaintenance,
+      inProgressMaintenance,
+      resolvedTodayMaintenance,
+      upcomingMaintenance: approvedMaintenance + assignedMaintenance
     },
     alerts: buildAlerts({
       overdueReturns,

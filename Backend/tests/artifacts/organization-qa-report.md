@@ -1,6 +1,6 @@
 # Organization QA Report
 
-Generated: 2026-07-12T06:28:31.196Z
+Generated: 2026-07-12T06:44:25.846Z
 
 ## Summary
 
@@ -79,34 +79,34 @@ Generated: 2026-07-12T06:28:31.196Z
 | --- | ---: | ---: |
 | PATCH /api/departments/00000000-0000-0000-0000-000000000000 | 404 | 3 ms |
 | PATCH /api/departments/not-a-uuid | 400 | 2 ms |
-| DELETE /api/departments/aa2805ad-e6c4-4795-b6dc-25629c5d5aaf | 200 | 3 ms |
-| GET /api/categories | 401 | 2 ms |
+| DELETE /api/departments/ac35764e-eca1-45b2-814f-763c9caefb8d | 200 | 3 ms |
+| GET /api/categories | 401 | 1 ms |
 | GET /api/categories | 403 | 2 ms |
-| GET /api/categories?page=1&limit=2&search=lap&status=ACTIVE | 200 | 3 ms |
+| GET /api/categories?page=1&limit=2&search=lap&status=ACTIVE | 200 | 2 ms |
 | GET /api/categories | 200 | 2 ms |
-| POST /api/categories | 201 | 4 ms |
-| POST /api/categories | 409 | 3 ms |
+| POST /api/categories | 201 | 3 ms |
+| POST /api/categories | 409 | 2 ms |
 | POST /api/categories | 400 | 2 ms |
-| PATCH /api/categories/0952e477-6895-4f12-9a9b-d9876c65b352 | 200 | 3 ms |
+| PATCH /api/categories/c826e57d-3fed-41e9-ba95-329910ffdbeb | 200 | 3 ms |
 | PATCH /api/categories/00000000-0000-0000-0000-000000000000 | 404 | 2 ms |
 | PATCH /api/categories/not-a-uuid | 400 | 2 ms |
-| DELETE /api/categories/0952e477-6895-4f12-9a9b-d9876c65b352 | 200 | 3 ms |
+| DELETE /api/categories/c826e57d-3fed-41e9-ba95-329910ffdbeb | 200 | 2 ms |
 | POST /api/categories | 403 | 2 ms |
-| GET /api/users | 401 | 2 ms |
+| GET /api/users | 401 | 1 ms |
 | GET /api/users | 403 | 2 ms |
-| GET /api/users?role=EMPLOYEE&departmentId=191244ef-f75e-48c1-a631-d0d374f2cfcf | 200 | 3 ms |
+| GET /api/users?role=EMPLOYEE&departmentId=0d9df613-51b3-4e34-b07b-e7695296df38 | 200 | 2 ms |
 | GET /api/users | 200 | 2 ms |
-| POST /api/users | 201 | 47 ms |
-| POST /api/users | 409 | 44 ms |
+| POST /api/users | 201 | 45 ms |
+| POST /api/users | 409 | 43 ms |
 | POST /api/users | 400 | 2 ms |
 | POST /api/users | 403 | 2 ms |
-| PATCH /api/users/06f97307-a118-4324-ba66-0a8be35435f9 | 200 | 4 ms |
-| PATCH /api/users/06f97307-a118-4324-ba66-0a8be35435f9 | 404 | 2 ms |
+| PATCH /api/users/f1958345-d069-4458-96b9-fc12e6acb34d | 200 | 3 ms |
+| PATCH /api/users/f1958345-d069-4458-96b9-fc12e6acb34d | 404 | 2 ms |
 | PATCH /api/users/00000000-0000-0000-0000-000000000000 | 404 | 2 ms |
 | GET /api/organization/overview | 200 | 3 ms |
 | GET /api/departments?page=1&limit=5 | 200 | 3 ms |
+| GET /api/categories?page=1&limit=5 | 200 | 3 ms |
 | GET /api/users?role=EMPLOYEE&page=1&limit=5 | 200 | 3 ms |
-| GET /api/categories?page=1&limit=5 | 200 | 5 ms |
 
 Local QA response times were within demo expectations. List endpoints use bounded pagination, and the organization overview performs aggregate counts in parallel.
 

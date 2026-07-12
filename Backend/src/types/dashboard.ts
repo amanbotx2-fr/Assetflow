@@ -10,6 +10,12 @@ export type DashboardOverview = {
   upcomingBookings: number;
   pendingTransfers: number;
   upcomingReturns: number;
+  pendingMaintenance: number;
+  approvedMaintenance: number;
+  assignedMaintenance: number;
+  inProgressMaintenance: number;
+  resolvedTodayMaintenance: number;
+  upcomingMaintenance: number;
 };
 
 export type DashboardAlert = {

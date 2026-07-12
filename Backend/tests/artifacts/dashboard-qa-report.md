@@ -1,6 +1,6 @@
 # Dashboard QA Report
 
-Generated: 2026-07-12T06:28:22.445Z
+Generated: 2026-07-12T06:44:16.283Z
 
 ## Summary
 
@@ -30,7 +30,7 @@ Generated: 2026-07-12T06:28:22.445Z
 | --- | ---: | ---: |
 | GET /api/dashboard/overview | 200 | 6 ms |
 | GET /api/dashboard/overview | 401 | 2 ms |
-| GET /api/dashboard/overview?departmentId=f9925c18-0349-4727-86be-a433f0c33ee9 | 403 | 2 ms |
+| GET /api/dashboard/overview?departmentId=66cbe275-956c-4d5c-90cf-0cef3a3b4859 | 403 | 2 ms |
 | GET /api/dashboard/overview | 200 | 4 ms |
 | GET /api/dashboard/overview | 200 | 5 ms |
 

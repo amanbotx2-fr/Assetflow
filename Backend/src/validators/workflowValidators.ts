@@ -140,24 +140,64 @@ export const bookingAvailabilityQuerySchema = z.object({
   date: z.string().date()
 });
 
+export const maintenanceListQuerySchema = z.object({
+  page: z.coerce.number().int().positive().optional(),
+  limit: z.coerce.number().int().positive().max(100).optional(),
+  search: z.string().trim().optional(),
+  status: z.nativeEnum(MaintenanceStatus).optional(),
+  priority: z.nativeEnum(MaintenancePriority).optional(),
+  assetId: z.string().uuid().optional(),
+  departmentId: z.string().uuid().optional(),
+  reportedById: z.string().uuid().optional(),
+  assignedToId: z.string().uuid().optional(),
+  assignedTechnicianId: z.string().uuid().optional(),
+  from: z.string().datetime().optional(),
+  to: z.string().datetime().optional(),
+  sortBy: z.enum(["reportedAt", "assignedAt", "startedAt", "resolvedAt", "closedAt", "createdAt", "updatedAt", "status", "priority"]).optional(),
+  sortOrder: workflowSortOrderSchema
+});
+
 export const createMaintenanceSchema = z.object({
   assetId: z.string().uuid(),
   priority: z.nativeEnum(MaintenancePriority).default(MaintenancePriority.MEDIUM),
   issueSummary: z.string().min(2),
   issueDescription: z.string().optional(),
-  assignedToId: z.string().uuid().optional()
+  assignedToId: z.string().uuid().optional(),
+  assignedTechnicianId: z.string().uuid().optional()
 });
 
 export const updateMaintenanceSchema = z.object({
   priority: z.nativeEnum(MaintenancePriority).optional(),
   status: z.nativeEnum(MaintenanceStatus).optional(),
   assignedToId: z.string().uuid().nullable().optional(),
+  assignedTechnicianId: z.string().uuid().nullable().optional(),
   issueSummary: z.string().min(2).optional(),
-  issueDescription: z.string().nullable().optional()
+  issueDescription: z.string().nullable().optional(),
+  resolutionNotes: z.string().min(1).nullable().optional(),
+  resolutionCost: z.coerce.number().nonnegative().nullable().optional()
+});
+
+export const assignMaintenanceSchema = z
+  .object({
+    assignedToId: z.string().uuid().optional(),
+    assignedTechnicianId: z.string().uuid().optional()
+  })
+  .refine((data) => Boolean(data.assignedToId || data.assignedTechnicianId), {
+    message: "assignedTechnicianId is required."
+  });
+
+export const startMaintenanceSchema = z.object({
+  notes: z.string().optional()
+});
+
+export const resolveMaintenanceSchema = z.object({
+  resolutionNotes: z.string().min(1),
+  resolutionCost: z.coerce.number().nonnegative().optional()
 });
 
 export const closeMaintenanceSchema = z.object({
-  resolutionNotes: z.string().min(1)
+  resolutionNotes: z.string().min(1).optional(),
+  resolutionCost: z.coerce.number().nonnegative().optional()
 });
 
 export const createAuditSchema = z.object({

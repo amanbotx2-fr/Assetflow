@@ -1,6 +1,7 @@
-import { BookingStatus, Role } from "@prisma/client";
+import { BookingStatus, MaintenanceStatus, Role } from "@prisma/client";
 import { prisma } from "../config/prisma.js";
 import { getBookingStatistics } from "./bookingService.js";
+import { getMaintenanceStatistics } from "./maintenanceService.js";
 import { getPagination, paginated } from "../utils/pagination.js";
 
 const departmentFilter = (actor: Express.User, query: Record<string, unknown>) => {
@@ -21,7 +22,20 @@ export const getSummaryReport = async (query: Record<string, unknown>, actor: Ex
       prisma.asset.count({ where: { ...assetWhere, status: "LOST" } }),
       prisma.transfer.count({ where: { status: "PENDING" } }),
       prisma.booking.count({ where: { status: { in: [BookingStatus.REQUESTED, BookingStatus.PENDING] } } }),
-      prisma.maintenanceTicket.count({ where: { status: { in: ["OPEN", "ASSIGNED", "IN_PROGRESS"] } } })
+      prisma.maintenanceTicket.count({
+        where: {
+          status: {
+            in: [
+              MaintenanceStatus.REQUESTED,
+              MaintenanceStatus.OPEN,
+              MaintenanceStatus.APPROVED,
+              MaintenanceStatus.ASSIGNED,
+              MaintenanceStatus.IN_PROGRESS,
+              MaintenanceStatus.RESOLVED
+            ]
+          }
+        }
+      })
     ]);
 
   const byStatus = await prisma.asset.groupBy({
@@ -81,4 +95,8 @@ export const getAssetReport = async (query: Record<string, unknown>, actor: Expr
 
 export const getBookingReport = async (query: Record<string, unknown>, actor: Express.User) => {
   return getBookingStatistics(query, actor);
+};
+
+export const getMaintenanceReport = async (query: Record<string, unknown>, actor: Express.User) => {
+  return getMaintenanceStatistics(query, actor);
 };

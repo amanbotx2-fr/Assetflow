@@ -239,7 +239,9 @@ async function main() {
       priority: MaintenancePriority.HIGH,
       status: MaintenanceStatus.IN_PROGRESS,
       issueSummary: "Display flickering",
-      issueDescription: "Monitor flickers every few minutes."
+      issueDescription: "Monitor flickers every few minutes.",
+      assignedAt: new Date("2026-07-12T08:00:00.000Z"),
+      startedAt: new Date("2026-07-12T08:30:00.000Z")
     }
   });
 
