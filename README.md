@@ -196,7 +196,22 @@ http://localhost:5000/api
 
 ### Run Frontend
 
-The `Frontend/` directory is maintained by the Frontend Team. Follow their team instructions for running that application.
+In a second terminal:
+
+```bash
+cd Frontend
+npm install
+cp .env.example .env
+npm run dev
+```
+
+The frontend defaults to:
+
+```text
+http://localhost:3000
+```
+
+If port `3000` is busy, Vite will choose the next open port. Update backend `CORS_ORIGIN` if you use a different frontend port.
 
 ## Environment Variables
 
@@ -214,6 +229,12 @@ Backend environment variables:
 | `MAX_FILE_SIZE_MB` | `5` | Upload size limit. |
 
 Never commit real `.env` files.
+
+Frontend environment variables:
+
+| Variable | Example | Purpose |
+| --- | --- | --- |
+| `VITE_API_BASE_URL` | `http://localhost:5000/api` | Backend API base URL consumed by the static Vite frontend. |
 
 ## Project Structure
 
@@ -430,4 +451,3 @@ License to be finalized by the project team.
 | TBD | Database design |
 | TBD | API development |
 | TBD | Testing and deployment |
-

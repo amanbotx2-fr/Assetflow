@@ -1,12 +1,21 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="0; url=login.html">
     <title>AssetFlow</title>
+    <link rel="stylesheet" href="./styles/index.css">
   </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
+  <body class="auth-redirect">
+    <main class="auth-redirect__panel">
+      <div class="brand-mark"><span>AF</span></div>
+      <h1 class="text-h3">Opening AssetFlow</h1>
+      <p class="text-muted">Redirecting to the secure login portal.</p>
+      <a class="btn-base btn-primary" href="login.html">Continue to Login</a>
+    </main>
+    <script>
+      window.location.replace("login.html");
+    </script>
   </body>
 </html>

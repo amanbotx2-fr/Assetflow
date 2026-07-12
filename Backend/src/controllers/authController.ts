@@ -7,6 +7,14 @@ export const login = asyncHandler(async (req, res) => {
   sendSuccess(res, result, "Login successful.");
 });
 
+export const registrationOptions = asyncHandler(async (_req, res) => {
+  sendSuccess(res, await authService.registrationOptions());
+});
+
+export const register = asyncHandler(async (req, res) => {
+  sendSuccess(res, await authService.register(req.body), "Registration successful.", 201);
+});
+
 export const me = asyncHandler(async (req, res) => {
   const result = await authService.getCurrentUser(req.user!.id);
   sendSuccess(res, result);

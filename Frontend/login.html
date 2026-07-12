@@ -1,38 +1,127 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AssetFlow - Login</title>
-    <!-- Global Design System -->
     <link rel="stylesheet" href="./styles/index.css">
-    <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
-</head>
-<body style="background-color: var(--color-bg-app); min-height: 100vh; display: flex; align-items: center; justify-content: center;">
-    
-    <!-- 3. Layout Wrapper (Centered single-column layout for Auth) -->
-    <main class="content-wrapper d-flex align-items-center justify-content-center p-4">
-        
-        <!-- Login placeholder shell using Shared Components (Cards, Buttons, Inputs) -->
-        <div class="card-base w-100" style="max-width: 440px;">
-            <div class="text-center mb-6 mt-2">
-                <div class="d-inline-flex align-items-center justify-content-center mb-4" style="width: 48px; height: 48px; border-radius: var(--radius-lg); background-color: var(--color-primary-light);">
-                    <i data-lucide="boxes" class="text-primary" style="width: 24px; height: 24px;"></i>
-                </div>
-                <h1 class="text-h3 font-bold mb-1">Welcome to AssetFlow</h1>
-                <p class="text-muted text-small">Please log in to your account</p>
-            </div>
-            
-            <!-- We only implement the layout wrapper and shared components foundation -->
-            <!-- The actual auth forms logic and content will be implemented later -->
-
+  </head>
+  <body>
+    <main class="auth-page">
+      <section class="auth-hero" aria-label="AssetFlow overview">
+        <div class="auth-hero__content">
+          <div class="auth-logo">
+            <span class="auth-logo__mark"><i data-lucide="boxes"></i></span>
+            <span class="text-h3 text-white m-0">AssetFlow</span>
+          </div>
+          <h1>Enterprise asset operations, controlled from one place.</h1>
+          <p>Track registration, ownership, bookings, maintenance, audits and reporting with a single ERP-style workspace for the whole organization.</p>
+          <div class="auth-feature-grid">
+            <article class="auth-feature">
+              <span class="auth-feature__icon"><i data-lucide="shield-check"></i></span>
+              <div><h3>Role-based access</h3><p>Admin, Manager, Employee and Auditor flows stay clean and separate.</p></div>
+            </article>
+            <article class="auth-feature">
+              <span class="auth-feature__icon"><i data-lucide="scan-line"></i></span>
+              <div><h3>Lifecycle visibility</h3><p>Assets move through allocation, transfer, booking, service and audit states.</p></div>
+            </article>
+            <article class="auth-feature">
+              <span class="auth-feature__icon"><i data-lucide="bar-chart-3"></i></span>
+              <div><h3>Analytics ready</h3><p>Reports are structured for frontend charts without extra calculation.</p></div>
+            </article>
+            <article class="auth-feature">
+              <span class="auth-feature__icon"><i data-lucide="bell-ring"></i></span>
+              <div><h3>Actionable alerts</h3><p>Approvals, maintenance and audit exceptions surface in one inbox.</p></div>
+            </article>
+          </div>
         </div>
+      </section>
 
+      <section class="auth-panel">
+        <div class="auth-card" id="authCard">
+          <div class="mb-6">
+            <div class="d-flex align-items-center gap-3 mb-4">
+              <span class="brand-mark"><i data-lucide="boxes"></i></span>
+              <div>
+                <h2 class="text-h3 m-0">Sign in</h2>
+                <p class="entity-meta m-0">Use your organization account.</p>
+              </div>
+            </div>
+            <div id="authMessage" class="hidden"></div>
+          </div>
+
+          <form id="loginForm" class="stack">
+            <label class="form-field">
+              <span>Work Email</span>
+              <input class="input-base" type="email" name="email" autocomplete="email" placeholder="admin@assetflow.local" required>
+            </label>
+            <label class="form-field">
+              <span>Password</span>
+              <input class="input-base" type="password" name="password" autocomplete="current-password" placeholder="Enter password" required>
+            </label>
+            <div class="d-flex align-items-center justify-content-between gap-4 flex-wrap">
+              <button class="link-button" id="forgotPasswordButton" type="button">Forgot Password</button>
+              <span class="entity-meta">Backend required for secure access.</span>
+            </div>
+            <button class="btn-base btn-primary w-100" type="submit">Sign In</button>
+          </form>
+
+          <div class="auth-divider"><span>New employee</span></div>
+          <button class="btn-base btn-secondary w-100" id="createAccountButton" type="button">
+            <i data-lucide="user-plus"></i>
+            Create Employee Account
+          </button>
+
+          <div class="panel registration-panel hidden mt-6" id="accountPanel">
+            <div class="panel__body">
+              <form class="registration-form" id="accountForm" novalidate>
+                <label class="form-field">
+                  <span>First Name</span>
+                  <input class="input-base" name="firstName" autocomplete="given-name" required>
+                </label>
+                <label class="form-field">
+                  <span>Last Name</span>
+                  <input class="input-base" name="lastName" autocomplete="family-name" required>
+                </label>
+                <label class="form-field registration-form__full">
+                  <span>Email</span>
+                  <input class="input-base" type="email" name="email" autocomplete="email" required>
+                </label>
+                <label class="form-field">
+                  <span>Password</span>
+                  <input class="input-base" type="password" name="password" autocomplete="new-password" minlength="6" required>
+                </label>
+                <label class="form-field">
+                  <span>Confirm Password</span>
+                  <input class="input-base" type="password" name="confirmPassword" autocomplete="new-password" minlength="6" required>
+                </label>
+                <label class="form-field">
+                  <span>Department</span>
+                  <select class="input-base" name="departmentId" id="registrationDepartment">
+                    <option value="">Loading departments...</option>
+                  </select>
+                </label>
+                <label class="form-field">
+                  <span>Role</span>
+                  <select class="input-base" name="role" id="registrationRole" required>
+                    <option value="EMPLOYEE">Employee</option>
+                  </select>
+                </label>
+                <label class="form-field registration-form__full">
+                  <span>Phone</span>
+                  <input class="input-base" name="phone" autocomplete="tel" minlength="3" maxlength="30" placeholder="Optional if enabled by backend">
+                </label>
+                <div class="form-actions registration-form__actions">
+                  <button class="btn-base btn-secondary" id="cancelAccountButton" type="button">Cancel</button>
+                  <button class="btn-base btn-primary" type="submit">Submit Request</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
-
-    <script>
-        lucide.createIcons();
-    </script>
-</body>
+    <script type="module" src="./js/auth.js"></script>
+  </body>
 </html>

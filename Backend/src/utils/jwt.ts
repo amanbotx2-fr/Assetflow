@@ -13,5 +13,16 @@ export const signToken = (payload: JwtPayload) => {
 };
 
 export const verifyToken = (token: string) => {
-  return jwt.verify(token, env.JWT_SECRET) as JwtPayload;
+  const payload = jwt.verify(token, env.JWT_SECRET);
+
+  if (
+    typeof payload !== "object" ||
+    payload === null ||
+    typeof payload.userId !== "string" ||
+    payload.userId.trim().length === 0
+  ) {
+    throw new jwt.JsonWebTokenError("Invalid token payload.");
+  }
+
+  return { userId: payload.userId };
 };

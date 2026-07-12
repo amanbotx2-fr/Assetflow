@@ -32,6 +32,13 @@ export const authenticate = async (req: Request, _res: Response, next: NextFunct
 
     next();
   } catch (error) {
+    if (
+      error instanceof Error &&
+      ["JsonWebTokenError", "TokenExpiredError", "NotBeforeError"].includes(error.name)
+    ) {
+      return next(unauthorized("Invalid or expired token."));
+    }
+
     next(error);
   }
 };
