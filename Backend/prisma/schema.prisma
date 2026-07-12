@@ -81,8 +81,27 @@ enum AuditResult {
   VERIFIED
   MISSING
   DAMAGED
+  RETIRED
+  UNREACHABLE
   MISPLACED
   NEEDS_REVIEW
+}
+
+enum AuditStatus {
+  PLANNED
+  ACTIVE
+  IN_PROGRESS
+  COMPLETED
+  CLOSED
+}
+
+enum AuditDiscrepancyType {
+  MISSING_ASSET
+  DAMAGED_ASSET
+  WRONG_LOCATION
+  UNEXPECTED_ALLOCATION
+  UNEXPECTED_DEPARTMENT
+  UNKNOWN_ASSET_CONDITION
 }
 
 model User {
@@ -110,6 +129,8 @@ model User {
   assignedMaintenance MaintenanceTicket[] @relation("MaintenanceAssignedTo")
   createdAssets       Asset[]             @relation("AssetCreatedBy")
   updatedAssets       Asset[]             @relation("AssetUpdatedBy")
+  createdAudits       Audit[]             @relation("AuditCreatedBy")
+  assignedAudits      Audit[]             @relation("AuditAssignedTo")
   auditRecords        AuditRecord[]       @relation("AuditRecordAuditor")
   auditLogs           AuditLog[]          @relation("AuditLogActor")
   notifications       Notification[]
@@ -138,6 +159,9 @@ model Department {
   allocations      Allocation[]
   fromTransfers    Transfer[]   @relation("TransferFromDepartment")
   toTransfers      Transfer[]   @relation("TransferToDepartment")
+  audits           Audit[]
+  expectedAuditRecords AuditRecord[] @relation("AuditRecordExpectedDepartment")
+  verifiedAuditRecords AuditRecord[] @relation("AuditRecordVerifiedDepartment")
 
   @@index([status])
   @@index([parentDepartmentId])
@@ -188,6 +212,7 @@ model Asset {
   bookings           Booking[]
   maintenanceTickets MaintenanceTicket[]
   auditRecords       AuditRecord[]
+  auditDiscrepancies AuditDiscrepancy[]
 
   @@index([status])
   @@index([categoryId])
@@ -313,22 +338,88 @@ model MaintenanceTicket {
   @@map("maintenance_tickets")
 }
 
+model Audit {
+  id                String      @id @default(uuid()) @db.Uuid
+  title             String
+  description       String?
+  departmentId      String?     @map("department_id") @db.Uuid
+  createdById       String      @map("created_by_id") @db.Uuid
+  assignedAuditorId String?     @map("assigned_auditor_id") @db.Uuid
+  status            AuditStatus @default(PLANNED)
+  plannedStart      DateTime?   @map("planned_start")
+  plannedEnd        DateTime?   @map("planned_end")
+  startedAt         DateTime?   @map("started_at")
+  completedAt       DateTime?   @map("completed_at")
+  closedAt          DateTime?   @map("closed_at")
+  createdAt         DateTime    @default(now()) @map("created_at")
+  updatedAt         DateTime    @updatedAt @map("updated_at")
+
+  department    Department?        @relation(fields: [departmentId], references: [id], onDelete: SetNull)
+  createdBy     User               @relation("AuditCreatedBy", fields: [createdById], references: [id])
+  assignedAuditor User?            @relation("AuditAssignedTo", fields: [assignedAuditorId], references: [id], onDelete: SetNull)
+  records       AuditRecord[]
+  discrepancies AuditDiscrepancy[]
+
+  @@index([status])
+  @@index([departmentId])
+  @@index([createdById])
+  @@index([assignedAuditorId])
+  @@map("audits")
+}
+
 model AuditRecord {
-  id        String      @id @default(uuid()) @db.Uuid
-  assetId   String      @map("asset_id") @db.Uuid
-  auditorId String      @map("auditor_id") @db.Uuid
-  result    AuditResult
-  remarks   String?
-  auditedAt DateTime    @default(now()) @map("audited_at")
-  createdAt DateTime    @default(now()) @map("created_at")
-  updatedAt DateTime    @updatedAt @map("updated_at")
+  id                        String          @id @default(uuid()) @db.Uuid
+  auditId                   String?         @map("audit_id") @db.Uuid
+  assetId                   String          @map("asset_id") @db.Uuid
+  auditorId                 String?         @map("auditor_id") @db.Uuid
+  result                    AuditResult?
+  remarks                   String?
+  expectedLocation          String?         @map("expected_location")
+  expectedDepartmentId      String?         @map("expected_department_id") @db.Uuid
+  expectedCondition         AssetCondition? @map("expected_condition")
+  expectedAllocationUserId  String?         @map("expected_allocation_user_id") @db.Uuid
+  locationVerified          String?         @map("location_verified")
+  departmentVerifiedId      String?         @map("department_verified_id") @db.Uuid
+  conditionVerified         AssetCondition? @map("condition_verified")
+  allocationUserVerifiedId  String?         @map("allocation_user_verified_id") @db.Uuid
+  verifiedAt                DateTime?       @map("verified_at")
+  auditedAt                 DateTime        @default(now()) @map("audited_at")
+  createdAt                 DateTime        @default(now()) @map("created_at")
+  updatedAt                 DateTime        @updatedAt @map("updated_at")
 
-  asset   Asset @relation(fields: [assetId], references: [id])
-  auditor User  @relation("AuditRecordAuditor", fields: [auditorId], references: [id])
+  audit                    Audit?             @relation(fields: [auditId], references: [id], onDelete: Cascade)
+  asset                    Asset              @relation(fields: [assetId], references: [id])
+  auditor                  User?              @relation("AuditRecordAuditor", fields: [auditorId], references: [id], onDelete: SetNull)
+  expectedDepartment       Department?        @relation("AuditRecordExpectedDepartment", fields: [expectedDepartmentId], references: [id], onDelete: SetNull)
+  departmentVerified       Department?        @relation("AuditRecordVerifiedDepartment", fields: [departmentVerifiedId], references: [id], onDelete: SetNull)
+  discrepancies            AuditDiscrepancy[]
 
+  @@unique([auditId, assetId])
+  @@index([auditId])
   @@index([assetId, auditedAt])
   @@index([result])
   @@map("audit_records")
+}
+
+model AuditDiscrepancy {
+  id            String               @id @default(uuid()) @db.Uuid
+  auditId       String               @map("audit_id") @db.Uuid
+  auditRecordId String?              @map("audit_record_id") @db.Uuid
+  assetId       String               @map("asset_id") @db.Uuid
+  type          AuditDiscrepancyType
+  message       String
+  severity      String               @default("warning")
+  createdAt     DateTime             @default(now()) @map("created_at")
+  updatedAt     DateTime             @updatedAt @map("updated_at")
+
+  audit       Audit        @relation(fields: [auditId], references: [id], onDelete: Cascade)
+  auditRecord AuditRecord? @relation(fields: [auditRecordId], references: [id], onDelete: SetNull)
+  asset       Asset        @relation(fields: [assetId], references: [id])
+
+  @@index([auditId, type])
+  @@index([auditRecordId])
+  @@index([assetId])
+  @@map("audit_discrepancies")
 }
 
 model AuditLog {

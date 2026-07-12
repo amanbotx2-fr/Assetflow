@@ -17,3 +17,7 @@ export const bookings = asyncHandler(async (req, res) => {
 export const maintenance = asyncHandler(async (req, res) => {
   sendSuccess(res, await reportService.getMaintenanceReport(req.query, req.user!));
 });
+
+export const audits = asyncHandler(async (req, res) => {
+  sendSuccess(res, await reportService.getAuditAnalyticsReport(req.query, req.user!));
+});

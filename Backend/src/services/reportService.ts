@@ -1,5 +1,6 @@
 import { BookingStatus, MaintenanceStatus, Role } from "@prisma/client";
 import { prisma } from "../config/prisma.js";
+import { getAuditReport } from "./auditService.js";
 import { getBookingStatistics } from "./bookingService.js";
 import { getMaintenanceStatistics } from "./maintenanceService.js";
 import { getPagination, paginated } from "../utils/pagination.js";
@@ -99,4 +100,8 @@ export const getBookingReport = async (query: Record<string, unknown>, actor: Ex
 
 export const getMaintenanceReport = async (query: Record<string, unknown>, actor: Express.User) => {
   return getMaintenanceStatistics(query, actor);
+};
+
+export const getAuditAnalyticsReport = async (query: Record<string, unknown>, actor: Express.User) => {
+  return getAuditReport(query, actor);
 };

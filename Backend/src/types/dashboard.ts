@@ -16,6 +16,11 @@ export type DashboardOverview = {
   inProgressMaintenance: number;
   resolvedTodayMaintenance: number;
   upcomingMaintenance: number;
+  activeAudits: number;
+  auditsCompleted: number;
+  assetsVerified: number;
+  pendingVerification: number;
+  discrepanciesFound: number;
 };
 
 export type DashboardAlert = {
@@ -44,7 +49,7 @@ export type DashboardQuickAction = {
 
 export type DashboardRecentActivity = {
   id: string;
-  type: "ALLOCATION" | "TRANSFER" | "BOOKING" | "MAINTENANCE";
+  type: "ALLOCATION" | "TRANSFER" | "BOOKING" | "MAINTENANCE" | "AUDIT";
   title: string;
   description: string;
   status: string;
