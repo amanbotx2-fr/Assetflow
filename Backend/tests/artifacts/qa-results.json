@@ -1,0 +1,3603 @@
+{
+  "summary": {
+    "total": 65,
+    "passed": 65,
+    "failed": 0
+  },
+  "results": [
+    {
+      "endpoint": "GET /health",
+      "expectedBehaviour": "Health endpoint returns service status",
+      "actualBehaviour": {
+        "status": 200,
+        "json": {
+          "success": true,
+          "data": {
+            "service": "assetflow-backend",
+            "status": "ok"
+          },
+          "message": "Operation completed successfully."
+        }
+      },
+      "statusCode": 200,
+      "status": "PASS",
+      "rootCause": "",
+      "fixApplied": ""
+    },
+    {
+      "endpoint": "GET /health/db",
+      "expectedBehaviour": "Database health endpoint confirms connection",
+      "actualBehaviour": {
+        "status": 200,
+        "json": {
+          "success": true,
+          "data": {
+            "service": "assetflow-backend",
+            "database": "connected"
+          },
+          "message": "Operation completed successfully."
+        }
+      },
+      "statusCode": 200,
+      "status": "PASS",
+      "rootCause": "",
+      "fixApplied": ""
+    },
+    {
+      "endpoint": "GET /api/assets",
+      "expectedBehaviour": "Protected endpoint rejects missing JWT",
+      "actualBehaviour": {
+        "status": 401,
+        "json": {
+          "success": false,
+          "error": {
+            "code": "UNAUTHORIZED",
+            "message": "Authentication required."
+          }
+        }
+      },
+      "statusCode": 401,
+      "status": "PASS",
+      "rootCause": "",
+      "fixApplied": ""
+    },
+    {
+      "endpoint": "POST /api/auth/login",
+      "expectedBehaviour": "Admin can login",
+      "actualBehaviour": {
+        "status": 200,
+        "json": {
+          "success": true,
+          "data": {
+            "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI1MTVkMmMxYS03YmU4LTQ4NzMtYmI4ZC0zMThmMzM5ZmRjMDciLCJpYXQiOjE3ODM4MzM0MzIsImV4cCI6MTc4NDQzODIzMn0.8NSdGLq7wvRf5heBxQ93jvSuk4kL_bFyAwBnHlSkcU4",
+            "user": {
+              "id": "515d2c1a-7be8-4873-bb8d-318f339fdc07",
+              "name": "Admin User",
+              "email": "admin@assetflow.local",
+              "role": "ADMIN",
+              "departmentId": "56a13f59-5027-4b5d-8314-6cd8565a9697",
+              "status": "ACTIVE",
+              "createdAt": "2026-07-12T05:16:52.064Z",
+              "updatedAt": "2026-07-12T05:16:52.064Z"
+            }
+          },
+          "message": "Login successful."
+        }
+      },
+      "statusCode": 200,
+      "status": "PASS",
+      "rootCause": "",
+      "fixApplied": ""
+    },
+    {
+      "endpoint": "POST /api/auth/login",
+      "expectedBehaviour": "Employee can login",
+      "actualBehaviour": {
+        "status": 200,
+        "json": {
+          "success": true,
+          "data": {
+            "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI5NzgzODQyYi1mNzAxLTQyYTUtYWI2Mi1kOTRhNDJjZDk2OTMiLCJpYXQiOjE3ODM4MzM0MzIsImV4cCI6MTc4NDQzODIzMn0.NZLJBszu35ubDFYBbvlKunoXwKc9J-U6NyZzFZ8yT7E",
+            "user": {
+              "id": "9783842b-f701-42a5-ab62-d94a42cd9693",
+              "name": "Employee User",
+              "email": "employee@assetflow.local",
+              "role": "EMPLOYEE",
+              "departmentId": "56a13f59-5027-4b5d-8314-6cd8565a9697",
+              "status": "ACTIVE",
+              "createdAt": "2026-07-12T05:16:52.065Z",
+              "updatedAt": "2026-07-12T05:16:52.065Z"
+            }
+          },
+          "message": "Login successful."
+        }
+      },
+      "statusCode": 200,
+      "status": "PASS",
+      "rootCause": "",
+      "fixApplied": ""
+    },
+    {
+      "endpoint": "POST /api/auth/login",
+      "expectedBehaviour": "Auditor can login",
+      "actualBehaviour": {
+        "status": 200,
+        "json": {
+          "success": true,
+          "data": {
+            "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI4ZDljMDZjZC05NWRiLTQ1NjctYmZjZS1hMjJkMzMzOTUxOTIiLCJpYXQiOjE3ODM4MzM0MzIsImV4cCI6MTc4NDQzODIzMn0.y8hBd1Y_D6ctsBKnWreP--JD48uehjK_Dlft3O4s0Fk",
+            "user": {
+              "id": "8d9c06cd-95db-4567-bfce-a22d33395192",
+              "name": "Audit User",
+              "email": "auditor@assetflow.local",
+              "role": "AUDITOR",
+              "departmentId": "80545d5b-6e3b-44f4-b2bb-a9a3bdd0c5d6",
+              "status": "ACTIVE",
+              "createdAt": "2026-07-12T05:16:52.066Z",
+              "updatedAt": "2026-07-12T05:16:52.066Z"
+            }
+          },
+          "message": "Login successful."
+        }
+      },
+      "statusCode": 200,
+      "status": "PASS",
+      "rootCause": "",
+      "fixApplied": ""
+    },
+    {
+      "endpoint": "POST /api/auth/login",
+      "expectedBehaviour": "Login validation rejects invalid email",
+      "actualBehaviour": {
+        "status": 400,
+        "json": {
+          "success": false,
+          "error": {
+            "code": "VALIDATION_ERROR",
+            "message": "Invalid body.",
+            "details": {
+              "formErrors": [],
+              "fieldErrors": {
+                "email": [
+                  "Invalid email"
+                ]
+              }
+            }
+          }
+        }
+      },
+      "statusCode": 400,
+      "status": "PASS",
+      "rootCause": "",
+      "fixApplied": ""
+    },
+    {
+      "endpoint": "POST /api/auth/login",
+      "expectedBehaviour": "Login rejects bad password",
+      "actualBehaviour": {
+        "status": 401,
+        "json": {
+          "success": false,
+          "error": {
+            "code": "UNAUTHORIZED",
+            "message": "Invalid email or password."
+          }
+        }
+      },
+      "statusCode": 401,
+      "status": "PASS",
+      "rootCause": "",
+      "fixApplied": ""
+    },
+    {
+      "endpoint": "GET /api/auth/me",
+      "expectedBehaviour": "Authenticated user profile resolves from JWT",
+      "actualBehaviour": {
+        "status": 200,
+        "json": {
+          "success": true,
+          "data": {
+            "id": "515d2c1a-7be8-4873-bb8d-318f339fdc07",
+            "name": "Admin User",
+            "email": "admin@assetflow.local",
+            "role": "ADMIN",
+            "departmentId": "56a13f59-5027-4b5d-8314-6cd8565a9697",
+            "status": "ACTIVE",
+            "createdAt": "2026-07-12T05:16:52.064Z",
+            "updatedAt": "2026-07-12T05:16:52.064Z",
+            "department": {
+              "id": "56a13f59-5027-4b5d-8314-6cd8565a9697",
+              "name": "Information Technology",
+              "code": "IT"
+            }
+          },
+          "message": "Operation completed successfully."
+        }
+      },
+      "statusCode": 200,
+      "status": "PASS",
+      "rootCause": "",
+      "fixApplied": ""
+    },
+    {
+      "endpoint": "POST /api/auth/logout",
+      "expectedBehaviour": "Logout endpoint returns success",
+      "actualBehaviour": {
+        "status": 200,
+        "json": {
+          "success": true,
+          "data": {
+            "loggedOut": true
+          },
+          "message": "Logged out."
+        }
+      },
+      "statusCode": 200,
+      "status": "PASS",
+      "rootCause": "",
+      "fixApplied": ""
+    },
+    {
+      "endpoint": "GET /api/users",
+      "expectedBehaviour": "Admin can list users",
+      "actualBehaviour": {
+        "status": 200,
+        "json": {
+          "success": true,
+          "data": {
+            "items": [
+              {
+                "id": "8d9c06cd-95db-4567-bfce-a22d33395192",
+                "name": "Audit User",
+                "email": "auditor@assetflow.local",
+                "role": "AUDITOR",
+                "departmentId": "80545d5b-6e3b-44f4-b2bb-a9a3bdd0c5d6",
+                "status": "ACTIVE",
+                "createdAt": "2026-07-12T05:16:52.066Z",
+                "updatedAt": "2026-07-12T05:16:52.066Z",
+                "department": {
+                  "id": "80545d5b-6e3b-44f4-b2bb-a9a3bdd0c5d6",
+                  "name": "Finance",
+                  "code": "FIN"
+                }
+              },
+              {
+                "id": "64f27ba4-b93c-430a-a24b-44fe1510df46",
+                "name": "IT Manager",
+                "email": "manager@assetflow.local",
+                "role": "MANAGER",
+                "departmentId": "56a13f59-5027-4b5d-8314-6cd8565a9697",
+                "status": "ACTIVE",
+                "createdAt": "2026-07-12T05:16:52.065Z",
+                "updatedAt": "2026-07-12T05:16:52.065Z",
+                "department": {
+                  "id": "56a13f59-5027-4b5d-8314-6cd8565a9697",
+                  "name": "Information Technology",
+                  "code": "IT"
+                }
+              },
+              {
+                "id": "9783842b-f701-42a5-ab62-d94a42cd9693",
+                "name": "Employee User",
+                "email": "employee@assetflow.local",
+                "role": "EMPLOYEE",
+                "departmentId": "56a13f59-5027-4b5d-8314-6cd8565a9697",
+                "status": "ACTIVE",
+                "createdAt": "2026-07-12T05:16:52.065Z",
+                "updatedAt": "2026-07-12T05:16:52.065Z",
+                "department": {
+                  "id": "56a13f59-5027-4b5d-8314-6cd8565a9697",
+                  "name": "Information Technology",
+                  "code": "IT"
+                }
+              },
+              {
+                "id": "515d2c1a-7be8-4873-bb8d-318f339fdc07",
+                "name": "Admin User",
+                "email": "admin@assetflow.local",
+                "role": "ADMIN",
+                "departmentId": "56a13f59-5027-4b5d-8314-6cd8565a9697",
+                "status": "ACTIVE",
+                "createdAt": "2026-07-12T05:16:52.064Z",
+                "updatedAt": "2026-07-12T05:16:52.064Z",
+                "department": {
+                  "id": "56a13f59-5027-4b5d-8314-6cd8565a9697",
+                  "name": "Information Technology",
+                  "code": "IT"
+                }
+              }
+            ],
+            "page": 1,
+            "limit": 20,
+            "total": 4,
+            "totalPages": 1
+          },
+          "message": "Operation completed successfully."
+        }
+      },
+      "statusCode": 200,
+      "status": "PASS",
+      "rootCause": "",
+      "fixApplied": ""
+    },
+    {
+      "endpoint": "GET /api/users",
+      "expectedBehaviour": "Employee cannot list all users",
+      "actualBehaviour": {
+        "status": 403,
+        "json": {
+          "success": false,
+          "error": {
+            "code": "FORBIDDEN",
+            "message": "You do not have permission to perform this action."
+          }
+        }
+      },
+      "statusCode": 403,
+      "status": "PASS",
+      "rootCause": "",
+      "fixApplied": ""
+    },
+    {
+      "endpoint": "GET /api/users?role=EMPLOYEE",
+      "expectedBehaviour": "Admin can filter users by role",
+      "actualBehaviour": {
+        "status": 200,
+        "json": {
+          "success": true,
+          "data": {
+            "items": [
+              {
+                "id": "9783842b-f701-42a5-ab62-d94a42cd9693",
+                "name": "Employee User",
+                "email": "employee@assetflow.local",
+                "role": "EMPLOYEE",
+                "departmentId": "56a13f59-5027-4b5d-8314-6cd8565a9697",
+                "status": "ACTIVE",
+                "createdAt": "2026-07-12T05:16:52.065Z",
+                "updatedAt": "2026-07-12T05:16:52.065Z",
+                "department": {
+                  "id": "56a13f59-5027-4b5d-8314-6cd8565a9697",
+                  "name": "Information Technology",
+                  "code": "IT"
+                }
+              }
+            ],
+            "page": 1,
+            "limit": 20,
+            "total": 1,
+            "totalPages": 1
+          },
+          "message": "Operation completed successfully."
+        }
+      },
+      "statusCode": 200,
+      "status": "PASS",
+      "rootCause": "",
+      "fixApplied": ""
+    },
+    {
+      "endpoint": "POST /api/departments",
+      "expectedBehaviour": "Admin can create department",
+      "actualBehaviour": {
+        "status": 201,
+        "json": {
+          "success": true,
+          "data": {
+            "id": "528a43ca-a674-4a0a-9925-6f15604970ca",
+            "name": "QA Department 1783833433039",
+            "code": "QA33039",
+            "managerId": null,
+            "status": "ACTIVE",
+            "createdAt": "2026-07-12T05:17:13.042Z",
+            "updatedAt": "2026-07-12T05:17:13.042Z"
+          },
+          "message": "Resource created successfully."
+        }
+      },
+      "statusCode": 201,
+      "status": "PASS",
+      "rootCause": "",
+      "fixApplied": ""
+    },
+    {
+      "endpoint": "POST /api/departments",
+      "expectedBehaviour": "Employee cannot create department",
+      "actualBehaviour": {
+        "status": 403,
+        "json": {
+          "success": false,
+          "error": {
+            "code": "FORBIDDEN",
+            "message": "You do not have permission to perform this action."
+          }
+        }
+      },
+      "statusCode": 403,
+      "status": "PASS",
+      "rootCause": "",
+      "fixApplied": ""
+    },
+    {
+      "endpoint": "GET /api/departments",
+      "expectedBehaviour": "Authenticated user can list departments",
+      "actualBehaviour": {
+        "status": 200,
+        "json": {
+          "success": true,
+          "data": [
+            {
+              "id": "80545d5b-6e3b-44f4-b2bb-a9a3bdd0c5d6",
+              "name": "Finance",
+              "code": "FIN",
+              "managerId": null,
+              "status": "ACTIVE",
+              "createdAt": "2026-07-12T05:16:52.061Z",
+              "updatedAt": "2026-07-12T05:16:52.061Z",
+              "manager": null
+            },
+            {
+              "id": "56a13f59-5027-4b5d-8314-6cd8565a9697",
+              "name": "Information Technology",
+              "code": "IT",
+              "managerId": "64f27ba4-b93c-430a-a24b-44fe1510df46",
+              "status": "ACTIVE",
+              "createdAt": "2026-07-12T05:16:52.061Z",
+              "updatedAt": "2026-07-12T05:16:52.066Z",
+              "manager": {
+                "id": "64f27ba4-b93c-430a-a24b-44fe1510df46",
+                "name": "IT Manager",
+                "email": "manager@assetflow.local",
+                "role": "MANAGER",
+                "departmentId": "56a13f59-5027-4b5d-8314-6cd8565a9697",
+                "status": "ACTIVE",
+                "createdAt": "2026-07-12T05:16:52.065Z",
+                "updatedAt": "2026-07-12T05:16:52.065Z",
+                "department": {
+                  "id": "56a13f59-5027-4b5d-8314-6cd8565a9697",
+                  "name": "Information Technology",
+                  "code": "IT"
+                }
+              }
+            },
+            {
+              "id": "e7eb1058-86db-4daf-b403-f8280fe50f39",
+              "name": "Operations",
+              "code": "OPS",
+              "managerId": null,
+              "status": "ACTIVE",
+              "createdAt": "2026-07-12T05:16:52.061Z",
+              "updatedAt": "2026-07-12T05:16:52.061Z",
+              "manager": null
+            },
+            {
+              "id": "528a43ca-a674-4a0a-9925-6f15604970ca",
+              "name": "QA Department 1783833433039",
+              "code": "QA33039",
+              "managerId": null,
+              "status": "ACTIVE",
+              "createdAt": "2026-07-12T05:17:13.042Z",
+              "updatedAt": "2026-07-12T05:17:13.042Z",
+              "manager": null
+            }
+          ],
+          "message": "Operation completed successfully."
+        }
+      },
+      "statusCode": 200,
+      "status": "PASS",
+      "rootCause": "",
+      "fixApplied": ""
+    },
+    {
+      "endpoint": "PATCH /api/departments/528a43ca-a674-4a0a-9925-6f15604970ca",
+      "expectedBehaviour": "Admin can update department",
+      "actualBehaviour": {
+        "status": 200,
+        "json": {
+          "success": true,
+          "data": {
+            "id": "528a43ca-a674-4a0a-9925-6f15604970ca",
+            "name": "QA Department Updated 1783833433047",
+            "code": "QA33039",
+            "managerId": null,
+            "status": "ACTIVE",
+            "createdAt": "2026-07-12T05:17:13.042Z",
+            "updatedAt": "2026-07-12T05:17:13.050Z"
+          },
+          "message": "Operation completed successfully."
+        }
+      },
+      "statusCode": 200,
+      "status": "PASS",
+      "rootCause": "",
+      "fixApplied": ""
+    },
+    {
+      "endpoint": "POST /api/users",
+      "expectedBehaviour": "Admin can create employee",
+      "actualBehaviour": {
+        "status": 201,
+        "json": {
+          "success": true,
+          "data": {
+            "id": "e68edf67-0e82-49df-b2b8-cf901d2fa30f",
+            "name": "QA Employee",
+            "email": "qa.employee.1783833433050@assetflow.local",
+            "role": "EMPLOYEE",
+            "departmentId": "528a43ca-a674-4a0a-9925-6f15604970ca",
+            "status": "ACTIVE",
+            "createdAt": "2026-07-12T05:17:13.093Z",
+            "updatedAt": "2026-07-12T05:17:13.093Z",
+            "department": {
+              "id": "528a43ca-a674-4a0a-9925-6f15604970ca",
+              "name": "QA Department Updated 1783833433047",
+              "code": "QA33039"
+            }
+          },
+          "message": "Resource created successfully."
+        }
+      },
+      "statusCode": 201,
+      "status": "PASS",
+      "rootCause": "",
+      "fixApplied": ""
+    },
+    {
+      "endpoint": "PATCH /api/users/e68edf67-0e82-49df-b2b8-cf901d2fa30f",
+      "expectedBehaviour": "Admin can update user",
+      "actualBehaviour": {
+        "status": 200,
+        "json": {
+          "success": true,
+          "data": {
+            "id": "e68edf67-0e82-49df-b2b8-cf901d2fa30f",
+            "name": "QA Employee",
+            "email": "qa.employee.1783833433050@assetflow.local",
+            "role": "EMPLOYEE",
+            "departmentId": "528a43ca-a674-4a0a-9925-6f15604970ca",
+            "status": "ACTIVE",
+            "createdAt": "2026-07-12T05:17:13.093Z",
+            "updatedAt": "2026-07-12T05:17:13.096Z",
+            "department": {
+              "id": "528a43ca-a674-4a0a-9925-6f15604970ca",
+              "name": "QA Department Updated 1783833433047",
+              "code": "QA33039"
+            }
+          },
+          "message": "Operation completed successfully."
+        }
+      },
+      "statusCode": 200,
+      "status": "PASS",
+      "rootCause": "",
+      "fixApplied": ""
+    },
+    {
+      "endpoint": "POST /api/categories",
+      "expectedBehaviour": "Admin can create category",
+      "actualBehaviour": {
+        "status": 201,
+        "json": {
+          "success": true,
+          "data": {
+            "id": "9e3ec76f-5f49-4128-8ab2-4721b49e7867",
+            "name": "QA Category 1783833433097",
+            "code": "QAC33097",
+            "description": null,
+            "status": "ACTIVE",
+            "createdAt": "2026-07-12T05:17:13.099Z",
+            "updatedAt": "2026-07-12T05:17:13.099Z"
+          },
+          "message": "Resource created successfully."
+        }
+      },
+      "statusCode": 201,
+      "status": "PASS",
+      "rootCause": "",
+      "fixApplied": ""
+    },
+    {
+      "endpoint": "GET /api/categories",
+      "expectedBehaviour": "Authenticated user can list categories",
+      "actualBehaviour": {
+        "status": 200,
+        "json": {
+          "success": true,
+          "data": [
+            {
+              "id": "000c213b-457a-4a76-9491-83ddfd216712",
+              "name": "Furniture",
+              "code": "FUR",
+              "description": "Office furniture",
+              "status": "ACTIVE",
+              "createdAt": "2026-07-12T05:16:52.067Z",
+              "updatedAt": "2026-07-12T05:16:52.067Z"
+            },
+            {
+              "id": "0c4ae31c-b1ab-44d4-85d5-5d670c531829",
+              "name": "Laptop",
+              "code": "LAP",
+              "description": "Portable computers",
+              "status": "ACTIVE",
+              "createdAt": "2026-07-12T05:16:52.067Z",
+              "updatedAt": "2026-07-12T05:16:52.067Z"
+            },
+            {
+              "id": "1bf764b6-47e8-44a0-ad54-53d61a2c5a7e",
+              "name": "Monitor",
+              "code": "MON",
+              "description": "Displays and screens",
+              "status": "ACTIVE",
+              "createdAt": "2026-07-12T05:16:52.067Z",
+              "updatedAt": "2026-07-12T05:16:52.067Z"
+            },
+            {
+              "id": "c18d7fc0-0bcd-4eaa-854c-fefd57142ed3",
+              "name": "Projector",
+              "code": "PROJ",
+              "description": "Bookable presentation devices",
+              "status": "ACTIVE",
+              "createdAt": "2026-07-12T05:16:52.067Z",
+              "updatedAt": "2026-07-12T05:16:52.067Z"
+            },
+            {
+              "id": "9e3ec76f-5f49-4128-8ab2-4721b49e7867",
+              "name": "QA Category 1783833433097",
+              "code": "QAC33097",
+              "description": null,
+              "status": "ACTIVE",
+              "createdAt": "2026-07-12T05:17:13.099Z",
+              "updatedAt": "2026-07-12T05:17:13.099Z"
+            },
+            {
+              "id": "4f8b69ee-2acf-4537-a2f0-2daf79e252f1",
+              "name": "Vehicle",
+              "code": "VEH",
+              "description": "Shared organization vehicles",
+              "status": "ACTIVE",
+              "createdAt": "2026-07-12T05:16:52.067Z",
+              "updatedAt": "2026-07-12T05:16:52.067Z"
+            }
+          ],
+          "message": "Operation completed successfully."
+        }
+      },
+      "statusCode": 200,
+      "status": "PASS",
+      "rootCause": "",
+      "fixApplied": ""
+    },
+    {
+      "endpoint": "PATCH /api/categories/9e3ec76f-5f49-4128-8ab2-4721b49e7867",
+      "expectedBehaviour": "Admin can update category",
+      "actualBehaviour": {
+        "status": 200,
+        "json": {
+          "success": true,
+          "data": {
+            "id": "9e3ec76f-5f49-4128-8ab2-4721b49e7867",
+            "name": "QA Category 1783833433097",
+            "code": "QAC33097",
+            "description": "Updated by QA",
+            "status": "ACTIVE",
+            "createdAt": "2026-07-12T05:17:13.099Z",
+            "updatedAt": "2026-07-12T05:17:13.103Z"
+          },
+          "message": "Operation completed successfully."
+        }
+      },
+      "statusCode": 200,
+      "status": "PASS",
+      "rootCause": "",
+      "fixApplied": ""
+    },
+    {
+      "endpoint": "POST /api/assets",
+      "expectedBehaviour": "Admin can create asset",
+      "actualBehaviour": {
+        "status": 201,
+        "json": {
+          "success": true,
+          "data": {
+            "id": "7c853b12-2318-47cf-882b-1dfb79f98375",
+            "assetCode": "QA-ASSET-1783833433104",
+            "name": "QA Test Laptop",
+            "description": null,
+            "categoryId": "9e3ec76f-5f49-4128-8ab2-4721b49e7867",
+            "departmentId": "528a43ca-a674-4a0a-9925-6f15604970ca",
+            "status": "AVAILABLE",
+            "condition": "GOOD",
+            "location": "QA Lab",
+            "purchaseValue": null,
+            "purchaseDate": null,
+            "warrantyExpiry": null,
+            "isBookable": true,
+            "createdAt": "2026-07-12T05:17:13.106Z",
+            "updatedAt": "2026-07-12T05:17:13.106Z",
+            "category": {
+              "id": "9e3ec76f-5f49-4128-8ab2-4721b49e7867",
+              "name": "QA Category 1783833433097",
+              "code": "QAC33097",
+              "description": "Updated by QA",
+              "status": "ACTIVE",
+              "createdAt": "2026-07-12T05:17:13.099Z",
+              "updatedAt": "2026-07-12T05:17:13.103Z"
+            },
+            "department": {
+              "id": "528a43ca-a674-4a0a-9925-6f15604970ca",
+              "name": "QA Department Updated 1783833433047",
+              "code": "QA33039",
+              "managerId": null,
+              "status": "ACTIVE",
+              "createdAt": "2026-07-12T05:17:13.042Z",
+              "updatedAt": "2026-07-12T05:17:13.050Z"
+            },
+            "allocations": []
+          },
+          "message": "Resource created successfully."
+        }
+      },
+      "statusCode": 201,
+      "status": "PASS",
+      "rootCause": "",
+      "fixApplied": ""
+    },
+    {
+      "endpoint": "GET /api/assets",
+      "expectedBehaviour": "Authenticated user can list assets",
+      "actualBehaviour": {
+        "status": 200,
+        "json": {
+          "success": true,
+          "data": {
+            "items": [
+              {
+                "id": "7c853b12-2318-47cf-882b-1dfb79f98375",
+                "assetCode": "QA-ASSET-1783833433104",
+                "name": "QA Test Laptop",
+                "description": null,
+                "categoryId": "9e3ec76f-5f49-4128-8ab2-4721b49e7867",
+                "departmentId": "528a43ca-a674-4a0a-9925-6f15604970ca",
+                "status": "AVAILABLE",
+                "condition": "GOOD",
+                "location": "QA Lab",
+                "purchaseValue": null,
+                "purchaseDate": null,
+                "warrantyExpiry": null,
+                "isBookable": true,
+                "createdAt": "2026-07-12T05:17:13.106Z",
+                "updatedAt": "2026-07-12T05:17:13.106Z",
+                "category": {
+                  "id": "9e3ec76f-5f49-4128-8ab2-4721b49e7867",
+                  "name": "QA Category 1783833433097",
+                  "code": "QAC33097",
+                  "description": "Updated by QA",
+                  "status": "ACTIVE",
+                  "createdAt": "2026-07-12T05:17:13.099Z",
+                  "updatedAt": "2026-07-12T05:17:13.103Z"
+                },
+                "department": {
+                  "id": "528a43ca-a674-4a0a-9925-6f15604970ca",
+                  "name": "QA Department Updated 1783833433047",
+                  "code": "QA33039",
+                  "managerId": null,
+                  "status": "ACTIVE",
+                  "createdAt": "2026-07-12T05:17:13.042Z",
+                  "updatedAt": "2026-07-12T05:17:13.050Z"
+                },
+                "allocations": []
+              },
+              {
+                "id": "2eb7ef4a-b53e-434e-a9c3-5e5efbeb7784",
+                "assetCode": "VEH-001",
+                "name": "Office Shuttle",
+                "description": null,
+                "categoryId": "4f8b69ee-2acf-4537-a2f0-2daf79e252f1",
+                "departmentId": "e7eb1058-86db-4daf-b403-f8280fe50f39",
+                "status": "AVAILABLE",
+                "condition": "GOOD",
+                "location": "Parking Bay 4",
+                "purchaseValue": null,
+                "purchaseDate": null,
+                "warrantyExpiry": null,
+                "isBookable": true,
+                "createdAt": "2026-07-12T05:16:52.071Z",
+                "updatedAt": "2026-07-12T05:16:52.071Z",
+                "category": {
+                  "id": "4f8b69ee-2acf-4537-a2f0-2daf79e252f1",
+                  "name": "Vehicle",
+                  "code": "VEH",
+                  "description": "Shared organization vehicles",
+                  "status": "ACTIVE",
+                  "createdAt": "2026-07-12T05:16:52.067Z",
+                  "updatedAt": "2026-07-12T05:16:52.067Z"
+                },
+                "department": {
+                  "id": "e7eb1058-86db-4daf-b403-f8280fe50f39",
+                  "name": "Operations",
+                  "code": "OPS",
+                  "managerId": null,
+                  "status": "ACTIVE",
+                  "createdAt": "2026-07-12T05:16:52.061Z",
+                  "updatedAt": "2026-07-12T05:16:52.061Z"
+                },
+                "allocations": []
+              },
+              {
+                "id": "89950824-de4a-4f8c-bc27-7720e4104df8",
+                "assetCode": "FUR-001",
+                "name": "Ergonomic Chair",
+                "description": null,
+                "categoryId": "000c213b-457a-4a76-9491-83ddfd216712",
+                "departmentId": "e7eb1058-86db-4daf-b403-f8280fe50f39",
+                "status": "AVAILABLE",
+                "condition": "GOOD",
+                "location": "Storage Room",
+                "purchaseValue": null,
+                "purchaseDate": null,
+                "warrantyExpiry": null,
+                "isBookable": false,
+                "createdAt": "2026-07-12T05:16:52.071Z",
+                "updatedAt": "2026-07-12T05:16:52.071Z",
+                "category": {
+                  "id": "000c213b-457a-4a76-9491-83ddfd216712",
+                  "name": "Furniture",
+                  "code": "FUR",
+                  "description": "Office furniture",
+                  "status": "ACTIVE",
+                  "createdAt": "2026-07-12T05:16:52.067Z",
+                  "updatedAt": "2026-07-12T05:16:52.067Z"
+                },
+                "department": {
+                  "id": "e7eb1058-86db-4daf-b403-f8280fe50f39",
+                  "name": "Operations",
+                  "code": "OPS",
+                  "managerId": null,
+                  "status": "ACTIVE",
+                  "createdAt": "2026-07-12T05:16:52.061Z",
+                  "updatedAt": "2026-07-12T05:16:52.061Z"
+                },
+                "allocations": []
+              },
+              {
+                "id": "68309c42-7046-4b64-994f-3bc8d508ccc2",
+                "assetCode": "MON-001",
+                "name": "Dell 27 Inch Monitor",
+                "description": null,
+                "categoryId": "1bf764b6-47e8-44a0-ad54-53d61a2c5a7e",
+                "departmentId": "80545d5b-6e3b-44f4-b2bb-a9a3bdd0c5d6",
+                "status": "MAINTENANCE",
+                "condition": "FAIR",
+                "location": "Finance Bay",
+                "purchaseValue": null,
+                "purchaseDate": null,
+                "warrantyExpiry": null,
+                "isBookable": false,
+                "createdAt": "2026-07-12T05:16:52.071Z",
+                "updatedAt": "2026-07-12T05:16:52.071Z",
+                "category": {
+                  "id": "1bf764b6-47e8-44a0-ad54-53d61a2c5a7e",
+                  "name": "Monitor",
+                  "code": "MON",
+                  "description": "Displays and screens",
+                  "status": "ACTIVE",
+                  "createdAt": "2026-07-12T05:16:52.067Z",
+                  "updatedAt": "2026-07-12T05:16:52.067Z"
+                },
+                "department": {
+                  "id": "80545d5b-6e3b-44f4-b2bb-a9a3bdd0c5d6",
+                  "name": "Finance",
+                  "code": "FIN",
+                  "managerId": null,
+                  "status": "ACTIVE",
+                  "createdAt": "2026-07-12T05:16:52.061Z",
+                  "updatedAt": "2026-07-12T05:16:52.061Z"
+                },
+                "allocations": []
+              },
+              {
+                "id": "afd28a68-de92-4a05-919e-d8cbc19ec8ab",
+                "assetCode": "PROJ-001",
+                "name": "Epson Conference Projector",
+                "description": null,
+                "categoryId": "c18d7fc0-0bcd-4eaa-854c-fefd57142ed3",
+                "departmentId": "e7eb1058-86db-4daf-b403-f8280fe50f39",
+                "status": "AVAILABLE",
+                "condition": "GOOD",
+                "location": "Conference Room A",
+                "purchaseValue": null,
+                "purchaseDate": null,
+                "warrantyExpiry": null,
+                "isBookable": true,
+                "createdAt": "2026-07-12T05:16:52.071Z",
+                "updatedAt": "2026-07-12T05:16:52.071Z",
+                "category": {
+                  "id": "c18d7fc0-0bcd-4eaa-854c-fefd57142ed3",
+                  "name": "Projector",
+                  "code": "PROJ",
+                  "description": "Bookable presentation devices",
+                  "status": "ACTIVE",
+                  "createdAt": "2026-07-12T05:16:52.067Z",
+                  "updatedAt": "2026-07-12T05:16:52.067Z"
+                },
+                "department": {
+                  "id": "e7eb1058-86db-4daf-b403-f8280fe50f39",
+                  "name": "Operations",
+                  "code": "OPS",
+                  "managerId": null,
+                  "status": "ACTIVE",
+                  "createdAt": "2026-07-12T05:16:52.061Z",
+                  "updatedAt": "2026-07-12T05:16:52.061Z"
+                },
+                "allocations": []
+              },
+              {
+                "id": "3cf39906-4d51-49cc-a17d-75c284ee312e",
+                "assetCode": "LAP-002",
+                "name": "MacBook Air M3",
+                "description": null,
+                "categoryId": "0c4ae31c-b1ab-44d4-85d5-5d670c531829",
+                "departmentId": "56a13f59-5027-4b5d-8314-6cd8565a9697",
+                "status": "AVAILABLE",
+                "condition": "NEW",
+                "location": "IT Store",
+                "purchaseValue": null,
+                "purchaseDate": null,
+                "warrantyExpiry": null,
+                "isBookable": false,
+                "createdAt": "2026-07-12T05:16:52.070Z",
+                "updatedAt": "2026-07-12T05:16:52.070Z",
+                "category": {
+                  "id": "0c4ae31c-b1ab-44d4-85d5-5d670c531829",
+                  "name": "Laptop",
+                  "code": "LAP",
+                  "description": "Portable computers",
+                  "status": "ACTIVE",
+                  "createdAt": "2026-07-12T05:16:52.067Z",
+                  "updatedAt": "2026-07-12T05:16:52.067Z"
+                },
+                "department": {
+                  "id": "56a13f59-5027-4b5d-8314-6cd8565a9697",
+                  "name": "Information Technology",
+                  "code": "IT",
+                  "managerId": "64f27ba4-b93c-430a-a24b-44fe1510df46",
+                  "status": "ACTIVE",
+                  "createdAt": "2026-07-12T05:16:52.061Z",
+                  "updatedAt": "2026-07-12T05:16:52.066Z"
+                },
+                "allocations": []
+              },
+              {
+                "id": "aa38d755-049b-4535-b96b-858f3a2fd51f",
+                "assetCode": "LAP-001",
+                "name": "Dell Latitude 5440",
+                "description": null,
+                "categoryId": "0c4ae31c-b1ab-44d4-85d5-5d670c531829",
+                "departmentId": "56a13f59-5027-4b5d-8314-6cd8565a9697",
+                "status": "ALLOCATED",
+                "condition": "GOOD",
+                "location": "IT Floor - Desk 12",
+                "purchaseValue": "95000",
+                "purchaseDate": "2025-04-10T00:00:00.000Z",
+                "warrantyExpiry": null,
+                "isBookable": false,
+                "createdAt": "2026-07-12T05:16:52.069Z",
+                "updatedAt": "2026-07-12T05:16:52.069Z",
+                "category": {
+                  "id": "0c4ae31c-b1ab-44d4-85d5-5d670c531829",
+                  "name": "Laptop",
+                  "code": "LAP",
+                  "description": "Portable computers",
+                  "status": "ACTIVE",
+                  "createdAt": "2026-07-12T05:16:52.067Z",
+                  "updatedAt": "2026-07-12T05:16:52.067Z"
+                },
+                "department": {
+                  "id": "56a13f59-5027-4b5d-8314-6cd8565a9697",
+                  "name": "Information Technology",
+                  "code": "IT",
+                  "managerId": "64f27ba4-b93c-430a-a24b-44fe1510df46",
+                  "status": "ACTIVE",
+                  "createdAt": "2026-07-12T05:16:52.061Z",
+                  "updatedAt": "2026-07-12T05:16:52.066Z"
+                },
+                "allocations": [
+                  {
+                    "id": "8398390c-d51a-4af9-bd37-22429ff20d2f",
+                    "assetId": "aa38d755-049b-4535-b96b-858f3a2fd51f",
+                    "userId": "9783842b-f701-42a5-ab62-d94a42cd9693",
+                    "departmentId": null,
+                    "assignedById": "64f27ba4-b93c-430a-a24b-44fe1510df46",
+                    "status": "ACTIVE",
+                    "assignedAt": "2026-07-12T05:16:52.072Z",
+                    "returnedAt": null,
+                    "notes": "Seed allocation for demo.",
+                    "createdAt": "2026-07-12T05:16:52.072Z",
+                    "updatedAt": "2026-07-12T05:16:52.072Z",
+                    "user": {
+                      "id": "9783842b-f701-42a5-ab62-d94a42cd9693",
+                      "name": "Employee User",
+                      "email": "employee@assetflow.local",
+                      "role": "EMPLOYEE"
+                    },
+                    "department": null
+                  }
+                ]
+              }
+            ],
+            "page": 1,
+            "limit": 20,
+            "total": 7,
+            "totalPages": 1
+          },
+          "message": "Operation completed successfully."
+        }
+      },
+      "statusCode": 200,
+      "status": "PASS",
+      "rootCause": "",
+      "fixApplied": ""
+    },
+    {
+      "endpoint": "GET /api/assets/7c853b12-2318-47cf-882b-1dfb79f98375",
+      "expectedBehaviour": "Authenticated user can fetch asset detail",
+      "actualBehaviour": {
+        "status": 200,
+        "json": {
+          "success": true,
+          "data": {
+            "id": "7c853b12-2318-47cf-882b-1dfb79f98375",
+            "assetCode": "QA-ASSET-1783833433104",
+            "name": "QA Test Laptop",
+            "description": null,
+            "categoryId": "9e3ec76f-5f49-4128-8ab2-4721b49e7867",
+            "departmentId": "528a43ca-a674-4a0a-9925-6f15604970ca",
+            "status": "AVAILABLE",
+            "condition": "GOOD",
+            "location": "QA Lab",
+            "purchaseValue": null,
+            "purchaseDate": null,
+            "warrantyExpiry": null,
+            "isBookable": true,
+            "createdAt": "2026-07-12T05:17:13.106Z",
+            "updatedAt": "2026-07-12T05:17:13.106Z",
+            "category": {
+              "id": "9e3ec76f-5f49-4128-8ab2-4721b49e7867",
+              "name": "QA Category 1783833433097",
+              "code": "QAC33097",
+              "description": "Updated by QA",
+              "status": "ACTIVE",
+              "createdAt": "2026-07-12T05:17:13.099Z",
+              "updatedAt": "2026-07-12T05:17:13.103Z"
+            },
+            "department": {
+              "id": "528a43ca-a674-4a0a-9925-6f15604970ca",
+              "name": "QA Department Updated 1783833433047",
+              "code": "QA33039",
+              "managerId": null,
+              "status": "ACTIVE",
+              "createdAt": "2026-07-12T05:17:13.042Z",
+              "updatedAt": "2026-07-12T05:17:13.050Z"
+            },
+            "allocations": [],
+            "transfers": [],
+            "bookings": [],
+            "maintenanceTickets": [],
+            "auditRecords": []
+          },
+          "message": "Operation completed successfully."
+        }
+      },
+      "statusCode": 200,
+      "status": "PASS",
+      "rootCause": "",
+      "fixApplied": ""
+    },
+    {
+      "endpoint": "PATCH /api/assets/7c853b12-2318-47cf-882b-1dfb79f98375",
+      "expectedBehaviour": "Admin can update asset",
+      "actualBehaviour": {
+        "status": 200,
+        "json": {
+          "success": true,
+          "data": {
+            "id": "7c853b12-2318-47cf-882b-1dfb79f98375",
+            "assetCode": "QA-ASSET-1783833433104",
+            "name": "QA Test Laptop",
+            "description": null,
+            "categoryId": "9e3ec76f-5f49-4128-8ab2-4721b49e7867",
+            "departmentId": "528a43ca-a674-4a0a-9925-6f15604970ca",
+            "status": "AVAILABLE",
+            "condition": "GOOD",
+            "location": "QA Lab Updated",
+            "purchaseValue": null,
+            "purchaseDate": null,
+            "warrantyExpiry": null,
+            "isBookable": true,
+            "createdAt": "2026-07-12T05:17:13.106Z",
+            "updatedAt": "2026-07-12T05:17:13.118Z",
+            "category": {
+              "id": "9e3ec76f-5f49-4128-8ab2-4721b49e7867",
+              "name": "QA Category 1783833433097",
+              "code": "QAC33097",
+              "description": "Updated by QA",
+              "status": "ACTIVE",
+              "createdAt": "2026-07-12T05:17:13.099Z",
+              "updatedAt": "2026-07-12T05:17:13.103Z"
+            },
+            "department": {
+              "id": "528a43ca-a674-4a0a-9925-6f15604970ca",
+              "name": "QA Department Updated 1783833433047",
+              "code": "QA33039",
+              "managerId": null,
+              "status": "ACTIVE",
+              "createdAt": "2026-07-12T05:17:13.042Z",
+              "updatedAt": "2026-07-12T05:17:13.050Z"
+            },
+            "allocations": []
+          },
+          "message": "Operation completed successfully."
+        }
+      },
+      "statusCode": 200,
+      "status": "PASS",
+      "rootCause": "",
+      "fixApplied": ""
+    },
+    {
+      "endpoint": "GET /api/assets/7c853b12-2318-47cf-882b-1dfb79f98375/qr",
+      "expectedBehaviour": "Admin can generate asset QR payload",
+      "actualBehaviour": {
+        "status": 200,
+        "json": {
+          "success": true,
+          "data": {
+            "qrValue": "assetflow:asset:7c853b12-2318-47cf-882b-1dfb79f98375:QA-ASSET-1783833433104",
+            "imageDataUrl": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAYAAAA9zQYyAAAAAklEQVR4AewaftIAAAddSURBVO3BQY4cy5LAQDLQ978yR0tfJZCoaun9GDezP1jrEoe1LnJY6yKHtS5yWOsih7UucljrIoe1LnJY6yKHtS5yWOsih7UucljrIoe1LnJY6yKHtS7yw4dU/qaKJypTxROVNyomlaliUpkqJpWp4g2VJxVPVKaKSeVvqvjEYa2LHNa6yGGti/zwZRXfpPJNKlPFGypTxaQyVUwqU8Wk8qTimyreqPgmlW86rHWRw1oXOax1kR9+mcobFW+oPFF5ojJVPKl4UjGpPFH5poonKk8q3lB5o+I3Hda6yGGtixzWusgPl6uYVN5QmSomlU9UfJPKVPH/yWGtixzWushhrYv8cJmKJxWTyqQyVUwqTyomlScqU8Wk8gmVqeJmh7UucljrIoe1LvLDL6v4m1SmikllqphUJpUnFW9UTCpvVEwqU8UTlaniExX/JYe1LnJY6yKHtS7yw5ep/EsVk8pUMalMFZPKVDGpTBX/JSpTxaQyVTxR+S87rHWRw1oXOax1kR8+VHETlW+qmFSmiicVk8onVN6o+F9yWOsih7UucljrIvYHH1CZKiaVb6r4m1SmijdUpopJ5Y2KSWWqeKIyVTxR+aaK33RY6yKHtS5yWOsiP3yoYlKZKiaVqeJvUnmjYlJ5o+JJxaQyVXxCZar4TRVPVKaKbzqsdZHDWhc5rHWRH36ZylTxROUTFZPKGxWTylTxTSpTxRsVk8onVN6oeKLyRGWq+MRhrYsc1rrIYa2L/PAhlScVk8pUMVU8UXmjYlL5JpWp4o2KSWWqeKIyVUwqk8pU8aTiDZWpYlKZKr7psNZFDmtd5LDWRX74j1H5hMrfVDGpPKl4UvFEZaqYVN5QmSomlTcqJpWpYlKZKj5xWOsih7UucljrIj/8MpVPVDxR+UTFpPKGypOKSeWbVKaKN1QmlaliUpkqJpWpYlKZKr7psNZFDmtd5LDWRX74soonKm+ofKLiicpUMalMKp+omFSeVHyTyhsqT1SmikllqphUpopPHNa6yGGtixzWuoj9wRepPKl4ojJVTCpTxROVqeINlScVk8pvqphUpoonKk8qJpU3Kv6lw1oXOax1kcNaF/nhQyqfUJkqJpUnKlPFE5Wp4hMqU8UnVKaKJxWTylTxmyomlScVk8pU8YnDWhc5rHWRw1oXsT/4gMpU8YbKk4rfpDJVPFGZKiaVJxWTyhsVb6g8qZhUpoo3VN6o+KbDWhc5rHWRw1oXsT/4gMpUMalMFZPKv1QxqXyiYlJ5UvGGyhsVk8pU8YbKVPGGypOKTxzWushhrYsc1rrID1+mMlU8qfiEylQxqUwVk8pU8URlqviEyhsVb6hMFd+kMlX8S4e1LnJY6yKHtS7ywy9TmSqeqHxC5YnKN6l8U8UnVKaKN1SeVEwqk8qTiknlmw5rXeSw1kUOa13E/uCLVKaKSeVJxRsq31Txm1Smiicqb1RMKlPFpDJVPFGZKv5LDmtd5LDWRQ5rXeSHD6k8UfmEylTxpOINlUnlExWTylTxiYpJ5Q2VJypPKj6h8qTiE4e1LnJY6yKHtS7yw5dVPFGZKp5UfJPKVPGGyhsVT1SmiqliUnmiMlV8k8qTiicVv+mw1kUOa13ksNZFfvhlKp9QmSreUJkqPlHxhspU8UTlScUTlScq31TxROWNik8c1rrIYa2LHNa6iP3BB1SmijdUpoonKlPFE5U3Kp6ovFHxhspUMalMFZPKk4pJZaqYVKaKSWWq+JcOa13ksNZFDmtd5IdfpjJVvKHyL6lMFW+oTBWTyhsVTyp+k8pUMal8ouITh7UucljrIoe1LvLDP1bxpGJSmVSmiicVk8qTiicqU8UbFZPKpDJVfFPFpPKkYlJ5UjGpTBXfdFjrIoe1LnJY6yI//GUqU8Wk8qRiUnlDZaqYVJ5UTBWTyhsqU8UbKk8qJpVPqLyh8jcd1rrIYa2LHNa6yA8fqnhS8UbFb6qYVKaKb6qYVKaKSeWNiicqU8WkMlW8oTJV/EuHtS5yWOsih7Uu8sOHVP6miqliUpkqnlRMKlPFpDJVvFExqTypeENlqviEylTxRGWqmFSeVHzisNZFDmtd5LDWRX74sopvUnmiMlVMKk8qnqhMFW+oTBVvqLxR8U0Vb1Q8qZhUvumw1kUOa13ksNZFfvhlKm9U/JepPKl4ojJVTCpTxSdU3lD5hMq/dFjrIoe1LnJY6yI/XEblDZUnFZPKVPFEZaqYVKaKSWWq+ETFpPJGxaTypOJvOqx1kcNaFzmsdZEfLlPxN6m8oTJVTCpTxaQyVbyhMlVMKlPFpDJVTCpvqEwVnzisdZHDWhc5rHWRH35ZxW+qmFSeVEwqU8UbFU9Unqj8TRWTyhsVk8pU8S8d1rrIYa2LHNa6yA9fpvI3qTyp+ITKGypTxaQyVXyTylTxpOINlaniicrfdFjrIoe1LnJY6yL2B2td4rDWRQ5rXeSw1kUOa13ksNZFDmtd5LDWRQ5rXeSw1kUOa13ksNZFDmtd5LDWRQ5rXeSw1kX+D5verrXaP/CpAAAAAElFTkSuQmCC",
+            "assetId": "7c853b12-2318-47cf-882b-1dfb79f98375",
+            "assetCode": "QA-ASSET-1783833433104"
+          },
+          "message": "Operation completed successfully."
+        }
+      },
+      "statusCode": 200,
+      "status": "PASS",
+      "rootCause": "",
+      "fixApplied": ""
+    },
+    {
+      "endpoint": "POST /api/assets/7c853b12-2318-47cf-882b-1dfb79f98375/allocate",
+      "expectedBehaviour": "Admin can allocate available asset",
+      "actualBehaviour": {
+        "status": 201,
+        "json": {
+          "success": true,
+          "data": {
+            "allocation": {
+              "id": "f99fa65f-2239-47c0-a178-b26307045e63",
+              "assetId": "7c853b12-2318-47cf-882b-1dfb79f98375",
+              "userId": "e68edf67-0e82-49df-b2b8-cf901d2fa30f",
+              "departmentId": null,
+              "assignedById": "515d2c1a-7be8-4873-bb8d-318f339fdc07",
+              "status": "ACTIVE",
+              "assignedAt": "2026-07-12T05:17:13.134Z",
+              "returnedAt": null,
+              "notes": "QA allocation",
+              "createdAt": "2026-07-12T05:17:13.134Z",
+              "updatedAt": "2026-07-12T05:17:13.134Z"
+            },
+            "asset": {
+              "id": "7c853b12-2318-47cf-882b-1dfb79f98375",
+              "assetCode": "QA-ASSET-1783833433104",
+              "name": "QA Test Laptop",
+              "description": null,
+              "categoryId": "9e3ec76f-5f49-4128-8ab2-4721b49e7867",
+              "departmentId": "528a43ca-a674-4a0a-9925-6f15604970ca",
+              "status": "ALLOCATED",
+              "condition": "GOOD",
+              "location": "QA Lab Updated",
+              "purchaseValue": null,
+              "purchaseDate": null,
+              "warrantyExpiry": null,
+              "isBookable": true,
+              "createdAt": "2026-07-12T05:17:13.106Z",
+              "updatedAt": "2026-07-12T05:17:13.134Z",
+              "category": {
+                "id": "9e3ec76f-5f49-4128-8ab2-4721b49e7867",
+                "name": "QA Category 1783833433097",
+                "code": "QAC33097",
+                "description": "Updated by QA",
+                "status": "ACTIVE",
+                "createdAt": "2026-07-12T05:17:13.099Z",
+                "updatedAt": "2026-07-12T05:17:13.103Z"
+              },
+              "department": {
+                "id": "528a43ca-a674-4a0a-9925-6f15604970ca",
+                "name": "QA Department Updated 1783833433047",
+                "code": "QA33039",
+                "managerId": null,
+                "status": "ACTIVE",
+                "createdAt": "2026-07-12T05:17:13.042Z",
+                "updatedAt": "2026-07-12T05:17:13.050Z"
+              },
+              "allocations": [
+                {
+                  "id": "f99fa65f-2239-47c0-a178-b26307045e63",
+                  "assetId": "7c853b12-2318-47cf-882b-1dfb79f98375",
+                  "userId": "e68edf67-0e82-49df-b2b8-cf901d2fa30f",
+                  "departmentId": null,
+                  "assignedById": "515d2c1a-7be8-4873-bb8d-318f339fdc07",
+                  "status": "ACTIVE",
+                  "assignedAt": "2026-07-12T05:17:13.134Z",
+                  "returnedAt": null,
+                  "notes": "QA allocation",
+                  "createdAt": "2026-07-12T05:17:13.134Z",
+                  "updatedAt": "2026-07-12T05:17:13.134Z",
+                  "user": {
+                    "id": "e68edf67-0e82-49df-b2b8-cf901d2fa30f",
+                    "name": "QA Employee",
+                    "email": "qa.employee.1783833433050@assetflow.local",
+                    "role": "EMPLOYEE"
+                  },
+                  "department": null
+                }
+              ]
+            }
+          },
+          "message": "Asset allocated."
+        }
+      },
+      "statusCode": 201,
+      "status": "PASS",
+      "rootCause": "",
+      "fixApplied": ""
+    },
+    {
+      "endpoint": "POST /api/assets/7c853b12-2318-47cf-882b-1dfb79f98375/allocate",
+      "expectedBehaviour": "Asset cannot be allocated twice",
+      "actualBehaviour": {
+        "status": 409,
+        "json": {
+          "success": false,
+          "error": {
+            "code": "CONFLICT",
+            "message": "Asset already has an active allocation."
+          }
+        }
+      },
+      "statusCode": 409,
+      "status": "PASS",
+      "rootCause": "",
+      "fixApplied": ""
+    },
+    {
+      "endpoint": "POST /api/transfers",
+      "expectedBehaviour": "Admin can request transfer",
+      "actualBehaviour": {
+        "status": 201,
+        "json": {
+          "success": true,
+          "data": {
+            "id": "aef5dd12-b645-461a-872b-213d6ada1220",
+            "assetId": "7c853b12-2318-47cf-882b-1dfb79f98375",
+            "requestedById": "515d2c1a-7be8-4873-bb8d-318f339fdc07",
+            "approvedById": null,
+            "fromUserId": "e68edf67-0e82-49df-b2b8-cf901d2fa30f",
+            "toUserId": null,
+            "fromDepartmentId": null,
+            "toDepartmentId": "528a43ca-a674-4a0a-9925-6f15604970ca",
+            "status": "PENDING",
+            "reason": "QA transfer",
+            "decisionNotes": null,
+            "requestedAt": "2026-07-12T05:17:13.142Z",
+            "decidedAt": null,
+            "createdAt": "2026-07-12T05:17:13.142Z",
+            "updatedAt": "2026-07-12T05:17:13.142Z"
+          },
+          "message": "Resource created successfully."
+        }
+      },
+      "statusCode": 201,
+      "status": "PASS",
+      "rootCause": "",
+      "fixApplied": ""
+    },
+    {
+      "endpoint": "GET /api/transfers",
+      "expectedBehaviour": "Admin can list transfers",
+      "actualBehaviour": {
+        "status": 200,
+        "json": {
+          "success": true,
+          "data": {
+            "items": [
+              {
+                "id": "aef5dd12-b645-461a-872b-213d6ada1220",
+                "assetId": "7c853b12-2318-47cf-882b-1dfb79f98375",
+                "requestedById": "515d2c1a-7be8-4873-bb8d-318f339fdc07",
+                "approvedById": null,
+                "fromUserId": "e68edf67-0e82-49df-b2b8-cf901d2fa30f",
+                "toUserId": null,
+                "fromDepartmentId": null,
+                "toDepartmentId": "528a43ca-a674-4a0a-9925-6f15604970ca",
+                "status": "PENDING",
+                "reason": "QA transfer",
+                "decisionNotes": null,
+                "requestedAt": "2026-07-12T05:17:13.142Z",
+                "decidedAt": null,
+                "createdAt": "2026-07-12T05:17:13.142Z",
+                "updatedAt": "2026-07-12T05:17:13.142Z",
+                "asset": {
+                  "id": "7c853b12-2318-47cf-882b-1dfb79f98375",
+                  "assetCode": "QA-ASSET-1783833433104",
+                  "name": "QA Test Laptop",
+                  "description": null,
+                  "categoryId": "9e3ec76f-5f49-4128-8ab2-4721b49e7867",
+                  "departmentId": "528a43ca-a674-4a0a-9925-6f15604970ca",
+                  "status": "ALLOCATED",
+                  "condition": "GOOD",
+                  "location": "QA Lab Updated",
+                  "purchaseValue": null,
+                  "purchaseDate": null,
+                  "warrantyExpiry": null,
+                  "isBookable": true,
+                  "createdAt": "2026-07-12T05:17:13.106Z",
+                  "updatedAt": "2026-07-12T05:17:13.134Z"
+                },
+                "requestedBy": {
+                  "id": "515d2c1a-7be8-4873-bb8d-318f339fdc07",
+                  "name": "Admin User",
+                  "email": "admin@assetflow.local",
+                  "role": "ADMIN"
+                },
+                "approvedBy": null,
+                "fromUser": {
+                  "id": "e68edf67-0e82-49df-b2b8-cf901d2fa30f",
+                  "name": "QA Employee",
+                  "email": "qa.employee.1783833433050@assetflow.local"
+                },
+                "toUser": null,
+                "fromDepartment": null,
+                "toDepartment": {
+                  "id": "528a43ca-a674-4a0a-9925-6f15604970ca",
+                  "name": "QA Department Updated 1783833433047",
+                  "code": "QA33039",
+                  "managerId": null,
+                  "status": "ACTIVE",
+                  "createdAt": "2026-07-12T05:17:13.042Z",
+                  "updatedAt": "2026-07-12T05:17:13.050Z"
+                }
+              },
+              {
+                "id": "21bb52ba-fe9b-4317-8adb-b4a98bf74882",
+                "assetId": "aa38d755-049b-4535-b96b-858f3a2fd51f",
+                "requestedById": "9783842b-f701-42a5-ab62-d94a42cd9693",
+                "approvedById": null,
+                "fromUserId": "9783842b-f701-42a5-ab62-d94a42cd9693",
+                "toUserId": null,
+                "fromDepartmentId": null,
+                "toDepartmentId": "80545d5b-6e3b-44f4-b2bb-a9a3bdd0c5d6",
+                "status": "PENDING",
+                "reason": "Finance team needs this laptop for month-end work.",
+                "decisionNotes": null,
+                "requestedAt": "2026-07-12T05:16:52.072Z",
+                "decidedAt": null,
+                "createdAt": "2026-07-12T05:16:52.072Z",
+                "updatedAt": "2026-07-12T05:16:52.072Z",
+                "asset": {
+                  "id": "aa38d755-049b-4535-b96b-858f3a2fd51f",
+                  "assetCode": "LAP-001",
+                  "name": "Dell Latitude 5440",
+                  "description": null,
+                  "categoryId": "0c4ae31c-b1ab-44d4-85d5-5d670c531829",
+                  "departmentId": "56a13f59-5027-4b5d-8314-6cd8565a9697",
+                  "status": "ALLOCATED",
+                  "condition": "GOOD",
+                  "location": "IT Floor - Desk 12",
+                  "purchaseValue": "95000",
+                  "purchaseDate": "2025-04-10T00:00:00.000Z",
+                  "warrantyExpiry": null,
+                  "isBookable": false,
+                  "createdAt": "2026-07-12T05:16:52.069Z",
+                  "updatedAt": "2026-07-12T05:16:52.069Z"
+                },
+                "requestedBy": {
+                  "id": "9783842b-f701-42a5-ab62-d94a42cd9693",
+                  "name": "Employee User",
+                  "email": "employee@assetflow.local",
+                  "role": "EMPLOYEE"
+                },
+                "approvedBy": null,
+                "fromUser": {
+                  "id": "9783842b-f701-42a5-ab62-d94a42cd9693",
+                  "name": "Employee User",
+                  "email": "employee@assetflow.local"
+                },
+                "toUser": null,
+                "fromDepartment": null,
+                "toDepartment": {
+                  "id": "80545d5b-6e3b-44f4-b2bb-a9a3bdd0c5d6",
+                  "name": "Finance",
+                  "code": "FIN",
+                  "managerId": null,
+                  "status": "ACTIVE",
+                  "createdAt": "2026-07-12T05:16:52.061Z",
+                  "updatedAt": "2026-07-12T05:16:52.061Z"
+                }
+              }
+            ],
+            "page": 1,
+            "limit": 20,
+            "total": 2,
+            "totalPages": 1
+          },
+          "message": "Operation completed successfully."
+        }
+      },
+      "statusCode": 200,
+      "status": "PASS",
+      "rootCause": "",
+      "fixApplied": ""
+    },
+    {
+      "endpoint": "GET /api/transfers",
+      "expectedBehaviour": "Auditor cannot list transfers",
+      "actualBehaviour": {
+        "status": 403,
+        "json": {
+          "success": false,
+          "error": {
+            "code": "FORBIDDEN",
+            "message": "You do not have permission to perform this action."
+          }
+        }
+      },
+      "statusCode": 403,
+      "status": "PASS",
+      "rootCause": "",
+      "fixApplied": ""
+    },
+    {
+      "endpoint": "GET /api/transfers/aef5dd12-b645-461a-872b-213d6ada1220",
+      "expectedBehaviour": "Admin can fetch transfer detail",
+      "actualBehaviour": {
+        "status": 200,
+        "json": {
+          "success": true,
+          "data": {
+            "id": "aef5dd12-b645-461a-872b-213d6ada1220",
+            "assetId": "7c853b12-2318-47cf-882b-1dfb79f98375",
+            "requestedById": "515d2c1a-7be8-4873-bb8d-318f339fdc07",
+            "approvedById": null,
+            "fromUserId": "e68edf67-0e82-49df-b2b8-cf901d2fa30f",
+            "toUserId": null,
+            "fromDepartmentId": null,
+            "toDepartmentId": "528a43ca-a674-4a0a-9925-6f15604970ca",
+            "status": "PENDING",
+            "reason": "QA transfer",
+            "decisionNotes": null,
+            "requestedAt": "2026-07-12T05:17:13.142Z",
+            "decidedAt": null,
+            "createdAt": "2026-07-12T05:17:13.142Z",
+            "updatedAt": "2026-07-12T05:17:13.142Z",
+            "asset": {
+              "id": "7c853b12-2318-47cf-882b-1dfb79f98375",
+              "assetCode": "QA-ASSET-1783833433104",
+              "name": "QA Test Laptop",
+              "description": null,
+              "categoryId": "9e3ec76f-5f49-4128-8ab2-4721b49e7867",
+              "departmentId": "528a43ca-a674-4a0a-9925-6f15604970ca",
+              "status": "ALLOCATED",
+              "condition": "GOOD",
+              "location": "QA Lab Updated",
+              "purchaseValue": null,
+              "purchaseDate": null,
+              "warrantyExpiry": null,
+              "isBookable": true,
+              "createdAt": "2026-07-12T05:17:13.106Z",
+              "updatedAt": "2026-07-12T05:17:13.134Z"
+            },
+            "requestedBy": {
+              "id": "515d2c1a-7be8-4873-bb8d-318f339fdc07",
+              "name": "Admin User",
+              "email": "admin@assetflow.local",
+              "passwordHash": "$2b$10$C3YjChQyfOSaJ7b/tPh.A.kUJUTGHhD4OigkJQVzrZGc7l2sd5Wsy",
+              "role": "ADMIN",
+              "departmentId": "56a13f59-5027-4b5d-8314-6cd8565a9697",
+              "status": "ACTIVE",
+              "createdAt": "2026-07-12T05:16:52.064Z",
+              "updatedAt": "2026-07-12T05:16:52.064Z"
+            },
+            "approvedBy": null,
+            "fromUser": {
+              "id": "e68edf67-0e82-49df-b2b8-cf901d2fa30f",
+              "name": "QA Employee",
+              "email": "qa.employee.1783833433050@assetflow.local",
+              "passwordHash": "$2b$10$2TEZK0EspWW.uIog/LgI.e1MJeY1he4ROOifT/AOxnhM3fmQYjPby",
+              "role": "EMPLOYEE",
+              "departmentId": "528a43ca-a674-4a0a-9925-6f15604970ca",
+              "status": "ACTIVE",
+              "createdAt": "2026-07-12T05:17:13.093Z",
+              "updatedAt": "2026-07-12T05:17:13.096Z"
+            },
+            "toUser": null
+          },
+          "message": "Operation completed successfully."
+        }
+      },
+      "statusCode": 200,
+      "status": "PASS",
+      "rootCause": "",
+      "fixApplied": ""
+    },
+    {
+      "endpoint": "GET /api/transfers/aef5dd12-b645-461a-872b-213d6ada1220",
+      "expectedBehaviour": "Employee cannot fetch unrelated transfer detail",
+      "actualBehaviour": {
+        "status": 403,
+        "json": {
+          "success": false,
+          "error": {
+            "code": "FORBIDDEN",
+            "message": "Employees can only access transfers related to them."
+          }
+        }
+      },
+      "statusCode": 403,
+      "status": "PASS",
+      "rootCause": "",
+      "fixApplied": ""
+    },
+    {
+      "endpoint": "PATCH /api/transfers/aef5dd12-b645-461a-872b-213d6ada1220/approve",
+      "expectedBehaviour": "Admin can approve pending transfer",
+      "actualBehaviour": {
+        "status": 200,
+        "json": {
+          "success": true,
+          "data": {
+            "id": "aef5dd12-b645-461a-872b-213d6ada1220",
+            "assetId": "7c853b12-2318-47cf-882b-1dfb79f98375",
+            "requestedById": "515d2c1a-7be8-4873-bb8d-318f339fdc07",
+            "approvedById": "515d2c1a-7be8-4873-bb8d-318f339fdc07",
+            "fromUserId": "e68edf67-0e82-49df-b2b8-cf901d2fa30f",
+            "toUserId": null,
+            "fromDepartmentId": null,
+            "toDepartmentId": "528a43ca-a674-4a0a-9925-6f15604970ca",
+            "status": "APPROVED",
+            "reason": "QA transfer",
+            "decisionNotes": "Approved by QA",
+            "requestedAt": "2026-07-12T05:17:13.142Z",
+            "decidedAt": "2026-07-12T05:17:13.156Z",
+            "createdAt": "2026-07-12T05:17:13.142Z",
+            "updatedAt": "2026-07-12T05:17:13.157Z",
+            "asset": {
+              "id": "7c853b12-2318-47cf-882b-1dfb79f98375",
+              "assetCode": "QA-ASSET-1783833433104",
+              "name": "QA Test Laptop",
+              "description": null,
+              "categoryId": "9e3ec76f-5f49-4128-8ab2-4721b49e7867",
+              "departmentId": "528a43ca-a674-4a0a-9925-6f15604970ca",
+              "status": "ALLOCATED",
+              "condition": "GOOD",
+              "location": "QA Lab Updated",
+              "purchaseValue": null,
+              "purchaseDate": null,
+              "warrantyExpiry": null,
+              "isBookable": true,
+              "createdAt": "2026-07-12T05:17:13.106Z",
+              "updatedAt": "2026-07-12T05:17:13.134Z"
+            }
+          },
+          "message": "Operation completed successfully."
+        }
+      },
+      "statusCode": 200,
+      "status": "PASS",
+      "rootCause": "",
+      "fixApplied": ""
+    },
+    {
+      "endpoint": "PATCH /api/transfers/aef5dd12-b645-461a-872b-213d6ada1220/reject",
+      "expectedBehaviour": "Already approved transfer cannot be rejected",
+      "actualBehaviour": {
+        "status": 409,
+        "json": {
+          "success": false,
+          "error": {
+            "code": "CONFLICT",
+            "message": "Only pending transfers can be rejected."
+          }
+        }
+      },
+      "statusCode": 409,
+      "status": "PASS",
+      "rootCause": "",
+      "fixApplied": ""
+    },
+    {
+      "endpoint": "POST /api/transfers",
+      "expectedBehaviour": "Admin can create cancellable transfer",
+      "actualBehaviour": {
+        "status": 201,
+        "json": {
+          "success": true,
+          "data": {
+            "id": "5ed1481b-df90-4d48-8e5e-06558c3400c4",
+            "assetId": "7c853b12-2318-47cf-882b-1dfb79f98375",
+            "requestedById": "515d2c1a-7be8-4873-bb8d-318f339fdc07",
+            "approvedById": null,
+            "fromUserId": null,
+            "toUserId": "9783842b-f701-42a5-ab62-d94a42cd9693",
+            "fromDepartmentId": "528a43ca-a674-4a0a-9925-6f15604970ca",
+            "toDepartmentId": null,
+            "status": "PENDING",
+            "reason": "QA cancellation path",
+            "decisionNotes": null,
+            "requestedAt": "2026-07-12T05:17:13.164Z",
+            "decidedAt": null,
+            "createdAt": "2026-07-12T05:17:13.164Z",
+            "updatedAt": "2026-07-12T05:17:13.164Z"
+          },
+          "message": "Resource created successfully."
+        }
+      },
+      "statusCode": 201,
+      "status": "PASS",
+      "rootCause": "",
+      "fixApplied": ""
+    },
+    {
+      "endpoint": "PATCH /api/transfers/5ed1481b-df90-4d48-8e5e-06558c3400c4/cancel",
+      "expectedBehaviour": "Requester/admin can cancel pending transfer",
+      "actualBehaviour": {
+        "status": 200,
+        "json": {
+          "success": true,
+          "data": {
+            "id": "5ed1481b-df90-4d48-8e5e-06558c3400c4",
+            "assetId": "7c853b12-2318-47cf-882b-1dfb79f98375",
+            "requestedById": "515d2c1a-7be8-4873-bb8d-318f339fdc07",
+            "approvedById": null,
+            "fromUserId": null,
+            "toUserId": "9783842b-f701-42a5-ab62-d94a42cd9693",
+            "fromDepartmentId": "528a43ca-a674-4a0a-9925-6f15604970ca",
+            "toDepartmentId": null,
+            "status": "CANCELLED",
+            "reason": "QA cancellation path",
+            "decisionNotes": null,
+            "requestedAt": "2026-07-12T05:17:13.164Z",
+            "decidedAt": null,
+            "createdAt": "2026-07-12T05:17:13.164Z",
+            "updatedAt": "2026-07-12T05:17:13.166Z"
+          },
+          "message": "Operation completed successfully."
+        }
+      },
+      "statusCode": 200,
+      "status": "PASS",
+      "rootCause": "",
+      "fixApplied": ""
+    },
+    {
+      "endpoint": "POST /api/bookings",
+      "expectedBehaviour": "Admin can request booking for bookable asset",
+      "actualBehaviour": {
+        "status": 201,
+        "json": {
+          "success": true,
+          "data": {
+            "id": "4c56a9b1-176e-4274-b35c-ce80353ed939",
+            "assetId": "7c853b12-2318-47cf-882b-1dfb79f98375",
+            "requestedById": "515d2c1a-7be8-4873-bb8d-318f339fdc07",
+            "approvedById": null,
+            "startTime": "2026-07-13T05:17:13.167Z",
+            "endTime": "2026-07-13T06:17:13.167Z",
+            "status": "PENDING",
+            "purpose": "QA booking",
+            "decisionNotes": null,
+            "createdAt": "2026-07-12T05:17:13.171Z",
+            "updatedAt": "2026-07-12T05:17:13.171Z"
+          },
+          "message": "Resource created successfully."
+        }
+      },
+      "statusCode": 201,
+      "status": "PASS",
+      "rootCause": "",
+      "fixApplied": ""
+    },
+    {
+      "endpoint": "GET /api/bookings",
+      "expectedBehaviour": "Authenticated user can list bookings",
+      "actualBehaviour": {
+        "status": 200,
+        "json": {
+          "success": true,
+          "data": {
+            "items": [
+              {
+                "id": "4c56a9b1-176e-4274-b35c-ce80353ed939",
+                "assetId": "7c853b12-2318-47cf-882b-1dfb79f98375",
+                "requestedById": "515d2c1a-7be8-4873-bb8d-318f339fdc07",
+                "approvedById": null,
+                "startTime": "2026-07-13T05:17:13.167Z",
+                "endTime": "2026-07-13T06:17:13.167Z",
+                "status": "PENDING",
+                "purpose": "QA booking",
+                "decisionNotes": null,
+                "createdAt": "2026-07-12T05:17:13.171Z",
+                "updatedAt": "2026-07-12T05:17:13.171Z",
+                "asset": {
+                  "id": "7c853b12-2318-47cf-882b-1dfb79f98375",
+                  "assetCode": "QA-ASSET-1783833433104",
+                  "name": "QA Test Laptop",
+                  "description": null,
+                  "categoryId": "9e3ec76f-5f49-4128-8ab2-4721b49e7867",
+                  "departmentId": "528a43ca-a674-4a0a-9925-6f15604970ca",
+                  "status": "ALLOCATED",
+                  "condition": "GOOD",
+                  "location": "QA Lab Updated",
+                  "purchaseValue": null,
+                  "purchaseDate": null,
+                  "warrantyExpiry": null,
+                  "isBookable": true,
+                  "createdAt": "2026-07-12T05:17:13.106Z",
+                  "updatedAt": "2026-07-12T05:17:13.158Z"
+                },
+                "requestedBy": {
+                  "id": "515d2c1a-7be8-4873-bb8d-318f339fdc07",
+                  "name": "Admin User",
+                  "email": "admin@assetflow.local"
+                }
+              },
+              {
+                "id": "a74a7cdd-3f96-4a0b-a558-ad7f6d88f59f",
+                "assetId": "2eb7ef4a-b53e-434e-a9c3-5e5efbeb7784",
+                "requestedById": "9783842b-f701-42a5-ab62-d94a42cd9693",
+                "approvedById": null,
+                "startTime": "2026-07-12T12:00:00.000Z",
+                "endTime": "2026-07-12T13:00:00.000Z",
+                "status": "PENDING",
+                "purpose": "Client visit",
+                "decisionNotes": null,
+                "createdAt": "2026-07-12T05:16:52.073Z",
+                "updatedAt": "2026-07-12T05:16:52.073Z",
+                "asset": {
+                  "id": "2eb7ef4a-b53e-434e-a9c3-5e5efbeb7784",
+                  "assetCode": "VEH-001",
+                  "name": "Office Shuttle",
+                  "description": null,
+                  "categoryId": "4f8b69ee-2acf-4537-a2f0-2daf79e252f1",
+                  "departmentId": "e7eb1058-86db-4daf-b403-f8280fe50f39",
+                  "status": "AVAILABLE",
+                  "condition": "GOOD",
+                  "location": "Parking Bay 4",
+                  "purchaseValue": null,
+                  "purchaseDate": null,
+                  "warrantyExpiry": null,
+                  "isBookable": true,
+                  "createdAt": "2026-07-12T05:16:52.071Z",
+                  "updatedAt": "2026-07-12T05:16:52.071Z"
+                },
+                "requestedBy": {
+                  "id": "9783842b-f701-42a5-ab62-d94a42cd9693",
+                  "name": "Employee User",
+                  "email": "employee@assetflow.local"
+                }
+              },
+              {
+                "id": "1201ef1d-b344-42c0-a420-ceca439c31bb",
+                "assetId": "afd28a68-de92-4a05-919e-d8cbc19ec8ab",
+                "requestedById": "9783842b-f701-42a5-ab62-d94a42cd9693",
+                "approvedById": "64f27ba4-b93c-430a-a24b-44fe1510df46",
+                "startTime": "2026-07-12T10:00:00.000Z",
+                "endTime": "2026-07-12T11:00:00.000Z",
+                "status": "APPROVED",
+                "purpose": "Hackathon demo presentation",
+                "decisionNotes": null,
+                "createdAt": "2026-07-12T05:16:52.073Z",
+                "updatedAt": "2026-07-12T05:16:52.073Z",
+                "asset": {
+                  "id": "afd28a68-de92-4a05-919e-d8cbc19ec8ab",
+                  "assetCode": "PROJ-001",
+                  "name": "Epson Conference Projector",
+                  "description": null,
+                  "categoryId": "c18d7fc0-0bcd-4eaa-854c-fefd57142ed3",
+                  "departmentId": "e7eb1058-86db-4daf-b403-f8280fe50f39",
+                  "status": "AVAILABLE",
+                  "condition": "GOOD",
+                  "location": "Conference Room A",
+                  "purchaseValue": null,
+                  "purchaseDate": null,
+                  "warrantyExpiry": null,
+                  "isBookable": true,
+                  "createdAt": "2026-07-12T05:16:52.071Z",
+                  "updatedAt": "2026-07-12T05:16:52.071Z"
+                },
+                "requestedBy": {
+                  "id": "9783842b-f701-42a5-ab62-d94a42cd9693",
+                  "name": "Employee User",
+                  "email": "employee@assetflow.local"
+                }
+              }
+            ],
+            "page": 1,
+            "limit": 20,
+            "total": 3,
+            "totalPages": 1
+          },
+          "message": "Operation completed successfully."
+        }
+      },
+      "statusCode": 200,
+      "status": "PASS",
+      "rootCause": "",
+      "fixApplied": ""
+    },
+    {
+      "endpoint": "PATCH /api/bookings/4c56a9b1-176e-4274-b35c-ce80353ed939/approve",
+      "expectedBehaviour": "Admin can approve booking",
+      "actualBehaviour": {
+        "status": 200,
+        "json": {
+          "success": true,
+          "data": {
+            "id": "4c56a9b1-176e-4274-b35c-ce80353ed939",
+            "assetId": "7c853b12-2318-47cf-882b-1dfb79f98375",
+            "requestedById": "515d2c1a-7be8-4873-bb8d-318f339fdc07",
+            "approvedById": "515d2c1a-7be8-4873-bb8d-318f339fdc07",
+            "startTime": "2026-07-13T05:17:13.167Z",
+            "endTime": "2026-07-13T06:17:13.167Z",
+            "status": "APPROVED",
+            "purpose": "QA booking",
+            "decisionNotes": null,
+            "createdAt": "2026-07-12T05:17:13.171Z",
+            "updatedAt": "2026-07-12T05:17:13.177Z"
+          },
+          "message": "Operation completed successfully."
+        }
+      },
+      "statusCode": 200,
+      "status": "PASS",
+      "rootCause": "",
+      "fixApplied": ""
+    },
+    {
+      "endpoint": "PATCH /api/bookings/4c56a9b1-176e-4274-b35c-ce80353ed939/reject",
+      "expectedBehaviour": "Already approved booking cannot be rejected",
+      "actualBehaviour": {
+        "status": 409,
+        "json": {
+          "success": false,
+          "error": {
+            "code": "CONFLICT",
+            "message": "Only pending bookings can be rejected."
+          }
+        }
+      },
+      "statusCode": 409,
+      "status": "PASS",
+      "rootCause": "",
+      "fixApplied": ""
+    },
+    {
+      "endpoint": "POST /api/bookings",
+      "expectedBehaviour": "Overlapping approved booking is rejected",
+      "actualBehaviour": {
+        "status": 409,
+        "json": {
+          "success": false,
+          "error": {
+            "code": "CONFLICT",
+            "message": "Booking overlaps with an approved booking."
+          }
+        }
+      },
+      "statusCode": 409,
+      "status": "PASS",
+      "rootCause": "",
+      "fixApplied": ""
+    },
+    {
+      "endpoint": "POST /api/bookings",
+      "expectedBehaviour": "Admin can create booking for rejection path",
+      "actualBehaviour": {
+        "status": 201,
+        "json": {
+          "success": true,
+          "data": {
+            "id": "cf1212b5-3420-4bde-a749-4510bf6c96c0",
+            "assetId": "7c853b12-2318-47cf-882b-1dfb79f98375",
+            "requestedById": "515d2c1a-7be8-4873-bb8d-318f339fdc07",
+            "approvedById": null,
+            "startTime": "2026-07-13T07:17:13.183Z",
+            "endTime": "2026-07-13T08:17:13.183Z",
+            "status": "PENDING",
+            "purpose": "Reject path",
+            "decisionNotes": null,
+            "createdAt": "2026-07-12T05:17:13.185Z",
+            "updatedAt": "2026-07-12T05:17:13.185Z"
+          },
+          "message": "Resource created successfully."
+        }
+      },
+      "statusCode": 201,
+      "status": "PASS",
+      "rootCause": "",
+      "fixApplied": ""
+    },
+    {
+      "endpoint": "PATCH /api/bookings/cf1212b5-3420-4bde-a749-4510bf6c96c0/reject",
+      "expectedBehaviour": "Admin can reject booking",
+      "actualBehaviour": {
+        "status": 200,
+        "json": {
+          "success": true,
+          "data": {
+            "id": "cf1212b5-3420-4bde-a749-4510bf6c96c0",
+            "assetId": "7c853b12-2318-47cf-882b-1dfb79f98375",
+            "requestedById": "515d2c1a-7be8-4873-bb8d-318f339fdc07",
+            "approvedById": "515d2c1a-7be8-4873-bb8d-318f339fdc07",
+            "startTime": "2026-07-13T07:17:13.183Z",
+            "endTime": "2026-07-13T08:17:13.183Z",
+            "status": "REJECTED",
+            "purpose": "Reject path",
+            "decisionNotes": "Rejected by QA",
+            "createdAt": "2026-07-12T05:17:13.185Z",
+            "updatedAt": "2026-07-12T05:17:13.188Z"
+          },
+          "message": "Operation completed successfully."
+        }
+      },
+      "statusCode": 200,
+      "status": "PASS",
+      "rootCause": "",
+      "fixApplied": ""
+    },
+    {
+      "endpoint": "POST /api/bookings",
+      "expectedBehaviour": "Admin can create booking for cancel path",
+      "actualBehaviour": {
+        "status": 201,
+        "json": {
+          "success": true,
+          "data": {
+            "id": "e8179ac1-6dac-4f47-ad07-0eb3bb59987b",
+            "assetId": "7c853b12-2318-47cf-882b-1dfb79f98375",
+            "requestedById": "515d2c1a-7be8-4873-bb8d-318f339fdc07",
+            "approvedById": null,
+            "startTime": "2026-07-13T09:17:13.188Z",
+            "endTime": "2026-07-13T10:17:13.188Z",
+            "status": "PENDING",
+            "purpose": "Cancel path",
+            "decisionNotes": null,
+            "createdAt": "2026-07-12T05:17:13.191Z",
+            "updatedAt": "2026-07-12T05:17:13.191Z"
+          },
+          "message": "Resource created successfully."
+        }
+      },
+      "statusCode": 201,
+      "status": "PASS",
+      "rootCause": "",
+      "fixApplied": ""
+    },
+    {
+      "endpoint": "PATCH /api/bookings/e8179ac1-6dac-4f47-ad07-0eb3bb59987b/cancel",
+      "expectedBehaviour": "Requester/admin can cancel booking",
+      "actualBehaviour": {
+        "status": 200,
+        "json": {
+          "success": true,
+          "data": {
+            "id": "e8179ac1-6dac-4f47-ad07-0eb3bb59987b",
+            "assetId": "7c853b12-2318-47cf-882b-1dfb79f98375",
+            "requestedById": "515d2c1a-7be8-4873-bb8d-318f339fdc07",
+            "approvedById": null,
+            "startTime": "2026-07-13T09:17:13.188Z",
+            "endTime": "2026-07-13T10:17:13.188Z",
+            "status": "CANCELLED",
+            "purpose": "Cancel path",
+            "decisionNotes": null,
+            "createdAt": "2026-07-12T05:17:13.191Z",
+            "updatedAt": "2026-07-12T05:17:13.194Z"
+          },
+          "message": "Operation completed successfully."
+        }
+      },
+      "statusCode": 200,
+      "status": "PASS",
+      "rootCause": "",
+      "fixApplied": ""
+    },
+    {
+      "endpoint": "POST /api/maintenance",
+      "expectedBehaviour": "Admin can create maintenance ticket",
+      "actualBehaviour": {
+        "status": 201,
+        "json": {
+          "success": true,
+          "data": {
+            "id": "54c5d9fa-8f0e-42a4-ad2a-bae1489f02e3",
+            "assetId": "7c853b12-2318-47cf-882b-1dfb79f98375",
+            "reportedById": "515d2c1a-7be8-4873-bb8d-318f339fdc07",
+            "assignedToId": null,
+            "priority": "HIGH",
+            "status": "OPEN",
+            "issueSummary": "QA issue",
+            "issueDescription": null,
+            "resolutionNotes": null,
+            "reportedAt": "2026-07-12T05:17:13.197Z",
+            "resolvedAt": null,
+            "createdAt": "2026-07-12T05:17:13.197Z",
+            "updatedAt": "2026-07-12T05:17:13.197Z"
+          },
+          "message": "Resource created successfully."
+        }
+      },
+      "statusCode": 201,
+      "status": "PASS",
+      "rootCause": "",
+      "fixApplied": ""
+    },
+    {
+      "endpoint": "GET /api/maintenance",
+      "expectedBehaviour": "Authenticated user can list maintenance tickets",
+      "actualBehaviour": {
+        "status": 200,
+        "json": {
+          "success": true,
+          "data": {
+            "items": [
+              {
+                "id": "54c5d9fa-8f0e-42a4-ad2a-bae1489f02e3",
+                "assetId": "7c853b12-2318-47cf-882b-1dfb79f98375",
+                "reportedById": "515d2c1a-7be8-4873-bb8d-318f339fdc07",
+                "assignedToId": null,
+                "priority": "HIGH",
+                "status": "OPEN",
+                "issueSummary": "QA issue",
+                "issueDescription": null,
+                "resolutionNotes": null,
+                "reportedAt": "2026-07-12T05:17:13.197Z",
+                "resolvedAt": null,
+                "createdAt": "2026-07-12T05:17:13.197Z",
+                "updatedAt": "2026-07-12T05:17:13.197Z",
+                "asset": {
+                  "id": "7c853b12-2318-47cf-882b-1dfb79f98375",
+                  "assetCode": "QA-ASSET-1783833433104",
+                  "name": "QA Test Laptop",
+                  "description": null,
+                  "categoryId": "9e3ec76f-5f49-4128-8ab2-4721b49e7867",
+                  "departmentId": "528a43ca-a674-4a0a-9925-6f15604970ca",
+                  "status": "MAINTENANCE",
+                  "condition": "GOOD",
+                  "location": "QA Lab Updated",
+                  "purchaseValue": null,
+                  "purchaseDate": null,
+                  "warrantyExpiry": null,
+                  "isBookable": true,
+                  "createdAt": "2026-07-12T05:17:13.106Z",
+                  "updatedAt": "2026-07-12T05:17:13.197Z"
+                },
+                "reportedBy": {
+                  "id": "515d2c1a-7be8-4873-bb8d-318f339fdc07",
+                  "name": "Admin User",
+                  "email": "admin@assetflow.local"
+                },
+                "assignedTo": null
+              },
+              {
+                "id": "49eca605-f9e3-4061-ad31-6f709d56651d",
+                "assetId": "68309c42-7046-4b64-994f-3bc8d508ccc2",
+                "reportedById": "9783842b-f701-42a5-ab62-d94a42cd9693",
+                "assignedToId": "64f27ba4-b93c-430a-a24b-44fe1510df46",
+                "priority": "HIGH",
+                "status": "IN_PROGRESS",
+                "issueSummary": "Display flickering",
+                "issueDescription": "Monitor flickers every few minutes.",
+                "resolutionNotes": null,
+                "reportedAt": "2026-07-12T05:16:52.074Z",
+                "resolvedAt": null,
+                "createdAt": "2026-07-12T05:16:52.074Z",
+                "updatedAt": "2026-07-12T05:16:52.074Z",
+                "asset": {
+                  "id": "68309c42-7046-4b64-994f-3bc8d508ccc2",
+                  "assetCode": "MON-001",
+                  "name": "Dell 27 Inch Monitor",
+                  "description": null,
+                  "categoryId": "1bf764b6-47e8-44a0-ad54-53d61a2c5a7e",
+                  "departmentId": "80545d5b-6e3b-44f4-b2bb-a9a3bdd0c5d6",
+                  "status": "MAINTENANCE",
+                  "condition": "FAIR",
+                  "location": "Finance Bay",
+                  "purchaseValue": null,
+                  "purchaseDate": null,
+                  "warrantyExpiry": null,
+                  "isBookable": false,
+                  "createdAt": "2026-07-12T05:16:52.071Z",
+                  "updatedAt": "2026-07-12T05:16:52.071Z"
+                },
+                "reportedBy": {
+                  "id": "9783842b-f701-42a5-ab62-d94a42cd9693",
+                  "name": "Employee User",
+                  "email": "employee@assetflow.local"
+                },
+                "assignedTo": {
+                  "id": "64f27ba4-b93c-430a-a24b-44fe1510df46",
+                  "name": "IT Manager",
+                  "email": "manager@assetflow.local"
+                }
+              }
+            ],
+            "page": 1,
+            "limit": 20,
+            "total": 2,
+            "totalPages": 1
+          },
+          "message": "Operation completed successfully."
+        }
+      },
+      "statusCode": 200,
+      "status": "PASS",
+      "rootCause": "",
+      "fixApplied": ""
+    },
+    {
+      "endpoint": "GET /api/maintenance?priority=HIGH",
+      "expectedBehaviour": "Authenticated user can filter maintenance by priority",
+      "actualBehaviour": {
+        "status": 200,
+        "json": {
+          "success": true,
+          "data": {
+            "items": [
+              {
+                "id": "54c5d9fa-8f0e-42a4-ad2a-bae1489f02e3",
+                "assetId": "7c853b12-2318-47cf-882b-1dfb79f98375",
+                "reportedById": "515d2c1a-7be8-4873-bb8d-318f339fdc07",
+                "assignedToId": null,
+                "priority": "HIGH",
+                "status": "OPEN",
+                "issueSummary": "QA issue",
+                "issueDescription": null,
+                "resolutionNotes": null,
+                "reportedAt": "2026-07-12T05:17:13.197Z",
+                "resolvedAt": null,
+                "createdAt": "2026-07-12T05:17:13.197Z",
+                "updatedAt": "2026-07-12T05:17:13.197Z",
+                "asset": {
+                  "id": "7c853b12-2318-47cf-882b-1dfb79f98375",
+                  "assetCode": "QA-ASSET-1783833433104",
+                  "name": "QA Test Laptop",
+                  "description": null,
+                  "categoryId": "9e3ec76f-5f49-4128-8ab2-4721b49e7867",
+                  "departmentId": "528a43ca-a674-4a0a-9925-6f15604970ca",
+                  "status": "MAINTENANCE",
+                  "condition": "GOOD",
+                  "location": "QA Lab Updated",
+                  "purchaseValue": null,
+                  "purchaseDate": null,
+                  "warrantyExpiry": null,
+                  "isBookable": true,
+                  "createdAt": "2026-07-12T05:17:13.106Z",
+                  "updatedAt": "2026-07-12T05:17:13.197Z"
+                },
+                "reportedBy": {
+                  "id": "515d2c1a-7be8-4873-bb8d-318f339fdc07",
+                  "name": "Admin User",
+                  "email": "admin@assetflow.local"
+                },
+                "assignedTo": null
+              },
+              {
+                "id": "49eca605-f9e3-4061-ad31-6f709d56651d",
+                "assetId": "68309c42-7046-4b64-994f-3bc8d508ccc2",
+                "reportedById": "9783842b-f701-42a5-ab62-d94a42cd9693",
+                "assignedToId": "64f27ba4-b93c-430a-a24b-44fe1510df46",
+                "priority": "HIGH",
+                "status": "IN_PROGRESS",
+                "issueSummary": "Display flickering",
+                "issueDescription": "Monitor flickers every few minutes.",
+                "resolutionNotes": null,
+                "reportedAt": "2026-07-12T05:16:52.074Z",
+                "resolvedAt": null,
+                "createdAt": "2026-07-12T05:16:52.074Z",
+                "updatedAt": "2026-07-12T05:16:52.074Z",
+                "asset": {
+                  "id": "68309c42-7046-4b64-994f-3bc8d508ccc2",
+                  "assetCode": "MON-001",
+                  "name": "Dell 27 Inch Monitor",
+                  "description": null,
+                  "categoryId": "1bf764b6-47e8-44a0-ad54-53d61a2c5a7e",
+                  "departmentId": "80545d5b-6e3b-44f4-b2bb-a9a3bdd0c5d6",
+                  "status": "MAINTENANCE",
+                  "condition": "FAIR",
+                  "location": "Finance Bay",
+                  "purchaseValue": null,
+                  "purchaseDate": null,
+                  "warrantyExpiry": null,
+                  "isBookable": false,
+                  "createdAt": "2026-07-12T05:16:52.071Z",
+                  "updatedAt": "2026-07-12T05:16:52.071Z"
+                },
+                "reportedBy": {
+                  "id": "9783842b-f701-42a5-ab62-d94a42cd9693",
+                  "name": "Employee User",
+                  "email": "employee@assetflow.local"
+                },
+                "assignedTo": {
+                  "id": "64f27ba4-b93c-430a-a24b-44fe1510df46",
+                  "name": "IT Manager",
+                  "email": "manager@assetflow.local"
+                }
+              }
+            ],
+            "page": 1,
+            "limit": 20,
+            "total": 2,
+            "totalPages": 1
+          },
+          "message": "Operation completed successfully."
+        }
+      },
+      "statusCode": 200,
+      "status": "PASS",
+      "rootCause": "",
+      "fixApplied": ""
+    },
+    {
+      "endpoint": "GET /api/maintenance/54c5d9fa-8f0e-42a4-ad2a-bae1489f02e3",
+      "expectedBehaviour": "Authenticated user can fetch maintenance detail",
+      "actualBehaviour": {
+        "status": 200,
+        "json": {
+          "success": true,
+          "data": {
+            "id": "54c5d9fa-8f0e-42a4-ad2a-bae1489f02e3",
+            "assetId": "7c853b12-2318-47cf-882b-1dfb79f98375",
+            "reportedById": "515d2c1a-7be8-4873-bb8d-318f339fdc07",
+            "assignedToId": null,
+            "priority": "HIGH",
+            "status": "OPEN",
+            "issueSummary": "QA issue",
+            "issueDescription": null,
+            "resolutionNotes": null,
+            "reportedAt": "2026-07-12T05:17:13.197Z",
+            "resolvedAt": null,
+            "createdAt": "2026-07-12T05:17:13.197Z",
+            "updatedAt": "2026-07-12T05:17:13.197Z",
+            "asset": {
+              "id": "7c853b12-2318-47cf-882b-1dfb79f98375",
+              "assetCode": "QA-ASSET-1783833433104",
+              "name": "QA Test Laptop",
+              "description": null,
+              "categoryId": "9e3ec76f-5f49-4128-8ab2-4721b49e7867",
+              "departmentId": "528a43ca-a674-4a0a-9925-6f15604970ca",
+              "status": "MAINTENANCE",
+              "condition": "GOOD",
+              "location": "QA Lab Updated",
+              "purchaseValue": null,
+              "purchaseDate": null,
+              "warrantyExpiry": null,
+              "isBookable": true,
+              "createdAt": "2026-07-12T05:17:13.106Z",
+              "updatedAt": "2026-07-12T05:17:13.197Z"
+            },
+            "reportedBy": {
+              "id": "515d2c1a-7be8-4873-bb8d-318f339fdc07",
+              "name": "Admin User",
+              "email": "admin@assetflow.local",
+              "passwordHash": "$2b$10$C3YjChQyfOSaJ7b/tPh.A.kUJUTGHhD4OigkJQVzrZGc7l2sd5Wsy",
+              "role": "ADMIN",
+              "departmentId": "56a13f59-5027-4b5d-8314-6cd8565a9697",
+              "status": "ACTIVE",
+              "createdAt": "2026-07-12T05:16:52.064Z",
+              "updatedAt": "2026-07-12T05:16:52.064Z"
+            },
+            "assignedTo": null
+          },
+          "message": "Operation completed successfully."
+        }
+      },
+      "statusCode": 200,
+      "status": "PASS",
+      "rootCause": "",
+      "fixApplied": ""
+    },
+    {
+      "endpoint": "GET /api/maintenance/54c5d9fa-8f0e-42a4-ad2a-bae1489f02e3",
+      "expectedBehaviour": "Employee cannot fetch unrelated maintenance detail",
+      "actualBehaviour": {
+        "status": 403,
+        "json": {
+          "success": false,
+          "error": {
+            "code": "FORBIDDEN",
+            "message": "Employees can only access maintenance tickets related to them."
+          }
+        }
+      },
+      "statusCode": 403,
+      "status": "PASS",
+      "rootCause": "",
+      "fixApplied": ""
+    },
+    {
+      "endpoint": "PATCH /api/maintenance/54c5d9fa-8f0e-42a4-ad2a-bae1489f02e3",
+      "expectedBehaviour": "Admin can update maintenance ticket",
+      "actualBehaviour": {
+        "status": 200,
+        "json": {
+          "success": true,
+          "data": {
+            "id": "54c5d9fa-8f0e-42a4-ad2a-bae1489f02e3",
+            "assetId": "7c853b12-2318-47cf-882b-1dfb79f98375",
+            "reportedById": "515d2c1a-7be8-4873-bb8d-318f339fdc07",
+            "assignedToId": null,
+            "priority": "HIGH",
+            "status": "IN_PROGRESS",
+            "issueSummary": "QA issue",
+            "issueDescription": null,
+            "resolutionNotes": null,
+            "reportedAt": "2026-07-12T05:17:13.197Z",
+            "resolvedAt": null,
+            "createdAt": "2026-07-12T05:17:13.197Z",
+            "updatedAt": "2026-07-12T05:17:13.211Z"
+          },
+          "message": "Operation completed successfully."
+        }
+      },
+      "statusCode": 200,
+      "status": "PASS",
+      "rootCause": "",
+      "fixApplied": ""
+    },
+    {
+      "endpoint": "PATCH /api/maintenance/54c5d9fa-8f0e-42a4-ad2a-bae1489f02e3/close",
+      "expectedBehaviour": "Admin can close maintenance ticket",
+      "actualBehaviour": {
+        "status": 200,
+        "json": {
+          "success": true,
+          "data": {
+            "id": "54c5d9fa-8f0e-42a4-ad2a-bae1489f02e3",
+            "assetId": "7c853b12-2318-47cf-882b-1dfb79f98375",
+            "reportedById": "515d2c1a-7be8-4873-bb8d-318f339fdc07",
+            "assignedToId": null,
+            "priority": "HIGH",
+            "status": "CLOSED",
+            "issueSummary": "QA issue",
+            "issueDescription": null,
+            "resolutionNotes": "Resolved by QA",
+            "reportedAt": "2026-07-12T05:17:13.197Z",
+            "resolvedAt": "2026-07-12T05:17:13.213Z",
+            "createdAt": "2026-07-12T05:17:13.197Z",
+            "updatedAt": "2026-07-12T05:17:13.214Z"
+          },
+          "message": "Operation completed successfully."
+        }
+      },
+      "statusCode": 200,
+      "status": "PASS",
+      "rootCause": "",
+      "fixApplied": ""
+    },
+    {
+      "endpoint": "POST /api/audits",
+      "expectedBehaviour": "Admin can create audit record",
+      "actualBehaviour": {
+        "status": 201,
+        "json": {
+          "success": true,
+          "data": {
+            "id": "d7247cb6-5192-4b8a-bbe8-f2b846af0088",
+            "assetId": "7c853b12-2318-47cf-882b-1dfb79f98375",
+            "auditorId": "515d2c1a-7be8-4873-bb8d-318f339fdc07",
+            "result": "VERIFIED",
+            "remarks": "Verified by QA",
+            "auditedAt": "2026-07-12T05:17:13.216Z",
+            "createdAt": "2026-07-12T05:17:13.216Z",
+            "updatedAt": "2026-07-12T05:17:13.216Z"
+          },
+          "message": "Resource created successfully."
+        }
+      },
+      "statusCode": 201,
+      "status": "PASS",
+      "rootCause": "",
+      "fixApplied": ""
+    },
+    {
+      "endpoint": "GET /api/audits",
+      "expectedBehaviour": "Admin can list audit records",
+      "actualBehaviour": {
+        "status": 200,
+        "json": {
+          "success": true,
+          "data": {
+            "items": [
+              {
+                "id": "d7247cb6-5192-4b8a-bbe8-f2b846af0088",
+                "assetId": "7c853b12-2318-47cf-882b-1dfb79f98375",
+                "auditorId": "515d2c1a-7be8-4873-bb8d-318f339fdc07",
+                "result": "VERIFIED",
+                "remarks": "Verified by QA",
+                "auditedAt": "2026-07-12T05:17:13.216Z",
+                "createdAt": "2026-07-12T05:17:13.216Z",
+                "updatedAt": "2026-07-12T05:17:13.216Z",
+                "asset": {
+                  "id": "7c853b12-2318-47cf-882b-1dfb79f98375",
+                  "assetCode": "QA-ASSET-1783833433104",
+                  "name": "QA Test Laptop",
+                  "description": null,
+                  "categoryId": "9e3ec76f-5f49-4128-8ab2-4721b49e7867",
+                  "departmentId": "528a43ca-a674-4a0a-9925-6f15604970ca",
+                  "status": "ALLOCATED",
+                  "condition": "GOOD",
+                  "location": "QA Lab Updated",
+                  "purchaseValue": null,
+                  "purchaseDate": null,
+                  "warrantyExpiry": null,
+                  "isBookable": true,
+                  "createdAt": "2026-07-12T05:17:13.106Z",
+                  "updatedAt": "2026-07-12T05:17:13.214Z"
+                },
+                "auditor": {
+                  "id": "515d2c1a-7be8-4873-bb8d-318f339fdc07",
+                  "name": "Admin User",
+                  "email": "admin@assetflow.local",
+                  "role": "ADMIN"
+                }
+              },
+              {
+                "id": "83e9dd94-543e-451e-a818-60589c572109",
+                "assetId": "aa38d755-049b-4535-b96b-858f3a2fd51f",
+                "auditorId": "8d9c06cd-95db-4567-bfce-a22d33395192",
+                "result": "VERIFIED",
+                "remarks": "Asset found with assigned employee.",
+                "auditedAt": "2026-07-12T05:16:52.074Z",
+                "createdAt": "2026-07-12T05:16:52.074Z",
+                "updatedAt": "2026-07-12T05:16:52.074Z",
+                "asset": {
+                  "id": "aa38d755-049b-4535-b96b-858f3a2fd51f",
+                  "assetCode": "LAP-001",
+                  "name": "Dell Latitude 5440",
+                  "description": null,
+                  "categoryId": "0c4ae31c-b1ab-44d4-85d5-5d670c531829",
+                  "departmentId": "56a13f59-5027-4b5d-8314-6cd8565a9697",
+                  "status": "ALLOCATED",
+                  "condition": "GOOD",
+                  "location": "IT Floor - Desk 12",
+                  "purchaseValue": "95000",
+                  "purchaseDate": "2025-04-10T00:00:00.000Z",
+                  "warrantyExpiry": null,
+                  "isBookable": false,
+                  "createdAt": "2026-07-12T05:16:52.069Z",
+                  "updatedAt": "2026-07-12T05:16:52.069Z"
+                },
+                "auditor": {
+                  "id": "8d9c06cd-95db-4567-bfce-a22d33395192",
+                  "name": "Audit User",
+                  "email": "auditor@assetflow.local",
+                  "role": "AUDITOR"
+                }
+              }
+            ],
+            "page": 1,
+            "limit": 20,
+            "total": 2,
+            "totalPages": 1
+          },
+          "message": "Operation completed successfully."
+        }
+      },
+      "statusCode": 200,
+      "status": "PASS",
+      "rootCause": "",
+      "fixApplied": ""
+    },
+    {
+      "endpoint": "GET /api/audits?result=VERIFIED",
+      "expectedBehaviour": "Admin can filter audit records by result",
+      "actualBehaviour": {
+        "status": 200,
+        "json": {
+          "success": true,
+          "data": {
+            "items": [
+              {
+                "id": "d7247cb6-5192-4b8a-bbe8-f2b846af0088",
+                "assetId": "7c853b12-2318-47cf-882b-1dfb79f98375",
+                "auditorId": "515d2c1a-7be8-4873-bb8d-318f339fdc07",
+                "result": "VERIFIED",
+                "remarks": "Verified by QA",
+                "auditedAt": "2026-07-12T05:17:13.216Z",
+                "createdAt": "2026-07-12T05:17:13.216Z",
+                "updatedAt": "2026-07-12T05:17:13.216Z",
+                "asset": {
+                  "id": "7c853b12-2318-47cf-882b-1dfb79f98375",
+                  "assetCode": "QA-ASSET-1783833433104",
+                  "name": "QA Test Laptop",
+                  "description": null,
+                  "categoryId": "9e3ec76f-5f49-4128-8ab2-4721b49e7867",
+                  "departmentId": "528a43ca-a674-4a0a-9925-6f15604970ca",
+                  "status": "ALLOCATED",
+                  "condition": "GOOD",
+                  "location": "QA Lab Updated",
+                  "purchaseValue": null,
+                  "purchaseDate": null,
+                  "warrantyExpiry": null,
+                  "isBookable": true,
+                  "createdAt": "2026-07-12T05:17:13.106Z",
+                  "updatedAt": "2026-07-12T05:17:13.214Z"
+                },
+                "auditor": {
+                  "id": "515d2c1a-7be8-4873-bb8d-318f339fdc07",
+                  "name": "Admin User",
+                  "email": "admin@assetflow.local",
+                  "role": "ADMIN"
+                }
+              },
+              {
+                "id": "83e9dd94-543e-451e-a818-60589c572109",
+                "assetId": "aa38d755-049b-4535-b96b-858f3a2fd51f",
+                "auditorId": "8d9c06cd-95db-4567-bfce-a22d33395192",
+                "result": "VERIFIED",
+                "remarks": "Asset found with assigned employee.",
+                "auditedAt": "2026-07-12T05:16:52.074Z",
+                "createdAt": "2026-07-12T05:16:52.074Z",
+                "updatedAt": "2026-07-12T05:16:52.074Z",
+                "asset": {
+                  "id": "aa38d755-049b-4535-b96b-858f3a2fd51f",
+                  "assetCode": "LAP-001",
+                  "name": "Dell Latitude 5440",
+                  "description": null,
+                  "categoryId": "0c4ae31c-b1ab-44d4-85d5-5d670c531829",
+                  "departmentId": "56a13f59-5027-4b5d-8314-6cd8565a9697",
+                  "status": "ALLOCATED",
+                  "condition": "GOOD",
+                  "location": "IT Floor - Desk 12",
+                  "purchaseValue": "95000",
+                  "purchaseDate": "2025-04-10T00:00:00.000Z",
+                  "warrantyExpiry": null,
+                  "isBookable": false,
+                  "createdAt": "2026-07-12T05:16:52.069Z",
+                  "updatedAt": "2026-07-12T05:16:52.069Z"
+                },
+                "auditor": {
+                  "id": "8d9c06cd-95db-4567-bfce-a22d33395192",
+                  "name": "Audit User",
+                  "email": "auditor@assetflow.local",
+                  "role": "AUDITOR"
+                }
+              }
+            ],
+            "page": 1,
+            "limit": 20,
+            "total": 2,
+            "totalPages": 1
+          },
+          "message": "Operation completed successfully."
+        }
+      },
+      "statusCode": 200,
+      "status": "PASS",
+      "rootCause": "",
+      "fixApplied": ""
+    },
+    {
+      "endpoint": "GET /api/audit-logs",
+      "expectedBehaviour": "Admin can list audit logs",
+      "actualBehaviour": {
+        "status": 200,
+        "json": {
+          "success": true,
+          "data": {
+            "items": [
+              {
+                "id": "aa3b9fe9-1a80-4a1e-94c6-597bf63900d5",
+                "actorId": "515d2c1a-7be8-4873-bb8d-318f339fdc07",
+                "entityType": "AuditRecord",
+                "entityId": "d7247cb6-5192-4b8a-bbe8-f2b846af0088",
+                "action": "created",
+                "metadata": {
+                  "result": "VERIFIED",
+                  "assetId": "7c853b12-2318-47cf-882b-1dfb79f98375"
+                },
+                "createdAt": "2026-07-12T05:17:13.217Z",
+                "updatedAt": "2026-07-12T05:17:13.217Z",
+                "actor": {
+                  "id": "515d2c1a-7be8-4873-bb8d-318f339fdc07",
+                  "name": "Admin User",
+                  "email": "admin@assetflow.local",
+                  "role": "ADMIN"
+                }
+              },
+              {
+                "id": "19210fbb-8e40-47f8-809f-8252404b8409",
+                "actorId": "515d2c1a-7be8-4873-bb8d-318f339fdc07",
+                "entityType": "MaintenanceTicket",
+                "entityId": "54c5d9fa-8f0e-42a4-ad2a-bae1489f02e3",
+                "action": "closed",
+                "metadata": {
+                  "resolutionNotes": "Resolved by QA"
+                },
+                "createdAt": "2026-07-12T05:17:13.215Z",
+                "updatedAt": "2026-07-12T05:17:13.215Z",
+                "actor": {
+                  "id": "515d2c1a-7be8-4873-bb8d-318f339fdc07",
+                  "name": "Admin User",
+                  "email": "admin@assetflow.local",
+                  "role": "ADMIN"
+                }
+              },
+              {
+                "id": "b0208c58-494f-4c27-baa7-f5173818639d",
+                "actorId": "515d2c1a-7be8-4873-bb8d-318f339fdc07",
+                "entityType": "MaintenanceTicket",
+                "entityId": "54c5d9fa-8f0e-42a4-ad2a-bae1489f02e3",
+                "action": "updated",
+                "metadata": {
+                  "status": "IN_PROGRESS"
+                },
+                "createdAt": "2026-07-12T05:17:13.211Z",
+                "updatedAt": "2026-07-12T05:17:13.211Z",
+                "actor": {
+                  "id": "515d2c1a-7be8-4873-bb8d-318f339fdc07",
+                  "name": "Admin User",
+                  "email": "admin@assetflow.local",
+                  "role": "ADMIN"
+                }
+              },
+              {
+                "id": "91fe679b-38f2-414d-acee-744e25a787a9",
+                "actorId": "515d2c1a-7be8-4873-bb8d-318f339fdc07",
+                "entityType": "MaintenanceTicket",
+                "entityId": "54c5d9fa-8f0e-42a4-ad2a-bae1489f02e3",
+                "action": "created",
+                "metadata": {
+                  "assetId": "7c853b12-2318-47cf-882b-1dfb79f98375",
+                  "priority": "HIGH"
+                },
+                "createdAt": "2026-07-12T05:17:13.198Z",
+                "updatedAt": "2026-07-12T05:17:13.198Z",
+                "actor": {
+                  "id": "515d2c1a-7be8-4873-bb8d-318f339fdc07",
+                  "name": "Admin User",
+                  "email": "admin@assetflow.local",
+                  "role": "ADMIN"
+                }
+              },
+              {
+                "id": "e03ee369-b406-4584-9ddf-52444c6ccfbb",
+                "actorId": "515d2c1a-7be8-4873-bb8d-318f339fdc07",
+                "entityType": "Booking",
+                "entityId": "e8179ac1-6dac-4f47-ad07-0eb3bb59987b",
+                "action": "cancelled",
+                "metadata": null,
+                "createdAt": "2026-07-12T05:17:13.194Z",
+                "updatedAt": "2026-07-12T05:17:13.194Z",
+                "actor": {
+                  "id": "515d2c1a-7be8-4873-bb8d-318f339fdc07",
+                  "name": "Admin User",
+                  "email": "admin@assetflow.local",
+                  "role": "ADMIN"
+                }
+              },
+              {
+                "id": "4b4919f8-2579-4339-ab74-65fa94f7340e",
+                "actorId": "515d2c1a-7be8-4873-bb8d-318f339fdc07",
+                "entityType": "Booking",
+                "entityId": "e8179ac1-6dac-4f47-ad07-0eb3bb59987b",
+                "action": "requested",
+                "metadata": {
+                  "assetId": "7c853b12-2318-47cf-882b-1dfb79f98375"
+                },
+                "createdAt": "2026-07-12T05:17:13.192Z",
+                "updatedAt": "2026-07-12T05:17:13.192Z",
+                "actor": {
+                  "id": "515d2c1a-7be8-4873-bb8d-318f339fdc07",
+                  "name": "Admin User",
+                  "email": "admin@assetflow.local",
+                  "role": "ADMIN"
+                }
+              },
+              {
+                "id": "3899b7c0-e887-45f4-8f7f-c765a3e1cfca",
+                "actorId": "515d2c1a-7be8-4873-bb8d-318f339fdc07",
+                "entityType": "Booking",
+                "entityId": "cf1212b5-3420-4bde-a749-4510bf6c96c0",
+                "action": "rejected",
+                "metadata": null,
+                "createdAt": "2026-07-12T05:17:13.188Z",
+                "updatedAt": "2026-07-12T05:17:13.188Z",
+                "actor": {
+                  "id": "515d2c1a-7be8-4873-bb8d-318f339fdc07",
+                  "name": "Admin User",
+                  "email": "admin@assetflow.local",
+                  "role": "ADMIN"
+                }
+              },
+              {
+                "id": "af0494ad-3eb9-4432-a13e-b24c1c435cb7",
+                "actorId": "515d2c1a-7be8-4873-bb8d-318f339fdc07",
+                "entityType": "Booking",
+                "entityId": "cf1212b5-3420-4bde-a749-4510bf6c96c0",
+                "action": "requested",
+                "metadata": {
+                  "assetId": "7c853b12-2318-47cf-882b-1dfb79f98375"
+                },
+                "createdAt": "2026-07-12T05:17:13.185Z",
+                "updatedAt": "2026-07-12T05:17:13.185Z",
+                "actor": {
+                  "id": "515d2c1a-7be8-4873-bb8d-318f339fdc07",
+                  "name": "Admin User",
+                  "email": "admin@assetflow.local",
+                  "role": "ADMIN"
+                }
+              },
+              {
+                "id": "fad837b1-f094-4aff-970f-d89c291875a3",
+                "actorId": "515d2c1a-7be8-4873-bb8d-318f339fdc07",
+                "entityType": "Booking",
+                "entityId": "4c56a9b1-176e-4274-b35c-ce80353ed939",
+                "action": "approved",
+                "metadata": {},
+                "createdAt": "2026-07-12T05:17:13.177Z",
+                "updatedAt": "2026-07-12T05:17:13.177Z",
+                "actor": {
+                  "id": "515d2c1a-7be8-4873-bb8d-318f339fdc07",
+                  "name": "Admin User",
+                  "email": "admin@assetflow.local",
+                  "role": "ADMIN"
+                }
+              },
+              {
+                "id": "be2dc937-1c32-4971-a968-63611cfbbbe5",
+                "actorId": "515d2c1a-7be8-4873-bb8d-318f339fdc07",
+                "entityType": "Booking",
+                "entityId": "4c56a9b1-176e-4274-b35c-ce80353ed939",
+                "action": "requested",
+                "metadata": {
+                  "assetId": "7c853b12-2318-47cf-882b-1dfb79f98375"
+                },
+                "createdAt": "2026-07-12T05:17:13.171Z",
+                "updatedAt": "2026-07-12T05:17:13.171Z",
+                "actor": {
+                  "id": "515d2c1a-7be8-4873-bb8d-318f339fdc07",
+                  "name": "Admin User",
+                  "email": "admin@assetflow.local",
+                  "role": "ADMIN"
+                }
+              },
+              {
+                "id": "29c54448-7574-4294-937d-386642b0a123",
+                "actorId": "515d2c1a-7be8-4873-bb8d-318f339fdc07",
+                "entityType": "Transfer",
+                "entityId": "5ed1481b-df90-4d48-8e5e-06558c3400c4",
+                "action": "cancelled",
+                "metadata": null,
+                "createdAt": "2026-07-12T05:17:13.167Z",
+                "updatedAt": "2026-07-12T05:17:13.167Z",
+                "actor": {
+                  "id": "515d2c1a-7be8-4873-bb8d-318f339fdc07",
+                  "name": "Admin User",
+                  "email": "admin@assetflow.local",
+                  "role": "ADMIN"
+                }
+              },
+              {
+                "id": "901d8ef4-a28e-4c2d-876d-f33b6456e81b",
+                "actorId": "515d2c1a-7be8-4873-bb8d-318f339fdc07",
+                "entityType": "Transfer",
+                "entityId": "5ed1481b-df90-4d48-8e5e-06558c3400c4",
+                "action": "requested",
+                "metadata": {
+                  "assetId": "7c853b12-2318-47cf-882b-1dfb79f98375"
+                },
+                "createdAt": "2026-07-12T05:17:13.164Z",
+                "updatedAt": "2026-07-12T05:17:13.164Z",
+                "actor": {
+                  "id": "515d2c1a-7be8-4873-bb8d-318f339fdc07",
+                  "name": "Admin User",
+                  "email": "admin@assetflow.local",
+                  "role": "ADMIN"
+                }
+              },
+              {
+                "id": "7c080735-eeb0-4ce6-ab11-bacae649915d",
+                "actorId": "515d2c1a-7be8-4873-bb8d-318f339fdc07",
+                "entityType": "Transfer",
+                "entityId": "aef5dd12-b645-461a-872b-213d6ada1220",
+                "action": "approved",
+                "metadata": {
+                  "decisionNotes": "Approved by QA"
+                },
+                "createdAt": "2026-07-12T05:17:13.158Z",
+                "updatedAt": "2026-07-12T05:17:13.158Z",
+                "actor": {
+                  "id": "515d2c1a-7be8-4873-bb8d-318f339fdc07",
+                  "name": "Admin User",
+                  "email": "admin@assetflow.local",
+                  "role": "ADMIN"
+                }
+              },
+              {
+                "id": "fac503ab-26c1-4f3d-834d-8773d912c3ba",
+                "actorId": "515d2c1a-7be8-4873-bb8d-318f339fdc07",
+                "entityType": "Transfer",
+                "entityId": "aef5dd12-b645-461a-872b-213d6ada1220",
+                "action": "requested",
+                "metadata": {
+                  "assetId": "7c853b12-2318-47cf-882b-1dfb79f98375"
+                },
+                "createdAt": "2026-07-12T05:17:13.142Z",
+                "updatedAt": "2026-07-12T05:17:13.142Z",
+                "actor": {
+                  "id": "515d2c1a-7be8-4873-bb8d-318f339fdc07",
+                  "name": "Admin User",
+                  "email": "admin@assetflow.local",
+                  "role": "ADMIN"
+                }
+              },
+              {
+                "id": "9efe185d-e917-463d-bcef-beed55b185ce",
+                "actorId": "515d2c1a-7be8-4873-bb8d-318f339fdc07",
+                "entityType": "Asset",
+                "entityId": "7c853b12-2318-47cf-882b-1dfb79f98375",
+                "action": "allocated",
+                "metadata": {
+                  "userId": "e68edf67-0e82-49df-b2b8-cf901d2fa30f",
+                  "allocationId": "f99fa65f-2239-47c0-a178-b26307045e63"
+                },
+                "createdAt": "2026-07-12T05:17:13.135Z",
+                "updatedAt": "2026-07-12T05:17:13.135Z",
+                "actor": {
+                  "id": "515d2c1a-7be8-4873-bb8d-318f339fdc07",
+                  "name": "Admin User",
+                  "email": "admin@assetflow.local",
+                  "role": "ADMIN"
+                }
+              },
+              {
+                "id": "762cfdda-4d61-46e5-b344-f7e0fcdcef19",
+                "actorId": "515d2c1a-7be8-4873-bb8d-318f339fdc07",
+                "entityType": "Asset",
+                "entityId": "7c853b12-2318-47cf-882b-1dfb79f98375",
+                "action": "updated",
+                "metadata": {
+                  "location": "QA Lab Updated"
+                },
+                "createdAt": "2026-07-12T05:17:13.119Z",
+                "updatedAt": "2026-07-12T05:17:13.119Z",
+                "actor": {
+                  "id": "515d2c1a-7be8-4873-bb8d-318f339fdc07",
+                  "name": "Admin User",
+                  "email": "admin@assetflow.local",
+                  "role": "ADMIN"
+                }
+              },
+              {
+                "id": "fab58e7a-8a4a-4e0f-9c29-50ba61bab10b",
+                "actorId": "515d2c1a-7be8-4873-bb8d-318f339fdc07",
+                "entityType": "Asset",
+                "entityId": "7c853b12-2318-47cf-882b-1dfb79f98375",
+                "action": "created",
+                "metadata": {
+                  "assetCode": "QA-ASSET-1783833433104"
+                },
+                "createdAt": "2026-07-12T05:17:13.108Z",
+                "updatedAt": "2026-07-12T05:17:13.108Z",
+                "actor": {
+                  "id": "515d2c1a-7be8-4873-bb8d-318f339fdc07",
+                  "name": "Admin User",
+                  "email": "admin@assetflow.local",
+                  "role": "ADMIN"
+                }
+              },
+              {
+                "id": "063db7ef-c53c-4e66-bb53-92d3cf7d2dc8",
+                "actorId": "515d2c1a-7be8-4873-bb8d-318f339fdc07",
+                "entityType": "Category",
+                "entityId": "9e3ec76f-5f49-4128-8ab2-4721b49e7867",
+                "action": "updated",
+                "metadata": {
+                  "description": "Updated by QA"
+                },
+                "createdAt": "2026-07-12T05:17:13.103Z",
+                "updatedAt": "2026-07-12T05:17:13.103Z",
+                "actor": {
+                  "id": "515d2c1a-7be8-4873-bb8d-318f339fdc07",
+                  "name": "Admin User",
+                  "email": "admin@assetflow.local",
+                  "role": "ADMIN"
+                }
+              },
+              {
+                "id": "48bb4f10-462b-4560-8016-66bd380a01ac",
+                "actorId": "515d2c1a-7be8-4873-bb8d-318f339fdc07",
+                "entityType": "Category",
+                "entityId": "9e3ec76f-5f49-4128-8ab2-4721b49e7867",
+                "action": "created",
+                "metadata": {
+                  "code": "QAC33097"
+                },
+                "createdAt": "2026-07-12T05:17:13.100Z",
+                "updatedAt": "2026-07-12T05:17:13.100Z",
+                "actor": {
+                  "id": "515d2c1a-7be8-4873-bb8d-318f339fdc07",
+                  "name": "Admin User",
+                  "email": "admin@assetflow.local",
+                  "role": "ADMIN"
+                }
+              },
+              {
+                "id": "0ae7fe32-f21f-472a-8f6e-0490f556763a",
+                "actorId": "515d2c1a-7be8-4873-bb8d-318f339fdc07",
+                "entityType": "User",
+                "entityId": "e68edf67-0e82-49df-b2b8-cf901d2fa30f",
+                "action": "updated",
+                "metadata": {
+                  "status": "ACTIVE"
+                },
+                "createdAt": "2026-07-12T05:17:13.097Z",
+                "updatedAt": "2026-07-12T05:17:13.097Z",
+                "actor": {
+                  "id": "515d2c1a-7be8-4873-bb8d-318f339fdc07",
+                  "name": "Admin User",
+                  "email": "admin@assetflow.local",
+                  "role": "ADMIN"
+                }
+              }
+            ],
+            "page": 1,
+            "limit": 20,
+            "total": 25,
+            "totalPages": 2
+          },
+          "message": "Operation completed successfully."
+        }
+      },
+      "statusCode": 200,
+      "status": "PASS",
+      "rootCause": "",
+      "fixApplied": ""
+    },
+    {
+      "endpoint": "GET /api/audit-logs?entityType=Asset",
+      "expectedBehaviour": "Admin can filter audit logs by entity type",
+      "actualBehaviour": {
+        "status": 200,
+        "json": {
+          "success": true,
+          "data": {
+            "items": [
+              {
+                "id": "9efe185d-e917-463d-bcef-beed55b185ce",
+                "actorId": "515d2c1a-7be8-4873-bb8d-318f339fdc07",
+                "entityType": "Asset",
+                "entityId": "7c853b12-2318-47cf-882b-1dfb79f98375",
+                "action": "allocated",
+                "metadata": {
+                  "userId": "e68edf67-0e82-49df-b2b8-cf901d2fa30f",
+                  "allocationId": "f99fa65f-2239-47c0-a178-b26307045e63"
+                },
+                "createdAt": "2026-07-12T05:17:13.135Z",
+                "updatedAt": "2026-07-12T05:17:13.135Z",
+                "actor": {
+                  "id": "515d2c1a-7be8-4873-bb8d-318f339fdc07",
+                  "name": "Admin User",
+                  "email": "admin@assetflow.local",
+                  "role": "ADMIN"
+                }
+              },
+              {
+                "id": "762cfdda-4d61-46e5-b344-f7e0fcdcef19",
+                "actorId": "515d2c1a-7be8-4873-bb8d-318f339fdc07",
+                "entityType": "Asset",
+                "entityId": "7c853b12-2318-47cf-882b-1dfb79f98375",
+                "action": "updated",
+                "metadata": {
+                  "location": "QA Lab Updated"
+                },
+                "createdAt": "2026-07-12T05:17:13.119Z",
+                "updatedAt": "2026-07-12T05:17:13.119Z",
+                "actor": {
+                  "id": "515d2c1a-7be8-4873-bb8d-318f339fdc07",
+                  "name": "Admin User",
+                  "email": "admin@assetflow.local",
+                  "role": "ADMIN"
+                }
+              },
+              {
+                "id": "fab58e7a-8a4a-4e0f-9c29-50ba61bab10b",
+                "actorId": "515d2c1a-7be8-4873-bb8d-318f339fdc07",
+                "entityType": "Asset",
+                "entityId": "7c853b12-2318-47cf-882b-1dfb79f98375",
+                "action": "created",
+                "metadata": {
+                  "assetCode": "QA-ASSET-1783833433104"
+                },
+                "createdAt": "2026-07-12T05:17:13.108Z",
+                "updatedAt": "2026-07-12T05:17:13.108Z",
+                "actor": {
+                  "id": "515d2c1a-7be8-4873-bb8d-318f339fdc07",
+                  "name": "Admin User",
+                  "email": "admin@assetflow.local",
+                  "role": "ADMIN"
+                }
+              },
+              {
+                "id": "1790279c-f6b5-415b-9cbf-688752c78dc7",
+                "actorId": "64f27ba4-b93c-430a-a24b-44fe1510df46",
+                "entityType": "Asset",
+                "entityId": "aa38d755-049b-4535-b96b-858f3a2fd51f",
+                "action": "allocated",
+                "metadata": {
+                  "allocationId": "8398390c-d51a-4af9-bd37-22429ff20d2f"
+                },
+                "createdAt": "2026-07-12T05:16:52.075Z",
+                "updatedAt": "2026-07-12T05:16:52.075Z",
+                "actor": {
+                  "id": "64f27ba4-b93c-430a-a24b-44fe1510df46",
+                  "name": "IT Manager",
+                  "email": "manager@assetflow.local",
+                  "role": "MANAGER"
+                }
+              }
+            ],
+            "page": 1,
+            "limit": 20,
+            "total": 4,
+            "totalPages": 1
+          },
+          "message": "Operation completed successfully."
+        }
+      },
+      "statusCode": 200,
+      "status": "PASS",
+      "rootCause": "",
+      "fixApplied": ""
+    },
+    {
+      "endpoint": "GET /api/reports/summary",
+      "expectedBehaviour": "Admin can fetch summary report",
+      "actualBehaviour": {
+        "status": 200,
+        "json": {
+          "success": true,
+          "data": {
+            "totalAssets": 7,
+            "available": 4,
+            "allocated": 2,
+            "maintenance": 1,
+            "lost": 0,
+            "pendingTransfers": 1,
+            "pendingBookings": 1,
+            "openMaintenance": 1,
+            "byStatus": [
+              {
+                "_count": {
+                  "status": 4
+                },
+                "status": "AVAILABLE"
+              },
+              {
+                "_count": {
+                  "status": 2
+                },
+                "status": "ALLOCATED"
+              },
+              {
+                "_count": {
+                  "status": 1
+                },
+                "status": "MAINTENANCE"
+              }
+            ],
+            "byCategory": [
+              {
+                "_count": {
+                  "categoryId": 1
+                },
+                "categoryId": "4f8b69ee-2acf-4537-a2f0-2daf79e252f1"
+              },
+              {
+                "_count": {
+                  "categoryId": 1
+                },
+                "categoryId": "9e3ec76f-5f49-4128-8ab2-4721b49e7867"
+              },
+              {
+                "_count": {
+                  "categoryId": 1
+                },
+                "categoryId": "000c213b-457a-4a76-9491-83ddfd216712"
+              },
+              {
+                "_count": {
+                  "categoryId": 1
+                },
+                "categoryId": "c18d7fc0-0bcd-4eaa-854c-fefd57142ed3"
+              },
+              {
+                "_count": {
+                  "categoryId": 2
+                },
+                "categoryId": "0c4ae31c-b1ab-44d4-85d5-5d670c531829"
+              },
+              {
+                "_count": {
+                  "categoryId": 1
+                },
+                "categoryId": "1bf764b6-47e8-44a0-ad54-53d61a2c5a7e"
+              }
+            ]
+          },
+          "message": "Operation completed successfully."
+        }
+      },
+      "statusCode": 200,
+      "status": "PASS",
+      "rootCause": "",
+      "fixApplied": ""
+    },
+    {
+      "endpoint": "GET /api/reports/assets",
+      "expectedBehaviour": "Admin can fetch asset report",
+      "actualBehaviour": {
+        "status": 200,
+        "json": {
+          "success": true,
+          "data": {
+            "items": [
+              {
+                "id": "7c853b12-2318-47cf-882b-1dfb79f98375",
+                "assetCode": "QA-ASSET-1783833433104",
+                "name": "QA Test Laptop",
+                "description": null,
+                "categoryId": "9e3ec76f-5f49-4128-8ab2-4721b49e7867",
+                "departmentId": "528a43ca-a674-4a0a-9925-6f15604970ca",
+                "status": "ALLOCATED",
+                "condition": "GOOD",
+                "location": "QA Lab Updated",
+                "purchaseValue": null,
+                "purchaseDate": null,
+                "warrantyExpiry": null,
+                "isBookable": true,
+                "createdAt": "2026-07-12T05:17:13.106Z",
+                "updatedAt": "2026-07-12T05:17:13.214Z",
+                "category": {
+                  "id": "9e3ec76f-5f49-4128-8ab2-4721b49e7867",
+                  "name": "QA Category 1783833433097",
+                  "code": "QAC33097",
+                  "description": "Updated by QA",
+                  "status": "ACTIVE",
+                  "createdAt": "2026-07-12T05:17:13.099Z",
+                  "updatedAt": "2026-07-12T05:17:13.103Z"
+                },
+                "department": {
+                  "id": "528a43ca-a674-4a0a-9925-6f15604970ca",
+                  "name": "QA Department Updated 1783833433047",
+                  "code": "QA33039",
+                  "managerId": null,
+                  "status": "ACTIVE",
+                  "createdAt": "2026-07-12T05:17:13.042Z",
+                  "updatedAt": "2026-07-12T05:17:13.050Z"
+                },
+                "allocations": [
+                  {
+                    "id": "b068994f-ecab-47f6-8764-ae05a2e2adf0",
+                    "assetId": "7c853b12-2318-47cf-882b-1dfb79f98375",
+                    "userId": null,
+                    "departmentId": "528a43ca-a674-4a0a-9925-6f15604970ca",
+                    "assignedById": "515d2c1a-7be8-4873-bb8d-318f339fdc07",
+                    "status": "ACTIVE",
+                    "assignedAt": "2026-07-12T05:17:13.156Z",
+                    "returnedAt": null,
+                    "notes": "Transfer approved: QA transfer",
+                    "createdAt": "2026-07-12T05:17:13.156Z",
+                    "updatedAt": "2026-07-12T05:17:13.156Z",
+                    "user": null,
+                    "department": {
+                      "id": "528a43ca-a674-4a0a-9925-6f15604970ca",
+                      "name": "QA Department Updated 1783833433047",
+                      "code": "QA33039",
+                      "managerId": null,
+                      "status": "ACTIVE",
+                      "createdAt": "2026-07-12T05:17:13.042Z",
+                      "updatedAt": "2026-07-12T05:17:13.050Z"
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "2eb7ef4a-b53e-434e-a9c3-5e5efbeb7784",
+                "assetCode": "VEH-001",
+                "name": "Office Shuttle",
+                "description": null,
+                "categoryId": "4f8b69ee-2acf-4537-a2f0-2daf79e252f1",
+                "departmentId": "e7eb1058-86db-4daf-b403-f8280fe50f39",
+                "status": "AVAILABLE",
+                "condition": "GOOD",
+                "location": "Parking Bay 4",
+                "purchaseValue": null,
+                "purchaseDate": null,
+                "warrantyExpiry": null,
+                "isBookable": true,
+                "createdAt": "2026-07-12T05:16:52.071Z",
+                "updatedAt": "2026-07-12T05:16:52.071Z",
+                "category": {
+                  "id": "4f8b69ee-2acf-4537-a2f0-2daf79e252f1",
+                  "name": "Vehicle",
+                  "code": "VEH",
+                  "description": "Shared organization vehicles",
+                  "status": "ACTIVE",
+                  "createdAt": "2026-07-12T05:16:52.067Z",
+                  "updatedAt": "2026-07-12T05:16:52.067Z"
+                },
+                "department": {
+                  "id": "e7eb1058-86db-4daf-b403-f8280fe50f39",
+                  "name": "Operations",
+                  "code": "OPS",
+                  "managerId": null,
+                  "status": "ACTIVE",
+                  "createdAt": "2026-07-12T05:16:52.061Z",
+                  "updatedAt": "2026-07-12T05:16:52.061Z"
+                },
+                "allocations": []
+              },
+              {
+                "id": "89950824-de4a-4f8c-bc27-7720e4104df8",
+                "assetCode": "FUR-001",
+                "name": "Ergonomic Chair",
+                "description": null,
+                "categoryId": "000c213b-457a-4a76-9491-83ddfd216712",
+                "departmentId": "e7eb1058-86db-4daf-b403-f8280fe50f39",
+                "status": "AVAILABLE",
+                "condition": "GOOD",
+                "location": "Storage Room",
+                "purchaseValue": null,
+                "purchaseDate": null,
+                "warrantyExpiry": null,
+                "isBookable": false,
+                "createdAt": "2026-07-12T05:16:52.071Z",
+                "updatedAt": "2026-07-12T05:16:52.071Z",
+                "category": {
+                  "id": "000c213b-457a-4a76-9491-83ddfd216712",
+                  "name": "Furniture",
+                  "code": "FUR",
+                  "description": "Office furniture",
+                  "status": "ACTIVE",
+                  "createdAt": "2026-07-12T05:16:52.067Z",
+                  "updatedAt": "2026-07-12T05:16:52.067Z"
+                },
+                "department": {
+                  "id": "e7eb1058-86db-4daf-b403-f8280fe50f39",
+                  "name": "Operations",
+                  "code": "OPS",
+                  "managerId": null,
+                  "status": "ACTIVE",
+                  "createdAt": "2026-07-12T05:16:52.061Z",
+                  "updatedAt": "2026-07-12T05:16:52.061Z"
+                },
+                "allocations": []
+              },
+              {
+                "id": "68309c42-7046-4b64-994f-3bc8d508ccc2",
+                "assetCode": "MON-001",
+                "name": "Dell 27 Inch Monitor",
+                "description": null,
+                "categoryId": "1bf764b6-47e8-44a0-ad54-53d61a2c5a7e",
+                "departmentId": "80545d5b-6e3b-44f4-b2bb-a9a3bdd0c5d6",
+                "status": "MAINTENANCE",
+                "condition": "FAIR",
+                "location": "Finance Bay",
+                "purchaseValue": null,
+                "purchaseDate": null,
+                "warrantyExpiry": null,
+                "isBookable": false,
+                "createdAt": "2026-07-12T05:16:52.071Z",
+                "updatedAt": "2026-07-12T05:16:52.071Z",
+                "category": {
+                  "id": "1bf764b6-47e8-44a0-ad54-53d61a2c5a7e",
+                  "name": "Monitor",
+                  "code": "MON",
+                  "description": "Displays and screens",
+                  "status": "ACTIVE",
+                  "createdAt": "2026-07-12T05:16:52.067Z",
+                  "updatedAt": "2026-07-12T05:16:52.067Z"
+                },
+                "department": {
+                  "id": "80545d5b-6e3b-44f4-b2bb-a9a3bdd0c5d6",
+                  "name": "Finance",
+                  "code": "FIN",
+                  "managerId": null,
+                  "status": "ACTIVE",
+                  "createdAt": "2026-07-12T05:16:52.061Z",
+                  "updatedAt": "2026-07-12T05:16:52.061Z"
+                },
+                "allocations": []
+              },
+              {
+                "id": "afd28a68-de92-4a05-919e-d8cbc19ec8ab",
+                "assetCode": "PROJ-001",
+                "name": "Epson Conference Projector",
+                "description": null,
+                "categoryId": "c18d7fc0-0bcd-4eaa-854c-fefd57142ed3",
+                "departmentId": "e7eb1058-86db-4daf-b403-f8280fe50f39",
+                "status": "AVAILABLE",
+                "condition": "GOOD",
+                "location": "Conference Room A",
+                "purchaseValue": null,
+                "purchaseDate": null,
+                "warrantyExpiry": null,
+                "isBookable": true,
+                "createdAt": "2026-07-12T05:16:52.071Z",
+                "updatedAt": "2026-07-12T05:16:52.071Z",
+                "category": {
+                  "id": "c18d7fc0-0bcd-4eaa-854c-fefd57142ed3",
+                  "name": "Projector",
+                  "code": "PROJ",
+                  "description": "Bookable presentation devices",
+                  "status": "ACTIVE",
+                  "createdAt": "2026-07-12T05:16:52.067Z",
+                  "updatedAt": "2026-07-12T05:16:52.067Z"
+                },
+                "department": {
+                  "id": "e7eb1058-86db-4daf-b403-f8280fe50f39",
+                  "name": "Operations",
+                  "code": "OPS",
+                  "managerId": null,
+                  "status": "ACTIVE",
+                  "createdAt": "2026-07-12T05:16:52.061Z",
+                  "updatedAt": "2026-07-12T05:16:52.061Z"
+                },
+                "allocations": []
+              },
+              {
+                "id": "3cf39906-4d51-49cc-a17d-75c284ee312e",
+                "assetCode": "LAP-002",
+                "name": "MacBook Air M3",
+                "description": null,
+                "categoryId": "0c4ae31c-b1ab-44d4-85d5-5d670c531829",
+                "departmentId": "56a13f59-5027-4b5d-8314-6cd8565a9697",
+                "status": "AVAILABLE",
+                "condition": "NEW",
+                "location": "IT Store",
+                "purchaseValue": null,
+                "purchaseDate": null,
+                "warrantyExpiry": null,
+                "isBookable": false,
+                "createdAt": "2026-07-12T05:16:52.070Z",
+                "updatedAt": "2026-07-12T05:16:52.070Z",
+                "category": {
+                  "id": "0c4ae31c-b1ab-44d4-85d5-5d670c531829",
+                  "name": "Laptop",
+                  "code": "LAP",
+                  "description": "Portable computers",
+                  "status": "ACTIVE",
+                  "createdAt": "2026-07-12T05:16:52.067Z",
+                  "updatedAt": "2026-07-12T05:16:52.067Z"
+                },
+                "department": {
+                  "id": "56a13f59-5027-4b5d-8314-6cd8565a9697",
+                  "name": "Information Technology",
+                  "code": "IT",
+                  "managerId": "64f27ba4-b93c-430a-a24b-44fe1510df46",
+                  "status": "ACTIVE",
+                  "createdAt": "2026-07-12T05:16:52.061Z",
+                  "updatedAt": "2026-07-12T05:16:52.066Z"
+                },
+                "allocations": []
+              },
+              {
+                "id": "aa38d755-049b-4535-b96b-858f3a2fd51f",
+                "assetCode": "LAP-001",
+                "name": "Dell Latitude 5440",
+                "description": null,
+                "categoryId": "0c4ae31c-b1ab-44d4-85d5-5d670c531829",
+                "departmentId": "56a13f59-5027-4b5d-8314-6cd8565a9697",
+                "status": "ALLOCATED",
+                "condition": "GOOD",
+                "location": "IT Floor - Desk 12",
+                "purchaseValue": "95000",
+                "purchaseDate": "2025-04-10T00:00:00.000Z",
+                "warrantyExpiry": null,
+                "isBookable": false,
+                "createdAt": "2026-07-12T05:16:52.069Z",
+                "updatedAt": "2026-07-12T05:16:52.069Z",
+                "category": {
+                  "id": "0c4ae31c-b1ab-44d4-85d5-5d670c531829",
+                  "name": "Laptop",
+                  "code": "LAP",
+                  "description": "Portable computers",
+                  "status": "ACTIVE",
+                  "createdAt": "2026-07-12T05:16:52.067Z",
+                  "updatedAt": "2026-07-12T05:16:52.067Z"
+                },
+                "department": {
+                  "id": "56a13f59-5027-4b5d-8314-6cd8565a9697",
+                  "name": "Information Technology",
+                  "code": "IT",
+                  "managerId": "64f27ba4-b93c-430a-a24b-44fe1510df46",
+                  "status": "ACTIVE",
+                  "createdAt": "2026-07-12T05:16:52.061Z",
+                  "updatedAt": "2026-07-12T05:16:52.066Z"
+                },
+                "allocations": [
+                  {
+                    "id": "8398390c-d51a-4af9-bd37-22429ff20d2f",
+                    "assetId": "aa38d755-049b-4535-b96b-858f3a2fd51f",
+                    "userId": "9783842b-f701-42a5-ab62-d94a42cd9693",
+                    "departmentId": null,
+                    "assignedById": "64f27ba4-b93c-430a-a24b-44fe1510df46",
+                    "status": "ACTIVE",
+                    "assignedAt": "2026-07-12T05:16:52.072Z",
+                    "returnedAt": null,
+                    "notes": "Seed allocation for demo.",
+                    "createdAt": "2026-07-12T05:16:52.072Z",
+                    "updatedAt": "2026-07-12T05:16:52.072Z",
+                    "user": {
+                      "id": "9783842b-f701-42a5-ab62-d94a42cd9693",
+                      "name": "Employee User",
+                      "email": "employee@assetflow.local"
+                    },
+                    "department": null
+                  }
+                ]
+              }
+            ],
+            "page": 1,
+            "limit": 20,
+            "total": 7,
+            "totalPages": 1
+          },
+          "message": "Operation completed successfully."
+        }
+      },
+      "statusCode": 200,
+      "status": "PASS",
+      "rootCause": "",
+      "fixApplied": ""
+    },
+    {
+      "endpoint": "GET /api/notifications",
+      "expectedBehaviour": "Authenticated user can list notifications",
+      "actualBehaviour": {
+        "status": 200,
+        "json": {
+          "success": true,
+          "data": {
+            "items": [
+              {
+                "id": "da82788d-8aba-4942-bdf6-e7e37808fa12",
+                "userId": "515d2c1a-7be8-4873-bb8d-318f339fdc07",
+                "type": "MAINTENANCE_CLOSED",
+                "title": "Maintenance closed",
+                "message": "Maintenance ticket for QA Test Laptop has been closed.",
+                "isRead": false,
+                "relatedEntityType": "MaintenanceTicket",
+                "relatedEntityId": "54c5d9fa-8f0e-42a4-ad2a-bae1489f02e3",
+                "createdAt": "2026-07-12T05:17:13.215Z",
+                "updatedAt": "2026-07-12T05:17:13.215Z"
+              },
+              {
+                "id": "7a23d7fc-7a1e-41d0-9d34-26f8d15e9f19",
+                "userId": "515d2c1a-7be8-4873-bb8d-318f339fdc07",
+                "type": "BOOKING_REJECTED",
+                "title": "Booking rejected",
+                "message": "Your booking request was rejected.",
+                "isRead": false,
+                "relatedEntityType": "Booking",
+                "relatedEntityId": "cf1212b5-3420-4bde-a749-4510bf6c96c0",
+                "createdAt": "2026-07-12T05:17:13.188Z",
+                "updatedAt": "2026-07-12T05:17:13.188Z"
+              },
+              {
+                "id": "39c31f0b-9fb8-4ff9-8b6d-ec267fcc737b",
+                "userId": "515d2c1a-7be8-4873-bb8d-318f339fdc07",
+                "type": "BOOKING_APPROVED",
+                "title": "Booking approved",
+                "message": "Booking for QA Test Laptop was approved.",
+                "isRead": false,
+                "relatedEntityType": "Booking",
+                "relatedEntityId": "4c56a9b1-176e-4274-b35c-ce80353ed939",
+                "createdAt": "2026-07-12T05:17:13.178Z",
+                "updatedAt": "2026-07-12T05:17:13.178Z"
+              },
+              {
+                "id": "86a07ea2-f0fd-4419-b40d-9caf383fa182",
+                "userId": "515d2c1a-7be8-4873-bb8d-318f339fdc07",
+                "type": "TRANSFER_APPROVED",
+                "title": "Transfer approved",
+                "message": "Transfer request for QA Test Laptop was approved.",
+                "isRead": false,
+                "relatedEntityType": "Transfer",
+                "relatedEntityId": "aef5dd12-b645-461a-872b-213d6ada1220",
+                "createdAt": "2026-07-12T05:17:13.158Z",
+                "updatedAt": "2026-07-12T05:17:13.158Z"
+              }
+            ],
+            "page": 1,
+            "limit": 20,
+            "total": 4,
+            "totalPages": 1,
+            "unreadCount": 4
+          },
+          "message": "Operation completed successfully."
+        }
+      },
+      "statusCode": 200,
+      "status": "PASS",
+      "rootCause": "",
+      "fixApplied": ""
+    },
+    {
+      "endpoint": "PATCH /api/notifications/da82788d-8aba-4942-bdf6-e7e37808fa12/read",
+      "expectedBehaviour": "Notification owner can mark notification read",
+      "actualBehaviour": {
+        "status": 200,
+        "json": {
+          "success": true,
+          "data": {
+            "id": "da82788d-8aba-4942-bdf6-e7e37808fa12",
+            "userId": "515d2c1a-7be8-4873-bb8d-318f339fdc07",
+            "type": "MAINTENANCE_CLOSED",
+            "title": "Maintenance closed",
+            "message": "Maintenance ticket for QA Test Laptop has been closed.",
+            "isRead": true,
+            "relatedEntityType": "MaintenanceTicket",
+            "relatedEntityId": "54c5d9fa-8f0e-42a4-ad2a-bae1489f02e3",
+            "createdAt": "2026-07-12T05:17:13.215Z",
+            "updatedAt": "2026-07-12T05:17:13.245Z"
+          },
+          "message": "Operation completed successfully."
+        }
+      },
+      "statusCode": 200,
+      "status": "PASS",
+      "rootCause": "",
+      "fixApplied": ""
+    },
+    {
+      "endpoint": "PATCH /api/notifications/read-all",
+      "expectedBehaviour": "Notification owner can mark all notifications read",
+      "actualBehaviour": {
+        "status": 200,
+        "json": {
+          "success": true,
+          "data": {
+            "updated": 3
+          },
+          "message": "Operation completed successfully."
+        }
+      },
+      "statusCode": 200,
+      "status": "PASS",
+      "rootCause": "",
+      "fixApplied": ""
+    },
+    {
+      "endpoint": "POST /api/assets/7c853b12-2318-47cf-882b-1dfb79f98375/retire",
+      "expectedBehaviour": "Retiring actively allocated asset is rejected",
+      "actualBehaviour": {
+        "status": 409,
+        "json": {
+          "success": false,
+          "error": {
+            "code": "CONFLICT",
+            "message": "Return or transfer the asset before retirement."
+          }
+        }
+      },
+      "statusCode": 409,
+      "status": "PASS",
+      "rootCause": "",
+      "fixApplied": ""
+    }
+  ]
+}

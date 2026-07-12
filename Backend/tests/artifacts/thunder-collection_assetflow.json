@@ -1,0 +1,1253 @@
+{
+  "client": "Thunder Client",
+  "collectionName": "AssetFlow Backend API",
+  "collectionId": "assetflow-backend-local",
+  "dateExported": "2026-07-12T05:17:38.772Z",
+  "version": "1.2",
+  "folders": [
+    {
+      "_id": "folder-1",
+      "name": "Health",
+      "containerId": "",
+      "created": "2026-07-12T05:17:38.772Z",
+      "sortNum": 10000
+    },
+    {
+      "_id": "folder-2",
+      "name": "Authentication",
+      "containerId": "",
+      "created": "2026-07-12T05:17:38.772Z",
+      "sortNum": 20000
+    },
+    {
+      "_id": "folder-3",
+      "name": "Users",
+      "containerId": "",
+      "created": "2026-07-12T05:17:38.772Z",
+      "sortNum": 30000
+    },
+    {
+      "_id": "folder-4",
+      "name": "Departments",
+      "containerId": "",
+      "created": "2026-07-12T05:17:38.772Z",
+      "sortNum": 40000
+    },
+    {
+      "_id": "folder-5",
+      "name": "Categories",
+      "containerId": "",
+      "created": "2026-07-12T05:17:38.772Z",
+      "sortNum": 50000
+    },
+    {
+      "_id": "folder-6",
+      "name": "Assets",
+      "containerId": "",
+      "created": "2026-07-12T05:17:38.772Z",
+      "sortNum": 60000
+    },
+    {
+      "_id": "folder-7",
+      "name": "Transfers",
+      "containerId": "",
+      "created": "2026-07-12T05:17:38.772Z",
+      "sortNum": 70000
+    },
+    {
+      "_id": "folder-8",
+      "name": "Bookings",
+      "containerId": "",
+      "created": "2026-07-12T05:17:38.772Z",
+      "sortNum": 80000
+    },
+    {
+      "_id": "folder-9",
+      "name": "Maintenance",
+      "containerId": "",
+      "created": "2026-07-12T05:17:38.772Z",
+      "sortNum": 90000
+    },
+    {
+      "_id": "folder-10",
+      "name": "Audit",
+      "containerId": "",
+      "created": "2026-07-12T05:17:38.772Z",
+      "sortNum": 100000
+    },
+    {
+      "_id": "folder-11",
+      "name": "Reports",
+      "containerId": "",
+      "created": "2026-07-12T05:17:38.772Z",
+      "sortNum": 110000
+    },
+    {
+      "_id": "folder-12",
+      "name": "Notifications",
+      "containerId": "",
+      "created": "2026-07-12T05:17:38.772Z",
+      "sortNum": 120000
+    }
+  ],
+  "requests": [
+    {
+      "_id": "request-1-1",
+      "colId": "assetflow-backend-local",
+      "containerId": "folder-1",
+      "name": "Health",
+      "url": "{{baseUrl}}/health",
+      "method": "GET",
+      "sortNum": 10000,
+      "created": "2026-07-12T05:17:38.772Z",
+      "modified": "2026-07-12T05:17:38.772Z",
+      "headers": [],
+      "params": [],
+      "body": {
+        "type": "json",
+        "raw": "",
+        "form": []
+      },
+      "tests": []
+    },
+    {
+      "_id": "request-1-2",
+      "colId": "assetflow-backend-local",
+      "containerId": "folder-1",
+      "name": "Database Health",
+      "url": "{{baseUrl}}/health/db",
+      "method": "GET",
+      "sortNum": 10001,
+      "created": "2026-07-12T05:17:38.772Z",
+      "modified": "2026-07-12T05:17:38.772Z",
+      "headers": [],
+      "params": [],
+      "body": {
+        "type": "json",
+        "raw": "",
+        "form": []
+      },
+      "tests": []
+    },
+    {
+      "_id": "request-2-1",
+      "colId": "assetflow-backend-local",
+      "containerId": "folder-2",
+      "name": "Login Admin",
+      "url": "{{baseUrl}}/api/auth/login",
+      "method": "POST",
+      "sortNum": 20000,
+      "created": "2026-07-12T05:17:38.772Z",
+      "modified": "2026-07-12T05:17:38.772Z",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "params": [],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"email\": \"{{adminEmail}}\",\n  \"password\": \"{{adminPassword}}\"\n}",
+        "form": []
+      },
+      "tests": []
+    },
+    {
+      "_id": "request-2-2",
+      "colId": "assetflow-backend-local",
+      "containerId": "folder-2",
+      "name": "Current User",
+      "url": "{{baseUrl}}/api/auth/me",
+      "method": "GET",
+      "sortNum": 20001,
+      "created": "2026-07-12T05:17:38.772Z",
+      "modified": "2026-07-12T05:17:38.772Z",
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "Bearer {{jwt}}"
+        }
+      ],
+      "params": [],
+      "body": {
+        "type": "json",
+        "raw": "",
+        "form": []
+      },
+      "tests": []
+    },
+    {
+      "_id": "request-2-3",
+      "colId": "assetflow-backend-local",
+      "containerId": "folder-2",
+      "name": "Logout",
+      "url": "{{baseUrl}}/api/auth/logout",
+      "method": "POST",
+      "sortNum": 20002,
+      "created": "2026-07-12T05:17:38.772Z",
+      "modified": "2026-07-12T05:17:38.772Z",
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "Bearer {{jwt}}"
+        }
+      ],
+      "params": [],
+      "body": {
+        "type": "json",
+        "raw": "",
+        "form": []
+      },
+      "tests": []
+    },
+    {
+      "_id": "request-3-1",
+      "colId": "assetflow-backend-local",
+      "containerId": "folder-3",
+      "name": "List Users",
+      "url": "{{baseUrl}}/api/users?role=EMPLOYEE",
+      "method": "GET",
+      "sortNum": 30000,
+      "created": "2026-07-12T05:17:38.772Z",
+      "modified": "2026-07-12T05:17:38.772Z",
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "Bearer {{jwt}}"
+        }
+      ],
+      "params": [],
+      "body": {
+        "type": "json",
+        "raw": "",
+        "form": []
+      },
+      "tests": []
+    },
+    {
+      "_id": "request-3-2",
+      "colId": "assetflow-backend-local",
+      "containerId": "folder-3",
+      "name": "Create User",
+      "url": "{{baseUrl}}/api/users",
+      "method": "POST",
+      "sortNum": 30001,
+      "created": "2026-07-12T05:17:38.772Z",
+      "modified": "2026-07-12T05:17:38.772Z",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "name": "Authorization",
+          "value": "Bearer {{jwt}}"
+        }
+      ],
+      "params": [],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"name\": \"QA Collection Employee\",\n  \"email\": \"qa.collection.employee@example.com\",\n  \"password\": \"password123\",\n  \"role\": \"EMPLOYEE\",\n  \"departmentId\": \"{{departmentId}}\"\n}",
+        "form": []
+      },
+      "tests": []
+    },
+    {
+      "_id": "request-3-3",
+      "colId": "assetflow-backend-local",
+      "containerId": "folder-3",
+      "name": "Update User",
+      "url": "{{baseUrl}}/api/users/{{userId}}",
+      "method": "PATCH",
+      "sortNum": 30002,
+      "created": "2026-07-12T05:17:38.772Z",
+      "modified": "2026-07-12T05:17:38.772Z",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "name": "Authorization",
+          "value": "Bearer {{jwt}}"
+        }
+      ],
+      "params": [],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"status\": \"ACTIVE\"\n}",
+        "form": []
+      },
+      "tests": []
+    },
+    {
+      "_id": "request-4-1",
+      "colId": "assetflow-backend-local",
+      "containerId": "folder-4",
+      "name": "List Departments",
+      "url": "{{baseUrl}}/api/departments",
+      "method": "GET",
+      "sortNum": 40000,
+      "created": "2026-07-12T05:17:38.772Z",
+      "modified": "2026-07-12T05:17:38.772Z",
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "Bearer {{jwt}}"
+        }
+      ],
+      "params": [],
+      "body": {
+        "type": "json",
+        "raw": "",
+        "form": []
+      },
+      "tests": []
+    },
+    {
+      "_id": "request-4-2",
+      "colId": "assetflow-backend-local",
+      "containerId": "folder-4",
+      "name": "Create Department",
+      "url": "{{baseUrl}}/api/departments",
+      "method": "POST",
+      "sortNum": 40001,
+      "created": "2026-07-12T05:17:38.772Z",
+      "modified": "2026-07-12T05:17:38.772Z",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "name": "Authorization",
+          "value": "Bearer {{jwt}}"
+        }
+      ],
+      "params": [],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"name\": \"QA Collection Department\",\n  \"code\": \"QACD\"\n}",
+        "form": []
+      },
+      "tests": []
+    },
+    {
+      "_id": "request-4-3",
+      "colId": "assetflow-backend-local",
+      "containerId": "folder-4",
+      "name": "Update Department",
+      "url": "{{baseUrl}}/api/departments/{{departmentId}}",
+      "method": "PATCH",
+      "sortNum": 40002,
+      "created": "2026-07-12T05:17:38.772Z",
+      "modified": "2026-07-12T05:17:38.772Z",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "name": "Authorization",
+          "value": "Bearer {{jwt}}"
+        }
+      ],
+      "params": [],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"name\": \"QA Collection Department Updated\"\n}",
+        "form": []
+      },
+      "tests": []
+    },
+    {
+      "_id": "request-5-1",
+      "colId": "assetflow-backend-local",
+      "containerId": "folder-5",
+      "name": "List Categories",
+      "url": "{{baseUrl}}/api/categories",
+      "method": "GET",
+      "sortNum": 50000,
+      "created": "2026-07-12T05:17:38.772Z",
+      "modified": "2026-07-12T05:17:38.772Z",
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "Bearer {{jwt}}"
+        }
+      ],
+      "params": [],
+      "body": {
+        "type": "json",
+        "raw": "",
+        "form": []
+      },
+      "tests": []
+    },
+    {
+      "_id": "request-5-2",
+      "colId": "assetflow-backend-local",
+      "containerId": "folder-5",
+      "name": "Create Category",
+      "url": "{{baseUrl}}/api/categories",
+      "method": "POST",
+      "sortNum": 50001,
+      "created": "2026-07-12T05:17:38.772Z",
+      "modified": "2026-07-12T05:17:38.772Z",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "name": "Authorization",
+          "value": "Bearer {{jwt}}"
+        }
+      ],
+      "params": [],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"name\": \"QA Collection Category\",\n  \"code\": \"QACC\"\n}",
+        "form": []
+      },
+      "tests": []
+    },
+    {
+      "_id": "request-5-3",
+      "colId": "assetflow-backend-local",
+      "containerId": "folder-5",
+      "name": "Update Category",
+      "url": "{{baseUrl}}/api/categories/{{categoryId}}",
+      "method": "PATCH",
+      "sortNum": 50002,
+      "created": "2026-07-12T05:17:38.772Z",
+      "modified": "2026-07-12T05:17:38.772Z",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "name": "Authorization",
+          "value": "Bearer {{jwt}}"
+        }
+      ],
+      "params": [],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"description\": \"Updated from collection\"\n}",
+        "form": []
+      },
+      "tests": []
+    },
+    {
+      "_id": "request-6-1",
+      "colId": "assetflow-backend-local",
+      "containerId": "folder-6",
+      "name": "List Assets",
+      "url": "{{baseUrl}}/api/assets?status=AVAILABLE",
+      "method": "GET",
+      "sortNum": 60000,
+      "created": "2026-07-12T05:17:38.772Z",
+      "modified": "2026-07-12T05:17:38.772Z",
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "Bearer {{jwt}}"
+        }
+      ],
+      "params": [],
+      "body": {
+        "type": "json",
+        "raw": "",
+        "form": []
+      },
+      "tests": []
+    },
+    {
+      "_id": "request-6-2",
+      "colId": "assetflow-backend-local",
+      "containerId": "folder-6",
+      "name": "Create Asset",
+      "url": "{{baseUrl}}/api/assets",
+      "method": "POST",
+      "sortNum": 60001,
+      "created": "2026-07-12T05:17:38.772Z",
+      "modified": "2026-07-12T05:17:38.772Z",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "name": "Authorization",
+          "value": "Bearer {{jwt}}"
+        }
+      ],
+      "params": [],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"assetCode\": \"COL-ASSET-001\",\n  \"name\": \"Collection Laptop\",\n  \"categoryId\": \"{{categoryId}}\",\n  \"departmentId\": \"{{departmentId}}\",\n  \"condition\": \"GOOD\",\n  \"location\": \"QA Lab\",\n  \"isBookable\": true\n}",
+        "form": []
+      },
+      "tests": []
+    },
+    {
+      "_id": "request-6-3",
+      "colId": "assetflow-backend-local",
+      "containerId": "folder-6",
+      "name": "Get Asset",
+      "url": "{{baseUrl}}/api/assets/{{assetId}}",
+      "method": "GET",
+      "sortNum": 60002,
+      "created": "2026-07-12T05:17:38.772Z",
+      "modified": "2026-07-12T05:17:38.772Z",
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "Bearer {{jwt}}"
+        }
+      ],
+      "params": [],
+      "body": {
+        "type": "json",
+        "raw": "",
+        "form": []
+      },
+      "tests": []
+    },
+    {
+      "_id": "request-6-4",
+      "colId": "assetflow-backend-local",
+      "containerId": "folder-6",
+      "name": "Update Asset",
+      "url": "{{baseUrl}}/api/assets/{{assetId}}",
+      "method": "PATCH",
+      "sortNum": 60003,
+      "created": "2026-07-12T05:17:38.772Z",
+      "modified": "2026-07-12T05:17:38.772Z",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "name": "Authorization",
+          "value": "Bearer {{jwt}}"
+        }
+      ],
+      "params": [],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"location\": \"QA Lab Updated\"\n}",
+        "form": []
+      },
+      "tests": []
+    },
+    {
+      "_id": "request-6-5",
+      "colId": "assetflow-backend-local",
+      "containerId": "folder-6",
+      "name": "Generate Asset QR",
+      "url": "{{baseUrl}}/api/assets/{{assetId}}/qr",
+      "method": "GET",
+      "sortNum": 60004,
+      "created": "2026-07-12T05:17:38.772Z",
+      "modified": "2026-07-12T05:17:38.772Z",
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "Bearer {{jwt}}"
+        }
+      ],
+      "params": [],
+      "body": {
+        "type": "json",
+        "raw": "",
+        "form": []
+      },
+      "tests": []
+    },
+    {
+      "_id": "request-6-6",
+      "colId": "assetflow-backend-local",
+      "containerId": "folder-6",
+      "name": "Allocate Asset",
+      "url": "{{baseUrl}}/api/assets/{{assetId}}/allocate",
+      "method": "POST",
+      "sortNum": 60005,
+      "created": "2026-07-12T05:17:38.772Z",
+      "modified": "2026-07-12T05:17:38.772Z",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "name": "Authorization",
+          "value": "Bearer {{jwt}}"
+        }
+      ],
+      "params": [],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"userId\": \"{{userId}}\",\n  \"notes\": \"Collection allocation\"\n}",
+        "form": []
+      },
+      "tests": []
+    },
+    {
+      "_id": "request-6-7",
+      "colId": "assetflow-backend-local",
+      "containerId": "folder-6",
+      "name": "Retire Asset",
+      "url": "{{baseUrl}}/api/assets/{{assetId}}/retire",
+      "method": "POST",
+      "sortNum": 60006,
+      "created": "2026-07-12T05:17:38.772Z",
+      "modified": "2026-07-12T05:17:38.772Z",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "name": "Authorization",
+          "value": "Bearer {{jwt}}"
+        }
+      ],
+      "params": [],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"reason\": \"End of demo lifecycle\"\n}",
+        "form": []
+      },
+      "tests": []
+    },
+    {
+      "_id": "request-7-1",
+      "colId": "assetflow-backend-local",
+      "containerId": "folder-7",
+      "name": "List Transfers",
+      "url": "{{baseUrl}}/api/transfers?status=PENDING",
+      "method": "GET",
+      "sortNum": 70000,
+      "created": "2026-07-12T05:17:38.772Z",
+      "modified": "2026-07-12T05:17:38.772Z",
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "Bearer {{jwt}}"
+        }
+      ],
+      "params": [],
+      "body": {
+        "type": "json",
+        "raw": "",
+        "form": []
+      },
+      "tests": []
+    },
+    {
+      "_id": "request-7-2",
+      "colId": "assetflow-backend-local",
+      "containerId": "folder-7",
+      "name": "Create Transfer",
+      "url": "{{baseUrl}}/api/transfers",
+      "method": "POST",
+      "sortNum": 70001,
+      "created": "2026-07-12T05:17:38.772Z",
+      "modified": "2026-07-12T05:17:38.772Z",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "name": "Authorization",
+          "value": "Bearer {{jwt}}"
+        }
+      ],
+      "params": [],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"assetId\": \"{{assetId}}\",\n  \"toDepartmentId\": \"{{departmentId}}\",\n  \"reason\": \"Collection transfer\"\n}",
+        "form": []
+      },
+      "tests": []
+    },
+    {
+      "_id": "request-7-3",
+      "colId": "assetflow-backend-local",
+      "containerId": "folder-7",
+      "name": "Get Transfer",
+      "url": "{{baseUrl}}/api/transfers/{{transferId}}",
+      "method": "GET",
+      "sortNum": 70002,
+      "created": "2026-07-12T05:17:38.772Z",
+      "modified": "2026-07-12T05:17:38.772Z",
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "Bearer {{jwt}}"
+        }
+      ],
+      "params": [],
+      "body": {
+        "type": "json",
+        "raw": "",
+        "form": []
+      },
+      "tests": []
+    },
+    {
+      "_id": "request-7-4",
+      "colId": "assetflow-backend-local",
+      "containerId": "folder-7",
+      "name": "Approve Transfer",
+      "url": "{{baseUrl}}/api/transfers/{{transferId}}/approve",
+      "method": "PATCH",
+      "sortNum": 70003,
+      "created": "2026-07-12T05:17:38.772Z",
+      "modified": "2026-07-12T05:17:38.772Z",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "name": "Authorization",
+          "value": "Bearer {{jwt}}"
+        }
+      ],
+      "params": [],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"decisionNotes\": \"Approved from collection\"\n}",
+        "form": []
+      },
+      "tests": []
+    },
+    {
+      "_id": "request-7-5",
+      "colId": "assetflow-backend-local",
+      "containerId": "folder-7",
+      "name": "Reject Transfer",
+      "url": "{{baseUrl}}/api/transfers/{{transferId}}/reject",
+      "method": "PATCH",
+      "sortNum": 70004,
+      "created": "2026-07-12T05:17:38.772Z",
+      "modified": "2026-07-12T05:17:38.772Z",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "name": "Authorization",
+          "value": "Bearer {{jwt}}"
+        }
+      ],
+      "params": [],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"decisionNotes\": \"Rejected from collection\"\n}",
+        "form": []
+      },
+      "tests": []
+    },
+    {
+      "_id": "request-7-6",
+      "colId": "assetflow-backend-local",
+      "containerId": "folder-7",
+      "name": "Cancel Transfer",
+      "url": "{{baseUrl}}/api/transfers/{{transferId}}/cancel",
+      "method": "PATCH",
+      "sortNum": 70005,
+      "created": "2026-07-12T05:17:38.772Z",
+      "modified": "2026-07-12T05:17:38.772Z",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "name": "Authorization",
+          "value": "Bearer {{jwt}}"
+        }
+      ],
+      "params": [],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"reason\": \"Cancelled from collection\"\n}",
+        "form": []
+      },
+      "tests": []
+    },
+    {
+      "_id": "request-8-1",
+      "colId": "assetflow-backend-local",
+      "containerId": "folder-8",
+      "name": "List Bookings",
+      "url": "{{baseUrl}}/api/bookings?status=PENDING",
+      "method": "GET",
+      "sortNum": 80000,
+      "created": "2026-07-12T05:17:38.772Z",
+      "modified": "2026-07-12T05:17:38.772Z",
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "Bearer {{jwt}}"
+        }
+      ],
+      "params": [],
+      "body": {
+        "type": "json",
+        "raw": "",
+        "form": []
+      },
+      "tests": []
+    },
+    {
+      "_id": "request-8-2",
+      "colId": "assetflow-backend-local",
+      "containerId": "folder-8",
+      "name": "Create Booking",
+      "url": "{{baseUrl}}/api/bookings",
+      "method": "POST",
+      "sortNum": 80001,
+      "created": "2026-07-12T05:17:38.772Z",
+      "modified": "2026-07-12T05:17:38.772Z",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "name": "Authorization",
+          "value": "Bearer {{jwt}}"
+        }
+      ],
+      "params": [],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"assetId\": \"{{bookableAssetId}}\",\n  \"startTime\": \"2026-07-13T10:00:00.000Z\",\n  \"endTime\": \"2026-07-13T11:00:00.000Z\",\n  \"purpose\": \"Collection booking\"\n}",
+        "form": []
+      },
+      "tests": []
+    },
+    {
+      "_id": "request-8-3",
+      "colId": "assetflow-backend-local",
+      "containerId": "folder-8",
+      "name": "Approve Booking",
+      "url": "{{baseUrl}}/api/bookings/{{bookingId}}/approve",
+      "method": "PATCH",
+      "sortNum": 80002,
+      "created": "2026-07-12T05:17:38.772Z",
+      "modified": "2026-07-12T05:17:38.772Z",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "name": "Authorization",
+          "value": "Bearer {{jwt}}"
+        }
+      ],
+      "params": [],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"decisionNotes\": \"Approved from collection\"\n}",
+        "form": []
+      },
+      "tests": []
+    },
+    {
+      "_id": "request-8-4",
+      "colId": "assetflow-backend-local",
+      "containerId": "folder-8",
+      "name": "Reject Booking",
+      "url": "{{baseUrl}}/api/bookings/{{bookingId}}/reject",
+      "method": "PATCH",
+      "sortNum": 80003,
+      "created": "2026-07-12T05:17:38.772Z",
+      "modified": "2026-07-12T05:17:38.772Z",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "name": "Authorization",
+          "value": "Bearer {{jwt}}"
+        }
+      ],
+      "params": [],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"decisionNotes\": \"Rejected from collection\"\n}",
+        "form": []
+      },
+      "tests": []
+    },
+    {
+      "_id": "request-8-5",
+      "colId": "assetflow-backend-local",
+      "containerId": "folder-8",
+      "name": "Cancel Booking",
+      "url": "{{baseUrl}}/api/bookings/{{bookingId}}/cancel",
+      "method": "PATCH",
+      "sortNum": 80004,
+      "created": "2026-07-12T05:17:38.772Z",
+      "modified": "2026-07-12T05:17:38.772Z",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "name": "Authorization",
+          "value": "Bearer {{jwt}}"
+        }
+      ],
+      "params": [],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"reason\": \"Cancelled from collection\"\n}",
+        "form": []
+      },
+      "tests": []
+    },
+    {
+      "_id": "request-9-1",
+      "colId": "assetflow-backend-local",
+      "containerId": "folder-9",
+      "name": "List Maintenance",
+      "url": "{{baseUrl}}/api/maintenance?priority=HIGH",
+      "method": "GET",
+      "sortNum": 90000,
+      "created": "2026-07-12T05:17:38.772Z",
+      "modified": "2026-07-12T05:17:38.772Z",
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "Bearer {{jwt}}"
+        }
+      ],
+      "params": [],
+      "body": {
+        "type": "json",
+        "raw": "",
+        "form": []
+      },
+      "tests": []
+    },
+    {
+      "_id": "request-9-2",
+      "colId": "assetflow-backend-local",
+      "containerId": "folder-9",
+      "name": "Create Maintenance",
+      "url": "{{baseUrl}}/api/maintenance",
+      "method": "POST",
+      "sortNum": 90001,
+      "created": "2026-07-12T05:17:38.772Z",
+      "modified": "2026-07-12T05:17:38.772Z",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "name": "Authorization",
+          "value": "Bearer {{jwt}}"
+        }
+      ],
+      "params": [],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"assetId\": \"{{assetId}}\",\n  \"priority\": \"HIGH\",\n  \"issueSummary\": \"Collection issue\"\n}",
+        "form": []
+      },
+      "tests": []
+    },
+    {
+      "_id": "request-9-3",
+      "colId": "assetflow-backend-local",
+      "containerId": "folder-9",
+      "name": "Get Maintenance",
+      "url": "{{baseUrl}}/api/maintenance/{{maintenanceId}}",
+      "method": "GET",
+      "sortNum": 90002,
+      "created": "2026-07-12T05:17:38.772Z",
+      "modified": "2026-07-12T05:17:38.772Z",
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "Bearer {{jwt}}"
+        }
+      ],
+      "params": [],
+      "body": {
+        "type": "json",
+        "raw": "",
+        "form": []
+      },
+      "tests": []
+    },
+    {
+      "_id": "request-9-4",
+      "colId": "assetflow-backend-local",
+      "containerId": "folder-9",
+      "name": "Update Maintenance",
+      "url": "{{baseUrl}}/api/maintenance/{{maintenanceId}}",
+      "method": "PATCH",
+      "sortNum": 90003,
+      "created": "2026-07-12T05:17:38.772Z",
+      "modified": "2026-07-12T05:17:38.772Z",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "name": "Authorization",
+          "value": "Bearer {{jwt}}"
+        }
+      ],
+      "params": [],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"status\": \"IN_PROGRESS\"\n}",
+        "form": []
+      },
+      "tests": []
+    },
+    {
+      "_id": "request-9-5",
+      "colId": "assetflow-backend-local",
+      "containerId": "folder-9",
+      "name": "Close Maintenance",
+      "url": "{{baseUrl}}/api/maintenance/{{maintenanceId}}/close",
+      "method": "PATCH",
+      "sortNum": 90004,
+      "created": "2026-07-12T05:17:38.772Z",
+      "modified": "2026-07-12T05:17:38.772Z",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "name": "Authorization",
+          "value": "Bearer {{jwt}}"
+        }
+      ],
+      "params": [],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"resolutionNotes\": \"Resolved from collection\"\n}",
+        "form": []
+      },
+      "tests": []
+    },
+    {
+      "_id": "request-10-1",
+      "colId": "assetflow-backend-local",
+      "containerId": "folder-10",
+      "name": "List Audits",
+      "url": "{{baseUrl}}/api/audits?result=VERIFIED",
+      "method": "GET",
+      "sortNum": 100000,
+      "created": "2026-07-12T05:17:38.772Z",
+      "modified": "2026-07-12T05:17:38.772Z",
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "Bearer {{jwt}}"
+        }
+      ],
+      "params": [],
+      "body": {
+        "type": "json",
+        "raw": "",
+        "form": []
+      },
+      "tests": []
+    },
+    {
+      "_id": "request-10-2",
+      "colId": "assetflow-backend-local",
+      "containerId": "folder-10",
+      "name": "Create Audit",
+      "url": "{{baseUrl}}/api/audits",
+      "method": "POST",
+      "sortNum": 100001,
+      "created": "2026-07-12T05:17:38.772Z",
+      "modified": "2026-07-12T05:17:38.772Z",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "name": "Authorization",
+          "value": "Bearer {{jwt}}"
+        }
+      ],
+      "params": [],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"assetId\": \"{{assetId}}\",\n  \"result\": \"VERIFIED\",\n  \"remarks\": \"Verified from collection\"\n}",
+        "form": []
+      },
+      "tests": []
+    },
+    {
+      "_id": "request-10-3",
+      "colId": "assetflow-backend-local",
+      "containerId": "folder-10",
+      "name": "List Audit Logs",
+      "url": "{{baseUrl}}/api/audit-logs?entityType=Asset",
+      "method": "GET",
+      "sortNum": 100002,
+      "created": "2026-07-12T05:17:38.772Z",
+      "modified": "2026-07-12T05:17:38.772Z",
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "Bearer {{jwt}}"
+        }
+      ],
+      "params": [],
+      "body": {
+        "type": "json",
+        "raw": "",
+        "form": []
+      },
+      "tests": []
+    },
+    {
+      "_id": "request-11-1",
+      "colId": "assetflow-backend-local",
+      "containerId": "folder-11",
+      "name": "Summary Report",
+      "url": "{{baseUrl}}/api/reports/summary",
+      "method": "GET",
+      "sortNum": 110000,
+      "created": "2026-07-12T05:17:38.772Z",
+      "modified": "2026-07-12T05:17:38.772Z",
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "Bearer {{jwt}}"
+        }
+      ],
+      "params": [],
+      "body": {
+        "type": "json",
+        "raw": "",
+        "form": []
+      },
+      "tests": []
+    },
+    {
+      "_id": "request-11-2",
+      "colId": "assetflow-backend-local",
+      "containerId": "folder-11",
+      "name": "Asset Report",
+      "url": "{{baseUrl}}/api/reports/assets?status=AVAILABLE",
+      "method": "GET",
+      "sortNum": 110001,
+      "created": "2026-07-12T05:17:38.772Z",
+      "modified": "2026-07-12T05:17:38.772Z",
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "Bearer {{jwt}}"
+        }
+      ],
+      "params": [],
+      "body": {
+        "type": "json",
+        "raw": "",
+        "form": []
+      },
+      "tests": []
+    },
+    {
+      "_id": "request-12-1",
+      "colId": "assetflow-backend-local",
+      "containerId": "folder-12",
+      "name": "List Notifications",
+      "url": "{{baseUrl}}/api/notifications?isRead=false",
+      "method": "GET",
+      "sortNum": 120000,
+      "created": "2026-07-12T05:17:38.772Z",
+      "modified": "2026-07-12T05:17:38.772Z",
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "Bearer {{jwt}}"
+        }
+      ],
+      "params": [],
+      "body": {
+        "type": "json",
+        "raw": "",
+        "form": []
+      },
+      "tests": []
+    },
+    {
+      "_id": "request-12-2",
+      "colId": "assetflow-backend-local",
+      "containerId": "folder-12",
+      "name": "Mark Notification Read",
+      "url": "{{baseUrl}}/api/notifications/{{notificationId}}/read",
+      "method": "PATCH",
+      "sortNum": 120001,
+      "created": "2026-07-12T05:17:38.772Z",
+      "modified": "2026-07-12T05:17:38.772Z",
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "Bearer {{jwt}}"
+        }
+      ],
+      "params": [],
+      "body": {
+        "type": "json",
+        "raw": "",
+        "form": []
+      },
+      "tests": []
+    },
+    {
+      "_id": "request-12-3",
+      "colId": "assetflow-backend-local",
+      "containerId": "folder-12",
+      "name": "Mark All Notifications Read",
+      "url": "{{baseUrl}}/api/notifications/read-all",
+      "method": "PATCH",
+      "sortNum": 120002,
+      "created": "2026-07-12T05:17:38.772Z",
+      "modified": "2026-07-12T05:17:38.772Z",
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "Bearer {{jwt}}"
+        }
+      ],
+      "params": [],
+      "body": {
+        "type": "json",
+        "raw": "",
+        "form": []
+      },
+      "tests": []
+    }
+  ]
+}

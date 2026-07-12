@@ -1,0 +1,60 @@
+{
+  "client": "Thunder Client",
+  "environmentName": "AssetFlow Local",
+  "dateExported": "2026-07-12T05:17:38.772Z",
+  "version": "1.0",
+  "variables": [
+    {
+      "name": "baseUrl",
+      "value": "http://localhost:5011"
+    },
+    {
+      "name": "jwt",
+      "value": ""
+    },
+    {
+      "name": "adminEmail",
+      "value": "admin@assetflow.local"
+    },
+    {
+      "name": "adminPassword",
+      "value": "password123"
+    },
+    {
+      "name": "departmentId",
+      "value": ""
+    },
+    {
+      "name": "categoryId",
+      "value": ""
+    },
+    {
+      "name": "userId",
+      "value": ""
+    },
+    {
+      "name": "assetId",
+      "value": ""
+    },
+    {
+      "name": "bookableAssetId",
+      "value": ""
+    },
+    {
+      "name": "transferId",
+      "value": ""
+    },
+    {
+      "name": "bookingId",
+      "value": ""
+    },
+    {
+      "name": "maintenanceId",
+      "value": ""
+    },
+    {
+      "name": "notificationId",
+      "value": ""
+    }
+  ]
+}
