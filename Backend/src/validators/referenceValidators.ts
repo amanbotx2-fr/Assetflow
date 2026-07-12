@@ -19,13 +19,15 @@ export const updateUserSchema = z.object({
 export const createDepartmentSchema = z.object({
   name: z.string().min(2),
   code: z.string().min(2).max(20),
-  managerId: z.string().uuid().optional()
+  managerId: z.string().uuid().optional(),
+  parentDepartmentId: z.string().uuid().optional()
 });
 
 export const updateDepartmentSchema = z.object({
   name: z.string().min(2).optional(),
   code: z.string().min(2).max(20).optional(),
   managerId: z.string().uuid().nullable().optional(),
+  parentDepartmentId: z.string().uuid().nullable().optional(),
   status: z.nativeEnum(RecordStatus).optional()
 });
 

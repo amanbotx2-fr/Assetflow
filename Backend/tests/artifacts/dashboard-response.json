@@ -1,0 +1,160 @@
+{
+  "success": true,
+  "data": {
+    "overview": {
+      "totalAssets": 6,
+      "availableAssets": 4,
+      "allocatedAssets": 1,
+      "maintenanceAssets": 1,
+      "activeBookings": 0,
+      "pendingBookings": 1,
+      "pendingTransfers": 1,
+      "upcomingReturns": 1
+    },
+    "alerts": [
+      {
+        "id": "pending-transfer-approvals",
+        "type": "PENDING_TRANSFER_APPROVAL",
+        "severity": "warning",
+        "title": "Transfer approvals pending",
+        "message": "1 transfer request needs approval.",
+        "count": 1,
+        "entityType": "Transfer"
+      },
+      {
+        "id": "pending-booking-approvals",
+        "type": "PENDING_BOOKING_APPROVAL",
+        "severity": "warning",
+        "title": "Booking approvals pending",
+        "message": "1 booking request needs approval.",
+        "count": 1,
+        "entityType": "Booking"
+      }
+    ],
+    "quickActions": [
+      {
+        "id": "register-asset",
+        "label": "Register Asset",
+        "action": "CREATE_ASSET",
+        "resource": "Asset",
+        "allowedRoles": [
+          "ADMIN",
+          "MANAGER"
+        ]
+      },
+      {
+        "id": "allocate-asset",
+        "label": "Allocate Asset",
+        "action": "ALLOCATE_ASSET",
+        "resource": "Asset",
+        "allowedRoles": [
+          "ADMIN",
+          "MANAGER"
+        ]
+      },
+      {
+        "id": "review-approvals",
+        "label": "Review Approvals",
+        "action": "REVIEW_APPROVALS",
+        "resource": "Workflow",
+        "allowedRoles": [
+          "ADMIN",
+          "MANAGER"
+        ]
+      }
+    ],
+    "recentActivity": [
+      {
+        "id": "booking:91a5187a-6c49-4813-993a-cc11951a6301",
+        "type": "BOOKING",
+        "title": "Booking requested",
+        "description": "Employee User requested Office Shuttle.",
+        "status": "PENDING",
+        "timestamp": "2026-07-12T06:01:50.478Z",
+        "asset": {
+          "id": "fc893f59-50c9-4a83-8b31-48677eba920f",
+          "assetCode": "VEH-001",
+          "name": "Office Shuttle"
+        },
+        "actor": {
+          "id": "864bc04a-2e35-4ac7-8f5f-fcde7765dd29",
+          "name": "Employee User",
+          "email": "employee@assetflow.local"
+        }
+      },
+      {
+        "id": "maintenance:93bd022f-0dcb-4439-8579-124aa5dcaebf",
+        "type": "MAINTENANCE",
+        "title": "Maintenance reported",
+        "description": "Employee User reported Display flickering for Dell 27 Inch Monitor.",
+        "status": "IN_PROGRESS",
+        "timestamp": "2026-07-12T06:01:50.478Z",
+        "asset": {
+          "id": "233b7a4e-ea24-4cb8-a69d-c641a2ef3076",
+          "assetCode": "MON-001",
+          "name": "Dell 27 Inch Monitor"
+        },
+        "actor": {
+          "id": "864bc04a-2e35-4ac7-8f5f-fcde7765dd29",
+          "name": "Employee User",
+          "email": "employee@assetflow.local"
+        }
+      },
+      {
+        "id": "transfer:f4d68255-1903-4151-8c88-cf49949effbf",
+        "type": "TRANSFER",
+        "title": "Transfer requested",
+        "description": "Employee User requested transfer for Dell Latitude 5440.",
+        "status": "PENDING",
+        "timestamp": "2026-07-12T06:01:50.477Z",
+        "asset": {
+          "id": "2c5b4143-09ca-47c8-9feb-5d83384d0dfb",
+          "assetCode": "LAP-001",
+          "name": "Dell Latitude 5440"
+        },
+        "actor": {
+          "id": "864bc04a-2e35-4ac7-8f5f-fcde7765dd29",
+          "name": "Employee User",
+          "email": "employee@assetflow.local"
+        }
+      },
+      {
+        "id": "booking:3c9f428d-1d8f-4ddd-af1f-fccda659a816",
+        "type": "BOOKING",
+        "title": "Booking requested",
+        "description": "Employee User requested Epson Conference Projector.",
+        "status": "APPROVED",
+        "timestamp": "2026-07-12T06:01:50.477Z",
+        "asset": {
+          "id": "6dd07b42-88bf-419c-ab7f-02f454bd0090",
+          "assetCode": "PROJ-001",
+          "name": "Epson Conference Projector"
+        },
+        "actor": {
+          "id": "864bc04a-2e35-4ac7-8f5f-fcde7765dd29",
+          "name": "Employee User",
+          "email": "employee@assetflow.local"
+        }
+      },
+      {
+        "id": "allocation:6226a746-6648-4c1c-997b-7dc8cfe0676b",
+        "type": "ALLOCATION",
+        "title": "Asset allocated",
+        "description": "Dell Latitude 5440 allocated to Employee User.",
+        "status": "ACTIVE",
+        "timestamp": "2026-07-12T06:01:50.476Z",
+        "asset": {
+          "id": "2c5b4143-09ca-47c8-9feb-5d83384d0dfb",
+          "assetCode": "LAP-001",
+          "name": "Dell Latitude 5440"
+        },
+        "actor": {
+          "id": "87d5261a-0972-4d91-905c-d40572eb74ea",
+          "name": "IT Manager",
+          "email": "manager@assetflow.local"
+        }
+      }
+    ]
+  },
+  "message": "Operation completed successfully."
+}
