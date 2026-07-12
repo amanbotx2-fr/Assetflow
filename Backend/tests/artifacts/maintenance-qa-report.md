@@ -1,6 +1,6 @@
 # Maintenance QA Report
 
-Generated: 2026-07-12T07:04:17.366Z
+Generated: 2026-07-12T07:21:21.814Z
 
 ## Summary
 
@@ -81,46 +81,46 @@ Generated: 2026-07-12T07:04:17.366Z
 | GET /api/maintenance | 200 | 3 ms |
 | POST /api/maintenance | 403 | 2 ms |
 | POST /api/maintenance | 201 | 6 ms |
-| POST /api/maintenance | 409 | 2 ms |
+| POST /api/maintenance | 409 | 3 ms |
 | POST /api/maintenance | 400 | 2 ms |
 | POST /api/maintenance | 404 | 2 ms |
-| POST /api/maintenance | 409 | 2 ms |
-| POST /api/maintenance | 409 | 2 ms |
-| GET /api/maintenance/b3014b5f-c7d0-4c8f-a6b8-0f68e7818a77 | 200 | 3 ms |
+| POST /api/maintenance | 409 | 4 ms |
+| POST /api/maintenance | 409 | 3 ms |
+| GET /api/maintenance/aadddb40-6477-4b71-90fa-8568369b029a | 200 | 3 ms |
 | GET /api/maintenance/00000000-0000-0000-0000-000000000000 | 404 | 2 ms |
 | GET /api/maintenance/not-a-uuid | 400 | 2 ms |
-| PATCH /api/maintenance/b3014b5f-c7d0-4c8f-a6b8-0f68e7818a77 | 403 | 2 ms |
-| PATCH /api/maintenance/b3014b5f-c7d0-4c8f-a6b8-0f68e7818a77 | 200 | 4 ms |
-| PATCH /api/maintenance/b3014b5f-c7d0-4c8f-a6b8-0f68e7818a77/approve | 200 | 4 ms |
-| PATCH /api/maintenance/b3014b5f-c7d0-4c8f-a6b8-0f68e7818a77/approve | 409 | 2 ms |
-| PATCH /api/maintenance/b3014b5f-c7d0-4c8f-a6b8-0f68e7818a77/reject | 409 | 3 ms |
-| PATCH /api/maintenance/b3014b5f-c7d0-4c8f-a6b8-0f68e7818a77/start | 409 | 3 ms |
-| PATCH /api/maintenance/b3014b5f-c7d0-4c8f-a6b8-0f68e7818a77/assign | 200 | 4 ms |
-| PATCH /api/maintenance/b3014b5f-c7d0-4c8f-a6b8-0f68e7818a77/start | 200 | 4 ms |
-| PATCH /api/maintenance/b3014b5f-c7d0-4c8f-a6b8-0f68e7818a77/resolve | 200 | 4 ms |
-| GET /api/dashboard/overview | 200 | 5 ms |
-| PATCH /api/maintenance/b3014b5f-c7d0-4c8f-a6b8-0f68e7818a77/close | 200 | 6 ms |
-| PATCH /api/maintenance/b3014b5f-c7d0-4c8f-a6b8-0f68e7818a77 | 409 | 3 ms |
-| DELETE /api/maintenance/b3014b5f-c7d0-4c8f-a6b8-0f68e7818a77 | 409 | 3 ms |
-| POST /api/maintenance | 201 | 5 ms |
-| PATCH /api/maintenance/36c92536-0737-4cb9-8263-3a6099f0ca61/reject | 200 | 5 ms |
-| PATCH /api/maintenance/36c92536-0737-4cb9-8263-3a6099f0ca61/assign | 409 | 3 ms |
+| PATCH /api/maintenance/aadddb40-6477-4b71-90fa-8568369b029a | 403 | 2 ms |
+| PATCH /api/maintenance/aadddb40-6477-4b71-90fa-8568369b029a | 200 | 3 ms |
+| PATCH /api/maintenance/aadddb40-6477-4b71-90fa-8568369b029a/approve | 200 | 4 ms |
+| PATCH /api/maintenance/aadddb40-6477-4b71-90fa-8568369b029a/approve | 409 | 3 ms |
+| PATCH /api/maintenance/aadddb40-6477-4b71-90fa-8568369b029a/reject | 409 | 3 ms |
+| PATCH /api/maintenance/aadddb40-6477-4b71-90fa-8568369b029a/start | 409 | 3 ms |
+| PATCH /api/maintenance/aadddb40-6477-4b71-90fa-8568369b029a/assign | 200 | 5 ms |
+| PATCH /api/maintenance/aadddb40-6477-4b71-90fa-8568369b029a/start | 200 | 4 ms |
+| PATCH /api/maintenance/aadddb40-6477-4b71-90fa-8568369b029a/resolve | 200 | 4 ms |
+| GET /api/dashboard/overview | 200 | 3 ms |
+| PATCH /api/maintenance/aadddb40-6477-4b71-90fa-8568369b029a/close | 200 | 6 ms |
+| PATCH /api/maintenance/aadddb40-6477-4b71-90fa-8568369b029a | 409 | 3 ms |
+| DELETE /api/maintenance/aadddb40-6477-4b71-90fa-8568369b029a | 409 | 3 ms |
+| POST /api/maintenance | 201 | 6 ms |
+| PATCH /api/maintenance/5e418812-408d-46d7-bff5-4438b6593fe0/reject | 200 | 5 ms |
+| PATCH /api/maintenance/5e418812-408d-46d7-bff5-4438b6593fe0/assign | 409 | 3 ms |
 | POST /api/maintenance | 201 | 5 ms |
 | POST /api/maintenance | 201 | 7 ms |
-| DELETE /api/maintenance/214ee8db-ff5f-49b0-bb8e-ae3e155c1264 | 200 | 4 ms |
+| DELETE /api/maintenance/cbfbceab-f81c-472b-ad7f-bcbe5833bcb0 | 200 | 4 ms |
 | POST /api/maintenance | 201 | 5 ms |
-| PATCH /api/maintenance/7d468423-633e-491e-8469-5da723acfe94/approve | 200 | 4 ms |
-| PATCH /api/maintenance/7d468423-633e-491e-8469-5da723acfe94/close | 409 | 3 ms |
-| POST /api/maintenance | 201 | 4 ms |
-| PATCH /api/maintenance/c9f97d23-7c4e-4863-a4aa-2ca8b6522424/approve | 403 | 2 ms |
-| PATCH /api/maintenance/c9f97d23-7c4e-4863-a4aa-2ca8b6522424/approve | 403 | 2 ms |
-| GET /api/maintenance/c9f97d23-7c4e-4863-a4aa-2ca8b6522424 | 403 | 2 ms |
+| PATCH /api/maintenance/4900eeb7-ad7a-4f2b-9bf4-0d22063e972a/approve | 200 | 4 ms |
+| PATCH /api/maintenance/4900eeb7-ad7a-4f2b-9bf4-0d22063e972a/close | 409 | 3 ms |
+| POST /api/maintenance | 201 | 7 ms |
+| PATCH /api/maintenance/d16d689c-cfb6-49e8-a906-3b8a5e157348/approve | 403 | 3 ms |
+| PATCH /api/maintenance/d16d689c-cfb6-49e8-a906-3b8a5e157348/approve | 403 | 2 ms |
+| GET /api/maintenance/d16d689c-cfb6-49e8-a906-3b8a5e157348 | 403 | 3 ms |
 | GET /api/maintenance?priority=HIGH&status=REQUESTED&page=1&limit=5 | 200 | 3 ms |
 | GET /api/reports/maintenance | 200 | 3 ms |
-| GET /api/maintenance?page=1&limit=5 | 200 | 2 ms |
-| GET /api/maintenance/18cea654-883d-43d8-ae7a-c44cb2b9bdf2 | 200 | 3 ms |
-| GET /api/reports/maintenance | 200 | 3 ms |
-| GET /api/dashboard/overview | 200 | 4 ms |
+| GET /api/maintenance?page=1&limit=5 | 200 | 3 ms |
+| GET /api/maintenance/c72b524f-84bd-468e-af52-740bacc2a9e5 | 200 | 2 ms |
+| GET /api/reports/maintenance | 200 | 5 ms |
+| GET /api/dashboard/overview | 200 | 5 ms |
 
 ## Business Rules Verified
 

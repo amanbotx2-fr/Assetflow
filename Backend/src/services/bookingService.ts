@@ -726,7 +726,13 @@ export const getAvailability = async (
 };
 
 export const getBookingStatistics = async (query: Record<string, unknown>, actor: Express.User) => {
-  const departmentWhere = actor.role === Role.MANAGER ? { asset: { departmentId: actor.departmentId } } : {};
+  const departmentWhere =
+    actor.role === Role.MANAGER
+      ? { asset: { departmentId: actor.departmentId } }
+      : query.departmentId
+        ? { asset: { departmentId: String(query.departmentId) } }
+        : {};
+  const ownershipWhere = actor.role === Role.EMPLOYEE ? { requestedById: actor.id } : {};
   const dateWhere =
     query.from || query.to
       ? {
@@ -736,7 +742,7 @@ export const getBookingStatistics = async (query: Record<string, unknown>, actor
           }
         }
       : {};
-  const where = andWhere(departmentWhere, dateWhere);
+  const where = andWhere(departmentWhere, ownershipWhere, dateWhere);
 
   const [bookingCount, approvedCount, completedCount, cancelledCount, mostBookedResources, bookings] = await Promise.all([
     prisma.booking.count({ where }),

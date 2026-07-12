@@ -1,6 +1,6 @@
 # Assets QA Report
 
-Generated: 2026-07-12T07:03:49.858Z
+Generated: 2026-07-12T07:20:54.559Z
 
 ## Summary
 
@@ -80,44 +80,44 @@ Generated: 2026-07-12T07:03:49.858Z
 | --- | ---: | ---: |
 | GET /api/assets | 200 | 4 ms |
 | GET /api/assets | 200 | 4 ms |
-| POST /api/assets | 201 | 6 ms |
+| POST /api/assets | 201 | 7 ms |
 | POST /api/assets | 409 | 2 ms |
 | POST /api/assets | 409 | 2 ms |
 | POST /api/assets | 400 | 2 ms |
 | POST /api/assets | 404 | 2 ms |
 | POST /api/assets | 404 | 2 ms |
-| POST /api/assets | 403 | 2 ms |
+| POST /api/assets | 403 | 1 ms |
 | POST /api/assets | 400 | 2 ms |
 | POST /api/assets | 400 | 2 ms |
-| POST /api/assets | 201 | 5 ms |
+| POST /api/assets | 201 | 4 ms |
 | POST /api/assets | 403 | 2 ms |
-| GET /api/assets/f86c218e-0e65-4674-a1f1-e6273bfdb6f9 | 200 | 4 ms |
-| GET /api/assets/00000000-0000-0000-0000-000000000000 | 404 | 3 ms |
+| GET /api/assets/521918f4-af19-4ccf-bd07-477e17a85f3a | 200 | 4 ms |
+| GET /api/assets/00000000-0000-0000-0000-000000000000 | 404 | 1 ms |
 | GET /api/assets/not-a-uuid | 400 | 2 ms |
-| GET /api/assets/8e7b4d28-c0a7-434b-ad74-ad50b4ae2b82 | 403 | 3 ms |
-| PATCH /api/assets/f86c218e-0e65-4674-a1f1-e6273bfdb6f9 | 200 | 5 ms |
-| PATCH /api/assets/f86c218e-0e65-4674-a1f1-e6273bfdb6f9 | 409 | 2 ms |
-| PATCH /api/assets/f86c218e-0e65-4674-a1f1-e6273bfdb6f9 | 400 | 2 ms |
+| GET /api/assets/0f232a57-42af-4bab-8dd2-b1c6c7058ca4 | 403 | 3 ms |
+| PATCH /api/assets/521918f4-af19-4ccf-bd07-477e17a85f3a | 200 | 5 ms |
+| PATCH /api/assets/521918f4-af19-4ccf-bd07-477e17a85f3a | 409 | 3 ms |
+| PATCH /api/assets/521918f4-af19-4ccf-bd07-477e17a85f3a | 400 | 2 ms |
 | PATCH /api/assets/00000000-0000-0000-0000-000000000000 | 404 | 2 ms |
-| PATCH /api/assets/8e7b4d28-c0a7-434b-ad74-ad50b4ae2b82 | 403 | 2 ms |
-| PATCH /api/assets/f86c218e-0e65-4674-a1f1-e6273bfdb6f9 | 403 | 2 ms |
+| PATCH /api/assets/0f232a57-42af-4bab-8dd2-b1c6c7058ca4 | 403 | 2 ms |
+| PATCH /api/assets/521918f4-af19-4ccf-bd07-477e17a85f3a | 403 | 2 ms |
 | GET /api/assets/lookup | 400 | 2 ms |
-| GET /api/assets/lookup?assetTag=QA-ASSET-UPD-1783839829350 | 200 | 3 ms |
-| GET /api/assets/lookup?serialNumber=QA-SN-UPD-1783839829350 | 200 | 3 ms |
-| GET /api/assets/lookup?qrCode=assetflow%3Aasset%3Af86c218e-0e65-4674-a1f1-e6273bfdb6f9%3AQA-ASSET-UPD-1783839829350 | 200 | 3 ms |
-| GET /api/assets/lookup?q=QA%20Asset%20Laptop | 200 | 3 ms |
+| GET /api/assets/lookup?assetTag=QA-ASSET-UPD-1783840854026 | 200 | 4 ms |
+| GET /api/assets/lookup?serialNumber=QA-SN-UPD-1783840854026 | 200 | 3 ms |
+| GET /api/assets/lookup?qrCode=assetflow%3Aasset%3A521918f4-af19-4ccf-bd07-477e17a85f3a%3AQA-ASSET-UPD-1783840854026 | 200 | 4 ms |
+| GET /api/assets/lookup?q=QA%20Asset%20Laptop | 200 | 4 ms |
 | GET /api/assets/lookup?q=DOES-NOT-EXIST | 404 | 3 ms |
-| GET /api/assets?qrCode=assetflow%3Aasset%3Af86c218e-0e65-4674-a1f1-e6273bfdb6f9%3AQA-ASSET-UPD-1783839829350 | 200 | 4 ms |
-| GET /api/assets/f86c218e-0e65-4674-a1f1-e6273bfdb6f9/qr | 200 | 8 ms |
-| GET /api/assets/f86c218e-0e65-4674-a1f1-e6273bfdb6f9/qr | 403 | 2 ms |
-| DELETE /api/assets/f86c218e-0e65-4674-a1f1-e6273bfdb6f9 | 200 | 5 ms |
-| DELETE /api/assets/427482e7-4370-4c16-bda1-97f2ae1db6f6 | 409 | 3 ms |
-| DELETE /api/assets/427482e7-4370-4c16-bda1-97f2ae1db6f6 | 403 | 2 ms |
+| GET /api/assets?qrCode=assetflow%3Aasset%3A521918f4-af19-4ccf-bd07-477e17a85f3a%3AQA-ASSET-UPD-1783840854026 | 200 | 4 ms |
+| GET /api/assets/521918f4-af19-4ccf-bd07-477e17a85f3a/qr | 200 | 7 ms |
+| GET /api/assets/521918f4-af19-4ccf-bd07-477e17a85f3a/qr | 403 | 2 ms |
+| DELETE /api/assets/521918f4-af19-4ccf-bd07-477e17a85f3a | 200 | 5 ms |
+| DELETE /api/assets/fd2b5a57-6a52-4dca-9d3d-c19041f4b319 | 409 | 3 ms |
+| DELETE /api/assets/fd2b5a57-6a52-4dca-9d3d-c19041f4b319 | 403 | 2 ms |
 | DELETE /api/assets/00000000-0000-0000-0000-000000000000 | 404 | 2 ms |
 | GET /api/assets?page=1&limit=5&sortBy=name&sortOrder=asc | 200 | 5 ms |
-| GET /api/assets/4ea8c11f-06b6-404c-8e20-a3c4cc425b4b | 200 | 4 ms |
+| GET /api/assets/4eeb0305-b6eb-455f-bfdd-75f1abdb42c9 | 200 | 4 ms |
 | GET /api/assets/lookup?assetTag=MON-001 | 200 | 3 ms |
-| GET /api/assets/4ea8c11f-06b6-404c-8e20-a3c4cc425b4b/qr | 200 | 6 ms |
+| GET /api/assets/4eeb0305-b6eb-455f-bfdd-75f1abdb42c9/qr | 200 | 6 ms |
 
 Asset list, lookup, and detail endpoints use bounded pagination/selects with eager-loaded relations for category, department, current allocation, maintenance status, creator, and updater. Local response times were within demo expectations.
 

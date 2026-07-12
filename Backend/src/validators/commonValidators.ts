@@ -27,6 +27,25 @@ export const paginationQuery = z.object({
     .transform((value) => (value === undefined ? undefined : value === "true"))
 });
 
+export const reportQuerySchema = paginationQuery.extend({
+  format: z.enum(["json", "csv", "pdf"]).optional(),
+  type: z
+    .enum([
+      "dashboard",
+      "summary",
+      "assets",
+      "bookings",
+      "maintenance",
+      "audits",
+      "utilization",
+      "department-utilization",
+      "idle-assets",
+      "most-used-assets",
+      "near-retirement"
+    ])
+    .optional()
+});
+
 export const decisionSchema = z.object({
   decisionNotes: z.string().min(1).optional()
 });

@@ -1,6 +1,6 @@
 # Allocation & Transfer QA Report
 
-Generated: 2026-07-12T07:04:00.861Z
+Generated: 2026-07-12T07:21:02.416Z
 
 ## Summary
 
@@ -87,52 +87,52 @@ Generated: 2026-07-12T07:04:00.861Z
 | GET /api/allocations?status=BAD | 400 | 2 ms |
 | POST /api/allocations | 201 | 6 ms |
 | POST /api/allocations | 409 | 2 ms |
-| POST /api/allocations | 400 | 2 ms |
+| POST /api/allocations | 400 | 1 ms |
 | POST /api/allocations | 403 | 2 ms |
 | POST /api/allocations | 403 | 2 ms |
 | POST /api/allocations | 409 | 2 ms |
 | POST /api/allocations | 409 | 2 ms |
-| POST /api/allocations | 409 | 1 ms |
+| POST /api/allocations | 409 | 3 ms |
 | POST /api/allocations | 404 | 2 ms |
 | POST /api/allocations | 403 | 2 ms |
-| GET /api/allocations/dfe81a04-3d25-4dcd-8950-c813bd96cdb6 | 200 | 3 ms |
-| GET /api/allocations/dfe81a04-3d25-4dcd-8950-c813bd96cdb6 | 200 | 3 ms |
-| GET /api/allocations/00000000-0000-0000-0000-000000000000 | 404 | 2 ms |
-| GET /api/allocations/not-a-uuid | 400 | 2 ms |
-| PATCH /api/allocations/dfe81a04-3d25-4dcd-8950-c813bd96cdb6 | 200 | 5 ms |
-| PATCH /api/allocations/dfe81a04-3d25-4dcd-8950-c813bd96cdb6 | 403 | 2 ms |
-| PATCH /api/allocations/dfe81a04-3d25-4dcd-8950-c813bd96cdb6 | 404 | 3 ms |
-| PATCH /api/allocations/00000000-0000-0000-0000-000000000000 | 404 | 1 ms |
-| POST /api/allocations/dfe81a04-3d25-4dcd-8950-c813bd96cdb6/return | 200 | 4 ms |
-| POST /api/allocations/dfe81a04-3d25-4dcd-8950-c813bd96cdb6/return | 409 | 3 ms |
-| PATCH /api/allocations/dfe81a04-3d25-4dcd-8950-c813bd96cdb6 | 409 | 3 ms |
-| POST /api/allocations/dfe81a04-3d25-4dcd-8950-c813bd96cdb6/return | 400 | 2 ms |
+| GET /api/allocations/3c654064-c165-4c56-8419-d37a730cff7f | 200 | 3 ms |
+| GET /api/allocations/3c654064-c165-4c56-8419-d37a730cff7f | 200 | 2 ms |
+| GET /api/allocations/00000000-0000-0000-0000-000000000000 | 404 | 1 ms |
+| GET /api/allocations/not-a-uuid | 400 | 1 ms |
+| PATCH /api/allocations/3c654064-c165-4c56-8419-d37a730cff7f | 200 | 5 ms |
+| PATCH /api/allocations/3c654064-c165-4c56-8419-d37a730cff7f | 403 | 2 ms |
+| PATCH /api/allocations/3c654064-c165-4c56-8419-d37a730cff7f | 404 | 3 ms |
+| PATCH /api/allocations/00000000-0000-0000-0000-000000000000 | 404 | 2 ms |
+| POST /api/allocations/3c654064-c165-4c56-8419-d37a730cff7f/return | 200 | 6 ms |
+| POST /api/allocations/3c654064-c165-4c56-8419-d37a730cff7f/return | 409 | 3 ms |
+| PATCH /api/allocations/3c654064-c165-4c56-8419-d37a730cff7f | 409 | 3 ms |
+| POST /api/allocations/3c654064-c165-4c56-8419-d37a730cff7f/return | 400 | 2 ms |
 | POST /api/allocations | 201 | 5 ms |
-| GET /api/transfers | 401 | 2 ms |
+| GET /api/transfers | 401 | 1 ms |
 | GET /api/transfers | 200 | 3 ms |
 | POST /api/transfers | 201 | 5 ms |
-| GET /api/transfers?assetId=b81eccac-d4bf-41b6-b961-387added48e7&status=PENDING | 200 | 3 ms |
+| GET /api/transfers?assetId=c5b025e9-c03a-4f4a-b9bf-77dc3989925b&status=PENDING | 200 | 3 ms |
 | POST /api/transfers | 409 | 3 ms |
 | GET /api/transfers?status=PENDING&page=1&limit=2&sortBy=requestedAt&sortOrder=desc | 200 | 3 ms |
-| GET /api/transfers/cc045505-a44b-492c-a16b-da12fd76a92b | 200 | 3 ms |
-| GET /api/transfers/cc045505-a44b-492c-a16b-da12fd76a92b | 200 | 3 ms |
-| PATCH /api/transfers/cc045505-a44b-492c-a16b-da12fd76a92b/approve | 200 | 7 ms |
-| PATCH /api/transfers/cc045505-a44b-492c-a16b-da12fd76a92b/reject | 409 | 3 ms |
-| PATCH /api/transfers/cc045505-a44b-492c-a16b-da12fd76a92b/approve | 409 | 3 ms |
-| GET /api/allocations?assetId=b81eccac-d4bf-41b6-b961-387added48e7&status=ACTIVE | 200 | 3 ms |
+| GET /api/transfers/39263423-898f-4033-9ae3-7880817ae7be | 200 | 3 ms |
+| GET /api/transfers/39263423-898f-4033-9ae3-7880817ae7be | 200 | 3 ms |
+| PATCH /api/transfers/39263423-898f-4033-9ae3-7880817ae7be/approve | 200 | 8 ms |
+| PATCH /api/transfers/39263423-898f-4033-9ae3-7880817ae7be/reject | 409 | 3 ms |
+| PATCH /api/transfers/39263423-898f-4033-9ae3-7880817ae7be/approve | 409 | 3 ms |
+| GET /api/allocations?assetId=c5b025e9-c03a-4f4a-b9bf-77dc3989925b&status=ACTIVE | 200 | 3 ms |
 | POST /api/transfers | 201 | 5 ms |
-| PATCH /api/transfers/d47607f4-bb7e-40e1-9830-c0fe1379ca03/reject | 200 | 5 ms |
-| PATCH /api/transfers/d47607f4-bb7e-40e1-9830-c0fe1379ca03/approve | 409 | 3 ms |
-| POST /api/transfers | 403 | 2 ms |
+| PATCH /api/transfers/2a7b08ee-6ae0-4050-8e68-d0233fbca5aa/reject | 200 | 5 ms |
+| PATCH /api/transfers/2a7b08ee-6ae0-4050-8e68-d0233fbca5aa/approve | 409 | 3 ms |
+| POST /api/transfers | 403 | 3 ms |
 | POST /api/transfers | 409 | 2 ms |
 | POST /api/transfers | 404 | 2 ms |
-| POST /api/transfers | 400 | 2 ms |
-| POST /api/allocations | 201 | 4 ms |
+| POST /api/transfers | 400 | 1 ms |
+| POST /api/allocations | 201 | 5 ms |
 | POST /api/allocations | 409 | 5 ms |
 | GET /api/allocations?page=1&limit=5 | 200 | 3 ms |
-| GET /api/allocations/b282e0f4-d4c9-4634-8ff1-174967febc09 | 200 | 3 ms |
+| GET /api/allocations/6f1613b7-ef2a-46e2-ab96-233e9e69809a | 200 | 3 ms |
 | GET /api/transfers?page=1&limit=5 | 200 | 3 ms |
-| GET /api/transfers/50c011c5-6a86-4b2f-9653-29efa6d3cf0a | 200 | 3 ms |
+| GET /api/transfers/ca7de1b8-96f5-4fb6-89b5-af6bdd473a64 | 200 | 3 ms |
 
 The allocation and transfer endpoints use bounded pagination and eager-loaded relation summaries for assets, users, departments, assigned-by users, and source transfers. Local response times were within demo expectations.
 

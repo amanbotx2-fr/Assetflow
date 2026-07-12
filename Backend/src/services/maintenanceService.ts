@@ -846,7 +846,12 @@ export const updateMaintenanceTicket = async (
 
 export const getMaintenanceStatistics = async (query: Record<string, unknown>, actor: Express.User) => {
   const departmentId = actor.role === Role.MANAGER ? actor.departmentId : (query.departmentId as string | undefined);
-  const where: Prisma.MaintenanceTicketWhereInput = departmentId ? { asset: { departmentId } } : {};
+  const where: Prisma.MaintenanceTicketWhereInput =
+    actor.role === Role.EMPLOYEE
+      ? { OR: [{ reportedById: actor.id }, { assignedToId: actor.id }] }
+      : departmentId
+        ? { asset: { departmentId } }
+        : {};
 
   const [tickets, statusCounts, priorityCounts, assetFrequency] = await Promise.all([
     prisma.maintenanceTicket.findMany({

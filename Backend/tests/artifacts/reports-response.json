@@ -1,0 +1,3371 @@
+{
+  "dashboard": {
+    "success": true,
+    "data": {
+      "dateRange": {
+        "from": "2026-06-13T00:00:00.000Z",
+        "to": "2026-07-12T23:59:59.999Z"
+      },
+      "summary": {
+        "totalAssets": 6,
+        "available": 4,
+        "allocated": 1,
+        "maintenance": 1,
+        "lost": 0,
+        "activeAllocations": 1,
+        "pendingTransfers": 1,
+        "pendingBookings": 1,
+        "openMaintenance": 1,
+        "charts": {
+          "byStatus": {
+            "labels": [
+              "AVAILABLE",
+              "ALLOCATED",
+              "BOOKED",
+              "MAINTENANCE",
+              "RETIRED",
+              "LOST"
+            ],
+            "datasets": [
+              {
+                "label": "assets",
+                "data": [
+                  4,
+                  1,
+                  0,
+                  1,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "totals": {
+              "assets": 6
+            },
+            "percentages": {
+              "AVAILABLE": 66.67,
+              "ALLOCATED": 16.67,
+              "BOOKED": 0,
+              "MAINTENANCE": 16.67,
+              "RETIRED": 0,
+              "LOST": 0
+            }
+          },
+          "byCondition": {
+            "labels": [
+              "NEW",
+              "GOOD",
+              "FAIR",
+              "DAMAGED",
+              "UNUSABLE"
+            ],
+            "datasets": [
+              {
+                "label": "assets",
+                "data": [
+                  1,
+                  4,
+                  1,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "totals": {
+              "assets": 6
+            },
+            "percentages": {
+              "NEW": 16.67,
+              "GOOD": 66.67,
+              "FAIR": 16.67,
+              "DAMAGED": 0,
+              "UNUSABLE": 0
+            }
+          }
+        }
+      },
+      "charts": {
+        "utilizationByDepartment": {
+          "labels": [
+            "Finance",
+            "Information Technology",
+            "Operations"
+          ],
+          "datasets": [
+            {
+              "label": "Total Assets",
+              "data": [
+                1,
+                2,
+                3
+              ]
+            },
+            {
+              "label": "Allocated Assets",
+              "data": [
+                0,
+                1,
+                0
+              ]
+            },
+            {
+              "label": "Bookings",
+              "data": [
+                0,
+                0,
+                2
+              ]
+            }
+          ],
+          "totals": {
+            "totalAssets": 6,
+            "allocatedAssets": 1,
+            "bookings": 2
+          },
+          "percentages": {
+            "FIN": 0,
+            "IT": 50,
+            "OPS": 66.67
+          }
+        },
+        "bookingTrend": {
+          "labels": [
+            "2026-06-13",
+            "2026-06-14",
+            "2026-06-15",
+            "2026-06-16",
+            "2026-06-17",
+            "2026-06-18",
+            "2026-06-19",
+            "2026-06-20",
+            "2026-06-21",
+            "2026-06-22",
+            "2026-06-23",
+            "2026-06-24",
+            "2026-06-25",
+            "2026-06-26",
+            "2026-06-27",
+            "2026-06-28",
+            "2026-06-29",
+            "2026-06-30",
+            "2026-07-01",
+            "2026-07-02",
+            "2026-07-03",
+            "2026-07-04",
+            "2026-07-05",
+            "2026-07-06",
+            "2026-07-07",
+            "2026-07-08",
+            "2026-07-09",
+            "2026-07-10",
+            "2026-07-11",
+            "2026-07-12"
+          ],
+          "datasets": [
+            {
+              "label": "bookings",
+              "data": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                2
+              ]
+            }
+          ],
+          "totals": {
+            "bookings": 2
+          }
+        },
+        "maintenanceTrend": {
+          "labels": [
+            "2026-06-13",
+            "2026-06-14",
+            "2026-06-15",
+            "2026-06-16",
+            "2026-06-17",
+            "2026-06-18",
+            "2026-06-19",
+            "2026-06-20",
+            "2026-06-21",
+            "2026-06-22",
+            "2026-06-23",
+            "2026-06-24",
+            "2026-06-25",
+            "2026-06-26",
+            "2026-06-27",
+            "2026-06-28",
+            "2026-06-29",
+            "2026-06-30",
+            "2026-07-01",
+            "2026-07-02",
+            "2026-07-03",
+            "2026-07-04",
+            "2026-07-05",
+            "2026-07-06",
+            "2026-07-07",
+            "2026-07-08",
+            "2026-07-09",
+            "2026-07-10",
+            "2026-07-11",
+            "2026-07-12"
+          ],
+          "datasets": [
+            {
+              "label": "maintenance",
+              "data": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1
+              ]
+            }
+          ],
+          "totals": {
+            "maintenance": 1
+          }
+        },
+        "auditTrend": {
+          "labels": [
+            "2026-06-13",
+            "2026-06-14",
+            "2026-06-15",
+            "2026-06-16",
+            "2026-06-17",
+            "2026-06-18",
+            "2026-06-19",
+            "2026-06-20",
+            "2026-06-21",
+            "2026-06-22",
+            "2026-06-23",
+            "2026-06-24",
+            "2026-06-25",
+            "2026-06-26",
+            "2026-06-27",
+            "2026-06-28",
+            "2026-06-29",
+            "2026-06-30",
+            "2026-07-01",
+            "2026-07-02",
+            "2026-07-03",
+            "2026-07-04",
+            "2026-07-05",
+            "2026-07-06",
+            "2026-07-07",
+            "2026-07-08",
+            "2026-07-09",
+            "2026-07-10",
+            "2026-07-11",
+            "2026-07-12"
+          ],
+          "datasets": [
+            {
+              "label": "auditRecords",
+              "data": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1
+              ]
+            }
+          ],
+          "totals": {
+            "auditRecords": 1
+          }
+        },
+        "assetStatus": {
+          "labels": [
+            "AVAILABLE",
+            "ALLOCATED",
+            "BOOKED",
+            "MAINTENANCE",
+            "RETIRED",
+            "LOST"
+          ],
+          "datasets": [
+            {
+              "label": "assets",
+              "data": [
+                4,
+                1,
+                0,
+                1,
+                0,
+                0
+              ]
+            }
+          ],
+          "totals": {
+            "assets": 6
+          },
+          "percentages": {
+            "AVAILABLE": 66.67,
+            "ALLOCATED": 16.67,
+            "BOOKED": 0,
+            "MAINTENANCE": 16.67,
+            "RETIRED": 0,
+            "LOST": 0
+          }
+        },
+        "auditVerification": {
+          "labels": [
+            "VERIFIED",
+            "MISSING",
+            "DAMAGED",
+            "RETIRED",
+            "UNREACHABLE",
+            "MISPLACED",
+            "NEEDS_REVIEW"
+          ],
+          "datasets": [
+            {
+              "label": "assets",
+              "data": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            }
+          ],
+          "totals": {
+            "assets": 0
+          },
+          "percentages": {
+            "VERIFIED": 0,
+            "MISSING": 0,
+            "DAMAGED": 0,
+            "RETIRED": 0,
+            "UNREACHABLE": 0,
+            "MISPLACED": 0,
+            "NEEDS_REVIEW": 0
+          }
+        }
+      },
+      "idleAssets": [
+        {
+          "id": "730bf51c-16e3-4323-a210-fe656cf36c83",
+          "assetCode": "LAP-002",
+          "serialNumber": "SN-LAP-002",
+          "name": "MacBook Air M3",
+          "status": "AVAILABLE",
+          "condition": "NEW",
+          "location": "IT Store",
+          "purchaseDate": null,
+          "purchaseValue": null,
+          "warrantyExpiry": null,
+          "isBookable": false,
+          "categoryId": "8e34c440-526f-4845-976c-e15df1567f59",
+          "departmentId": "8e9bcd2a-2d82-423a-b250-5b833d2dffec",
+          "createdAt": "2026-07-12T07:21:41.916Z",
+          "updatedAt": "2026-07-12T07:21:41.916Z",
+          "category": {
+            "id": "8e34c440-526f-4845-976c-e15df1567f59",
+            "name": "Laptop",
+            "code": "LAP"
+          },
+          "department": {
+            "id": "8e9bcd2a-2d82-423a-b250-5b833d2dffec",
+            "name": "Information Technology",
+            "code": "IT",
+            "status": "ACTIVE"
+          },
+          "allocations": [],
+          "_count": {
+            "allocations": 0,
+            "bookings": 0,
+            "maintenanceTickets": 0,
+            "auditRecords": 0
+          },
+          "assetTag": "LAP-002",
+          "currentAllocation": null,
+          "idleDays": 0,
+          "activityCounts": {
+            "allocations": 0,
+            "bookings": 0,
+            "maintenanceTickets": 0,
+            "auditRecords": 0
+          }
+        },
+        {
+          "id": "463ee883-ccdf-4cbb-8e8a-c63a550c1f15",
+          "assetCode": "VEH-001",
+          "serialNumber": "SN-VEH-001",
+          "name": "Office Shuttle",
+          "status": "AVAILABLE",
+          "condition": "GOOD",
+          "location": "Parking Bay 4",
+          "purchaseDate": null,
+          "purchaseValue": null,
+          "warrantyExpiry": null,
+          "isBookable": true,
+          "categoryId": "7124c974-fc4d-498a-bd9b-bbd17a4b4818",
+          "departmentId": "56327c91-a118-42cc-bebe-a3dba4d10b47",
+          "createdAt": "2026-07-12T07:21:41.917Z",
+          "updatedAt": "2026-07-12T07:21:41.917Z",
+          "category": {
+            "id": "7124c974-fc4d-498a-bd9b-bbd17a4b4818",
+            "name": "Vehicle",
+            "code": "VEH"
+          },
+          "department": {
+            "id": "56327c91-a118-42cc-bebe-a3dba4d10b47",
+            "name": "Operations",
+            "code": "OPS",
+            "status": "ACTIVE"
+          },
+          "allocations": [],
+          "_count": {
+            "allocations": 0,
+            "bookings": 1,
+            "maintenanceTickets": 0,
+            "auditRecords": 0
+          },
+          "assetTag": "VEH-001",
+          "currentAllocation": null,
+          "idleDays": 0,
+          "activityCounts": {
+            "allocations": 0,
+            "bookings": 1,
+            "maintenanceTickets": 0,
+            "auditRecords": 0
+          }
+        },
+        {
+          "id": "e3b83512-cdd8-4d11-bff9-90c085df901c",
+          "assetCode": "FUR-001",
+          "serialNumber": "SN-FUR-001",
+          "name": "Ergonomic Chair",
+          "status": "AVAILABLE",
+          "condition": "GOOD",
+          "location": "Storage Room",
+          "purchaseDate": null,
+          "purchaseValue": null,
+          "warrantyExpiry": null,
+          "isBookable": false,
+          "categoryId": "4a55d10a-e5fd-4ea4-8208-acd119044f17",
+          "departmentId": "56327c91-a118-42cc-bebe-a3dba4d10b47",
+          "createdAt": "2026-07-12T07:21:41.918Z",
+          "updatedAt": "2026-07-12T07:21:41.918Z",
+          "category": {
+            "id": "4a55d10a-e5fd-4ea4-8208-acd119044f17",
+            "name": "Furniture",
+            "code": "FUR"
+          },
+          "department": {
+            "id": "56327c91-a118-42cc-bebe-a3dba4d10b47",
+            "name": "Operations",
+            "code": "OPS",
+            "status": "ACTIVE"
+          },
+          "allocations": [],
+          "_count": {
+            "allocations": 0,
+            "bookings": 0,
+            "maintenanceTickets": 0,
+            "auditRecords": 0
+          },
+          "assetTag": "FUR-001",
+          "currentAllocation": null,
+          "idleDays": 0,
+          "activityCounts": {
+            "allocations": 0,
+            "bookings": 0,
+            "maintenanceTickets": 0,
+            "auditRecords": 0
+          }
+        }
+      ],
+      "frequentlyUsedAssets": [
+        {
+          "id": "463ee883-ccdf-4cbb-8e8a-c63a550c1f15",
+          "assetCode": "VEH-001",
+          "serialNumber": "SN-VEH-001",
+          "name": "Office Shuttle",
+          "status": "AVAILABLE",
+          "condition": "GOOD",
+          "location": "Parking Bay 4",
+          "purchaseDate": null,
+          "purchaseValue": null,
+          "warrantyExpiry": null,
+          "isBookable": true,
+          "categoryId": "7124c974-fc4d-498a-bd9b-bbd17a4b4818",
+          "departmentId": "56327c91-a118-42cc-bebe-a3dba4d10b47",
+          "createdAt": "2026-07-12T07:21:41.917Z",
+          "updatedAt": "2026-07-12T07:21:41.917Z",
+          "category": {
+            "id": "7124c974-fc4d-498a-bd9b-bbd17a4b4818",
+            "name": "Vehicle",
+            "code": "VEH"
+          },
+          "department": {
+            "id": "56327c91-a118-42cc-bebe-a3dba4d10b47",
+            "name": "Operations",
+            "code": "OPS",
+            "status": "ACTIVE"
+          },
+          "allocations": [],
+          "_count": {
+            "allocations": 0,
+            "bookings": 1,
+            "maintenanceTickets": 0
+          },
+          "assetTag": "VEH-001",
+          "currentAllocation": null,
+          "usage": {
+            "allocationCount": 0,
+            "bookingCount": 1,
+            "maintenanceCount": 0,
+            "totalUsage": 1
+          }
+        },
+        {
+          "id": "909b4a1a-7176-4de3-87f2-8aa1d02d1f7e",
+          "assetCode": "PROJ-001",
+          "serialNumber": "SN-PROJ-001",
+          "name": "Epson Conference Projector",
+          "status": "AVAILABLE",
+          "condition": "GOOD",
+          "location": "Conference Room A",
+          "purchaseDate": null,
+          "purchaseValue": null,
+          "warrantyExpiry": null,
+          "isBookable": true,
+          "categoryId": "40c17c95-6f5c-440f-9411-ebbb2b0a33e4",
+          "departmentId": "56327c91-a118-42cc-bebe-a3dba4d10b47",
+          "createdAt": "2026-07-12T07:21:41.917Z",
+          "updatedAt": "2026-07-12T07:21:41.917Z",
+          "category": {
+            "id": "40c17c95-6f5c-440f-9411-ebbb2b0a33e4",
+            "name": "Projector",
+            "code": "PROJ"
+          },
+          "department": {
+            "id": "56327c91-a118-42cc-bebe-a3dba4d10b47",
+            "name": "Operations",
+            "code": "OPS",
+            "status": "ACTIVE"
+          },
+          "allocations": [],
+          "_count": {
+            "allocations": 0,
+            "bookings": 1,
+            "maintenanceTickets": 0
+          },
+          "assetTag": "PROJ-001",
+          "currentAllocation": null,
+          "usage": {
+            "allocationCount": 0,
+            "bookingCount": 1,
+            "maintenanceCount": 0,
+            "totalUsage": 1
+          }
+        },
+        {
+          "id": "fda44151-bce2-41fc-b0ca-2ed52897f496",
+          "assetCode": "LAP-001",
+          "serialNumber": "SN-LAP-001",
+          "name": "Dell Latitude 5440",
+          "status": "ALLOCATED",
+          "condition": "GOOD",
+          "location": "IT Floor - Desk 12",
+          "purchaseDate": "2025-04-10T00:00:00.000Z",
+          "purchaseValue": "95000",
+          "warrantyExpiry": null,
+          "isBookable": false,
+          "categoryId": "8e34c440-526f-4845-976c-e15df1567f59",
+          "departmentId": "8e9bcd2a-2d82-423a-b250-5b833d2dffec",
+          "createdAt": "2026-07-12T07:21:41.915Z",
+          "updatedAt": "2026-07-12T07:21:41.915Z",
+          "category": {
+            "id": "8e34c440-526f-4845-976c-e15df1567f59",
+            "name": "Laptop",
+            "code": "LAP"
+          },
+          "department": {
+            "id": "8e9bcd2a-2d82-423a-b250-5b833d2dffec",
+            "name": "Information Technology",
+            "code": "IT",
+            "status": "ACTIVE"
+          },
+          "allocations": [
+            {
+              "id": "b7ac51a5-5c2f-4748-8329-4423b7d200c0",
+              "assetId": "fda44151-bce2-41fc-b0ca-2ed52897f496",
+              "userId": "d818abe7-92f9-4b6f-ac80-61dbcd8e4064",
+              "departmentId": null,
+              "assignedById": "4154dbc9-a401-4409-8d6b-cd407110e7fd",
+              "sourceTransferId": null,
+              "status": "ACTIVE",
+              "assignedAt": "2026-07-12T07:21:41.918Z",
+              "returnedAt": null,
+              "returnCondition": null,
+              "returnReason": null,
+              "notes": "Seed allocation for demo.",
+              "createdAt": "2026-07-12T07:21:41.918Z",
+              "updatedAt": "2026-07-12T07:21:41.918Z",
+              "user": {
+                "id": "d818abe7-92f9-4b6f-ac80-61dbcd8e4064",
+                "name": "Employee User",
+                "email": "employee@assetflow.local",
+                "role": "EMPLOYEE",
+                "departmentId": "8e9bcd2a-2d82-423a-b250-5b833d2dffec"
+              },
+              "department": null
+            }
+          ],
+          "_count": {
+            "allocations": 1,
+            "bookings": 0,
+            "maintenanceTickets": 0
+          },
+          "assetTag": "LAP-001",
+          "currentAllocation": {
+            "id": "b7ac51a5-5c2f-4748-8329-4423b7d200c0",
+            "assetId": "fda44151-bce2-41fc-b0ca-2ed52897f496",
+            "userId": "d818abe7-92f9-4b6f-ac80-61dbcd8e4064",
+            "departmentId": null,
+            "assignedById": "4154dbc9-a401-4409-8d6b-cd407110e7fd",
+            "sourceTransferId": null,
+            "status": "ACTIVE",
+            "assignedAt": "2026-07-12T07:21:41.918Z",
+            "returnedAt": null,
+            "returnCondition": null,
+            "returnReason": null,
+            "notes": "Seed allocation for demo.",
+            "createdAt": "2026-07-12T07:21:41.918Z",
+            "updatedAt": "2026-07-12T07:21:41.918Z",
+            "user": {
+              "id": "d818abe7-92f9-4b6f-ac80-61dbcd8e4064",
+              "name": "Employee User",
+              "email": "employee@assetflow.local",
+              "role": "EMPLOYEE",
+              "departmentId": "8e9bcd2a-2d82-423a-b250-5b833d2dffec"
+            },
+            "department": null
+          },
+          "usage": {
+            "allocationCount": 1,
+            "bookingCount": 0,
+            "maintenanceCount": 0,
+            "totalUsage": 1
+          }
+        },
+        {
+          "id": "730bf51c-16e3-4323-a210-fe656cf36c83",
+          "assetCode": "LAP-002",
+          "serialNumber": "SN-LAP-002",
+          "name": "MacBook Air M3",
+          "status": "AVAILABLE",
+          "condition": "NEW",
+          "location": "IT Store",
+          "purchaseDate": null,
+          "purchaseValue": null,
+          "warrantyExpiry": null,
+          "isBookable": false,
+          "categoryId": "8e34c440-526f-4845-976c-e15df1567f59",
+          "departmentId": "8e9bcd2a-2d82-423a-b250-5b833d2dffec",
+          "createdAt": "2026-07-12T07:21:41.916Z",
+          "updatedAt": "2026-07-12T07:21:41.916Z",
+          "category": {
+            "id": "8e34c440-526f-4845-976c-e15df1567f59",
+            "name": "Laptop",
+            "code": "LAP"
+          },
+          "department": {
+            "id": "8e9bcd2a-2d82-423a-b250-5b833d2dffec",
+            "name": "Information Technology",
+            "code": "IT",
+            "status": "ACTIVE"
+          },
+          "allocations": [],
+          "_count": {
+            "allocations": 0,
+            "bookings": 0,
+            "maintenanceTickets": 0
+          },
+          "assetTag": "LAP-002",
+          "currentAllocation": null,
+          "usage": {
+            "allocationCount": 0,
+            "bookingCount": 0,
+            "maintenanceCount": 0,
+            "totalUsage": 0
+          }
+        },
+        {
+          "id": "ac18ef5c-7c1c-42e3-8620-5ab317ee3b5e",
+          "assetCode": "MON-001",
+          "serialNumber": "SN-MON-001",
+          "name": "Dell 27 Inch Monitor",
+          "status": "MAINTENANCE",
+          "condition": "FAIR",
+          "location": "Finance Bay",
+          "purchaseDate": null,
+          "purchaseValue": null,
+          "warrantyExpiry": null,
+          "isBookable": false,
+          "categoryId": "3869e240-1bec-48d4-8861-b3459cb75079",
+          "departmentId": "3946d184-f86d-4d60-8f6e-ae9fdb8d48e7",
+          "createdAt": "2026-07-12T07:21:41.917Z",
+          "updatedAt": "2026-07-12T07:21:41.917Z",
+          "category": {
+            "id": "3869e240-1bec-48d4-8861-b3459cb75079",
+            "name": "Monitor",
+            "code": "MON"
+          },
+          "department": {
+            "id": "3946d184-f86d-4d60-8f6e-ae9fdb8d48e7",
+            "name": "Finance",
+            "code": "FIN",
+            "status": "ACTIVE"
+          },
+          "allocations": [],
+          "_count": {
+            "allocations": 0,
+            "bookings": 0,
+            "maintenanceTickets": 1
+          },
+          "assetTag": "MON-001",
+          "currentAllocation": null,
+          "usage": {
+            "allocationCount": 0,
+            "bookingCount": 0,
+            "maintenanceCount": 1,
+            "totalUsage": 0
+          }
+        }
+      ],
+      "upcomingMaintenance": [],
+      "nearRetirement": [
+        {
+          "id": "ac18ef5c-7c1c-42e3-8620-5ab317ee3b5e",
+          "assetCode": "MON-001",
+          "serialNumber": "SN-MON-001",
+          "name": "Dell 27 Inch Monitor",
+          "status": "MAINTENANCE",
+          "condition": "FAIR",
+          "location": "Finance Bay",
+          "purchaseDate": null,
+          "purchaseValue": null,
+          "warrantyExpiry": null,
+          "isBookable": false,
+          "categoryId": "3869e240-1bec-48d4-8861-b3459cb75079",
+          "departmentId": "3946d184-f86d-4d60-8f6e-ae9fdb8d48e7",
+          "createdAt": "2026-07-12T07:21:41.917Z",
+          "updatedAt": "2026-07-12T07:21:41.917Z",
+          "category": {
+            "id": "3869e240-1bec-48d4-8861-b3459cb75079",
+            "name": "Monitor",
+            "code": "MON"
+          },
+          "department": {
+            "id": "3946d184-f86d-4d60-8f6e-ae9fdb8d48e7",
+            "name": "Finance",
+            "code": "FIN",
+            "status": "ACTIVE"
+          },
+          "allocations": [],
+          "assetTag": "MON-001",
+          "currentAllocation": null,
+          "riskScore": 55,
+          "reasons": [
+            "Condition is fair."
+          ]
+        }
+      ],
+      "auditSummary": {
+        "auditCount": 0,
+        "completionPercentage": 0,
+        "discrepanciesFound": 0
+      }
+    },
+    "message": "Operation completed successfully."
+  },
+  "assets": {
+    "success": true,
+    "data": {
+      "items": [
+        {
+          "id": "e3b83512-cdd8-4d11-bff9-90c085df901c",
+          "assetCode": "FUR-001",
+          "serialNumber": "SN-FUR-001",
+          "name": "Ergonomic Chair",
+          "status": "AVAILABLE",
+          "condition": "GOOD",
+          "location": "Storage Room",
+          "purchaseDate": null,
+          "purchaseValue": null,
+          "warrantyExpiry": null,
+          "isBookable": false,
+          "categoryId": "4a55d10a-e5fd-4ea4-8208-acd119044f17",
+          "departmentId": "56327c91-a118-42cc-bebe-a3dba4d10b47",
+          "createdAt": "2026-07-12T07:21:41.918Z",
+          "updatedAt": "2026-07-12T07:21:41.918Z",
+          "category": {
+            "id": "4a55d10a-e5fd-4ea4-8208-acd119044f17",
+            "name": "Furniture",
+            "code": "FUR"
+          },
+          "department": {
+            "id": "56327c91-a118-42cc-bebe-a3dba4d10b47",
+            "name": "Operations",
+            "code": "OPS",
+            "status": "ACTIVE"
+          },
+          "allocations": [],
+          "assetTag": "FUR-001",
+          "currentAllocation": null
+        },
+        {
+          "id": "909b4a1a-7176-4de3-87f2-8aa1d02d1f7e",
+          "assetCode": "PROJ-001",
+          "serialNumber": "SN-PROJ-001",
+          "name": "Epson Conference Projector",
+          "status": "AVAILABLE",
+          "condition": "GOOD",
+          "location": "Conference Room A",
+          "purchaseDate": null,
+          "purchaseValue": null,
+          "warrantyExpiry": null,
+          "isBookable": true,
+          "categoryId": "40c17c95-6f5c-440f-9411-ebbb2b0a33e4",
+          "departmentId": "56327c91-a118-42cc-bebe-a3dba4d10b47",
+          "createdAt": "2026-07-12T07:21:41.917Z",
+          "updatedAt": "2026-07-12T07:21:41.917Z",
+          "category": {
+            "id": "40c17c95-6f5c-440f-9411-ebbb2b0a33e4",
+            "name": "Projector",
+            "code": "PROJ"
+          },
+          "department": {
+            "id": "56327c91-a118-42cc-bebe-a3dba4d10b47",
+            "name": "Operations",
+            "code": "OPS",
+            "status": "ACTIVE"
+          },
+          "allocations": [],
+          "assetTag": "PROJ-001",
+          "currentAllocation": null
+        },
+        {
+          "id": "463ee883-ccdf-4cbb-8e8a-c63a550c1f15",
+          "assetCode": "VEH-001",
+          "serialNumber": "SN-VEH-001",
+          "name": "Office Shuttle",
+          "status": "AVAILABLE",
+          "condition": "GOOD",
+          "location": "Parking Bay 4",
+          "purchaseDate": null,
+          "purchaseValue": null,
+          "warrantyExpiry": null,
+          "isBookable": true,
+          "categoryId": "7124c974-fc4d-498a-bd9b-bbd17a4b4818",
+          "departmentId": "56327c91-a118-42cc-bebe-a3dba4d10b47",
+          "createdAt": "2026-07-12T07:21:41.917Z",
+          "updatedAt": "2026-07-12T07:21:41.917Z",
+          "category": {
+            "id": "7124c974-fc4d-498a-bd9b-bbd17a4b4818",
+            "name": "Vehicle",
+            "code": "VEH"
+          },
+          "department": {
+            "id": "56327c91-a118-42cc-bebe-a3dba4d10b47",
+            "name": "Operations",
+            "code": "OPS",
+            "status": "ACTIVE"
+          },
+          "allocations": [],
+          "assetTag": "VEH-001",
+          "currentAllocation": null
+        },
+        {
+          "id": "730bf51c-16e3-4323-a210-fe656cf36c83",
+          "assetCode": "LAP-002",
+          "serialNumber": "SN-LAP-002",
+          "name": "MacBook Air M3",
+          "status": "AVAILABLE",
+          "condition": "NEW",
+          "location": "IT Store",
+          "purchaseDate": null,
+          "purchaseValue": null,
+          "warrantyExpiry": null,
+          "isBookable": false,
+          "categoryId": "8e34c440-526f-4845-976c-e15df1567f59",
+          "departmentId": "8e9bcd2a-2d82-423a-b250-5b833d2dffec",
+          "createdAt": "2026-07-12T07:21:41.916Z",
+          "updatedAt": "2026-07-12T07:21:41.916Z",
+          "category": {
+            "id": "8e34c440-526f-4845-976c-e15df1567f59",
+            "name": "Laptop",
+            "code": "LAP"
+          },
+          "department": {
+            "id": "8e9bcd2a-2d82-423a-b250-5b833d2dffec",
+            "name": "Information Technology",
+            "code": "IT",
+            "status": "ACTIVE"
+          },
+          "allocations": [],
+          "assetTag": "LAP-002",
+          "currentAllocation": null
+        }
+      ],
+      "page": 1,
+      "limit": 5,
+      "total": 4,
+      "totalPages": 1,
+      "totals": {
+        "totalAssets": 4
+      },
+      "charts": {
+        "status": {
+          "labels": [
+            "AVAILABLE",
+            "ALLOCATED",
+            "BOOKED",
+            "MAINTENANCE",
+            "RETIRED",
+            "LOST"
+          ],
+          "datasets": [
+            {
+              "label": "assets",
+              "data": [
+                4,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            }
+          ],
+          "totals": {
+            "assets": 4
+          },
+          "percentages": {
+            "AVAILABLE": 100,
+            "ALLOCATED": 0,
+            "BOOKED": 0,
+            "MAINTENANCE": 0,
+            "RETIRED": 0,
+            "LOST": 0
+          }
+        },
+        "condition": {
+          "labels": [
+            "NEW",
+            "GOOD",
+            "FAIR",
+            "DAMAGED",
+            "UNUSABLE"
+          ],
+          "datasets": [
+            {
+              "label": "assets",
+              "data": [
+                1,
+                3,
+                0,
+                0,
+                0
+              ]
+            }
+          ],
+          "totals": {
+            "assets": 4
+          },
+          "percentages": {
+            "NEW": 25,
+            "GOOD": 75,
+            "FAIR": 0,
+            "DAMAGED": 0,
+            "UNUSABLE": 0
+          }
+        },
+        "category": {
+          "labels": [
+            "Projector",
+            "Vehicle",
+            "Laptop",
+            "Furniture"
+          ],
+          "datasets": [
+            {
+              "label": "assets",
+              "data": [
+                1,
+                1,
+                1,
+                1
+              ]
+            }
+          ],
+          "totals": {
+            "assets": 4
+          },
+          "percentages": {
+            "Projector": 25,
+            "Vehicle": 25,
+            "Laptop": 25,
+            "Furniture": 25
+          }
+        }
+      }
+    },
+    "message": "Operation completed successfully."
+  },
+  "bookings": {
+    "success": true,
+    "data": {
+      "bookingCount": 2,
+      "approvedCount": 1,
+      "completedCount": 0,
+      "cancelledCount": 0,
+      "utilizationHours": 2,
+      "mostBookedResources": [
+        {
+          "_count": {
+            "assetId": 1
+          },
+          "assetId": "463ee883-ccdf-4cbb-8e8a-c63a550c1f15"
+        },
+        {
+          "_count": {
+            "assetId": 1
+          },
+          "assetId": "909b4a1a-7176-4de3-87f2-8aa1d02d1f7e"
+        }
+      ],
+      "peakHours": [
+        {
+          "hour": 10,
+          "count": 1
+        },
+        {
+          "hour": 12,
+          "count": 1
+        }
+      ],
+      "dateRange": {
+        "from": "2026-07-01T00:00:00.000Z",
+        "to": "2026-07-31T23:59:59.999Z"
+      },
+      "totals": {
+        "bookingCount": 2,
+        "utilizationHours": 2
+      },
+      "charts": {
+        "trend": {
+          "labels": [
+            "2026-07-01",
+            "2026-07-02",
+            "2026-07-03",
+            "2026-07-04",
+            "2026-07-05",
+            "2026-07-06",
+            "2026-07-07",
+            "2026-07-08",
+            "2026-07-09",
+            "2026-07-10",
+            "2026-07-11",
+            "2026-07-12",
+            "2026-07-13",
+            "2026-07-14",
+            "2026-07-15",
+            "2026-07-16",
+            "2026-07-17",
+            "2026-07-18",
+            "2026-07-19",
+            "2026-07-20",
+            "2026-07-21",
+            "2026-07-22",
+            "2026-07-23",
+            "2026-07-24",
+            "2026-07-25",
+            "2026-07-26",
+            "2026-07-27",
+            "2026-07-28",
+            "2026-07-29",
+            "2026-07-30",
+            "2026-07-31"
+          ],
+          "datasets": [
+            {
+              "label": "bookings",
+              "data": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                2,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            }
+          ],
+          "totals": {
+            "bookings": 2
+          }
+        },
+        "status": {
+          "labels": [
+            "REQUESTED",
+            "PENDING",
+            "APPROVED",
+            "ACTIVE",
+            "REJECTED",
+            "CANCELLED",
+            "COMPLETED"
+          ],
+          "datasets": [
+            {
+              "label": "bookings",
+              "data": [
+                1,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0
+              ]
+            }
+          ],
+          "totals": {
+            "bookings": 2
+          },
+          "percentages": {
+            "REQUESTED": 50,
+            "PENDING": 0,
+            "APPROVED": 50,
+            "ACTIVE": 0,
+            "REJECTED": 0,
+            "CANCELLED": 0,
+            "COMPLETED": 0
+          }
+        }
+      }
+    },
+    "message": "Operation completed successfully."
+  },
+  "maintenance": {
+    "success": true,
+    "data": {
+      "maintenanceCount": 1,
+      "activeCount": 1,
+      "closedCount": 0,
+      "rejectedCount": 0,
+      "averageRepairTimeHours": 0,
+      "maintenanceFrequency": [
+        {
+          "_count": {
+            "assetId": 1
+          },
+          "assetId": "ac18ef5c-7c1c-42e3-8620-5ab317ee3b5e"
+        }
+      ],
+      "maintenanceCost": {
+        "total": 0,
+        "average": 0
+      },
+      "assetDowntimeHours": 0,
+      "mostRepairedAssets": [
+        {
+          "assetId": "ac18ef5c-7c1c-42e3-8620-5ab317ee3b5e",
+          "asset": {
+            "id": "ac18ef5c-7c1c-42e3-8620-5ab317ee3b5e",
+            "assetCode": "MON-001",
+            "serialNumber": "SN-MON-001",
+            "name": "Dell 27 Inch Monitor",
+            "status": "MAINTENANCE",
+            "condition": "FAIR",
+            "departmentId": "3946d184-f86d-4d60-8f6e-ae9fdb8d48e7",
+            "location": "Finance Bay",
+            "department": {
+              "id": "3946d184-f86d-4d60-8f6e-ae9fdb8d48e7",
+              "name": "Finance",
+              "code": "FIN",
+              "status": "ACTIVE"
+            },
+            "assetTag": "MON-001"
+          },
+          "count": 1
+        }
+      ],
+      "statusCounts": [
+        {
+          "_count": {
+            "status": 1
+          },
+          "status": "IN_PROGRESS"
+        }
+      ],
+      "priorityCounts": [
+        {
+          "_count": {
+            "priority": 1
+          },
+          "priority": "HIGH"
+        }
+      ],
+      "dateRange": {
+        "from": "2026-06-13T00:00:00.000Z",
+        "to": "2026-07-12T23:59:59.999Z"
+      },
+      "charts": {
+        "trend": {
+          "labels": [
+            "2026-06-13",
+            "2026-06-14",
+            "2026-06-15",
+            "2026-06-16",
+            "2026-06-17",
+            "2026-06-18",
+            "2026-06-19",
+            "2026-06-20",
+            "2026-06-21",
+            "2026-06-22",
+            "2026-06-23",
+            "2026-06-24",
+            "2026-06-25",
+            "2026-06-26",
+            "2026-06-27",
+            "2026-06-28",
+            "2026-06-29",
+            "2026-06-30",
+            "2026-07-01",
+            "2026-07-02",
+            "2026-07-03",
+            "2026-07-04",
+            "2026-07-05",
+            "2026-07-06",
+            "2026-07-07",
+            "2026-07-08",
+            "2026-07-09",
+            "2026-07-10",
+            "2026-07-11",
+            "2026-07-12"
+          ],
+          "datasets": [
+            {
+              "label": "maintenance",
+              "data": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1
+              ]
+            }
+          ],
+          "totals": {
+            "maintenance": 1
+          }
+        },
+        "status": {
+          "labels": [
+            "REQUESTED",
+            "APPROVED",
+            "REJECTED",
+            "OPEN",
+            "ASSIGNED",
+            "IN_PROGRESS",
+            "RESOLVED",
+            "CLOSED"
+          ],
+          "datasets": [
+            {
+              "label": "tickets",
+              "data": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0
+              ]
+            }
+          ],
+          "totals": {
+            "tickets": 1
+          },
+          "percentages": {
+            "REQUESTED": 0,
+            "APPROVED": 0,
+            "REJECTED": 0,
+            "OPEN": 0,
+            "ASSIGNED": 0,
+            "IN_PROGRESS": 100,
+            "RESOLVED": 0,
+            "CLOSED": 0
+          }
+        },
+        "priority": {
+          "labels": [
+            "LOW",
+            "MEDIUM",
+            "HIGH",
+            "CRITICAL"
+          ],
+          "datasets": [
+            {
+              "label": "tickets",
+              "data": [
+                0,
+                0,
+                1,
+                0
+              ]
+            }
+          ],
+          "totals": {
+            "tickets": 1
+          },
+          "percentages": {
+            "LOW": 0,
+            "MEDIUM": 0,
+            "HIGH": 100,
+            "CRITICAL": 0
+          }
+        }
+      }
+    },
+    "message": "Operation completed successfully."
+  },
+  "audits": {
+    "success": true,
+    "data": {
+      "auditCount": 0,
+      "activeAudits": 0,
+      "completedAudits": 0,
+      "assignedAssets": 0,
+      "assetsVerified": 0,
+      "pendingVerification": 0,
+      "completionPercentage": 0,
+      "departmentCompliance": [],
+      "verificationStatistics": [
+        {
+          "result": "VERIFIED",
+          "count": 0
+        },
+        {
+          "result": "MISSING",
+          "count": 0
+        },
+        {
+          "result": "DAMAGED",
+          "count": 0
+        },
+        {
+          "result": "RETIRED",
+          "count": 0
+        },
+        {
+          "result": "UNREACHABLE",
+          "count": 0
+        },
+        {
+          "result": "MISPLACED",
+          "count": 0
+        },
+        {
+          "result": "NEEDS_REVIEW",
+          "count": 0
+        }
+      ],
+      "damageStatistics": {
+        "damagedAssets": 0,
+        "missingAssets": 0,
+        "unreachableAssets": 0
+      },
+      "missingAssets": [],
+      "discrepancySummary": [
+        {
+          "type": "MISSING_ASSET",
+          "count": 0
+        },
+        {
+          "type": "DAMAGED_ASSET",
+          "count": 0
+        },
+        {
+          "type": "WRONG_LOCATION",
+          "count": 0
+        },
+        {
+          "type": "UNEXPECTED_ALLOCATION",
+          "count": 0
+        },
+        {
+          "type": "UNEXPECTED_DEPARTMENT",
+          "count": 0
+        },
+        {
+          "type": "UNKNOWN_ASSET_CONDITION",
+          "count": 0
+        }
+      ],
+      "discrepanciesFound": 0,
+      "charts": {
+        "verification": {
+          "labels": [
+            "VERIFIED",
+            "MISSING",
+            "DAMAGED",
+            "RETIRED",
+            "UNREACHABLE",
+            "MISPLACED",
+            "NEEDS_REVIEW"
+          ],
+          "datasets": [
+            {
+              "label": "assets",
+              "data": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            }
+          ],
+          "totals": {
+            "assets": 0
+          },
+          "percentages": {
+            "VERIFIED": 0,
+            "MISSING": 0,
+            "DAMAGED": 0,
+            "RETIRED": 0,
+            "UNREACHABLE": 0,
+            "MISPLACED": 0,
+            "NEEDS_REVIEW": 0
+          }
+        },
+        "discrepancies": {
+          "labels": [
+            "MISSING_ASSET",
+            "DAMAGED_ASSET",
+            "WRONG_LOCATION",
+            "UNEXPECTED_ALLOCATION",
+            "UNEXPECTED_DEPARTMENT",
+            "UNKNOWN_ASSET_CONDITION"
+          ],
+          "datasets": [
+            {
+              "label": "discrepancies",
+              "data": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            }
+          ],
+          "totals": {
+            "discrepancies": 0
+          },
+          "percentages": {
+            "MISSING_ASSET": 0,
+            "DAMAGED_ASSET": 0,
+            "WRONG_LOCATION": 0,
+            "UNEXPECTED_ALLOCATION": 0,
+            "UNEXPECTED_DEPARTMENT": 0,
+            "UNKNOWN_ASSET_CONDITION": 0
+          }
+        }
+      }
+    },
+    "message": "Operation completed successfully."
+  },
+  "utilization": {
+    "success": true,
+    "data": {
+      "totals": {
+        "totalAssets": 6,
+        "allocatedAssets": 1,
+        "bookableAssets": 2,
+        "activeAllocations": 1,
+        "bookingCount": 2,
+        "assetUtilizationPercentage": 16.67,
+        "bookingUtilizationPercentage": 100
+      },
+      "charts": {
+        "utilizationSummary": {
+          "labels": [
+            "Allocated",
+            "Bookable",
+            "Booked"
+          ],
+          "datasets": [
+            {
+              "label": "resources",
+              "data": [
+                1,
+                2,
+                2
+              ]
+            }
+          ],
+          "totals": {
+            "totalAssets": 6
+          }
+        },
+        "utilizationByDepartment": {
+          "labels": [
+            "Finance",
+            "Information Technology",
+            "Operations"
+          ],
+          "datasets": [
+            {
+              "label": "Total Assets",
+              "data": [
+                1,
+                2,
+                3
+              ]
+            },
+            {
+              "label": "Allocated Assets",
+              "data": [
+                0,
+                1,
+                0
+              ]
+            },
+            {
+              "label": "Bookings",
+              "data": [
+                0,
+                0,
+                2
+              ]
+            }
+          ],
+          "totals": {
+            "totalAssets": 6,
+            "allocatedAssets": 1,
+            "bookings": 2
+          },
+          "percentages": {
+            "FIN": 0,
+            "IT": 50,
+            "OPS": 66.67
+          }
+        }
+      }
+    },
+    "message": "Operation completed successfully."
+  },
+  "departmentUtilization": {
+    "success": true,
+    "data": {
+      "departmentUtilization": [
+        {
+          "department": {
+            "id": "8e9bcd2a-2d82-423a-b250-5b833d2dffec",
+            "name": "Information Technology",
+            "code": "IT",
+            "status": "ACTIVE"
+          },
+          "totalAssets": 2,
+          "allocatedAssets": 1,
+          "maintenanceAssets": 0,
+          "bookingCount": 0,
+          "bookingHours": 0,
+          "utilizationPercentage": 50
+        }
+      ],
+      "charts": {
+        "utilizationByDepartment": {
+          "labels": [
+            "Information Technology"
+          ],
+          "datasets": [
+            {
+              "label": "Total Assets",
+              "data": [
+                2
+              ]
+            },
+            {
+              "label": "Allocated Assets",
+              "data": [
+                1
+              ]
+            },
+            {
+              "label": "Bookings",
+              "data": [
+                0
+              ]
+            }
+          ],
+          "totals": {
+            "totalAssets": 2,
+            "allocatedAssets": 1,
+            "bookings": 0
+          },
+          "percentages": {
+            "IT": 50
+          }
+        }
+      }
+    },
+    "message": "Operation completed successfully."
+  },
+  "idleAssets": {
+    "success": true,
+    "data": {
+      "items": [
+        {
+          "id": "730bf51c-16e3-4323-a210-fe656cf36c83",
+          "assetCode": "LAP-002",
+          "serialNumber": "SN-LAP-002",
+          "name": "MacBook Air M3",
+          "status": "AVAILABLE",
+          "condition": "NEW",
+          "location": "IT Store",
+          "purchaseDate": null,
+          "purchaseValue": null,
+          "warrantyExpiry": null,
+          "isBookable": false,
+          "categoryId": "8e34c440-526f-4845-976c-e15df1567f59",
+          "departmentId": "8e9bcd2a-2d82-423a-b250-5b833d2dffec",
+          "createdAt": "2026-07-12T07:21:41.916Z",
+          "updatedAt": "2026-07-12T07:21:41.916Z",
+          "category": {
+            "id": "8e34c440-526f-4845-976c-e15df1567f59",
+            "name": "Laptop",
+            "code": "LAP"
+          },
+          "department": {
+            "id": "8e9bcd2a-2d82-423a-b250-5b833d2dffec",
+            "name": "Information Technology",
+            "code": "IT",
+            "status": "ACTIVE"
+          },
+          "allocations": [],
+          "_count": {
+            "allocations": 0,
+            "bookings": 0,
+            "maintenanceTickets": 0,
+            "auditRecords": 0
+          },
+          "assetTag": "LAP-002",
+          "currentAllocation": null,
+          "idleDays": 0,
+          "activityCounts": {
+            "allocations": 0,
+            "bookings": 0,
+            "maintenanceTickets": 0,
+            "auditRecords": 0
+          }
+        },
+        {
+          "id": "463ee883-ccdf-4cbb-8e8a-c63a550c1f15",
+          "assetCode": "VEH-001",
+          "serialNumber": "SN-VEH-001",
+          "name": "Office Shuttle",
+          "status": "AVAILABLE",
+          "condition": "GOOD",
+          "location": "Parking Bay 4",
+          "purchaseDate": null,
+          "purchaseValue": null,
+          "warrantyExpiry": null,
+          "isBookable": true,
+          "categoryId": "7124c974-fc4d-498a-bd9b-bbd17a4b4818",
+          "departmentId": "56327c91-a118-42cc-bebe-a3dba4d10b47",
+          "createdAt": "2026-07-12T07:21:41.917Z",
+          "updatedAt": "2026-07-12T07:21:41.917Z",
+          "category": {
+            "id": "7124c974-fc4d-498a-bd9b-bbd17a4b4818",
+            "name": "Vehicle",
+            "code": "VEH"
+          },
+          "department": {
+            "id": "56327c91-a118-42cc-bebe-a3dba4d10b47",
+            "name": "Operations",
+            "code": "OPS",
+            "status": "ACTIVE"
+          },
+          "allocations": [],
+          "_count": {
+            "allocations": 0,
+            "bookings": 1,
+            "maintenanceTickets": 0,
+            "auditRecords": 0
+          },
+          "assetTag": "VEH-001",
+          "currentAllocation": null,
+          "idleDays": 0,
+          "activityCounts": {
+            "allocations": 0,
+            "bookings": 1,
+            "maintenanceTickets": 0,
+            "auditRecords": 0
+          }
+        },
+        {
+          "id": "e3b83512-cdd8-4d11-bff9-90c085df901c",
+          "assetCode": "FUR-001",
+          "serialNumber": "SN-FUR-001",
+          "name": "Ergonomic Chair",
+          "status": "AVAILABLE",
+          "condition": "GOOD",
+          "location": "Storage Room",
+          "purchaseDate": null,
+          "purchaseValue": null,
+          "warrantyExpiry": null,
+          "isBookable": false,
+          "categoryId": "4a55d10a-e5fd-4ea4-8208-acd119044f17",
+          "departmentId": "56327c91-a118-42cc-bebe-a3dba4d10b47",
+          "createdAt": "2026-07-12T07:21:41.918Z",
+          "updatedAt": "2026-07-12T07:21:41.918Z",
+          "category": {
+            "id": "4a55d10a-e5fd-4ea4-8208-acd119044f17",
+            "name": "Furniture",
+            "code": "FUR"
+          },
+          "department": {
+            "id": "56327c91-a118-42cc-bebe-a3dba4d10b47",
+            "name": "Operations",
+            "code": "OPS",
+            "status": "ACTIVE"
+          },
+          "allocations": [],
+          "_count": {
+            "allocations": 0,
+            "bookings": 0,
+            "maintenanceTickets": 0,
+            "auditRecords": 0
+          },
+          "assetTag": "FUR-001",
+          "currentAllocation": null,
+          "idleDays": 0,
+          "activityCounts": {
+            "allocations": 0,
+            "bookings": 0,
+            "maintenanceTickets": 0,
+            "auditRecords": 0
+          }
+        }
+      ],
+      "page": 1,
+      "limit": 5,
+      "total": 3,
+      "totalPages": 1,
+      "totals": {
+        "idleAssets": 3
+      }
+    },
+    "message": "Operation completed successfully."
+  },
+  "mostUsedAssets": {
+    "success": true,
+    "data": {
+      "items": [
+        {
+          "id": "463ee883-ccdf-4cbb-8e8a-c63a550c1f15",
+          "assetCode": "VEH-001",
+          "serialNumber": "SN-VEH-001",
+          "name": "Office Shuttle",
+          "status": "AVAILABLE",
+          "condition": "GOOD",
+          "location": "Parking Bay 4",
+          "purchaseDate": null,
+          "purchaseValue": null,
+          "warrantyExpiry": null,
+          "isBookable": true,
+          "categoryId": "7124c974-fc4d-498a-bd9b-bbd17a4b4818",
+          "departmentId": "56327c91-a118-42cc-bebe-a3dba4d10b47",
+          "createdAt": "2026-07-12T07:21:41.917Z",
+          "updatedAt": "2026-07-12T07:21:41.917Z",
+          "category": {
+            "id": "7124c974-fc4d-498a-bd9b-bbd17a4b4818",
+            "name": "Vehicle",
+            "code": "VEH"
+          },
+          "department": {
+            "id": "56327c91-a118-42cc-bebe-a3dba4d10b47",
+            "name": "Operations",
+            "code": "OPS",
+            "status": "ACTIVE"
+          },
+          "allocations": [],
+          "_count": {
+            "allocations": 0,
+            "bookings": 1,
+            "maintenanceTickets": 0
+          },
+          "assetTag": "VEH-001",
+          "currentAllocation": null,
+          "usage": {
+            "allocationCount": 0,
+            "bookingCount": 1,
+            "maintenanceCount": 0,
+            "totalUsage": 1
+          }
+        },
+        {
+          "id": "909b4a1a-7176-4de3-87f2-8aa1d02d1f7e",
+          "assetCode": "PROJ-001",
+          "serialNumber": "SN-PROJ-001",
+          "name": "Epson Conference Projector",
+          "status": "AVAILABLE",
+          "condition": "GOOD",
+          "location": "Conference Room A",
+          "purchaseDate": null,
+          "purchaseValue": null,
+          "warrantyExpiry": null,
+          "isBookable": true,
+          "categoryId": "40c17c95-6f5c-440f-9411-ebbb2b0a33e4",
+          "departmentId": "56327c91-a118-42cc-bebe-a3dba4d10b47",
+          "createdAt": "2026-07-12T07:21:41.917Z",
+          "updatedAt": "2026-07-12T07:21:41.917Z",
+          "category": {
+            "id": "40c17c95-6f5c-440f-9411-ebbb2b0a33e4",
+            "name": "Projector",
+            "code": "PROJ"
+          },
+          "department": {
+            "id": "56327c91-a118-42cc-bebe-a3dba4d10b47",
+            "name": "Operations",
+            "code": "OPS",
+            "status": "ACTIVE"
+          },
+          "allocations": [],
+          "_count": {
+            "allocations": 0,
+            "bookings": 1,
+            "maintenanceTickets": 0
+          },
+          "assetTag": "PROJ-001",
+          "currentAllocation": null,
+          "usage": {
+            "allocationCount": 0,
+            "bookingCount": 1,
+            "maintenanceCount": 0,
+            "totalUsage": 1
+          }
+        },
+        {
+          "id": "fda44151-bce2-41fc-b0ca-2ed52897f496",
+          "assetCode": "LAP-001",
+          "serialNumber": "SN-LAP-001",
+          "name": "Dell Latitude 5440",
+          "status": "ALLOCATED",
+          "condition": "GOOD",
+          "location": "IT Floor - Desk 12",
+          "purchaseDate": "2025-04-10T00:00:00.000Z",
+          "purchaseValue": "95000",
+          "warrantyExpiry": null,
+          "isBookable": false,
+          "categoryId": "8e34c440-526f-4845-976c-e15df1567f59",
+          "departmentId": "8e9bcd2a-2d82-423a-b250-5b833d2dffec",
+          "createdAt": "2026-07-12T07:21:41.915Z",
+          "updatedAt": "2026-07-12T07:21:41.915Z",
+          "category": {
+            "id": "8e34c440-526f-4845-976c-e15df1567f59",
+            "name": "Laptop",
+            "code": "LAP"
+          },
+          "department": {
+            "id": "8e9bcd2a-2d82-423a-b250-5b833d2dffec",
+            "name": "Information Technology",
+            "code": "IT",
+            "status": "ACTIVE"
+          },
+          "allocations": [
+            {
+              "id": "b7ac51a5-5c2f-4748-8329-4423b7d200c0",
+              "assetId": "fda44151-bce2-41fc-b0ca-2ed52897f496",
+              "userId": "d818abe7-92f9-4b6f-ac80-61dbcd8e4064",
+              "departmentId": null,
+              "assignedById": "4154dbc9-a401-4409-8d6b-cd407110e7fd",
+              "sourceTransferId": null,
+              "status": "ACTIVE",
+              "assignedAt": "2026-07-12T07:21:41.918Z",
+              "returnedAt": null,
+              "returnCondition": null,
+              "returnReason": null,
+              "notes": "Seed allocation for demo.",
+              "createdAt": "2026-07-12T07:21:41.918Z",
+              "updatedAt": "2026-07-12T07:21:41.918Z",
+              "user": {
+                "id": "d818abe7-92f9-4b6f-ac80-61dbcd8e4064",
+                "name": "Employee User",
+                "email": "employee@assetflow.local",
+                "role": "EMPLOYEE",
+                "departmentId": "8e9bcd2a-2d82-423a-b250-5b833d2dffec"
+              },
+              "department": null
+            }
+          ],
+          "_count": {
+            "allocations": 1,
+            "bookings": 0,
+            "maintenanceTickets": 0
+          },
+          "assetTag": "LAP-001",
+          "currentAllocation": {
+            "id": "b7ac51a5-5c2f-4748-8329-4423b7d200c0",
+            "assetId": "fda44151-bce2-41fc-b0ca-2ed52897f496",
+            "userId": "d818abe7-92f9-4b6f-ac80-61dbcd8e4064",
+            "departmentId": null,
+            "assignedById": "4154dbc9-a401-4409-8d6b-cd407110e7fd",
+            "sourceTransferId": null,
+            "status": "ACTIVE",
+            "assignedAt": "2026-07-12T07:21:41.918Z",
+            "returnedAt": null,
+            "returnCondition": null,
+            "returnReason": null,
+            "notes": "Seed allocation for demo.",
+            "createdAt": "2026-07-12T07:21:41.918Z",
+            "updatedAt": "2026-07-12T07:21:41.918Z",
+            "user": {
+              "id": "d818abe7-92f9-4b6f-ac80-61dbcd8e4064",
+              "name": "Employee User",
+              "email": "employee@assetflow.local",
+              "role": "EMPLOYEE",
+              "departmentId": "8e9bcd2a-2d82-423a-b250-5b833d2dffec"
+            },
+            "department": null
+          },
+          "usage": {
+            "allocationCount": 1,
+            "bookingCount": 0,
+            "maintenanceCount": 0,
+            "totalUsage": 1
+          }
+        },
+        {
+          "id": "730bf51c-16e3-4323-a210-fe656cf36c83",
+          "assetCode": "LAP-002",
+          "serialNumber": "SN-LAP-002",
+          "name": "MacBook Air M3",
+          "status": "AVAILABLE",
+          "condition": "NEW",
+          "location": "IT Store",
+          "purchaseDate": null,
+          "purchaseValue": null,
+          "warrantyExpiry": null,
+          "isBookable": false,
+          "categoryId": "8e34c440-526f-4845-976c-e15df1567f59",
+          "departmentId": "8e9bcd2a-2d82-423a-b250-5b833d2dffec",
+          "createdAt": "2026-07-12T07:21:41.916Z",
+          "updatedAt": "2026-07-12T07:21:41.916Z",
+          "category": {
+            "id": "8e34c440-526f-4845-976c-e15df1567f59",
+            "name": "Laptop",
+            "code": "LAP"
+          },
+          "department": {
+            "id": "8e9bcd2a-2d82-423a-b250-5b833d2dffec",
+            "name": "Information Technology",
+            "code": "IT",
+            "status": "ACTIVE"
+          },
+          "allocations": [],
+          "_count": {
+            "allocations": 0,
+            "bookings": 0,
+            "maintenanceTickets": 0
+          },
+          "assetTag": "LAP-002",
+          "currentAllocation": null,
+          "usage": {
+            "allocationCount": 0,
+            "bookingCount": 0,
+            "maintenanceCount": 0,
+            "totalUsage": 0
+          }
+        },
+        {
+          "id": "ac18ef5c-7c1c-42e3-8620-5ab317ee3b5e",
+          "assetCode": "MON-001",
+          "serialNumber": "SN-MON-001",
+          "name": "Dell 27 Inch Monitor",
+          "status": "MAINTENANCE",
+          "condition": "FAIR",
+          "location": "Finance Bay",
+          "purchaseDate": null,
+          "purchaseValue": null,
+          "warrantyExpiry": null,
+          "isBookable": false,
+          "categoryId": "3869e240-1bec-48d4-8861-b3459cb75079",
+          "departmentId": "3946d184-f86d-4d60-8f6e-ae9fdb8d48e7",
+          "createdAt": "2026-07-12T07:21:41.917Z",
+          "updatedAt": "2026-07-12T07:21:41.917Z",
+          "category": {
+            "id": "3869e240-1bec-48d4-8861-b3459cb75079",
+            "name": "Monitor",
+            "code": "MON"
+          },
+          "department": {
+            "id": "3946d184-f86d-4d60-8f6e-ae9fdb8d48e7",
+            "name": "Finance",
+            "code": "FIN",
+            "status": "ACTIVE"
+          },
+          "allocations": [],
+          "_count": {
+            "allocations": 0,
+            "bookings": 0,
+            "maintenanceTickets": 1
+          },
+          "assetTag": "MON-001",
+          "currentAllocation": null,
+          "usage": {
+            "allocationCount": 0,
+            "bookingCount": 0,
+            "maintenanceCount": 1,
+            "totalUsage": 0
+          }
+        }
+      ],
+      "page": 1,
+      "limit": 5,
+      "total": 6,
+      "totalPages": 2,
+      "charts": {
+        "mostUsedAssets": {
+          "labels": [
+            "Office Shuttle",
+            "Epson Conference Projector",
+            "Dell Latitude 5440",
+            "MacBook Air M3",
+            "Dell 27 Inch Monitor"
+          ],
+          "datasets": [
+            {
+              "label": "usage",
+              "data": [
+                1,
+                1,
+                1,
+                0,
+                0
+              ]
+            }
+          ],
+          "totals": {
+            "usage": 3
+          }
+        }
+      }
+    },
+    "message": "Operation completed successfully."
+  },
+  "nearRetirement": {
+    "success": true,
+    "data": {
+      "items": [
+        {
+          "id": "ac18ef5c-7c1c-42e3-8620-5ab317ee3b5e",
+          "assetCode": "MON-001",
+          "serialNumber": "SN-MON-001",
+          "name": "Dell 27 Inch Monitor",
+          "status": "MAINTENANCE",
+          "condition": "FAIR",
+          "location": "Finance Bay",
+          "purchaseDate": null,
+          "purchaseValue": null,
+          "warrantyExpiry": null,
+          "isBookable": false,
+          "categoryId": "3869e240-1bec-48d4-8861-b3459cb75079",
+          "departmentId": "3946d184-f86d-4d60-8f6e-ae9fdb8d48e7",
+          "createdAt": "2026-07-12T07:21:41.917Z",
+          "updatedAt": "2026-07-12T07:21:41.917Z",
+          "category": {
+            "id": "3869e240-1bec-48d4-8861-b3459cb75079",
+            "name": "Monitor",
+            "code": "MON"
+          },
+          "department": {
+            "id": "3946d184-f86d-4d60-8f6e-ae9fdb8d48e7",
+            "name": "Finance",
+            "code": "FIN",
+            "status": "ACTIVE"
+          },
+          "allocations": [],
+          "assetTag": "MON-001",
+          "currentAllocation": null,
+          "riskScore": 55,
+          "reasons": [
+            "Condition is fair."
+          ]
+        }
+      ],
+      "page": 1,
+      "limit": 5,
+      "total": 1,
+      "totalPages": 1,
+      "totals": {
+        "nearRetirementAssets": 1
+      },
+      "charts": {
+        "retirementRisk": {
+          "labels": [
+            "Dell 27 Inch Monitor"
+          ],
+          "datasets": [
+            {
+              "label": "riskScore",
+              "data": [
+                55
+              ]
+            }
+          ],
+          "totals": {
+            "nearRetirementAssets": 1
+          }
+        }
+      }
+    },
+    "message": "Operation completed successfully."
+  },
+  "employeeDashboard": {
+    "success": true,
+    "data": {
+      "dateRange": {
+        "from": "2026-06-13T00:00:00.000Z",
+        "to": "2026-07-12T23:59:59.999Z"
+      },
+      "summary": {
+        "totalAssets": 4,
+        "available": 2,
+        "allocated": 1,
+        "maintenance": 1,
+        "lost": 0,
+        "activeAllocations": 1,
+        "pendingTransfers": 1,
+        "pendingBookings": 1,
+        "openMaintenance": 1,
+        "charts": {
+          "byStatus": {
+            "labels": [
+              "AVAILABLE",
+              "ALLOCATED",
+              "BOOKED",
+              "MAINTENANCE",
+              "RETIRED",
+              "LOST"
+            ],
+            "datasets": [
+              {
+                "label": "assets",
+                "data": [
+                  2,
+                  1,
+                  0,
+                  1,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "totals": {
+              "assets": 4
+            },
+            "percentages": {
+              "AVAILABLE": 50,
+              "ALLOCATED": 25,
+              "BOOKED": 0,
+              "MAINTENANCE": 25,
+              "RETIRED": 0,
+              "LOST": 0
+            }
+          },
+          "byCondition": {
+            "labels": [
+              "NEW",
+              "GOOD",
+              "FAIR",
+              "DAMAGED",
+              "UNUSABLE"
+            ],
+            "datasets": [
+              {
+                "label": "assets",
+                "data": [
+                  0,
+                  3,
+                  1,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "totals": {
+              "assets": 4
+            },
+            "percentages": {
+              "NEW": 0,
+              "GOOD": 75,
+              "FAIR": 25,
+              "DAMAGED": 0,
+              "UNUSABLE": 0
+            }
+          }
+        }
+      },
+      "charts": {
+        "utilizationByDepartment": {
+          "labels": [
+            "Finance",
+            "Information Technology",
+            "Operations"
+          ],
+          "datasets": [
+            {
+              "label": "Total Assets",
+              "data": [
+                1,
+                1,
+                2
+              ]
+            },
+            {
+              "label": "Allocated Assets",
+              "data": [
+                0,
+                1,
+                0
+              ]
+            },
+            {
+              "label": "Bookings",
+              "data": [
+                0,
+                0,
+                2
+              ]
+            }
+          ],
+          "totals": {
+            "totalAssets": 4,
+            "allocatedAssets": 1,
+            "bookings": 2
+          },
+          "percentages": {
+            "FIN": 0,
+            "IT": 100,
+            "OPS": 100
+          }
+        },
+        "bookingTrend": {
+          "labels": [
+            "2026-06-13",
+            "2026-06-14",
+            "2026-06-15",
+            "2026-06-16",
+            "2026-06-17",
+            "2026-06-18",
+            "2026-06-19",
+            "2026-06-20",
+            "2026-06-21",
+            "2026-06-22",
+            "2026-06-23",
+            "2026-06-24",
+            "2026-06-25",
+            "2026-06-26",
+            "2026-06-27",
+            "2026-06-28",
+            "2026-06-29",
+            "2026-06-30",
+            "2026-07-01",
+            "2026-07-02",
+            "2026-07-03",
+            "2026-07-04",
+            "2026-07-05",
+            "2026-07-06",
+            "2026-07-07",
+            "2026-07-08",
+            "2026-07-09",
+            "2026-07-10",
+            "2026-07-11",
+            "2026-07-12"
+          ],
+          "datasets": [
+            {
+              "label": "bookings",
+              "data": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                2
+              ]
+            }
+          ],
+          "totals": {
+            "bookings": 2
+          }
+        },
+        "maintenanceTrend": {
+          "labels": [
+            "2026-06-13",
+            "2026-06-14",
+            "2026-06-15",
+            "2026-06-16",
+            "2026-06-17",
+            "2026-06-18",
+            "2026-06-19",
+            "2026-06-20",
+            "2026-06-21",
+            "2026-06-22",
+            "2026-06-23",
+            "2026-06-24",
+            "2026-06-25",
+            "2026-06-26",
+            "2026-06-27",
+            "2026-06-28",
+            "2026-06-29",
+            "2026-06-30",
+            "2026-07-01",
+            "2026-07-02",
+            "2026-07-03",
+            "2026-07-04",
+            "2026-07-05",
+            "2026-07-06",
+            "2026-07-07",
+            "2026-07-08",
+            "2026-07-09",
+            "2026-07-10",
+            "2026-07-11",
+            "2026-07-12"
+          ],
+          "datasets": [
+            {
+              "label": "maintenance",
+              "data": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1
+              ]
+            }
+          ],
+          "totals": {
+            "maintenance": 1
+          }
+        },
+        "auditTrend": {
+          "labels": [
+            "2026-06-13",
+            "2026-06-14",
+            "2026-06-15",
+            "2026-06-16",
+            "2026-06-17",
+            "2026-06-18",
+            "2026-06-19",
+            "2026-06-20",
+            "2026-06-21",
+            "2026-06-22",
+            "2026-06-23",
+            "2026-06-24",
+            "2026-06-25",
+            "2026-06-26",
+            "2026-06-27",
+            "2026-06-28",
+            "2026-06-29",
+            "2026-06-30",
+            "2026-07-01",
+            "2026-07-02",
+            "2026-07-03",
+            "2026-07-04",
+            "2026-07-05",
+            "2026-07-06",
+            "2026-07-07",
+            "2026-07-08",
+            "2026-07-09",
+            "2026-07-10",
+            "2026-07-11",
+            "2026-07-12"
+          ],
+          "datasets": [
+            {
+              "label": "auditRecords",
+              "data": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1
+              ]
+            }
+          ],
+          "totals": {
+            "auditRecords": 1
+          }
+        },
+        "assetStatus": {
+          "labels": [
+            "AVAILABLE",
+            "ALLOCATED",
+            "BOOKED",
+            "MAINTENANCE",
+            "RETIRED",
+            "LOST"
+          ],
+          "datasets": [
+            {
+              "label": "assets",
+              "data": [
+                2,
+                1,
+                0,
+                1,
+                0,
+                0
+              ]
+            }
+          ],
+          "totals": {
+            "assets": 4
+          },
+          "percentages": {
+            "AVAILABLE": 50,
+            "ALLOCATED": 25,
+            "BOOKED": 0,
+            "MAINTENANCE": 25,
+            "RETIRED": 0,
+            "LOST": 0
+          }
+        },
+        "auditVerification": {
+          "labels": [
+            "VERIFIED",
+            "MISSING",
+            "DAMAGED",
+            "RETIRED",
+            "UNREACHABLE",
+            "MISPLACED",
+            "NEEDS_REVIEW"
+          ],
+          "datasets": [
+            {
+              "label": "assets",
+              "data": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            }
+          ],
+          "totals": {
+            "assets": 0
+          },
+          "percentages": {
+            "VERIFIED": 0,
+            "MISSING": 0,
+            "DAMAGED": 0,
+            "RETIRED": 0,
+            "UNREACHABLE": 0,
+            "MISPLACED": 0,
+            "NEEDS_REVIEW": 0
+          }
+        }
+      },
+      "idleAssets": [
+        {
+          "id": "463ee883-ccdf-4cbb-8e8a-c63a550c1f15",
+          "assetCode": "VEH-001",
+          "serialNumber": "SN-VEH-001",
+          "name": "Office Shuttle",
+          "status": "AVAILABLE",
+          "condition": "GOOD",
+          "location": "Parking Bay 4",
+          "purchaseDate": null,
+          "purchaseValue": null,
+          "warrantyExpiry": null,
+          "isBookable": true,
+          "categoryId": "7124c974-fc4d-498a-bd9b-bbd17a4b4818",
+          "departmentId": "56327c91-a118-42cc-bebe-a3dba4d10b47",
+          "createdAt": "2026-07-12T07:21:41.917Z",
+          "updatedAt": "2026-07-12T07:21:41.917Z",
+          "category": {
+            "id": "7124c974-fc4d-498a-bd9b-bbd17a4b4818",
+            "name": "Vehicle",
+            "code": "VEH"
+          },
+          "department": {
+            "id": "56327c91-a118-42cc-bebe-a3dba4d10b47",
+            "name": "Operations",
+            "code": "OPS",
+            "status": "ACTIVE"
+          },
+          "allocations": [],
+          "_count": {
+            "allocations": 0,
+            "bookings": 1,
+            "maintenanceTickets": 0,
+            "auditRecords": 0
+          },
+          "assetTag": "VEH-001",
+          "currentAllocation": null,
+          "idleDays": 0,
+          "activityCounts": {
+            "allocations": 0,
+            "bookings": 1,
+            "maintenanceTickets": 0,
+            "auditRecords": 0
+          }
+        }
+      ],
+      "frequentlyUsedAssets": [
+        {
+          "id": "463ee883-ccdf-4cbb-8e8a-c63a550c1f15",
+          "assetCode": "VEH-001",
+          "serialNumber": "SN-VEH-001",
+          "name": "Office Shuttle",
+          "status": "AVAILABLE",
+          "condition": "GOOD",
+          "location": "Parking Bay 4",
+          "purchaseDate": null,
+          "purchaseValue": null,
+          "warrantyExpiry": null,
+          "isBookable": true,
+          "categoryId": "7124c974-fc4d-498a-bd9b-bbd17a4b4818",
+          "departmentId": "56327c91-a118-42cc-bebe-a3dba4d10b47",
+          "createdAt": "2026-07-12T07:21:41.917Z",
+          "updatedAt": "2026-07-12T07:21:41.917Z",
+          "category": {
+            "id": "7124c974-fc4d-498a-bd9b-bbd17a4b4818",
+            "name": "Vehicle",
+            "code": "VEH"
+          },
+          "department": {
+            "id": "56327c91-a118-42cc-bebe-a3dba4d10b47",
+            "name": "Operations",
+            "code": "OPS",
+            "status": "ACTIVE"
+          },
+          "allocations": [],
+          "_count": {
+            "allocations": 0,
+            "bookings": 1,
+            "maintenanceTickets": 0
+          },
+          "assetTag": "VEH-001",
+          "currentAllocation": null,
+          "usage": {
+            "allocationCount": 0,
+            "bookingCount": 1,
+            "maintenanceCount": 0,
+            "totalUsage": 1
+          }
+        },
+        {
+          "id": "909b4a1a-7176-4de3-87f2-8aa1d02d1f7e",
+          "assetCode": "PROJ-001",
+          "serialNumber": "SN-PROJ-001",
+          "name": "Epson Conference Projector",
+          "status": "AVAILABLE",
+          "condition": "GOOD",
+          "location": "Conference Room A",
+          "purchaseDate": null,
+          "purchaseValue": null,
+          "warrantyExpiry": null,
+          "isBookable": true,
+          "categoryId": "40c17c95-6f5c-440f-9411-ebbb2b0a33e4",
+          "departmentId": "56327c91-a118-42cc-bebe-a3dba4d10b47",
+          "createdAt": "2026-07-12T07:21:41.917Z",
+          "updatedAt": "2026-07-12T07:21:41.917Z",
+          "category": {
+            "id": "40c17c95-6f5c-440f-9411-ebbb2b0a33e4",
+            "name": "Projector",
+            "code": "PROJ"
+          },
+          "department": {
+            "id": "56327c91-a118-42cc-bebe-a3dba4d10b47",
+            "name": "Operations",
+            "code": "OPS",
+            "status": "ACTIVE"
+          },
+          "allocations": [],
+          "_count": {
+            "allocations": 0,
+            "bookings": 1,
+            "maintenanceTickets": 0
+          },
+          "assetTag": "PROJ-001",
+          "currentAllocation": null,
+          "usage": {
+            "allocationCount": 0,
+            "bookingCount": 1,
+            "maintenanceCount": 0,
+            "totalUsage": 1
+          }
+        },
+        {
+          "id": "fda44151-bce2-41fc-b0ca-2ed52897f496",
+          "assetCode": "LAP-001",
+          "serialNumber": "SN-LAP-001",
+          "name": "Dell Latitude 5440",
+          "status": "ALLOCATED",
+          "condition": "GOOD",
+          "location": "IT Floor - Desk 12",
+          "purchaseDate": "2025-04-10T00:00:00.000Z",
+          "purchaseValue": "95000",
+          "warrantyExpiry": null,
+          "isBookable": false,
+          "categoryId": "8e34c440-526f-4845-976c-e15df1567f59",
+          "departmentId": "8e9bcd2a-2d82-423a-b250-5b833d2dffec",
+          "createdAt": "2026-07-12T07:21:41.915Z",
+          "updatedAt": "2026-07-12T07:21:41.915Z",
+          "category": {
+            "id": "8e34c440-526f-4845-976c-e15df1567f59",
+            "name": "Laptop",
+            "code": "LAP"
+          },
+          "department": {
+            "id": "8e9bcd2a-2d82-423a-b250-5b833d2dffec",
+            "name": "Information Technology",
+            "code": "IT",
+            "status": "ACTIVE"
+          },
+          "allocations": [
+            {
+              "id": "b7ac51a5-5c2f-4748-8329-4423b7d200c0",
+              "assetId": "fda44151-bce2-41fc-b0ca-2ed52897f496",
+              "userId": "d818abe7-92f9-4b6f-ac80-61dbcd8e4064",
+              "departmentId": null,
+              "assignedById": "4154dbc9-a401-4409-8d6b-cd407110e7fd",
+              "sourceTransferId": null,
+              "status": "ACTIVE",
+              "assignedAt": "2026-07-12T07:21:41.918Z",
+              "returnedAt": null,
+              "returnCondition": null,
+              "returnReason": null,
+              "notes": "Seed allocation for demo.",
+              "createdAt": "2026-07-12T07:21:41.918Z",
+              "updatedAt": "2026-07-12T07:21:41.918Z",
+              "user": {
+                "id": "d818abe7-92f9-4b6f-ac80-61dbcd8e4064",
+                "name": "Employee User",
+                "email": "employee@assetflow.local",
+                "role": "EMPLOYEE",
+                "departmentId": "8e9bcd2a-2d82-423a-b250-5b833d2dffec"
+              },
+              "department": null
+            }
+          ],
+          "_count": {
+            "allocations": 1,
+            "bookings": 0,
+            "maintenanceTickets": 0
+          },
+          "assetTag": "LAP-001",
+          "currentAllocation": {
+            "id": "b7ac51a5-5c2f-4748-8329-4423b7d200c0",
+            "assetId": "fda44151-bce2-41fc-b0ca-2ed52897f496",
+            "userId": "d818abe7-92f9-4b6f-ac80-61dbcd8e4064",
+            "departmentId": null,
+            "assignedById": "4154dbc9-a401-4409-8d6b-cd407110e7fd",
+            "sourceTransferId": null,
+            "status": "ACTIVE",
+            "assignedAt": "2026-07-12T07:21:41.918Z",
+            "returnedAt": null,
+            "returnCondition": null,
+            "returnReason": null,
+            "notes": "Seed allocation for demo.",
+            "createdAt": "2026-07-12T07:21:41.918Z",
+            "updatedAt": "2026-07-12T07:21:41.918Z",
+            "user": {
+              "id": "d818abe7-92f9-4b6f-ac80-61dbcd8e4064",
+              "name": "Employee User",
+              "email": "employee@assetflow.local",
+              "role": "EMPLOYEE",
+              "departmentId": "8e9bcd2a-2d82-423a-b250-5b833d2dffec"
+            },
+            "department": null
+          },
+          "usage": {
+            "allocationCount": 1,
+            "bookingCount": 0,
+            "maintenanceCount": 0,
+            "totalUsage": 1
+          }
+        },
+        {
+          "id": "ac18ef5c-7c1c-42e3-8620-5ab317ee3b5e",
+          "assetCode": "MON-001",
+          "serialNumber": "SN-MON-001",
+          "name": "Dell 27 Inch Monitor",
+          "status": "MAINTENANCE",
+          "condition": "FAIR",
+          "location": "Finance Bay",
+          "purchaseDate": null,
+          "purchaseValue": null,
+          "warrantyExpiry": null,
+          "isBookable": false,
+          "categoryId": "3869e240-1bec-48d4-8861-b3459cb75079",
+          "departmentId": "3946d184-f86d-4d60-8f6e-ae9fdb8d48e7",
+          "createdAt": "2026-07-12T07:21:41.917Z",
+          "updatedAt": "2026-07-12T07:21:41.917Z",
+          "category": {
+            "id": "3869e240-1bec-48d4-8861-b3459cb75079",
+            "name": "Monitor",
+            "code": "MON"
+          },
+          "department": {
+            "id": "3946d184-f86d-4d60-8f6e-ae9fdb8d48e7",
+            "name": "Finance",
+            "code": "FIN",
+            "status": "ACTIVE"
+          },
+          "allocations": [],
+          "_count": {
+            "allocations": 0,
+            "bookings": 0,
+            "maintenanceTickets": 1
+          },
+          "assetTag": "MON-001",
+          "currentAllocation": null,
+          "usage": {
+            "allocationCount": 0,
+            "bookingCount": 0,
+            "maintenanceCount": 1,
+            "totalUsage": 0
+          }
+        }
+      ],
+      "upcomingMaintenance": [],
+      "nearRetirement": [
+        {
+          "id": "ac18ef5c-7c1c-42e3-8620-5ab317ee3b5e",
+          "assetCode": "MON-001",
+          "serialNumber": "SN-MON-001",
+          "name": "Dell 27 Inch Monitor",
+          "status": "MAINTENANCE",
+          "condition": "FAIR",
+          "location": "Finance Bay",
+          "purchaseDate": null,
+          "purchaseValue": null,
+          "warrantyExpiry": null,
+          "isBookable": false,
+          "categoryId": "3869e240-1bec-48d4-8861-b3459cb75079",
+          "departmentId": "3946d184-f86d-4d60-8f6e-ae9fdb8d48e7",
+          "createdAt": "2026-07-12T07:21:41.917Z",
+          "updatedAt": "2026-07-12T07:21:41.917Z",
+          "category": {
+            "id": "3869e240-1bec-48d4-8861-b3459cb75079",
+            "name": "Monitor",
+            "code": "MON"
+          },
+          "department": {
+            "id": "3946d184-f86d-4d60-8f6e-ae9fdb8d48e7",
+            "name": "Finance",
+            "code": "FIN",
+            "status": "ACTIVE"
+          },
+          "allocations": [],
+          "assetTag": "MON-001",
+          "currentAllocation": null,
+          "riskScore": 55,
+          "reasons": [
+            "Condition is fair."
+          ]
+        }
+      ],
+      "auditSummary": {
+        "auditCount": 0,
+        "completionPercentage": 0,
+        "discrepanciesFound": 0
+      }
+    },
+    "message": "Operation completed successfully."
+  },
+  "jsonExport": {
+    "success": true,
+    "data": {
+      "format": "json",
+      "type": "assets",
+      "fileName": "assetflow-assets.json",
+      "contentType": "application/json",
+      "data": {
+        "items": [
+          {
+            "id": "e3b83512-cdd8-4d11-bff9-90c085df901c",
+            "assetCode": "FUR-001",
+            "serialNumber": "SN-FUR-001",
+            "name": "Ergonomic Chair",
+            "status": "AVAILABLE",
+            "condition": "GOOD",
+            "location": "Storage Room",
+            "purchaseDate": null,
+            "purchaseValue": null,
+            "warrantyExpiry": null,
+            "isBookable": false,
+            "categoryId": "4a55d10a-e5fd-4ea4-8208-acd119044f17",
+            "departmentId": "56327c91-a118-42cc-bebe-a3dba4d10b47",
+            "createdAt": "2026-07-12T07:21:41.918Z",
+            "updatedAt": "2026-07-12T07:21:41.918Z",
+            "category": {
+              "id": "4a55d10a-e5fd-4ea4-8208-acd119044f17",
+              "name": "Furniture",
+              "code": "FUR"
+            },
+            "department": {
+              "id": "56327c91-a118-42cc-bebe-a3dba4d10b47",
+              "name": "Operations",
+              "code": "OPS",
+              "status": "ACTIVE"
+            },
+            "allocations": [],
+            "assetTag": "FUR-001",
+            "currentAllocation": null
+          },
+          {
+            "id": "909b4a1a-7176-4de3-87f2-8aa1d02d1f7e",
+            "assetCode": "PROJ-001",
+            "serialNumber": "SN-PROJ-001",
+            "name": "Epson Conference Projector",
+            "status": "AVAILABLE",
+            "condition": "GOOD",
+            "location": "Conference Room A",
+            "purchaseDate": null,
+            "purchaseValue": null,
+            "warrantyExpiry": null,
+            "isBookable": true,
+            "categoryId": "40c17c95-6f5c-440f-9411-ebbb2b0a33e4",
+            "departmentId": "56327c91-a118-42cc-bebe-a3dba4d10b47",
+            "createdAt": "2026-07-12T07:21:41.917Z",
+            "updatedAt": "2026-07-12T07:21:41.917Z",
+            "category": {
+              "id": "40c17c95-6f5c-440f-9411-ebbb2b0a33e4",
+              "name": "Projector",
+              "code": "PROJ"
+            },
+            "department": {
+              "id": "56327c91-a118-42cc-bebe-a3dba4d10b47",
+              "name": "Operations",
+              "code": "OPS",
+              "status": "ACTIVE"
+            },
+            "allocations": [],
+            "assetTag": "PROJ-001",
+            "currentAllocation": null
+          },
+          {
+            "id": "463ee883-ccdf-4cbb-8e8a-c63a550c1f15",
+            "assetCode": "VEH-001",
+            "serialNumber": "SN-VEH-001",
+            "name": "Office Shuttle",
+            "status": "AVAILABLE",
+            "condition": "GOOD",
+            "location": "Parking Bay 4",
+            "purchaseDate": null,
+            "purchaseValue": null,
+            "warrantyExpiry": null,
+            "isBookable": true,
+            "categoryId": "7124c974-fc4d-498a-bd9b-bbd17a4b4818",
+            "departmentId": "56327c91-a118-42cc-bebe-a3dba4d10b47",
+            "createdAt": "2026-07-12T07:21:41.917Z",
+            "updatedAt": "2026-07-12T07:21:41.917Z",
+            "category": {
+              "id": "7124c974-fc4d-498a-bd9b-bbd17a4b4818",
+              "name": "Vehicle",
+              "code": "VEH"
+            },
+            "department": {
+              "id": "56327c91-a118-42cc-bebe-a3dba4d10b47",
+              "name": "Operations",
+              "code": "OPS",
+              "status": "ACTIVE"
+            },
+            "allocations": [],
+            "assetTag": "VEH-001",
+            "currentAllocation": null
+          },
+          {
+            "id": "ac18ef5c-7c1c-42e3-8620-5ab317ee3b5e",
+            "assetCode": "MON-001",
+            "serialNumber": "SN-MON-001",
+            "name": "Dell 27 Inch Monitor",
+            "status": "MAINTENANCE",
+            "condition": "FAIR",
+            "location": "Finance Bay",
+            "purchaseDate": null,
+            "purchaseValue": null,
+            "warrantyExpiry": null,
+            "isBookable": false,
+            "categoryId": "3869e240-1bec-48d4-8861-b3459cb75079",
+            "departmentId": "3946d184-f86d-4d60-8f6e-ae9fdb8d48e7",
+            "createdAt": "2026-07-12T07:21:41.917Z",
+            "updatedAt": "2026-07-12T07:21:41.917Z",
+            "category": {
+              "id": "3869e240-1bec-48d4-8861-b3459cb75079",
+              "name": "Monitor",
+              "code": "MON"
+            },
+            "department": {
+              "id": "3946d184-f86d-4d60-8f6e-ae9fdb8d48e7",
+              "name": "Finance",
+              "code": "FIN",
+              "status": "ACTIVE"
+            },
+            "allocations": [],
+            "assetTag": "MON-001",
+            "currentAllocation": null
+          },
+          {
+            "id": "730bf51c-16e3-4323-a210-fe656cf36c83",
+            "assetCode": "LAP-002",
+            "serialNumber": "SN-LAP-002",
+            "name": "MacBook Air M3",
+            "status": "AVAILABLE",
+            "condition": "NEW",
+            "location": "IT Store",
+            "purchaseDate": null,
+            "purchaseValue": null,
+            "warrantyExpiry": null,
+            "isBookable": false,
+            "categoryId": "8e34c440-526f-4845-976c-e15df1567f59",
+            "departmentId": "8e9bcd2a-2d82-423a-b250-5b833d2dffec",
+            "createdAt": "2026-07-12T07:21:41.916Z",
+            "updatedAt": "2026-07-12T07:21:41.916Z",
+            "category": {
+              "id": "8e34c440-526f-4845-976c-e15df1567f59",
+              "name": "Laptop",
+              "code": "LAP"
+            },
+            "department": {
+              "id": "8e9bcd2a-2d82-423a-b250-5b833d2dffec",
+              "name": "Information Technology",
+              "code": "IT",
+              "status": "ACTIVE"
+            },
+            "allocations": [],
+            "assetTag": "LAP-002",
+            "currentAllocation": null
+          },
+          {
+            "id": "fda44151-bce2-41fc-b0ca-2ed52897f496",
+            "assetCode": "LAP-001",
+            "serialNumber": "SN-LAP-001",
+            "name": "Dell Latitude 5440",
+            "status": "ALLOCATED",
+            "condition": "GOOD",
+            "location": "IT Floor - Desk 12",
+            "purchaseDate": "2025-04-10T00:00:00.000Z",
+            "purchaseValue": "95000",
+            "warrantyExpiry": null,
+            "isBookable": false,
+            "categoryId": "8e34c440-526f-4845-976c-e15df1567f59",
+            "departmentId": "8e9bcd2a-2d82-423a-b250-5b833d2dffec",
+            "createdAt": "2026-07-12T07:21:41.915Z",
+            "updatedAt": "2026-07-12T07:21:41.915Z",
+            "category": {
+              "id": "8e34c440-526f-4845-976c-e15df1567f59",
+              "name": "Laptop",
+              "code": "LAP"
+            },
+            "department": {
+              "id": "8e9bcd2a-2d82-423a-b250-5b833d2dffec",
+              "name": "Information Technology",
+              "code": "IT",
+              "status": "ACTIVE"
+            },
+            "allocations": [
+              {
+                "id": "b7ac51a5-5c2f-4748-8329-4423b7d200c0",
+                "assetId": "fda44151-bce2-41fc-b0ca-2ed52897f496",
+                "userId": "d818abe7-92f9-4b6f-ac80-61dbcd8e4064",
+                "departmentId": null,
+                "assignedById": "4154dbc9-a401-4409-8d6b-cd407110e7fd",
+                "sourceTransferId": null,
+                "status": "ACTIVE",
+                "assignedAt": "2026-07-12T07:21:41.918Z",
+                "returnedAt": null,
+                "returnCondition": null,
+                "returnReason": null,
+                "notes": "Seed allocation for demo.",
+                "createdAt": "2026-07-12T07:21:41.918Z",
+                "updatedAt": "2026-07-12T07:21:41.918Z",
+                "user": {
+                  "id": "d818abe7-92f9-4b6f-ac80-61dbcd8e4064",
+                  "name": "Employee User",
+                  "email": "employee@assetflow.local",
+                  "role": "EMPLOYEE",
+                  "departmentId": "8e9bcd2a-2d82-423a-b250-5b833d2dffec"
+                },
+                "department": null
+              }
+            ],
+            "assetTag": "LAP-001",
+            "currentAllocation": {
+              "id": "b7ac51a5-5c2f-4748-8329-4423b7d200c0",
+              "assetId": "fda44151-bce2-41fc-b0ca-2ed52897f496",
+              "userId": "d818abe7-92f9-4b6f-ac80-61dbcd8e4064",
+              "departmentId": null,
+              "assignedById": "4154dbc9-a401-4409-8d6b-cd407110e7fd",
+              "sourceTransferId": null,
+              "status": "ACTIVE",
+              "assignedAt": "2026-07-12T07:21:41.918Z",
+              "returnedAt": null,
+              "returnCondition": null,
+              "returnReason": null,
+              "notes": "Seed allocation for demo.",
+              "createdAt": "2026-07-12T07:21:41.918Z",
+              "updatedAt": "2026-07-12T07:21:41.918Z",
+              "user": {
+                "id": "d818abe7-92f9-4b6f-ac80-61dbcd8e4064",
+                "name": "Employee User",
+                "email": "employee@assetflow.local",
+                "role": "EMPLOYEE",
+                "departmentId": "8e9bcd2a-2d82-423a-b250-5b833d2dffec"
+              },
+              "department": null
+            }
+          }
+        ],
+        "page": 1,
+        "limit": 20,
+        "total": 6,
+        "totalPages": 1,
+        "totals": {
+          "totalAssets": 6
+        },
+        "charts": {
+          "status": {
+            "labels": [
+              "AVAILABLE",
+              "ALLOCATED",
+              "BOOKED",
+              "MAINTENANCE",
+              "RETIRED",
+              "LOST"
+            ],
+            "datasets": [
+              {
+                "label": "assets",
+                "data": [
+                  4,
+                  1,
+                  0,
+                  1,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "totals": {
+              "assets": 6
+            },
+            "percentages": {
+              "AVAILABLE": 66.67,
+              "ALLOCATED": 16.67,
+              "BOOKED": 0,
+              "MAINTENANCE": 16.67,
+              "RETIRED": 0,
+              "LOST": 0
+            }
+          },
+          "condition": {
+            "labels": [
+              "NEW",
+              "GOOD",
+              "FAIR",
+              "DAMAGED",
+              "UNUSABLE"
+            ],
+            "datasets": [
+              {
+                "label": "assets",
+                "data": [
+                  1,
+                  4,
+                  1,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "totals": {
+              "assets": 6
+            },
+            "percentages": {
+              "NEW": 16.67,
+              "GOOD": 66.67,
+              "FAIR": 16.67,
+              "DAMAGED": 0,
+              "UNUSABLE": 0
+            }
+          },
+          "category": {
+            "labels": [
+              "Monitor",
+              "Projector",
+              "Vehicle",
+              "Laptop",
+              "Furniture"
+            ],
+            "datasets": [
+              {
+                "label": "assets",
+                "data": [
+                  1,
+                  1,
+                  1,
+                  2,
+                  1
+                ]
+              }
+            ],
+            "totals": {
+              "assets": 6
+            },
+            "percentages": {
+              "Monitor": 16.67,
+              "Projector": 16.67,
+              "Vehicle": 16.67,
+              "Laptop": 33.33,
+              "Furniture": 16.67
+            }
+          }
+        }
+      }
+    },
+    "message": "Operation completed successfully."
+  },
+  "csvExport": {
+    "status": 200,
+    "contentType": "text/csv; charset=utf-8",
+    "preview": "id,assetCode,serialNumber,name,status,condition,location,purchaseDate,purchaseValue,warrantyExpiry,isBookable,categoryId,departmentId,createdAt,updatedAt,category.id,category.name,category.code,department.id,department.name,department.code,department.status,allocations,assetTag,currentAllocation,purchaseValue.constructor,purchaseValue.s,purchaseValue.e,purchaseValue.d,currentAllocation.id,currentAllocation.assetId,currentAllocation.userId,currentAllocation.departmentId,currentAllocation.assigned"
+  },
+  "pdfExport": {
+    "success": true,
+    "data": {
+      "format": "pdf",
+      "type": "dashboard",
+      "fileName": "assetflow-dashboard.pdf",
+      "contentType": "application/json",
+      "data": {
+        "status": "PDF_INTERFACE_READY",
+        "message": "PDF export is reserved for a future renderer. Use CSV or JSON exports for the current hackathon backend."
+      }
+    },
+    "message": "Operation completed successfully."
+  }
+}
