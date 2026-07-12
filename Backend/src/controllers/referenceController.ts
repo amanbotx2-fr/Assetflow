@@ -6,12 +6,20 @@ export const listUsers = asyncHandler(async (req, res) => {
   sendSuccess(res, await referenceService.listUsers(req.query, req.user!));
 });
 
+export const getUser = asyncHandler(async (req, res) => {
+  sendSuccess(res, await referenceService.getUser(String(req.params.id), req.user!));
+});
+
 export const createUser = asyncHandler(async (req, res) => {
   sendCreated(res, await referenceService.createUser(req.body, req.user!.id));
 });
 
 export const updateUser = asyncHandler(async (req, res) => {
   sendSuccess(res, await referenceService.updateUser(String(req.params.id), req.body, req.user!.id));
+});
+
+export const deleteUser = asyncHandler(async (req, res) => {
+  sendSuccess(res, await referenceService.deleteUser(String(req.params.id), req.user!.id));
 });
 
 export const listDepartments = asyncHandler(async (req, res) => {

@@ -1,13 +1,13 @@
 # Organization QA Report
 
-Generated: 2026-07-12T07:49:54.515Z
+Generated: 2026-07-12T08:26:58.885Z
 
 ## Summary
 
 | Metric | Value |
 | --- | ---: |
-| Checks | 43 |
-| Passed | 43 |
+| Checks | 49 |
+| Passed | 49 |
 | Failed | 0 |
 
 ## Endpoints Covered
@@ -22,8 +22,10 @@ Generated: 2026-07-12T07:49:54.515Z
 - `PATCH /api/categories/:id`
 - `DELETE /api/categories/:id`
 - `GET /api/users`
+- `GET /api/users/:id`
 - `POST /api/users`
 - `PATCH /api/users/:id`
+- `DELETE /api/users/:id`
 
 ## Checks Performed
 
@@ -66,47 +68,53 @@ Generated: 2026-07-12T07:49:54.515Z
 | GET /api/users?role=EMPLOYEE&departmentId=<department> | Admin can filter employees by role and department | 200 | 200 | PASS | None observed. |
 | GET /api/users | Manager has read-only scoped employee access | 200 | 200 | PASS | None observed. |
 | POST /api/users | Admin can create employee | 201 | 201 | PASS | None observed. |
+| GET /api/users/:id | Admin can read employee detail | 200 | 200 | PASS | None observed. |
+| GET /api/users/:id | Manager cannot read employee outside own department | 403 | 403 | PASS | None observed. |
+| GET /api/users/:id | Invalid employee detail UUID is rejected | 400 | 400 | PASS | None observed. |
 | POST /api/users | Duplicate employee email is rejected | 409 | 409 | PASS | None observed. |
 | POST /api/users | Invalid employee email is rejected | 400 | 400 | PASS | None observed. |
 | POST /api/users | Manager cannot create employee | 403 | 403 | PASS | None observed. |
 | PATCH /api/users/:id | Admin can update employee department, role, and status | 200 | 200 | PASS | None observed. |
 | PATCH /api/users/:id | Invalid employee department assignment is rejected | 404 | 404 | PASS | None observed. |
 | PATCH /api/users/:id | Missing employee update returns not found | 404 | 404 | PASS | None observed. |
+| DELETE /api/users/:id | Admin cannot deactivate own account | 409 | 409 | PASS | None observed. |
+| DELETE /api/users/:id | Admin can deactivate employee | 200 | 200 | PASS | None observed. |
+| DELETE /api/users/:id | Missing employee deactivate returns not found | 404 | 404 | PASS | None observed. |
 
 ## Performance Observations
 
 | Request | Status | Duration |
 | --- | ---: | ---: |
-| PATCH /api/departments/00000000-0000-0000-0000-000000000000 | 404 | 3 ms |
-| PATCH /api/departments/not-a-uuid | 400 | 2 ms |
-| DELETE /api/departments/8441f819-ab35-4240-a07a-f182b7f95665 | 200 | 3 ms |
-| GET /api/categories | 401 | 1 ms |
-| GET /api/categories | 403 | 2 ms |
-| GET /api/categories?page=1&limit=2&search=lap&status=ACTIVE | 200 | 2 ms |
-| GET /api/categories | 200 | 3 ms |
+| GET /api/categories | 200 | 2 ms |
 | POST /api/categories | 201 | 3 ms |
-| POST /api/categories | 409 | 3 ms |
+| POST /api/categories | 409 | 2 ms |
 | POST /api/categories | 400 | 2 ms |
-| PATCH /api/categories/1a9b7f11-7a8d-43bc-bf21-dc0c4eae8feb | 200 | 3 ms |
+| PATCH /api/categories/8e1721af-c5b4-47d1-8c2c-f5602b70b000 | 200 | 3 ms |
 | PATCH /api/categories/00000000-0000-0000-0000-000000000000 | 404 | 2 ms |
 | PATCH /api/categories/not-a-uuid | 400 | 2 ms |
-| DELETE /api/categories/1a9b7f11-7a8d-43bc-bf21-dc0c4eae8feb | 200 | 2 ms |
-| POST /api/categories | 403 | 2 ms |
+| DELETE /api/categories/8e1721af-c5b4-47d1-8c2c-f5602b70b000 | 200 | 2 ms |
+| POST /api/categories | 403 | 1 ms |
 | GET /api/users | 401 | 2 ms |
 | GET /api/users | 403 | 2 ms |
-| GET /api/users?role=EMPLOYEE&departmentId=8a990a8a-0de3-4c61-ae22-4650c3aaf7ee | 200 | 2 ms |
+| GET /api/users?role=EMPLOYEE&departmentId=99ba8770-8cdd-4bfa-b37e-f5d8da46b3ae | 200 | 3 ms |
 | GET /api/users | 200 | 2 ms |
-| POST /api/users | 201 | 49 ms |
-| POST /api/users | 409 | 44 ms |
+| POST /api/users | 201 | 46 ms |
+| GET /api/users/9fbd7385-7915-4aa3-9f4c-fa6242250316 | 200 | 2 ms |
+| GET /api/users/9fbd7385-7915-4aa3-9f4c-fa6242250316 | 403 | 2 ms |
+| GET /api/users/not-a-uuid | 400 | 2 ms |
+| POST /api/users | 409 | 46 ms |
 | POST /api/users | 400 | 2 ms |
 | POST /api/users | 403 | 2 ms |
-| PATCH /api/users/290a7751-8b75-412a-ab12-af69e508cc23 | 200 | 4 ms |
-| PATCH /api/users/290a7751-8b75-412a-ab12-af69e508cc23 | 404 | 2 ms |
-| PATCH /api/users/00000000-0000-0000-0000-000000000000 | 404 | 3 ms |
-| GET /api/organization/overview | 200 | 4 ms |
-| GET /api/departments?page=1&limit=5 | 200 | 4 ms |
-| GET /api/categories?page=1&limit=5 | 200 | 4 ms |
-| GET /api/users?role=EMPLOYEE&page=1&limit=5 | 200 | 5 ms |
+| PATCH /api/users/9fbd7385-7915-4aa3-9f4c-fa6242250316 | 200 | 4 ms |
+| PATCH /api/users/9fbd7385-7915-4aa3-9f4c-fa6242250316 | 404 | 2 ms |
+| PATCH /api/users/00000000-0000-0000-0000-000000000000 | 404 | 2 ms |
+| DELETE /api/users/99a94f83-9719-4eda-ba33-a7bf36965eaa | 409 | 2 ms |
+| DELETE /api/users/9fbd7385-7915-4aa3-9f4c-fa6242250316 | 200 | 3 ms |
+| DELETE /api/users/00000000-0000-0000-0000-000000000000 | 404 | 2 ms |
+| GET /api/organization/overview | 200 | 5 ms |
+| GET /api/departments?page=1&limit=5 | 200 | 6 ms |
+| GET /api/categories?page=1&limit=5 | 200 | 6 ms |
+| GET /api/users?role=EMPLOYEE&page=1&limit=5 | 200 | 6 ms |
 
 Local QA response times were within demo expectations. List endpoints use bounded pagination, and the organization overview performs aggregate counts in parallel.
 

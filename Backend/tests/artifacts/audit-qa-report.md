@@ -1,6 +1,6 @@
 # Audit QA Report
 
-Generated: 2026-07-12T07:50:53.753Z
+Generated: 2026-07-12T08:28:51.815Z
 
 ## Summary
 
@@ -68,40 +68,40 @@ Generated: 2026-07-12T07:50:53.753Z
 | --- | ---: | ---: |
 | GET /api/audits | 401 | 2 ms |
 | GET /api/audits | 200 | 3 ms |
-| POST /api/audits | 201 | 9 ms |
-| GET /api/audits/dfa0c1b5-a2c3-45d1-ac53-7819016987bf | 200 | 4 ms |
-| GET /api/audits/dfa0c1b5-a2c3-45d1-ac53-7819016987bf | 200 | 5 ms |
-| GET /api/audits/00000000-0000-0000-0000-000000000000 | 404 | 3 ms |
+| POST /api/audits | 201 | 10 ms |
+| GET /api/audits/f92c884d-09dd-4c84-9f8b-b5dced419ace | 200 | 4 ms |
+| GET /api/audits/f92c884d-09dd-4c84-9f8b-b5dced419ace | 200 | 3 ms |
+| GET /api/audits/00000000-0000-0000-0000-000000000000 | 404 | 2 ms |
 | GET /api/audits/not-a-uuid | 400 | 2 ms |
-| PATCH /api/audits/dfa0c1b5-a2c3-45d1-ac53-7819016987bf | 200 | 6 ms |
-| POST /api/audits/dfa0c1b5-a2c3-45d1-ac53-7819016987bf/complete | 409 | 4 ms |
-| POST /api/audits/dfa0c1b5-a2c3-45d1-ac53-7819016987bf/start | 200 | 6 ms |
-| POST /api/audits/dfa0c1b5-a2c3-45d1-ac53-7819016987bf/start | 409 | 3 ms |
-| POST /api/audits/dfa0c1b5-a2c3-45d1-ac53-7819016987bf/verify | 409 | 4 ms |
-| POST /api/audits/dfa0c1b5-a2c3-45d1-ac53-7819016987bf/verify | 200 | 6 ms |
-| POST /api/audits/dfa0c1b5-a2c3-45d1-ac53-7819016987bf/verify | 409 | 3 ms |
-| POST /api/audits/dfa0c1b5-a2c3-45d1-ac53-7819016987bf/complete | 409 | 3 ms |
-| POST /api/audits/dfa0c1b5-a2c3-45d1-ac53-7819016987bf/verify | 200 | 8 ms |
-| POST /api/audits/dfa0c1b5-a2c3-45d1-ac53-7819016987bf/verify | 200 | 8 ms |
-| GET /api/audits/dfa0c1b5-a2c3-45d1-ac53-7819016987bf/discrepancies | 200 | 6 ms |
-| POST /api/audits/dfa0c1b5-a2c3-45d1-ac53-7819016987bf/complete | 200 | 8 ms |
-| POST /api/audits/dfa0c1b5-a2c3-45d1-ac53-7819016987bf/close | 200 | 7 ms |
-| PATCH /api/audits/dfa0c1b5-a2c3-45d1-ac53-7819016987bf | 409 | 4 ms |
+| PATCH /api/audits/f92c884d-09dd-4c84-9f8b-b5dced419ace | 200 | 6 ms |
+| POST /api/audits/f92c884d-09dd-4c84-9f8b-b5dced419ace/complete | 409 | 3 ms |
+| POST /api/audits/f92c884d-09dd-4c84-9f8b-b5dced419ace/start | 200 | 6 ms |
+| POST /api/audits/f92c884d-09dd-4c84-9f8b-b5dced419ace/start | 409 | 3 ms |
+| POST /api/audits/f92c884d-09dd-4c84-9f8b-b5dced419ace/verify | 409 | 3 ms |
+| POST /api/audits/f92c884d-09dd-4c84-9f8b-b5dced419ace/verify | 200 | 6 ms |
+| POST /api/audits/f92c884d-09dd-4c84-9f8b-b5dced419ace/verify | 409 | 3 ms |
+| POST /api/audits/f92c884d-09dd-4c84-9f8b-b5dced419ace/complete | 409 | 3 ms |
+| POST /api/audits/f92c884d-09dd-4c84-9f8b-b5dced419ace/verify | 200 | 9 ms |
+| POST /api/audits/f92c884d-09dd-4c84-9f8b-b5dced419ace/verify | 200 | 7 ms |
+| GET /api/audits/f92c884d-09dd-4c84-9f8b-b5dced419ace/discrepancies | 200 | 7 ms |
+| POST /api/audits/f92c884d-09dd-4c84-9f8b-b5dced419ace/complete | 200 | 10 ms |
+| POST /api/audits/f92c884d-09dd-4c84-9f8b-b5dced419ace/close | 200 | 8 ms |
+| PATCH /api/audits/f92c884d-09dd-4c84-9f8b-b5dced419ace | 409 | 4 ms |
 | POST /api/audits | 201 | 6 ms |
-| DELETE /api/audits/6f8344c5-f57f-4ccd-85ac-0e01306a0da3 | 200 | 4 ms |
+| DELETE /api/audits/5926a7ab-99d9-4826-8587-8b7983b2afc7 | 200 | 4 ms |
 | POST /api/audits | 201 | 5 ms |
-| POST /api/audits/922a3378-ff05-432e-96fa-5f1c025ea229/start | 200 | 5 ms |
-| DELETE /api/audits/922a3378-ff05-432e-96fa-5f1c025ea229 | 409 | 3 ms |
+| POST /api/audits/a66f81a5-a2d6-4fc6-a9aa-0f9eccddb449/start | 200 | 5 ms |
+| DELETE /api/audits/a66f81a5-a2d6-4fc6-a9aa-0f9eccddb449 | 409 | 3 ms |
 | POST /api/audits | 201 | 5 ms |
-| POST /api/audits/affcfa2d-6857-45e7-9f80-bad7071293eb/start | 403 | 2 ms |
-| GET /api/audits/affcfa2d-6857-45e7-9f80-bad7071293eb | 403 | 3 ms |
+| POST /api/audits/e6809f70-6bbb-4562-a9a2-496a6115121b/start | 403 | 3 ms |
+| GET /api/audits/e6809f70-6bbb-4562-a9a2-496a6115121b | 403 | 3 ms |
 | POST /api/audits | 201 | 4 ms |
 | GET /api/audits?status=CLOSED&page=1&limit=5 | 200 | 4 ms |
-| GET /api/reports/audits | 200 | 4 ms |
+| GET /api/reports/audits | 200 | 5 ms |
 | GET /api/dashboard/overview | 200 | 5 ms |
 | GET /api/audits?page=1&limit=5 | 200 | 5 ms |
-| GET /api/audits/affcfa2d-6857-45e7-9f80-bad7071293eb | 200 | 4 ms |
-| GET /api/audits/affcfa2d-6857-45e7-9f80-bad7071293eb/discrepancies | 200 | 4 ms |
+| GET /api/audits/e6809f70-6bbb-4562-a9a2-496a6115121b | 200 | 4 ms |
+| GET /api/audits/e6809f70-6bbb-4562-a9a2-496a6115121b/discrepancies | 200 | 4 ms |
 | GET /api/dashboard/overview | 200 | 5 ms |
 | GET /api/reports/audits | 200 | 7 ms |
 

@@ -1,6 +1,6 @@
 # Settings QA Report
 
-Generated: 2026-07-12T07:51:29.688Z
+Generated: 2026-07-12T08:29:28.592Z
 
 ## Summary
 
@@ -61,29 +61,29 @@ Generated: 2026-07-12T07:51:29.688Z
 | Request | Status | Duration |
 | --- | ---: | ---: |
 | GET /api/settings/profile | 401 | 2 ms |
-| GET /api/settings/company | 200 | 2 ms |
+| GET /api/settings/company | 200 | 3 ms |
 | GET /api/settings/company | 403 | 2 ms |
 | PATCH /api/settings/company | 200 | 3 ms |
 | PATCH /api/settings/company | 403 | 2 ms |
 | PATCH /api/settings/company | 400 | 2 ms |
-| GET /api/settings/profile | 200 | 1 ms |
-| PATCH /api/settings/profile | 200 | 3 ms |
+| GET /api/settings/profile | 200 | 3 ms |
+| PATCH /api/settings/profile | 200 | 2 ms |
 | PATCH /api/settings/profile | 400 | 2 ms |
 | GET /api/settings/roles | 200 | 2 ms |
 | GET /api/settings/roles | 403 | 2 ms |
-| GET /api/settings/permissions | 200 | 2 ms |
+| GET /api/settings/permissions | 200 | 1 ms |
 | GET /api/settings/asset-configuration | 200 | 2 ms |
 | PATCH /api/settings/asset-configuration | 200 | 3 ms |
 | PATCH /api/settings/asset-configuration | 400 | 2 ms |
 | GET /api/settings/booking-policies | 200 | 2 ms |
-| PATCH /api/settings/booking-policies | 200 | 1 ms |
+| PATCH /api/settings/booking-policies | 200 | 3 ms |
 | PATCH /api/settings/booking-policies | 400 | 2 ms |
 | GET /api/settings/maintenance-policies | 200 | 2 ms |
 | PATCH /api/settings/maintenance-policies | 200 | 3 ms |
 | PATCH /api/settings/maintenance-policies | 404 | 2 ms |
 | PATCH /api/settings/maintenance-policies | 409 | 2 ms |
-| PATCH /api/settings/maintenance-policies | 403 | 1 ms |
-| GET /api/settings/does-not-exist | 404 | 2 ms |
+| PATCH /api/settings/maintenance-policies | 403 | 2 ms |
+| GET /api/settings/does-not-exist | 404 | 1 ms |
 | GET /api/dashboard/overview | 200 | 6 ms |
 
 ## Business Rules Verified

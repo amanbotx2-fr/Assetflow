@@ -2,7 +2,7 @@ import { Prisma, RecordStatus, Role } from "@prisma/client";
 import { prisma } from "../config/prisma.js";
 import { getPagination, paginated } from "../utils/pagination.js";
 import { hashPassword } from "../utils/password.js";
-import { badRequest, forbidden, notFound } from "../utils/httpError.js";
+import { badRequest, conflict, forbidden, notFound } from "../utils/httpError.js";
 import { createAuditLog } from "../repositories/auditLogRepository.js";
 
 const basicUserSelect = {
@@ -146,6 +146,20 @@ export const listUsers = async (query: Record<string, unknown>, actor: Express.U
   return paginated(items, total, page, limit);
 };
 
+export const getUser = async (id: string, actor: Express.User) => {
+  const user = await prisma.user.findUnique({
+    where: { id },
+    select: userSelect
+  });
+
+  if (!user) throw notFound("Employee not found.");
+  if (actor.role === Role.MANAGER && user.departmentId !== actor.departmentId) {
+    throw forbidden("Managers can only access employees in their department.");
+  }
+
+  return user;
+};
+
 export const createUser = async (data: {
   name: string;
   email: string;
@@ -193,6 +207,28 @@ export const updateUser = async (id: string, data: Record<string, unknown>, acto
     entityId: updated.id,
     action: "updated",
     metadata: data
+  });
+
+  return updated;
+};
+
+export const deleteUser = async (id: string, actorId: string) => {
+  if (id === actorId) {
+    throw conflict("Administrators cannot deactivate their own account.");
+  }
+
+  const updated = await prisma.user.update({
+    where: { id },
+    data: { status: RecordStatus.INACTIVE },
+    select: userSelect
+  });
+
+  await createAuditLog({
+    actorId,
+    entityType: "User",
+    entityId: updated.id,
+    action: "soft_deleted",
+    metadata: { status: updated.status }
   });
 
   return updated;

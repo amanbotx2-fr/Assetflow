@@ -91,6 +91,7 @@ const getSeedContext = async () => {
 
   const users = await request("GET", "/api/users", { token: state.adminToken });
   const userItems = items(users.json);
+  state.adminId = userItems.find((user) => user.email === "admin@assetflow.local")?.id;
   state.employeeId = userItems.find((user) => user.email === "employee@assetflow.local")?.id;
   state.managerId = userItems.find((user) => user.email === "manager@assetflow.local")?.id;
 
@@ -138,8 +139,10 @@ Generated: ${new Date().toISOString()}
 - \`PATCH /api/categories/:id\`
 - \`DELETE /api/categories/:id\`
 - \`GET /api/users\`
+- \`GET /api/users/:id\`
 - \`POST /api/users\`
 - \`PATCH /api/users/:id\`
+- \`DELETE /api/users/:id\`
 
 ## Checks Performed
 
@@ -304,6 +307,15 @@ const runChecks = async () => {
   });
   expectStatus("POST", "/api/users", "Admin can create employee", 201, employee, noPasswordHash);
   state.createdEmployeeId = employee.json?.data?.id;
+  expectStatus("GET", "/api/users/:id", "Admin can read employee detail", 200, await request("GET", `/api/users/${state.createdEmployeeId}`, {
+    token: state.adminToken
+  }), noPasswordHash);
+  expectStatus("GET", "/api/users/:id", "Manager cannot read employee outside own department", 403, await request("GET", `/api/users/${state.createdEmployeeId}`, {
+    token: state.managerToken
+  }));
+  expectStatus("GET", "/api/users/:id", "Invalid employee detail UUID is rejected", 400, await request("GET", "/api/users/not-a-uuid", {
+    token: state.adminToken
+  }));
   expectStatus("POST", "/api/users", "Duplicate employee email is rejected", 409, await request("POST", "/api/users", {
     token: state.adminToken,
     body: {
@@ -332,6 +344,15 @@ const runChecks = async () => {
   expectStatus("PATCH", "/api/users/:id", "Missing employee update returns not found", 404, await request("PATCH", `/api/users/${zeroUuid}`, {
     token: state.adminToken,
     body: { status: "INACTIVE" }
+  }));
+  expectStatus("DELETE", "/api/users/:id", "Admin cannot deactivate own account", 409, await request("DELETE", `/api/users/${state.adminId}`, {
+    token: state.adminToken
+  }));
+  expectStatus("DELETE", "/api/users/:id", "Admin can deactivate employee", 200, await request("DELETE", `/api/users/${state.createdEmployeeId}`, {
+    token: state.adminToken
+  }), (payload) => payload?.data?.status === "INACTIVE" && noPasswordHash(payload));
+  expectStatus("DELETE", "/api/users/:id", "Missing employee deactivate returns not found", 404, await request("DELETE", `/api/users/${zeroUuid}`, {
+    token: state.adminToken
   }));
 };
 

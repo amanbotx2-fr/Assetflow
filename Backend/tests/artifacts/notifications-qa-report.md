@@ -1,6 +1,6 @@
 # Notifications QA Report
 
-Generated: 2026-07-12T07:51:17.668Z
+Generated: 2026-07-12T08:29:16.622Z
 
 ## Summary
 
@@ -60,21 +60,21 @@ Generated: 2026-07-12T07:51:17.668Z
 | GET /api/notifications?search=booking&limit=20 | 200 | 2 ms |
 | GET /api/notifications?status=unread&limit=20 | 200 | 2 ms |
 | GET /api/notifications?page=1&limit=1&sortBy=createdAt&sortOrder=desc | 200 | 2 ms |
-| GET /api/notifications/496535a8-1a3f-4cc4-a0cf-167f28d7066f | 200 | 2 ms |
+| GET /api/notifications/8e200232-e066-4250-a3aa-84dc3e245c0a | 200 | 2 ms |
 | GET /api/notifications/00000000-0000-0000-0000-000000000000 | 404 | 2 ms |
-| GET /api/notifications?type=APPROVAL&limit=20 | 200 | 3 ms |
+| GET /api/notifications?type=APPROVAL&limit=20 | 200 | 2 ms |
 | GET /api/notifications?limit=5 | 200 | 2 ms |
-| PATCH /api/notifications/496535a8-1a3f-4cc4-a0cf-167f28d7066f/read | 403 | 2 ms |
+| PATCH /api/notifications/8e200232-e066-4250-a3aa-84dc3e245c0a/read | 403 | 2 ms |
 | GET /api/notifications?type=ASSET&limit=20 | 200 | 2 ms |
 | GET /api/notifications/unread-count | 200 | 2 ms |
-| PATCH /api/notifications/496535a8-1a3f-4cc4-a0cf-167f28d7066f/read | 200 | 4 ms |
+| PATCH /api/notifications/8e200232-e066-4250-a3aa-84dc3e245c0a/read | 200 | 4 ms |
 | GET /api/notifications?status=read&limit=20 | 200 | 2 ms |
-| PATCH /api/notifications/read-all | 200 | 3 ms |
+| PATCH /api/notifications/read-all | 200 | 2 ms |
 | GET /api/notifications/unread-count | 200 | 2 ms |
-| DELETE /api/notifications/af29e860-8f0a-49d4-b5fe-749fc3fd3ad9 | 404 | 2 ms |
-| DELETE /api/notifications/496535a8-1a3f-4cc4-a0cf-167f28d7066f | 200 | 2 ms |
-| GET /api/notifications/496535a8-1a3f-4cc4-a0cf-167f28d7066f | 404 | 2 ms |
-| GET /api/dashboard/overview | 200 | 6 ms |
+| DELETE /api/notifications/32a30272-1255-4ca3-bd92-f95668b171aa | 404 | 2 ms |
+| DELETE /api/notifications/8e200232-e066-4250-a3aa-84dc3e245c0a | 200 | 2 ms |
+| GET /api/notifications/8e200232-e066-4250-a3aa-84dc3e245c0a | 404 | 2 ms |
+| GET /api/dashboard/overview | 200 | 7 ms |
 | GET /api/notifications?from=2026-01-01T00:00:00.000Z&to=2026-12-31T23:59:59.000Z | 200 | 3 ms |
 | GET /api/notifications?priority=BLOCKER | 400 | 2 ms |
 

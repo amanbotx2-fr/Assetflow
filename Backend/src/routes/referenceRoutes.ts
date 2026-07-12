@@ -21,7 +21,9 @@ export const categoryRoutes = Router();
 userRoutes.use(authenticate);
 userRoutes.get("/", validate({ query: paginationQuery }), requireRoles(Role.ADMIN, Role.MANAGER, Role.AUDITOR), referenceController.listUsers);
 userRoutes.post("/", requireRoles(Role.ADMIN), validate({ body: createUserSchema }), referenceController.createUser);
+userRoutes.get("/:id", requireRoles(Role.ADMIN, Role.MANAGER, Role.AUDITOR), validate({ params: idParams }), referenceController.getUser);
 userRoutes.patch("/:id", requireRoles(Role.ADMIN), validate({ params: idParams, body: updateUserSchema }), referenceController.updateUser);
+userRoutes.delete("/:id", requireRoles(Role.ADMIN), validate({ params: idParams }), referenceController.deleteUser);
 
 departmentRoutes.use(authenticate);
 departmentRoutes.get("/", requireRoles(Role.ADMIN, Role.MANAGER, Role.AUDITOR), validate({ query: paginationQuery }), referenceController.listDepartments);

@@ -4,11 +4,11 @@
     "data": {
       "items": [
         {
-          "id": "affcfa2d-6857-45e7-9f80-bad7071293eb",
+          "id": "e6809f70-6bbb-4562-a9a2-496a6115121b",
           "title": "Audit QA Ops",
           "description": null,
-          "departmentId": "05ce6f71-9f5f-458a-a4f3-886756c52ba2",
-          "createdById": "391dc348-c03f-4c01-9a40-e75e381ae644",
+          "departmentId": "bb0f6b3d-10fc-4149-9703-0556a8967a78",
+          "createdById": "5bf50489-ff93-42fd-8c66-29ced3c21a99",
           "assignedAuditorId": null,
           "status": "PLANNED",
           "plannedStart": null,
@@ -16,33 +16,33 @@
           "startedAt": null,
           "completedAt": null,
           "closedAt": null,
-          "createdAt": "2026-07-12T07:50:53.703Z",
-          "updatedAt": "2026-07-12T07:50:53.703Z",
+          "createdAt": "2026-07-12T08:28:51.764Z",
+          "updatedAt": "2026-07-12T08:28:51.764Z",
           "department": {
-            "id": "05ce6f71-9f5f-458a-a4f3-886756c52ba2",
+            "id": "bb0f6b3d-10fc-4149-9703-0556a8967a78",
             "name": "Operations",
             "code": "OPS",
             "status": "ACTIVE"
           },
           "createdBy": {
-            "id": "391dc348-c03f-4c01-9a40-e75e381ae644",
+            "id": "5bf50489-ff93-42fd-8c66-29ced3c21a99",
             "name": "Admin User",
             "email": "admin@assetflow.local",
             "role": "ADMIN",
-            "departmentId": "ef4782b9-f7aa-4e4b-9369-c4567f028e7b",
+            "departmentId": "3862b5c7-2f2b-484b-8dcb-80f308be4fd0",
             "status": "ACTIVE"
           },
           "assignedAuditor": null,
           "records": [
             {
-              "id": "0c43dd7d-8580-4995-af37-9e09b0f7412c",
-              "auditId": "affcfa2d-6857-45e7-9f80-bad7071293eb",
-              "assetId": "385d002d-2fc4-4cfa-88d6-e5173ec4609f",
+              "id": "3170080c-b53a-4b7d-9f79-17c4986f33ed",
+              "auditId": "e6809f70-6bbb-4562-a9a2-496a6115121b",
+              "assetId": "ac2194c9-aed6-4601-bdb1-ca3dd04e2a0d",
               "auditorId": null,
               "result": null,
               "remarks": null,
-              "expectedLocation": "Audit Room 1783842653540-OUTSIDE",
-              "expectedDepartmentId": "05ce6f71-9f5f-458a-a4f3-886756c52ba2",
+              "expectedLocation": "Audit Room 1783844931600-OUTSIDE",
+              "expectedDepartmentId": "bb0f6b3d-10fc-4149-9703-0556a8967a78",
               "expectedCondition": "GOOD",
               "expectedAllocationUserId": null,
               "locationVerified": null,
@@ -50,30 +50,30 @@
               "conditionVerified": null,
               "allocationUserVerifiedId": null,
               "verifiedAt": null,
-              "auditedAt": "2026-07-12T07:50:53.704Z",
-              "createdAt": "2026-07-12T07:50:53.704Z",
-              "updatedAt": "2026-07-12T07:50:53.704Z",
+              "auditedAt": "2026-07-12T08:28:51.764Z",
+              "createdAt": "2026-07-12T08:28:51.764Z",
+              "updatedAt": "2026-07-12T08:28:51.764Z",
               "asset": {
-                "id": "385d002d-2fc4-4cfa-88d6-e5173ec4609f",
-                "assetCode": "AUD-QA-1783842653540-OUTSIDE",
-                "serialNumber": "AUD-QA-SN-1783842653540-OUTSIDE",
-                "name": "Audit QA Asset 1783842653540-OUTSIDE",
+                "id": "ac2194c9-aed6-4601-bdb1-ca3dd04e2a0d",
+                "assetCode": "AUD-QA-1783844931600-OUTSIDE",
+                "serialNumber": "AUD-QA-SN-1783844931600-OUTSIDE",
+                "name": "Audit QA Asset 1783844931600-OUTSIDE",
                 "status": "AVAILABLE",
                 "condition": "GOOD",
-                "departmentId": "05ce6f71-9f5f-458a-a4f3-886756c52ba2",
-                "location": "Audit Room 1783842653540-OUTSIDE",
+                "departmentId": "bb0f6b3d-10fc-4149-9703-0556a8967a78",
+                "location": "Audit Room 1783844931600-OUTSIDE",
                 "department": {
-                  "id": "05ce6f71-9f5f-458a-a4f3-886756c52ba2",
+                  "id": "bb0f6b3d-10fc-4149-9703-0556a8967a78",
                   "name": "Operations",
                   "code": "OPS",
                   "status": "ACTIVE"
                 },
                 "allocations": [],
-                "assetTag": "AUD-QA-1783842653540-OUTSIDE"
+                "assetTag": "AUD-QA-1783844931600-OUTSIDE"
               },
               "auditor": null,
               "expectedDepartment": {
-                "id": "05ce6f71-9f5f-458a-a4f3-886756c52ba2",
+                "id": "bb0f6b3d-10fc-4149-9703-0556a8967a78",
                 "name": "Operations",
                 "code": "OPS",
                 "status": "ACTIVE"
@@ -92,45 +92,45 @@
           "completionPercentage": 0
         },
         {
-          "id": "922a3378-ff05-432e-96fa-5f1c025ea229",
+          "id": "a66f81a5-a2d6-4fc6-a9aa-0f9eccddb449",
           "title": "Audit QA Active Delete",
           "description": null,
-          "departmentId": "ef4782b9-f7aa-4e4b-9369-c4567f028e7b",
-          "createdById": "c2a8a8ce-fb84-450c-ba01-0aab4f830f8f",
+          "departmentId": "3862b5c7-2f2b-484b-8dcb-80f308be4fd0",
+          "createdById": "b29dd17e-6d13-44e7-8d49-78d2a852d807",
           "assignedAuditorId": null,
           "status": "ACTIVE",
           "plannedStart": null,
           "plannedEnd": null,
-          "startedAt": "2026-07-12T07:50:53.695Z",
+          "startedAt": "2026-07-12T08:28:51.755Z",
           "completedAt": null,
           "closedAt": null,
-          "createdAt": "2026-07-12T07:50:53.690Z",
-          "updatedAt": "2026-07-12T07:50:53.696Z",
+          "createdAt": "2026-07-12T08:28:51.750Z",
+          "updatedAt": "2026-07-12T08:28:51.756Z",
           "department": {
-            "id": "ef4782b9-f7aa-4e4b-9369-c4567f028e7b",
+            "id": "3862b5c7-2f2b-484b-8dcb-80f308be4fd0",
             "name": "Information Technology",
             "code": "IT",
             "status": "ACTIVE"
           },
           "createdBy": {
-            "id": "c2a8a8ce-fb84-450c-ba01-0aab4f830f8f",
+            "id": "b29dd17e-6d13-44e7-8d49-78d2a852d807",
             "name": "IT Manager",
             "email": "manager@assetflow.local",
             "role": "MANAGER",
-            "departmentId": "ef4782b9-f7aa-4e4b-9369-c4567f028e7b",
+            "departmentId": "3862b5c7-2f2b-484b-8dcb-80f308be4fd0",
             "status": "ACTIVE"
           },
           "assignedAuditor": null,
           "records": [
             {
-              "id": "9adf760f-a122-45c1-aa71-3ed29b732f4b",
-              "auditId": "922a3378-ff05-432e-96fa-5f1c025ea229",
-              "assetId": "3e08ffd7-7a95-4210-b788-9b41d03b37d6",
+              "id": "46b24472-79f2-4315-943c-8e6cde072c50",
+              "auditId": "a66f81a5-a2d6-4fc6-a9aa-0f9eccddb449",
+              "assetId": "05404b22-13ec-4c5b-9d60-8447886fbbd5",
               "auditorId": null,
               "result": null,
               "remarks": null,
-              "expectedLocation": "Audit Room 1783842653540-DMG",
-              "expectedDepartmentId": "ef4782b9-f7aa-4e4b-9369-c4567f028e7b",
+              "expectedLocation": "Audit Room 1783844931600-DMG",
+              "expectedDepartmentId": "3862b5c7-2f2b-484b-8dcb-80f308be4fd0",
               "expectedCondition": "DAMAGED",
               "expectedAllocationUserId": null,
               "locationVerified": null,
@@ -138,30 +138,30 @@
               "conditionVerified": null,
               "allocationUserVerifiedId": null,
               "verifiedAt": null,
-              "auditedAt": "2026-07-12T07:50:53.690Z",
-              "createdAt": "2026-07-12T07:50:53.690Z",
-              "updatedAt": "2026-07-12T07:50:53.690Z",
+              "auditedAt": "2026-07-12T08:28:51.750Z",
+              "createdAt": "2026-07-12T08:28:51.750Z",
+              "updatedAt": "2026-07-12T08:28:51.750Z",
               "asset": {
-                "id": "3e08ffd7-7a95-4210-b788-9b41d03b37d6",
-                "assetCode": "AUD-QA-1783842653540-DMG",
-                "serialNumber": "AUD-QA-SN-1783842653540-DMG",
-                "name": "Audit QA Asset 1783842653540-DMG",
+                "id": "05404b22-13ec-4c5b-9d60-8447886fbbd5",
+                "assetCode": "AUD-QA-1783844931600-DMG",
+                "serialNumber": "AUD-QA-SN-1783844931600-DMG",
+                "name": "Audit QA Asset 1783844931600-DMG",
                 "status": "AVAILABLE",
                 "condition": "DAMAGED",
-                "departmentId": "ef4782b9-f7aa-4e4b-9369-c4567f028e7b",
-                "location": "Audit Room 1783842653540-DMG",
+                "departmentId": "3862b5c7-2f2b-484b-8dcb-80f308be4fd0",
+                "location": "Audit Room 1783844931600-DMG",
                 "department": {
-                  "id": "ef4782b9-f7aa-4e4b-9369-c4567f028e7b",
+                  "id": "3862b5c7-2f2b-484b-8dcb-80f308be4fd0",
                   "name": "Information Technology",
                   "code": "IT",
                   "status": "ACTIVE"
                 },
                 "allocations": [],
-                "assetTag": "AUD-QA-1783842653540-DMG"
+                "assetTag": "AUD-QA-1783844931600-DMG"
               },
               "auditor": null,
               "expectedDepartment": {
-                "id": "ef4782b9-f7aa-4e4b-9369-c4567f028e7b",
+                "id": "3862b5c7-2f2b-484b-8dcb-80f308be4fd0",
                 "name": "Information Technology",
                 "code": "IT",
                 "status": "ACTIVE"
@@ -180,255 +180,255 @@
           "completionPercentage": 0
         },
         {
-          "id": "dfa0c1b5-a2c3-45d1-ac53-7819016987bf",
+          "id": "f92c884d-09dd-4c84-9f8b-b5dced419ace",
           "title": "Audit QA Cycle Updated",
           "description": "Generated by audit QA",
-          "departmentId": "ef4782b9-f7aa-4e4b-9369-c4567f028e7b",
-          "createdById": "c2a8a8ce-fb84-450c-ba01-0aab4f830f8f",
-          "assignedAuditorId": "eb78f920-e2fb-4907-99f8-a52c263ca89f",
+          "departmentId": "3862b5c7-2f2b-484b-8dcb-80f308be4fd0",
+          "createdById": "b29dd17e-6d13-44e7-8d49-78d2a852d807",
+          "assignedAuditorId": "c7c7cdef-7310-4d39-aa02-82a310a623a3",
           "status": "CLOSED",
           "plannedStart": null,
           "plannedEnd": null,
-          "startedAt": "2026-07-12T07:50:53.608Z",
-          "completedAt": "2026-07-12T07:50:53.661Z",
-          "closedAt": "2026-07-12T07:50:53.669Z",
-          "createdAt": "2026-07-12T07:50:53.576Z",
-          "updatedAt": "2026-07-12T07:50:53.670Z",
+          "startedAt": "2026-07-12T08:28:51.666Z",
+          "completedAt": "2026-07-12T08:28:51.720Z",
+          "closedAt": "2026-07-12T08:28:51.729Z",
+          "createdAt": "2026-07-12T08:28:51.635Z",
+          "updatedAt": "2026-07-12T08:28:51.730Z",
           "department": {
-            "id": "ef4782b9-f7aa-4e4b-9369-c4567f028e7b",
+            "id": "3862b5c7-2f2b-484b-8dcb-80f308be4fd0",
             "name": "Information Technology",
             "code": "IT",
             "status": "ACTIVE"
           },
           "createdBy": {
-            "id": "c2a8a8ce-fb84-450c-ba01-0aab4f830f8f",
+            "id": "b29dd17e-6d13-44e7-8d49-78d2a852d807",
             "name": "IT Manager",
             "email": "manager@assetflow.local",
             "role": "MANAGER",
-            "departmentId": "ef4782b9-f7aa-4e4b-9369-c4567f028e7b",
+            "departmentId": "3862b5c7-2f2b-484b-8dcb-80f308be4fd0",
             "status": "ACTIVE"
           },
           "assignedAuditor": {
-            "id": "eb78f920-e2fb-4907-99f8-a52c263ca89f",
+            "id": "c7c7cdef-7310-4d39-aa02-82a310a623a3",
             "name": "Audit User",
             "email": "auditor@assetflow.local",
             "role": "AUDITOR",
-            "departmentId": "8fec5e8b-b1e5-419b-967a-6d4adcd415fa",
+            "departmentId": "d6c31d21-542b-4855-8ba9-c866fcb24668",
             "status": "ACTIVE"
           },
           "records": [
             {
-              "id": "75104aad-85ce-484f-bdfd-ba1811e29f98",
-              "auditId": "dfa0c1b5-a2c3-45d1-ac53-7819016987bf",
-              "assetId": "9dd78c57-172a-41eb-82db-b1fd5f928ab6",
-              "auditorId": "2889111c-3e66-44fa-9c3f-c655b09291b0",
+              "id": "f7657323-c815-4b95-9341-46af079a5d25",
+              "auditId": "f92c884d-09dd-4c84-9f8b-b5dced419ace",
+              "assetId": "d430c540-2519-48c2-be39-0cb5dc5e22eb",
+              "auditorId": "60db11f0-22d9-48a7-8f5c-adf3b63a5601",
               "result": "VERIFIED",
               "remarks": "Employee verified assigned laptop",
-              "expectedLocation": "Audit Room 1783842653540-EMP",
-              "expectedDepartmentId": "ef4782b9-f7aa-4e4b-9369-c4567f028e7b",
+              "expectedLocation": "Audit Room 1783844931600-EMP",
+              "expectedDepartmentId": "3862b5c7-2f2b-484b-8dcb-80f308be4fd0",
               "expectedCondition": "GOOD",
-              "expectedAllocationUserId": "2889111c-3e66-44fa-9c3f-c655b09291b0",
-              "locationVerified": "Audit Room 1783842653540-EMP",
-              "departmentVerifiedId": "ef4782b9-f7aa-4e4b-9369-c4567f028e7b",
+              "expectedAllocationUserId": "60db11f0-22d9-48a7-8f5c-adf3b63a5601",
+              "locationVerified": "Audit Room 1783844931600-EMP",
+              "departmentVerifiedId": "3862b5c7-2f2b-484b-8dcb-80f308be4fd0",
               "conditionVerified": "GOOD",
-              "allocationUserVerifiedId": "2889111c-3e66-44fa-9c3f-c655b09291b0",
-              "verifiedAt": "2026-07-12T07:50:53.621Z",
-              "auditedAt": "2026-07-12T07:50:53.621Z",
-              "createdAt": "2026-07-12T07:50:53.577Z",
-              "updatedAt": "2026-07-12T07:50:53.622Z",
+              "allocationUserVerifiedId": "60db11f0-22d9-48a7-8f5c-adf3b63a5601",
+              "verifiedAt": "2026-07-12T08:28:51.679Z",
+              "auditedAt": "2026-07-12T08:28:51.679Z",
+              "createdAt": "2026-07-12T08:28:51.636Z",
+              "updatedAt": "2026-07-12T08:28:51.680Z",
               "asset": {
-                "id": "9dd78c57-172a-41eb-82db-b1fd5f928ab6",
-                "assetCode": "AUD-QA-1783842653540-EMP",
-                "serialNumber": "AUD-QA-SN-1783842653540-EMP",
-                "name": "Audit QA Asset 1783842653540-EMP",
+                "id": "d430c540-2519-48c2-be39-0cb5dc5e22eb",
+                "assetCode": "AUD-QA-1783844931600-EMP",
+                "serialNumber": "AUD-QA-SN-1783844931600-EMP",
+                "name": "Audit QA Asset 1783844931600-EMP",
                 "status": "ALLOCATED",
                 "condition": "GOOD",
-                "departmentId": "ef4782b9-f7aa-4e4b-9369-c4567f028e7b",
-                "location": "Audit Room 1783842653540-EMP",
+                "departmentId": "3862b5c7-2f2b-484b-8dcb-80f308be4fd0",
+                "location": "Audit Room 1783844931600-EMP",
                 "department": {
-                  "id": "ef4782b9-f7aa-4e4b-9369-c4567f028e7b",
+                  "id": "3862b5c7-2f2b-484b-8dcb-80f308be4fd0",
                   "name": "Information Technology",
                   "code": "IT",
                   "status": "ACTIVE"
                 },
                 "allocations": [
                   {
-                    "id": "6226aba2-7f57-41bc-9e9f-6528b2bf8e9b",
-                    "userId": "2889111c-3e66-44fa-9c3f-c655b09291b0",
-                    "departmentId": "ef4782b9-f7aa-4e4b-9369-c4567f028e7b"
+                    "id": "261a8a2f-04b5-44c2-8606-49fa7ae72a2f",
+                    "userId": "60db11f0-22d9-48a7-8f5c-adf3b63a5601",
+                    "departmentId": "3862b5c7-2f2b-484b-8dcb-80f308be4fd0"
                   }
                 ],
-                "assetTag": "AUD-QA-1783842653540-EMP"
+                "assetTag": "AUD-QA-1783844931600-EMP"
               },
               "auditor": {
-                "id": "2889111c-3e66-44fa-9c3f-c655b09291b0",
+                "id": "60db11f0-22d9-48a7-8f5c-adf3b63a5601",
                 "name": "Employee User",
                 "email": "employee@assetflow.local",
                 "role": "EMPLOYEE",
-                "departmentId": "ef4782b9-f7aa-4e4b-9369-c4567f028e7b",
+                "departmentId": "3862b5c7-2f2b-484b-8dcb-80f308be4fd0",
                 "status": "ACTIVE"
               },
               "expectedDepartment": {
-                "id": "ef4782b9-f7aa-4e4b-9369-c4567f028e7b",
+                "id": "3862b5c7-2f2b-484b-8dcb-80f308be4fd0",
                 "name": "Information Technology",
                 "code": "IT",
                 "status": "ACTIVE"
               },
               "departmentVerified": {
-                "id": "ef4782b9-f7aa-4e4b-9369-c4567f028e7b",
+                "id": "3862b5c7-2f2b-484b-8dcb-80f308be4fd0",
                 "name": "Information Technology",
                 "code": "IT",
                 "status": "ACTIVE"
               },
               "discrepancies": [],
               "verifiedBy": {
-                "id": "2889111c-3e66-44fa-9c3f-c655b09291b0",
+                "id": "60db11f0-22d9-48a7-8f5c-adf3b63a5601",
                 "name": "Employee User",
                 "email": "employee@assetflow.local",
                 "role": "EMPLOYEE",
-                "departmentId": "ef4782b9-f7aa-4e4b-9369-c4567f028e7b",
+                "departmentId": "3862b5c7-2f2b-484b-8dcb-80f308be4fd0",
                 "status": "ACTIVE"
               },
-              "verifiedById": "2889111c-3e66-44fa-9c3f-c655b09291b0"
+              "verifiedById": "60db11f0-22d9-48a7-8f5c-adf3b63a5601"
             },
             {
-              "id": "457d4d9f-9fe2-45a3-8687-6db9a6ae0f66",
-              "auditId": "dfa0c1b5-a2c3-45d1-ac53-7819016987bf",
-              "assetId": "3e08ffd7-7a95-4210-b788-9b41d03b37d6",
-              "auditorId": "c2a8a8ce-fb84-450c-ba01-0aab4f830f8f",
+              "id": "c2bf778a-43ae-4f82-9a52-f99484d55d67",
+              "auditId": "f92c884d-09dd-4c84-9f8b-b5dced419ace",
+              "assetId": "05404b22-13ec-4c5b-9d60-8447886fbbd5",
+              "auditorId": "b29dd17e-6d13-44e7-8d49-78d2a852d807",
               "result": "DAMAGED",
               "remarks": "Cracked display",
-              "expectedLocation": "Audit Room 1783842653540-DMG",
-              "expectedDepartmentId": "ef4782b9-f7aa-4e4b-9369-c4567f028e7b",
+              "expectedLocation": "Audit Room 1783844931600-DMG",
+              "expectedDepartmentId": "3862b5c7-2f2b-484b-8dcb-80f308be4fd0",
               "expectedCondition": "GOOD",
               "expectedAllocationUserId": null,
               "locationVerified": "Unexpected Lab",
-              "departmentVerifiedId": "ef4782b9-f7aa-4e4b-9369-c4567f028e7b",
+              "departmentVerifiedId": "3862b5c7-2f2b-484b-8dcb-80f308be4fd0",
               "conditionVerified": "DAMAGED",
               "allocationUserVerifiedId": null,
-              "verifiedAt": "2026-07-12T07:50:53.634Z",
-              "auditedAt": "2026-07-12T07:50:53.634Z",
-              "createdAt": "2026-07-12T07:50:53.577Z",
-              "updatedAt": "2026-07-12T07:50:53.635Z",
+              "verifiedAt": "2026-07-12T08:28:51.693Z",
+              "auditedAt": "2026-07-12T08:28:51.693Z",
+              "createdAt": "2026-07-12T08:28:51.636Z",
+              "updatedAt": "2026-07-12T08:28:51.693Z",
               "asset": {
-                "id": "3e08ffd7-7a95-4210-b788-9b41d03b37d6",
-                "assetCode": "AUD-QA-1783842653540-DMG",
-                "serialNumber": "AUD-QA-SN-1783842653540-DMG",
-                "name": "Audit QA Asset 1783842653540-DMG",
+                "id": "05404b22-13ec-4c5b-9d60-8447886fbbd5",
+                "assetCode": "AUD-QA-1783844931600-DMG",
+                "serialNumber": "AUD-QA-SN-1783844931600-DMG",
+                "name": "Audit QA Asset 1783844931600-DMG",
                 "status": "AVAILABLE",
                 "condition": "DAMAGED",
-                "departmentId": "ef4782b9-f7aa-4e4b-9369-c4567f028e7b",
-                "location": "Audit Room 1783842653540-DMG",
+                "departmentId": "3862b5c7-2f2b-484b-8dcb-80f308be4fd0",
+                "location": "Audit Room 1783844931600-DMG",
                 "department": {
-                  "id": "ef4782b9-f7aa-4e4b-9369-c4567f028e7b",
+                  "id": "3862b5c7-2f2b-484b-8dcb-80f308be4fd0",
                   "name": "Information Technology",
                   "code": "IT",
                   "status": "ACTIVE"
                 },
                 "allocations": [],
-                "assetTag": "AUD-QA-1783842653540-DMG"
+                "assetTag": "AUD-QA-1783844931600-DMG"
               },
               "auditor": {
-                "id": "c2a8a8ce-fb84-450c-ba01-0aab4f830f8f",
+                "id": "b29dd17e-6d13-44e7-8d49-78d2a852d807",
                 "name": "IT Manager",
                 "email": "manager@assetflow.local",
                 "role": "MANAGER",
-                "departmentId": "ef4782b9-f7aa-4e4b-9369-c4567f028e7b",
+                "departmentId": "3862b5c7-2f2b-484b-8dcb-80f308be4fd0",
                 "status": "ACTIVE"
               },
               "expectedDepartment": {
-                "id": "ef4782b9-f7aa-4e4b-9369-c4567f028e7b",
+                "id": "3862b5c7-2f2b-484b-8dcb-80f308be4fd0",
                 "name": "Information Technology",
                 "code": "IT",
                 "status": "ACTIVE"
               },
               "departmentVerified": {
-                "id": "ef4782b9-f7aa-4e4b-9369-c4567f028e7b",
+                "id": "3862b5c7-2f2b-484b-8dcb-80f308be4fd0",
                 "name": "Information Technology",
                 "code": "IT",
                 "status": "ACTIVE"
               },
               "discrepancies": [
                 {
-                  "id": "7fc09b27-57d8-49c7-8322-b663353677c3",
-                  "auditId": "dfa0c1b5-a2c3-45d1-ac53-7819016987bf",
-                  "auditRecordId": "457d4d9f-9fe2-45a3-8687-6db9a6ae0f66",
-                  "assetId": "3e08ffd7-7a95-4210-b788-9b41d03b37d6",
+                  "id": "93eb3e41-f417-4715-9e9d-e5cdac7fd554",
+                  "auditId": "f92c884d-09dd-4c84-9f8b-b5dced419ace",
+                  "auditRecordId": "c2bf778a-43ae-4f82-9a52-f99484d55d67",
+                  "assetId": "05404b22-13ec-4c5b-9d60-8447886fbbd5",
                   "type": "DAMAGED_ASSET",
-                  "message": "AUD-QA-1783842653540-DMG Audit QA Asset 1783842653540-DMG was marked damaged.",
+                  "message": "AUD-QA-1783844931600-DMG Audit QA Asset 1783844931600-DMG was marked damaged.",
                   "severity": "critical",
-                  "createdAt": "2026-07-12T07:50:53.637Z",
-                  "updatedAt": "2026-07-12T07:50:53.637Z"
+                  "createdAt": "2026-07-12T08:28:51.695Z",
+                  "updatedAt": "2026-07-12T08:28:51.695Z"
                 },
                 {
-                  "id": "f026ee94-2b85-4511-aef8-bfc5b9d6c8c3",
-                  "auditId": "dfa0c1b5-a2c3-45d1-ac53-7819016987bf",
-                  "auditRecordId": "457d4d9f-9fe2-45a3-8687-6db9a6ae0f66",
-                  "assetId": "3e08ffd7-7a95-4210-b788-9b41d03b37d6",
+                  "id": "1bc19efe-6b5b-4d4a-af24-b4541c64c48e",
+                  "auditId": "f92c884d-09dd-4c84-9f8b-b5dced419ace",
+                  "auditRecordId": "c2bf778a-43ae-4f82-9a52-f99484d55d67",
+                  "assetId": "05404b22-13ec-4c5b-9d60-8447886fbbd5",
                   "type": "WRONG_LOCATION",
-                  "message": "AUD-QA-1783842653540-DMG Audit QA Asset 1783842653540-DMG expected location Audit Room 1783842653540-DMG, found at Unexpected Lab.",
+                  "message": "AUD-QA-1783844931600-DMG Audit QA Asset 1783844931600-DMG expected location Audit Room 1783844931600-DMG, found at Unexpected Lab.",
                   "severity": "warning",
-                  "createdAt": "2026-07-12T07:50:53.637Z",
-                  "updatedAt": "2026-07-12T07:50:53.637Z"
+                  "createdAt": "2026-07-12T08:28:51.695Z",
+                  "updatedAt": "2026-07-12T08:28:51.695Z"
                 }
               ],
               "verifiedBy": {
-                "id": "c2a8a8ce-fb84-450c-ba01-0aab4f830f8f",
+                "id": "b29dd17e-6d13-44e7-8d49-78d2a852d807",
                 "name": "IT Manager",
                 "email": "manager@assetflow.local",
                 "role": "MANAGER",
-                "departmentId": "ef4782b9-f7aa-4e4b-9369-c4567f028e7b",
+                "departmentId": "3862b5c7-2f2b-484b-8dcb-80f308be4fd0",
                 "status": "ACTIVE"
               },
-              "verifiedById": "c2a8a8ce-fb84-450c-ba01-0aab4f830f8f"
+              "verifiedById": "b29dd17e-6d13-44e7-8d49-78d2a852d807"
             },
             {
-              "id": "3250418c-b48a-426d-ac4f-df20ed38a5af",
-              "auditId": "dfa0c1b5-a2c3-45d1-ac53-7819016987bf",
-              "assetId": "10ea4b23-0bbc-4959-a724-358328d3e5b0",
-              "auditorId": "eb78f920-e2fb-4907-99f8-a52c263ca89f",
+              "id": "c4b6c3bc-800d-4c36-8cc7-fb49dfa3d9fd",
+              "auditId": "f92c884d-09dd-4c84-9f8b-b5dced419ace",
+              "assetId": "a3444764-1f2f-444b-b2cb-53aee00f03eb",
+              "auditorId": "c7c7cdef-7310-4d39-aa02-82a310a623a3",
               "result": "MISSING",
               "remarks": "Asset not found during audit",
-              "expectedLocation": "Audit Room 1783842653540-MISS",
-              "expectedDepartmentId": "ef4782b9-f7aa-4e4b-9369-c4567f028e7b",
+              "expectedLocation": "Audit Room 1783844931600-MISS",
+              "expectedDepartmentId": "3862b5c7-2f2b-484b-8dcb-80f308be4fd0",
               "expectedCondition": "GOOD",
               "expectedAllocationUserId": null,
               "locationVerified": "Not found",
               "departmentVerifiedId": null,
               "conditionVerified": null,
               "allocationUserVerifiedId": null,
-              "verifiedAt": "2026-07-12T07:50:53.642Z",
-              "auditedAt": "2026-07-12T07:50:53.642Z",
-              "createdAt": "2026-07-12T07:50:53.577Z",
-              "updatedAt": "2026-07-12T07:50:53.643Z",
+              "verifiedAt": "2026-07-12T08:28:51.701Z",
+              "auditedAt": "2026-07-12T08:28:51.701Z",
+              "createdAt": "2026-07-12T08:28:51.636Z",
+              "updatedAt": "2026-07-12T08:28:51.701Z",
               "asset": {
-                "id": "10ea4b23-0bbc-4959-a724-358328d3e5b0",
-                "assetCode": "AUD-QA-1783842653540-MISS",
-                "serialNumber": "AUD-QA-SN-1783842653540-MISS",
-                "name": "Audit QA Asset 1783842653540-MISS",
+                "id": "a3444764-1f2f-444b-b2cb-53aee00f03eb",
+                "assetCode": "AUD-QA-1783844931600-MISS",
+                "serialNumber": "AUD-QA-SN-1783844931600-MISS",
+                "name": "Audit QA Asset 1783844931600-MISS",
                 "status": "LOST",
                 "condition": "GOOD",
-                "departmentId": "ef4782b9-f7aa-4e4b-9369-c4567f028e7b",
-                "location": "Audit Room 1783842653540-MISS",
+                "departmentId": "3862b5c7-2f2b-484b-8dcb-80f308be4fd0",
+                "location": "Audit Room 1783844931600-MISS",
                 "department": {
-                  "id": "ef4782b9-f7aa-4e4b-9369-c4567f028e7b",
+                  "id": "3862b5c7-2f2b-484b-8dcb-80f308be4fd0",
                   "name": "Information Technology",
                   "code": "IT",
                   "status": "ACTIVE"
                 },
                 "allocations": [],
-                "assetTag": "AUD-QA-1783842653540-MISS"
+                "assetTag": "AUD-QA-1783844931600-MISS"
               },
               "auditor": {
-                "id": "eb78f920-e2fb-4907-99f8-a52c263ca89f",
+                "id": "c7c7cdef-7310-4d39-aa02-82a310a623a3",
                 "name": "Audit User",
                 "email": "auditor@assetflow.local",
                 "role": "AUDITOR",
-                "departmentId": "8fec5e8b-b1e5-419b-967a-6d4adcd415fa",
+                "departmentId": "d6c31d21-542b-4855-8ba9-c866fcb24668",
                 "status": "ACTIVE"
               },
               "expectedDepartment": {
-                "id": "ef4782b9-f7aa-4e4b-9369-c4567f028e7b",
+                "id": "3862b5c7-2f2b-484b-8dcb-80f308be4fd0",
                 "name": "Information Technology",
                 "code": "IT",
                 "status": "ACTIVE"
@@ -436,72 +436,72 @@
               "departmentVerified": null,
               "discrepancies": [
                 {
-                  "id": "ca85bb80-3783-4e61-9e06-058643ba6d85",
-                  "auditId": "dfa0c1b5-a2c3-45d1-ac53-7819016987bf",
-                  "auditRecordId": "3250418c-b48a-426d-ac4f-df20ed38a5af",
-                  "assetId": "10ea4b23-0bbc-4959-a724-358328d3e5b0",
+                  "id": "81ab3f96-dbad-4028-8f87-20fb901add3a",
+                  "auditId": "f92c884d-09dd-4c84-9f8b-b5dced419ace",
+                  "auditRecordId": "c4b6c3bc-800d-4c36-8cc7-fb49dfa3d9fd",
+                  "assetId": "a3444764-1f2f-444b-b2cb-53aee00f03eb",
                   "type": "MISSING_ASSET",
-                  "message": "AUD-QA-1783842653540-MISS Audit QA Asset 1783842653540-MISS was marked missing.",
+                  "message": "AUD-QA-1783844931600-MISS Audit QA Asset 1783844931600-MISS was marked missing.",
                   "severity": "critical",
-                  "createdAt": "2026-07-12T07:50:53.645Z",
-                  "updatedAt": "2026-07-12T07:50:53.645Z"
+                  "createdAt": "2026-07-12T08:28:51.703Z",
+                  "updatedAt": "2026-07-12T08:28:51.703Z"
                 },
                 {
-                  "id": "7b91a4fe-1647-4625-ae63-8d397d5475a5",
-                  "auditId": "dfa0c1b5-a2c3-45d1-ac53-7819016987bf",
-                  "auditRecordId": "3250418c-b48a-426d-ac4f-df20ed38a5af",
-                  "assetId": "10ea4b23-0bbc-4959-a724-358328d3e5b0",
+                  "id": "9d1e1fa9-4aa0-4890-bba5-738cc39daa4b",
+                  "auditId": "f92c884d-09dd-4c84-9f8b-b5dced419ace",
+                  "auditRecordId": "c4b6c3bc-800d-4c36-8cc7-fb49dfa3d9fd",
+                  "assetId": "a3444764-1f2f-444b-b2cb-53aee00f03eb",
                   "type": "WRONG_LOCATION",
-                  "message": "AUD-QA-1783842653540-MISS Audit QA Asset 1783842653540-MISS expected location Audit Room 1783842653540-MISS, found at Not found.",
+                  "message": "AUD-QA-1783844931600-MISS Audit QA Asset 1783844931600-MISS expected location Audit Room 1783844931600-MISS, found at Not found.",
                   "severity": "warning",
-                  "createdAt": "2026-07-12T07:50:53.645Z",
-                  "updatedAt": "2026-07-12T07:50:53.645Z"
+                  "createdAt": "2026-07-12T08:28:51.703Z",
+                  "updatedAt": "2026-07-12T08:28:51.703Z"
                 },
                 {
-                  "id": "21bdab01-66a6-4fa5-bd58-d89e835a0c4f",
-                  "auditId": "dfa0c1b5-a2c3-45d1-ac53-7819016987bf",
-                  "auditRecordId": "3250418c-b48a-426d-ac4f-df20ed38a5af",
-                  "assetId": "10ea4b23-0bbc-4959-a724-358328d3e5b0",
+                  "id": "b6524d19-cd93-4936-9a39-a372f64059be",
+                  "auditId": "f92c884d-09dd-4c84-9f8b-b5dced419ace",
+                  "auditRecordId": "c4b6c3bc-800d-4c36-8cc7-fb49dfa3d9fd",
+                  "assetId": "a3444764-1f2f-444b-b2cb-53aee00f03eb",
                   "type": "UNKNOWN_ASSET_CONDITION",
-                  "message": "AUD-QA-1783842653540-MISS Audit QA Asset 1783842653540-MISS condition could not be confirmed.",
+                  "message": "AUD-QA-1783844931600-MISS Audit QA Asset 1783844931600-MISS condition could not be confirmed.",
                   "severity": "warning",
-                  "createdAt": "2026-07-12T07:50:53.645Z",
-                  "updatedAt": "2026-07-12T07:50:53.645Z"
+                  "createdAt": "2026-07-12T08:28:51.703Z",
+                  "updatedAt": "2026-07-12T08:28:51.703Z"
                 }
               ],
               "verifiedBy": {
-                "id": "eb78f920-e2fb-4907-99f8-a52c263ca89f",
+                "id": "c7c7cdef-7310-4d39-aa02-82a310a623a3",
                 "name": "Audit User",
                 "email": "auditor@assetflow.local",
                 "role": "AUDITOR",
-                "departmentId": "8fec5e8b-b1e5-419b-967a-6d4adcd415fa",
+                "departmentId": "d6c31d21-542b-4855-8ba9-c866fcb24668",
                 "status": "ACTIVE"
               },
-              "verifiedById": "eb78f920-e2fb-4907-99f8-a52c263ca89f"
+              "verifiedById": "c7c7cdef-7310-4d39-aa02-82a310a623a3"
             }
           ],
           "discrepancies": [
             {
-              "id": "ca85bb80-3783-4e61-9e06-058643ba6d85",
-              "auditId": "dfa0c1b5-a2c3-45d1-ac53-7819016987bf",
-              "auditRecordId": "3250418c-b48a-426d-ac4f-df20ed38a5af",
-              "assetId": "10ea4b23-0bbc-4959-a724-358328d3e5b0",
+              "id": "81ab3f96-dbad-4028-8f87-20fb901add3a",
+              "auditId": "f92c884d-09dd-4c84-9f8b-b5dced419ace",
+              "auditRecordId": "c4b6c3bc-800d-4c36-8cc7-fb49dfa3d9fd",
+              "assetId": "a3444764-1f2f-444b-b2cb-53aee00f03eb",
               "type": "MISSING_ASSET",
-              "message": "AUD-QA-1783842653540-MISS Audit QA Asset 1783842653540-MISS was marked missing.",
+              "message": "AUD-QA-1783844931600-MISS Audit QA Asset 1783844931600-MISS was marked missing.",
               "severity": "critical",
-              "createdAt": "2026-07-12T07:50:53.645Z",
-              "updatedAt": "2026-07-12T07:50:53.645Z",
+              "createdAt": "2026-07-12T08:28:51.703Z",
+              "updatedAt": "2026-07-12T08:28:51.703Z",
               "asset": {
-                "id": "10ea4b23-0bbc-4959-a724-358328d3e5b0",
-                "assetCode": "AUD-QA-1783842653540-MISS",
-                "serialNumber": "AUD-QA-SN-1783842653540-MISS",
-                "name": "Audit QA Asset 1783842653540-MISS",
+                "id": "a3444764-1f2f-444b-b2cb-53aee00f03eb",
+                "assetCode": "AUD-QA-1783844931600-MISS",
+                "serialNumber": "AUD-QA-SN-1783844931600-MISS",
+                "name": "Audit QA Asset 1783844931600-MISS",
                 "status": "LOST",
                 "condition": "GOOD",
-                "departmentId": "ef4782b9-f7aa-4e4b-9369-c4567f028e7b",
-                "location": "Audit Room 1783842653540-MISS",
+                "departmentId": "3862b5c7-2f2b-484b-8dcb-80f308be4fd0",
+                "location": "Audit Room 1783844931600-MISS",
                 "department": {
-                  "id": "ef4782b9-f7aa-4e4b-9369-c4567f028e7b",
+                  "id": "3862b5c7-2f2b-484b-8dcb-80f308be4fd0",
                   "name": "Information Technology",
                   "code": "IT",
                   "status": "ACTIVE"
@@ -510,26 +510,26 @@
               }
             },
             {
-              "id": "7b91a4fe-1647-4625-ae63-8d397d5475a5",
-              "auditId": "dfa0c1b5-a2c3-45d1-ac53-7819016987bf",
-              "auditRecordId": "3250418c-b48a-426d-ac4f-df20ed38a5af",
-              "assetId": "10ea4b23-0bbc-4959-a724-358328d3e5b0",
+              "id": "9d1e1fa9-4aa0-4890-bba5-738cc39daa4b",
+              "auditId": "f92c884d-09dd-4c84-9f8b-b5dced419ace",
+              "auditRecordId": "c4b6c3bc-800d-4c36-8cc7-fb49dfa3d9fd",
+              "assetId": "a3444764-1f2f-444b-b2cb-53aee00f03eb",
               "type": "WRONG_LOCATION",
-              "message": "AUD-QA-1783842653540-MISS Audit QA Asset 1783842653540-MISS expected location Audit Room 1783842653540-MISS, found at Not found.",
+              "message": "AUD-QA-1783844931600-MISS Audit QA Asset 1783844931600-MISS expected location Audit Room 1783844931600-MISS, found at Not found.",
               "severity": "warning",
-              "createdAt": "2026-07-12T07:50:53.645Z",
-              "updatedAt": "2026-07-12T07:50:53.645Z",
+              "createdAt": "2026-07-12T08:28:51.703Z",
+              "updatedAt": "2026-07-12T08:28:51.703Z",
               "asset": {
-                "id": "10ea4b23-0bbc-4959-a724-358328d3e5b0",
-                "assetCode": "AUD-QA-1783842653540-MISS",
-                "serialNumber": "AUD-QA-SN-1783842653540-MISS",
-                "name": "Audit QA Asset 1783842653540-MISS",
+                "id": "a3444764-1f2f-444b-b2cb-53aee00f03eb",
+                "assetCode": "AUD-QA-1783844931600-MISS",
+                "serialNumber": "AUD-QA-SN-1783844931600-MISS",
+                "name": "Audit QA Asset 1783844931600-MISS",
                 "status": "LOST",
                 "condition": "GOOD",
-                "departmentId": "ef4782b9-f7aa-4e4b-9369-c4567f028e7b",
-                "location": "Audit Room 1783842653540-MISS",
+                "departmentId": "3862b5c7-2f2b-484b-8dcb-80f308be4fd0",
+                "location": "Audit Room 1783844931600-MISS",
                 "department": {
-                  "id": "ef4782b9-f7aa-4e4b-9369-c4567f028e7b",
+                  "id": "3862b5c7-2f2b-484b-8dcb-80f308be4fd0",
                   "name": "Information Technology",
                   "code": "IT",
                   "status": "ACTIVE"
@@ -538,26 +538,26 @@
               }
             },
             {
-              "id": "21bdab01-66a6-4fa5-bd58-d89e835a0c4f",
-              "auditId": "dfa0c1b5-a2c3-45d1-ac53-7819016987bf",
-              "auditRecordId": "3250418c-b48a-426d-ac4f-df20ed38a5af",
-              "assetId": "10ea4b23-0bbc-4959-a724-358328d3e5b0",
+              "id": "b6524d19-cd93-4936-9a39-a372f64059be",
+              "auditId": "f92c884d-09dd-4c84-9f8b-b5dced419ace",
+              "auditRecordId": "c4b6c3bc-800d-4c36-8cc7-fb49dfa3d9fd",
+              "assetId": "a3444764-1f2f-444b-b2cb-53aee00f03eb",
               "type": "UNKNOWN_ASSET_CONDITION",
-              "message": "AUD-QA-1783842653540-MISS Audit QA Asset 1783842653540-MISS condition could not be confirmed.",
+              "message": "AUD-QA-1783844931600-MISS Audit QA Asset 1783844931600-MISS condition could not be confirmed.",
               "severity": "warning",
-              "createdAt": "2026-07-12T07:50:53.645Z",
-              "updatedAt": "2026-07-12T07:50:53.645Z",
+              "createdAt": "2026-07-12T08:28:51.703Z",
+              "updatedAt": "2026-07-12T08:28:51.703Z",
               "asset": {
-                "id": "10ea4b23-0bbc-4959-a724-358328d3e5b0",
-                "assetCode": "AUD-QA-1783842653540-MISS",
-                "serialNumber": "AUD-QA-SN-1783842653540-MISS",
-                "name": "Audit QA Asset 1783842653540-MISS",
+                "id": "a3444764-1f2f-444b-b2cb-53aee00f03eb",
+                "assetCode": "AUD-QA-1783844931600-MISS",
+                "serialNumber": "AUD-QA-SN-1783844931600-MISS",
+                "name": "Audit QA Asset 1783844931600-MISS",
                 "status": "LOST",
                 "condition": "GOOD",
-                "departmentId": "ef4782b9-f7aa-4e4b-9369-c4567f028e7b",
-                "location": "Audit Room 1783842653540-MISS",
+                "departmentId": "3862b5c7-2f2b-484b-8dcb-80f308be4fd0",
+                "location": "Audit Room 1783844931600-MISS",
                 "department": {
-                  "id": "ef4782b9-f7aa-4e4b-9369-c4567f028e7b",
+                  "id": "3862b5c7-2f2b-484b-8dcb-80f308be4fd0",
                   "name": "Information Technology",
                   "code": "IT",
                   "status": "ACTIVE"
@@ -566,26 +566,26 @@
               }
             },
             {
-              "id": "7fc09b27-57d8-49c7-8322-b663353677c3",
-              "auditId": "dfa0c1b5-a2c3-45d1-ac53-7819016987bf",
-              "auditRecordId": "457d4d9f-9fe2-45a3-8687-6db9a6ae0f66",
-              "assetId": "3e08ffd7-7a95-4210-b788-9b41d03b37d6",
+              "id": "93eb3e41-f417-4715-9e9d-e5cdac7fd554",
+              "auditId": "f92c884d-09dd-4c84-9f8b-b5dced419ace",
+              "auditRecordId": "c2bf778a-43ae-4f82-9a52-f99484d55d67",
+              "assetId": "05404b22-13ec-4c5b-9d60-8447886fbbd5",
               "type": "DAMAGED_ASSET",
-              "message": "AUD-QA-1783842653540-DMG Audit QA Asset 1783842653540-DMG was marked damaged.",
+              "message": "AUD-QA-1783844931600-DMG Audit QA Asset 1783844931600-DMG was marked damaged.",
               "severity": "critical",
-              "createdAt": "2026-07-12T07:50:53.637Z",
-              "updatedAt": "2026-07-12T07:50:53.637Z",
+              "createdAt": "2026-07-12T08:28:51.695Z",
+              "updatedAt": "2026-07-12T08:28:51.695Z",
               "asset": {
-                "id": "3e08ffd7-7a95-4210-b788-9b41d03b37d6",
-                "assetCode": "AUD-QA-1783842653540-DMG",
-                "serialNumber": "AUD-QA-SN-1783842653540-DMG",
-                "name": "Audit QA Asset 1783842653540-DMG",
+                "id": "05404b22-13ec-4c5b-9d60-8447886fbbd5",
+                "assetCode": "AUD-QA-1783844931600-DMG",
+                "serialNumber": "AUD-QA-SN-1783844931600-DMG",
+                "name": "Audit QA Asset 1783844931600-DMG",
                 "status": "AVAILABLE",
                 "condition": "DAMAGED",
-                "departmentId": "ef4782b9-f7aa-4e4b-9369-c4567f028e7b",
-                "location": "Audit Room 1783842653540-DMG",
+                "departmentId": "3862b5c7-2f2b-484b-8dcb-80f308be4fd0",
+                "location": "Audit Room 1783844931600-DMG",
                 "department": {
-                  "id": "ef4782b9-f7aa-4e4b-9369-c4567f028e7b",
+                  "id": "3862b5c7-2f2b-484b-8dcb-80f308be4fd0",
                   "name": "Information Technology",
                   "code": "IT",
                   "status": "ACTIVE"
@@ -594,26 +594,26 @@
               }
             },
             {
-              "id": "f026ee94-2b85-4511-aef8-bfc5b9d6c8c3",
-              "auditId": "dfa0c1b5-a2c3-45d1-ac53-7819016987bf",
-              "auditRecordId": "457d4d9f-9fe2-45a3-8687-6db9a6ae0f66",
-              "assetId": "3e08ffd7-7a95-4210-b788-9b41d03b37d6",
+              "id": "1bc19efe-6b5b-4d4a-af24-b4541c64c48e",
+              "auditId": "f92c884d-09dd-4c84-9f8b-b5dced419ace",
+              "auditRecordId": "c2bf778a-43ae-4f82-9a52-f99484d55d67",
+              "assetId": "05404b22-13ec-4c5b-9d60-8447886fbbd5",
               "type": "WRONG_LOCATION",
-              "message": "AUD-QA-1783842653540-DMG Audit QA Asset 1783842653540-DMG expected location Audit Room 1783842653540-DMG, found at Unexpected Lab.",
+              "message": "AUD-QA-1783844931600-DMG Audit QA Asset 1783844931600-DMG expected location Audit Room 1783844931600-DMG, found at Unexpected Lab.",
               "severity": "warning",
-              "createdAt": "2026-07-12T07:50:53.637Z",
-              "updatedAt": "2026-07-12T07:50:53.637Z",
+              "createdAt": "2026-07-12T08:28:51.695Z",
+              "updatedAt": "2026-07-12T08:28:51.695Z",
               "asset": {
-                "id": "3e08ffd7-7a95-4210-b788-9b41d03b37d6",
-                "assetCode": "AUD-QA-1783842653540-DMG",
-                "serialNumber": "AUD-QA-SN-1783842653540-DMG",
-                "name": "Audit QA Asset 1783842653540-DMG",
+                "id": "05404b22-13ec-4c5b-9d60-8447886fbbd5",
+                "assetCode": "AUD-QA-1783844931600-DMG",
+                "serialNumber": "AUD-QA-SN-1783844931600-DMG",
+                "name": "Audit QA Asset 1783844931600-DMG",
                 "status": "AVAILABLE",
                 "condition": "DAMAGED",
-                "departmentId": "ef4782b9-f7aa-4e4b-9369-c4567f028e7b",
-                "location": "Audit Room 1783842653540-DMG",
+                "departmentId": "3862b5c7-2f2b-484b-8dcb-80f308be4fd0",
+                "location": "Audit Room 1783844931600-DMG",
                 "department": {
-                  "id": "ef4782b9-f7aa-4e4b-9369-c4567f028e7b",
+                  "id": "3862b5c7-2f2b-484b-8dcb-80f308be4fd0",
                   "name": "Information Technology",
                   "code": "IT",
                   "status": "ACTIVE"
@@ -639,11 +639,11 @@
   "detail": {
     "success": true,
     "data": {
-      "id": "affcfa2d-6857-45e7-9f80-bad7071293eb",
+      "id": "e6809f70-6bbb-4562-a9a2-496a6115121b",
       "title": "Audit QA Ops",
       "description": null,
-      "departmentId": "05ce6f71-9f5f-458a-a4f3-886756c52ba2",
-      "createdById": "391dc348-c03f-4c01-9a40-e75e381ae644",
+      "departmentId": "bb0f6b3d-10fc-4149-9703-0556a8967a78",
+      "createdById": "5bf50489-ff93-42fd-8c66-29ced3c21a99",
       "assignedAuditorId": null,
       "status": "PLANNED",
       "plannedStart": null,
@@ -651,33 +651,33 @@
       "startedAt": null,
       "completedAt": null,
       "closedAt": null,
-      "createdAt": "2026-07-12T07:50:53.703Z",
-      "updatedAt": "2026-07-12T07:50:53.703Z",
+      "createdAt": "2026-07-12T08:28:51.764Z",
+      "updatedAt": "2026-07-12T08:28:51.764Z",
       "department": {
-        "id": "05ce6f71-9f5f-458a-a4f3-886756c52ba2",
+        "id": "bb0f6b3d-10fc-4149-9703-0556a8967a78",
         "name": "Operations",
         "code": "OPS",
         "status": "ACTIVE"
       },
       "createdBy": {
-        "id": "391dc348-c03f-4c01-9a40-e75e381ae644",
+        "id": "5bf50489-ff93-42fd-8c66-29ced3c21a99",
         "name": "Admin User",
         "email": "admin@assetflow.local",
         "role": "ADMIN",
-        "departmentId": "ef4782b9-f7aa-4e4b-9369-c4567f028e7b",
+        "departmentId": "3862b5c7-2f2b-484b-8dcb-80f308be4fd0",
         "status": "ACTIVE"
       },
       "assignedAuditor": null,
       "records": [
         {
-          "id": "0c43dd7d-8580-4995-af37-9e09b0f7412c",
-          "auditId": "affcfa2d-6857-45e7-9f80-bad7071293eb",
-          "assetId": "385d002d-2fc4-4cfa-88d6-e5173ec4609f",
+          "id": "3170080c-b53a-4b7d-9f79-17c4986f33ed",
+          "auditId": "e6809f70-6bbb-4562-a9a2-496a6115121b",
+          "assetId": "ac2194c9-aed6-4601-bdb1-ca3dd04e2a0d",
           "auditorId": null,
           "result": null,
           "remarks": null,
-          "expectedLocation": "Audit Room 1783842653540-OUTSIDE",
-          "expectedDepartmentId": "05ce6f71-9f5f-458a-a4f3-886756c52ba2",
+          "expectedLocation": "Audit Room 1783844931600-OUTSIDE",
+          "expectedDepartmentId": "bb0f6b3d-10fc-4149-9703-0556a8967a78",
           "expectedCondition": "GOOD",
           "expectedAllocationUserId": null,
           "locationVerified": null,
@@ -685,30 +685,30 @@
           "conditionVerified": null,
           "allocationUserVerifiedId": null,
           "verifiedAt": null,
-          "auditedAt": "2026-07-12T07:50:53.704Z",
-          "createdAt": "2026-07-12T07:50:53.704Z",
-          "updatedAt": "2026-07-12T07:50:53.704Z",
+          "auditedAt": "2026-07-12T08:28:51.764Z",
+          "createdAt": "2026-07-12T08:28:51.764Z",
+          "updatedAt": "2026-07-12T08:28:51.764Z",
           "asset": {
-            "id": "385d002d-2fc4-4cfa-88d6-e5173ec4609f",
-            "assetCode": "AUD-QA-1783842653540-OUTSIDE",
-            "serialNumber": "AUD-QA-SN-1783842653540-OUTSIDE",
-            "name": "Audit QA Asset 1783842653540-OUTSIDE",
+            "id": "ac2194c9-aed6-4601-bdb1-ca3dd04e2a0d",
+            "assetCode": "AUD-QA-1783844931600-OUTSIDE",
+            "serialNumber": "AUD-QA-SN-1783844931600-OUTSIDE",
+            "name": "Audit QA Asset 1783844931600-OUTSIDE",
             "status": "AVAILABLE",
             "condition": "GOOD",
-            "departmentId": "05ce6f71-9f5f-458a-a4f3-886756c52ba2",
-            "location": "Audit Room 1783842653540-OUTSIDE",
+            "departmentId": "bb0f6b3d-10fc-4149-9703-0556a8967a78",
+            "location": "Audit Room 1783844931600-OUTSIDE",
             "department": {
-              "id": "05ce6f71-9f5f-458a-a4f3-886756c52ba2",
+              "id": "bb0f6b3d-10fc-4149-9703-0556a8967a78",
               "name": "Operations",
               "code": "OPS",
               "status": "ACTIVE"
             },
             "allocations": [],
-            "assetTag": "AUD-QA-1783842653540-OUTSIDE"
+            "assetTag": "AUD-QA-1783844931600-OUTSIDE"
           },
           "auditor": null,
           "expectedDepartment": {
-            "id": "05ce6f71-9f5f-458a-a4f3-886756c52ba2",
+            "id": "bb0f6b3d-10fc-4149-9703-0556a8967a78",
             "name": "Operations",
             "code": "OPS",
             "status": "ACTIVE"
@@ -752,7 +752,7 @@
       "departmentCompliance": [
         {
           "department": {
-            "id": "05ce6f71-9f5f-458a-a4f3-886756c52ba2",
+            "id": "bb0f6b3d-10fc-4149-9703-0556a8967a78",
             "name": "Operations",
             "code": "OPS",
             "status": "ACTIVE"
@@ -764,7 +764,7 @@
         },
         {
           "department": {
-            "id": "ef4782b9-f7aa-4e4b-9369-c4567f028e7b",
+            "id": "3862b5c7-2f2b-484b-8dcb-80f308be4fd0",
             "name": "Information Technology",
             "code": "IT",
             "status": "ACTIVE"
@@ -812,24 +812,24 @@
       },
       "missingAssets": [
         {
-          "auditRecordId": "3250418c-b48a-426d-ac4f-df20ed38a5af",
+          "auditRecordId": "c4b6c3bc-800d-4c36-8cc7-fb49dfa3d9fd",
           "asset": {
-            "id": "10ea4b23-0bbc-4959-a724-358328d3e5b0",
-            "assetCode": "AUD-QA-1783842653540-MISS",
-            "serialNumber": "AUD-QA-SN-1783842653540-MISS",
-            "name": "Audit QA Asset 1783842653540-MISS",
+            "id": "a3444764-1f2f-444b-b2cb-53aee00f03eb",
+            "assetCode": "AUD-QA-1783844931600-MISS",
+            "serialNumber": "AUD-QA-SN-1783844931600-MISS",
+            "name": "Audit QA Asset 1783844931600-MISS",
             "status": "LOST",
             "condition": "GOOD",
-            "departmentId": "ef4782b9-f7aa-4e4b-9369-c4567f028e7b",
-            "location": "Audit Room 1783842653540-MISS",
+            "departmentId": "3862b5c7-2f2b-484b-8dcb-80f308be4fd0",
+            "location": "Audit Room 1783844931600-MISS",
             "department": {
-              "id": "ef4782b9-f7aa-4e4b-9369-c4567f028e7b",
+              "id": "3862b5c7-2f2b-484b-8dcb-80f308be4fd0",
               "name": "Information Technology",
               "code": "IT",
               "status": "ACTIVE"
             },
             "allocations": [],
-            "assetTag": "AUD-QA-1783842653540-MISS"
+            "assetTag": "AUD-QA-1783844931600-MISS"
           },
           "remarks": "Asset not found during audit"
         }
@@ -1027,163 +1027,163 @@
       ],
       "recentActivity": [
         {
-          "id": "audit:affcfa2d-6857-45e7-9f80-bad7071293eb",
+          "id": "audit:e6809f70-6bbb-4562-a9a2-496a6115121b",
           "type": "AUDIT",
           "title": "Audit created",
           "description": "Admin User created Audit QA Ops.",
           "status": "PLANNED",
-          "timestamp": "2026-07-12T07:50:53.703Z",
+          "timestamp": "2026-07-12T08:28:51.764Z",
           "asset": {
-            "id": "affcfa2d-6857-45e7-9f80-bad7071293eb",
+            "id": "e6809f70-6bbb-4562-a9a2-496a6115121b",
             "assetCode": "AUDIT",
             "name": "Audit QA Ops"
           },
           "actor": {
-            "id": "391dc348-c03f-4c01-9a40-e75e381ae644",
+            "id": "5bf50489-ff93-42fd-8c66-29ced3c21a99",
             "name": "Admin User",
             "email": "admin@assetflow.local"
           }
         },
         {
-          "id": "audit:922a3378-ff05-432e-96fa-5f1c025ea229",
+          "id": "audit:a66f81a5-a2d6-4fc6-a9aa-0f9eccddb449",
           "type": "AUDIT",
           "title": "Audit created",
           "description": "IT Manager created Audit QA Active Delete.",
           "status": "ACTIVE",
-          "timestamp": "2026-07-12T07:50:53.690Z",
+          "timestamp": "2026-07-12T08:28:51.750Z",
           "asset": {
-            "id": "922a3378-ff05-432e-96fa-5f1c025ea229",
+            "id": "a66f81a5-a2d6-4fc6-a9aa-0f9eccddb449",
             "assetCode": "AUDIT",
             "name": "Audit QA Active Delete"
           },
           "actor": {
-            "id": "c2a8a8ce-fb84-450c-ba01-0aab4f830f8f",
+            "id": "b29dd17e-6d13-44e7-8d49-78d2a852d807",
             "name": "IT Manager",
             "email": "manager@assetflow.local"
           }
         },
         {
-          "id": "audit:dfa0c1b5-a2c3-45d1-ac53-7819016987bf",
+          "id": "audit:f92c884d-09dd-4c84-9f8b-b5dced419ace",
           "type": "AUDIT",
           "title": "Audit created",
           "description": "IT Manager created Audit QA Cycle Updated.",
           "status": "CLOSED",
-          "timestamp": "2026-07-12T07:50:53.576Z",
+          "timestamp": "2026-07-12T08:28:51.635Z",
           "asset": {
-            "id": "dfa0c1b5-a2c3-45d1-ac53-7819016987bf",
+            "id": "f92c884d-09dd-4c84-9f8b-b5dced419ace",
             "assetCode": "AUDIT",
             "name": "Audit QA Cycle Updated"
           },
           "actor": {
-            "id": "c2a8a8ce-fb84-450c-ba01-0aab4f830f8f",
+            "id": "b29dd17e-6d13-44e7-8d49-78d2a852d807",
             "name": "IT Manager",
             "email": "manager@assetflow.local"
           }
         },
         {
-          "id": "allocation:6226aba2-7f57-41bc-9e9f-6528b2bf8e9b",
+          "id": "allocation:261a8a2f-04b5-44c2-8606-49fa7ae72a2f",
           "type": "ALLOCATION",
           "title": "Asset allocated",
-          "description": "Audit QA Asset 1783842653540-EMP allocated to Employee User.",
+          "description": "Audit QA Asset 1783844931600-EMP allocated to Employee User.",
           "status": "ACTIVE",
-          "timestamp": "2026-07-12T07:50:53.570Z",
+          "timestamp": "2026-07-12T08:28:51.628Z",
           "asset": {
-            "id": "9dd78c57-172a-41eb-82db-b1fd5f928ab6",
-            "assetCode": "AUD-QA-1783842653540-EMP",
-            "name": "Audit QA Asset 1783842653540-EMP"
+            "id": "d430c540-2519-48c2-be39-0cb5dc5e22eb",
+            "assetCode": "AUD-QA-1783844931600-EMP",
+            "name": "Audit QA Asset 1783844931600-EMP"
           },
           "actor": {
-            "id": "391dc348-c03f-4c01-9a40-e75e381ae644",
+            "id": "5bf50489-ff93-42fd-8c66-29ced3c21a99",
             "name": "Admin User",
             "email": "admin@assetflow.local"
           }
         },
         {
-          "id": "booking:9fff0a7b-d860-40a6-9f41-fb9777ddbb2e",
+          "id": "booking:da85c7cf-b86e-4dca-aec8-6a54b3cb2ea3",
           "type": "BOOKING",
           "title": "Booking requested",
           "description": "Employee User requested Office Shuttle.",
           "status": "REQUESTED",
-          "timestamp": "2026-07-12T07:50:53.318Z",
+          "timestamp": "2026-07-12T08:28:51.377Z",
           "asset": {
-            "id": "38c61ad4-f003-4e16-be9e-fbc7c1fcb29c",
+            "id": "abbf9190-d39c-43f7-99da-94f567e4cef6",
             "assetCode": "VEH-001",
             "name": "Office Shuttle"
           },
           "actor": {
-            "id": "2889111c-3e66-44fa-9c3f-c655b09291b0",
+            "id": "60db11f0-22d9-48a7-8f5c-adf3b63a5601",
             "name": "Employee User",
             "email": "employee@assetflow.local"
           }
         },
         {
-          "id": "maintenance:1e414a99-e5ce-4a94-b690-b7de215add6d",
+          "id": "maintenance:dda97e6b-0d68-4089-8dd2-82601a92ba76",
           "type": "MAINTENANCE",
           "title": "Maintenance reported",
           "description": "Employee User reported Display flickering for Dell 27 Inch Monitor.",
           "status": "IN_PROGRESS",
-          "timestamp": "2026-07-12T07:50:53.318Z",
+          "timestamp": "2026-07-12T08:28:51.377Z",
           "asset": {
-            "id": "0351b3b7-3074-4b72-8481-d7f9b637fa98",
+            "id": "eae87e7e-cc0c-4039-a781-518bea1df47c",
             "assetCode": "MON-001",
             "name": "Dell 27 Inch Monitor"
           },
           "actor": {
-            "id": "2889111c-3e66-44fa-9c3f-c655b09291b0",
+            "id": "60db11f0-22d9-48a7-8f5c-adf3b63a5601",
             "name": "Employee User",
             "email": "employee@assetflow.local"
           }
         },
         {
-          "id": "transfer:40305e8b-4bbd-4532-9c64-29360ac42e1e",
+          "id": "transfer:c684a00b-d7a2-42fe-973d-5e51d807875e",
           "type": "TRANSFER",
           "title": "Transfer requested",
           "description": "Employee User requested transfer for Dell Latitude 5440.",
           "status": "PENDING",
-          "timestamp": "2026-07-12T07:50:53.317Z",
+          "timestamp": "2026-07-12T08:28:51.376Z",
           "asset": {
-            "id": "477fc28e-a25c-4788-92b6-f60d62d2d25e",
+            "id": "fa72e0f8-3af5-43e3-b57f-43c20600503e",
             "assetCode": "LAP-001",
             "name": "Dell Latitude 5440"
           },
           "actor": {
-            "id": "2889111c-3e66-44fa-9c3f-c655b09291b0",
+            "id": "60db11f0-22d9-48a7-8f5c-adf3b63a5601",
             "name": "Employee User",
             "email": "employee@assetflow.local"
           }
         },
         {
-          "id": "booking:f840c5d8-7d02-4732-807e-6c2eb103e736",
+          "id": "booking:b04ad02d-20bd-4934-b700-46e002df4170",
           "type": "BOOKING",
           "title": "Booking requested",
           "description": "Employee User requested Epson Conference Projector.",
           "status": "APPROVED",
-          "timestamp": "2026-07-12T07:50:53.317Z",
+          "timestamp": "2026-07-12T08:28:51.376Z",
           "asset": {
-            "id": "e0fb709d-2874-4729-a9f5-0e5db69d52fb",
+            "id": "46d9a707-3579-404d-914a-4432f5bf7f70",
             "assetCode": "PROJ-001",
             "name": "Epson Conference Projector"
           },
           "actor": {
-            "id": "2889111c-3e66-44fa-9c3f-c655b09291b0",
+            "id": "60db11f0-22d9-48a7-8f5c-adf3b63a5601",
             "name": "Employee User",
             "email": "employee@assetflow.local"
           }
         },
         {
-          "id": "allocation:85489941-933a-4e96-a732-c02412fa156d",
+          "id": "allocation:e50b981b-9564-4bf2-98ee-c6305e2d7fca",
           "type": "ALLOCATION",
           "title": "Asset allocated",
           "description": "Dell Latitude 5440 allocated to Employee User.",
           "status": "ACTIVE",
-          "timestamp": "2026-07-12T07:50:53.316Z",
+          "timestamp": "2026-07-12T08:28:51.375Z",
           "asset": {
-            "id": "477fc28e-a25c-4788-92b6-f60d62d2d25e",
+            "id": "fa72e0f8-3af5-43e3-b57f-43c20600503e",
             "assetCode": "LAP-001",
             "name": "Dell Latitude 5440"
           },
           "actor": {
-            "id": "c2a8a8ce-fb84-450c-ba01-0aab4f830f8f",
+            "id": "b29dd17e-6d13-44e7-8d49-78d2a852d807",
             "name": "IT Manager",
             "email": "manager@assetflow.local"
           }
@@ -1191,163 +1191,163 @@
       ],
       "latestActivity": [
         {
-          "id": "audit:affcfa2d-6857-45e7-9f80-bad7071293eb",
+          "id": "audit:e6809f70-6bbb-4562-a9a2-496a6115121b",
           "type": "AUDIT",
           "title": "Audit created",
           "description": "Admin User created Audit QA Ops.",
           "status": "PLANNED",
-          "timestamp": "2026-07-12T07:50:53.703Z",
+          "timestamp": "2026-07-12T08:28:51.764Z",
           "asset": {
-            "id": "affcfa2d-6857-45e7-9f80-bad7071293eb",
+            "id": "e6809f70-6bbb-4562-a9a2-496a6115121b",
             "assetCode": "AUDIT",
             "name": "Audit QA Ops"
           },
           "actor": {
-            "id": "391dc348-c03f-4c01-9a40-e75e381ae644",
+            "id": "5bf50489-ff93-42fd-8c66-29ced3c21a99",
             "name": "Admin User",
             "email": "admin@assetflow.local"
           }
         },
         {
-          "id": "audit:922a3378-ff05-432e-96fa-5f1c025ea229",
+          "id": "audit:a66f81a5-a2d6-4fc6-a9aa-0f9eccddb449",
           "type": "AUDIT",
           "title": "Audit created",
           "description": "IT Manager created Audit QA Active Delete.",
           "status": "ACTIVE",
-          "timestamp": "2026-07-12T07:50:53.690Z",
+          "timestamp": "2026-07-12T08:28:51.750Z",
           "asset": {
-            "id": "922a3378-ff05-432e-96fa-5f1c025ea229",
+            "id": "a66f81a5-a2d6-4fc6-a9aa-0f9eccddb449",
             "assetCode": "AUDIT",
             "name": "Audit QA Active Delete"
           },
           "actor": {
-            "id": "c2a8a8ce-fb84-450c-ba01-0aab4f830f8f",
+            "id": "b29dd17e-6d13-44e7-8d49-78d2a852d807",
             "name": "IT Manager",
             "email": "manager@assetflow.local"
           }
         },
         {
-          "id": "audit:dfa0c1b5-a2c3-45d1-ac53-7819016987bf",
+          "id": "audit:f92c884d-09dd-4c84-9f8b-b5dced419ace",
           "type": "AUDIT",
           "title": "Audit created",
           "description": "IT Manager created Audit QA Cycle Updated.",
           "status": "CLOSED",
-          "timestamp": "2026-07-12T07:50:53.576Z",
+          "timestamp": "2026-07-12T08:28:51.635Z",
           "asset": {
-            "id": "dfa0c1b5-a2c3-45d1-ac53-7819016987bf",
+            "id": "f92c884d-09dd-4c84-9f8b-b5dced419ace",
             "assetCode": "AUDIT",
             "name": "Audit QA Cycle Updated"
           },
           "actor": {
-            "id": "c2a8a8ce-fb84-450c-ba01-0aab4f830f8f",
+            "id": "b29dd17e-6d13-44e7-8d49-78d2a852d807",
             "name": "IT Manager",
             "email": "manager@assetflow.local"
           }
         },
         {
-          "id": "allocation:6226aba2-7f57-41bc-9e9f-6528b2bf8e9b",
+          "id": "allocation:261a8a2f-04b5-44c2-8606-49fa7ae72a2f",
           "type": "ALLOCATION",
           "title": "Asset allocated",
-          "description": "Audit QA Asset 1783842653540-EMP allocated to Employee User.",
+          "description": "Audit QA Asset 1783844931600-EMP allocated to Employee User.",
           "status": "ACTIVE",
-          "timestamp": "2026-07-12T07:50:53.570Z",
+          "timestamp": "2026-07-12T08:28:51.628Z",
           "asset": {
-            "id": "9dd78c57-172a-41eb-82db-b1fd5f928ab6",
-            "assetCode": "AUD-QA-1783842653540-EMP",
-            "name": "Audit QA Asset 1783842653540-EMP"
+            "id": "d430c540-2519-48c2-be39-0cb5dc5e22eb",
+            "assetCode": "AUD-QA-1783844931600-EMP",
+            "name": "Audit QA Asset 1783844931600-EMP"
           },
           "actor": {
-            "id": "391dc348-c03f-4c01-9a40-e75e381ae644",
+            "id": "5bf50489-ff93-42fd-8c66-29ced3c21a99",
             "name": "Admin User",
             "email": "admin@assetflow.local"
           }
         },
         {
-          "id": "booking:9fff0a7b-d860-40a6-9f41-fb9777ddbb2e",
+          "id": "booking:da85c7cf-b86e-4dca-aec8-6a54b3cb2ea3",
           "type": "BOOKING",
           "title": "Booking requested",
           "description": "Employee User requested Office Shuttle.",
           "status": "REQUESTED",
-          "timestamp": "2026-07-12T07:50:53.318Z",
+          "timestamp": "2026-07-12T08:28:51.377Z",
           "asset": {
-            "id": "38c61ad4-f003-4e16-be9e-fbc7c1fcb29c",
+            "id": "abbf9190-d39c-43f7-99da-94f567e4cef6",
             "assetCode": "VEH-001",
             "name": "Office Shuttle"
           },
           "actor": {
-            "id": "2889111c-3e66-44fa-9c3f-c655b09291b0",
+            "id": "60db11f0-22d9-48a7-8f5c-adf3b63a5601",
             "name": "Employee User",
             "email": "employee@assetflow.local"
           }
         },
         {
-          "id": "maintenance:1e414a99-e5ce-4a94-b690-b7de215add6d",
+          "id": "maintenance:dda97e6b-0d68-4089-8dd2-82601a92ba76",
           "type": "MAINTENANCE",
           "title": "Maintenance reported",
           "description": "Employee User reported Display flickering for Dell 27 Inch Monitor.",
           "status": "IN_PROGRESS",
-          "timestamp": "2026-07-12T07:50:53.318Z",
+          "timestamp": "2026-07-12T08:28:51.377Z",
           "asset": {
-            "id": "0351b3b7-3074-4b72-8481-d7f9b637fa98",
+            "id": "eae87e7e-cc0c-4039-a781-518bea1df47c",
             "assetCode": "MON-001",
             "name": "Dell 27 Inch Monitor"
           },
           "actor": {
-            "id": "2889111c-3e66-44fa-9c3f-c655b09291b0",
+            "id": "60db11f0-22d9-48a7-8f5c-adf3b63a5601",
             "name": "Employee User",
             "email": "employee@assetflow.local"
           }
         },
         {
-          "id": "transfer:40305e8b-4bbd-4532-9c64-29360ac42e1e",
+          "id": "transfer:c684a00b-d7a2-42fe-973d-5e51d807875e",
           "type": "TRANSFER",
           "title": "Transfer requested",
           "description": "Employee User requested transfer for Dell Latitude 5440.",
           "status": "PENDING",
-          "timestamp": "2026-07-12T07:50:53.317Z",
+          "timestamp": "2026-07-12T08:28:51.376Z",
           "asset": {
-            "id": "477fc28e-a25c-4788-92b6-f60d62d2d25e",
+            "id": "fa72e0f8-3af5-43e3-b57f-43c20600503e",
             "assetCode": "LAP-001",
             "name": "Dell Latitude 5440"
           },
           "actor": {
-            "id": "2889111c-3e66-44fa-9c3f-c655b09291b0",
+            "id": "60db11f0-22d9-48a7-8f5c-adf3b63a5601",
             "name": "Employee User",
             "email": "employee@assetflow.local"
           }
         },
         {
-          "id": "booking:f840c5d8-7d02-4732-807e-6c2eb103e736",
+          "id": "booking:b04ad02d-20bd-4934-b700-46e002df4170",
           "type": "BOOKING",
           "title": "Booking requested",
           "description": "Employee User requested Epson Conference Projector.",
           "status": "APPROVED",
-          "timestamp": "2026-07-12T07:50:53.317Z",
+          "timestamp": "2026-07-12T08:28:51.376Z",
           "asset": {
-            "id": "e0fb709d-2874-4729-a9f5-0e5db69d52fb",
+            "id": "46d9a707-3579-404d-914a-4432f5bf7f70",
             "assetCode": "PROJ-001",
             "name": "Epson Conference Projector"
           },
           "actor": {
-            "id": "2889111c-3e66-44fa-9c3f-c655b09291b0",
+            "id": "60db11f0-22d9-48a7-8f5c-adf3b63a5601",
             "name": "Employee User",
             "email": "employee@assetflow.local"
           }
         },
         {
-          "id": "allocation:85489941-933a-4e96-a732-c02412fa156d",
+          "id": "allocation:e50b981b-9564-4bf2-98ee-c6305e2d7fca",
           "type": "ALLOCATION",
           "title": "Asset allocated",
           "description": "Dell Latitude 5440 allocated to Employee User.",
           "status": "ACTIVE",
-          "timestamp": "2026-07-12T07:50:53.316Z",
+          "timestamp": "2026-07-12T08:28:51.375Z",
           "asset": {
-            "id": "477fc28e-a25c-4788-92b6-f60d62d2d25e",
+            "id": "fa72e0f8-3af5-43e3-b57f-43c20600503e",
             "assetCode": "LAP-001",
             "name": "Dell Latitude 5440"
           },
           "actor": {
-            "id": "c2a8a8ce-fb84-450c-ba01-0aab4f830f8f",
+            "id": "b29dd17e-6d13-44e7-8d49-78d2a852d807",
             "name": "IT Manager",
             "email": "manager@assetflow.local"
           }
@@ -1358,8 +1358,8 @@
         "notificationBadgeCount": 23,
         "recent": [
           {
-            "id": "e6ead225-bd5e-4725-acdb-7c5322388c2b",
-            "userId": "391dc348-c03f-4c01-9a40-e75e381ae644",
+            "id": "151997fc-b541-4e0c-8a68-029a58bf0292",
+            "userId": "5bf50489-ff93-42fd-8c66-29ced3c21a99",
             "type": "AUDIT_CREATED",
             "category": "AUDIT",
             "priority": "INFO",
@@ -1368,28 +1368,28 @@
             "isRead": false,
             "readAt": null,
             "relatedEntityType": "Audit",
-            "relatedEntityId": "affcfa2d-6857-45e7-9f80-bad7071293eb",
-            "createdAt": "2026-07-12T07:50:53.705Z",
-            "updatedAt": "2026-07-12T07:50:53.705Z",
+            "relatedEntityId": "e6809f70-6bbb-4562-a9a2-496a6115121b",
+            "createdAt": "2026-07-12T08:28:51.766Z",
+            "updatedAt": "2026-07-12T08:28:51.766Z",
             "user": {
-              "id": "391dc348-c03f-4c01-9a40-e75e381ae644",
+              "id": "5bf50489-ff93-42fd-8c66-29ced3c21a99",
               "name": "Admin User",
               "email": "admin@assetflow.local",
               "role": "ADMIN",
-              "departmentId": "ef4782b9-f7aa-4e4b-9369-c4567f028e7b"
+              "departmentId": "3862b5c7-2f2b-484b-8dcb-80f308be4fd0"
             },
             "status": "unread",
             "recipient": {
-              "id": "391dc348-c03f-4c01-9a40-e75e381ae644",
+              "id": "5bf50489-ff93-42fd-8c66-29ced3c21a99",
               "name": "Admin User",
               "email": "admin@assetflow.local",
               "role": "ADMIN",
-              "departmentId": "ef4782b9-f7aa-4e4b-9369-c4567f028e7b"
+              "departmentId": "3862b5c7-2f2b-484b-8dcb-80f308be4fd0"
             }
           },
           {
-            "id": "512afa52-eee1-44fe-80fa-c27b36e1523d",
-            "userId": "c2a8a8ce-fb84-450c-ba01-0aab4f830f8f",
+            "id": "99edc248-b1b9-449e-a16c-84163d07d7fb",
+            "userId": "b29dd17e-6d13-44e7-8d49-78d2a852d807",
             "type": "AUDIT_STARTED",
             "category": "AUDIT",
             "priority": "MEDIUM",
@@ -1398,28 +1398,28 @@
             "isRead": false,
             "readAt": null,
             "relatedEntityType": "Audit",
-            "relatedEntityId": "922a3378-ff05-432e-96fa-5f1c025ea229",
-            "createdAt": "2026-07-12T07:50:53.697Z",
-            "updatedAt": "2026-07-12T07:50:53.697Z",
+            "relatedEntityId": "a66f81a5-a2d6-4fc6-a9aa-0f9eccddb449",
+            "createdAt": "2026-07-12T08:28:51.758Z",
+            "updatedAt": "2026-07-12T08:28:51.758Z",
             "user": {
-              "id": "c2a8a8ce-fb84-450c-ba01-0aab4f830f8f",
+              "id": "b29dd17e-6d13-44e7-8d49-78d2a852d807",
               "name": "IT Manager",
               "email": "manager@assetflow.local",
               "role": "MANAGER",
-              "departmentId": "ef4782b9-f7aa-4e4b-9369-c4567f028e7b"
+              "departmentId": "3862b5c7-2f2b-484b-8dcb-80f308be4fd0"
             },
             "status": "unread",
             "recipient": {
-              "id": "c2a8a8ce-fb84-450c-ba01-0aab4f830f8f",
+              "id": "b29dd17e-6d13-44e7-8d49-78d2a852d807",
               "name": "IT Manager",
               "email": "manager@assetflow.local",
               "role": "MANAGER",
-              "departmentId": "ef4782b9-f7aa-4e4b-9369-c4567f028e7b"
+              "departmentId": "3862b5c7-2f2b-484b-8dcb-80f308be4fd0"
             }
           },
           {
-            "id": "42924656-ff17-49cc-9477-f56d54844d73",
-            "userId": "c2a8a8ce-fb84-450c-ba01-0aab4f830f8f",
+            "id": "5a97f080-215c-490b-84b9-0ddf21139c85",
+            "userId": "b29dd17e-6d13-44e7-8d49-78d2a852d807",
             "type": "AUDIT_CREATED",
             "category": "AUDIT",
             "priority": "INFO",
@@ -1428,28 +1428,28 @@
             "isRead": false,
             "readAt": null,
             "relatedEntityType": "Audit",
-            "relatedEntityId": "922a3378-ff05-432e-96fa-5f1c025ea229",
-            "createdAt": "2026-07-12T07:50:53.692Z",
-            "updatedAt": "2026-07-12T07:50:53.692Z",
+            "relatedEntityId": "a66f81a5-a2d6-4fc6-a9aa-0f9eccddb449",
+            "createdAt": "2026-07-12T08:28:51.752Z",
+            "updatedAt": "2026-07-12T08:28:51.752Z",
             "user": {
-              "id": "c2a8a8ce-fb84-450c-ba01-0aab4f830f8f",
+              "id": "b29dd17e-6d13-44e7-8d49-78d2a852d807",
               "name": "IT Manager",
               "email": "manager@assetflow.local",
               "role": "MANAGER",
-              "departmentId": "ef4782b9-f7aa-4e4b-9369-c4567f028e7b"
+              "departmentId": "3862b5c7-2f2b-484b-8dcb-80f308be4fd0"
             },
             "status": "unread",
             "recipient": {
-              "id": "c2a8a8ce-fb84-450c-ba01-0aab4f830f8f",
+              "id": "b29dd17e-6d13-44e7-8d49-78d2a852d807",
               "name": "IT Manager",
               "email": "manager@assetflow.local",
               "role": "MANAGER",
-              "departmentId": "ef4782b9-f7aa-4e4b-9369-c4567f028e7b"
+              "departmentId": "3862b5c7-2f2b-484b-8dcb-80f308be4fd0"
             }
           },
           {
-            "id": "8302025e-ab48-4928-b53c-3c11f2efafe4",
-            "userId": "c2a8a8ce-fb84-450c-ba01-0aab4f830f8f",
+            "id": "497553be-1260-43c1-b2b0-ce890cca9895",
+            "userId": "b29dd17e-6d13-44e7-8d49-78d2a852d807",
             "type": "AUDIT_CREATED",
             "category": "AUDIT",
             "priority": "INFO",
@@ -1458,28 +1458,28 @@
             "isRead": false,
             "readAt": null,
             "relatedEntityType": "Audit",
-            "relatedEntityId": "6f8344c5-f57f-4ccd-85ac-0e01306a0da3",
-            "createdAt": "2026-07-12T07:50:53.683Z",
-            "updatedAt": "2026-07-12T07:50:53.683Z",
+            "relatedEntityId": "5926a7ab-99d9-4826-8587-8b7983b2afc7",
+            "createdAt": "2026-07-12T08:28:51.743Z",
+            "updatedAt": "2026-07-12T08:28:51.743Z",
             "user": {
-              "id": "c2a8a8ce-fb84-450c-ba01-0aab4f830f8f",
+              "id": "b29dd17e-6d13-44e7-8d49-78d2a852d807",
               "name": "IT Manager",
               "email": "manager@assetflow.local",
               "role": "MANAGER",
-              "departmentId": "ef4782b9-f7aa-4e4b-9369-c4567f028e7b"
+              "departmentId": "3862b5c7-2f2b-484b-8dcb-80f308be4fd0"
             },
             "status": "unread",
             "recipient": {
-              "id": "c2a8a8ce-fb84-450c-ba01-0aab4f830f8f",
+              "id": "b29dd17e-6d13-44e7-8d49-78d2a852d807",
               "name": "IT Manager",
               "email": "manager@assetflow.local",
               "role": "MANAGER",
-              "departmentId": "ef4782b9-f7aa-4e4b-9369-c4567f028e7b"
+              "departmentId": "3862b5c7-2f2b-484b-8dcb-80f308be4fd0"
             }
           },
           {
-            "id": "f4800c6b-c823-40c7-87b0-98cc6a100d1b",
-            "userId": "eb78f920-e2fb-4907-99f8-a52c263ca89f",
+            "id": "7cee943f-c851-4656-aa2b-1dfd6ece837b",
+            "userId": "b29dd17e-6d13-44e7-8d49-78d2a852d807",
             "type": "AUDIT_CLOSED",
             "category": "AUDIT",
             "priority": "INFO",
@@ -1488,145 +1488,145 @@
             "isRead": false,
             "readAt": null,
             "relatedEntityType": "Audit",
-            "relatedEntityId": "dfa0c1b5-a2c3-45d1-ac53-7819016987bf",
-            "createdAt": "2026-07-12T07:50:53.672Z",
-            "updatedAt": "2026-07-12T07:50:53.672Z",
+            "relatedEntityId": "f92c884d-09dd-4c84-9f8b-b5dced419ace",
+            "createdAt": "2026-07-12T08:28:51.733Z",
+            "updatedAt": "2026-07-12T08:28:51.733Z",
             "user": {
-              "id": "eb78f920-e2fb-4907-99f8-a52c263ca89f",
-              "name": "Audit User",
-              "email": "auditor@assetflow.local",
-              "role": "AUDITOR",
-              "departmentId": "8fec5e8b-b1e5-419b-967a-6d4adcd415fa"
+              "id": "b29dd17e-6d13-44e7-8d49-78d2a852d807",
+              "name": "IT Manager",
+              "email": "manager@assetflow.local",
+              "role": "MANAGER",
+              "departmentId": "3862b5c7-2f2b-484b-8dcb-80f308be4fd0"
             },
             "status": "unread",
             "recipient": {
-              "id": "eb78f920-e2fb-4907-99f8-a52c263ca89f",
-              "name": "Audit User",
-              "email": "auditor@assetflow.local",
-              "role": "AUDITOR",
-              "departmentId": "8fec5e8b-b1e5-419b-967a-6d4adcd415fa"
+              "id": "b29dd17e-6d13-44e7-8d49-78d2a852d807",
+              "name": "IT Manager",
+              "email": "manager@assetflow.local",
+              "role": "MANAGER",
+              "departmentId": "3862b5c7-2f2b-484b-8dcb-80f308be4fd0"
             }
           }
         ],
         "criticalAlerts": [
           {
-            "id": "766bae67-7f7e-4922-a744-a2e5a8e0a5a5",
-            "userId": "c2a8a8ce-fb84-450c-ba01-0aab4f830f8f",
+            "id": "8168c3a6-8526-4d2b-bc85-df992d048fb0",
+            "userId": "b29dd17e-6d13-44e7-8d49-78d2a852d807",
             "type": "AUDIT_ASSET_MISSING",
             "category": "AUDIT",
             "priority": "CRITICAL",
             "title": "Asset flagged missing",
-            "message": "Audit QA Asset 1783842653540-MISS was flagged as missing during Audit QA Cycle Updated.",
+            "message": "Audit QA Asset 1783844931600-MISS was flagged as missing during Audit QA Cycle Updated.",
             "isRead": false,
             "readAt": null,
             "relatedEntityType": "Audit",
-            "relatedEntityId": "dfa0c1b5-a2c3-45d1-ac53-7819016987bf",
-            "createdAt": "2026-07-12T07:50:53.646Z",
-            "updatedAt": "2026-07-12T07:50:53.646Z",
+            "relatedEntityId": "f92c884d-09dd-4c84-9f8b-b5dced419ace",
+            "createdAt": "2026-07-12T08:28:51.704Z",
+            "updatedAt": "2026-07-12T08:28:51.704Z",
             "user": {
-              "id": "c2a8a8ce-fb84-450c-ba01-0aab4f830f8f",
+              "id": "b29dd17e-6d13-44e7-8d49-78d2a852d807",
               "name": "IT Manager",
               "email": "manager@assetflow.local",
               "role": "MANAGER",
-              "departmentId": "ef4782b9-f7aa-4e4b-9369-c4567f028e7b"
+              "departmentId": "3862b5c7-2f2b-484b-8dcb-80f308be4fd0"
             },
             "status": "unread",
             "recipient": {
-              "id": "c2a8a8ce-fb84-450c-ba01-0aab4f830f8f",
+              "id": "b29dd17e-6d13-44e7-8d49-78d2a852d807",
               "name": "IT Manager",
               "email": "manager@assetflow.local",
               "role": "MANAGER",
-              "departmentId": "ef4782b9-f7aa-4e4b-9369-c4567f028e7b"
+              "departmentId": "3862b5c7-2f2b-484b-8dcb-80f308be4fd0"
             }
           },
           {
-            "id": "f48885fc-0af3-40c9-8aa9-a497c76400ec",
-            "userId": "eb78f920-e2fb-4907-99f8-a52c263ca89f",
+            "id": "a2286543-1210-4f58-bedb-82972a46ac8e",
+            "userId": "c7c7cdef-7310-4d39-aa02-82a310a623a3",
             "type": "AUDIT_ASSET_MISSING",
             "category": "AUDIT",
             "priority": "CRITICAL",
             "title": "Asset flagged missing",
-            "message": "Audit QA Asset 1783842653540-MISS was flagged as missing during Audit QA Cycle Updated.",
+            "message": "Audit QA Asset 1783844931600-MISS was flagged as missing during Audit QA Cycle Updated.",
             "isRead": false,
             "readAt": null,
             "relatedEntityType": "Audit",
-            "relatedEntityId": "dfa0c1b5-a2c3-45d1-ac53-7819016987bf",
-            "createdAt": "2026-07-12T07:50:53.646Z",
-            "updatedAt": "2026-07-12T07:50:53.646Z",
+            "relatedEntityId": "f92c884d-09dd-4c84-9f8b-b5dced419ace",
+            "createdAt": "2026-07-12T08:28:51.704Z",
+            "updatedAt": "2026-07-12T08:28:51.704Z",
             "user": {
-              "id": "eb78f920-e2fb-4907-99f8-a52c263ca89f",
+              "id": "c7c7cdef-7310-4d39-aa02-82a310a623a3",
               "name": "Audit User",
               "email": "auditor@assetflow.local",
               "role": "AUDITOR",
-              "departmentId": "8fec5e8b-b1e5-419b-967a-6d4adcd415fa"
+              "departmentId": "d6c31d21-542b-4855-8ba9-c866fcb24668"
             },
             "status": "unread",
             "recipient": {
-              "id": "eb78f920-e2fb-4907-99f8-a52c263ca89f",
+              "id": "c7c7cdef-7310-4d39-aa02-82a310a623a3",
               "name": "Audit User",
               "email": "auditor@assetflow.local",
               "role": "AUDITOR",
-              "departmentId": "8fec5e8b-b1e5-419b-967a-6d4adcd415fa"
+              "departmentId": "d6c31d21-542b-4855-8ba9-c866fcb24668"
             }
           },
           {
-            "id": "18c770b0-5913-4e3c-bb7e-9b3fb30c820a",
-            "userId": "c2a8a8ce-fb84-450c-ba01-0aab4f830f8f",
+            "id": "06271981-cf47-4e20-8ee1-662a0877f9eb",
+            "userId": "b29dd17e-6d13-44e7-8d49-78d2a852d807",
             "type": "AUDIT_ASSET_DAMAGED",
             "category": "AUDIT",
             "priority": "CRITICAL",
             "title": "Asset flagged damaged",
-            "message": "Audit QA Asset 1783842653540-DMG was flagged as damaged during Audit QA Cycle Updated.",
+            "message": "Audit QA Asset 1783844931600-DMG was flagged as damaged during Audit QA Cycle Updated.",
             "isRead": false,
             "readAt": null,
             "relatedEntityType": "Audit",
-            "relatedEntityId": "dfa0c1b5-a2c3-45d1-ac53-7819016987bf",
-            "createdAt": "2026-07-12T07:50:53.638Z",
-            "updatedAt": "2026-07-12T07:50:53.638Z",
+            "relatedEntityId": "f92c884d-09dd-4c84-9f8b-b5dced419ace",
+            "createdAt": "2026-07-12T08:28:51.697Z",
+            "updatedAt": "2026-07-12T08:28:51.697Z",
             "user": {
-              "id": "c2a8a8ce-fb84-450c-ba01-0aab4f830f8f",
+              "id": "b29dd17e-6d13-44e7-8d49-78d2a852d807",
               "name": "IT Manager",
               "email": "manager@assetflow.local",
               "role": "MANAGER",
-              "departmentId": "ef4782b9-f7aa-4e4b-9369-c4567f028e7b"
+              "departmentId": "3862b5c7-2f2b-484b-8dcb-80f308be4fd0"
             },
             "status": "unread",
             "recipient": {
-              "id": "c2a8a8ce-fb84-450c-ba01-0aab4f830f8f",
+              "id": "b29dd17e-6d13-44e7-8d49-78d2a852d807",
               "name": "IT Manager",
               "email": "manager@assetflow.local",
               "role": "MANAGER",
-              "departmentId": "ef4782b9-f7aa-4e4b-9369-c4567f028e7b"
+              "departmentId": "3862b5c7-2f2b-484b-8dcb-80f308be4fd0"
             }
           },
           {
-            "id": "41699d86-9d46-44a0-9a96-223d1957b29e",
-            "userId": "eb78f920-e2fb-4907-99f8-a52c263ca89f",
+            "id": "8e9ea1b9-6fae-4e03-ab6d-c76f2b184742",
+            "userId": "c7c7cdef-7310-4d39-aa02-82a310a623a3",
             "type": "AUDIT_ASSET_DAMAGED",
             "category": "AUDIT",
             "priority": "CRITICAL",
             "title": "Asset flagged damaged",
-            "message": "Audit QA Asset 1783842653540-DMG was flagged as damaged during Audit QA Cycle Updated.",
+            "message": "Audit QA Asset 1783844931600-DMG was flagged as damaged during Audit QA Cycle Updated.",
             "isRead": false,
             "readAt": null,
             "relatedEntityType": "Audit",
-            "relatedEntityId": "dfa0c1b5-a2c3-45d1-ac53-7819016987bf",
-            "createdAt": "2026-07-12T07:50:53.638Z",
-            "updatedAt": "2026-07-12T07:50:53.638Z",
+            "relatedEntityId": "f92c884d-09dd-4c84-9f8b-b5dced419ace",
+            "createdAt": "2026-07-12T08:28:51.697Z",
+            "updatedAt": "2026-07-12T08:28:51.697Z",
             "user": {
-              "id": "eb78f920-e2fb-4907-99f8-a52c263ca89f",
+              "id": "c7c7cdef-7310-4d39-aa02-82a310a623a3",
               "name": "Audit User",
               "email": "auditor@assetflow.local",
               "role": "AUDITOR",
-              "departmentId": "8fec5e8b-b1e5-419b-967a-6d4adcd415fa"
+              "departmentId": "d6c31d21-542b-4855-8ba9-c866fcb24668"
             },
             "status": "unread",
             "recipient": {
-              "id": "eb78f920-e2fb-4907-99f8-a52c263ca89f",
+              "id": "c7c7cdef-7310-4d39-aa02-82a310a623a3",
               "name": "Audit User",
               "email": "auditor@assetflow.local",
               "role": "AUDITOR",
-              "departmentId": "8fec5e8b-b1e5-419b-967a-6d4adcd415fa"
+              "departmentId": "d6c31d21-542b-4855-8ba9-c866fcb24668"
             }
           }
         ]
