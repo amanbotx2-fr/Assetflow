@@ -1,0 +1,67 @@
+/* ==========================================================================
+   ANIMATIONS
+   ========================================================================== */
+
+/* Keyframes */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { transform: translateY(10px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes dropdownIn {
+  from { transform: translateY(-5px) scale(0.98); opacity: 0; }
+  to { transform: translateY(0) scale(1); opacity: 1; }
+}
+
+@keyframes toastSlideIn {
+  from { transform: translateX(100%); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes modalPop {
+  from { transform: scale(0.95); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+@keyframes skeletonShimmer {
+  0% { background-position: -200px 0; }
+  100% { background-position: calc(200px + 100%) 0; }
+}
+
+/* Animation Classes */
+.animate-fade-in {
+  animation: fadeIn var(--transition-normal) forwards;
+}
+
+.animate-slide-up {
+  animation: slideUp var(--transition-normal) forwards;
+}
+
+.animate-dropdown {
+  animation: dropdownIn var(--transition-fast) forwards;
+  transform-origin: top right;
+}
+
+.animate-toast {
+  animation: toastSlideIn var(--transition-normal) forwards;
+}
+
+.animate-modal {
+  animation: modalPop var(--transition-normal) forwards;
+}
+
+.animate-skeleton {
+  animation: skeletonShimmer 1.5s infinite linear;
+  background-image: linear-gradient(
+    90deg, 
+    var(--color-skeleton) 0px, 
+    var(--color-skeleton-highlight) 50%, 
+    var(--color-skeleton) 100%
+  );
+  background-size: 200px 100%;
+}

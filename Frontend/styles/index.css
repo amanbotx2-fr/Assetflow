@@ -1,0 +1,21 @@
+/* ==========================================================================
+   GLOBAL DESIGN SYSTEM - ENTRY POINT
+   ========================================================================== */
+
+/* 1. Design Tokens */
+@import './tokens/variables.css';
+
+/* 2. Base Rules & Accessibility */
+@import './accessibility.css';
+@import './typography.css';
+@import './spacing.css';
+
+/* 3. Layout & Structure */
+@import './layout.css';
+
+/* 4. Utilities & Animations */
+@import './utilities.css';
+@import './animations.css';
+
+/* 5. Component Foundations */
+@import './components/base.css';
