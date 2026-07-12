@@ -21,6 +21,8 @@ export type DashboardOverview = {
   assetsVerified: number;
   pendingVerification: number;
   discrepanciesFound: number;
+  unreadNotifications: number;
+  notificationBadgeCount: number;
 };
 
 export type DashboardAlert = {
@@ -71,4 +73,11 @@ export type DashboardOverviewResponse = {
   alerts: DashboardAlert[];
   quickActions: DashboardQuickAction[];
   recentActivity: DashboardRecentActivity[];
+  latestActivity: DashboardRecentActivity[];
+  notifications: {
+    unreadCount: number;
+    notificationBadgeCount: number;
+    recent: unknown[];
+    criticalAlerts: unknown[];
+  };
 };

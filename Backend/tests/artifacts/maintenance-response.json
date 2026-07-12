@@ -4,34 +4,34 @@
     "data": {
       "items": [
         {
-          "id": "c72b524f-84bd-468e-af52-740bacc2a9e5",
-          "assetId": "bb0b9877-5894-414e-804e-336da70c54d4",
-          "reportedById": "a4639327-10d5-4c03-804b-313c7a1d7bc8",
-          "assignedToId": "1be9e016-ff13-4b42-978e-8c22eda11de5",
+          "id": "286673f0-65f0-4d90-a135-669b3e363775",
+          "assetId": "c252172c-a1f0-47d5-95fd-b63cc8b814de",
+          "reportedById": "4411cdf9-621a-45b4-904a-d1f216d15c33",
+          "assignedToId": "8eb65ddb-33e7-47bc-83a7-5b2c1fd971c8",
           "priority": "HIGH",
           "status": "IN_PROGRESS",
           "issueSummary": "Display flickering",
           "issueDescription": "Monitor flickers every few minutes.",
           "resolutionNotes": null,
           "resolutionCost": null,
-          "reportedAt": "2026-07-12T07:21:21.552Z",
+          "reportedAt": "2026-07-12T07:36:15.389Z",
           "assignedAt": "2026-07-12T08:00:00.000Z",
           "startedAt": "2026-07-12T08:30:00.000Z",
           "resolvedAt": null,
           "closedAt": null,
-          "createdAt": "2026-07-12T07:21:21.552Z",
-          "updatedAt": "2026-07-12T07:21:21.552Z",
+          "createdAt": "2026-07-12T07:36:15.389Z",
+          "updatedAt": "2026-07-12T07:36:15.389Z",
           "asset": {
-            "id": "bb0b9877-5894-414e-804e-336da70c54d4",
+            "id": "c252172c-a1f0-47d5-95fd-b63cc8b814de",
             "assetCode": "MON-001",
             "serialNumber": "SN-MON-001",
             "name": "Dell 27 Inch Monitor",
             "status": "MAINTENANCE",
             "condition": "FAIR",
-            "departmentId": "f91db6a9-ba96-411a-b3ba-d2e2d890b05f",
+            "departmentId": "3577897d-0c4f-4668-af15-5e00d03c5c2d",
             "location": "Finance Bay",
             "department": {
-              "id": "f91db6a9-ba96-411a-b3ba-d2e2d890b05f",
+              "id": "3577897d-0c4f-4668-af15-5e00d03c5c2d",
               "name": "Finance",
               "code": "FIN",
               "status": "ACTIVE"
@@ -39,28 +39,28 @@
             "assetTag": "MON-001"
           },
           "reportedBy": {
-            "id": "a4639327-10d5-4c03-804b-313c7a1d7bc8",
+            "id": "4411cdf9-621a-45b4-904a-d1f216d15c33",
             "name": "Employee User",
             "email": "employee@assetflow.local",
             "role": "EMPLOYEE",
-            "departmentId": "95cf307d-cb6e-4a4e-b8b8-caacff5b4ee7",
+            "departmentId": "c1281fb9-200c-40fe-ac3c-d0bcad3e9de3",
             "status": "ACTIVE"
           },
           "assignedTo": {
-            "id": "1be9e016-ff13-4b42-978e-8c22eda11de5",
+            "id": "8eb65ddb-33e7-47bc-83a7-5b2c1fd971c8",
             "name": "IT Manager",
             "email": "manager@assetflow.local",
             "role": "MANAGER",
-            "departmentId": "95cf307d-cb6e-4a4e-b8b8-caacff5b4ee7",
+            "departmentId": "c1281fb9-200c-40fe-ac3c-d0bcad3e9de3",
             "status": "ACTIVE"
           },
-          "assignedTechnicianId": "1be9e016-ff13-4b42-978e-8c22eda11de5",
+          "assignedTechnicianId": "8eb65ddb-33e7-47bc-83a7-5b2c1fd971c8",
           "assignedTechnician": {
-            "id": "1be9e016-ff13-4b42-978e-8c22eda11de5",
+            "id": "8eb65ddb-33e7-47bc-83a7-5b2c1fd971c8",
             "name": "IT Manager",
             "email": "manager@assetflow.local",
             "role": "MANAGER",
-            "departmentId": "95cf307d-cb6e-4a4e-b8b8-caacff5b4ee7",
+            "departmentId": "c1281fb9-200c-40fe-ac3c-d0bcad3e9de3",
             "status": "ACTIVE"
           },
           "lifecycleStatus": "IN_PROGRESS"
@@ -76,34 +76,34 @@
   "detail": {
     "success": true,
     "data": {
-      "id": "c72b524f-84bd-468e-af52-740bacc2a9e5",
-      "assetId": "bb0b9877-5894-414e-804e-336da70c54d4",
-      "reportedById": "a4639327-10d5-4c03-804b-313c7a1d7bc8",
-      "assignedToId": "1be9e016-ff13-4b42-978e-8c22eda11de5",
+      "id": "286673f0-65f0-4d90-a135-669b3e363775",
+      "assetId": "c252172c-a1f0-47d5-95fd-b63cc8b814de",
+      "reportedById": "4411cdf9-621a-45b4-904a-d1f216d15c33",
+      "assignedToId": "8eb65ddb-33e7-47bc-83a7-5b2c1fd971c8",
       "priority": "HIGH",
       "status": "IN_PROGRESS",
       "issueSummary": "Display flickering",
       "issueDescription": "Monitor flickers every few minutes.",
       "resolutionNotes": null,
       "resolutionCost": null,
-      "reportedAt": "2026-07-12T07:21:21.552Z",
+      "reportedAt": "2026-07-12T07:36:15.389Z",
       "assignedAt": "2026-07-12T08:00:00.000Z",
       "startedAt": "2026-07-12T08:30:00.000Z",
       "resolvedAt": null,
       "closedAt": null,
-      "createdAt": "2026-07-12T07:21:21.552Z",
-      "updatedAt": "2026-07-12T07:21:21.552Z",
+      "createdAt": "2026-07-12T07:36:15.389Z",
+      "updatedAt": "2026-07-12T07:36:15.389Z",
       "asset": {
-        "id": "bb0b9877-5894-414e-804e-336da70c54d4",
+        "id": "c252172c-a1f0-47d5-95fd-b63cc8b814de",
         "assetCode": "MON-001",
         "serialNumber": "SN-MON-001",
         "name": "Dell 27 Inch Monitor",
         "status": "MAINTENANCE",
         "condition": "FAIR",
-        "departmentId": "f91db6a9-ba96-411a-b3ba-d2e2d890b05f",
+        "departmentId": "3577897d-0c4f-4668-af15-5e00d03c5c2d",
         "location": "Finance Bay",
         "department": {
-          "id": "f91db6a9-ba96-411a-b3ba-d2e2d890b05f",
+          "id": "3577897d-0c4f-4668-af15-5e00d03c5c2d",
           "name": "Finance",
           "code": "FIN",
           "status": "ACTIVE"
@@ -111,28 +111,28 @@
         "assetTag": "MON-001"
       },
       "reportedBy": {
-        "id": "a4639327-10d5-4c03-804b-313c7a1d7bc8",
+        "id": "4411cdf9-621a-45b4-904a-d1f216d15c33",
         "name": "Employee User",
         "email": "employee@assetflow.local",
         "role": "EMPLOYEE",
-        "departmentId": "95cf307d-cb6e-4a4e-b8b8-caacff5b4ee7",
+        "departmentId": "c1281fb9-200c-40fe-ac3c-d0bcad3e9de3",
         "status": "ACTIVE"
       },
       "assignedTo": {
-        "id": "1be9e016-ff13-4b42-978e-8c22eda11de5",
+        "id": "8eb65ddb-33e7-47bc-83a7-5b2c1fd971c8",
         "name": "IT Manager",
         "email": "manager@assetflow.local",
         "role": "MANAGER",
-        "departmentId": "95cf307d-cb6e-4a4e-b8b8-caacff5b4ee7",
+        "departmentId": "c1281fb9-200c-40fe-ac3c-d0bcad3e9de3",
         "status": "ACTIVE"
       },
-      "assignedTechnicianId": "1be9e016-ff13-4b42-978e-8c22eda11de5",
+      "assignedTechnicianId": "8eb65ddb-33e7-47bc-83a7-5b2c1fd971c8",
       "assignedTechnician": {
-        "id": "1be9e016-ff13-4b42-978e-8c22eda11de5",
+        "id": "8eb65ddb-33e7-47bc-83a7-5b2c1fd971c8",
         "name": "IT Manager",
         "email": "manager@assetflow.local",
         "role": "MANAGER",
-        "departmentId": "95cf307d-cb6e-4a4e-b8b8-caacff5b4ee7",
+        "departmentId": "c1281fb9-200c-40fe-ac3c-d0bcad3e9de3",
         "status": "ACTIVE"
       },
       "lifecycleStatus": "IN_PROGRESS"
@@ -152,7 +152,7 @@
           "_count": {
             "assetId": 1
           },
-          "assetId": "bb0b9877-5894-414e-804e-336da70c54d4"
+          "assetId": "c252172c-a1f0-47d5-95fd-b63cc8b814de"
         }
       ],
       "maintenanceCost": {
@@ -162,18 +162,18 @@
       "assetDowntimeHours": 0,
       "mostRepairedAssets": [
         {
-          "assetId": "bb0b9877-5894-414e-804e-336da70c54d4",
+          "assetId": "c252172c-a1f0-47d5-95fd-b63cc8b814de",
           "asset": {
-            "id": "bb0b9877-5894-414e-804e-336da70c54d4",
+            "id": "c252172c-a1f0-47d5-95fd-b63cc8b814de",
             "assetCode": "MON-001",
             "serialNumber": "SN-MON-001",
             "name": "Dell 27 Inch Monitor",
             "status": "MAINTENANCE",
             "condition": "FAIR",
-            "departmentId": "f91db6a9-ba96-411a-b3ba-d2e2d890b05f",
+            "departmentId": "3577897d-0c4f-4668-af15-5e00d03c5c2d",
             "location": "Finance Bay",
             "department": {
-              "id": "f91db6a9-ba96-411a-b3ba-d2e2d890b05f",
+              "id": "3577897d-0c4f-4668-af15-5e00d03c5c2d",
               "name": "Finance",
               "code": "FIN",
               "status": "ACTIVE"
@@ -373,7 +373,9 @@
         "auditsCompleted": 0,
         "assetsVerified": 1,
         "pendingVerification": 0,
-        "discrepanciesFound": 0
+        "discrepanciesFound": 0,
+        "unreadNotifications": 2,
+        "notificationBadgeCount": 2
       },
       "alerts": [
         {
@@ -429,96 +431,255 @@
       ],
       "recentActivity": [
         {
-          "id": "booking:8235eff5-383d-4e79-bd2b-96cb5e0dc865",
-          "type": "BOOKING",
-          "title": "Booking requested",
-          "description": "Employee User requested Office Shuttle.",
-          "status": "REQUESTED",
-          "timestamp": "2026-07-12T07:21:21.552Z",
-          "asset": {
-            "id": "545d0b42-ab72-4511-86a3-eae06cf596cd",
-            "assetCode": "VEH-001",
-            "name": "Office Shuttle"
-          },
-          "actor": {
-            "id": "a4639327-10d5-4c03-804b-313c7a1d7bc8",
-            "name": "Employee User",
-            "email": "employee@assetflow.local"
-          }
-        },
-        {
-          "id": "maintenance:c72b524f-84bd-468e-af52-740bacc2a9e5",
+          "id": "maintenance:286673f0-65f0-4d90-a135-669b3e363775",
           "type": "MAINTENANCE",
           "title": "Maintenance reported",
           "description": "Employee User reported Display flickering for Dell 27 Inch Monitor.",
           "status": "IN_PROGRESS",
-          "timestamp": "2026-07-12T07:21:21.552Z",
+          "timestamp": "2026-07-12T07:36:15.389Z",
           "asset": {
-            "id": "bb0b9877-5894-414e-804e-336da70c54d4",
+            "id": "c252172c-a1f0-47d5-95fd-b63cc8b814de",
             "assetCode": "MON-001",
             "name": "Dell 27 Inch Monitor"
           },
           "actor": {
-            "id": "a4639327-10d5-4c03-804b-313c7a1d7bc8",
+            "id": "4411cdf9-621a-45b4-904a-d1f216d15c33",
             "name": "Employee User",
             "email": "employee@assetflow.local"
           }
         },
         {
-          "id": "transfer:e631cc6d-5023-497f-a164-629880e964e9",
+          "id": "transfer:3e6234c8-e2db-4170-b860-9263ec2f386e",
           "type": "TRANSFER",
           "title": "Transfer requested",
           "description": "Employee User requested transfer for Dell Latitude 5440.",
           "status": "PENDING",
-          "timestamp": "2026-07-12T07:21:21.551Z",
+          "timestamp": "2026-07-12T07:36:15.388Z",
           "asset": {
-            "id": "1fab2a19-18cb-4743-80d8-c46edfc22aaf",
+            "id": "e39a514f-f203-4d61-bc13-b6348624b7be",
             "assetCode": "LAP-001",
             "name": "Dell Latitude 5440"
           },
           "actor": {
-            "id": "a4639327-10d5-4c03-804b-313c7a1d7bc8",
+            "id": "4411cdf9-621a-45b4-904a-d1f216d15c33",
             "name": "Employee User",
             "email": "employee@assetflow.local"
           }
         },
         {
-          "id": "booking:d3f4c22b-725c-4938-86d6-b0ec12f4088e",
+          "id": "booking:0f3d7853-6434-42f9-98a2-aaed2132aa7a",
           "type": "BOOKING",
           "title": "Booking requested",
           "description": "Employee User requested Epson Conference Projector.",
           "status": "APPROVED",
-          "timestamp": "2026-07-12T07:21:21.551Z",
+          "timestamp": "2026-07-12T07:36:15.388Z",
           "asset": {
-            "id": "bc88cc5d-7338-46f4-8901-f2f71624d4b7",
+            "id": "628db873-f40b-4317-b448-3b345f4cf7df",
             "assetCode": "PROJ-001",
             "name": "Epson Conference Projector"
           },
           "actor": {
-            "id": "a4639327-10d5-4c03-804b-313c7a1d7bc8",
+            "id": "4411cdf9-621a-45b4-904a-d1f216d15c33",
             "name": "Employee User",
             "email": "employee@assetflow.local"
           }
         },
         {
-          "id": "allocation:8ec07675-1f67-4359-8379-661c10c421b5",
+          "id": "booking:23c14c50-bac8-492a-b3f7-d78ef5fa81b6",
+          "type": "BOOKING",
+          "title": "Booking requested",
+          "description": "Employee User requested Office Shuttle.",
+          "status": "REQUESTED",
+          "timestamp": "2026-07-12T07:36:15.388Z",
+          "asset": {
+            "id": "34344bd8-2984-4e54-9f0d-78b78c50cb63",
+            "assetCode": "VEH-001",
+            "name": "Office Shuttle"
+          },
+          "actor": {
+            "id": "4411cdf9-621a-45b4-904a-d1f216d15c33",
+            "name": "Employee User",
+            "email": "employee@assetflow.local"
+          }
+        },
+        {
+          "id": "allocation:c2538388-7d22-475d-9b49-61d2dc308440",
           "type": "ALLOCATION",
           "title": "Asset allocated",
           "description": "Dell Latitude 5440 allocated to Employee User.",
           "status": "ACTIVE",
-          "timestamp": "2026-07-12T07:21:21.550Z",
+          "timestamp": "2026-07-12T07:36:15.387Z",
           "asset": {
-            "id": "1fab2a19-18cb-4743-80d8-c46edfc22aaf",
+            "id": "e39a514f-f203-4d61-bc13-b6348624b7be",
             "assetCode": "LAP-001",
             "name": "Dell Latitude 5440"
           },
           "actor": {
-            "id": "1be9e016-ff13-4b42-978e-8c22eda11de5",
+            "id": "8eb65ddb-33e7-47bc-83a7-5b2c1fd971c8",
             "name": "IT Manager",
             "email": "manager@assetflow.local"
           }
         }
-      ]
+      ],
+      "latestActivity": [
+        {
+          "id": "maintenance:286673f0-65f0-4d90-a135-669b3e363775",
+          "type": "MAINTENANCE",
+          "title": "Maintenance reported",
+          "description": "Employee User reported Display flickering for Dell 27 Inch Monitor.",
+          "status": "IN_PROGRESS",
+          "timestamp": "2026-07-12T07:36:15.389Z",
+          "asset": {
+            "id": "c252172c-a1f0-47d5-95fd-b63cc8b814de",
+            "assetCode": "MON-001",
+            "name": "Dell 27 Inch Monitor"
+          },
+          "actor": {
+            "id": "4411cdf9-621a-45b4-904a-d1f216d15c33",
+            "name": "Employee User",
+            "email": "employee@assetflow.local"
+          }
+        },
+        {
+          "id": "transfer:3e6234c8-e2db-4170-b860-9263ec2f386e",
+          "type": "TRANSFER",
+          "title": "Transfer requested",
+          "description": "Employee User requested transfer for Dell Latitude 5440.",
+          "status": "PENDING",
+          "timestamp": "2026-07-12T07:36:15.388Z",
+          "asset": {
+            "id": "e39a514f-f203-4d61-bc13-b6348624b7be",
+            "assetCode": "LAP-001",
+            "name": "Dell Latitude 5440"
+          },
+          "actor": {
+            "id": "4411cdf9-621a-45b4-904a-d1f216d15c33",
+            "name": "Employee User",
+            "email": "employee@assetflow.local"
+          }
+        },
+        {
+          "id": "booking:0f3d7853-6434-42f9-98a2-aaed2132aa7a",
+          "type": "BOOKING",
+          "title": "Booking requested",
+          "description": "Employee User requested Epson Conference Projector.",
+          "status": "APPROVED",
+          "timestamp": "2026-07-12T07:36:15.388Z",
+          "asset": {
+            "id": "628db873-f40b-4317-b448-3b345f4cf7df",
+            "assetCode": "PROJ-001",
+            "name": "Epson Conference Projector"
+          },
+          "actor": {
+            "id": "4411cdf9-621a-45b4-904a-d1f216d15c33",
+            "name": "Employee User",
+            "email": "employee@assetflow.local"
+          }
+        },
+        {
+          "id": "booking:23c14c50-bac8-492a-b3f7-d78ef5fa81b6",
+          "type": "BOOKING",
+          "title": "Booking requested",
+          "description": "Employee User requested Office Shuttle.",
+          "status": "REQUESTED",
+          "timestamp": "2026-07-12T07:36:15.388Z",
+          "asset": {
+            "id": "34344bd8-2984-4e54-9f0d-78b78c50cb63",
+            "assetCode": "VEH-001",
+            "name": "Office Shuttle"
+          },
+          "actor": {
+            "id": "4411cdf9-621a-45b4-904a-d1f216d15c33",
+            "name": "Employee User",
+            "email": "employee@assetflow.local"
+          }
+        },
+        {
+          "id": "allocation:c2538388-7d22-475d-9b49-61d2dc308440",
+          "type": "ALLOCATION",
+          "title": "Asset allocated",
+          "description": "Dell Latitude 5440 allocated to Employee User.",
+          "status": "ACTIVE",
+          "timestamp": "2026-07-12T07:36:15.387Z",
+          "asset": {
+            "id": "e39a514f-f203-4d61-bc13-b6348624b7be",
+            "assetCode": "LAP-001",
+            "name": "Dell Latitude 5440"
+          },
+          "actor": {
+            "id": "8eb65ddb-33e7-47bc-83a7-5b2c1fd971c8",
+            "name": "IT Manager",
+            "email": "manager@assetflow.local"
+          }
+        }
+      ],
+      "notifications": {
+        "unreadCount": 2,
+        "notificationBadgeCount": 2,
+        "recent": [
+          {
+            "id": "f61e3156-e9b6-44a1-b3fa-6e255213f17a",
+            "userId": "4411cdf9-621a-45b4-904a-d1f216d15c33",
+            "type": "ASSET_ALLOCATED",
+            "category": "ALLOCATION",
+            "priority": "MEDIUM",
+            "title": "Asset allocated",
+            "message": "Dell Latitude 5440 has been allocated to you.",
+            "isRead": false,
+            "readAt": null,
+            "relatedEntityType": "Allocation",
+            "relatedEntityId": "c2538388-7d22-475d-9b49-61d2dc308440",
+            "createdAt": "2026-07-12T07:36:15.390Z",
+            "updatedAt": "2026-07-12T07:36:15.390Z",
+            "user": {
+              "id": "4411cdf9-621a-45b4-904a-d1f216d15c33",
+              "name": "Employee User",
+              "email": "employee@assetflow.local",
+              "role": "EMPLOYEE",
+              "departmentId": "c1281fb9-200c-40fe-ac3c-d0bcad3e9de3"
+            },
+            "status": "unread",
+            "recipient": {
+              "id": "4411cdf9-621a-45b4-904a-d1f216d15c33",
+              "name": "Employee User",
+              "email": "employee@assetflow.local",
+              "role": "EMPLOYEE",
+              "departmentId": "c1281fb9-200c-40fe-ac3c-d0bcad3e9de3"
+            }
+          },
+          {
+            "id": "3d1a8cc3-9cba-469e-a1fe-00be181e6c24",
+            "userId": "8eb65ddb-33e7-47bc-83a7-5b2c1fd971c8",
+            "type": "MAINTENANCE_ASSIGNED",
+            "category": "MAINTENANCE",
+            "priority": "MEDIUM",
+            "title": "Maintenance assigned",
+            "message": "Display flickering ticket is assigned to you.",
+            "isRead": false,
+            "readAt": null,
+            "relatedEntityType": "MaintenanceTicket",
+            "relatedEntityId": "286673f0-65f0-4d90-a135-669b3e363775",
+            "createdAt": "2026-07-12T07:36:15.390Z",
+            "updatedAt": "2026-07-12T07:36:15.390Z",
+            "user": {
+              "id": "8eb65ddb-33e7-47bc-83a7-5b2c1fd971c8",
+              "name": "IT Manager",
+              "email": "manager@assetflow.local",
+              "role": "MANAGER",
+              "departmentId": "c1281fb9-200c-40fe-ac3c-d0bcad3e9de3"
+            },
+            "status": "unread",
+            "recipient": {
+              "id": "8eb65ddb-33e7-47bc-83a7-5b2c1fd971c8",
+              "name": "IT Manager",
+              "email": "manager@assetflow.local",
+              "role": "MANAGER",
+              "departmentId": "c1281fb9-200c-40fe-ac3c-d0bcad3e9de3"
+            }
+          }
+        ],
+        "criticalAlerts": []
+      }
     },
     "message": "Operation completed successfully."
   }

@@ -46,6 +46,14 @@ export const reportQuerySchema = paginationQuery.extend({
     .optional()
 });
 
+export const notificationQuerySchema = paginationQuery.extend({
+  status: z.enum(["read", "unread", "all"]).optional(),
+  type: z.string().min(1).optional(),
+  priority: z.enum(["INFO", "LOW", "MEDIUM", "HIGH", "CRITICAL"]).optional(),
+  sortBy: z.enum(["createdAt", "updatedAt", "title", "type", "priority"]).optional(),
+  sortOrder: z.enum(["asc", "desc"]).optional()
+});
+
 export const decisionSchema = z.object({
   decisionNotes: z.string().min(1).optional()
 });

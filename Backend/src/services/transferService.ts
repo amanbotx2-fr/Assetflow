@@ -322,6 +322,34 @@ export const createTransfer = async (
     metadata: { assetId: data.assetId, toUserId: data.toUserId, toDepartmentId: destinationDepartmentId }
   });
 
+  await createNotification({
+    userId: transfer.requestedById,
+    type: "TRANSFER_REQUESTED",
+    title: "Transfer requested",
+    message: `Transfer request for ${transfer.asset.name} was created.`,
+    relatedEntityType: "Transfer",
+    relatedEntityId: transfer.id
+  });
+
+  const sourceDepartmentId = activeAllocation.asset.departmentId ?? activeAllocation.departmentId;
+  if (sourceDepartmentId) {
+    const sourceDepartment = await prisma.department.findUnique({
+      where: { id: sourceDepartmentId },
+      select: { managerId: true }
+    });
+
+    if (sourceDepartment?.managerId && sourceDepartment.managerId !== actor.id) {
+      await createNotification({
+        userId: sourceDepartment.managerId,
+        type: "TRANSFER_APPROVAL_REQUIRED",
+        title: "Transfer approval needed",
+        message: `${actor.name} requested transfer for ${transfer.asset.name}.`,
+        relatedEntityType: "Transfer",
+        relatedEntityId: transfer.id
+      });
+    }
+  }
+
   return formatTransfer(transfer);
 };
 

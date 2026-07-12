@@ -261,6 +261,8 @@ async function main() {
       {
         userId: employee.id,
         type: "ASSET_ALLOCATED",
+        category: "ALLOCATION",
+        priority: "MEDIUM",
         title: "Asset allocated",
         message: "Dell Latitude 5440 has been allocated to you.",
         relatedEntityType: "Allocation",
@@ -269,6 +271,8 @@ async function main() {
       {
         userId: manager.id,
         type: "MAINTENANCE_ASSIGNED",
+        category: "MAINTENANCE",
+        priority: "MEDIUM",
         title: "Maintenance assigned",
         message: "Display flickering ticket is assigned to you.",
         relatedEntityType: "MaintenanceTicket",

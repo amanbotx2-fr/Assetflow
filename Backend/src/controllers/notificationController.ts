@@ -6,10 +6,22 @@ export const listNotifications = asyncHandler(async (req, res) => {
   sendSuccess(res, await notificationService.listNotifications(req.query, req.user!));
 });
 
+export const getNotification = asyncHandler(async (req, res) => {
+  sendSuccess(res, await notificationService.getNotification(String(req.params.id), req.user!));
+});
+
 export const markRead = asyncHandler(async (req, res) => {
   sendSuccess(res, await notificationService.markNotificationRead(String(req.params.id), req.user!));
 });
 
 export const markAllRead = asyncHandler(async (req, res) => {
   sendSuccess(res, await notificationService.markAllNotificationsRead(req.user!));
+});
+
+export const deleteNotification = asyncHandler(async (req, res) => {
+  sendSuccess(res, await notificationService.deleteNotification(String(req.params.id), req.user!));
+});
+
+export const unreadCount = asyncHandler(async (req, res) => {
+  sendSuccess(res, await notificationService.getUnreadNotificationCount(req.user!));
 });

@@ -1,6 +1,6 @@
 # Audit QA Report
 
-Generated: 2026-07-12T07:21:32.772Z
+Generated: 2026-07-12T07:36:26.139Z
 
 ## Summary
 
@@ -67,43 +67,43 @@ Generated: 2026-07-12T07:21:32.772Z
 | Request | Status | Duration |
 | --- | ---: | ---: |
 | GET /api/audits | 401 | 2 ms |
-| GET /api/audits | 200 | 4 ms |
-| POST /api/audits | 201 | 12 ms |
-| GET /api/audits/50aee288-4dd0-4bbb-afc1-8ed2dccaa9a4 | 200 | 5 ms |
-| GET /api/audits/50aee288-4dd0-4bbb-afc1-8ed2dccaa9a4 | 200 | 4 ms |
-| GET /api/audits/00000000-0000-0000-0000-000000000000 | 404 | 3 ms |
-| GET /api/audits/not-a-uuid | 400 | 2 ms |
-| PATCH /api/audits/50aee288-4dd0-4bbb-afc1-8ed2dccaa9a4 | 200 | 6 ms |
-| POST /api/audits/50aee288-4dd0-4bbb-afc1-8ed2dccaa9a4/complete | 409 | 5 ms |
-| POST /api/audits/50aee288-4dd0-4bbb-afc1-8ed2dccaa9a4/start | 200 | 6 ms |
-| POST /api/audits/50aee288-4dd0-4bbb-afc1-8ed2dccaa9a4/start | 409 | 4 ms |
-| POST /api/audits/50aee288-4dd0-4bbb-afc1-8ed2dccaa9a4/verify | 409 | 4 ms |
-| POST /api/audits/50aee288-4dd0-4bbb-afc1-8ed2dccaa9a4/verify | 200 | 7 ms |
-| POST /api/audits/50aee288-4dd0-4bbb-afc1-8ed2dccaa9a4/verify | 409 | 4 ms |
-| POST /api/audits/50aee288-4dd0-4bbb-afc1-8ed2dccaa9a4/complete | 409 | 4 ms |
-| POST /api/audits/50aee288-4dd0-4bbb-afc1-8ed2dccaa9a4/verify | 200 | 11 ms |
-| POST /api/audits/50aee288-4dd0-4bbb-afc1-8ed2dccaa9a4/verify | 200 | 9 ms |
-| GET /api/audits/50aee288-4dd0-4bbb-afc1-8ed2dccaa9a4/discrepancies | 200 | 10 ms |
-| POST /api/audits/50aee288-4dd0-4bbb-afc1-8ed2dccaa9a4/complete | 200 | 9 ms |
-| POST /api/audits/50aee288-4dd0-4bbb-afc1-8ed2dccaa9a4/close | 200 | 9 ms |
-| PATCH /api/audits/50aee288-4dd0-4bbb-afc1-8ed2dccaa9a4 | 409 | 5 ms |
+| GET /api/audits | 200 | 3 ms |
+| POST /api/audits | 201 | 8 ms |
+| GET /api/audits/41e54476-0c41-452f-8669-e99619544193 | 200 | 4 ms |
+| GET /api/audits/41e54476-0c41-452f-8669-e99619544193 | 200 | 3 ms |
+| GET /api/audits/00000000-0000-0000-0000-000000000000 | 404 | 2 ms |
+| GET /api/audits/not-a-uuid | 400 | 1 ms |
+| PATCH /api/audits/41e54476-0c41-452f-8669-e99619544193 | 200 | 6 ms |
+| POST /api/audits/41e54476-0c41-452f-8669-e99619544193/complete | 409 | 3 ms |
+| POST /api/audits/41e54476-0c41-452f-8669-e99619544193/start | 200 | 7 ms |
+| POST /api/audits/41e54476-0c41-452f-8669-e99619544193/start | 409 | 2 ms |
+| POST /api/audits/41e54476-0c41-452f-8669-e99619544193/verify | 409 | 4 ms |
+| POST /api/audits/41e54476-0c41-452f-8669-e99619544193/verify | 200 | 6 ms |
+| POST /api/audits/41e54476-0c41-452f-8669-e99619544193/verify | 409 | 4 ms |
+| POST /api/audits/41e54476-0c41-452f-8669-e99619544193/complete | 409 | 3 ms |
+| POST /api/audits/41e54476-0c41-452f-8669-e99619544193/verify | 200 | 8 ms |
+| POST /api/audits/41e54476-0c41-452f-8669-e99619544193/verify | 200 | 8 ms |
+| GET /api/audits/41e54476-0c41-452f-8669-e99619544193/discrepancies | 200 | 7 ms |
+| POST /api/audits/41e54476-0c41-452f-8669-e99619544193/complete | 200 | 10 ms |
+| POST /api/audits/41e54476-0c41-452f-8669-e99619544193/close | 200 | 8 ms |
+| PATCH /api/audits/41e54476-0c41-452f-8669-e99619544193 | 409 | 4 ms |
 | POST /api/audits | 201 | 6 ms |
-| DELETE /api/audits/616e5ae1-cb5d-4d35-b651-d45826d53c95 | 200 | 7 ms |
-| POST /api/audits | 201 | 6 ms |
-| POST /api/audits/1a5d0918-9937-409b-b05f-550ec2269f0f/start | 200 | 6 ms |
-| DELETE /api/audits/1a5d0918-9937-409b-b05f-550ec2269f0f | 409 | 4 ms |
-| POST /api/audits | 201 | 6 ms |
-| POST /api/audits/8defe88b-b0d1-418d-aa24-d5e6d2a6a77d/start | 403 | 3 ms |
-| GET /api/audits/8defe88b-b0d1-418d-aa24-d5e6d2a6a77d | 403 | 4 ms |
+| DELETE /api/audits/f4c847f3-b30a-41a2-bdec-2da617c73f5d | 200 | 4 ms |
 | POST /api/audits | 201 | 5 ms |
+| POST /api/audits/da191f16-f39b-4fa1-94ea-f0fa2624e19f/start | 200 | 4 ms |
+| DELETE /api/audits/da191f16-f39b-4fa1-94ea-f0fa2624e19f | 409 | 3 ms |
+| POST /api/audits | 201 | 5 ms |
+| POST /api/audits/4f5aa501-f89f-4206-8816-6c4fe13a5144/start | 403 | 3 ms |
+| GET /api/audits/4f5aa501-f89f-4206-8816-6c4fe13a5144 | 403 | 3 ms |
+| POST /api/audits | 201 | 4 ms |
 | GET /api/audits?status=CLOSED&page=1&limit=5 | 200 | 4 ms |
-| GET /api/reports/audits | 200 | 5 ms |
+| GET /api/reports/audits | 200 | 4 ms |
 | GET /api/dashboard/overview | 200 | 6 ms |
 | GET /api/audits?page=1&limit=5 | 200 | 6 ms |
-| GET /api/audits/8defe88b-b0d1-418d-aa24-d5e6d2a6a77d | 200 | 4 ms |
-| GET /api/audits/8defe88b-b0d1-418d-aa24-d5e6d2a6a77d/discrepancies | 200 | 4 ms |
+| GET /api/audits/4f5aa501-f89f-4206-8816-6c4fe13a5144 | 200 | 4 ms |
+| GET /api/audits/4f5aa501-f89f-4206-8816-6c4fe13a5144/discrepancies | 200 | 4 ms |
 | GET /api/dashboard/overview | 200 | 5 ms |
-| GET /api/reports/audits | 200 | 6 ms |
+| GET /api/reports/audits | 200 | 8 ms |
 
 ## Business Rules Verified
 
